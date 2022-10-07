@@ -1,0 +1,11 @@
+body.index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > div,
+  & > a {
+    margin: 10px 0;
+  }
+}
