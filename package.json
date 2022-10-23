@@ -1,16 +1,16 @@
 {
-  "name": "static-site-boilerplate",
-  "version": "1.0.0",
-  "author": "Zakhar Day",
+  "name": "hotkeys",
+  "version": "1.0.1",
+  "author": "HSE ADC",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https:///github.com/ZakharDay/static-site-boilerplate"
+    "url": "git+https://github.com/HSEADC/B21DZ09-Project-4-2"
   },
   "bugs": {
-    "url": "https://github.com/ZakharDay/static-site-boilerplate/issues"
+    "url": "https://github.com/HSEADC/B21DZ09-Project-4-2/issues"
   },
-  "homepage": "https://github.com/ZakharDay/static-site-boilerplate#readme",
+  "homepage": "https://github.com/HSEADC/B21DZ09-Project-4-2#readme",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
     "watch": "webpack --config webpack.dev.js",

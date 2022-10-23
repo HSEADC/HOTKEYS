@@ -1,11 +1,423 @@
-body.index {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+html.index {
+    scroll-behavior: smooth;
+}
 
-  & > div,
-  & > a {
-    margin: 10px 0;
-  }
+body.index {
+    background-color: $black;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+
+    // 1 screen 
+
+    .block1 {
+        padding: 1.5% 2% 2% 2%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block1-logo {
+        display: flex;
+        justify-content: space-between;
+
+        & h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: $white;
+
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+
+    .block1-shortcut {
+        color: $white;
+
+        & div {
+            margin: 5% auto 6% auto;
+            font-size: 25rem;
+            font-weight: 600;
+            text-align: center;
+            animation: change-text 1.5s infinite;
+            animation-play-state: running;
+            cursor: help;
+
+            &:hover {
+                animation-play-state: paused;
+                color: $green;
+            }
+        }
+
+        @keyframes change-text {
+            10% {
+                font-weight: 300;
+                font-style: normal;
+                text-decoration: none;
+                text-transform: none;
+            }
+
+            20% {
+                font-weight: 500;
+                font-style: italic;
+                text-decoration: underline;
+                text-decoration-thickness: 0.6rem;
+                text-underline-offset: 2rem;
+                text-transform: capitalize;
+            }
+
+            30% {
+                font-weight: 200;
+                font-style: normal;
+                text-decoration-line: line-through;
+                text-decoration-thickness: 0.7rem;
+                text-transform: none;
+            }
+
+            40% {
+                font-weight: 600;
+                font-style: italic;
+                text-decoration: none;
+                text-transform: lowercase;
+            }
+
+            50% {
+                font-weight: 100;
+                font-style: italic;
+                text-decoration-line: line-through;
+                text-decoration-thickness: 0.7rem;
+                text-transform: none;
+            }
+
+            60% {
+                font-weight: 700;
+                font-style: normal;
+                text-decoration: none;
+                text-transform: lowercase;
+            }
+
+            70% {
+                font-weight: 400;
+                font-style: italic;
+                text-decoration: underline;
+                text-decoration-thickness: 0.7rem;
+                text-underline-offset: 3rem;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .block1-text {
+        display: flex;
+        justify-content: space-between;
+
+        & h2 {
+            font-size: 1.55rem;
+            line-height: 1rem;
+            font-weight: 400;
+            color: $white;
+
+            &:hover {
+                color: $green;
+            }
+        }
+
+        // &:nth-child(1) {
+
+        // }
+    }
+
+    // 2 screen
+
+    #mail-target {
+        margin: 5.5%;
+    }
+
+    .block2 {
+        padding-top: 1%;
+        margin: 0 auto 6% auto;
+        display: flex;
+        flex-direction: column;
+
+        .tags-index {
+
+            & div {
+                margin-right: 0.7%;
+            }
+
+            & a {
+                margin-right: 0.7%;
+            }
+
+            .tags-index1 {
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 1%;
+                justify-content: center;
+
+                .tags-index1-1 {
+                    & h3 {
+                        width: 119px;
+                        @extend %shortcut-none;
+                    }
+                }
+
+                .tags-index1-2 {
+                    & h3 {
+                        width: 153px;
+                        @extend %shortcut-none;
+                    }
+                }
+
+                .tags-index1-3 {
+                    & h3 {
+                        width: 166px;
+                        @extend %item-none;
+                    }
+                }
+
+                .tags-index1-4 {
+                    & h3 {
+                        width: 124px;
+                        @extend %shortcut-none;
+                    }
+                }
+
+                .tags-index1-5 {
+                    & h3 {
+                        width: 158px;
+                        @extend %shortcut-none;
+                    }
+                }
+
+                .tags-index1-6 {
+                    & h3 {
+                        width: 132px;
+                        @extend %item-none;
+                    }
+                }
+
+                .tags-index1-7 {
+                    & h3 {
+                        width: 190px;
+                        @extend %shortcut-none;
+                    }
+                }
+
+                .tags-index1-8 {
+                    & h3 {
+                        width: 125px;
+                        @extend %shortcut-none;
+                    }
+                }
+            }
+
+            .tags-index2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                .tags-index2-1 {
+                    & h3 {
+                        width: 139px;
+                        @extend %item-open-now;
+                    }
+                }
+
+                .tags-index2-2 {
+                    & h3 {
+                        width: 178px;
+                        @extend %shortcut-open;
+
+                        &:hover {
+                            @extend %shortcut-open-hover;
+                        }
+                    }
+                }
+
+                .tags-index2-3 {
+                    & h3 {
+                        width: 132px;
+                        @extend %item-none;
+                    }
+                }
+
+                .tags-index2-4 {
+                    & h3 {
+                        width: 170px;
+                        @extend %item-open;
+
+                        &:hover {
+                            @extend %item-open-hover;
+                        }
+                    }
+                }
+
+                .tags-index2-5 {
+                    & h3 {
+                        width: 163px;
+                        @extend %shortcut-none;
+                    }
+                }
+
+                .tags-index2-6 {
+                    & h3 {
+                        width: 136px;
+                        @extend %shortcut-open;
+
+                        &:hover {
+                            @extend %shortcut-open-hover;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .mail-index {
+
+            .mail-text-index {
+                padding-top: 9%;
+
+                & h4 {
+                    font-size: 5.5rem;
+                    text-align: center;
+                    font-weight: 400;
+                    color: $white;
+                }
+
+                & h5 {
+                    padding-top: 3%;
+                    font-size: 1.55rem;
+                    line-height: 1.8rem;
+                    letter-spacing: 0.07rem;
+                    text-align: center;
+                    font-weight: 300;
+                    color: $white;
+                }
+            }
+
+            .mail-input-index {
+                padding-top: 6%;
+            }
+
+            .email-form {
+                margin: 0 auto;
+                margin: 0 auto;
+                max-width: 25%;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+
+                .input-email {
+                    color: $white;
+                    min-width: 420px;
+                    min-height: 50px;
+                    border: 1.5px solid $white;
+                    border-radius: 42.1569px;
+                    background-color: $black;
+                }
+
+                input[placeholder] {
+                    padding-left: 5%;
+                    font-size: 1.8rem;
+                }
+
+                .input-email::-webkit-input-placeholder {
+                    color: $grey2;
+
+                }
+
+                button {
+                    outline: none;
+                    border: 0;
+                    background: transparent;
+                    position: absolute;
+                    top: 11.3%;
+                    right: 1%;
+                }
+
+                #email-form-done {
+                    position: absolute;
+                    padding-top: 3%;
+                    left: 35%;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 300;
+                    color: $green;
+                }
+            }
+
+        }
+    }
+
+    // footer [index.html]
+
+    .footer-index {
+        padding-top: 1.6%;
+        padding-bottom: 1%;
+
+        & .footer-items {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            & .footer-item-index1 h3 {
+                width: 141px;
+                @extend %item-footer-open;
+
+                &:hover {
+                    color: $green;
+                    border: 2px solid $green;
+                }
+            }
+
+            & .footer-item-index2 {
+                width: 50px;
+                @extend %item-footer-open;
+
+                &:hover {
+                    border: 2px solid $green;
+                }
+
+                &:hover .footer-vk {
+                    fill: $green;
+                }
+            }
+
+            & .footer-item-index3 {
+                width: 50px;
+                @extend %item-footer-open;
+
+                &:hover {
+                    border: 2px solid $green;
+                }
+
+                &:hover .footer-dzen {
+                    fill: $green;
+                }
+            }
+
+            & .footer-item-index4 {
+                width: 50px;
+                @extend %item-footer-open;
+
+                &:hover {
+                    border: 2px solid $green;
+                }
+
+                &:hover .footer-tg {
+                    fill: $green;
+                }
+
+                & svg {
+                    transform: translate(-1px);
+                }
+            }
+        }
+
+        & a:nth-child(-n+3) {
+            margin-right: 0.7%;
+        }
+
+    }
 }

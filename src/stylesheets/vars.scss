@@ -1,4 +1,94 @@
-:root {
-  --white: white;
-  --black: black;
+$black: #0A0A0A;
+$white: #DADADA;
+$grey: #9C9C9C;
+$grey2: #515151;
+$grey3: #C4C4C4;
+$green: #CBFB45;
+
+// @mixin tag ($w) {
+//     width: $w;
+// }
+
+%shortcut-none {
+    height: 50px;
+    border: 2px solid $grey3;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $grey3;
+    display: grid;
+    place-items: center;
+}
+
+%shortcut-open {
+    height: 50px;
+    border: 2px solid $grey3;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $grey3;
+    display: grid;
+    place-items: center;
+    cursor: help;
+}
+
+%shortcut-open-hover {
+    color: $black;
+    background-color: $green;
+    border: 2px solid $green;
+}
+
+
+%item-none {
+    height: 50px;
+    border: 2px solid $grey3;
+    background-color: $grey3;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $black;
+    display: grid;
+    place-items: center;
+    cursor: wait;
+}
+
+%item-open {
+    height: 50px;
+    border: 2px solid $grey3;
+    background-color: $grey3;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+    color: $black;
+    display: grid;
+    place-items: center;
+}
+
+%item-open-hover {
+    background-color: $green;
+    border: 2px solid $green;
+}
+
+%item-open-now {
+    height: 50px;
+    border: 2px solid $green;
+    background-color: $green;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $black;
+    display: grid;
+    place-items: center;
+}
+
+%item-footer-open {
+    height: 50px;
+    border: 2px solid $grey;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $grey;
+    display: grid;
+    place-items: center;
 }

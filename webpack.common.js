@@ -75,23 +75,63 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
 
-    // Landing page
+    ///////
+
+    // Index (home page)
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/index.html',
-      filename: './index.html',
-      chunks: ['index']
+      filename: './index.html'
+      // chunks: ['index']
     }),
 
-    // Internal pages
+    // About us page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/page.html',
-      filename: './pages/page.html',
-      chunks: ['page']
+      template: './src/about.html',
+      filename: './about.html'
+      // chunks: ['page']
     }),
+
+    // Articles page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles.html',
+      filename: './articles.html'
+      // chunks: ['page']
+    }),
+
+    // Catalog page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog.html',
+      filename: './catalog.html'
+      // chunks: ['page']
+    }),
+
+    // Catalog Item page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog/cmd-ctrl+tab.html',
+      filename: './catalog/cmd-ctrl+tab.html'
+      // chunks: ['page']
+    }),
+
+    // Selections page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/selections.html',
+      filename: './selections.html'
+      // chunks: ['page']
+    }),
+
+    //////
 
     // Partials
     new HtmlWebpackPartialsPlugin([
