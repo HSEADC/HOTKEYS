@@ -11,18 +11,19 @@ $green: #CBFB45;
 
 %shortcut-none {
     height: 50px;
-    border: 2px solid $grey3;
+    border: 1.5px solid $grey3;
     border-radius: 42px;
     font-size: 1.5rem;
     font-weight: 500;
     color: $grey3;
     display: grid;
     place-items: center;
+    cursor: wait;
 }
 
 %shortcut-open {
     height: 50px;
-    border: 2px solid $grey3;
+    border: 1.5px solid $grey3;
     border-radius: 42px;
     font-size: 1.5rem;
     font-weight: 500;
@@ -35,13 +36,13 @@ $green: #CBFB45;
 %shortcut-open-hover {
     color: $black;
     background-color: $green;
-    border: 2px solid $green;
+    border: 1.5px solid $green;
 }
 
 
 %item-none {
     height: 50px;
-    border: 2px solid $grey3;
+    border: 1.5px solid $grey3;
     background-color: $grey3;
     border-radius: 42px;
     font-size: 1.5rem;
@@ -54,7 +55,7 @@ $green: #CBFB45;
 
 %item-open {
     height: 50px;
-    border: 2px solid $grey3;
+    border: 1.5px solid $grey3;
     background-color: $grey3;
     border-radius: 42px;
     font-size: 1.5rem;
@@ -67,12 +68,12 @@ $green: #CBFB45;
 
 %item-open-hover {
     background-color: $green;
-    border: 2px solid $green;
+    border: 1.5px solid $green;
 }
 
 %item-open-now {
     height: 50px;
-    border: 2px solid $green;
+    border: 1.5px solid $green;
     background-color: $green;
     border-radius: 42px;
     font-size: 1.5rem;
@@ -84,7 +85,7 @@ $green: #CBFB45;
 
 %item-footer-open {
     height: 50px;
-    border: 2px solid $grey;
+    border: 1.5px solid $grey;
     border-radius: 42px;
     font-size: 1.5rem;
     font-weight: 500;

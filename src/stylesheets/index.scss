@@ -38,7 +38,7 @@ body.index {
             font-size: 25rem;
             font-weight: 600;
             text-align: center;
-            animation: change-text 1.5s infinite;
+            animation: change-text 3s infinite;
             animation-play-state: running;
             cursor: help;
 
@@ -120,10 +120,6 @@ body.index {
                 color: $green;
             }
         }
-
-        // &:nth-child(1) {
-
-        // }
     }
 
     // 2 screen
@@ -134,7 +130,7 @@ body.index {
 
     .block2 {
         padding-top: 1%;
-        margin: 0 auto 6% auto;
+        margin: 0 auto 7% auto;
         display: flex;
         flex-direction: column;
 
@@ -276,7 +272,7 @@ body.index {
         .mail-index {
 
             .mail-text-index {
-                padding-top: 9%;
+                padding-top: 8%;
 
                 & h4 {
                     font-size: 5.5rem;
@@ -312,7 +308,7 @@ body.index {
                     color: $white;
                     min-width: 420px;
                     min-height: 50px;
-                    border: 1.5px solid $white;
+                    border: 1.5px solid $grey;
                     border-radius: 42.1569px;
                     background-color: $black;
                 }
@@ -332,7 +328,7 @@ body.index {
                     border: 0;
                     background: transparent;
                     position: absolute;
-                    top: 11.3%;
+                    top: 11.6%;
                     right: 1%;
                 }
 
@@ -350,74 +346,10 @@ body.index {
         }
     }
 
-    // footer [index.html]
+    // footer
 
-    .footer-index {
+    .footer {
         padding-top: 1.6%;
-        padding-bottom: 1%;
-
-        & .footer-items {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-            & .footer-item-index1 h3 {
-                width: 141px;
-                @extend %item-footer-open;
-
-                &:hover {
-                    color: $green;
-                    border: 2px solid $green;
-                }
-            }
-
-            & .footer-item-index2 {
-                width: 50px;
-                @extend %item-footer-open;
-
-                &:hover {
-                    border: 2px solid $green;
-                }
-
-                &:hover .footer-vk {
-                    fill: $green;
-                }
-            }
-
-            & .footer-item-index3 {
-                width: 50px;
-                @extend %item-footer-open;
-
-                &:hover {
-                    border: 2px solid $green;
-                }
-
-                &:hover .footer-dzen {
-                    fill: $green;
-                }
-            }
-
-            & .footer-item-index4 {
-                width: 50px;
-                @extend %item-footer-open;
-
-                &:hover {
-                    border: 2px solid $green;
-                }
-
-                &:hover .footer-tg {
-                    fill: $green;
-                }
-
-                & svg {
-                    transform: translate(-1px);
-                }
-            }
-        }
-
-        & a:nth-child(-n+3) {
-            margin-right: 0.7%;
-        }
-
+        padding-bottom: 2%;
     }
 }

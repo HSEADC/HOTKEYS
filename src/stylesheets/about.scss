@@ -1,0 +1,223 @@
+html.about {
+    scroll-behavior: smooth;
+}
+
+body.about {
+    overflow-x: hidden;
+    background-color: $black;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+
+    // 1 screen 
+
+    .container {
+        padding: 1.5% 2% 2% 2%;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-header {
+        display: flex;
+        justify-content: space-between;
+
+        & h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: $white;
+
+            &:hover {
+                color: $green;
+            }
+        }
+
+        & .tags-index {
+            padding-top: 1.4%;
+        }
+
+        & h2 {
+            font-size: 3rem;
+            font-weight: 600;
+            opacity: 0;
+        }
+
+        .tags-index {
+
+            & div {
+                margin-right: 0.7%;
+            }
+
+            & a {
+                margin-right: 0.7%;
+            }
+
+            .tags-index1 {
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 0.7%;
+                justify-content: center;
+
+                .tags-index1-1 {
+                    & h3 {
+                        width: 119px;
+                        @extend %shortcut-none;
+                    }
+                }
+
+                .tags-index1-2 {
+                    & h3 {
+                        width: 153px;
+                        @extend %shortcut-none;
+                    }
+                }
+
+                .tags-index1-3 {
+                    & h3 {
+                        width: 166px;
+                        @extend %item-none;
+                    }
+                }
+
+                .tags-index1-4 {
+                    & h3 {
+                        width: 124px;
+                        @extend %shortcut-none;
+                    }
+                }
+
+                .tags-index1-5 {
+                    & h3 {
+                        width: 158px;
+                        @extend %shortcut-none;
+                    }
+                }
+
+                .tags-index1-6 {
+                    & h3 {
+                        width: 132px;
+                        @extend %item-none;
+                    }
+                }
+
+                .tags-index1-7 {
+                    & h3 {
+                        width: 190px;
+                        @extend %shortcut-none;
+                    }
+                }
+
+                .tags-index1-8 {
+                    & h3 {
+                        width: 125px;
+                        @extend %shortcut-none;
+                    }
+                }
+            }
+
+            .tags-index2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                .tags-index2-1 {
+                    & h3 {
+                        width: 139px;
+                        @extend %item-open;
+
+                        &:hover {
+                            @extend %item-open-hover;
+                        }
+                    }
+                }
+
+                .tags-index2-2 {
+                    & h3 {
+                        width: 178px;
+                        @extend %shortcut-open;
+
+                        &:hover {
+                            @extend %shortcut-open-hover;
+                        }
+                    }
+                }
+
+                .tags-index2-3 {
+                    & h3 {
+                        width: 132px;
+                        @extend %item-none;
+                    }
+                }
+
+                .tags-index2-4 {
+                    & h3 {
+                        width: 170px;
+                        @extend %item-open-now;
+                    }
+                }
+
+                .tags-index2-5 {
+                    & h3 {
+                        width: 163px;
+                        @extend %shortcut-none;
+                    }
+                }
+
+                .tags-index2-6 {
+                    & h3 {
+                        width: 136px;
+                        @extend %shortcut-open;
+
+                        &:hover {
+                            @extend %shortcut-open-hover;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .block-main {
+        padding-top: 5%;
+
+        & img {
+            position: absolute;
+            left: 30.1%;
+            top: 0%;
+        }
+
+        & h4 {
+            font-size: 5rem;
+            line-height: 5.5rem;
+            font-weight: 400;
+            color: $white;
+        }
+
+        & h5 {
+            padding-top: 21%;
+            font-size: 2.8rem;
+            line-height: 1.5rem;
+            font-weight: 400;
+            color: $white;
+        }
+
+        & h6 {
+            padding-top: 1.5%;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            font-weight: 300;
+            color: $white;
+        }
+    }
+
+    .footer {
+        padding-top: 17%;
+        padding-bottom: 1%;
+
+        & .footer-items {
+            justify-content: left;
+        }
+    }
+}

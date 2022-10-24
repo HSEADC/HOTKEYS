@@ -131,13 +131,22 @@ module.exports = {
       // chunks: ['page']
     }),
 
+    // Training page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/training.html',
+      filename: './training.html'
+      // chunks: ['page']
+    }),
+
     //////
 
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
-        path: path.join(__dirname, './src/partials/analytics.html'),
-        location: 'analytics',
+        path: path.join(__dirname, './src/partials/footer.html'),
+        location: 'footer',
         template_filename: '*',
         priority: 'replace'
       }
