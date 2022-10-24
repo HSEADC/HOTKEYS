@@ -20,6 +20,8 @@ body.about {
     }
 
     .block-header {
+        position: relative;
+        z-index: 2;
         display: flex;
         justify-content: space-between;
 
@@ -183,6 +185,7 @@ body.about {
         padding-top: 5%;
 
         & img {
+            z-index: 1;
             position: absolute;
             left: 30.1%;
             top: 0%;
