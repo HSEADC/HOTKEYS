@@ -95,15 +95,6 @@ module.exports = {
       // chunks: ['page']
     }),
 
-    // Articles page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/articles.html',
-      filename: './articles.html'
-      // chunks: ['page']
-    }),
-
     // Catalog page
     new HtmlWebpackPlugin({
       hash: true,
@@ -117,8 +108,62 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/catalog/cmd-ctrl+tab.html',
-      filename: './catalog/cmd-ctrl+tab.html'
+      template: './src/catalog/cmd-ctrl-tab.html',
+      filename: './catalog/cmd-ctrl-tab.html'
+      // chunks: ['page']
+    }),
+
+    // Catalog Item page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog/cmd-ctrl-z.html',
+      filename: './catalog/cmd-ctrl-z.html'
+      // chunks: ['page']
+    }),
+
+    // Catalog Item page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog/cmd-h.html',
+      filename: './catalog/cmd-h.html'
+      // chunks: ['page']
+    }),
+
+    // Catalog Item page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog/Ctrl+Shift+↑.html',
+      filename: './catalog/Ctrl+Shift+↑.html'
+      // chunks: ['page']
+    }),
+
+    // Catalog Item page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog/cmd-h.html',
+      filename: './catalog/ctrl-w.html'
+      // chunks: ['page']
+    }),
+
+    // Catalog Item page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog/win-v.html',
+      filename: './catalog/win-d.html'
+      // chunks: ['page']
+    }),
+
+    // Catalog Item page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog/win-v.html',
+      filename: './catalog/win-v.html'
       // chunks: ['page']
     }),
 
@@ -145,12 +190,22 @@ module.exports = {
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
+        path: path.join(__dirname, './src/partials/menu.html'),
+        location: 'menu',
+        template_filename: '*',
+        priority: 'replace'
+      },
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
         path: path.join(__dirname, './src/partials/footer.html'),
         location: 'footer',
         template_filename: '*',
         priority: 'replace'
-      }
+      },
     ])
+
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]

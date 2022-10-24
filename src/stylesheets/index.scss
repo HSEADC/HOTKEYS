@@ -131,140 +131,17 @@ body.index {
     .block2 {
         padding-top: 1%;
         margin: 0 auto 7% auto;
-        display: flex;
-        flex-direction: column;
 
-        .tags-index {
+        .menu {
 
-            & div {
-                margin-right: 0.7%;
-            }
+            .items-menu-2 {
 
-            & a {
-                margin-right: 0.7%;
-            }
-
-            .tags-index1 {
-                display: flex;
-                flex-direction: row;
-                padding-bottom: 1%;
-                justify-content: center;
-
-                .tags-index1-1 {
+                .item-menu2-1 {
                     & h3 {
-                        width: 119px;
-                        @extend %shortcut-none;
-                    }
-                }
-
-                .tags-index1-2 {
-                    & h3 {
-                        width: 153px;
-                        @extend %shortcut-none;
-                    }
-                }
-
-                .tags-index1-3 {
-                    & h3 {
-                        width: 166px;
-                        @extend %item-none;
-                    }
-                }
-
-                .tags-index1-4 {
-                    & h3 {
-                        width: 124px;
-                        @extend %shortcut-none;
-                    }
-                }
-
-                .tags-index1-5 {
-                    & h3 {
-                        width: 158px;
-                        @extend %shortcut-none;
-                    }
-                }
-
-                .tags-index1-6 {
-                    & h3 {
-                        width: 132px;
-                        @extend %item-none;
-                    }
-                }
-
-                .tags-index1-7 {
-                    & h3 {
-                        width: 190px;
-                        @extend %shortcut-none;
-                    }
-                }
-
-                .tags-index1-8 {
-                    & h3 {
-                        width: 125px;
-                        @extend %shortcut-none;
-                    }
-                }
-            }
-
-            .tags-index2 {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-
-                .tags-index2-1 {
-                    & h3 {
-                        width: 139px;
                         @extend %item-open-now;
                     }
                 }
 
-                .tags-index2-2 {
-                    & h3 {
-                        width: 178px;
-                        @extend %shortcut-open;
-
-                        &:hover {
-                            @extend %shortcut-open-hover;
-                        }
-                    }
-                }
-
-                .tags-index2-3 {
-                    & h3 {
-                        width: 132px;
-                        @extend %item-none;
-                    }
-                }
-
-                .tags-index2-4 {
-                    & h3 {
-                        width: 170px;
-                        @extend %item-open;
-
-                        &:hover {
-                            @extend %item-open-hover;
-                        }
-                    }
-                }
-
-                .tags-index2-5 {
-                    & h3 {
-                        width: 163px;
-                        @extend %shortcut-none;
-                    }
-                }
-
-                .tags-index2-6 {
-                    & h3 {
-                        width: 136px;
-                        @extend %shortcut-open;
-
-                        &:hover {
-                            @extend %shortcut-open-hover;
-                        }
-                    }
-                }
             }
 
         }

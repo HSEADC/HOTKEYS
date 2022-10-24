@@ -1,0 +1,250 @@
+.block-menu {
+  display: flex;
+  flex-direction: column;
+
+  .menu {
+
+    & div {
+      margin-right: 0.7%;
+    }
+
+    & a {
+      margin-right: 0.7%;
+    }
+
+    .items-menu {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 1%;
+      justify-content: center;
+
+      .item-menu1-1 {
+        & h3 {
+          width: 119px;
+          @extend %shortcut-open;
+
+          &:hover {
+            @extend %shortcut-open-hover;
+          }
+        }
+      }
+
+      .item-menu1-2 {
+        & h3 {
+          width: 153px;
+          @extend %shortcut-open;
+
+          &:hover {
+            @extend %shortcut-open-hover;
+          }
+        }
+      }
+
+      .item-menu1-3 {
+        & h3 {
+          width: 166px;
+          @extend %item-open;
+
+          &:hover {
+            @extend %item-open-hover;
+          }
+        }
+      }
+
+      .item-menu1-4 {
+        & h3 {
+          width: 124px;
+          @extend %shortcut-open;
+
+          &:hover {
+            @extend %shortcut-open-hover;
+          }
+        }
+      }
+
+      .item-menu1-5 {
+        & h3 {
+          width: 158px;
+          @extend %shortcut-open;
+
+          &:hover {
+            @extend %shortcut-open-hover;
+          }
+        }
+      }
+
+      .item-menu1-6 {
+        & h3 {
+          width: 190px;
+          @extend %item-none;
+        }
+      }
+
+      .item-menu1-7 {
+        & h3 {
+          width: 190px;
+          @extend %shortcut-open;
+
+          &:hover {
+            @extend %shortcut-open-hover;
+          }
+        }
+      }
+
+      .item-menu1-8 {
+        & h3 {
+          width: 125px;
+          @extend %shortcut-open;
+
+          &:hover {
+            @extend %shortcut-open-hover;
+          }
+        }
+      }
+    }
+
+    .items-menu-2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .item-menu2-1 {
+        & h3 {
+          width: 139px;
+          @extend %item-open;
+
+          &:hover {
+            @extend %item-open-hover;
+          }
+        }
+      }
+
+      .item-menu2-2 {
+        & h3 {
+          width: 178px;
+          @extend %shortcut-open;
+
+          &:hover {
+            @extend %shortcut-open-hover;
+          }
+        }
+      }
+
+      .item-menu2-3 {
+        & h3 {
+          width: 132px;
+          @extend %item-open;
+
+          &:hover {
+            @extend %item-open-hover;
+          }
+        }
+      }
+
+      .item-menu2-4 {
+        & h3 {
+          width: 170px;
+          @extend %item-open;
+
+          &:hover {
+            @extend %item-open-hover;
+          }
+        }
+      }
+
+      .item-menu2-5 {
+        & h3 {
+          width: 160px;
+          @extend %shortcut-open;
+
+          &:hover {
+            @extend %shortcut-open-hover;
+          }
+        }
+      }
+
+      .item-menu2-6 {
+        & h3 {
+          width: 136px;
+          @extend %shortcut-open;
+
+          &:hover {
+            @extend %shortcut-open-hover;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.footer {
+
+  & .footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & .footer-item-up h3 {
+      width: 141px;
+      @extend %item-footer-open;
+
+      &:hover {
+        color: $green;
+        border: 2px solid $green;
+      }
+    }
+
+    & .footer-item-vk {
+      width: 50px;
+      @extend %item-footer-open;
+
+      &:hover {
+        border: 2px solid $green;
+      }
+
+      &:hover .footer-vk {
+        fill: $green;
+      }
+
+      & svg {
+        transform: translate(1px);
+      }
+    }
+
+    & .footer-item-dzen {
+      width: 50px;
+      @extend %item-footer-open;
+
+      &:hover {
+        border: 2px solid $green;
+      }
+
+      &:hover .footer-dzen {
+        fill: $green;
+      }
+    }
+
+    & .footer-item-tg {
+      width: 50px;
+      @extend %item-footer-open;
+
+      &:hover {
+        border: 2px solid $green;
+      }
+
+      &:hover .footer-tg {
+        fill: $green;
+      }
+
+      // & svg {
+      //   transform: translate(-2px);
+      // }
+    }
+  }
+
+  & a:nth-child(-n+3) {
+    margin-right: 0.7%;
+  }
+
+}
