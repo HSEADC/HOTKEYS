@@ -135,8 +135,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/catalog/Ctrl+Shift+↑.html',
-      filename: './catalog/Ctrl+Shift+↑.html'
+      template: './src/catalog/cmd-ctrl-o.html',
+      filename: './catalog/cmd-ctrl-o.html'
       // chunks: ['page']
     }),
 
