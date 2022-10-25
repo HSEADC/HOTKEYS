@@ -104,12 +104,21 @@ module.exports = {
       // chunks: ['page']
     }),
 
-    // Catalog Item page
+    // Selections page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/catalog/cmd-ctrl-tab.html',
-      filename: './catalog/cmd-ctrl-tab.html'
+      template: './src/selections.html',
+      filename: './selections.html'
+      // chunks: ['page']
+    }),
+
+    // Training page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/training.html',
+      filename: './training.html'
       // chunks: ['page']
     }),
 
@@ -117,8 +126,35 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/catalog/cmd-ctrl-z.html',
-      filename: './catalog/cmd-ctrl-z.html'
+      template: './src/catalog/alt-tab.html',
+      filename: './catalog/alt-tab.html'
+      // chunks: ['page']
+    }),
+
+    // Catalog Item page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog/cmd-tab.html',
+      filename: './catalog/cmd-tab.html'
+      // chunks: ['page']
+    }),
+
+    // Catalog Item page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog/ctrl-z.html',
+      filename: './catalog/ctrl-z.html'
+      // chunks: ['page']
+    }),
+
+    // Catalog Item page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog/cmd-z.html',
+      filename: './catalog/cmd-z.html'
       // chunks: ['page']
     }),
 
@@ -135,8 +171,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/catalog/cmd-ctrl-o.html',
-      filename: './catalog/cmd-ctrl-o.html'
+      template: './src/catalog/ctrl-o.html',
+      filename: './catalog/ctrl-o.html'
       // chunks: ['page']
     }),
 
@@ -144,7 +180,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/catalog/cmd-h.html',
+      template: './src/catalog/cmd-o.html',
+      filename: './catalog/cmd-o.html'
+      // chunks: ['page']
+    }),
+
+    // Catalog Item page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog/ctrl-w.html',
       filename: './catalog/ctrl-w.html'
       // chunks: ['page']
     }),
@@ -153,7 +198,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/catalog/win-v.html',
+      template: './src/catalog/win-d.html',
       filename: './catalog/win-d.html'
       // chunks: ['page']
     }),
@@ -164,24 +209,6 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/catalog/win-v.html',
       filename: './catalog/win-v.html'
-      // chunks: ['page']
-    }),
-
-    // Selections page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/selections.html',
-      filename: './selections.html'
-      // chunks: ['page']
-    }),
-
-    // Training page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/training.html',
-      filename: './training.html'
       // chunks: ['page']
     }),
 

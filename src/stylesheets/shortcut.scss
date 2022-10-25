@@ -40,21 +40,44 @@ body.shortcut {
       opacity: 0;
     }
 
-    .menu {
-
-      .items-menu-2 {
-
-        .item-menu2-4 {
-          & h3 {
-            @extend %item-open-now;
-          }
-        }
-
-      }
-
-    }
   }
 
+  .block-nav {
+    padding-top: 4%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-back {
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+
+      &:hover {
+        color: $green;
+        border: 2px solid $green;
+      }
+    }
+
+    .nav-text {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .nav-back {
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+
+      &:hover {
+        color: $green;
+        border: 2px solid $green;
+      }
+    }
+  }
 
   .footer {
     padding-top: 17%;
