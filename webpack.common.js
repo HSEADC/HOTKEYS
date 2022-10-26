@@ -249,6 +249,24 @@ module.exports = {
         template_filename: '*',
         priority: 'replace'
       },
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/mfooter.html'),
+        location: 'mfooter',
+        template_filename: '*',
+        priority: 'replace'
+      },
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/wfooter.html'),
+        location: 'wfooter',
+        template_filename: '*',
+        priority: 'replace'
+      },
     ])
 
   ],
