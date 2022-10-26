@@ -1,4 +1,5 @@
 body.shortcut {
+  overflow-y: hidden;
   background-color: $black;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -43,7 +44,7 @@ body.shortcut {
   }
 
   .block-nav {
-    padding-top: 4%;
+    padding-top: 3%;
     display: flex;
     justify-content: space-between;
 
@@ -58,7 +59,7 @@ body.shortcut {
       }
     }
 
-    .nav-text {
+    & h1 {
       font-size: 1.55rem;
       line-height: 1.8rem;
       letter-spacing: 0.07rem;
@@ -67,24 +68,55 @@ body.shortcut {
       color: $white;
     }
 
-    .nav-back {
+    .nav-back-none {
+      opacity: 0;
       width: 268px;
       @extend %item-footer-open;
       height: 55px;
-
-      &:hover {
-        color: $green;
-        border: 2px solid $green;
-      }
     }
   }
 
-  .footer {
-    padding-top: 17%;
-    padding-bottom: 1%;
+  .block-footer {
+    padding-top: 3.5%;
+    display: flex;
+    justify-content: space-between;
 
-    & .footer-items {
-      justify-content: left;
+    .footer-text {
+      align-self: center;
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .footer-items-mw {
+      width: 7%;
+      display: flex;
+      flex-direction: row;
+
+      & h1 {
+        font-size: 1.55rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.07rem;
+        text-align: center;
+        font-weight: 300;
+        color: $white;
+      }
+
+      // .windows {
+      //   .win-icon .windows:hover {
+      //     fill: $green;
+      //   }
+      // }
+
+      // .mac-icon:hover {
+      //   fill: $green;
+      // }
     }
   }
 }

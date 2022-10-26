@@ -226,6 +226,24 @@ module.exports = {
 
     new HtmlWebpackPartialsPlugin([
       {
+        path: path.join(__dirname, './src/partials/windows.html'),
+        location: 'windows',
+        template_filename: '*',
+        priority: 'replace'
+      },
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/macos.html'),
+        location: 'macos',
+        template_filename: '*',
+        priority: 'replace'
+      },
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
         path: path.join(__dirname, './src/partials/footer.html'),
         location: 'footer',
         template_filename: '*',
