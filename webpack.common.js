@@ -226,6 +226,15 @@ module.exports = {
 
     new HtmlWebpackPartialsPlugin([
       {
+        path: path.join(__dirname, './src/partials/menu-item.html'),
+        location: 'menu-item',
+        template_filename: '*',
+        priority: 'replace'
+      },
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
         path: path.join(__dirname, './src/partials/windows.html'),
         location: 'windows',
         template_filename: '*',
