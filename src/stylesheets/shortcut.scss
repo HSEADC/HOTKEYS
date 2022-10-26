@@ -1,0 +1,586 @@
+// win+v
+
+body.win-v {
+  // overflow-y: hidden;
+  background-color: $black;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+
+  // 1 screen 
+
+  .container {
+    padding: 1.5% 2% 2% 2%;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    .block-menu {
+      padding-top: 1.4%;
+
+      .menu {
+
+        .items-menu {
+
+          .item-menu1-4 {
+            & h3 {
+              @extend %item-open-now;
+            }
+          }
+
+        }
+
+      }
+    }
+
+    & h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      opacity: 0;
+    }
+
+  }
+
+  .block-nav {
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-back {
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+
+      &:hover {
+        color: $green;
+        border: 2px solid $green;
+      }
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .nav-back-none {
+      opacity: 0;
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+    }
+  }
+
+  .windows {
+
+    .windows-keyboard {
+
+      & svg {
+
+        .win-win {
+          animation: win-win 4s infinite ease-out;
+        }
+
+        .v-win {
+          animation: v-win 4s infinite ease-out;
+        }
+      }
+    }
+  }
+
+  .block-footer {
+    padding-top: 3.5%;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-text {
+      align-self: center;
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+  }
+}
+
+@keyframes win-win {
+
+  9% {
+    fill: #515151;
+  }
+
+  10% {
+    fill: $green;
+  }
+
+  50% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
+
+@keyframes v-win {
+  39% {
+    fill: #515151;
+  }
+
+  40% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
+
+// alt+tab
+
+body.alt-tab {
+  // overflow-y: hidden;
+  background-color: $black;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+
+  // 1 screen 
+
+  .container {
+    padding: 1.5% 2% 2% 2%;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    .block-menu {
+      padding-top: 1.4%;
+
+      .menu {
+
+        .items-menu {
+
+          .item-menu1-4 {
+            & h3 {
+              @extend %item-open-now;
+            }
+          }
+
+        }
+
+      }
+    }
+
+    & h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      opacity: 0;
+    }
+
+  }
+
+  .block-nav {
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-back {
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+
+      &:hover {
+        color: $green;
+        border: 2px solid $green;
+      }
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .nav-back-none {
+      opacity: 0;
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+    }
+  }
+
+  .windows {
+
+    .windows-keyboard {
+
+      & svg {
+
+        .alt-win {
+          animation: alt-win 4s infinite ease-out;
+        }
+
+        .tab-win {
+          animation: tab-win 4s infinite ease-out;
+        }
+      }
+    }
+  }
+
+  .block-footer {
+    padding-top: 3.5%;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-text {
+      align-self: center;
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .footer-items-mw {
+      width: 6%;
+      display: flex;
+      flex-direction: row;
+
+      .win {
+        margin-right: 8%;
+      }
+
+      .win :hover {
+        .win-icon {
+          fill: $green;
+        }
+      }
+
+      .mac :hover {
+        .mac-icon {
+          fill: $green;
+        }
+      }
+    }
+
+  }
+}
+
+@keyframes alt-win {
+
+  9% {
+    fill: #515151;
+  }
+
+  10% {
+    fill: $green;
+  }
+
+  50% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
+
+@keyframes tab-win {
+  39% {
+    fill: #515151;
+  }
+
+  40% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
+
+//cmd+tab
+
+body.cmd-tab {
+  // overflow-y: hidden;
+  background-color: $black;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+
+  // 1 screen 
+
+  .container {
+    padding: 1.5% 2% 2% 2%;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    .block-menu {
+      padding-top: 1.4%;
+
+      .menu {
+
+        .items-menu {
+
+          .item-menu1-4 {
+            & h3 {
+              @extend %item-open-now;
+            }
+          }
+
+        }
+
+      }
+    }
+
+    & h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      opacity: 0;
+    }
+
+  }
+
+  .block-nav {
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-back {
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+
+      &:hover {
+        color: $green;
+        border: 2px solid $green;
+      }
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .nav-back-none {
+      opacity: 0;
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+    }
+  }
+
+  .macos {
+
+    .macos-keyboard {
+
+      & svg {
+
+        .cmd-mac {
+          animation: cmd-mac 4s infinite ease-out;
+        }
+
+        .tab-mac {
+          animation: tab-mac 4s infinite ease-out;
+        }
+      }
+    }
+  }
+
+  .block-footer {
+    padding-top: 3.5%;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-text {
+      align-self: center;
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .footer-items-mw {
+      width: 6%;
+      display: flex;
+      flex-direction: row;
+
+      .win {
+        margin-right: 8%;
+      }
+
+      .win :hover {
+        .win-icon {
+          fill: $green;
+        }
+      }
+
+      .mac :hover {
+        .mac-icon {
+          fill: $green;
+        }
+      }
+    }
+
+  }
+}
+
+@keyframes cmd-mac {
+
+  9% {
+    fill: #515151;
+  }
+
+  10% {
+    fill: $green;
+  }
+
+  50% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
+
+@keyframes tab-mac {
+  39% {
+    fill: #515151;
+  }
+
+  40% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}

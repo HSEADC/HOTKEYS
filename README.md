@@ -1,12 +1,10 @@
-# Static Site Boilerplate
+# hotkeys - архив полезных сочетаний клавиш
 
-## How to start
-
-Clone the repository, install packages, start
+## разработка
 
 ```
-git clone https://github.com/HSEADC/B21DZ09-Project-3.git
-cd B21DZ09-Project-3
+git clone https://github.com/HSEADC/B21DZ09-Project-4-2.git
+cd B21DZ09-Project-4-2
 yarn
 yarn start
 ```
