@@ -34,7 +34,7 @@ body.index {
         color: $white;
 
         & div {
-            margin: 3% auto 7% auto;
+            margin: 3% auto 9% auto;
             font-size: 25rem;
             font-weight: 600;
             text-align: center;
@@ -42,10 +42,10 @@ body.index {
             // animation-play-state: running;
             cursor: help;
 
-            // &:hover {
-            //     animation-play-state: paused;
-            //     color: $green;
-            // }
+            &:hover {
+                // animation-play-state: paused;
+                color: $green;
+            }
         }
 
         @keyframes change-text {
