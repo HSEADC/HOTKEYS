@@ -1,12 +1,10 @@
 // win+v
 
 body.win-v {
-  // overflow-y: hidden;
+  overflow-y: hidden;
   background-color: $black;
   font-family: "Inter", sans-serif;
   font-style: normal;
-
-  // 1 screen 
 
   .container {
     padding: 1.5% 2% 2% 2%;
@@ -127,6 +125,7 @@ body.win-v {
       color: $white;
     }
 
+
   }
 }
 
@@ -179,15 +178,13 @@ body.win-v {
   }
 }
 
-// alt+tab
+// ctrl+z
 
-body.alt-tab {
-  // overflow-y: hidden;
+body.ctrl-z {
+  overflow-y: hidden;
   background-color: $black;
   font-family: "Inter", sans-serif;
   font-style: normal;
-
-  // 1 screen 
 
   .container {
     padding: 1.5% 2% 2% 2%;
@@ -221,7 +218,561 @@ body.alt-tab {
 
         .items-menu {
 
-          .item-menu1-4 {
+          .item-menu1-1 {
+            & h3 {
+              @extend %item-open-now;
+            }
+          }
+
+        }
+
+      }
+    }
+
+    & h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      opacity: 0;
+    }
+
+  }
+
+  .block-nav {
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-back {
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+
+      &:hover {
+        color: $green;
+        border: 2px solid $green;
+      }
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .nav-back-none {
+      opacity: 0;
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+    }
+  }
+
+  .windows {
+
+    .windows-keyboard {
+
+      & svg {
+
+        .ctrl-win {
+          animation: ctrl-win 4s infinite ease-out;
+        }
+
+        .z-win {
+          animation: z-win 4s infinite ease-out;
+        }
+      }
+    }
+  }
+
+  .block-footer {
+    padding-top: 3.5%;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-text {
+      align-self: center;
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .footer-items {
+      width: 6.5%;
+      display: flex;
+      flex-direction: row;
+
+      & :first-child {
+        margin-right: 8%;
+      }
+
+      & :nth-child(2) {
+        .win-icon {
+          fill: $green;
+        }
+      }
+
+      .mac :hover {
+        .mac-icon {
+          fill: $green;
+        }
+      }
+    }
+
+  }
+}
+
+@keyframes ctrl-win {
+
+  9% {
+    fill: #515151;
+  }
+
+  10% {
+    fill: $green;
+  }
+
+  50% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
+
+@keyframes z-win {
+  39% {
+    fill: #515151;
+  }
+
+  40% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
+
+//cmd+z
+
+body.cmd-z {
+  overflow-y: hidden;
+  background-color: $black;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+
+  .container {
+    padding: 1.5% 2% 2% 2%;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    .block-menu {
+      padding-top: 1.4%;
+
+      .menu {
+
+        .items-menu {
+
+          .item-menu1-2 {
+            & h3 {
+              @extend %item-open-now;
+            }
+          }
+
+        }
+
+      }
+    }
+
+    & h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      opacity: 0;
+    }
+
+  }
+
+  .block-nav {
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-back {
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+
+      &:hover {
+        color: $green;
+        border: 2px solid $green;
+      }
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .nav-back-none {
+      opacity: 0;
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+    }
+  }
+
+  .macos {
+
+    .macos-keyboard {
+
+      & svg {
+
+        .cmd-mac {
+          animation: cmd-mac 4s infinite ease-out;
+        }
+
+        .z-mac {
+          animation: z-mac 4s infinite ease-out;
+        }
+      }
+    }
+  }
+
+  .block-footer {
+    padding-top: 3.5%;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-text {
+      align-self: center;
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .footer-items {
+      width: 6.5%;
+      display: flex;
+      flex-direction: row;
+
+      .win {
+        margin-right: 8%;
+
+        & svg {
+          &:hover .win-icon {
+            fill: $green;
+          }
+        }
+      }
+
+      .mac {
+        .win-icon {
+          fill: $green;
+        }
+      }
+    }
+  }
+}
+
+@keyframes cmd-mac {
+
+  9% {
+    fill: #515151;
+  }
+
+  10% {
+    fill: $green;
+  }
+
+  50% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
+
+@keyframes z-mac {
+  39% {
+    fill: #515151;
+  }
+
+  40% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
+
+// win+d
+
+body.win-d {
+  overflow-y: hidden;
+  background-color: $black;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+
+  .container {
+    padding: 1.5% 2% 2% 2%;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    .block-menu {
+      padding-top: 1.4%;
+
+      .menu {
+
+        .items-menu {
+
+          .item-menu1-8 {
+            & h3 {
+              @extend %item-open-now;
+            }
+          }
+
+        }
+
+      }
+    }
+
+    & h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      opacity: 0;
+    }
+
+  }
+
+  .block-nav {
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-back {
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+
+      &:hover {
+        color: $green;
+        border: 2px solid $green;
+      }
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .nav-back-none {
+      opacity: 0;
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+    }
+  }
+
+  .windows {
+
+    .windows-keyboard {
+
+      & svg {
+
+        .win-win {
+          animation: win-win 4s infinite ease-out;
+        }
+
+        .d-win {
+          animation: d-win 4s infinite ease-out;
+        }
+      }
+    }
+  }
+
+  .block-footer {
+    padding-top: 3.5%;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-text {
+      align-self: center;
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+
+  }
+}
+
+@keyframes d-win {
+  39% {
+    fill: #515151;
+  }
+
+  40% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
+
+// alt+tab
+
+body.alt-tab {
+  overflow-y: hidden;
+  background-color: $black;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+
+  .container {
+    padding: 1.5% 2% 2% 2%;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    .block-menu {
+      padding-top: 1.4%;
+
+      .menu {
+
+        .items-menu-2 {
+
+          .item-menu2-6 {
             & h3 {
               @extend %item-open-now;
             }
@@ -308,16 +859,16 @@ body.alt-tab {
       color: $white;
     }
 
-    .footer-items-mw {
-      width: 6%;
+    .footer-items {
+      width: 6.5%;
       display: flex;
       flex-direction: row;
 
-      .win {
+      & :first-child {
         margin-right: 8%;
       }
 
-      .win :hover {
+      & :nth-child(2) {
         .win-icon {
           fill: $green;
         }
@@ -385,12 +936,10 @@ body.alt-tab {
 //cmd+tab
 
 body.cmd-tab {
-  // overflow-y: hidden;
+  overflow-y: hidden;
   background-color: $black;
   font-family: "Inter", sans-serif;
   font-style: normal;
-
-  // 1 screen 
 
   .container {
     padding: 1.5% 2% 2% 2%;
@@ -422,9 +971,9 @@ body.cmd-tab {
 
       .menu {
 
-        .items-menu {
+        .items-menu-2 {
 
-          .item-menu1-4 {
+          .item-menu2-2 {
             & h3 {
               @extend %item-open-now;
             }
@@ -511,42 +1060,36 @@ body.cmd-tab {
       color: $white;
     }
 
-    .footer-items-mw {
-      width: 6%;
+    .footer-items {
+      width: 6.5%;
       display: flex;
       flex-direction: row;
 
       .win {
         margin-right: 8%;
+
+        & svg {
+          &:hover .win-icon {
+            fill: $green;
+          }
+        }
       }
 
-      .win :hover {
+      .mac {
         .win-icon {
           fill: $green;
         }
       }
-
-      .mac :hover {
-        .mac-icon {
-          fill: $green;
-        }
-      }
     }
-
   }
 }
 
-@keyframes cmd-mac {
-
-  9% {
+@keyframes tab-mac {
+  39% {
     fill: #515151;
   }
 
-  10% {
-    fill: $green;
-  }
-
-  50% {
+  40% {
     fill: $green;
   }
 
@@ -563,7 +1106,464 @@ body.cmd-tab {
   }
 }
 
-@keyframes tab-mac {
+// ctrl+w
+
+body.ctrl-w {
+  overflow-y: hidden;
+  background-color: $black;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+
+  .container {
+    padding: 1.5% 2% 2% 2%;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    .block-menu {
+      padding-top: 1.4%;
+
+      .menu {
+
+        .items-menu-2 {
+
+          .item-menu2-5 {
+            & h3 {
+              @extend %item-open-now;
+            }
+          }
+
+        }
+
+      }
+    }
+
+    & h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      opacity: 0;
+    }
+
+  }
+
+  .block-nav {
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-back {
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+
+      &:hover {
+        color: $green;
+        border: 2px solid $green;
+      }
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .nav-back-none {
+      opacity: 0;
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+    }
+  }
+
+  .windows {
+
+    .windows-keyboard {
+
+      & svg {
+
+        .ctrl-win {
+          animation: ctrl-win 4s infinite ease-out;
+        }
+
+        .w-win {
+          animation: w-win 4s infinite ease-out;
+        }
+      }
+    }
+  }
+
+  .block-footer {
+    padding-top: 3.5%;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-text {
+      align-self: center;
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+
+  }
+}
+
+@keyframes w-win {
+  39% {
+    fill: #515151;
+  }
+
+  40% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
+
+// cmd+h
+
+body.cmd-h {
+  overflow-y: hidden;
+  background-color: $black;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+
+  .container {
+    padding: 1.5% 2% 2% 2%;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    .block-menu {
+      padding-top: 1.4%;
+
+      .menu {
+
+        .items-menu {
+
+          .item-menu1-5 {
+            & h3 {
+              @extend %item-open-now;
+            }
+          }
+
+        }
+
+      }
+    }
+
+    & h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      opacity: 0;
+    }
+
+  }
+
+  .block-nav {
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-back {
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+
+      &:hover {
+        color: $green;
+        border: 2px solid $green;
+      }
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .nav-back-none {
+      opacity: 0;
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+    }
+  }
+
+  .macos {
+
+    .macos-keyboard {
+
+      & svg {
+
+        .cmd-mac {
+          animation: cmd-mac 4s infinite ease-out;
+        }
+
+        .h-mac {
+          animation: h-mac 4s infinite ease-out;
+        }
+      }
+    }
+  }
+
+  .block-footer {
+    padding-top: 3.5%;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-text {
+      align-self: center;
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+  }
+}
+
+@keyframes h-mac {
+  39% {
+    fill: #515151;
+  }
+
+  40% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
+
+
+//cmd+o
+
+body.cmd-o {
+  overflow-y: hidden;
+  background-color: $black;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+
+  .container {
+    padding: 1.5% 2% 2% 2%;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    .block-menu {
+      padding-top: 1.4%;
+
+      .menu {
+
+        .items-menu {
+
+          .item-menu1-7 {
+            & h3 {
+              @extend %item-open-now;
+            }
+          }
+
+        }
+
+      }
+    }
+
+    & h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      opacity: 0;
+    }
+
+  }
+
+  .block-nav {
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-back {
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+
+      &:hover {
+        color: $green;
+        border: 2px solid $green;
+      }
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .nav-back-none {
+      opacity: 0;
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+    }
+  }
+
+  .macos {
+
+    .macos-keyboard {
+
+      & svg {
+
+        .cmd-mac {
+          animation: cmd-mac 4s infinite ease-out;
+        }
+
+        .o-mac {
+          animation: o-mac 4s infinite ease-out;
+        }
+      }
+    }
+  }
+
+  .block-footer {
+    padding-top: 3.5%;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-text {
+      align-self: center;
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .footer-items {
+      width: 6.5%;
+      display: flex;
+      flex-direction: row;
+
+      .win {
+        margin-right: 8%;
+
+        & svg {
+          &:hover .win-icon {
+            fill: $green;
+          }
+        }
+      }
+
+      .mac {
+        .win-icon {
+          fill: $green;
+        }
+      }
+    }
+  }
+}
+
+@keyframes o-mac {
   39% {
     fill: #515151;
   }
