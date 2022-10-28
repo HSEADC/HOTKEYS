@@ -1,8 +1,8 @@
-html.catalog {
+html.selections {
     scroll-behavior: smooth;
 }
 
-body.catalog {
+body.selections {
     background-color: $black;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -37,9 +37,9 @@ body.catalog {
 
             .menu {
 
-                .items-menu-2 {
+                .items-menu {
 
-                    .item-menu2-3 {
+                    .item-menu1-3 {
                         & h3 {
                             @extend %item-open-now;
                         }
@@ -106,75 +106,6 @@ body.catalog {
                     background-color: transparent;
                 }
 
-                .select-flex {
-                    margin-top: 1%;
-                    display: flex;
-                    flex-direction: row;
-
-                    & select:first-child {
-                        margin-right: 1.7%;
-                        padding-left: 2.4%;
-                        width: 185px;
-                        font-size: 1.5rem;
-                        height: 45px;
-                        color: $white;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                        border: none;
-                        background: url(images/select-point.svg) 90% / 10% no-repeat;
-
-                        option {
-                            border: none;
-                            background-color: $black;
-                            color: $white;
-                        }
-                    }
-
-                    & select:nth-child(2) {
-                        margin-right: 2%;
-                        padding-left: 0.5%;
-                        width: 185px;
-                        font-size: 1.5rem;
-                        height: 45px;
-                        color: $white;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                        border: transparent;
-                        background: url(images/select-point.svg) 90% / 10% no-repeat;
-
-                        option {
-                            border: none;
-                            background-color: $black;
-                            color: $white;
-                        }
-                    }
-
-
-                    & select:last-child {
-                        width: 192px;
-                        font-size: 1.5rem;
-                        height: 45px;
-                        color: $white;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                        border: none;
-                        background: url(images/select-point.svg) 90% / 10% no-repeat;
-
-                        option {
-                            border: none;
-                            background-color: $black;
-                            color: $white;
-                        }
-                    }
-
-                    & select:focus-visible {
-                        border: rgb(206, 45, 45);
-                    }
-                }
-
             }
         }
     }
@@ -185,28 +116,28 @@ body.catalog {
 
         .block-shortcuts-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(585px, 1fr));
             column-gap: 1.5%;
             row-gap: 5%
         }
 
         .block-shortcut-item {
-            @extend %menu-shortcut;
+            @extend %menu-selection;
 
             &:hover {
-                @extend %menu-shortcut-hover;
+                @extend %menu-selection-hover;
             }
 
             & h2 {
-                margin: 4% 0 1% 6%;
+                margin: 4% 0 0 6%;
                 font-size: 1.4rem;
                 line-height: 1.7rem;
                 font-weight: 400;
             }
 
             & h1 {
-                margin: 4% 0 1% 6%;
-                font-size: 2.5rem;
+                margin: 0 0 0 6%;
+                font-size: 2rem;
                 font-weight: 500;
             }
         }
