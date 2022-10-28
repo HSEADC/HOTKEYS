@@ -203,6 +203,15 @@ module.exports = {
       // chunks: ['page']
     }),
 
+    // Catalog Item page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog/alt-f4.html',
+      filename: './catalog/alt-f4.html'
+      // chunks: ['page']
+    }),
+
     //////
 
     // Partials

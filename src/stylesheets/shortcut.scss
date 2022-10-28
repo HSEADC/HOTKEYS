@@ -1584,3 +1584,164 @@ body.cmd-o {
     fill: #515151;
   }
 }
+
+// alt+f4
+
+body.alt-f4 {
+  overflow-y: hidden;
+  background-color: $black;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+
+  .container {
+    padding: 1.5% 2% 2% 2%;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    & h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    // .block-menu {
+    //   padding-top: 1.4%;
+
+    //   .menu {
+
+    //     .items-menu-2 {
+
+    //       .item-menu2-5 {
+    //         & h3 {
+    //           @extend %item-open-now;
+    //         }
+    //       }
+
+    //     }
+
+    //   }
+    // }
+
+    & h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      opacity: 0;
+    }
+
+  }
+
+  .block-nav {
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-back {
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+
+      &:hover {
+        color: $green;
+        border: 2px solid $green;
+      }
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+    .nav-back-none {
+      opacity: 0;
+      width: 268px;
+      @extend %item-footer-open;
+      height: 55px;
+    }
+  }
+
+  .windows {
+
+    .windows-keyboard {
+
+      & svg {
+
+        .fn-win {
+          fill: $green;
+        }
+
+        .fn2-win {
+          fill: $white;
+        }
+
+        .alt-win {
+          animation: ctrl-win 4s infinite ease-out;
+        }
+
+        .four-win {
+          animation: four-win 4s infinite ease-out;
+        }
+      }
+    }
+  }
+
+  .block-footer {
+    padding-top: 3.5%;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-text {
+      align-self: center;
+    }
+
+    & h1 {
+      font-size: 1.55rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.07rem;
+      text-align: center;
+      font-weight: 300;
+      color: $white;
+    }
+
+
+  }
+}
+
+@keyframes four-win {
+  39% {
+    fill: #515151;
+  }
+
+  40% {
+    fill: $green;
+  }
+
+  90% {
+    fill: $green;
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
