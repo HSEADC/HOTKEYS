@@ -7,17 +7,56 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
-  <title>Каталог шорткатов</title>
+  <title>Каталог</title>
 </head>
 
 <body class="catalog">
-  <a href="./">На главную</a>
-  <h1>Каталог</h1>
-  <p>
-    Здесь будет каталог шорткатов. С поиском, с фильтрами поиска и все в таком
-    духе.
-  </p>
-  <a href="catalog/catalogItem.html">CTRL + F</a>
+  <div class="container">
+    <div class="block">
+      <div class="block-header">
+        <div class="text-logo"><a href="../">
+            <h1>hotkeys</h1>
+          </a>
+        </div>
+        <menu-item></menu-item>
+        <div class="text-logo-none">
+          <h2>hotkeys</h1>
+        </div>
+
+
+      </div>
+      <div class="block-search">
+        <form class="search">
+          <div class="search-bar">
+            <input class="search-input" type="text" placeholder="Поиск шорткатов" type="search">
+            <button type="submit">Найти</button>
+            <div class="select-flex">
+              <select name="sistem" id="option">
+                <option selected>Система</option>
+                <option>Windows</option>
+                <option>macOS</option>
+              </select>
+              <select name="programm" id="option">
+                <option selected>Программа</option>
+                <option>Figma</option>
+                <option>VS Code</option>
+                <option>Notion</option>
+                <option>Cinema 4D</option>
+                <option>Microsoft Word</option>
+                <option>Google Chrome</option>
+              </select>
+              <select name="popular" id="option">
+                <option selected>Популярные</option>
+                <option>Ctrl+V</option>
+                <option>⌘Cmd+Tab</option>
+                <option>Ctrl+D</option>
+                <option>⌘Cmd+H</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 </body>
 
 </html>
