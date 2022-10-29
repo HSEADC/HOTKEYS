@@ -134,3 +134,79 @@ $green: #CBFB45;
     color: $white-hov;
     background-color: $black-hov;
 }
+
+
+// responsive 360px
+
+%shortcut-none-min {
+    height: 40px;
+    border: 1.5px solid $grey3;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $grey3;
+    display: grid;
+    place-items: center;
+    cursor: wait;
+}
+
+%shortcut-open-min {
+    height: 40px;
+    border: 1.5px solid $grey3;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $grey3;
+    display: grid;
+    place-items: center;
+    cursor: help;
+}
+
+%item-none-min {
+    height: 40px;
+    border: 1.5px solid $grey3;
+    background-color: $grey3;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $black;
+    display: grid;
+    place-items: center;
+    cursor: wait;
+}
+
+%item-open-min {
+    height: 40px;
+    border: 1.5px solid $grey3;
+    background-color: $grey3;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+    color: $black;
+    display: grid;
+    place-items: center;
+}
+
+%item-open-now-min {
+    height: 40px;
+    border: 1.5px solid $green;
+    background-color: $green;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $black;
+    display: grid;
+    place-items: center;
+}
+
+%item-footer-open-min {
+    height: 40px;
+    border: 1.5px solid $grey;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $grey;
+    display: grid;
+    place-items: center;
+}
