@@ -171,15 +171,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/catalog/ctrl-o.html',
-      filename: './catalog/ctrl-o.html'
-      // chunks: ['page']
-    }),
-
-    // Catalog Item page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
       template: './src/catalog/cmd-o.html',
       filename: './catalog/cmd-o.html'
       // chunks: ['page']
@@ -209,6 +200,15 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/catalog/win-v.html',
       filename: './catalog/win-v.html'
+      // chunks: ['page']
+    }),
+
+    // Catalog Item page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/catalog/alt-f4.html',
+      filename: './catalog/alt-f4.html'
       // chunks: ['page']
     }),
 
@@ -255,24 +255,6 @@ module.exports = {
       {
         path: path.join(__dirname, './src/partials/footer.html'),
         location: 'footer',
-        template_filename: '*',
-        priority: 'replace'
-      },
-    ]),
-
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/mfooter.html'),
-        location: 'mfooter',
-        template_filename: '*',
-        priority: 'replace'
-      },
-    ]),
-
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/wfooter.html'),
-        location: 'wfooter',
         template_filename: '*',
         priority: 'replace'
       },

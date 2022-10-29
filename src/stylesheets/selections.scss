@@ -1,0 +1,154 @@
+html.selections {
+    scroll-behavior: smooth;
+}
+
+body.selections {
+    background-color: $black;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+
+    .container {
+        padding: 1.5% 2% 2% 2%;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-header {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+
+        & h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: $white;
+
+            &:hover {
+                color: $green;
+            }
+        }
+
+        .block-menu {
+            padding-top: 1.4%;
+
+            .menu {
+
+                .items-menu {
+
+                    .item-menu1-3 {
+                        & h3 {
+                            @extend %item-open-now;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        & h2 {
+            font-size: 3rem;
+            font-weight: 600;
+            opacity: 0;
+        }
+
+    }
+
+    .block-search {
+        margin-top: 3%;
+        width: 100%;
+
+        & form {
+            width: 100%;
+
+            .search-bar {
+                position: relative;
+                max-width: 100%;
+
+                & input {
+                    width: 100%;
+                    height: 57px;
+                    border-radius: 42px;
+                    background-color: $black2;
+                    // border: 1.5px solid $grey3;
+                    border: transparent;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    cursor: help;
+                }
+
+                .search-input:focus-visible {
+                    outline-color: transparent;
+                    border-color: transparent;
+                }
+
+                .search-input::-webkit-input-placeholder {
+                    color: $grey2;
+                }
+
+                input[placeholder] {
+                    padding-left: 1.3%;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+
+                & button {
+                    position: absolute;
+                    top: 8%;
+                    right: 2%;
+                    font-size: 1.5rem;
+                    color: transparent;
+                    border: none;
+                    background-color: transparent;
+                }
+
+            }
+        }
+    }
+
+    .block-shortcuts {
+        padding-top: 2.5%;
+        padding-bottom: 5%;
+
+        .block-shortcuts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(585px, 1fr));
+            column-gap: 1.5%;
+            row-gap: 5%
+        }
+
+        .block-shortcut-item {
+            @extend %menu-selection;
+
+            &:hover {
+                @extend %menu-selection-hover;
+            }
+
+            & h2 {
+                margin: 4% 0 0 6%;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                font-weight: 400;
+            }
+
+            & h1 {
+                margin: 0 0 0 6%;
+                font-size: 2rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .footer {
+        padding-top: 2%;
+        padding-bottom: 1%;
+
+        & .footer-items {
+            justify-content: left;
+        }
+    }
+}

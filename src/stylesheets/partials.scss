@@ -4,10 +4,6 @@
 
   .menu {
 
-    & div {
-      margin-right: 0.7%;
-    }
-
     & a {
       margin-right: 0.7%;
     }
@@ -76,7 +72,11 @@
       .item-menu1-6 {
         & h3 {
           width: 190px;
-          @extend %item-none;
+          @extend %item-open;
+
+          &:hover {
+            @extend %item-open-hover;
+          }
         }
       }
 
@@ -92,6 +92,7 @@
       }
 
       .item-menu1-8 {
+
         & h3 {
           width: 125px;
           @extend %shortcut-open;
@@ -100,6 +101,10 @@
             @extend %shortcut-open-hover;
           }
         }
+      }
+
+      & a:last-child {
+        margin-right: 0%;
       }
     }
 
@@ -173,6 +178,10 @@
           }
         }
       }
+
+      & a:last-child {
+        margin-right: 0%;
+      }
     }
 
   }
@@ -207,9 +216,9 @@
         fill: $green;
       }
 
-      & svg {
-        transform: translate(1px);
-      }
+      // & svg {
+      //   transform: translate(1px);
+      // }
     }
 
     & .footer-item-dzen {
@@ -237,9 +246,9 @@
         fill: $green;
       }
 
-      // & svg {
-      //   transform: translate(-2px);
-      // }
+      & svg {
+        transform: translate(-2px);
+      }
     }
   }
 
