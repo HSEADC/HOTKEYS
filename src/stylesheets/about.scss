@@ -1,405 +1,392 @@
 html.about {
-    scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 body.about {
-    overflow-x: hidden;
-    background-color: $black;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
+   overflow-x: hidden;
+   background-color: $black;
+   font-family: 'Inter', sans-serif;
+   font-style: normal;
 
-    // 1 screen 
-    .keyboards {
-        background-image: url('./images/about-keyboards.png');
-        background-size: 65%;
-        background-position: 100%;
-        background-repeat: no-repeat;
-    }
+   // 1 screen
+   .keyboards {
+      background-image: url('./images/about-keyboards.png');
+      background-size: 55%;
+      background-position: 100% -20%;
+      background-repeat: no-repeat;
+   }
+   .container {
+      padding: 1.5% 2% 2% 2%;
+   }
 
-    .container {
-        padding: 1.5% 2% 2% 2%;
-    }
+   .block {
+      display: flex;
+      flex-direction: column;
+   }
 
-    .block {
-        display: flex;
-        flex-direction: column;
-    }
+   .block-header {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
 
-    .block-header {
-        position: relative;
-        z-index: 2;
-        display: flex;
-        justify-content: space-between;
+      & h1 {
+         font-size: 3rem;
+         font-weight: 600;
+         color: $white;
 
-        & h1 {
+         &:hover {
+            color: $green;
+         }
+      }
+
+      & .block-menu {
+         padding-top: 1.4%;
+      }
+
+      & h2 {
+         font-size: 3rem;
+         font-weight: 600;
+         opacity: 0;
+      }
+
+      .menu {
+         .items-menu-2 {
+            .item-menu2-4 {
+               & h3 {
+                  @extend %item-open-now;
+               }
+            }
+         }
+      }
+   }
+
+   .block-main {
+      padding-top: 5%;
+
+      & h4 {
+         font-size: 5rem;
+         line-height: 5.5rem;
+         font-weight: 400;
+         color: $white;
+      }
+
+      & h5 {
+         padding-top: 21%;
+         font-size: 2.8rem;
+         line-height: 1.5rem;
+         font-weight: 400;
+         color: $white;
+      }
+
+      & h6 {
+         padding-top: 1.5%;
+         font-size: 1.6rem;
+         line-height: 1.9rem;
+         font-weight: 300;
+         color: $white;
+      }
+   }
+
+   .footer {
+      padding-top: 17%;
+      padding-bottom: 1%;
+
+      & .footer-items {
+         justify-content: left;
+      }
+   }
+}
+
+@media only screen and (min-width: 360px) and (max-device-width: 1366px) {
+   body.about {
+      overflow-x: hidden;
+      background-color: $black;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+
+      // 1 screen
+      .keyboards {
+         background-size: 50%;
+         background-position: 100% 25%;
+         background-repeat: no-repeat;
+      }
+
+      .container {
+         padding: 1.5% 2% 2% 2%;
+      }
+
+      .block {
+         display: flex;
+         flex-direction: column;
+      }
+
+      .block-header {
+         position: relative;
+         z-index: 2;
+         display: flex;
+         justify-content: space-between;
+
+         & h1 {
             font-size: 3rem;
             font-weight: 600;
             color: $white;
 
             &:hover {
-                color: $green;
+               color: $green;
             }
-        }
+         }
 
-        & .block-menu {
+         & .block-menu {
             padding-top: 1.4%;
-        }
+         }
 
-        & h2 {
+         & h2 {
             font-size: 3rem;
             font-weight: 600;
             opacity: 0;
-        }
+         }
 
-        .menu {
-
+         .menu {
             .items-menu-2 {
-
-                .item-menu2-4 {
-                    & h3 {
-                        @extend %item-open-now;
-                    }
-                }
-
+               .item-menu2-4 {
+                  & h3 {
+                     @extend %item-open-now;
+                  }
+               }
             }
+         }
+      }
 
-        }
-    }
+      .block-main {
+         padding-top: 5%;
 
-    .block-main {
-        padding-top: 5%;
-
-        & h4 {
-            font-size: 5rem;
-            line-height: 5.5rem;
+         & h4 {
+            font-size: 3rem;
+            line-height: 3.5rem;
             font-weight: 400;
             color: $white;
-        }
+         }
 
-        & h5 {
+         & h5 {
             padding-top: 21%;
             font-size: 2.8rem;
             line-height: 1.5rem;
             font-weight: 400;
             color: $white;
-        }
+         }
 
-        & h6 {
+         & h6 {
             padding-top: 1.5%;
             font-size: 1.6rem;
             line-height: 1.9rem;
             font-weight: 300;
             color: $white;
-        }
-    }
+         }
+      }
 
-    .footer {
-        padding-top: 17%;
-        padding-bottom: 1%;
+      .footer {
+         padding-top: 17%;
+         padding-bottom: 1%;
 
-        & .footer-items {
+         & .footer-items {
             justify-content: left;
-        }
-    }
-}
+         }
+      }
+   }
 
-@media only screen and (min-width: 360px) and (max-device-width: 1366px) {
+   .block-menu {
+      display: flex;
+      flex-direction: column;
 
-    body.about {
-        overflow-x: hidden;
-        background-color: $black;
-        font-family: "Inter", sans-serif;
-        font-style: normal;
+      .menu {
+         & a {
+            margin-right: 0.7%;
+         }
 
-        // 1 screen 
-        .keyboards {
-            background-size: 50%;
-            background-position: 100% 25%;
-            background-repeat: no-repeat;
-        }
-
-        .container {
-            padding: 1.5% 2% 2% 2%;
-        }
-
-        .block {
+         .items-menu {
             display: flex;
-            flex-direction: column;
-        }
-
-        .block-header {
-            position: relative;
-            z-index: 2;
-            display: flex;
-            justify-content: space-between;
-
-            & h1 {
-                font-size: 3rem;
-                font-weight: 600;
-                color: $white;
-
-                &:hover {
-                    color: $green;
-                }
-            }
-
-            & .block-menu {
-                padding-top: 1.4%;
-            }
-
-            & h2 {
-                font-size: 3rem;
-                font-weight: 600;
-                opacity: 0;
-            }
-
-            .menu {
-
-                .items-menu-2 {
-
-                    .item-menu2-4 {
-                        & h3 {
-                            @extend %item-open-now;
-                        }
-                    }
-
-                }
-
-            }
-        }
-
-        .block-main {
-            padding-top: 5%;
-
-            & h4 {
-                font-size: 3rem;
-                line-height: 3.5rem;
-                font-weight: 400;
-                color: $white;
-            }
-
-            & h5 {
-                padding-top: 21%;
-                font-size: 2.8rem;
-                line-height: 1.5rem;
-                font-weight: 400;
-                color: $white;
-            }
-
-            & h6 {
-                padding-top: 1.5%;
-                font-size: 1.6rem;
-                line-height: 1.9rem;
-                font-weight: 300;
-                color: $white;
-            }
-        }
-
-        .footer {
-            padding-top: 17%;
+            flex-direction: row;
             padding-bottom: 1%;
+            justify-content: center;
 
-            & .footer-items {
-                justify-content: left;
-            }
-        }
-    }
+            .item-menu1-1 {
+               & h3 {
+                  display: none;
+                  width: 119px;
+                  @extend %shortcut-open;
 
-    .block-menu {
-        display: flex;
-        flex-direction: column;
-
-        .menu {
-
-            & a {
-                margin-right: 0.7%;
+                  &:hover {
+                     @extend %shortcut-open-hover;
+                  }
+               }
             }
 
-            .items-menu {
-                display: flex;
-                flex-direction: row;
-                padding-bottom: 1%;
-                justify-content: center;
+            .item-menu1-2 {
+               & h3 {
+                  display: none;
+                  width: 153px;
+                  @extend %shortcut-open;
 
-                .item-menu1-1 {
-                    & h3 {
-                        display: none;
-                        width: 119px;
-                        @extend %shortcut-open;
-
-                        &:hover {
-                            @extend %shortcut-open-hover;
-                        }
-                    }
-                }
-
-                .item-menu1-2 {
-                    & h3 {
-                        display: none;
-                        width: 153px;
-                        @extend %shortcut-open;
-
-                        &:hover {
-                            @extend %shortcut-open-hover;
-                        }
-                    }
-                }
-
-                .item-menu1-3 {
-                    & h3 {
-                        width: 166px;
-                        @extend %item-open;
-
-                        &:hover {
-                            @extend %item-open-hover;
-                        }
-                    }
-                }
-
-                .item-menu1-4 {
-                    & h3 {
-                        display: none;
-                        width: 124px;
-                        @extend %shortcut-open;
-
-                        &:hover {
-                            @extend %shortcut-open-hover;
-                        }
-                    }
-                }
-
-                .item-menu1-5 {
-                    & h3 {
-                        display: none;
-                        width: 158px;
-                        @extend %shortcut-open;
-
-                        &:hover {
-                            @extend %shortcut-open-hover;
-                        }
-                    }
-                }
-
-                .item-menu1-6 {
-                    & h3 {
-                        width: 190px;
-                        @extend %item-open;
-
-                        &:hover {
-                            @extend %item-open-hover;
-                        }
-                    }
-                }
-
-                .item-menu1-7 {
-                    & h3 {
-                        display: none;
-                        width: 158px;
-                        @extend %shortcut-open;
-
-                        &:hover {
-                            @extend %shortcut-open-hover;
-                        }
-                    }
-                }
-
-                .item-menu1-8 {
-
-                    & h3 {
-                        display: none;
-                        width: 125px;
-                        @extend %shortcut-open;
-
-                        &:hover {
-                            @extend %shortcut-open-hover;
-                        }
-                    }
-                }
-
-                & a:last-child {
-                    margin-right: 0%;
-                }
+                  &:hover {
+                     @extend %shortcut-open-hover;
+                  }
+               }
             }
 
-            .items-menu-2 {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+            .item-menu1-3 {
+               & h3 {
+                  width: 166px;
+                  @extend %item-open;
 
-                .item-menu2-1 {
-                    & h3 {
-                        width: 139px;
-                        @extend %item-open;
-
-                        &:hover {
-                            @extend %item-open-hover;
-                        }
-                    }
-                }
-
-                .item-menu2-2 {
-                    & h3 {
-                        display: none;
-                        width: 178px;
-                        @extend %shortcut-open;
-
-                        &:hover {
-                            @extend %shortcut-open-hover;
-                        }
-                    }
-                }
-
-                .item-menu2-3 {
-                    & h3 {
-                        width: 132px;
-                        @extend %item-open;
-
-                        &:hover {
-                            @extend %item-open-hover;
-                        }
-                    }
-                }
-
-                .item-menu2-4 {
-                    & h3 {
-                        width: 170px;
-                        @extend %item-open;
-
-                        &:hover {
-                            @extend %item-open-hover;
-                        }
-                    }
-                }
-
-                .item-menu2-5 {
-                    & h3 {
-                        display: none;
-                        width: 130px;
-                        @extend %shortcut-open;
-
-                        &:hover {
-                            @extend %shortcut-open-hover;
-                        }
-                    }
-                }
-
-                .item-menu2-6 {
-                    & h3 {
-                        display: none;
-                        width: 136px;
-                        @extend %shortcut-open;
-
-                        &:hover {
-                            @extend %shortcut-open-hover;
-                        }
-                    }
-                }
-
-                & a:last-child {
-                    margin-right: 0%;
-                }
+                  &:hover {
+                     @extend %item-open-hover;
+                  }
+               }
             }
 
-        }
-    }
+            .item-menu1-4 {
+               & h3 {
+                  display: none;
+                  width: 124px;
+                  @extend %shortcut-open;
+
+                  &:hover {
+                     @extend %shortcut-open-hover;
+                  }
+               }
+            }
+
+            .item-menu1-5 {
+               & h3 {
+                  display: none;
+                  width: 158px;
+                  @extend %shortcut-open;
+
+                  &:hover {
+                     @extend %shortcut-open-hover;
+                  }
+               }
+            }
+
+            .item-menu1-6 {
+               & h3 {
+                  width: 190px;
+                  @extend %item-open;
+
+                  &:hover {
+                     @extend %item-open-hover;
+                  }
+               }
+            }
+
+            .item-menu1-7 {
+               & h3 {
+                  display: none;
+                  width: 158px;
+                  @extend %shortcut-open;
+
+                  &:hover {
+                     @extend %shortcut-open-hover;
+                  }
+               }
+            }
+
+            .item-menu1-8 {
+               & h3 {
+                  display: none;
+                  width: 125px;
+                  @extend %shortcut-open;
+
+                  &:hover {
+                     @extend %shortcut-open-hover;
+                  }
+               }
+            }
+
+            & a:last-child {
+               margin-right: 0%;
+            }
+         }
+
+         .items-menu-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .item-menu2-1 {
+               & h3 {
+                  width: 139px;
+                  @extend %item-open;
+
+                  &:hover {
+                     @extend %item-open-hover;
+                  }
+               }
+            }
+
+            .item-menu2-2 {
+               & h3 {
+                  display: none;
+                  width: 178px;
+                  @extend %shortcut-open;
+
+                  &:hover {
+                     @extend %shortcut-open-hover;
+                  }
+               }
+            }
+
+            .item-menu2-3 {
+               & h3 {
+                  width: 132px;
+                  @extend %item-open;
+
+                  &:hover {
+                     @extend %item-open-hover;
+                  }
+               }
+            }
+
+            .item-menu2-4 {
+               & h3 {
+                  width: 170px;
+                  @extend %item-open;
+
+                  &:hover {
+                     @extend %item-open-hover;
+                  }
+               }
+            }
+
+            .item-menu2-5 {
+               & h3 {
+                  display: none;
+                  width: 130px;
+                  @extend %shortcut-open;
+
+                  &:hover {
+                     @extend %shortcut-open-hover;
+                  }
+               }
+            }
+
+            .item-menu2-6 {
+               & h3 {
+                  display: none;
+                  width: 136px;
+                  @extend %shortcut-open;
+
+                  &:hover {
+                     @extend %shortcut-open-hover;
+                  }
+               }
+            }
+
+            & a:last-child {
+               margin-right: 0%;
+            }
+         }
+      }
+   }
 }

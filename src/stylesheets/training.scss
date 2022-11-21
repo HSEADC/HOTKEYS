@@ -1,78 +1,71 @@
 html.training {
-    scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 body.training {
-    background-color: $black;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
+   background-color: $black;
+   font-family: 'Inter', sans-serif;
+   font-style: normal;
 
-    .container {
-        padding: 1.5% 2% 2% 2%;
-    }
+   .container {
+      padding: 1.5% 2% 2% 2%;
+   }
 
-    .block {
-        display: flex;
-        flex-direction: column;
+   .block {
+      display: flex;
+      flex-direction: column;
 
-        & h1 {
-            padding-top: 20%;
-            color: $white;
-            margin: 0 auto;
-            font-weight: 300;
-        }
-    }
+      & h1 {
+         padding-top: 20%;
+         color: $white;
+         margin: 0 auto;
+         font-weight: 300;
+      }
+   }
 
-    .block-header {
-        position: relative;
-        z-index: 2;
-        display: flex;
-        justify-content: space-between;
+   .block-header {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
 
-        & h1 {
-            font-size: 3rem;
-            font-weight: 600;
-            color: $white;
+      & h1 {
+         font-size: 3rem;
+         font-weight: 600;
+         color: $white;
 
-            &:hover {
-                color: $green;
+         &:hover {
+            color: $green;
+         }
+      }
+
+      .block-menu {
+         padding-top: 1.4%;
+
+         .menu {
+            .items-menu {
+               .item-menu1-3 {
+                  & h3 {
+                     @extend %item-open-now;
+                  }
+               }
             }
-        }
+         }
+      }
 
-        .block-menu {
-            padding-top: 1.4%;
+      & h2 {
+         font-size: 3rem;
+         font-weight: 600;
+         opacity: 0;
+      }
+   }
 
-            .menu {
+   .footer {
+      padding-top: 19%;
+      padding-bottom: 1%;
 
-                .items-menu {
-
-                    .item-menu1-3 {
-                        & h3 {
-                            @extend %item-open-now;
-                        }
-                    }
-
-                }
-
-            }
-        }
-
-        & h2 {
-            font-size: 3rem;
-            font-weight: 600;
-            opacity: 0;
-        }
-
-    }
-
-
-
-    .footer {
-        padding-top: 19%;
-        padding-bottom: 1%;
-
-        & .footer-items {
-            justify-content: left;
-        }
-    }
+      & .footer-items {
+         justify-content: left;
+      }
+   }
 }
