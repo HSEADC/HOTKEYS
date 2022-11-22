@@ -878,8 +878,9 @@ body.index {
    }
 }
 
-@media only screen and (max-device-width: 4288px) {
+@media only screen and (max-device-width: 428px) and (min-width: 360px) {
    body.index {
+      overflow-x: hidden;
       .block1 {
          padding: 1.5% 2% 2% 2%;
          display: flex;
@@ -888,10 +889,10 @@ body.index {
 
       .block1-logo {
          display: flex;
-         justify-content: space-between;
+         justify-content: center;
 
          & h1 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 600;
             color: $white;
 
@@ -903,6 +904,9 @@ body.index {
 
       .block1-shortcut {
          color: $white;
+         transform: rotate(-90deg);
+         margin-top: 30%;
+         margin-bottom: 30%;
 
          & div {
             margin: 9% auto 15% auto;
@@ -922,7 +926,9 @@ body.index {
 
       .block1-text {
          display: flex;
-         justify-content: space-between;
+         flex-direction: column;
+         justify-content: center;
+         text-align: center;
 
          & h2 {
             font-size: 1rem;
@@ -947,7 +953,7 @@ body.index {
          margin: 0 auto 15% auto;
 
          .menu {
-            padding-left: 57%;
+            padding-left: 135%;
             width: 100%;
             overflow-x: auto;
             white-space: nowrap;
@@ -975,8 +981,8 @@ body.index {
                }
 
                & h5 {
-                  padding-top: 3%;
-                  font-size: 0.8rem;
+                  padding-top: 7%;
+                  font-size: 0.9rem;
                   line-height: 1rem;
                   letter-spacing: 0.07rem;
                   text-align: center;
@@ -987,7 +993,7 @@ body.index {
 
             .mail-input-index {
                margin: 0 auto;
-               width: 39%;
+               width: 73%;
                position: relative;
             }
 
@@ -1025,7 +1031,7 @@ body.index {
                   background: transparent;
                   position: absolute;
                   top: 7%;
-                  right: -6%;
+                  right: 1%;
                }
 
                #email-form-done {
@@ -1043,6 +1049,10 @@ body.index {
 
       .footer {
          padding: 1.6% 0 2% 1.5%;
+
+         .footer-items {
+            justify-content: center;
+         }
          & .footer-items {
             & .footer-item-vk {
                & svg {

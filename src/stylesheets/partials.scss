@@ -599,6 +599,204 @@
    }
 }
 
+@media only screen and (max-device-width: 428px) and (min-width: 360px) {
+   .block-menu {
+      display: flex;
+      flex-direction: column;
+
+      .menu {
+         & a {
+            margin-right: 7px;
+         }
+
+         .items-menu {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 7px;
+            justify-content: center;
+
+            .item-menu1-1 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(104px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-2 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(139px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-3 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(151px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-4 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(109px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-5 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(143px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-6 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(175px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            & :nth-child(7) {
+               display: none;
+            }
+
+            & :nth-child(8) {
+               display: none;
+            }
+
+            & a:last-child {
+               margin-right: 0px;
+            }
+         }
+
+         .items-menu-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .item-menu2-1 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(124px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-2 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(163px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-3 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(124px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-4 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(155px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-5 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(115px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-6 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(121px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            & a:last-child {
+               margin-right: 0px;
+            }
+         }
+      }
+   }
+}
+
 .footer {
    & .footer-items {
       display: flex;
