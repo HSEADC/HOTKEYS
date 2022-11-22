@@ -26,7 +26,7 @@ $green: #cbfb45;
    font-weight: $fw;
 }
 
-%itemGrid {
+@mixin itemGrid {
    display: grid;
    place-items: center;
 }
