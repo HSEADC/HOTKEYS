@@ -223,3 +223,279 @@ body.index {
       padding: 1.6% 0 2% 1.5%;
    }
 }
+
+@media only screen and (max-device-width: 2560px) and (min-width: 1921px) {
+   body.index {
+      .block1 {
+         padding: 1.5% 2% 2% 2%;
+         display: flex;
+         flex-direction: column;
+      }
+
+      .block1-logo {
+         display: flex;
+         justify-content: space-between;
+
+         & h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: $white;
+
+            &:hover {
+               color: $green;
+            }
+         }
+      }
+
+      .block1-shortcut {
+         color: $white;
+
+         & div {
+            margin: 3% auto 9% auto;
+            font-size: 27rem;
+            font-weight: 600;
+            text-align: center;
+            animation: change-text 3.5s infinite;
+            // animation-play-state: running;
+            cursor: help;
+
+            &:hover {
+               // animation-play-state: paused;
+               color: $green;
+            }
+         }
+      }
+
+      .block1-text {
+         display: flex;
+         justify-content: space-between;
+
+         & h2 {
+            font-size: 1.6rem;
+            line-height: 1rem;
+            font-weight: 400;
+            color: $white;
+
+            &:hover {
+               color: $green;
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-device-width: 1920px) and (min-width: 1441px) {
+   body.index {
+      // 1 screen
+
+      .block1 {
+         padding: 1.5% 2% 2% 2%;
+         display: flex;
+         flex-direction: column;
+      }
+
+      .block1-logo {
+         display: flex;
+         justify-content: space-between;
+
+         & h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: $white;
+
+            &:hover {
+               color: $green;
+            }
+         }
+      }
+
+      .block1-shortcut {
+         color: $white;
+
+         & div {
+            margin: 5% auto 12% auto;
+            font-size: 21rem;
+            font-weight: 600;
+            text-align: center;
+            animation: change-text 3.5s infinite;
+            // animation-play-state: running;
+            cursor: help;
+
+            &:hover {
+               // animation-play-state: paused;
+               color: $green;
+            }
+         }
+      }
+
+      .block1-text {
+         display: flex;
+         justify-content: space-between;
+
+         & h2 {
+            font-size: 1.55rem;
+            line-height: 1rem;
+            font-weight: 400;
+            color: $white;
+
+            &:hover {
+               color: $green;
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-device-width: 1440px) and (min-width: 1025px) {
+   body.index {
+      .block1 {
+         padding: 1.5% 2% 2% 2%;
+         display: flex;
+         flex-direction: column;
+      }
+
+      .block1-logo {
+         display: flex;
+         justify-content: space-between;
+
+         & h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: $white;
+
+            &:hover {
+               color: $green;
+            }
+         }
+      }
+
+      .block1-shortcut {
+         color: $white;
+
+         & div {
+            margin: 3% auto 9% auto;
+            font-size: 19rem;
+            font-weight: 600;
+            text-align: center;
+            animation: change-text 3.5s infinite;
+            // animation-play-state: running;
+            cursor: help;
+
+            &:hover {
+               // animation-play-state: paused;
+               color: $green;
+            }
+         }
+      }
+
+      .block1-text {
+         display: flex;
+         justify-content: space-between;
+
+         & h2 {
+            font-size: 1.25rem;
+            line-height: 1rem;
+            font-weight: 400;
+            color: $white;
+
+            &:hover {
+               color: $green;
+            }
+         }
+      }
+
+      #mail-target {
+         margin: 5.5%;
+      }
+
+      .block2 {
+         padding-top: 1%;
+         margin: 0 auto 8% auto;
+
+         .mail-index {
+            .mail-text-index {
+               padding-top: 10%;
+               padding-bottom: 6%;
+
+               & h4 {
+                  font-size: 4rem;
+                  text-align: center;
+                  font-weight: 400;
+                  color: $white;
+               }
+
+               & h5 {
+                  padding-top: 3%;
+                  font-size: 1.25rem;
+                  line-height: 1.5rem;
+                  letter-spacing: 0.07rem;
+                  text-align: center;
+                  font-weight: 300;
+                  color: $white;
+               }
+            }
+
+            .mail-input-index {
+               margin: 0 auto;
+               width: 426px;
+               position: relative;
+            }
+
+            .email-form {
+               width: 100%;
+               display: flex;
+               justify-content: space-between;
+
+               .input-email {
+                  color: $white;
+                  min-width: 420px;
+                  min-height: 50px;
+                  border: 1.5px solid $grey;
+                  border-radius: 42.1569px;
+                  background-color: $black;
+               }
+
+               input[placeholder] {
+                  padding-left: 5%;
+                  font-size: 1.8rem;
+               }
+
+               .input-email::-webkit-input-placeholder {
+                  color: $grey2;
+               }
+
+               button {
+                  outline: none;
+                  border: 0;
+                  background: transparent;
+                  position: absolute;
+                  top: 11.8%;
+                  right: 1%;
+               }
+
+               #email-form-done {
+                  position: absolute;
+                  padding-top: 3%;
+                  left: 35%;
+                  font-size: 1rem;
+                  font-style: normal;
+                  font-weight: 300;
+                  color: $green;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-device-width: 1024px) and (min-width: 769px) {
+}
+
+@media only screen and (max-device-width: 768px) and (min-width: 429px) {
+}
+
+@media only screen and (max-device-width: 428px) and (min-width: 376px) {
+}
+
+@media only screen and (max-device-width: 370px) {
+}
