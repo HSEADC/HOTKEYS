@@ -1,212 +1,79 @@
-$black: #0A0A0A;
-$black2: #1E1E1E;
+$black: #0a0a0a;
+$black2: #1e1e1e;
 $black-hov: #141414;
-$white: #DADADA;
+$white: #dadada;
 $white-hov: #868686;
-$grey: #9C9C9C;
+$grey: #9c9c9c;
 $grey2: #515151;
-$grey3: #C4C4C4;
-$green: #CBFB45;
+$grey3: #c4c4c4;
+$green: #cbfb45;
 
-// @mixin tag ($w) {
-//     width: $w;
-// }
-
-%shortcut-none {
-    height: 50px;
-    border: 1.5px solid $grey3;
-    border-radius: 42px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: $grey3;
-    display: grid;
-    place-items: center;
-    cursor: wait;
+@mixin itemConfig($w, $h, $c, $bc, $b, $br, $fs, $fw) {
+   width: $w;
+   height: $h;
+   color: $c;
+   background-color: $bc;
+   border: $b;
+   border-radius: $br;
+   font-size: $fs;
+   font-weight: $fw;
 }
 
-%shortcut-open {
-    height: 50px;
-    border: 1.5px solid $grey3;
-    border-radius: 42px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: $grey3;
-    display: grid;
-    place-items: center;
-    cursor: help;
+@mixin itemOpenConfig($c, $bc, $b, $fw) {
+   color: $c;
+   background-color: $bc;
+   border: $b;
+   font-weight: $fw;
 }
 
-%shortcut-open-hover {
-    color: $green;
-    background-color: $black;
-    border: 1.5px solid $green;
+@mixin itemGrid {
+   display: grid;
+   place-items: center;
 }
 
-
-%item-none {
-    height: 50px;
-    border: 1.5px solid $grey3;
-    background-color: $grey3;
-    border-radius: 42px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: $black;
-    display: grid;
-    place-items: center;
-    cursor: wait;
-}
-
-%item-open {
-    height: 50px;
-    border: 1.5px solid $grey3;
-    background-color: $grey3;
-    border-radius: 42px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-style: normal;
-    color: $black;
-    display: grid;
-    place-items: center;
-}
-
-%item-open-hover {
-    background-color: $green;
-    border: 1.5px solid $green;
-}
-
-%item-open-now {
-    height: 50px;
-    border: 1.5px solid $green;
-    background-color: $green;
-    border-radius: 42px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: $black;
-    display: grid;
-    place-items: center;
-}
-
-%item-footer-open {
-    height: 50px;
-    border: 1.5px solid $grey;
-    border-radius: 42px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: $grey;
-    display: grid;
-    place-items: center;
-}
+// catalog---selections
+/**
+   * style items
+   * * нужно глянуть как они адаптируются
+   * ! решить если их нужно изменять
+   * ? нужно ли их делать миксинами
+   * TODO: доделать грид сетку каталога и подборок 
+*/
 
 %menu-shortcut {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 300px;
-    width: 435px;
-    border-radius: 27px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: $white;
-    background-color: $black2;
-    cursor: help;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   height: 300px;
+   width: 435px;
+   border-radius: 27px;
+   font-size: 1.5rem;
+   font-weight: 500;
+   color: $white;
+   background-color: $black2;
+   cursor: help;
 }
 
 %menu-shortcut-hover {
-    color: $white-hov;
-    background-color: $black-hov;
+   color: $white-hov;
+   background-color: $black-hov;
 }
 
 %menu-selection {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 235px;
-    width: 585px;
-    border-radius: 27px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: $white;
-    background-color: $black2;
-    cursor: help;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   height: 235px;
+   width: 585px;
+   border-radius: 27px;
+   font-size: 1.5rem;
+   font-weight: 500;
+   color: $white;
+   background-color: $black2;
+   cursor: help;
 }
 
 %menu-selection-hover {
-    color: $white-hov;
-    background-color: $black-hov;
-}
-
-
-// responsive 360px
-
-%shortcut-none-min {
-    height: 40px;
-    border: 1.5px solid $grey3;
-    border-radius: 42px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: $grey3;
-    display: grid;
-    place-items: center;
-    cursor: wait;
-}
-
-%shortcut-open-min {
-    height: 40px;
-    border: 1.5px solid $grey3;
-    border-radius: 42px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: $grey3;
-    display: grid;
-    place-items: center;
-    cursor: help;
-}
-
-%item-none-min {
-    height: 40px;
-    border: 1.5px solid $grey3;
-    background-color: $grey3;
-    border-radius: 42px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: $black;
-    display: grid;
-    place-items: center;
-    cursor: wait;
-}
-
-%item-open-min {
-    height: 40px;
-    border: 1.5px solid $grey3;
-    background-color: $grey3;
-    border-radius: 42px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-style: normal;
-    color: $black;
-    display: grid;
-    place-items: center;
-}
-
-%item-open-now-min {
-    height: 40px;
-    border: 1.5px solid $green;
-    background-color: $green;
-    border-radius: 42px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: $black;
-    display: grid;
-    place-items: center;
-}
-
-%item-footer-open-min {
-    height: 40px;
-    border: 1.5px solid $grey;
-    border-radius: 42px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: $grey;
-    display: grid;
-    place-items: center;
+   color: $white-hov;
+   background-color: $black-hov;
 }

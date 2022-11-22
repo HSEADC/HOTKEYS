@@ -1,331 +1,941 @@
 .block-menu {
-  display: flex;
-  flex-direction: column;
+   display: flex;
+   flex-direction: column;
 
-  .menu {
+   .menu {
+      & a {
+         margin-right: 0.7%;
+      }
 
-    & a {
-      margin-right: 0.7%;
-    }
+      .items-menu {
+         display: flex;
+         flex-direction: row;
+         padding-bottom: 1%;
+         justify-content: center;
 
-    .items-menu {
+         .item-menu1-1 {
+            // hotkey
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(119px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         .item-menu1-2 {
+            // hotkey
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(153px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         .item-menu1-3 {
+            // page
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(166px, 50px, $black, $grey3, 1.5px solid $grey3, 42px, 1.5rem, 600);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         .item-menu1-4 {
+            // hotkey
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(124px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         .item-menu1-5 {
+            // hotkey
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(158px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         .item-menu1-6 {
+            // page
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(190px, 50px, $black, $grey3, 1.5px solid $grey3, 42px, 1.5rem, 600);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         .item-menu1-7 {
+            // hotkey
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(158px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         .item-menu1-8 {
+            // hotkey
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(125px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         & a:last-child {
+            margin-right: 0%;
+         }
+      }
+
+      .items-menu-2 {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+
+         .item-menu2-1 {
+            // page
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(139px, 50px, $black, $grey3, 1.5px solid $grey3, 42px, 1.5rem, 600);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         .item-menu2-2 {
+            // hotkey
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(178px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         .item-menu2-3 {
+            // page
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(132px, 50px, $black, $grey3, 1.5px solid $grey3, 42px, 1.5rem, 600);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         .item-menu2-4 {
+            // page
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(170px, 50px, $black, $grey3, 1.5px solid $grey3, 42px, 1.5rem, 600);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         .item-menu2-5 {
+            // hotkey
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(130px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         .item-menu2-6 {
+            // hotkey
+            & h3 {
+               @include itemGrid;
+               @include itemConfig(136px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
+
+               &:hover {
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+               }
+            }
+         }
+
+         & a:last-child {
+            margin-right: 0%;
+         }
+      }
+   }
+}
+
+@media only screen and (max-device-width: 1024px) and (min-width: 766px) {
+   .block-menu {
       display: flex;
-      flex-direction: row;
-      padding-bottom: 1%;
-      justify-content: center;
+      flex-direction: column;
 
-      .item-menu1-1 {
-        & h3 {
-          width: 119px;
-          @extend %shortcut-open;
+      .menu {
+         & a {
+            margin-right: 0.7%;
+         }
 
-          &:hover {
-            @extend %shortcut-open-hover;
-          }
-        }
+         .items-menu {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 1%;
+            justify-content: center;
+
+            .item-menu1-1 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(104px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            & :nth-child(2) {
+               display: none;
+            }
+
+            .item-menu1-3 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(151px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            & :nth-child(4) {
+               display: none;
+            }
+
+            .item-menu1-5 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(143px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-6 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(175px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-7 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(143px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            & :nth-child(8) {
+               display: none;
+            }
+
+            & a:last-child {
+               margin-right: 0%;
+            }
+         }
+
+         .items-menu-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .item-menu2-1 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(124px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-2 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(163px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-3 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(117px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-4 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(155px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            & :nth-child(5) {
+               display: none;
+            }
+
+            & :nth-child(6) {
+               display: none;
+            }
+
+            & a:last-child {
+               margin-right: 0%;
+            }
+         }
       }
+   }
+}
 
-      .item-menu1-2 {
-        & h3 {
-          width: 153px;
-          @extend %shortcut-open;
-
-          &:hover {
-            @extend %shortcut-open-hover;
-          }
-        }
-      }
-
-      .item-menu1-3 {
-        & h3 {
-          width: 166px;
-          @extend %item-open;
-
-          &:hover {
-            @extend %item-open-hover;
-          }
-        }
-      }
-
-      .item-menu1-4 {
-        & h3 {
-          width: 124px;
-          @extend %shortcut-open;
-
-          &:hover {
-            @extend %shortcut-open-hover;
-          }
-        }
-      }
-
-      .item-menu1-5 {
-        & h3 {
-          width: 158px;
-          @extend %shortcut-open;
-
-          &:hover {
-            @extend %shortcut-open-hover;
-          }
-        }
-      }
-
-      .item-menu1-6 {
-        & h3 {
-          width: 190px;
-          @extend %item-open;
-
-          &:hover {
-            @extend %item-open-hover;
-          }
-        }
-      }
-
-      .item-menu1-7 {
-        & h3 {
-          width: 158px;
-          @extend %shortcut-open;
-
-          &:hover {
-            @extend %shortcut-open-hover;
-          }
-        }
-      }
-
-      .item-menu1-8 {
-
-        & h3 {
-          width: 125px;
-          @extend %shortcut-open;
-
-          &:hover {
-            @extend %shortcut-open-hover;
-          }
-        }
-      }
-
-      & a:last-child {
-        margin-right: 0%;
-      }
-    }
-
-    .items-menu-2 {
+@media only screen and (max-device-width: 768px) and (min-width: 429px) {
+   .block-menu {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
+      flex-direction: column;
 
-      .item-menu2-1 {
-        & h3 {
-          width: 139px;
-          @extend %item-open;
+      .menu {
+         & a {
+            margin-right: 0.7%;
+         }
 
-          &:hover {
-            @extend %item-open-hover;
-          }
-        }
+         .items-menu {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 1%;
+            justify-content: center;
+
+            .item-menu1-1 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(104px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-2 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(139px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-3 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(151px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-4 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(109px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-5 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(143px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-6 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(175px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-7 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(143px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-8 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(105px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            & a:last-child {
+               margin-right: 0%;
+            }
+         }
+
+         .items-menu-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .item-menu2-1 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(124px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-2 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(163px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-3 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(124px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-4 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(155px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-5 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(115px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-6 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(121px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            & a:last-child {
+               margin-right: 0%;
+            }
+         }
       }
+   }
+}
 
-      .item-menu2-2 {
-        & h3 {
-          width: 178px;
-          @extend %shortcut-open;
+@media only screen and (max-device-width: 428px) and (min-width: 360px) {
+   .block-menu {
+      display: flex;
+      flex-direction: column;
 
-          &:hover {
-            @extend %shortcut-open-hover;
-          }
-        }
+      .menu {
+         & a {
+            margin-right: 7px;
+         }
+
+         .items-menu {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 7px;
+            justify-content: center;
+
+            .item-menu1-1 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(104px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-2 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(139px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-3 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(151px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-4 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(109px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-5 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(143px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu1-6 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(175px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            & :nth-child(7) {
+               display: none;
+            }
+
+            & :nth-child(8) {
+               display: none;
+            }
+
+            & a:last-child {
+               margin-right: 0px;
+            }
+         }
+
+         .items-menu-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .item-menu2-1 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(124px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-2 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(163px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-3 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(124px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-4 {
+               // page
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(155px, 40px, $black, $grey3, 1.5px solid $grey3, 42px, 1.2rem, 600);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-5 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(115px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            .item-menu2-6 {
+               // hotkey
+               & h3 {
+                  @include itemGrid;
+                  @include itemConfig(121px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+                  cursor: wait;
+
+                  &:hover {
+                     @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
+                  }
+               }
+            }
+
+            & a:last-child {
+               margin-right: 0px;
+            }
+         }
       }
-
-      .item-menu2-3 {
-        & h3 {
-          width: 132px;
-          @extend %item-open;
-
-          &:hover {
-            @extend %item-open-hover;
-          }
-        }
-      }
-
-      .item-menu2-4 {
-        & h3 {
-          width: 170px;
-          @extend %item-open;
-
-          &:hover {
-            @extend %item-open-hover;
-          }
-        }
-      }
-
-      .item-menu2-5 {
-        & h3 {
-          width: 130px;
-          @extend %shortcut-open;
-
-          &:hover {
-            @extend %shortcut-open-hover;
-          }
-        }
-      }
-
-      .item-menu2-6 {
-        & h3 {
-          width: 136px;
-          @extend %shortcut-open;
-
-          &:hover {
-            @extend %shortcut-open-hover;
-          }
-        }
-      }
-
-      & a:last-child {
-        margin-right: 0%;
-      }
-    }
-
-  }
+   }
 }
 
 .footer {
+   & .footer-items {
+      display: flex;
+      flex-direction: row;
 
-  & .footer-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+      & .footer-item-up h3 {
+         // footer-item
+         @include itemGrid;
+         @include itemConfig(137px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
 
-    & .footer-item-up h3 {
-      width: 141px;
-      @extend %item-footer-open;
-
-      &:hover {
-        color: $green;
-        border: 2px solid $green;
-      }
-    }
-
-    & .footer-item-vk {
-      width: 50px;
-      @extend %item-footer-open;
-
-      &:hover {
-        border: 2px solid $green;
+         &:hover {
+            @include itemOpenConfig($green, transparent, 2px solid $green, 500);
+         }
       }
 
-      &:hover .footer-vk {
-        fill: $green;
+      & .footer-item-vk {
+         // footer-item
+         @include itemGrid;
+         @include itemConfig(40px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+
+         &:hover {
+            @include itemOpenConfig($green, transparent, 2px solid $green, 500);
+         }
+
+         &:hover .footer-vk {
+            fill: $green;
+         }
+
+         // & svg {
+         //   transform: translate(1px);
+         // }
       }
 
-      // & svg {
-      //   transform: translate(1px);
-      // }
-    }
+      & .footer-item-dzen {
+         // footer-item
+         @include itemGrid;
+         @include itemConfig(40px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
 
-    & .footer-item-dzen {
-      width: 50px;
-      @extend %item-footer-open;
+         &:hover {
+            @include itemOpenConfig($green, transparent, 2px solid $green, 500);
+         }
 
-      &:hover {
-        border: 2px solid $green;
+         &:hover .footer-dzen {
+            fill: $green;
+         }
       }
 
-      &:hover .footer-dzen {
-        fill: $green;
+      & .footer-item-tg {
+         // footer-item
+         @include itemGrid;
+         @include itemConfig(40px, 40px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.2rem, 500);
+
+         &:hover {
+            @include itemOpenConfig($green, transparent, 2px solid $green, 500);
+         }
+
+         &:hover .footer-tg {
+            fill: $green;
+         }
+
+         & svg {
+            transform: translate(-2px);
+         }
       }
-    }
+   }
 
-    & .footer-item-tg {
-      width: 50px;
-      @extend %item-footer-open;
-
-      &:hover {
-        border: 2px solid $green;
-      }
-
-      &:hover .footer-tg {
-        fill: $green;
-      }
-
-      & svg {
-        transform: translate(-2px);
-      }
-    }
-  }
-
-  & a:nth-child(-n+3) {
-    margin-right: 0.7%;
-  }
-
+   & a:nth-child(-n + 3) {
+      margin-right: 0.7%;
+   }
 }
 
 .windows {
-  padding-top: 4%;
-  margin: 0 auto;
+   padding-top: 4%;
+   margin: 0 auto;
 
-  .windows-keyboard {
-    margin: auto;
+   .windows-keyboard {
+      margin: auto;
 
-    // .fn-win {
-    //   fill: rgb(141, 39, 39);
-    // }
-  }
+      // .fn-win {
+      //   fill: rgb(141, 39, 39);
+      // }
+   }
 }
 
 .macos {
-  padding-top: 4%;
-  margin: 0 auto;
+   padding-top: 4%;
+   margin: 0 auto;
 
-  .macos-keyboard {
-    margin: auto;
+   .macos-keyboard {
+      margin: auto;
 
-    // .fn-win {
-    //   fill: rgb(141, 39, 39);
-    // }
-  }
+      // .fn-win {
+      //   fill: rgb(141, 39, 39);
+      // }
+   }
 }
 
 .footer-items-mw {
-  width: 6.5%;
-  display: flex;
-  flex-direction: row;
+   width: 6.5%;
+   display: flex;
+   flex-direction: row;
 
-  & a:first-child {
-    margin-right: 6%;
-  }
+   & a:first-child {
+      margin-right: 6%;
+   }
 
-  .win :hover {
-    .win-icon {
-      fill: $green;
-    }
-  }
+   .win :hover {
+      .win-icon {
+         fill: $green;
+      }
+   }
 
-  .mac :hover {
-    .mac-icon {
-      fill: $green;
-    }
-  }
+   .mac :hover {
+      .mac-icon {
+         fill: $green;
+      }
+   }
 }
 
 .footer-items-m {
-  width: 2.7%;
-  display: flex;
-  flex-direction: row;
+   width: 2.7%;
+   display: flex;
+   flex-direction: row;
 
-  .mac :hover {
-    .mac-icon {
-      fill: $green;
-    }
-  }
+   .mac :hover {
+      .mac-icon {
+         fill: $green;
+      }
+   }
 }
 
 .footer-items-w {
-  width: 2.7%;
-  display: flex;
-  flex-direction: row;
+   width: 2.7%;
+   display: flex;
+   flex-direction: row;
 
-  .win :hover {
-    .win-icon {
-      fill: $green;
-    }
-  }
+   .win :hover {
+      .win-icon {
+         fill: $green;
+      }
+   }
 }

@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr" class="index">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <link rel="manifest" href="images/favicons/site.webmanifest" />
+      <link rel="icon" href="favicon.ico" />
+      <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml" />
+      <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png" />
+      <title>hotkeys</title>
+   </head>
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="manifest" href="images/favicons/site.webmanifest">
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
-  <title>hotkeys</title>
-</head>
-
-<body class="index">
-
-  <div id="up-target"></div>
-  <div class="block1">
-    <div class="block1-logo">
-      <div class="text-logo"><a href="./">
-          <h1>hotkeys</h1>
-        </a></div>
-      <div class="null"></div>
-    </div>
-    <div class="block1-shortcut">
-      <div class="shortcut-text">CTRL+F</div>
-    </div>
-    <div class="block1-text">
-      <div class="text-left"><a href="about.html">
-          <h2>архив шорткатов в разработке..</h2>
-        </a></div>
-      <div class="text-right"><a href="#mail-target">
-          <h2>узнать о запуске ↓</h2>
-        </a></div>
-    </div>
-  </div>
-
-  <div id="mail-target">
-    <div class="block2">
-      <menu></menu>
-      <div class="mail-index">
-        <div class="mail-text-index">
-          <h4>Узнай о запуске <b>hotkeys!</b></h4>
-          <h5>hotkeys — это архив полезных сочетаний клавиш с гибким поиском<br>и удобной структурой, доступный по клику
-            в
-            любой момент.<br><br>Оставь свой e-mail и стань первым, кто опробует сервис!<br>Узнать подробнее можно во
-            вкладке <a href="about.html">
-              <font color="#CBFB45">«о проекте»</font>
-            </a></h5>
-        </div>
-        <div class="mail-input-index">
-          <div class="email-form">
-            <form id="email" action="https://formspree.io/f/xknezdgr" method="POST">
-              <input class="input-email" type="email" name="email" placeholder="e-mail" />
-              <button id="email-form-button">
-                <svg width="40" height="39" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M18.5 -7.86805e-07C23.2739 -9.95479e-07 27.8523 1.89642 31.2279 5.27208C34.6036 8.64773 36.5 13.2261 36.5 18C36.5 22.7739 34.6036 27.3523 31.2279 30.7279C27.8523 34.1036 23.2739 36 18.5 36C13.7261 36 9.14773 34.1036 5.77208 30.7279C2.39642 27.3523 0.499999 22.7739 0.499999 18C0.499999 13.2261 2.39642 8.64773 5.77208 5.27208C9.14773 1.89642 13.7261 -5.78131e-07 18.5 -7.86805e-07ZM10.625 16.875C10.3266 16.875 10.0405 16.9935 9.8295 17.2045C9.61853 17.4155 9.5 17.7016 9.5 18C9.5 18.2984 9.61853 18.5845 9.8295 18.7955C10.0405 19.0065 10.3266 19.125 10.625 19.125L23.6592 19.125L18.8285 23.9535C18.6173 24.1647 18.4986 24.4513 18.4986 24.75C18.4986 25.0487 18.6173 25.3353 18.8285 25.5465C19.0397 25.7577 19.3263 25.8764 19.625 25.8764C19.9237 25.8764 20.2103 25.7577 20.4215 25.5465L27.1715 18.7965C27.2763 18.692 27.3594 18.5679 27.4161 18.4312C27.4728 18.2945 27.502 18.148 27.502 18C27.502 17.852 27.4728 17.7055 27.4161 17.5688C27.3594 17.4321 27.2763 17.308 27.1715 17.2035L20.4215 10.4535C20.2103 10.2423 19.9237 10.1236 19.625 10.1236C19.3263 10.1236 19.0397 10.2423 18.8285 10.4535C18.6173 10.6647 18.4986 10.9513 18.4986 11.25C18.4986 11.5487 18.6173 11.8353 18.8285 12.0465L23.6592 16.875L10.625 16.875Z"
-                    fill="#CBFB45" />
-                </svg>
-              </button>
-              <p id="email-form-done"></p>
-            </form>
-          </div>
-        </div>
+   <body class="index">
+      <div id="up-target"></div>
+      <div class="block1">
+         <div class="block1-logo">
+            <div class="text-logo">
+               <a href="./">
+                  <h1>hotkeys</h1>
+               </a>
+            </div>
+            <div class="null"></div>
+         </div>
+         <div class="block1-shortcut">
+            <div class="shortcut-text">CTRL+F</div>
+         </div>
+         <div class="block1-text">
+            <div class="text-left">
+               <a href="about.html">
+                  <h2>архив шорткатов в разработке..</h2>
+               </a>
+            </div>
+            <div class="text-right">
+               <a href="#mail-target">
+                  <h2>узнать о запуске ↓</h2>
+               </a>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
 
-  <footer></footer>
-
-</body>
-
+      <div id="mail-target">
+         <div class="block2">
+            <menu></menu>
+            <div class="mail-index">
+               <div class="mail-text-index">
+                  <h4>Узнай о запуске <b>hotkeys!</b></h4>
+                  <h5>
+                     hotkeys — это архив полезных сочетаний клавиш с гибким поиском<br />и удобной структурой, доступный по клику в любой момент.<br /><br />Оставь свой e-mail и стань первым, кто
+                     опробует сервис!<br />Узнать подробнее можно во вкладке
+                     <a href="about.html">
+                        <font color="#CBFB45">«о проекте»</font>
+                     </a>
+                  </h5>
+               </div>
+               <div class="mail-input-index">
+                  <div class="email-form">
+                     <form id="email" action="https://formspree.io/f/xknezdgr" method="POST">
+                        <input class="input-email" type="email" name="email" placeholder="e-mail" />
+                        <button id="email-form-button">
+                           <svg width="40" height="39" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M18.5 -7.86805e-07C23.2739 -9.95479e-07 27.8523 1.89642 31.2279 5.27208C34.6036 8.64773 36.5 13.2261 36.5 18C36.5 22.7739 34.6036 27.3523 31.2279 30.7279C27.8523 34.1036 23.2739 36 18.5 36C13.7261 36 9.14773 34.1036 5.77208 30.7279C2.39642 27.3523 0.499999 22.7739 0.499999 18C0.499999 13.2261 2.39642 8.64773 5.77208 5.27208C9.14773 1.89642 13.7261 -5.78131e-07 18.5 -7.86805e-07ZM10.625 16.875C10.3266 16.875 10.0405 16.9935 9.8295 17.2045C9.61853 17.4155 9.5 17.7016 9.5 18C9.5 18.2984 9.61853 18.5845 9.8295 18.7955C10.0405 19.0065 10.3266 19.125 10.625 19.125L23.6592 19.125L18.8285 23.9535C18.6173 24.1647 18.4986 24.4513 18.4986 24.75C18.4986 25.0487 18.6173 25.3353 18.8285 25.5465C19.0397 25.7577 19.3263 25.8764 19.625 25.8764C19.9237 25.8764 20.2103 25.7577 20.4215 25.5465L27.1715 18.7965C27.2763 18.692 27.3594 18.5679 27.4161 18.4312C27.4728 18.2945 27.502 18.148 27.502 18C27.502 17.852 27.4728 17.7055 27.4161 17.5688C27.3594 17.4321 27.2763 17.308 27.1715 17.2035L20.4215 10.4535C20.2103 10.2423 19.9237 10.1236 19.625 10.1236C19.3263 10.1236 19.0397 10.2423 18.8285 10.4535C18.6173 10.6647 18.4986 10.9513 18.4986 11.25C18.4986 11.5487 18.6173 11.8353 18.8285 12.0465L23.6592 16.875L10.625 16.875Z"
+                                 fill="#CBFB45"
+                              />
+                           </svg>
+                        </button>
+                        <p id="email-form-done"></p>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer></footer>
+   </body>
 </html>
