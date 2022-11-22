@@ -14,89 +14,105 @@
          justify-content: center;
 
          .item-menu1-1 {
+            // hotkey
             & h3 {
-               width: 119px;
-               @extend %shortcut-open;
+               @extend %itemGrid;
+               @include itemConfig(119px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
 
                &:hover {
-                  @extend %shortcut-open-hover;
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
                }
             }
          }
 
          .item-menu1-2 {
+            // hotkey
             & h3 {
-               width: 153px;
-               @extend %shortcut-open;
+               @extend %itemGrid;
+               @include itemConfig(153px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
 
                &:hover {
-                  @extend %shortcut-open-hover;
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
                }
             }
          }
 
          .item-menu1-3 {
+            // page
             & h3 {
-               width: 166px;
-               @extend %item-open;
+               @extend %itemGrid;
+               @include itemConfig(166px, 50px, $black, $grey3, 1.5px solid $grey3, 42px, 1.5rem, 600);
+               cursor: wait;
 
                &:hover {
-                  @extend %item-open-hover;
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
                }
             }
          }
 
          .item-menu1-4 {
+            // hotkey
             & h3 {
-               width: 124px;
-               @extend %shortcut-open;
+               @extend %itemGrid;
+               @include itemConfig(124px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
 
                &:hover {
-                  @extend %shortcut-open-hover;
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
                }
             }
          }
 
          .item-menu1-5 {
+            // hotkey
             & h3 {
-               width: 158px;
-               @extend %shortcut-open;
+               @extend %itemGrid;
+               @include itemConfig(158px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
 
                &:hover {
-                  @extend %shortcut-open-hover;
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
                }
             }
          }
 
          .item-menu1-6 {
+            // page
             & h3 {
-               width: 190px;
-               @extend %item-open;
+               @extend %itemGrid;
+               @include itemConfig(190px, 50px, $black, $grey3, 1.5px solid $grey3, 42px, 1.5rem, 600);
+               cursor: wait;
 
                &:hover {
-                  @extend %item-open-hover;
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
                }
             }
          }
 
          .item-menu1-7 {
+            // hotkey
             & h3 {
-               width: 158px;
-               @extend %shortcut-open;
+               @extend %itemGrid;
+               @include itemConfig(158px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
 
                &:hover {
-                  @extend %shortcut-open-hover;
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
                }
             }
          }
 
          .item-menu1-8 {
+            // hotkey
             & h3 {
-               width: 125px;
-               @extend %shortcut-open;
+               @extend %itemGrid;
+               @include itemConfig(125px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
 
                &:hover {
-                  @extend %shortcut-open-hover;
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
                }
             }
          }
@@ -112,67 +128,79 @@
          justify-content: center;
 
          .item-menu2-1 {
+            // page
             & h3 {
-               width: 139px;
-               @extend %item-open;
+               @extend %itemGrid;
+               @include itemConfig(139px, 50px, $black, $grey3, 1.5px solid $grey3, 42px, 1.5rem, 600);
+               cursor: wait;
 
                &:hover {
-                  @extend %item-open-hover;
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
                }
             }
          }
 
          .item-menu2-2 {
+            // hotkey
             & h3 {
-               width: 178px;
-               @extend %shortcut-open;
+               @extend %itemGrid;
+               @include itemConfig(178px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
 
                &:hover {
-                  @extend %shortcut-open-hover;
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
                }
             }
          }
 
          .item-menu2-3 {
+            // page
             & h3 {
-               width: 132px;
-               @extend %item-open;
+               @extend %itemGrid;
+               @include itemConfig(132px, 50px, $black, $grey3, 1.5px solid $grey3, 42px, 1.5rem, 600);
+               cursor: wait;
 
                &:hover {
-                  @extend %item-open-hover;
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
                }
             }
          }
 
          .item-menu2-4 {
+            // page
             & h3 {
-               width: 170px;
-               @extend %item-open;
+               @extend %itemGrid;
+               @include itemConfig(170px, 50px, $black, $grey3, 1.5px solid $grey3, 42px, 1.5rem, 600);
+               cursor: wait;
 
                &:hover {
-                  @extend %item-open-hover;
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
                }
             }
          }
 
          .item-menu2-5 {
+            // hotkey
             & h3 {
-               width: 130px;
-               @extend %shortcut-open;
+               @extend %itemGrid;
+               @include itemConfig(130px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
 
                &:hover {
-                  @extend %shortcut-open-hover;
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
                }
             }
          }
 
          .item-menu2-6 {
+            // hotkey
             & h3 {
-               width: 136px;
-               @extend %shortcut-open;
+               @extend %itemGrid;
+               @include itemConfig(136px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+               cursor: wait;
 
                &:hover {
-                  @extend %shortcut-open-hover;
+                  @include itemOpenConfig($green, $black, 1.5px solid $green, 600);
                }
             }
          }
@@ -188,24 +216,24 @@
    & .footer-items {
       display: flex;
       flex-direction: row;
-      justify-content: center;
 
       & .footer-item-up h3 {
-         width: 141px;
-         @extend %item-footer-open;
+         // footer-item
+         @extend %itemGrid;
+         @include itemConfig(141px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
 
          &:hover {
-            color: $green;
-            border: 2px solid $green;
+            @include itemOpenConfig($green, transparent, 2px solid $green, 500);
          }
       }
 
       & .footer-item-vk {
-         width: 50px;
-         @extend %item-footer-open;
+         // footer-item
+         @extend %itemGrid;
+         @include itemConfig(50px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
 
          &:hover {
-            border: 2px solid $green;
+            @include itemOpenConfig($green, transparent, 2px solid $green, 500);
          }
 
          &:hover .footer-vk {
@@ -218,11 +246,12 @@
       }
 
       & .footer-item-dzen {
-         width: 50px;
-         @extend %item-footer-open;
+         // footer-item
+         @extend %itemGrid;
+         @include itemConfig(50px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
 
          &:hover {
-            border: 2px solid $green;
+            @include itemOpenConfig($green, transparent, 2px solid $green, 500);
          }
 
          &:hover .footer-dzen {
@@ -231,11 +260,12 @@
       }
 
       & .footer-item-tg {
-         width: 50px;
-         @extend %item-footer-open;
+         // footer-item
+         @extend %itemGrid;
+         @include itemConfig(50px, 50px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
 
          &:hover {
-            border: 2px solid $green;
+            @include itemOpenConfig($green, transparent, 2px solid $green, 500);
          }
 
          &:hover .footer-tg {

@@ -39,7 +39,7 @@ body.selections {
             .items-menu {
                .item-menu1-3 {
                   & h3 {
-                     @extend %item-open-now;
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
                   }
                }
             }
