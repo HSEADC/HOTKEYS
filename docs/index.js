@@ -28,7 +28,7 @@ function changeText(idx) {
 
 changeText(0); // index.html form script
 
-var form = document.getElementById("email");
+var form = document.getElementById('email');
 
 function handleSubmit(_x) {
   return _handleSubmit.apply(this, arguments);
@@ -42,31 +42,31 @@ function _handleSubmit() {
         switch (_context.prev = _context.next) {
           case 0:
             event.preventDefault();
-            status = document.getElementById("email-form-done");
+            status = document.getElementById('email-form-done');
             data = new FormData(event.target);
             fetch(event.target.action, {
               method: form.method,
               body: data,
               headers: {
-                'Accept': 'application/json'
+                Accept: 'application/json'
               }
             }).then(function (response) {
               if (response.ok) {
-                status.innerHTML = "e-mail отправлен!";
+                status.innerHTML = 'e-mail отправлен!';
                 form.reset();
               } else {
                 response.json().then(function (data) {
                   if (Object.hasOwn(data, 'errors')) {
-                    status.innerHTML = data["errors"].map(function (error) {
-                      return error["message"];
-                    }).join(", ");
+                    status.innerHTML = data['errors'].map(function (error) {
+                      return error['message'];
+                    }).join(', ');
                   } else {
-                    status.innerHTML = "ошибка";
+                    status.innerHTML = 'ошибка';
                   }
                 });
               }
             })["catch"](function (error) {
-              status.innerHTML = "ошибка";
+              status.innerHTML = 'ошибка';
             });
 
           case 4:
@@ -79,6 +79,6 @@ function _handleSubmit() {
   return _handleSubmit.apply(this, arguments);
 }
 
-form.addEventListener("submit", handleSubmit);
+form.addEventListener('submit', handleSubmit);
 /******/ })()
 ;
