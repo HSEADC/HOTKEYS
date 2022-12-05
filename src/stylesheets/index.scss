@@ -1,43 +1,33 @@
 html.index {
    scroll-behavior: smooth;
-   font-size: 16px;
 }
 
 body.index {
    background-color: $black;
-   font-family: 'Inter', sans-serif;
+   font-family: 'IBM-PlexSans', sans-serif;
    font-style: normal;
 
-   // 1 screen
+   & a {
+      color: $white;
+   }
 
-   .block1 {
-      padding: 1.5% 2% 2% 2%;
+   .block-main {
+      margin: 2.5vw;
       display: flex;
       flex-direction: column;
    }
 
-   .block1-logo {
+   .block-main-header {
       display: flex;
       justify-content: space-between;
-
-      & h1 {
-         font-size: 3rem;
-         font-weight: 600;
-         color: $white;
-
-         &:hover {
-            color: $green;
-         }
-      }
    }
 
-   .block1-shortcut {
+   .block-main-shortcut {
       color: $white;
 
       & div {
-         margin: 3% auto 9% auto;
-         font-size: 25rem;
-         font-weight: 600;
+         margin: 4vw auto 10vw auto;
+         font-size: 20vw;
          text-align: center;
          animation: change-text 3.5s infinite;
          // animation-play-state: running;
@@ -107,70 +97,82 @@ body.index {
       }
    }
 
-   .block1-text {
+   .block-main-text {
       display: flex;
       justify-content: space-between;
 
       & h2 {
-         font-size: 1.55rem;
-         line-height: 1rem;
+         font-size: 1.3vw;
+         line-height: 1vw;
          font-weight: 400;
          color: $white;
 
          &:hover {
             color: $green;
+            text-decoration: underline;
          }
       }
    }
 
-   // 2 screen
-
    #mail-target {
-      margin-top: 5.5%;
+      margin-top: 5vw;
    }
 
-   .block2 {
-      padding-top: 1%;
-      margin: 0 auto 7% auto;
+   .block-form {
+      padding-top: 1vw;
+      margin: 0 auto 7vw auto;
 
       .menu {
-         .items-menu-2 {
-            .item-menu2-1 {
+         .items-menu {
+            .item-menu1 {
                & h3 {
-                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                }
             }
          }
       }
 
       .mail-index {
-         padding: 0 5.5% 0 5.5%;
+         padding: 0 5.5vw;
 
          .mail-text-index {
-            padding-top: 8%;
-            padding-bottom: 6%;
+            padding-top: 8vw;
+            padding-bottom: 6vw;
 
             & h4 {
-               font-size: 5.5rem;
+               font-size: 4vw;
                text-align: center;
                font-weight: 400;
                color: $white;
+
+               & b {
+                  color: $green;
+                  & :hover {
+                     text-decoration: underline;
+                  }
+               }
             }
 
             & h5 {
                padding-top: 3%;
-               font-size: 1.55rem;
-               line-height: 1.8rem;
-               letter-spacing: 0.07rem;
+               font-size: 1.5vw;
+               line-height: 1.8vw;
                text-align: center;
                font-weight: 300;
                color: $white;
+
+               & b {
+                  color: $green;
+                  & :hover {
+                     text-decoration: underline;
+                  }
+               }
             }
          }
 
          .mail-input-index {
             margin: 0 auto;
-            width: 426px;
+            width: 25vw;
             position: relative;
          }
 
@@ -178,39 +180,42 @@ body.index {
             width: 100%;
             display: flex;
             justify-content: space-between;
+            position: relative;
 
             .input-email {
                color: $white;
-               width: 420px;
-               height: 50px;
+               width: 25vw;
+               height: 2.6vw;
                border: 1.5px solid $grey;
-               border-radius: 42.1569px;
+               border-radius: 5px;
                background-color: $black;
             }
 
             input[placeholder] {
-               padding-left: 5%;
-               font-size: 1.8rem;
+               padding-left: 0.8vw;
+               font-size: 1.8vw;
             }
 
             .input-email::-webkit-input-placeholder {
-               color: $grey2;
+               color: $grey;
             }
 
             button {
+               width: 2.03vw;
+               height: 2.03vw;
                outline: none;
                border: 0;
                background: transparent;
                position: absolute;
-               top: 11%;
-               right: 3%;
+               top: 0.3vw;
+               right: 0.3vw;
             }
 
             #email-form-done {
                position: absolute;
                padding-top: 3%;
-               left: 35%;
-               font-size: 1rem;
+               margin: 0.5vw 8.3vw;
+               font-size: 1vw;
                font-style: normal;
                font-weight: 300;
                color: $green;
@@ -219,699 +224,25 @@ body.index {
       }
    }
 
-   // footer
-
    .footer {
-      padding: 1.6% 0 2% 1.5%;
+      padding: 2.5vw 0 1.5vw 0;
    }
 }
 
-@media only screen and (max-device-width: 2560px) and (min-width: 1921px) {
+@media screen and (max-width: 768px) {
    body.index {
-      .block1 {
-         padding: 1.5% 2% 2% 2%;
-         display: flex;
-         flex-direction: column;
-      }
-
-      .block1-logo {
-         display: flex;
-         justify-content: space-between;
-
-         & h1 {
-            font-size: 3.5rem;
-            font-weight: 600;
-            color: $white;
-
-            &:hover {
-               color: $green;
-            }
-         }
-      }
-
-      .block1-shortcut {
-         color: $white;
-
-         & div {
-            margin: 3% auto 9% auto;
-            font-size: 27rem;
-            font-weight: 600;
-            text-align: center;
-            animation: change-text 3.5s infinite;
-            // animation-play-state: running;
-            cursor: help;
-
-            &:hover {
-               // animation-play-state: paused;
-               color: $green;
-            }
-         }
-      }
-
-      .block1-text {
-         display: flex;
-         justify-content: space-between;
-
-         & h2 {
-            font-size: 1.6rem;
-            line-height: 1rem;
-            font-weight: 400;
-            color: $white;
-
-            &:hover {
-               color: $green;
-            }
-         }
-      }
-   }
-}
-
-@media only screen and (max-device-width: 1920px) and (min-width: 1441px) {
-   body.index {
-      // 1 screen
-
-      .block1 {
-         padding: 1.5% 2% 2% 2%;
-         display: flex;
-         flex-direction: column;
-      }
-
-      .block1-logo {
-         display: flex;
-         justify-content: space-between;
-
-         & h1 {
-            font-size: 3rem;
-            font-weight: 600;
-            color: $white;
-
-            &:hover {
-               color: $green;
-            }
-         }
-      }
-
-      .block1-shortcut {
-         color: $white;
-
-         & div {
-            margin: 5% auto 12% auto;
-            font-size: 21rem;
-            font-weight: 600;
-            text-align: center;
-            animation: change-text 3.5s infinite;
-            // animation-play-state: running;
-            cursor: help;
-
-            &:hover {
-               // animation-play-state: paused;
-               color: $green;
-            }
-         }
-      }
-
-      .block1-text {
-         display: flex;
-         justify-content: space-between;
-
-         & h2 {
-            font-size: 1.55rem;
-            line-height: 1rem;
-            font-weight: 400;
-            color: $white;
-
-            &:hover {
-               color: $green;
-            }
-         }
-      }
-   }
-}
-
-@media only screen and (max-device-width: 1440px) and (min-width: 1025px) {
-   body.index {
-      .block1 {
-         padding: 1.5% 2% 2% 2%;
-         display: flex;
-         flex-direction: column;
-      }
-
-      .block1-logo {
-         display: flex;
-         justify-content: space-between;
-
-         & h1 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: $white;
-
-            &:hover {
-               color: $green;
-            }
-         }
-      }
-
-      .block1-shortcut {
-         color: $white;
-
-         & div {
-            margin: 3% auto 9% auto;
-            font-size: 19rem;
-            font-weight: 600;
-            text-align: center;
-            animation: change-text 3.5s infinite;
-            // animation-play-state: running;
-            cursor: help;
-
-            &:hover {
-               // animation-play-state: paused;
-               color: $green;
-            }
-         }
-      }
-
-      .block1-text {
-         display: flex;
-         justify-content: space-between;
-
-         & h2 {
-            font-size: 1.25rem;
-            line-height: 1rem;
-            font-weight: 400;
-            color: $white;
-
-            &:hover {
-               color: $green;
-            }
-         }
-      }
-
-      #mail-target {
-         margin: 5.5%;
-      }
-
-      .block2 {
-         padding-top: 1%;
-         margin: 0 auto 8% auto;
-
-         .mail-index {
-            .mail-text-index {
-               padding-top: 10%;
-               padding-bottom: 6%;
-
-               & h4 {
-                  font-size: 4rem;
-                  text-align: center;
-                  font-weight: 400;
-                  color: $white;
-               }
-
-               & h5 {
-                  padding-top: 3%;
-                  font-size: 1.25rem;
-                  line-height: 1.5rem;
-                  letter-spacing: 0.07rem;
-                  text-align: center;
-                  font-weight: 300;
-                  color: $white;
-               }
-            }
-
-            .mail-input-index {
-               margin: 0 auto;
-               width: 426px;
-               position: relative;
-            }
-
-            .email-form {
-               width: 100%;
-               display: flex;
-               justify-content: space-between;
-
-               .input-email {
-                  color: $white;
-                  width: 420px;
-                  height: 50px;
-                  border: 1.5px solid $grey;
-                  border-radius: 42.1569px;
-                  background-color: $black;
-               }
-
-               input[placeholder] {
-                  padding-left: 5%;
-                  font-size: 1.8rem;
-               }
-
-               .input-email::-webkit-input-placeholder {
-                  color: $grey2;
-               }
-
-               button {
-                  outline: none;
-                  border: 0;
-                  background: transparent;
-                  position: absolute;
-                  top: 11.8%;
-                  right: 1%;
-               }
-
-               #email-form-done {
-                  position: absolute;
-                  padding-top: 3%;
-                  left: 35%;
-                  font-size: 1rem;
-                  font-style: normal;
-                  font-weight: 300;
-                  color: $green;
-               }
-            }
-         }
-      }
-   }
-}
-
-@media only screen and (max-device-width: 1024px) and (min-width: 766px) {
-   body.index {
-      .block1 {
-         padding: 1.5% 2% 2% 2%;
-         display: flex;
-         flex-direction: column;
-      }
-
-      .block1-logo {
-         display: flex;
-         justify-content: space-between;
-
-         & h1 {
-            font-size: 2rem;
-            font-weight: 600;
-            color: $white;
-
-            &:hover {
-               color: $green;
-            }
-         }
-      }
-
-      .block1-shortcut {
-         color: $white;
-
-         & div {
-            margin: 9% auto 15% auto;
-            font-size: 11rem;
-            font-weight: 600;
-            text-align: center;
-            animation: change-text 3.5s infinite;
-            // animation-play-state: running;
-            cursor: help;
-
-            &:hover {
-               // animation-play-state: paused;
-               color: $green;
-            }
-         }
-      }
-
-      .block1-text {
-         display: flex;
-         justify-content: space-between;
-
-         & h2 {
-            font-size: 1rem;
-            line-height: 1rem;
-            font-weight: 400;
-            color: $white;
-
-            &:hover {
-               color: $green;
-            }
-         }
-      }
-
-      // 2 screen
-
-      #mail-target {
-         margin: 5.5%;
-      }
-
-      .block2 {
-         padding-top: 1%;
-         margin: 0 auto 15% auto;
-
-         .menu {
-            .items-menu-2 {
-               .item-menu2-1 {
-                  & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
-                  }
-               }
-            }
-         }
-
-         .mail-index {
-            .mail-text-index {
-               padding-top: 15%;
-               padding-bottom: 6%;
-
-               & h4 {
-                  font-size: 3.2rem;
-                  text-align: center;
-                  font-weight: 400;
-                  color: $white;
-               }
-
-               & h5 {
-                  padding-top: 3%;
-                  font-size: 1rem;
-                  line-height: 1.3rem;
-                  letter-spacing: 0.07rem;
-                  text-align: center;
-                  font-weight: 300;
-                  color: $white;
-               }
-            }
-
-            .mail-input-index {
-               margin: 0 auto;
-               width: 40%;
-               position: relative;
-            }
-
-            .email-form {
-               width: 100%;
-               display: flex;
-               justify-content: space-between;
-
-               .input-email {
-                  color: $white;
-                  width: 309px;
-                  height: 45px;
-                  border: 1.5px solid $grey;
-                  border-radius: 42.1569px;
-                  background-color: $black;
-               }
-
-               input {
-                  width: 100%;
-               }
-
-               input[placeholder] {
-                  padding-left: 6%;
-                  font-size: 1.3rem;
-               }
-
-               .input-email::-webkit-input-placeholder {
-                  color: $grey2;
-               }
-
-               button {
-                  transform: scale(0.9);
-                  outline: none;
-                  border: 0;
-                  background: transparent;
-                  position: absolute;
-                  top: 7%;
-                  right: 1%;
-               }
-
-               #email-form-done {
-                  position: absolute;
-                  padding-top: 3%;
-                  left: 35%;
-                  font-size: 1rem;
-                  font-style: normal;
-                  font-weight: 300;
-                  color: $green;
-               }
-            }
-         }
-      }
-
-      .footer {
-         padding: 1.6% 0 2% 1.5%;
-         & .footer-items {
-            & .footer-item-vk {
-               & svg {
-                  transform: scale(0.9);
-               }
-
-               // & svg {
-               //   transform: translate(1px);
-               // }
-            }
-
-            & .footer-item-dzen {
-               & svg {
-                  transform: scale(0.9);
-               }
-            }
-
-            & .footer-item-tg {
-               & svg {
-                  transform: translate(-2px);
-                  transform: scale(0.9);
-               }
-            }
-         }
-
-         & a:nth-child(-n + 3) {
-            margin-right: 0.7%;
-         }
-      }
-   }
-}
-
-@media only screen and (max-device-width: 768px) and (min-width: 429px) {
-   body.index {
-      .block1 {
-         padding: 1.5% 2% 2% 2%;
-         display: flex;
-         flex-direction: column;
-      }
-
-      .block1-logo {
-         display: flex;
-         justify-content: space-between;
-
-         & h1 {
-            font-size: 2rem;
-            font-weight: 600;
-            color: $white;
-
-            &:hover {
-               color: $green;
-            }
-         }
-      }
-
-      .block1-shortcut {
-         color: $white;
-
-         & div {
-            margin: 9% auto 15% auto;
-            font-size: 7rem;
-            font-weight: 600;
-            text-align: center;
-            animation: change-text 3.5s infinite;
-            // animation-play-state: running;
-            cursor: help;
-
-            &:hover {
-               // animation-play-state: paused;
-               color: $green;
-            }
-         }
-      }
-
-      .block1-text {
-         display: flex;
-         justify-content: space-between;
-
-         & h2 {
-            font-size: 1rem;
-            line-height: 1rem;
-            font-weight: 400;
-            color: $white;
-
-            &:hover {
-               color: $green;
-            }
-         }
-      }
-
-      // 2 screen
-
-      #mail-target {
-         margin-top: 5.5%;
-      }
-
-      .block2 {
-         padding-top: 1%;
-         margin: 0 auto 15% auto;
-
-         .menu {
-            padding-left: 57%;
-            width: 100%;
-            overflow-x: auto;
-            white-space: nowrap;
-
-            .items-menu-2 {
-               .item-menu2-1 {
-                  & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
-                  }
-               }
-            }
-         }
-
-         .mail-index {
-            padding: 0 5.5% 0 5.5%;
-            .mail-text-index {
-               padding-top: 15%;
-               padding-bottom: 6%;
-
-               & h4 {
-                  font-size: 2.5rem;
-                  text-align: center;
-                  font-weight: 400;
-                  color: $white;
-               }
-
-               & h5 {
-                  padding-top: 3%;
-                  font-size: 0.8rem;
-                  line-height: 1rem;
-                  letter-spacing: 0.07rem;
-                  text-align: center;
-                  font-weight: 300;
-                  color: $white;
-               }
-            }
-
-            .mail-input-index {
-               margin: 0 auto;
-               width: 39%;
-               position: relative;
-            }
-
-            .email-form {
-               width: 100%;
-               display: flex;
-               justify-content: space-between;
-
-               .input-email {
-                  color: $white;
-                  width: 265px;
-                  height: 45px;
-                  border: 1.5px solid $grey;
-                  border-radius: 42.1569px;
-                  background-color: $black;
-               }
-
-               input {
-                  width: 100%;
-               }
-
-               input[placeholder] {
-                  padding-left: 6%;
-                  font-size: 1.3rem;
-               }
-
-               .input-email::-webkit-input-placeholder {
-                  color: $grey2;
-               }
-
-               button {
-                  transform: scale(0.9);
-                  outline: none;
-                  border: 0;
-                  background: transparent;
-                  position: absolute;
-                  top: 7%;
-                  right: -6%;
-               }
-
-               #email-form-done {
-                  position: absolute;
-                  padding-top: 3%;
-                  left: 35%;
-                  font-size: 1rem;
-                  font-style: normal;
-                  font-weight: 300;
-                  color: $green;
-               }
-            }
-         }
-      }
-
-      .footer {
-         padding: 1.6% 0 2% 1.5%;
-         & .footer-items {
-            & .footer-item-vk {
-               & svg {
-                  transform: scale(0.9);
-               }
-
-               // & svg {
-               //   transform: translate(1px);
-               // }
-            }
-
-            & .footer-item-dzen {
-               & svg {
-                  transform: scale(0.9);
-               }
-            }
-
-            & .footer-item-tg {
-               & svg {
-                  transform: translate(-2px);
-                  transform: scale(0.9);
-               }
-            }
-         }
-
-         & a:nth-child(-n + 3) {
-            margin-right: 0.7%;
-         }
-      }
-   }
-}
-
-@media only screen and (max-device-width: 428px) and (min-width: 360px) {
-   body.index {
-      overflow-x: hidden;
-      .block1 {
-         padding: 1.5% 2% 2% 2%;
-         display: flex;
-         flex-direction: column;
-      }
-
-      .block1-logo {
-         display: flex;
+      .block-main-header {
+         padding-top: 3vw;
          justify-content: center;
-
-         & h1 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: $white;
-
-            &:hover {
-               color: $green;
-            }
-         }
       }
 
-      .block1-shortcut {
+      .block-main-shortcut {
          color: $white;
-         transform: rotate(-90deg);
-         margin-top: 30%;
-         margin-bottom: 30%;
 
          & div {
-            margin: 9% auto 15% auto;
-            font-size: 7rem;
-            font-weight: 600;
+            transform: rotate(-90deg);
+            margin: 38vw auto 44vw auto;
+            font-size: 20vw;
             text-align: center;
             animation: change-text 3.5s infinite;
             // animation-play-state: running;
@@ -924,76 +255,82 @@ body.index {
          }
       }
 
-      .block1-text {
+      .block-main-text {
          display: flex;
-         flex-direction: column;
-         justify-content: center;
-         text-align: center;
+         justify-content: space-between;
 
          & h2 {
-            font-size: 1rem;
-            line-height: 1rem;
+            font-size: 2.5vw;
+            line-height: 1vw;
             font-weight: 400;
             color: $white;
 
             &:hover {
                color: $green;
+               text-decoration: underline;
             }
          }
       }
 
-      // 2 screen
-
       #mail-target {
-         margin-top: 5.5%;
+         margin-top: 5vw;
       }
 
-      .block2 {
-         padding-top: 1%;
-         margin: 0 auto 15% auto;
+      .block-form {
+         padding-top: 13vw;
+         margin: 0 auto 15vw auto;
 
          .menu {
-            padding-left: 135%;
-            width: 100%;
-            overflow-x: auto;
-            white-space: nowrap;
-
-            .items-menu-2 {
-               .item-menu2-1 {
+            .items-menu {
+               .item-menu1 {
                   & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                   }
                }
             }
          }
 
          .mail-index {
-            padding: 0 5.5% 0 5.5%;
+            padding: 0 5.5vw;
+
             .mail-text-index {
-               padding-top: 15%;
-               padding-bottom: 6%;
+               padding-top: 10vw;
+               padding-bottom: 15vw;
 
                & h4 {
-                  font-size: 2.5rem;
+                  font-size: 7vw;
                   text-align: center;
                   font-weight: 400;
                   color: $white;
+
+                  & b {
+                     color: $green;
+                     & :hover {
+                        text-decoration: underline;
+                     }
+                  }
                }
 
                & h5 {
-                  padding-top: 7%;
-                  font-size: 0.9rem;
-                  line-height: 1rem;
-                  letter-spacing: 0.07rem;
+                  padding-top: 7vw;
+                  font-size: 2.8vw;
+                  line-height: 3vw;
                   text-align: center;
                   font-weight: 300;
                   color: $white;
+
+                  & b {
+                     color: $green;
+                     & :hover {
+                        text-decoration: underline;
+                     }
+                  }
                }
             }
 
             .mail-input-index {
                margin: 0 auto;
-               width: 73%;
+               width: 40vw;
                position: relative;
             }
 
@@ -1001,44 +338,42 @@ body.index {
                width: 100%;
                display: flex;
                justify-content: space-between;
+               position: relative;
 
                .input-email {
                   color: $white;
-                  width: 265px;
-                  height: 45px;
+                  width: 40vw;
+                  height: 4.6vw;
                   border: 1.5px solid $grey;
-                  border-radius: 42.1569px;
+                  border-radius: 2px;
                   background-color: $black;
                }
 
-               input {
-                  width: 100%;
-               }
-
                input[placeholder] {
-                  padding-left: 6%;
-                  font-size: 1.3rem;
+                  padding-left: 0.8vw;
+                  font-size: 1.8vw;
                }
 
                .input-email::-webkit-input-placeholder {
-                  color: $grey2;
+                  color: $grey;
                }
 
                button {
-                  transform: scale(0.9);
+                  width: 3.3vw;
+                  height: 3.3vw;
                   outline: none;
                   border: 0;
                   background: transparent;
                   position: absolute;
-                  top: 7%;
-                  right: 1%;
+                  top: 0.3vw;
+                  right: 0.7vw;
                }
 
                #email-form-done {
                   position: absolute;
                   padding-top: 3%;
-                  left: 35%;
-                  font-size: 1rem;
+                  margin: 0.5vw 11.5vw;
+                  font-size: 1vw;
                   font-style: normal;
                   font-weight: 300;
                   color: $green;
@@ -1048,38 +383,27 @@ body.index {
       }
 
       .footer {
-         padding: 1.6% 0 2% 1.5%;
+         padding: 2.5vw 0 3.5vw 0;
+      }
+   }
+}
 
-         .footer-items {
-            justify-content: center;
-         }
-         & .footer-items {
-            & .footer-item-vk {
-               & svg {
-                  transform: scale(0.9);
-               }
-
-               // & svg {
-               //   transform: translate(1px);
-               // }
-            }
-
-            & .footer-item-dzen {
-               & svg {
-                  transform: scale(0.9);
-               }
-            }
-
-            & .footer-item-tg {
-               & svg {
-                  transform: translate(-2px);
-                  transform: scale(0.9);
+@media screen and (max-width: 420px) {
+   body.index {
+      .block-form {
+         .mail-index {
+            .email-form {
+               button {
+                  width: 3.03vw;
+                  height: 3.03vw;
+                  outline: none;
+                  border: 0;
+                  background: transparent;
+                  position: absolute;
+                  top: 0.5vw;
+                  right: 0.7vw;
                }
             }
-         }
-
-         & a:nth-child(-n + 3) {
-            margin-right: 0.7%;
          }
       }
    }

@@ -1,12 +1,13 @@
 $black: #0a0a0a;
-$black2: #1e1e1e;
-$black-hov: #141414;
-$white: #dadada;
-$white-hov: #868686;
-$grey: #9c9c9c;
-$grey2: #515151;
-$grey3: #c4c4c4;
+$white: #eee;
+$white-dark: #b4b4b4;
+$grey: #595959;
 $green: #cbfb45;
+
+$black-hov: #141414;
+$white-hov: #868686;
+
+// config
 
 @mixin itemConfig($w, $h, $c, $bc, $b, $br, $fs, $fw) {
    width: $w;
@@ -19,11 +20,12 @@ $green: #cbfb45;
    font-weight: $fw;
 }
 
-@mixin itemOpenConfig($c, $bc, $b, $fw) {
+@mixin itemOpenConfig($c, $bc, $b, $fw, $fs) {
    color: $c;
    background-color: $bc;
    border: $b;
    font-weight: $fw;
+   font-style: $fs;
 }
 
 @mixin itemGrid {
@@ -50,7 +52,7 @@ $green: #cbfb45;
    font-size: 1.5rem;
    font-weight: 500;
    color: $white;
-   background-color: $black2;
+   background-color: $black;
    cursor: help;
 }
 
@@ -69,7 +71,7 @@ $green: #cbfb45;
    font-size: 1.5rem;
    font-weight: 500;
    color: $white;
-   background-color: $black2;
+   background-color: $black;
    cursor: help;
 }
 

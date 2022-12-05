@@ -4,7 +4,7 @@ html.selections {
 
 body.selections {
    background-color: $black;
-   font-family: 'Inter', sans-serif;
+   font-family: 'IBM-PlexSans', sans-serif;
    font-style: normal;
 
    .container {
@@ -37,9 +37,9 @@ body.selections {
 
          .menu {
             .items-menu {
-               .item-menu1-3 {
+               .item-menu4 {
                   & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                   }
                }
             }
@@ -68,8 +68,8 @@ body.selections {
                width: 100%;
                height: 57px;
                border-radius: 42px;
-               background-color: $black2;
-               // border: 1.5px solid $grey3;
+               background-color: $black;
+               // border: 1.5px solid $grey;
                border: transparent;
                font-size: 1.5rem;
                font-weight: 500;
@@ -82,7 +82,7 @@ body.selections {
             }
 
             .search-input::-webkit-input-placeholder {
-               color: $grey2;
+               color: $grey;
             }
 
             input[placeholder] {

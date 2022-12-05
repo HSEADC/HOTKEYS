@@ -3,7 +3,7 @@
 body.win-v {
    overflow-y: hidden;
    background-color: $black;
-   font-family: 'Inter', sans-serif;
+   font-family: 'IBM-PlexSans', sans-serif;
    font-style: normal;
 
    .container {
@@ -38,7 +38,7 @@ body.win-v {
             .items-menu {
                .item-menu1-4 {
                   & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                   }
                }
             }
@@ -58,7 +58,7 @@ body.win-v {
       justify-content: space-between;
 
       .nav-back {
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
 
          &:hover {
             color: $green;
@@ -77,7 +77,7 @@ body.win-v {
 
       .nav-back-none {
          opacity: 0;
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
       }
    }
 
@@ -203,7 +203,7 @@ body.ctrl-z {
             .items-menu {
                .item-menu1-1 {
                   & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                   }
                }
             }
@@ -223,7 +223,7 @@ body.ctrl-z {
       justify-content: space-between;
 
       .nav-back {
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
 
          &:hover {
             color: $green;
@@ -242,7 +242,7 @@ body.ctrl-z {
 
       .nav-back-none {
          opacity: 0;
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
       }
    }
 
@@ -390,7 +390,7 @@ body.cmd-z {
             .items-menu {
                .item-menu1-2 {
                   & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                   }
                }
             }
@@ -410,7 +410,7 @@ body.cmd-z {
       justify-content: space-between;
 
       .nav-back {
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
 
          &:hover {
             color: $green;
@@ -429,7 +429,7 @@ body.cmd-z {
 
       .nav-back-none {
          opacity: 0;
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
       }
    }
 
@@ -577,7 +577,7 @@ body.win-d {
             .items-menu {
                .item-menu1-8 {
                   & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                   }
                }
             }
@@ -597,7 +597,7 @@ body.win-d {
       justify-content: space-between;
 
       .nav-back {
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
 
          &:hover {
             color: $green;
@@ -616,7 +616,7 @@ body.win-d {
 
       .nav-back-none {
          opacity: 0;
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
       }
    }
 
@@ -716,7 +716,7 @@ body.alt-tab {
             .items-menu-2 {
                .item-menu2-6 {
                   & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                   }
                }
             }
@@ -736,7 +736,7 @@ body.alt-tab {
       justify-content: space-between;
 
       .nav-back {
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
 
          &:hover {
             color: $green;
@@ -755,7 +755,7 @@ body.alt-tab {
 
       .nav-back-none {
          opacity: 0;
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
       }
    }
 
@@ -903,7 +903,7 @@ body.cmd-tab {
             .items-menu-2 {
                .item-menu2-2 {
                   & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                   }
                }
             }
@@ -923,7 +923,7 @@ body.cmd-tab {
       justify-content: space-between;
 
       .nav-back {
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
 
          &:hover {
             color: $green;
@@ -942,7 +942,7 @@ body.cmd-tab {
 
       .nav-back-none {
          opacity: 0;
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
       }
    }
 
@@ -1064,7 +1064,7 @@ body.ctrl-w {
             .items-menu-2 {
                .item-menu2-5 {
                   & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                   }
                }
             }
@@ -1084,7 +1084,7 @@ body.ctrl-w {
       justify-content: space-between;
 
       .nav-back {
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
 
          &:hover {
             color: $green;
@@ -1103,7 +1103,7 @@ body.ctrl-w {
 
       .nav-back-none {
          opacity: 0;
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
       }
    }
 
@@ -1203,7 +1203,7 @@ body.cmd-h {
             .items-menu {
                .item-menu1-5 {
                   & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                   }
                }
             }
@@ -1223,7 +1223,7 @@ body.cmd-h {
       justify-content: space-between;
 
       .nav-back {
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
 
          &:hover {
             color: $green;
@@ -1242,7 +1242,7 @@ body.cmd-h {
 
       .nav-back-none {
          opacity: 0;
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
       }
    }
 
@@ -1342,7 +1342,7 @@ body.cmd-o {
             .items-menu {
                .item-menu1-7 {
                   & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                   }
                }
             }
@@ -1362,7 +1362,7 @@ body.cmd-o {
       justify-content: space-between;
 
       .nav-back {
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
 
          &:hover {
             color: $green;
@@ -1381,7 +1381,7 @@ body.cmd-o {
 
       .nav-back-none {
          opacity: 0;
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
       }
    }
 
@@ -1509,7 +1509,7 @@ body.alt-f4 {
       justify-content: space-between;
 
       .nav-back {
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
 
          &:hover {
             color: $green;
@@ -1528,7 +1528,7 @@ body.alt-f4 {
 
       .nav-back-none {
          opacity: 0;
-         @include itemConfig(268px, 55px, $grey3, transparent, 1.5px solid $grey3, 42px, 1.5rem, 500);
+         @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
       }
    }
 
