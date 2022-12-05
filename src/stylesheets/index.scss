@@ -5,7 +5,7 @@ html.index {
 
 body.index {
    background-color: $black;
-   font-family: 'Inter', sans-serif;
+   font-family: 'IBM-PlexSans', sans-serif;
    font-style: normal;
 
    & a {
@@ -103,13 +103,14 @@ body.index {
       justify-content: space-between;
 
       & h2 {
-         font-size: 1.55rem;
-         line-height: 1rem;
+         font-size: 1.3vw;
+         line-height: 1vw;
          font-weight: 400;
          color: $white;
 
          &:hover {
             color: $green;
+            text-decoration: underline;
          }
       }
    }
@@ -120,7 +121,7 @@ body.index {
 
    .block-form {
       padding-top: 1vw;
-      margin: 0 auto 7% auto;
+      margin: 0 auto 7vw auto;
 
       .menu {
          .items-menu {
@@ -133,7 +134,7 @@ body.index {
       }
 
       .mail-index {
-         padding: 0 5.5% 0 5.5%;
+         padding: 0 5.5vw;
 
          .mail-text-index {
             padding-top: 8%;
@@ -209,6 +210,6 @@ body.index {
    }
 
    .footer {
-      padding: 1.6% 0 2% 1.5%;
+      margin: 2.5vw 0 2.5vw 2.5vw;
    }
 }
