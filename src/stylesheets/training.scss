@@ -44,9 +44,9 @@ body.training {
 
          .menu {
             .items-menu {
-               .item-menu1-3 {
+               .item-menu5 {
                   & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                   }
                }
             }

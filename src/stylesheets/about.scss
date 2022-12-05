@@ -51,10 +51,10 @@ body.about {
       }
 
       .menu {
-         .items-menu-2 {
-            .item-menu2-4 {
+         .items-menu {
+            .item-menu2 {
                & h3 {
-                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                }
             }
          }
@@ -146,7 +146,7 @@ body.about {
             .items-menu-2 {
                .item-menu2-4 {
                   & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                   }
                }
             }
