@@ -1,6 +1,5 @@
 html.index {
    scroll-behavior: smooth;
-   font-size: 16px;
 }
 
 body.index {
@@ -137,30 +136,43 @@ body.index {
          padding: 0 5.5vw;
 
          .mail-text-index {
-            padding-top: 8%;
-            padding-bottom: 6%;
+            padding-top: 8vw;
+            padding-bottom: 6vw;
 
             & h4 {
-               font-size: 5.5rem;
+               font-size: 4vw;
                text-align: center;
                font-weight: 400;
                color: $white;
+
+               & b {
+                  color: $green;
+                  & :hover {
+                     text-decoration: underline;
+                  }
+               }
             }
 
             & h5 {
                padding-top: 3%;
-               font-size: 1.55rem;
-               line-height: 1.8rem;
-               letter-spacing: 0.07rem;
+               font-size: 1.5vw;
+               line-height: 1.8vw;
                text-align: center;
                font-weight: 300;
                color: $white;
+
+               & b {
+                  color: $green;
+                  & :hover {
+                     text-decoration: underline;
+                  }
+               }
             }
          }
 
          .mail-input-index {
             margin: 0 auto;
-            width: 426px;
+            width: 25vw;
             position: relative;
          }
 
@@ -168,19 +180,20 @@ body.index {
             width: 100%;
             display: flex;
             justify-content: space-between;
+            position: relative;
 
             .input-email {
                color: $white;
-               width: 420px;
-               height: 50px;
+               width: 25vw;
+               height: 2.6vw;
                border: 1.5px solid $grey;
-               border-radius: 42.1569px;
+               border-radius: 5px;
                background-color: $black;
             }
 
             input[placeholder] {
-               padding-left: 5%;
-               font-size: 1.8rem;
+               padding-left: 0.8vw;
+               font-size: 1.8vw;
             }
 
             .input-email::-webkit-input-placeholder {
@@ -188,19 +201,21 @@ body.index {
             }
 
             button {
+               width: 2.03vw;
+               height: 2.03vw;
                outline: none;
                border: 0;
                background: transparent;
                position: absolute;
-               top: 11%;
-               right: 3%;
+               top: 0.3vw;
+               right: 0.3vw;
             }
 
             #email-form-done {
                position: absolute;
                padding-top: 3%;
-               left: 35%;
-               font-size: 1rem;
+               margin: 0.5vw 8.3vw;
+               font-size: 1vw;
                font-style: normal;
                font-weight: 300;
                color: $green;
@@ -210,6 +225,186 @@ body.index {
    }
 
    .footer {
-      margin: 2.5vw 0 2.5vw 2.5vw;
+      padding: 2.5vw 0 1.5vw 0;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   body.index {
+      .block-main-header {
+         padding-top: 3vw;
+         justify-content: center;
+      }
+
+      .block-main-shortcut {
+         color: $white;
+
+         & div {
+            transform: rotate(-90deg);
+            margin: 38vw auto 44vw auto;
+            font-size: 20vw;
+            text-align: center;
+            animation: change-text 3.5s infinite;
+            // animation-play-state: running;
+            cursor: help;
+
+            &:hover {
+               // animation-play-state: paused;
+               color: $green;
+            }
+         }
+      }
+
+      .block-main-text {
+         display: flex;
+         justify-content: space-between;
+
+         & h2 {
+            font-size: 2.5vw;
+            line-height: 1vw;
+            font-weight: 400;
+            color: $white;
+
+            &:hover {
+               color: $green;
+               text-decoration: underline;
+            }
+         }
+      }
+
+      #mail-target {
+         margin-top: 5vw;
+      }
+
+      .block-form {
+         padding-top: 13vw;
+         margin: 0 auto 15vw auto;
+
+         .menu {
+            .items-menu {
+               .item-menu1 {
+                  & h3 {
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+                  }
+               }
+            }
+         }
+
+         .mail-index {
+            padding: 0 5.5vw;
+
+            .mail-text-index {
+               padding-top: 10vw;
+               padding-bottom: 15vw;
+
+               & h4 {
+                  font-size: 7vw;
+                  text-align: center;
+                  font-weight: 400;
+                  color: $white;
+
+                  & b {
+                     color: $green;
+                     & :hover {
+                        text-decoration: underline;
+                     }
+                  }
+               }
+
+               & h5 {
+                  padding-top: 7vw;
+                  font-size: 2.8vw;
+                  line-height: 3vw;
+                  text-align: center;
+                  font-weight: 300;
+                  color: $white;
+
+                  & b {
+                     color: $green;
+                     & :hover {
+                        text-decoration: underline;
+                     }
+                  }
+               }
+            }
+
+            .mail-input-index {
+               margin: 0 auto;
+               width: 40vw;
+               position: relative;
+            }
+
+            .email-form {
+               width: 100%;
+               display: flex;
+               justify-content: space-between;
+               position: relative;
+
+               .input-email {
+                  color: $white;
+                  width: 40vw;
+                  height: 4.6vw;
+                  border: 1.5px solid $grey;
+                  border-radius: 2px;
+                  background-color: $black;
+               }
+
+               input[placeholder] {
+                  padding-left: 0.8vw;
+                  font-size: 1.8vw;
+               }
+
+               .input-email::-webkit-input-placeholder {
+                  color: $grey;
+               }
+
+               button {
+                  width: 3.3vw;
+                  height: 3.3vw;
+                  outline: none;
+                  border: 0;
+                  background: transparent;
+                  position: absolute;
+                  top: 0.3vw;
+                  right: 0.7vw;
+               }
+
+               #email-form-done {
+                  position: absolute;
+                  padding-top: 3%;
+                  margin: 0.5vw 11.5vw;
+                  font-size: 1vw;
+                  font-style: normal;
+                  font-weight: 300;
+                  color: $green;
+               }
+            }
+         }
+      }
+
+      .footer {
+         padding: 2.5vw 0 3.5vw 0;
+      }
+   }
+}
+
+@media screen and (max-width: 420px) {
+   body.index {
+      .block-form {
+         .mail-index {
+            .email-form {
+               button {
+                  width: 3.03vw;
+                  height: 3.03vw;
+                  outline: none;
+                  border: 0;
+                  background: transparent;
+                  position: absolute;
+                  top: 0.5vw;
+                  right: 0.7vw;
+               }
+            }
+         }
+      }
    }
 }
