@@ -93,7 +93,7 @@
          .item-menu1 {
             & h3 {
                @include itemGrid;
-               @include itemConfig(7.4vw, 2.6vw, $grey, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
+               @include itemConfig(7.4vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
                cursor: wait;
 
                &:hover {
@@ -104,7 +104,7 @@
          .item-menu2 {
             & h3 {
                @include itemGrid;
-               @include itemConfig(8.54vw, 2.6vw, $grey, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
+               @include itemConfig(8.54vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
                cursor: wait;
 
                &:hover {
@@ -115,7 +115,7 @@
          .item-menu3 {
             & h3 {
                @include itemGrid;
-               @include itemConfig(7.5vw, 2.6vw, $grey, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
+               @include itemConfig(7.5vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
                cursor: wait;
 
                &:hover {
@@ -126,7 +126,7 @@
          .item-menu4 {
             & h3 {
                @include itemGrid;
-               @include itemConfig(8.65vw, 2.6vw, $grey, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
+               @include itemConfig(8.65vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
                cursor: wait;
 
                &:hover {
@@ -137,7 +137,7 @@
          .item-menu5 {
             & h3 {
                @include itemGrid;
-               @include itemConfig(9.69vw, 2.6vw, $grey, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
+               @include itemConfig(9.69vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
                cursor: wait;
 
                &:hover {
@@ -162,7 +162,7 @@
       & .footer-item-up h3 {
          // footer-item
          @include itemGrid;
-         @include itemConfig(6.51vw, 2.6vw, $grey, transparent, 1.5px solid $grey, 5px, 1vw, 600);
+         @include itemConfig(6.51vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1vw, 600);
 
          &:hover {
             @include itemOpenConfig($green, transparent, 1.5px solid $green, 600, italic);
@@ -172,7 +172,7 @@
       & .footer-item-vk {
          // footer-item
          @include itemGrid;
-         @include itemConfig(2.6vw, 2.6vw, $grey, transparent, 1.5px solid $grey, 5px, 1.2vw, 500);
+         @include itemConfig(2.6vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 500);
 
          & svg {
             width: 1.51vw;
@@ -191,7 +191,7 @@
       & .footer-item-dzen {
          // footer-item
          @include itemGrid;
-         @include itemConfig(2.6vw, 2.6vw, $grey, transparent, 1.5px solid $grey, 5px, 1.2vw, 500);
+         @include itemConfig(2.6vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 500);
 
          & svg {
             width: 1.82vw;
@@ -210,7 +210,7 @@
       & .footer-item-tg {
          // footer-item
          @include itemGrid;
-         @include itemConfig(2.6vw, 2.6vw, $grey, transparent, 1.5px solid $grey, 5px, 1.2vw, 500);
+         @include itemConfig(2.6vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 500);
 
          & svg {
             width: 1.51vw;
@@ -260,55 +260,55 @@
             .item-menu1 {
                & h3 {
                   @include itemGrid;
-                  @include itemConfig(13.4vw, 5.6vw, $grey, transparent, 1.5px solid $grey, 2px, 1.5vw, 600);
+                  @include itemConfig(13.4vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 1.5vw, 600);
                   cursor: wait;
 
                   &:hover {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 700, italic);
                   }
                }
             }
             .item-menu2 {
                & h3 {
                   @include itemGrid;
-                  @include itemConfig(14.54vw, 5.6vw, $grey, transparent, 1.5px solid $grey, 2px, 1.5vw, 600);
+                  @include itemConfig(14.54vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 1.5vw, 600);
                   cursor: wait;
 
                   &:hover {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 700, italic);
                   }
                }
             }
             .item-menu3 {
                & h3 {
                   @include itemGrid;
-                  @include itemConfig(13.5vw, 5.6vw, $grey, transparent, 1.5px solid $grey, 2px, 1.5vw, 600);
+                  @include itemConfig(13.5vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 1.5vw, 600);
                   cursor: wait;
 
                   &:hover {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 700, italic);
                   }
                }
             }
             .item-menu4 {
                & h3 {
                   @include itemGrid;
-                  @include itemConfig(14.65vw, 5.6vw, $grey, transparent, 1.5px solid $grey, 2px, 1.5vw, 600);
+                  @include itemConfig(14.65vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 1.5vw, 600);
                   cursor: wait;
 
                   &:hover {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 700, italic);
                   }
                }
             }
             .item-menu5 {
                & h3 {
                   @include itemGrid;
-                  @include itemConfig(15.69vw, 5.6vw, $grey, transparent, 1.5px solid $grey, 2px, 1.5vw, 600);
+                  @include itemConfig(15.69vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 1.5vw, 600);
                   cursor: wait;
 
                   &:hover {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+                     @include itemOpenConfig($black, $green, 1.5px solid $green, 700, italic);
                   }
                }
             }
@@ -333,17 +333,17 @@
          & .footer-item-up h3 {
             // footer-item
             @include itemGrid;
-            @include itemConfig(12.51vw, 5.6vw, $grey, transparent, 1.5px solid $grey, 2px, 1.5vw, 600);
+            @include itemConfig(12.51vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 1.5vw, 600);
 
             &:hover {
-               @include itemOpenConfig($green, transparent, 1.5px solid $green, 600, italic);
+               @include itemOpenConfig($green, transparent, 1.5px solid $green, 700, italic);
             }
          }
 
          & .footer-item-vk {
             // footer-item
             @include itemGrid;
-            @include itemConfig(5.6vw, 5.6vw, $grey, transparent, 1.5px solid $grey, 2px, 1.5vw, 500);
+            @include itemConfig(5.6vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 1.5vw, 500);
 
             & svg {
                width: 3.51vw;
@@ -351,7 +351,7 @@
             }
 
             &:hover {
-               @include itemOpenConfig($green, transparent, 1.5px solid $green, 600, italic);
+               @include itemOpenConfig($green, transparent, 1.5px solid $green, 700, italic);
             }
 
             &:hover .footer-vk {
@@ -362,7 +362,7 @@
          & .footer-item-dzen {
             // footer-item
             @include itemGrid;
-            @include itemConfig(5.6vw, 5.6vw, $grey, transparent, 1.5px solid $grey, 2px, 1.5vw, 500);
+            @include itemConfig(5.6vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 1.5vw, 500);
 
             & svg {
                width: 3.82vw;
@@ -370,7 +370,7 @@
             }
 
             &:hover {
-               @include itemOpenConfig($green, transparent, 1.5px solid $green, 600, italic);
+               @include itemOpenConfig($green, transparent, 1.5px solid $green, 700, italic);
             }
 
             &:hover .footer-dzen {
@@ -381,7 +381,7 @@
          & .footer-item-tg {
             // footer-item
             @include itemGrid;
-            @include itemConfig(5.6vw, 5.6vw, $grey, transparent, 1.5px solid $grey, 2px, 1.5vw, 500);
+            @include itemConfig(5.6vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 1.5vw, 500);
 
             & svg {
                width: 3.51vw;
@@ -390,7 +390,7 @@
             }
 
             &:hover {
-               @include itemOpenConfig($green, transparent, 1.5px solid $green, 600, italic);
+               @include itemOpenConfig($green, transparent, 1.5px solid $green, 700, italic);
             }
 
             &:hover .footer-tg {
