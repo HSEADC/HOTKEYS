@@ -65,12 +65,11 @@ body.selections {
             max-width: 100%;
 
             & input {
-               width: 100%;
+               width: 100vw;
                height: 57px;
-               border-radius: 42px;
+               border-radius: 5px;
                background-color: $black;
-               // border: 1.5px solid $grey;
-               border: transparent;
+               border: 1.5px solid $grey;
                font-size: 1.5rem;
                font-weight: 500;
                cursor: help;
@@ -111,8 +110,8 @@ body.selections {
       .block-shortcuts-grid {
          display: grid;
          grid-template-columns: repeat(auto-fit, minmax(585px, 1fr));
-         column-gap: 1.5%;
-         row-gap: 5%;
+         column-gap: 1vw;
+         row-gap: 1vw;
       }
 
       .block-shortcut-item {

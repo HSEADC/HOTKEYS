@@ -6,6 +6,7 @@ $green: #cbfb45;
 
 $black-hov: #141414;
 $white-hov: #868686;
+$black2: #1e1e1e;
 
 // config
 
@@ -46,13 +47,13 @@ $white-hov: #868686;
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
-   height: 300px;
-   width: 435px;
-   border-radius: 27px;
+   min-height: 300px;
+   min-width: 435px;
+   border-radius: 5px;
    font-size: 1.5rem;
    font-weight: 500;
    color: $white;
-   background-color: $black;
+   background-color: $black2;
    cursor: help;
 }
 
@@ -65,13 +66,13 @@ $white-hov: #868686;
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
-   height: 235px;
-   width: 585px;
-   border-radius: 27px;
+   min-height: 235px;
+   min-width: 585px;
+   border-radius: 5px;
    font-size: 1.5rem;
    font-weight: 500;
    color: $white;
-   background-color: $black;
+   background-color: $black2;
    cursor: help;
 }
 
