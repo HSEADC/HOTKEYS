@@ -1,6 +1,68 @@
 .hotkeys {
    & svg {
       width: 11.98vw;
+      &:hover g:first-child,
+      &:hover g:first-child.two-shift {
+         visibility: visible;
+         animation-play-state: running;
+      }
+
+      & g:first-child {
+         visibility: hidden;
+         transform: translate(36px);
+         animation: shift 2s infinite;
+         animation-play-state: paused;
+
+         @keyframes shift {
+            1% {
+               transform: translate(36px);
+               opacity: 0;
+            }
+            100% {
+               transform: translate(0px);
+               opacity: 1;
+            }
+         }
+
+         .one-shift {
+            fill: $green;
+            fill-opacity: 0.5;
+         }
+         .two-shift {
+            fill: $green;
+            animation: shift-two 2s infinite;
+            animation-play-state: paused;
+
+            @keyframes shift-two {
+               25% {
+                  fill-opacity: 0;
+               }
+               35% {
+                  fill-opacity: 0.5;
+               }
+               50% {
+                  fill-opacity: 0.5;
+               }
+               100% {
+                  fill-opacity: 0.5;
+               }
+            }
+         }
+      }
+
+      & g:last-child {
+         .h-logo,
+         .o-logo,
+         .t-logo {
+            fill: $green;
+         }
+         .k-logo,
+         .e-logo,
+         .y-logo,
+         .s-logo {
+            fill: $grey;
+         }
+      }
    }
 }
 
@@ -93,7 +155,7 @@
          .item-menu1 {
             & h3 {
                @include itemGrid;
-               @include itemConfig(7.4vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
+               @include itemConfig(7.4vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1vw, 600);
                cursor: wait;
 
                &:hover {
@@ -104,7 +166,7 @@
          .item-menu2 {
             & h3 {
                @include itemGrid;
-               @include itemConfig(8.54vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
+               @include itemConfig(8.54vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1vw, 600);
                cursor: wait;
 
                &:hover {
@@ -115,7 +177,7 @@
          .item-menu3 {
             & h3 {
                @include itemGrid;
-               @include itemConfig(7.5vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
+               @include itemConfig(7.5vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1vw, 600);
                cursor: wait;
 
                &:hover {
@@ -126,7 +188,7 @@
          .item-menu4 {
             & h3 {
                @include itemGrid;
-               @include itemConfig(8.65vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
+               @include itemConfig(8.65vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1vw, 600);
                cursor: wait;
 
                &:hover {
@@ -137,7 +199,7 @@
          .item-menu5 {
             & h3 {
                @include itemGrid;
-               @include itemConfig(9.69vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 600);
+               @include itemConfig(9.69vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1vw, 600);
                cursor: wait;
 
                &:hover {
@@ -172,7 +234,7 @@
       & .footer-item-vk {
          // footer-item
          @include itemGrid;
-         @include itemConfig(2.6vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 500);
+         @include itemConfig(2.6vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1vw, 500);
 
          & svg {
             width: 1.51vw;
@@ -191,7 +253,7 @@
       & .footer-item-dzen {
          // footer-item
          @include itemGrid;
-         @include itemConfig(2.6vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 500);
+         @include itemConfig(2.6vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1vw, 500);
 
          & svg {
             width: 1.82vw;
@@ -210,7 +272,7 @@
       & .footer-item-tg {
          // footer-item
          @include itemGrid;
-         @include itemConfig(2.6vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1.2vw, 500);
+         @include itemConfig(2.6vw, 2.6vw, $white, transparent, 1.5px solid $grey, 5px, 1vw, 500);
 
          & svg {
             width: 1.51vw;
