@@ -1,6 +1,6 @@
 .hotkeys {
    & svg {
-      margin-left: -36px;
+      margin-left: -1.88vw;
       width: 11.98vw;
       overflow: visible;
       transform: translate(0px);
@@ -11,31 +11,20 @@
 
       @keyframes shift-text {
          1% {
-            margin-left: -36px;
+            margin-left: -1.88vw;
          }
          100% {
             margin-left: 0px;
          }
       }
 
-      &:hover g:last-child {
-         animation-play-state: running;
-      }
-      &:hover g:first-child,
-      &:hover g:first-child.two-shift {
+      &:hover g:first-child {
          visibility: visible;
-         animation-play-state: running;
-      }
-
-      & g:first-child {
-         visibility: hidden;
-         transform: translate(36px);
          animation: shift 1.5s infinite;
-         animation-play-state: paused;
 
          @keyframes shift {
             1% {
-               transform: translate(36px);
+               transform: translate(1.88vw);
                opacity: 0;
             }
             100% {
@@ -43,6 +32,31 @@
                opacity: 1;
             }
          }
+      }
+
+      &:hover g:first-child.two-shift {
+         visibility: visible;
+         animation: shift-two 1.5s infinite;
+
+         @keyframes shift-two {
+            25% {
+               fill-opacity: 0;
+            }
+            35% {
+               fill-opacity: 0.5;
+            }
+            50% {
+               fill-opacity: 0.5;
+            }
+            100% {
+               fill-opacity: 0.5;
+            }
+         }
+      }
+
+      & g:first-child {
+         visibility: hidden;
+         transform: translate(1.88vw);
 
          .one-shift {
             fill: $green;
@@ -51,23 +65,6 @@
          .two-shift {
             fill-opacity: 0.5;
             fill: $green;
-            animation: shift-two 1.5s infinite;
-            animation-play-state: paused;
-
-            @keyframes shift-two {
-               25% {
-                  fill-opacity: 0;
-               }
-               35% {
-                  fill-opacity: 0.5;
-               }
-               50% {
-                  fill-opacity: 0.5;
-               }
-               100% {
-                  fill-opacity: 0.5;
-               }
-            }
          }
       }
 
