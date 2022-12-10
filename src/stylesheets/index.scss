@@ -252,8 +252,8 @@ body.index {
 
          & div {
             transform: rotate(-90deg);
-            margin: 38vw auto 44vw auto;
-            font-size: 20vw;
+            margin: 55vw auto 55vw auto;
+            font-size: 30vw;
             text-align: center;
             animation: change-text 3.5s infinite;
             // animation-play-state: running;
@@ -309,7 +309,7 @@ body.index {
                padding-bottom: 15vw;
 
                & h4 {
-                  font-size: 7vw;
+                  font-size: 6.9vw;
                   text-align: center;
                   font-weight: 400;
                   color: $white;
@@ -324,8 +324,8 @@ body.index {
 
                & h5 {
                   padding-top: 7vw;
-                  font-size: 2.8vw;
-                  line-height: 3vw;
+                  font-size: 3.5vw;
+                  line-height: 4.5vw;
                   text-align: center;
                   font-weight: 300;
                   color: $white;
@@ -341,7 +341,7 @@ body.index {
 
             .mail-input-index {
                margin: 0 auto;
-               width: 40vw;
+               width: 50vw;
                position: relative;
             }
 
@@ -353,16 +353,16 @@ body.index {
 
                .input-email {
                   color: $white;
-                  width: 40vw;
-                  height: 4.6vw;
+                  width: 50vw;
+                  height: 5.6vw;
                   border: 1.5px solid $grey;
                   border-radius: 2px;
                   background-color: $black;
                }
 
                input[placeholder] {
-                  padding-left: 0.8vw;
-                  font-size: 1.8vw;
+                  padding-left: 1vw;
+                  font-size: 3.5vw;
                }
 
                .input-email::-webkit-input-placeholder {
@@ -370,13 +370,13 @@ body.index {
                }
 
                button {
-                  width: 3.3vw;
-                  height: 3.3vw;
+                  width: 4.3vw;
+                  height: 4.3vw;
                   outline: none;
                   border: 0;
                   background: transparent;
                   position: absolute;
-                  top: 0.3vw;
+                  top: 0.7vw;
                   right: 0.7vw;
                }
 
@@ -405,14 +405,35 @@ body.index {
          .mail-index {
             .email-form {
                button {
-                  width: 3.03vw;
-                  height: 3.03vw;
+                  width: 4vw;
+                  height: 4vw;
                   outline: none;
                   border: 0;
                   background: transparent;
                   position: absolute;
-                  top: 0.5vw;
-                  right: 0.7vw;
+                  top: -0.4vw;
+                  right: 0.8vw;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 360px) {
+   body.index {
+      .block-form {
+         .mail-index {
+            .email-form {
+               button {
+                  width: 4vw;
+                  height: 4vw;
+                  outline: none;
+                  border: 0;
+                  background: transparent;
+                  position: absolute;
+                  top: -0.2vw;
+                  right: 0.8vw;
                }
             }
          }
