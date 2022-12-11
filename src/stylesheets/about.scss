@@ -6,4 +6,620 @@ body.about {
    background-color: $black;
    font-family: 'IBM-PlexSans', sans-serif;
    font-style: normal;
+
+   &::-webkit-scrollbar {
+      position: absolute;
+      width: 17px;
+   }
+   &::-webkit-scrollbar-track {
+      background: $black2;
+   }
+   &::-webkit-scrollbar-thumb {
+      background-color: $grey;
+   }
+
+   & a {
+      color: $white;
+   }
+
+   & h4 {
+      color: $white;
+      font-size: 1.15vw;
+      font-weight: 200;
+      text-align: center;
+   }
+
+   & h5 {
+      color: $white;
+      font-size: 2.5vw;
+      font-weight: 500;
+      text-align: center;
+      letter-spacing: 0.1vw;
+
+      & b {
+         font-size: 3vw;
+         font-weight: 450;
+         font-style: italic;
+         color: $green;
+
+         &:hover {
+            color: $grey;
+         }
+      }
+   }
+
+   .title-main {
+      padding: 15vw 0 2.5vw 0;
+      margin: 0 auto;
+
+      & h5 {
+         padding-top: 2.5vw;
+         line-height: 135%;
+      }
+   }
+
+   .img-main {
+      margin: 0 auto;
+      max-width: 93vw;
+
+      & img {
+         width: 100%;
+      }
+
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
+
+   .title-research {
+      padding: 15vw 0 3.5vw 0;
+      margin: 0 auto;
+
+      & h5 {
+         padding-top: 2.5vw;
+         line-height: 115%;
+      }
+   }
+
+   .img-research {
+      margin: 0 auto;
+      max-width: 34vw;
+
+      & img {
+         width: 100%;
+      }
+
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
+
+   .title-often {
+      padding: 15vw 0 3.5vw 0;
+      margin: 0 auto;
+
+      & h4 {
+         padding-top: 2.5vw;
+         line-height: 1.5vw;
+
+         & span {
+            font-weight: 450;
+            font-style: italic;
+            color: $green;
+            text-transform: uppercase;
+
+            &:hover {
+               color: $grey;
+            }
+         }
+      }
+
+      & h5 {
+         line-height: 115%;
+      }
+   }
+
+   .img-often {
+      margin: 0 auto;
+      max-width: 74.5vw;
+
+      & img {
+         width: 100%;
+      }
+
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
+
+   .title-team {
+      padding: 15vw 0 3.5vw 0;
+      margin: 0 auto;
+
+      & h5 {
+         padding-top: 2.5vw;
+         line-height: 115%;
+      }
+   }
+
+   @mixin itemTeam($w, $h, $b, $br) {
+      width: $w;
+      height: $h;
+      outline: $b;
+      border-radius: $br;
+   }
+
+   .items-team {
+      padding-top: 1vw;
+      margin: 0 auto;
+      width: 94vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .item-bozhik {
+         position: relative;
+         background-color: $green;
+         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+
+         &:hover {
+            padding: 0;
+            background-image: url('images/about/team-bozhik.png');
+            background-size: cover;
+            outline: 0px;
+         }
+
+         &:hover h1 {
+            display: none;
+         }
+
+         &:hover .item-bozhik-info {
+            visibility: visible;
+         }
+
+         & h1 {
+            margin: 1.25vw;
+            color: $black;
+            font-size: 3.13vw;
+            font-weight: 500;
+            line-height: 75%;
+         }
+
+         .item-bozhik-info {
+            visibility: hidden;
+            width: 100%;
+            max-height: 100%;
+            position: absolute;
+
+            & h2 {
+               margin: 1.25vw;
+               color: $white;
+               font-size: 1.15vw;
+               font-weight: 400;
+               line-height: 1.3vw;
+               letter-spacing: -0.03em;
+            }
+            & h3 {
+               padding-top: 0.5vw;
+               margin: 1.25vw;
+               color: $green;
+               font-size: 3.13vw;
+               font-weight: 500;
+               font-style: italic;
+               line-height: 100%;
+            }
+         }
+      }
+
+      .item-day {
+         position: relative;
+         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+
+         &:hover {
+            padding: 0;
+            background-image: url('images/about/team-day.png');
+            background-size: cover;
+            outline: 0px;
+         }
+
+         &:hover h1 {
+            display: none;
+         }
+
+         &:hover .item-day-info {
+            visibility: visible;
+         }
+
+         & h1 {
+            margin: 1.25vw;
+            color: $white;
+            font-size: 3.13vw;
+            font-weight: 500;
+            line-height: 75%;
+         }
+
+         .item-day-info {
+            visibility: hidden;
+            width: 100%;
+            max-height: 100%;
+            position: absolute;
+
+            & h2 {
+               margin: 1.25vw;
+               color: $white;
+               font-size: 1.15vw;
+               font-weight: 400;
+               line-height: 1.3vw;
+               letter-spacing: -0.03em;
+            }
+            & h3 {
+               padding-top: 0.5vw;
+               margin: 1.25vw;
+               color: $green;
+               font-size: 3.13vw;
+               font-weight: 500;
+               font-style: italic;
+               line-height: 100%;
+            }
+         }
+      }
+
+      .item-gulevich {
+         position: relative;
+         background-color: $green;
+         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+
+         &:hover {
+            padding: 0;
+            background-image: url('images/about/team-gulevich.png');
+            background-size: cover;
+            outline: 0px;
+         }
+
+         &:hover h1 {
+            display: none;
+         }
+
+         &:hover .item-gulevich-info {
+            visibility: visible;
+         }
+
+         & h1 {
+            margin: 1.25vw;
+            color: $black;
+            font-size: 3.13vw;
+            font-weight: 500;
+            line-height: 75%;
+         }
+
+         .item-gulevich-info {
+            visibility: hidden;
+            width: 100%;
+            max-height: 100%;
+            position: absolute;
+
+            & h2 {
+               margin: 1.25vw;
+               color: $white;
+               font-size: 1.15vw;
+               font-weight: 400;
+               line-height: 1.3vw;
+               letter-spacing: -0.03em;
+            }
+            & h3 {
+               padding-top: 0.5vw;
+               margin: 1.25vw;
+               color: $green;
+               font-size: 3.13vw;
+               font-weight: 500;
+               font-style: italic;
+               line-height: 100%;
+            }
+         }
+      }
+
+      .item-kaem {
+         position: relative;
+         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+
+         &:hover {
+            padding: 0;
+            background-image: url('images/about/team-kaem.png');
+            background-size: cover;
+            outline: 0px;
+         }
+
+         &:hover h1 {
+            display: none;
+         }
+
+         &:hover .item-kaem-info {
+            visibility: visible;
+         }
+
+         & h1 {
+            margin: 1.25vw;
+            color: $white;
+            font-size: 3.13vw;
+            font-weight: 500;
+            line-height: 75%;
+         }
+
+         .item-kaem-info {
+            visibility: hidden;
+            width: 100%;
+            max-height: 100%;
+            position: absolute;
+
+            & h2 {
+               margin: 1.25vw;
+               color: $white;
+               font-size: 1.15vw;
+               font-weight: 400;
+               line-height: 1.3vw;
+               letter-spacing: -0.03em;
+            }
+            & h3 {
+               padding-top: 0.5vw;
+               margin: 1.25vw;
+               color: $green;
+               font-size: 3.13vw;
+               font-weight: 500;
+               font-style: italic;
+               line-height: 100%;
+            }
+         }
+      }
+   }
+
+   .title-form {
+      padding: 15vw 0 3.5vw 0;
+      margin: 0 auto;
+
+      & h5 {
+         padding-top: 2.5vw;
+         line-height: 115%;
+      }
+   }
 }
+
+// body.index {
+//    background-color: $black;
+//    font-family: 'IBM-PlexSans', sans-serif;
+//    font-style: normal;
+
+//    &::-webkit-scrollbar {
+//       position: absolute;
+//       width: 17px;
+//    }
+//    &::-webkit-scrollbar-track {
+//       background: $black2;
+//    }
+//    &::-webkit-scrollbar-thumb {
+//       background-color: $grey;
+//    }
+
+//    & a {
+//       color: $white;
+//    }
+
+//    .block-main {
+//       margin: 2.5vw;
+//       display: flex;
+//       flex-direction: column;
+//    }
+
+//    .block-main-header {
+//       display: flex;
+//       justify-content: space-between;
+//    }
+
+//    .block-main-shortcut {
+//       color: $white;
+
+//       & div {
+//          margin: 4vw auto 10vw auto;
+//          font-size: 20vw;
+//          text-align: center;
+//          animation: change-text 3.5s infinite;
+//          // animation-play-state: running;
+//          cursor: help;
+
+//          &:hover {
+//             // animation-play-state: paused;
+//             color: $green;
+//          }
+//       }
+
+//       @keyframes change-text {
+//          10% {
+//             font-weight: 300;
+//             font-style: normal;
+//             text-decoration: none;
+//             text-transform: none;
+//          }
+
+//          20% {
+//             font-weight: 500;
+//             font-style: italic;
+//             text-decoration: underline;
+//             text-decoration-thickness: 0.6rem;
+//             text-underline-offset: 2rem;
+//             text-transform: capitalize;
+//          }
+
+//          30% {
+//             font-weight: 200;
+//             font-style: normal;
+//             text-decoration-line: line-through;
+//             text-decoration-thickness: 0.7rem;
+//             text-transform: none;
+//          }
+
+//          40% {
+//             font-weight: 600;
+//             font-style: italic;
+//             text-decoration: none;
+//             text-transform: lowercase;
+//          }
+
+//          50% {
+//             font-weight: 100;
+//             font-style: italic;
+//             text-decoration-line: line-through;
+//             text-decoration-thickness: 0.7rem;
+//             text-transform: none;
+//          }
+
+//          60% {
+//             font-weight: 700;
+//             font-style: normal;
+//             text-decoration: none;
+//             text-transform: lowercase;
+//          }
+
+//          70% {
+//             font-weight: 400;
+//             font-style: italic;
+//             text-decoration: underline;
+//             text-decoration-thickness: 0.7rem;
+//             text-underline-offset: 3rem;
+//             text-transform: capitalize;
+//          }
+//       }
+//    }
+
+//    .block-main-text {
+//       display: flex;
+//       justify-content: space-between;
+
+//       & h2 {
+//          font-size: 1.3vw;
+//          line-height: 1vw;
+//          font-weight: 400;
+//          color: $white;
+
+//          &:hover {
+//             color: $green;
+//             text-decoration: underline;
+//          }
+//       }
+//    }
+
+//    #mail-target {
+//       margin-top: 5vw;
+//    }
+
+//    .block-form {
+//       padding-top: 1vw;
+//       margin: 0 auto 7vw auto;
+
+//       .menu {
+//          .items-menu {
+//             .item-menu1 {
+//                & h3 {
+//                   @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+//                }
+//             }
+//          }
+//       }
+
+//       .mail-index {
+//          padding: 0 5.5vw;
+
+//          .mail-text-index {
+//             padding-top: 8vw;
+//             padding-bottom: 6vw;
+
+//             & h4 {
+//                font-size: 4vw;
+//                text-align: center;
+//                font-weight: 400;
+//                color: $white;
+
+//                & b {
+//                   color: $green;
+//                   & :hover {
+//                      text-decoration: underline;
+//                   }
+//                }
+//             }
+
+//             & h5 {
+//                padding-top: 3%;
+//                font-size: 1.5vw;
+//                line-height: 1.8vw;
+//                text-align: center;
+//                font-weight: 300;
+//                color: $white;
+
+//                & b {
+//                   color: $green;
+//                   & :hover {
+//                      text-decoration: underline;
+//                   }
+//                }
+//             }
+//          }
+
+//          .mail-input-index {
+//             margin: 0 auto;
+//             width: 25vw;
+//             position: relative;
+//          }
+
+//          .email-form {
+//             width: 100%;
+//             display: flex;
+//             justify-content: space-between;
+//             position: relative;
+
+//             .input-email {
+//                color: $white;
+//                width: 25vw;
+//                height: 2.6vw;
+//                border: 1.5px solid $grey;
+//                border-radius: 5px;
+//                background-color: $black;
+//             }
+
+//             input[placeholder] {
+//                padding-left: 0.8vw;
+//                font-size: 1.8vw;
+//             }
+
+//             .input-email::-webkit-input-placeholder {
+//                color: $grey;
+//             }
+
+//             button {
+//                width: 2.03vw;
+//                height: 2.03vw;
+//                outline: none;
+//                border: 0;
+//                background: transparent;
+//                position: absolute;
+//                top: 0.3vw;
+//                right: 0.3vw;
+//             }
+
+//             #email-form-done {
+//                position: absolute;
+//                padding-top: 3%;
+//                margin: 0.5vw 8.3vw;
+//                font-size: 1vw;
+//                font-style: normal;
+//                font-weight: 300;
+//                color: $green;
+//             }
+//          }
+//       }
+//    }
+
+//    .footer {
+//       padding: 2.5vw 0 1.5vw 0;
+//    }
+// }
