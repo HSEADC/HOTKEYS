@@ -822,20 +822,18 @@ body.about {
 }
 
 @media screen and (max-width: 420px) {
-   body.index {
-      .block-form {
-         .mail-about {
-            .email-form {
-               button {
-                  width: 4vw;
-                  height: 4vw;
-                  outline: none;
-                  border: 0;
-                  background: transparent;
-                  position: absolute;
-                  top: -0.4vw;
-                  right: 0.8vw;
-               }
+   body.about {
+      .mail-about {
+         .email-form {
+            button {
+               width: 4vw;
+               height: 4vw;
+               outline: none;
+               border: 0;
+               background: transparent;
+               position: absolute;
+               top: -0.4vw;
+               right: 0.8vw;
             }
          }
       }
@@ -844,19 +842,17 @@ body.about {
 
 @media screen and (max-width: 360px) {
    body.about {
-      .block-form {
-         .mail-about {
-            .email-form {
-               button {
-                  width: 4vw;
-                  height: 4vw;
-                  outline: none;
-                  border: 0;
-                  background: transparent;
-                  position: absolute;
-                  top: -0.2vw;
-                  right: 0.8vw;
-               }
+      .mail-about {
+         .email-form {
+            button {
+               width: 4vw;
+               height: 4vw;
+               outline: none;
+               border: 0;
+               background: transparent;
+               position: absolute;
+               top: -0.2vw;
+               right: 0.8vw;
             }
          }
       }
