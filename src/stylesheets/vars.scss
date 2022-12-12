@@ -1,4 +1,4 @@
-$black: #0a0a0a;
+$black: #0e0e0e;
 $white: #eee;
 $white-dark: #b4b4b4;
 $grey: #595959;
@@ -8,8 +8,9 @@ $black-hov: #141414;
 $white-hov: #868686;
 $black2: #1e1e1e;
 
-// config
+// *! config templates
 
+// ** item menu
 @mixin itemConfig($w, $h, $c, $bc, $b, $br, $fs, $fw) {
    width: $w;
    height: $h;
@@ -34,14 +35,16 @@ $black2: #1e1e1e;
    place-items: center;
 }
 
-// catalog---selections
-/**
-   * style items
-   * * нужно глянуть как они адаптируются
-   * ! решить если их нужно изменять
-   * ? нужно ли их делать миксинами
-   * TODO: доделать грид сетку каталога и подборок 
-*/
+// ** item team - about
+
+@mixin itemTeam($w, $h, $b, $br) {
+   width: $w;
+   height: $h;
+   outline: $b;
+   border-radius: $br;
+}
+
+// ** item catalog
 
 %menu-shortcut {
    display: flex;
@@ -61,6 +64,8 @@ $black2: #1e1e1e;
    color: $white-hov;
    background-color: $black-hov;
 }
+
+// ** item selections
 
 %menu-selection {
    display: flex;
