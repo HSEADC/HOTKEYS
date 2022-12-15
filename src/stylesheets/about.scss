@@ -390,10 +390,10 @@ body.about {
       }
    }
 
-   .mail-about {
-      padding: 10vw 5.5vw 10vw 5.5vw;
+   .mail-index {
+      padding: 17vw 5.5vw 10vw 5.5vw;
 
-      .mail-text-about {
+      .mail-text-index {
          padding-top: 8vw;
          padding-bottom: 6vw;
 
@@ -435,7 +435,7 @@ body.about {
          }
       }
 
-      .mail-input-about {
+      .mail-input-index {
          margin: 0 auto;
          width: 25vw;
          position: relative;
@@ -494,345 +494,11 @@ body.about {
 }
 
 @media screen and (max-width: 768px) {
-   body.about {
-      & h4 {
-         color: $white;
-         font-size: 4.5vw;
-         font-weight: 200;
-         text-align: center;
-      }
-      & h5 {
-         color: $white;
-         font-size: 4vw;
-         font-weight: 500;
-         text-align: center;
-         letter-spacing: 0.1vw;
-
-         & b {
-            font-size: 4vw;
-            font-weight: 450;
-            font-style: italic;
-            color: $green;
-
-            &:hover {
-               color: $grey;
-            }
-         }
-      }
-      .header {
-         margin: 2.5vw;
-         flex-direction: column;
-         margin: 0 auto;
-         margin-bottom: 5vw;
-
-         .hotkeys {
-            margin: 7vw 28vw;
-         }
-      }
-      .title-main {
-         padding: 10vw 0 10vw 0;
-
-         & h5 {
-            padding-top: 2.5vw;
-            line-height: 135%;
-         }
-      }
-      .title-research {
-         padding: 15vw 0 10vw 0;
-
-         & h5 {
-            padding-top: 2.5vw;
-            line-height: 120%;
-         }
-      }
-      .img-research {
-         max-width: 85vw;
-      }
-      .title-often {
-         padding: 15vw 0 10vw 0;
-
-         & h4 {
-            padding-top: 3.5vw;
-            padding-bottom: 3vw;
-            line-height: 135%;
-         }
-
-         & h5 {
-            line-height: 135%;
-         }
-      }
-      .img-often {
-         max-width: 90vw;
-      }
-      .title-team {
-         padding: 15vw 0 10vw 0;
-
-         & h5 {
-            line-height: 135%;
-         }
-      }
-      .items-team {
-         padding-top: 5vw;
-         width: 85vw;
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-         grid-template-rows: 1fr 1fr;
-         place-items: center;
-         gap: 3vw;
-
-         .item-bozhik {
-            position: relative;
-            background-color: $green;
-            @include itemTeam(100%, 29vw, 1.5px solid $grey, 0.25vw);
-
-            & h1 {
-               margin: 2.5vw;
-               color: $black;
-               font-size: 6.13vw;
-               font-weight: 500;
-               line-height: 75%;
-            }
-
-            .item-bozhik-info {
-               visibility: hidden;
-               width: 100%;
-               max-height: 100%;
-               position: absolute;
-
-               & h2 {
-                  margin: 1.25vw;
-                  color: $white;
-                  font-size: 2.7vw;
-                  font-weight: 400;
-                  line-height: 100%;
-                  letter-spacing: -0.03em;
-               }
-               & h3 {
-                  padding-top: 0.5vw;
-                  margin: 1.25vw;
-                  color: $green;
-                  font-size: 6.13vw;
-                  font-weight: 500;
-                  font-style: italic;
-                  line-height: 100%;
-               }
-            }
-         }
-
-         .item-day {
-            position: relative;
-            @include itemTeam(100%, 29vw, 1.5px solid $grey, 0.25vw);
-
-            & h1 {
-               margin: 2.5vw;
-               color: $white;
-               font-size: 6.13vw;
-               font-weight: 500;
-               line-height: 75%;
-            }
-
-            .item-day-info {
-               visibility: hidden;
-               width: 100%;
-               max-height: 100%;
-               position: absolute;
-
-               & h2 {
-                  margin: 1.25vw;
-                  color: $white;
-                  font-size: 2.5vw;
-                  font-weight: 400;
-                  line-height: 100%;
-                  letter-spacing: -0.03em;
-               }
-               & h3 {
-                  padding-top: 0.5vw;
-                  margin: 1.25vw;
-                  color: $green;
-                  font-size: 6.13vw;
-                  font-weight: 500;
-                  font-style: italic;
-                  line-height: 100%;
-               }
-            }
-         }
-
-         .item-gulevich {
-            position: relative;
-            background-color: $green;
-            @include itemTeam(100%, 29vw, 1.5px solid $grey, 0.25vw);
-
-            & h1 {
-               margin: 2.5vw;
-               color: $black;
-               font-size: 6.13vw;
-               font-weight: 500;
-               line-height: 75%;
-            }
-
-            .item-gulevich-info {
-               visibility: hidden;
-               width: 100%;
-               max-height: 100%;
-               position: absolute;
-
-               & h2 {
-                  margin: 1.25vw;
-                  color: $white;
-                  font-size: 2.5vw;
-                  font-weight: 400;
-                  line-height: 100%;
-                  letter-spacing: -0.03em;
-               }
-               & h3 {
-                  padding-top: 0.5vw;
-                  margin: 1.25vw;
-                  color: $green;
-                  font-size: 6.13vw;
-                  font-weight: 500;
-                  font-style: italic;
-                  line-height: 100%;
-               }
-            }
-         }
-
-         .item-kaem {
-            position: relative;
-            @include itemTeam(100%, 29vw, 1.5px solid $grey, 0.25vw);
-
-            & h1 {
-               margin: 2.5vw;
-               color: $white;
-               font-size: 6.13vw;
-               font-weight: 500;
-               line-height: 75%;
-            }
-
-            .item-kaem-info {
-               visibility: hidden;
-               width: 100%;
-               max-height: 100%;
-               position: absolute;
-
-               & h2 {
-                  margin: 1.25vw;
-                  color: $white;
-                  font-size: 2.5vw;
-                  font-weight: 400;
-                  line-height: 100%;
-                  letter-spacing: -0.03em;
-               }
-               & h3 {
-                  padding-top: 0.5vw;
-                  margin: 1.25vw;
-                  color: $green;
-                  font-size: 6.13vw;
-                  font-weight: 500;
-                  font-style: italic;
-                  line-height: 100%;
-               }
-            }
-         }
-      }
-      .mail-about {
-         padding: 15vw 5.5vw 20vw 5.5vw;
-
-         .mail-text-about {
-            padding-top: 8vw;
-            padding-bottom: 6vw;
-
-            & h4 {
-               font-size: 6vw;
-               text-align: center;
-               font-weight: 400;
-               color: $white;
-
-               & b {
-                  color: $green;
-                  & :hover {
-                     text-decoration: underline;
-                  }
-               }
-            }
-
-            & h5 {
-               padding-top: 3%;
-               font-size: 3.25vw;
-               line-height: 125%;
-               text-align: center;
-               font-weight: 300;
-               color: $white;
-
-               & b {
-                  font-size: inherit;
-                  font-weight: 300;
-                  font-style: normal;
-                  color: $green;
-                  & :hover {
-                     text-decoration: underline;
-                  }
-               }
-            }
-         }
-
-         .mail-input-about {
-            margin: 0 auto;
-            width: 50vw;
-            position: relative;
-         }
-
-         .email-form {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-
-            .input-email {
-               color: $white;
-               width: 50vw;
-               height: 5.6vw;
-               border: 1.5px solid $grey;
-               border-radius: 2px;
-               background-color: $black;
-            }
-
-            input[placeholder] {
-               padding-left: 1vw;
-               font-size: 3.5vw;
-            }
-
-            .input-email::-webkit-input-placeholder {
-               color: $grey;
-            }
-
-            button {
-               width: 4.3vw;
-               height: 4.3vw;
-               outline: none;
-               border: 0;
-               background: transparent;
-               position: absolute;
-               top: 0.7vw;
-               right: 0.7vw;
-            }
-
-            #email-form-done {
-               position: absolute;
-               padding-top: 3%;
-               margin: 0.5vw 11.5vw;
-               font-size: 1vw;
-               font-style: normal;
-               font-weight: 300;
-               color: $green;
-            }
-         }
-      }
-   }
 }
 
 @media screen and (max-width: 420px) {
    body.about {
-      .mail-about {
+      .mail-index {
          .email-form {
             button {
                width: 4vw;
@@ -851,7 +517,7 @@ body.about {
 
 @media screen and (max-width: 360px) {
    body.about {
-      .mail-about {
+      .mail-index {
          .email-form {
             button {
                width: 4vw;
