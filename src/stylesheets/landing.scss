@@ -39,6 +39,114 @@ body.landing {
       }
    }
 
+   .block-shortcut {
+      color: $white;
+
+      & div {
+         margin: 4vw auto 9vw auto;
+         font-size: 20vw;
+         text-align: center;
+         animation: change-text 3.5s infinite;
+         // animation-play-state: running;
+         cursor: help;
+
+         &:hover {
+            // animation-play-state: paused;
+            color: $green;
+         }
+      }
+
+      @keyframes change-text {
+         10% {
+            font-weight: 300;
+            font-style: normal;
+            text-decoration: none;
+            text-transform: none;
+         }
+
+         20% {
+            font-weight: 500;
+            font-style: italic;
+            text-decoration: underline;
+            text-decoration-thickness: 0.6rem;
+            text-underline-offset: 2rem;
+            text-transform: capitalize;
+         }
+
+         30% {
+            font-weight: 200;
+            font-style: normal;
+            text-decoration-line: line-through;
+            text-decoration-thickness: 0.7rem;
+            text-transform: none;
+         }
+
+         40% {
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: none;
+            text-transform: lowercase;
+         }
+
+         50% {
+            font-weight: 100;
+            font-style: italic;
+            text-decoration-line: line-through;
+            text-decoration-thickness: 0.7rem;
+            text-transform: none;
+         }
+
+         60% {
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            text-transform: lowercase;
+         }
+
+         70% {
+            font-weight: 400;
+            font-style: italic;
+            text-decoration: underline;
+            text-decoration-thickness: 0.7rem;
+            text-underline-offset: 3rem;
+            text-transform: capitalize;
+         }
+      }
+   }
+
+   .block-arrow {
+      margin: 0 auto;
+
+      a {
+         svg {
+            margin: 0 49.5%;
+            width: 0.94vw;
+            height: 1.56vw;
+
+            #arrow {
+               fill: $white;
+
+               &:hover {
+                  fill: $green;
+               }
+            }
+         }
+      }
+
+      // & h2 {
+      //    font-size: 1.3vw;
+      //    line-height: 1vw;
+      //    font-weight: 400;
+      //    color: $white;
+      //    text-align: center;
+
+      //    &:hover {
+      //       color: $green;
+      //       text-decoration: underline;
+      //    }
+      // }
+   }
+
    & h4 {
       color: $white;
       font-size: 1.15vw;
