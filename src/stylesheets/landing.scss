@@ -185,7 +185,7 @@ body.landing {
    }
 
    .title-mission {
-      padding: 25vw 0 3.5vw 0;
+      padding: 25vw 0 27.5vw 0;
       margin: 0 auto;
 
       & h5 {
@@ -195,7 +195,7 @@ body.landing {
    }
 
    .title-dev {
-      padding: 25vw 0 4vw 0;
+      padding: 1vw 0 4vw 0;
       margin: 0 auto;
    }
 
@@ -203,227 +203,70 @@ body.landing {
       padding-top: 1vw;
       margin: 0 auto;
       width: 94vw;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
+      column-gap: 1vw;
+      row-gap: 1vw;
 
-      .item-bozhik {
-         position: relative;
+      & h2 {
+         margin: 5% 0 1% 6%;
+         font-size: 1.15vw;
+         line-height: 1.3vw;
+         font-weight: 400;
+      }
+
+      & h1 {
+         margin: 4% 0 1% 6%;
+         font-size: 2.71vw;
+         line-height: 100%;
+         font-weight: 500;
+      }
+
+      .item {
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         min-height: 300px;
+         min-width: 435px;
+         border-radius: 5px;
+         font-size: 1.5rem;
+         font-weight: 500;
+         cursor: help;
+
+         &:hover {
+            color: $white-hov;
+            background-color: $black-hov;
+            border: 1.5px solid $black-hov;
+         }
+      }
+
+      .archive,
+      .about,
+      .selections,
+      .design {
+         color: $black;
          background-color: $green;
-         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $green, 0.25vw);
-
-         &:hover {
-            padding: 0;
-            background-image: url('images/about/team-bozhik.png');
-            background-size: cover;
-            outline: 0px;
-         }
-
-         &:hover h1 {
-            display: none;
-         }
-
-         &:hover .item-bozhik-info {
-            visibility: visible;
-         }
-
-         & h1 {
-            margin: 1.25vw;
-            color: $black;
-            font-size: 3.13vw;
-            font-weight: 500;
-            line-height: 75%;
-         }
-
-         .item-bozhik-info {
-            visibility: hidden;
-            width: 100%;
-            max-height: 100%;
-            position: absolute;
-
-            & h2 {
-               margin: 1.25vw;
-               color: $white;
-               font-size: 1.15vw;
-               font-weight: 400;
-               line-height: 1.3vw;
-               letter-spacing: -0.03em;
-            }
-            & h3 {
-               padding-top: 0.5vw;
-               margin: 1.25vw;
-               color: $green;
-               font-size: 3.13vw;
-               font-weight: 500;
-               font-style: italic;
-               line-height: 100%;
-            }
-         }
       }
 
-      .item-day {
-         position: relative;
-         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
-
-         &:hover {
-            padding: 0;
-            background-image: url('images/about/team-day.png');
-            background-size: cover;
-            outline: 0px;
-         }
-
-         &:hover h1 {
-            display: none;
-         }
-
-         &:hover .item-day-info {
-            visibility: visible;
-         }
+      .clipboard,
+      .hide,
+      .switch,
+      .undo {
+         background-color: transparent;
+         border: 1.5px solid $grey;
 
          & h1 {
-            margin: 1.25vw;
-            color: $white;
-            font-size: 3.13vw;
-            font-weight: 500;
-            line-height: 75%;
+            color: white;
          }
 
-         .item-day-info {
-            visibility: hidden;
-            width: 100%;
-            max-height: 100%;
-            position: absolute;
-
-            & h2 {
-               margin: 1.25vw;
-               color: $white;
-               font-size: 1.15vw;
-               font-weight: 400;
-               line-height: 1.3vw;
-               letter-spacing: -0.03em;
-            }
-            & h3 {
-               padding-top: 0.5vw;
-               margin: 1.25vw;
-               color: $green;
-               font-size: 3.13vw;
-               font-weight: 500;
-               font-style: italic;
-               line-height: 100%;
-            }
-         }
-      }
-
-      .item-gulevich {
-         position: relative;
-         background-color: $green;
-         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $green, 0.25vw);
-
-         &:hover {
-            padding: 0;
-            background-image: url('images/about/team-gulevich.png');
-            background-size: cover;
-            outline: 0px;
-         }
-
-         &:hover h1 {
-            display: none;
-         }
-
-         &:hover .item-gulevich-info {
-            visibility: visible;
-         }
-
-         & h1 {
-            margin: 1.25vw;
-            color: $black;
-            font-size: 3.13vw;
-            font-weight: 500;
-            line-height: 75%;
-         }
-
-         .item-gulevich-info {
-            visibility: hidden;
-            width: 100%;
-            max-height: 100%;
-            position: absolute;
-
-            & h2 {
-               margin: 1.25vw;
-               color: $white;
-               font-size: 1.15vw;
-               font-weight: 400;
-               line-height: 1.3vw;
-               letter-spacing: -0.03em;
-            }
-            & h3 {
-               padding-top: 0.5vw;
-               margin: 1.25vw;
-               color: $green;
-               font-size: 3.13vw;
-               font-weight: 500;
-               font-style: italic;
-               line-height: 100%;
-            }
-         }
-      }
-
-      .item-kaem {
-         position: relative;
-         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
-
-         &:hover {
-            padding: 0;
-            background-image: url('images/about/team-kaem.png');
-            background-size: cover;
-            outline: 0px;
-         }
-
-         &:hover h1 {
-            display: none;
-         }
-
-         &:hover .item-kaem-info {
-            visibility: visible;
-         }
-
-         & h1 {
-            margin: 1.25vw;
-            color: $white;
-            font-size: 3.13vw;
-            font-weight: 500;
-            line-height: 75%;
-         }
-
-         .item-kaem-info {
-            visibility: hidden;
-            width: 100%;
-            max-height: 100%;
-            position: absolute;
-
-            & h2 {
-               margin: 1.25vw;
-               color: $white;
-               font-size: 1.15vw;
-               font-weight: 400;
-               line-height: 1.3vw;
-               letter-spacing: -0.03em;
-            }
-            & h3 {
-               padding-top: 0.5vw;
-               margin: 1.25vw;
-               color: $green;
-               font-size: 3.13vw;
-               font-weight: 500;
-               font-style: italic;
-               line-height: 100%;
-            }
+         & h2 {
+            color: gray;
          }
       }
    }
 
    .title-unique {
-      padding: 25vw 0 3.5vw 0;
+      padding: 25vw 0 27.5vw 0;
       margin: 0 auto;
 
       & h5 {
@@ -437,7 +280,7 @@ body.landing {
    }
 
    .title-who {
-      padding: 25vw 0 3.5vw 0;
+      padding: 1vw 0 3.5vw 0;
       margin: 0 auto;
 
       & h4 {
