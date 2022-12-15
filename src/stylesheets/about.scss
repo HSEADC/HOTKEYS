@@ -173,7 +173,7 @@ body.about {
       .item-bozhik {
          position: relative;
          background-color: $green;
-         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $green, 0.25vw);
 
          &:hover {
             padding: 0;
@@ -280,7 +280,7 @@ body.about {
       .item-gulevich {
          position: relative;
          background-color: $green;
-         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+         @include itemTeam(22.6vw, 15.78vw, 1.5px solid $green, 0.25vw);
 
          &:hover {
             padding: 0;
@@ -400,6 +400,8 @@ body.about {
 
             & b {
                color: $green;
+               font-style: italic;
+
                & :hover {
                   text-decoration: underline;
                }
@@ -417,8 +419,10 @@ body.about {
             & b {
                font-size: inherit;
                font-weight: 300;
-               font-style: normal;
+               font-style: italic;
+               text-transform: uppercase;
                color: $green;
+
                & :hover {
                   text-decoration: underline;
                }
@@ -449,7 +453,7 @@ body.about {
 
          input[placeholder] {
             padding-left: 0.8vw;
-            font-size: 1.8vw;
+            font-size: 1.5vw;
          }
 
          .input-email::-webkit-input-placeholder {

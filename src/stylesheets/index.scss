@@ -158,6 +158,8 @@ body.index {
 
                & b {
                   color: $green;
+                  font-style: italic;
+
                   & :hover {
                      text-decoration: underline;
                   }
@@ -173,7 +175,12 @@ body.index {
                color: $white;
 
                & b {
+                  font-size: inherit;
+                  font-weight: 300;
+                  font-style: italic;
+                  text-transform: uppercase;
                   color: $green;
+
                   & :hover {
                      text-decoration: underline;
                   }
@@ -204,7 +211,7 @@ body.index {
 
             input[placeholder] {
                padding-left: 0.8vw;
-               font-size: 1.8vw;
+               font-size: 1.5vw;
             }
 
             .input-email::-webkit-input-placeholder {
