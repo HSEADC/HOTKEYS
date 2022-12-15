@@ -59,9 +59,9 @@ body.about {
          font-style: italic;
          color: $green;
 
-         &:hover {
-            color: $grey;
-         }
+         // &:hover {
+         //    color: $grey;
+         // }
       }
    }
 
@@ -127,9 +127,9 @@ body.about {
             color: $green;
             text-transform: uppercase;
 
-            &:hover {
-               color: $grey;
-            }
+            // &:hover {
+            //    color: $grey;
+            // }
          }
       }
 
@@ -156,9 +156,13 @@ body.about {
       padding: 15vw 0 3.5vw 0;
       margin: 0 auto;
 
-      & h5 {
+      h5 {
          padding-top: 2.5vw;
          line-height: 115%;
+
+         span {
+            color: $green;
+         }
       }
    }
 
@@ -521,7 +525,7 @@ body.about {
          margin-bottom: 5vw;
 
          .hotkeys {
-            margin: 7vw auto;
+            margin: 7vw 28vw;
          }
       }
       .title-main {
