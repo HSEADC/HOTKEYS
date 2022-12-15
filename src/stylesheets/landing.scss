@@ -1,5 +1,6 @@
 html.landing {
    scroll-behavior: smooth;
+   scroll-padding-block-start: 2.5vw;
 }
 
 body.landing {
@@ -28,15 +29,15 @@ body.landing {
       flex-direction: row;
       justify-content: space-between;
 
-      .menu {
-         .items-menu {
-            .item-menu2 {
-               & h3 {
-                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-               }
-            }
-         }
-      }
+      // .menu {
+      //    .items-menu {
+      //       .item-menu2 {
+      //          & h3 {
+      //             @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+      //          }
+      //       }
+      //    }
+      // }
    }
 
    .block-shortcut {
@@ -161,7 +162,7 @@ body.landing {
       text-align: center;
       letter-spacing: 0.1vw;
 
-      & b {
+      b {
          font-size: 3vw;
          font-weight: 450;
          font-style: italic;
@@ -174,7 +175,7 @@ body.landing {
    }
 
    .title-main {
-      padding: 7vw 0 3.5vw 0;
+      padding: 25vw 0 3.5vw 0;
       margin: 0 auto;
 
       & h5 {
@@ -183,22 +184,8 @@ body.landing {
       }
    }
 
-   .img-main {
-      margin: 0 auto;
-      max-width: 94.5vw;
-
-      & img {
-         width: 100%;
-      }
-
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
-   }
-
-   .title-research {
-      padding: 15vw 0 3.5vw 0;
+   .title-mission {
+      padding: 25vw 0 3.5vw 0;
       margin: 0 auto;
 
       & h5 {
@@ -207,74 +194,12 @@ body.landing {
       }
    }
 
-   .img-research {
+   .title-dev {
+      padding: 25vw 0 4vw 0;
       margin: 0 auto;
-      max-width: 34vw;
-
-      & img {
-         width: 100%;
-      }
-
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
    }
 
-   .title-often {
-      padding: 15vw 0 3.5vw 0;
-      margin: 0 auto;
-
-      & h4 {
-         padding-top: 2.5vw;
-         line-height: 1.5vw;
-
-         & span {
-            font-weight: 450;
-            font-style: italic;
-            color: $green;
-            text-transform: uppercase;
-
-            // &:hover {
-            //    color: $grey;
-            // }
-         }
-      }
-
-      & h5 {
-         line-height: 115%;
-      }
-   }
-
-   .img-often {
-      margin: 0 auto;
-      max-width: 74.5vw;
-
-      & img {
-         width: 100%;
-      }
-
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
-   }
-
-   .title-team {
-      padding: 15vw 0 3.5vw 0;
-      margin: 0 auto;
-
-      h5 {
-         padding-top: 2.5vw;
-         line-height: 115%;
-
-         span {
-            color: $green;
-         }
-      }
-   }
-
-   .items-team {
+   .items-dev {
       padding-top: 1vw;
       margin: 0 auto;
       width: 94vw;
@@ -497,10 +422,64 @@ body.landing {
       }
    }
 
-   .mail-about {
-      padding: 10vw 5.5vw 10vw 5.5vw;
+   .title-unique {
+      padding: 25vw 0 3.5vw 0;
+      margin: 0 auto;
 
-      .mail-text-about {
+      & h5 {
+         font-size: 3.13vw;
+         padding-top: 2.5vw;
+         line-height: 100%;
+         color: $green;
+         font-style: italic;
+         text-transform: uppercase;
+      }
+   }
+
+   .title-who {
+      padding: 25vw 0 3.5vw 0;
+      margin: 0 auto;
+
+      & h4 {
+         padding-top: 2.5vw;
+         line-height: 1.5vw;
+
+         & span {
+            font-weight: 450;
+            font-style: italic;
+            color: $green;
+            text-transform: uppercase;
+
+            // &:hover {
+            //    color: $grey;
+            // }
+         }
+      }
+
+      & h5 {
+         padding-top: 2vw;
+         line-height: 115%;
+      }
+   }
+
+   .img-who {
+      margin: 0 auto;
+      max-width: 74.5vw;
+
+      & img {
+         width: 100%;
+      }
+
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
+
+   .mail-index {
+      padding: 17vw 5.5vw 10vw 5.5vw;
+
+      .mail-text-index {
          padding-top: 8vw;
          padding-bottom: 6vw;
 
@@ -542,7 +521,7 @@ body.landing {
          }
       }
 
-      .mail-input-about {
+      .mail-input-index {
          margin: 0 auto;
          width: 25vw;
          position: relative;
@@ -601,7 +580,7 @@ body.landing {
 }
 
 @media screen and (max-width: 768px) {
-   body.about {
+   body.landing {
       & h4 {
          color: $white;
          font-size: 4.5vw;
@@ -841,10 +820,10 @@ body.landing {
             }
          }
       }
-      .mail-about {
+      .mail-index {
          padding: 15vw 5.5vw 20vw 5.5vw;
 
-         .mail-text-about {
+         .mail-text-index {
             padding-top: 8vw;
             padding-bottom: 6vw;
 
@@ -882,7 +861,7 @@ body.landing {
             }
          }
 
-         .mail-input-about {
+         .mail-input-index {
             margin: 0 auto;
             width: 50vw;
             position: relative;
@@ -938,8 +917,8 @@ body.landing {
 }
 
 @media screen and (max-width: 420px) {
-   body.about {
-      .mail-about {
+   body.landing {
+      .mail-index {
          .email-form {
             button {
                width: 4vw;
@@ -957,8 +936,8 @@ body.landing {
 }
 
 @media screen and (max-width: 360px) {
-   body.about {
-      .mail-about {
+   body.landing {
+      .mail-index {
          .email-form {
             button {
                width: 4vw;
