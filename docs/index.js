@@ -26,7 +26,7 @@ function changeText(idx) {
   }, 500); // 1 second
 }
 
-changeText(0); // index.html form script
+changeText(0); // form script
 
 var form = document.getElementById('email');
 
