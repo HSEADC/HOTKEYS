@@ -71,7 +71,7 @@ body.archive {
                & input {
                   width: 100%;
                   height: 3.6vw;
-                  border-radius: 5px;
+                  border-radius: 2px;
                   background-color: $black;
                   border: 1.5px solid $grey;
                   font-size: 1.25vw;
@@ -109,13 +109,9 @@ body.archive {
                   display: flex;
                   flex-direction: row;
                   justify-content: space-between;
-                  max-width: 32%;
-                  gap: 3.3vw;
+                  max-width: 30%;
 
-                  & select:first-child {
-                     // margin-right: 1.7%;
-                     // padding-left: 2.4%;
-                     width: 185px;
+                  & select {
                      font-size: 1.25vw;
                      height: 45px;
                      color: $white;
@@ -125,46 +121,6 @@ body.archive {
                      border: none;
                      background-color: transparent;
                      // background: url(images/select-point.svg) 90% / 10% no-repeat;
-
-                     option {
-                        border: none;
-                        background-color: $black;
-                        color: $white;
-                     }
-                  }
-
-                  & select:nth-child(2) {
-                     // margin-right: 2%;
-                     // padding-left: 0.5%;
-                     width: 185px;
-                     font-size: 1.25vw;
-                     height: 45px;
-                     color: $white;
-                     -webkit-appearance: none;
-                     -moz-appearance: none;
-                     appearance: none;
-                     border: transparent;
-                     background-color: transparent;
-                     //background: url(images/select-point.svg) 90% / 10% no-repeat;
-
-                     option {
-                        border: none;
-                        background-color: $black;
-                        color: $white;
-                     }
-                  }
-
-                  & select:last-child {
-                     width: 192px;
-                     font-size: 1.25vw;
-                     height: 45px;
-                     color: $white;
-                     -webkit-appearance: none;
-                     -moz-appearance: none;
-                     appearance: none;
-                     border: none;
-                     background-color: transparent;
-                     //background: url(images/select-point.svg) 90% / 10% no-repeat;
 
                      option {
                         border: none;
@@ -193,22 +149,25 @@ body.archive {
          }
 
          .block-shortcut-item {
-            @extend %menu-shortcut;
+            @include shortcutConfig(300px, 300px, 2px, $white, $black2);
 
             &:hover {
-               @extend %menu-shortcut-hover;
+               @include shortcutHover;
             }
 
             & h2 {
-               margin: 4% 0 1% 6%;
-               font-size: 1.4rem;
-               line-height: 1.7rem;
+               margin: 5% 0 1% 6%;
+               color: $white;
+               font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
+               line-height: 120%;
+               letter-spacing: -0.03em;
                font-weight: 400;
             }
 
             & h1 {
-               margin: 4% 0 1% 6%;
-               font-size: 2.5rem;
+               margin: 5% 0 1% 6%;
+               font-size: clamp(2rem, 8vw - 2rem, 2.25vw);
+               line-height: 100%;
                font-weight: 500;
             }
          }
@@ -236,6 +195,125 @@ body.archive {
          .hotkeys {
             @include itemGrid;
             margin: 7vw auto;
+         }
+      }
+
+      .wrapper {
+         padding: 0% 2% 2% 2%;
+
+         .block-search {
+            margin-top: 3%;
+            width: 100%;
+
+            & form {
+               width: 100%;
+
+               .search-bar {
+                  position: relative;
+                  max-width: 100%;
+
+                  & input {
+                     width: 100%;
+                     height: 5.6vw;
+                     border-radius: 2px;
+                     background-color: $black;
+                     border: 1.5px solid $grey;
+                     font-size: 1.25vw;
+                     font-weight: 500;
+                     cursor: help;
+                  }
+
+                  .search-input:focus-visible {
+                     outline-color: transparent;
+                     border-color: transparent;
+                  }
+
+                  .search-input::-webkit-input-placeholder {
+                     color: $grey;
+                  }
+
+                  input[placeholder] {
+                     padding-left: 1.3%;
+                     font-size: 2.2vw;
+                     font-weight: 500;
+                  }
+
+                  & button {
+                     position: absolute;
+                     top: 8%;
+                     right: 2%;
+                     font-size: 1.25vw;
+                     color: transparent;
+                     border: none;
+                     background-color: transparent;
+                  }
+
+                  .select-flex {
+                     margin: 1% auto;
+                     display: flex;
+                     flex-direction: row;
+                     justify-content: center;
+                     max-width: 50%;
+                     gap: 2vw;
+
+                     & select {
+                        font-size: 2.2vw;
+                        height: 45px;
+                        color: $white;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        border: none;
+                        background-color: transparent;
+                        // background: url(images/select-point.svg) 90% / 10% no-repeat;
+
+                        option {
+                           border: none;
+                           background-color: $black;
+                           color: $white;
+                        }
+                     }
+
+                     & select:focus-visible {
+                        border: rgb(206, 45, 45);
+                     }
+                  }
+               }
+            }
+         }
+
+         .block-shortcuts {
+            padding-top: 2.5%;
+            padding-bottom: 5%;
+
+            .block-shortcuts-grid {
+               display: grid;
+               grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+               column-gap: 2vw;
+               row-gap: 2vw;
+            }
+
+            .block-shortcut-item {
+               @include shortcutConfig(235px, 245px, 2px, $white, $black2);
+
+               &:hover {
+                  @include shortcutHover;
+               }
+
+               & h2 {
+                  margin: 5% 0 1% 6%;
+                  font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
+                  line-height: 120%;
+                  font-weight: 400;
+               }
+
+               & h1 {
+                  margin: 5% 0 1% 6%;
+                  font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
+                  line-height: 100%;
+                  font-weight: 500;
+               }
+            }
          }
       }
    }
