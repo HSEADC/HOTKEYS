@@ -736,14 +736,14 @@ body.about {
          }
       }
       .mail-index {
-         padding: 15vw 5.5vw 20vw 5.5vw;
+         padding: 0 5.5vw;
 
          .mail-text-index {
-            padding-top: 8vw;
-            padding-bottom: 6vw;
+            padding-top: 10vw;
+            padding-bottom: 15vw;
 
             & h4 {
-               font-size: 6vw;
+               font-size: 6.9vw;
                text-align: center;
                font-weight: 400;
                color: $white;
@@ -757,17 +757,14 @@ body.about {
             }
 
             & h5 {
-               padding-top: 3%;
-               font-size: 3.25vw;
-               line-height: 125%;
+               padding-top: 7vw;
+               font-size: 3.5vw;
+               line-height: 4.5vw;
                text-align: center;
                font-weight: 300;
                color: $white;
 
                & b {
-                  font-size: inherit;
-                  font-weight: 300;
-                  font-style: normal;
                   color: $green;
                   & :hover {
                      text-decoration: underline;

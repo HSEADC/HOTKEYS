@@ -23,6 +23,32 @@ body.landing {
       color: $white;
    }
 
+   & h4 {
+      color: $white;
+      font-size: 1.15vw;
+      font-weight: 200;
+      text-align: center;
+   }
+
+   & h5 {
+      color: $white;
+      font-size: 2.5vw;
+      font-weight: 500;
+      text-align: center;
+      letter-spacing: 0.1vw;
+
+      b {
+         font-size: 3vw;
+         font-weight: 450;
+         font-style: italic;
+         color: $green;
+
+         // &:hover {
+         //    color: $grey;
+         // }
+      }
+   }
+
    .header {
       margin: 2.5vw;
       display: flex;
@@ -146,32 +172,6 @@ body.landing {
       //       text-decoration: underline;
       //    }
       // }
-   }
-
-   & h4 {
-      color: $white;
-      font-size: 1.15vw;
-      font-weight: 200;
-      text-align: center;
-   }
-
-   & h5 {
-      color: $white;
-      font-size: 2.5vw;
-      font-weight: 500;
-      text-align: center;
-      letter-spacing: 0.1vw;
-
-      b {
-         font-size: 3vw;
-         font-weight: 450;
-         font-style: italic;
-         color: $green;
-
-         // &:hover {
-         //    color: $grey;
-         // }
-      }
    }
 
    .title-main {
@@ -438,7 +438,7 @@ body.landing {
    body.landing {
       & h4 {
          color: $white;
-         font-size: 4.5vw;
+         font-size: 3.5vw;
          font-weight: 200;
          text-align: center;
       }
@@ -460,6 +460,7 @@ body.landing {
             }
          }
       }
+
       .header {
          margin: 2.5vw;
          flex-direction: column;
@@ -467,223 +468,227 @@ body.landing {
          margin-bottom: 5vw;
 
          .hotkeys {
-            margin: 7vw 28vw;
+            @include itemGrid;
+            margin: 7vw auto;
          }
       }
+
+      .block-shortcut {
+         color: $white;
+
+         & div {
+            margin: 10vw auto 10vw auto;
+            font-size: 25vw;
+            text-align: center;
+            animation: change-text 3.5s infinite;
+            // animation-play-state: running;
+            cursor: help;
+
+            &:hover {
+               // animation-play-state: paused;
+               color: $green;
+            }
+         }
+      }
+
+      .block-arrow {
+         margin: 0 auto;
+
+         a {
+            svg {
+               margin: 0 49.5%;
+               width: 0.94vw;
+               height: 1.56vw;
+
+               #arrow {
+                  fill: $white;
+
+                  &:hover {
+                     fill: $green;
+                  }
+               }
+            }
+         }
+
+         // & h2 {
+         //    font-size: 1.3vw;
+         //    line-height: 1vw;
+         //    font-weight: 400;
+         //    color: $white;
+         //    text-align: center;
+
+         //    &:hover {
+         //       color: $green;
+         //       text-decoration: underline;
+         //    }
+         // }
+      }
+
       .title-main {
-         padding: 10vw 0 10vw 0;
+         padding: 25vw 0 3.5vw 0;
+         margin: 0 auto;
 
          & h5 {
             padding-top: 2.5vw;
             line-height: 135%;
          }
       }
-      .title-research {
-         padding: 15vw 0 10vw 0;
+
+      .title-mission {
+         padding: 25vw 0 27.5vw 0;
+         margin: 0 auto;
 
          & h5 {
             padding-top: 2.5vw;
-            line-height: 120%;
+            line-height: 115%;
          }
       }
-      .img-research {
-         max-width: 85vw;
+
+      .title-dev {
+         padding: 1vw 0 10vw 0;
+         margin: 0 auto;
       }
-      .title-often {
-         padding: 15vw 0 10vw 0;
+
+      .items-dev {
+         padding-top: 1vw;
+         margin: 0 auto;
+         width: 94vw;
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+         column-gap: 2vw;
+         row-gap: 2vw;
+
+         & h2 {
+            margin: 5% 0 1% 6%;
+            font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
+            line-height: 120%;
+            font-weight: 400;
+         }
+
+         & h1 {
+            margin: 5% 0 1% 6%;
+            font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
+            line-height: 100%;
+            font-weight: 500;
+         }
+
+         .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            min-height: 190px;
+            min-width: 235px;
+            border-radius: 5px;
+            font-weight: 500;
+            cursor: help;
+
+            &:hover {
+               color: $white-hov;
+               background-color: $black-hov;
+               border: 1.5px solid $black-hov;
+            }
+         }
+
+         .archive,
+         .about,
+         .selections,
+         .design {
+            color: $black;
+            background-color: $green;
+         }
+
+         .clipboard,
+         .hide,
+         .switch,
+         .undo {
+            background-color: transparent;
+            border: 1.5px solid $grey;
+
+            & h1 {
+               color: white;
+            }
+
+            & h2 {
+               color: gray;
+            }
+         }
+      }
+
+      .title-unique {
+         padding: 25vw 0 27.5vw 0;
+         margin: 0 auto;
+
+         .element {
+            font-size: 3.13vw;
+            padding-top: 2.5vw;
+            line-height: 100%;
+            color: $white;
+            font-style: italic;
+            text-transform: uppercase;
+
+            opacity: 0;
+            transform: translateX(-50%);
+         }
+
+         .element._show {
+            opacity: 1;
+            transition: all 1s, opacity 0.1s;
+            transform: translateX(0%);
+
+            color: $green;
+            font-style: italic;
+         }
+      }
+
+      .title-who {
+         padding: 1vw 0 3.5vw 0;
+         margin: 0 auto;
 
          & h4 {
-            padding-top: 3.5vw;
-            padding-bottom: 3vw;
-            line-height: 135%;
+            padding-top: 2.5vw;
+            line-height: 1.5vw;
+
+            & span {
+               font-weight: 450;
+               font-style: italic;
+               color: $green;
+               text-transform: uppercase;
+
+               // &:hover {
+               //    color: $grey;
+               // }
+            }
          }
 
          & h5 {
-            line-height: 135%;
+            padding-top: 2vw;
+            line-height: 115%;
          }
       }
-      .img-often {
-         max-width: 90vw;
-      }
-      .title-team {
-         padding: 15vw 0 10vw 0;
 
-         & h5 {
-            line-height: 135%;
+      .img-who {
+         margin: 0 auto;
+         max-width: 74.5vw;
+
+         & img {
+            width: 100%;
+         }
+
+         &:hover {
+            transition: 0.5s ease-in-out;
+            transform: scale(1.01);
          }
       }
-      .items-team {
-         padding-top: 5vw;
-         width: 85vw;
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-         grid-template-rows: 1fr 1fr;
-         place-items: center;
-         gap: 3vw;
 
-         .item-bozhik {
-            position: relative;
-            background-color: $green;
-            @include itemTeam(100%, 29vw, 1.5px solid $grey, 0.25vw);
-
-            & h1 {
-               margin: 2.5vw;
-               color: $black;
-               font-size: 6.13vw;
-               font-weight: 500;
-               line-height: 75%;
-            }
-
-            .item-bozhik-info {
-               visibility: hidden;
-               width: 100%;
-               max-height: 100%;
-               position: absolute;
-
-               & h2 {
-                  margin: 1.25vw;
-                  color: $white;
-                  font-size: 2.7vw;
-                  font-weight: 400;
-                  line-height: 100%;
-                  letter-spacing: -0.03em;
-               }
-               & h3 {
-                  padding-top: 0.5vw;
-                  margin: 1.25vw;
-                  color: $green;
-                  font-size: 6.13vw;
-                  font-weight: 500;
-                  font-style: italic;
-                  line-height: 100%;
-               }
-            }
-         }
-
-         .item-day {
-            position: relative;
-            @include itemTeam(100%, 29vw, 1.5px solid $grey, 0.25vw);
-
-            & h1 {
-               margin: 2.5vw;
-               color: $white;
-               font-size: 6.13vw;
-               font-weight: 500;
-               line-height: 75%;
-            }
-
-            .item-day-info {
-               visibility: hidden;
-               width: 100%;
-               max-height: 100%;
-               position: absolute;
-
-               & h2 {
-                  margin: 1.25vw;
-                  color: $white;
-                  font-size: 2.5vw;
-                  font-weight: 400;
-                  line-height: 100%;
-                  letter-spacing: -0.03em;
-               }
-               & h3 {
-                  padding-top: 0.5vw;
-                  margin: 1.25vw;
-                  color: $green;
-                  font-size: 6.13vw;
-                  font-weight: 500;
-                  font-style: italic;
-                  line-height: 100%;
-               }
-            }
-         }
-
-         .item-gulevich {
-            position: relative;
-            background-color: $green;
-            @include itemTeam(100%, 29vw, 1.5px solid $grey, 0.25vw);
-
-            & h1 {
-               margin: 2.5vw;
-               color: $black;
-               font-size: 6.13vw;
-               font-weight: 500;
-               line-height: 75%;
-            }
-
-            .item-gulevich-info {
-               visibility: hidden;
-               width: 100%;
-               max-height: 100%;
-               position: absolute;
-
-               & h2 {
-                  margin: 1.25vw;
-                  color: $white;
-                  font-size: 2.5vw;
-                  font-weight: 400;
-                  line-height: 100%;
-                  letter-spacing: -0.03em;
-               }
-               & h3 {
-                  padding-top: 0.5vw;
-                  margin: 1.25vw;
-                  color: $green;
-                  font-size: 6.13vw;
-                  font-weight: 500;
-                  font-style: italic;
-                  line-height: 100%;
-               }
-            }
-         }
-
-         .item-kaem {
-            position: relative;
-            @include itemTeam(100%, 29vw, 1.5px solid $grey, 0.25vw);
-
-            & h1 {
-               margin: 2.5vw;
-               color: $white;
-               font-size: 6.13vw;
-               font-weight: 500;
-               line-height: 75%;
-            }
-
-            .item-kaem-info {
-               visibility: hidden;
-               width: 100%;
-               max-height: 100%;
-               position: absolute;
-
-               & h2 {
-                  margin: 1.25vw;
-                  color: $white;
-                  font-size: 2.5vw;
-                  font-weight: 400;
-                  line-height: 100%;
-                  letter-spacing: -0.03em;
-               }
-               & h3 {
-                  padding-top: 0.5vw;
-                  margin: 1.25vw;
-                  color: $green;
-                  font-size: 6.13vw;
-                  font-weight: 500;
-                  font-style: italic;
-                  line-height: 100%;
-               }
-            }
-         }
-      }
       .mail-index {
-         padding: 15vw 5.5vw 20vw 5.5vw;
+         padding: 0 5.5vw;
 
          .mail-text-index {
-            padding-top: 8vw;
-            padding-bottom: 6vw;
+            padding-top: 10vw;
+            padding-bottom: 15vw;
 
             & h4 {
-               font-size: 6vw;
+               font-size: 6.9vw;
                text-align: center;
                font-weight: 400;
                color: $white;
@@ -697,17 +702,14 @@ body.landing {
             }
 
             & h5 {
-               padding-top: 3%;
-               font-size: 3.25vw;
-               line-height: 125%;
+               padding-top: 7vw;
+               font-size: 3.5vw;
+               line-height: 4.5vw;
                text-align: center;
                font-weight: 300;
                color: $white;
 
                & b {
-                  font-size: inherit;
-                  font-weight: 300;
-                  font-style: normal;
                   color: $green;
                   & :hover {
                      text-decoration: underline;
@@ -767,6 +769,10 @@ body.landing {
                color: $green;
             }
          }
+      }
+
+      .footer {
+         padding: 2.5vw 0 3.5vw 0;
       }
    }
 }
