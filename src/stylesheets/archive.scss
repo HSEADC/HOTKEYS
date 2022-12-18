@@ -155,6 +155,10 @@ body.archive {
                @include shortcutHover;
             }
 
+            &:hover h1 {
+               color: $green;
+            }
+
             & h2 {
                margin: 5% 0 1% 6%;
                color: $white;
@@ -166,6 +170,7 @@ body.archive {
 
             & h1 {
                margin: 5% 0 1% 6%;
+               color: $white;
                font-size: clamp(2rem, 8vw - 2rem, 2.25vw);
                line-height: 100%;
                font-weight: 500;
