@@ -1,5 +1,6 @@
 html.training {
    scroll-behavior: smooth;
+   scroll-padding-block-start: 2.5vw;
 }
 
 body.training {
@@ -7,65 +8,59 @@ body.training {
    font-family: 'IBM-PlexSans', sans-serif;
    font-style: normal;
 
-   .container {
-      padding: 1.5% 2% 2% 2%;
+   &::-webkit-scrollbar {
+      position: absolute;
+      width: 17px;
+   }
+   &::-webkit-scrollbar-track {
+      background: $black2;
+   }
+   &::-webkit-scrollbar-thumb {
+      background-color: $grey;
    }
 
-   .block {
-      display: flex;
-      flex-direction: column;
-
-      & h1 {
-         padding-top: 20%;
-         color: $white;
-         margin: 0 auto;
-         font-weight: 300;
-      }
+   a {
+      color: $white;
    }
 
-   .block-header {
-      position: relative;
-      z-index: 2;
+   .header {
+      margin: 2.5vw;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
 
-      & h1 {
-         font-size: 3rem;
-         font-weight: 600;
-         color: $white;
-
-         &:hover {
-            color: $green;
-         }
-      }
-
-      .block-menu {
-         padding-top: 1.4%;
-
-         .menu {
-            .items-menu {
-               .item-menu5 {
-                  & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-                  }
+      .menu {
+         .items-menu {
+            .item-menu5 {
+               & h3 {
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
                }
             }
          }
       }
-
-      & h2 {
-         font-size: 3rem;
-         font-weight: 600;
-         opacity: 0;
-      }
    }
 
-   .footer {
-      padding-top: 19%;
-      padding-bottom: 1%;
+   .wrapper {
+      padding: 0% 2% 2% 2%;
+   }
+}
 
-      & .footer-items {
-         justify-content: left;
+@media screen and (max-width: 768px) {
+   body.training {
+      .header {
+         margin: 2.5vw;
+         flex-direction: column;
+         margin: 0 auto;
+         margin-bottom: 5vw;
+
+         .hotkeys {
+            @include itemGrid;
+            margin: 7vw auto;
+         }
+      }
+
+      .wrapper {
+         padding: 0% 2% 2% 2%;
       }
    }
 }

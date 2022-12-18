@@ -43,20 +43,6 @@ body.archive {
    .wrapper {
       padding: 0% 2% 2% 2%;
 
-      .block-menu {
-         padding-top: 1.4%;
-
-         .menu {
-            .items-menu {
-               .item-menu3 {
-                  & h3 {
-                     @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-                  }
-               }
-            }
-         }
-      }
-
       .block-search {
          margin-top: 3%;
          width: 100%;
