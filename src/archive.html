@@ -31,110 +31,102 @@
       />
       <meta property="twitter:image" content="https://raw.githubusercontent.com/HSEADC/B21DZ09-Project-4-2/main/src/images/seo.png" />
    </head>
-
    <body class="archive">
       <div id="up-target"></div>
-      <div class="container">
-         <div class="block">
-            <div class="block-header">
-               <div class="text-logo">
-                  <a href="./">
-                     <h1>HOT KEYS</h1>
-                  </a>
-               </div>
-               <menu></menu>
-               <div class="text-logo-none">
-                  <h2>HOT KEYS</h2>
-               </div>
-            </div>
-            <div class="block-search">
-               <form class="search">
-                  <div class="search-bar">
-                     <input class="search-input" type="text" placeholder="Поиск шорткатов" type="search" />
-                     <button type="submit">Найти</button>
-                     <div class="select-flex">
-                        <select name="sistem" id="option">
-                           <option selected>Система</option>
-                           <option>Windows</option>
-                           <option>macOS</option>
-                        </select>
-                        <select name="programm" id="option">
-                           <option selected>Программа</option>
-                           <option>Figma</option>
-                           <option>VS Code</option>
-                           <option>Notion</option>
-                           <option>Cinema 4D</option>
-                           <option>Microsoft Word</option>
-                           <option>Google Chrome</option>
-                        </select>
-                        <select name="popular" id="option">
-                           <option selected>Популярные</option>
-                           <option>Ctrl+V</option>
-                           <option>⌘Cmd+Tab</option>
-                           <option>Ctrl+D</option>
-                           <option>⌘Cmd+H</option>
-                        </select>
-                     </div>
+      <div class="header">
+         <a href="./">
+            <hotkeys></hotkeys>
+         </a>
+         <menu></menu>
+      </div>
+      <div class="wrapper">
+         <div class="block-search">
+            <form class="search">
+               <div class="search-bar">
+                  <input class="search-input" type="text" placeholder="Поиск шорткатов" type="search" />
+                  <button type="submit">Найти</button>
+                  <div class="select-flex">
+                     <select name="sistem" id="option">
+                        <option selected>Система ↓</option>
+                        <option>Windows</option>
+                        <option>macOS</option>
+                     </select>
+                     <select name="programm" id="option">
+                        <option selected>Программа ↓</option>
+                        <option>Figma</option>
+                        <option>VS Code</option>
+                        <option>Notion</option>
+                        <option>Cinema 4D</option>
+                        <option>Microsoft Word</option>
+                        <option>Google Chrome</option>
+                     </select>
+                     <select name="popular" id="option">
+                        <option selected>Популярные ↓</option>
+                        <option>Ctrl+V</option>
+                        <option>⌘Cmd+Tab</option>
+                        <option>Ctrl+D</option>
+                        <option>⌘Cmd+H</option>
+                     </select>
                   </div>
-               </form>
-            </div>
-            <div class="block-shortcuts">
-               <div class="block-shortcuts-grid">
-                  <a href="catalog/alt-tab.html">
-                     <div class="block-shortcut-item">
-                        <h2>Переключение между<br />запущенными приложениями</h2>
-                        <h1>Alt+Tab</h1>
-                     </div>
-                  </a>
-                  <a href="catalog/cmd-h.html">
-                     <div class="block-shortcut-item">
-                        <h2>
-                           Cкрытие текущей открытой<br />
-                           программы
-                        </h2>
-                        <h1>⌘Cmd+H</h1>
-                     </div>
-                  </a>
-                  <a href="catalog/win-d.html">
-                     <div class="block-shortcut-item">
-                        <h2>
-                           Cворачивание всех открытых <br />
-                           окон в системе
-                        </h2>
-                        <h1>Win+D</h1>
-                     </div>
-                  </a>
-                  <a href="catalog/ctrl-w.html">
-                     <div class="block-shortcut-item">
-                        <h2>Закрытие текущей открытой<br />вкладки приложения</h2>
-                        <h1>Ctrl+W</h1>
-                     </div>
-                  </a>
-                  <a href="catalog/cmd-z.html">
-                     <div class="block-shortcut-item">
-                        <h2>Отмена последнего выполненного<br />действия</h2>
-                        <h1>⌘Cmd+Z</h1>
-                     </div>
-                  </a>
-                  <a href="catalog/cmd-tab.html">
-                     <div class="block-shortcut-item">
-                        <h2>Переключение между<br />запущенными приложениями</h2>
-                        <h1>⌘Cmd+Tab</h1>
-                     </div>
-                  </a>
-                  <a href="catalog/ctrl-z.html">
-                     <div class="block-shortcut-item">
-                        <h2>Отмена последнего выполненного<br />действия</h2>
-                        <h1>Ctrl+Z</h1>
-                     </div>
-                  </a>
-                  <a href="catalog/cmd-o.html">
-                     <div class="block-shortcut-item">
-                        <h2>Переключение между<br />запущенными приложениями</h2>
-                        <h1>⌘Cmd+O</h1>
-                     </div>
-                  </a>
                </div>
+            </form>
+         </div>
+         <div class="block-shortcuts">
+            <div class="block-shortcuts-grid">
+               <a href="catalog/alt-tab.html">
+                  <div class="block-shortcut-item">
+                     <h2>Переключение между<br />запущенными приложениями</h2>
+                     <h1>Alt+Tab</h1>
+                  </div>
+               </a>
+               <a href="catalog/cmd-h.html">
+                  <div class="block-shortcut-item">
+                     <h2>
+                        Cкрытие текущей открытой<br />
+                        программы
+                     </h2>
+                     <h1>⌘Cmd+H</h1>
+                  </div>
+               </a>
+               <a href="catalog/win-d.html">
+                  <div class="block-shortcut-item">
+                     <h2>
+                        Cворачивание всех открытых <br />
+                        окон в системе
+                     </h2>
+                     <h1>Win+D</h1>
+                  </div>
+               </a>
+               <a href="catalog/ctrl-w.html">
+                  <div class="block-shortcut-item">
+                     <h2>Закрытие текущей открытой<br />вкладки приложения</h2>
+                     <h1>Ctrl+W</h1>
+                  </div>
+               </a>
+               <a href="catalog/cmd-z.html">
+                  <div class="block-shortcut-item">
+                     <h2>Отмена последнего выполненного<br />действия</h2>
+                     <h1>⌘Cmd+Z</h1>
+                  </div>
+               </a>
+               <a href="catalog/cmd-tab.html">
+                  <div class="block-shortcut-item">
+                     <h2>Переключение между<br />запущенными приложениями</h2>
+                     <h1>⌘Cmd+Tab</h1>
+                  </div>
+               </a>
+               <a href="catalog/ctrl-z.html">
+                  <div class="block-shortcut-item">
+                     <h2>Отмена последнего выполненного<br />действия</h2>
+                     <h1>Ctrl+Z</h1>
+                  </div>
+               </a>
+               <a href="catalog/cmd-o.html">
+                  <div class="block-shortcut-item">
+                     <h2>Переключение между<br />запущенными приложениями</h2>
+                     <h1>⌘Cmd+O</h1>
+                  </div>
+               </a>
             </div>
          </div>
          <footer></footer>
