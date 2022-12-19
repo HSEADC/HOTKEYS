@@ -106,10 +106,10 @@
       width: 22.5vw;
       height: 7.5vw;
       border-radius: 5px;
-      background-color: yellowgreen;
+      background-color: $green;
 
       h1 {
-         color: black;
+         color: $black;
          text-align: center;
          font-size: 1.1vw;
          font-weight: 400;
@@ -119,6 +119,17 @@
          b {
             font-style: italic;
             font-weight: 700;
+         }
+
+         a {
+            font-style: italic;
+            font-weight: 700;
+            color: $black;
+            text-decoration: underline;
+
+            &:hover {
+               text-decoration: none;
+            }
          }
       }
 
@@ -132,16 +143,16 @@
             margin: 0.3vw 0.3vw 0.3vw 0vw;
 
             #modal-close {
-               fill: black;
+               fill: $black;
                cursor: pointer;
             }
 
             &:hover #modal-close {
-               fill: white;
+               fill: orangered;
             }
 
             &:active #modal-close {
-               fill: gray;
+               fill: $black;
             }
          }
       }
