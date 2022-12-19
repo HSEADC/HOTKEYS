@@ -259,9 +259,9 @@ body.index {
          color: $white;
 
          & div {
-            transform: rotate(-90deg);
+            // transform: rotate(-90deg);
             margin: 55vw auto 55vw auto;
-            font-size: 30vw;
+            font-size: 25vw;
             text-align: center;
             animation: change-text 3.5s infinite;
             // animation-play-state: running;

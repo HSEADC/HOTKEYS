@@ -46,21 +46,19 @@ $black2: #1e1e1e;
 
 // ** item catalog
 
-%menu-shortcut {
+@mixin shortcutConfig($mw, $mh, $br, $c, $bg) {
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
-   min-height: 300px;
-   min-width: 435px;
-   border-radius: 5px;
-   font-size: 1.5rem;
-   font-weight: 500;
-   color: $white;
-   background-color: $black2;
    cursor: help;
+   min-width: $mw;
+   min-height: $mh;
+   border-radius: $br;
+   color: $c;
+   background-color: $bg;
 }
 
-%menu-shortcut-hover {
+@mixin shortcutHover {
    color: $white-hov;
    background-color: $black-hov;
 }
