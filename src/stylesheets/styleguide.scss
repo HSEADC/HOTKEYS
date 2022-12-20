@@ -28,24 +28,21 @@ body.styleguide {
       font-size: 1.15vw;
       font-weight: 200;
       text-align: center;
+      letter-spacing: -0.03em;
+      line-height: 120%;
    }
 
    & h5 {
       color: $white;
-      font-size: 2.5vw;
+      font-size: 3.13vw;
       font-weight: 500;
       text-align: center;
-      letter-spacing: 0.1vw;
 
       b {
-         font-size: 3vw;
+         font-size: 3.13vw;
          font-weight: 450;
          font-style: italic;
          color: $green;
-
-         // &:hover {
-         //    color: $grey;
-         // }
       }
    }
 
@@ -54,95 +51,25 @@ body.styleguide {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-
-      // .menu {
-      //    .items-menu {
-      //       .item-menu2 {
-      //          & h3 {
-      //             @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-      //          }
-      //       }
-      //    }
-      // }
    }
 
-   .block-shortcut {
-      color: $white;
+   .title-main {
+      padding-top: 15vw;
 
-      & div {
-         margin: 4vw auto 9vw auto;
-         font-size: 20vw;
-         text-align: center;
-         animation: change-text 3.5s infinite;
-         // animation-play-state: running;
-         cursor: help;
+      h4 {
+         padding-top: 1vw;
 
-         &:hover {
-            // animation-play-state: paused;
-            color: $green;
-         }
-      }
-
-      @keyframes change-text {
-         10% {
-            font-weight: 300;
-            font-style: normal;
-            text-decoration: none;
-            text-transform: none;
-         }
-
-         20% {
-            font-weight: 500;
-            font-style: italic;
-            text-decoration: underline;
-            text-decoration-thickness: 0.6rem;
-            text-underline-offset: 2rem;
-            text-transform: capitalize;
-         }
-
-         30% {
-            font-weight: 200;
-            font-style: normal;
-            text-decoration-line: line-through;
-            text-decoration-thickness: 0.7rem;
-            text-transform: none;
-         }
-
-         40% {
-            font-weight: 600;
-            font-style: italic;
-            text-decoration: none;
-            text-transform: lowercase;
-         }
-
-         50% {
-            font-weight: 100;
-            font-style: italic;
-            text-decoration-line: line-through;
-            text-decoration-thickness: 0.7rem;
-            text-transform: none;
-         }
-
-         60% {
-            font-weight: 700;
-            font-style: normal;
-            text-decoration: none;
-            text-transform: lowercase;
-         }
-
-         70% {
-            font-weight: 400;
-            font-style: italic;
-            text-decoration: underline;
-            text-decoration-thickness: 0.7rem;
-            text-underline-offset: 3rem;
-            text-transform: capitalize;
+         a {
+            &:hover {
+               color: $green;
+               text-decoration: underline;
+            }
          }
       }
    }
 
    .block-arrow {
-      margin: 0 auto;
+      margin-top: 16vw;
 
       a {
          svg {
@@ -159,167 +86,85 @@ body.styleguide {
             }
          }
       }
-
-      // & h2 {
-      //    font-size: 1.3vw;
-      //    line-height: 1vw;
-      //    font-weight: 400;
-      //    color: $white;
-      //    text-align: center;
-
-      //    &:hover {
-      //       color: $green;
-      //       text-decoration: underline;
-      //    }
-      // }
    }
 
-   .title-main {
-      padding: 25vw 0 3.5vw 0;
-      margin: 0 auto;
+   .title-tone {
+      margin-top: 25vw;
 
-      & h5 {
-         padding-top: 2.5vw;
-         line-height: 135%;
+      h4 {
+         padding-top: 1vw;
+
+         a {
+            &:hover {
+               color: $green;
+               text-decoration: underline;
+            }
+         }
       }
    }
 
-   .title-mission {
-      padding: 25vw 0 27.5vw 0;
-      margin: 0 auto;
+   .block-logo {
+      margin-top: 25vw;
 
-      & h5 {
-         padding-top: 2.5vw;
-         line-height: 115%;
+      div {
+         padding-top: 3vw;
+         text-align: center;
+
+         svg {
+            width: 20vw;
+         }
+      }
+
+      img {
+         z-index: 1;
+         width: 8.5vw;
+         margin-top: 2vw;
+         margin-left: 57vw;
       }
    }
 
-   .title-dev {
-      padding: 1vw 0 4vw 0;
-      margin: 0 auto;
+   .title-colors {
+      margin-top: 25vw;
+
+      h4 {
+         padding-top: 1vw;
+
+         a {
+            &:hover {
+               color: $green;
+               text-decoration: underline;
+            }
+         }
+      }
    }
 
-   .items-dev {
-      padding-top: 1vw;
+   .block-colors {
+      padding-top: 4vw;
       margin: 0 auto;
-      width: 94vw;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
-      column-gap: 1vw;
-      row-gap: 1vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3vw;
 
-      & h2 {
-         margin: 5% 0 1% 6%;
-         font-size: 1.15vw;
-         line-height: 1.3vw;
-         font-weight: 400;
+      img {
+         width: 10vw;
       }
+   }
 
-      & h1 {
-         margin: 4% 0 1% 6%;
+   .title-system {
+      margin-top: 25vw;
+
+      h5 {
          font-size: 2.71vw;
-         line-height: 100%;
-         font-weight: 500;
-      }
-
-      .item {
-         display: flex;
-         flex-direction: column;
-         justify-content: flex-start;
-         min-height: 300px;
-         min-width: 435px;
-         border-radius: 5px;
-         font-size: 1.5rem;
-         font-weight: 500;
-         cursor: help;
-
-         &:hover {
-            color: $white-hov;
-            background-color: $black-hov;
-            border: 1.5px solid $black-hov;
-         }
-      }
-
-      .archive,
-      .about,
-      .selections,
-      .design {
-         color: $black;
-         background-color: $green;
-      }
-
-      .clipboard,
-      .hide,
-      .switch,
-      .undo {
-         background-color: transparent;
-         border: 1.5px solid $grey;
-
-         & h1 {
-            color: white;
-         }
-
-         & h2 {
-            color: gray;
-         }
+         padding-top: 5vw;
+         line-height: 110%;
       }
    }
 
-   .title-unique {
-      padding: 25vw 0 27.5vw 0;
-      margin: 0 auto;
-
-      .element {
-         font-size: 3.13vw;
-         padding-top: 2.5vw;
-         line-height: 100%;
-         color: $white;
-         font-style: italic;
-         text-transform: uppercase;
-
-         opacity: 0;
-         transform: translateX(-50%);
-      }
-
-      .element._show {
-         opacity: 1;
-         transition: all 1s, opacity 0.1s;
-         transform: translateX(0%);
-
-         color: $green;
-         font-style: italic;
-      }
-   }
-
-   .title-who {
-      padding: 1vw 0 3.5vw 0;
-      margin: 0 auto;
-
-      & h4 {
-         padding-top: 2.5vw;
-         line-height: 1.5vw;
-
-         & span {
-            font-weight: 450;
-            font-style: italic;
-            color: $green;
-            text-transform: uppercase;
-
-            // &:hover {
-            //    color: $grey;
-            // }
-         }
-      }
-
-      & h5 {
-         padding-top: 2vw;
-         line-height: 115%;
-      }
-   }
-
-   .img-who {
-      margin: 0 auto;
-      max-width: 74.5vw;
+   .img-system {
+      margin: 20vw auto;
+      max-width: 55vw;
 
       & img {
          width: 100%;
@@ -331,101 +176,96 @@ body.styleguide {
       }
    }
 
-   .mail-index {
-      padding: 17vw 5.5vw 10vw 5.5vw;
+   .img-items {
+      margin: 20vw auto;
+      max-width: 90vw;
 
-      .mail-text-index {
-         padding-top: 8vw;
-         padding-bottom: 6vw;
-
-         & h4 {
-            font-size: 4vw;
-            text-align: center;
-            font-weight: 400;
-            color: $white;
-
-            & b {
-               color: $green;
-               font-style: italic;
-
-               & :hover {
-                  text-decoration: underline;
-               }
-            }
-         }
-
-         & h5 {
-            padding-top: 3%;
-            font-size: 1.5vw;
-            line-height: 1.8vw;
-            text-align: center;
-            font-weight: 300;
-            color: $white;
-
-            & b {
-               font-size: inherit;
-               font-weight: 300;
-               font-style: italic;
-               text-transform: uppercase;
-               color: $green;
-
-               & :hover {
-                  text-decoration: underline;
-               }
-            }
-         }
-      }
-
-      .mail-input-index {
-         margin: 0 auto;
-         width: 25vw;
-         position: relative;
-      }
-
-      .email-form {
+      & img {
          width: 100%;
-         display: flex;
-         justify-content: space-between;
-         position: relative;
+      }
 
-         .input-email {
-            color: $white;
-            width: 25vw;
-            height: 2.6vw;
-            border: 1.5px solid $grey;
-            border-radius: 5px;
-            background-color: $black;
-         }
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
 
-         input[placeholder] {
-            padding-left: 0.8vw;
-            font-size: 1.5vw;
-         }
+   .title-mockup {
+      margin-top: 20vw;
+   }
 
-         .input-email::-webkit-input-placeholder {
-            color: $grey;
-         }
+   .mockup-cap {
+      margin: 10vw auto;
+      max-width: 35vw;
 
-         button {
-            width: 2.03vw;
-            height: 2.03vw;
-            outline: none;
-            border: 0;
-            background: transparent;
-            position: absolute;
-            top: 0.3vw;
-            right: 0.3vw;
-         }
+      h5 {
+         color: $green;
+      }
 
-         #email-form-done {
-            position: absolute;
-            padding-top: 3%;
-            margin: 0.5vw 8.3vw;
-            font-size: 1vw;
-            font-style: normal;
-            font-weight: 300;
-            color: $green;
-         }
+      & img {
+         width: 100%;
+      }
+
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
+
+   .mockup-tshirt {
+      margin: 15vw auto;
+      max-width: 45vw;
+
+      h5 {
+         color: $green;
+      }
+
+      & img {
+         width: 100%;
+      }
+
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
+
+   .mockup-stikers {
+      margin: 15vw auto;
+      max-width: 50vw;
+
+      h5 {
+         color: $green;
+         margin-bottom: 3vw;
+      }
+
+      & img {
+         transform: translate(50px, 0px);
+         width: 100%;
+      }
+
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
+
+   .mockup-website {
+      margin: 10vw auto 5vw auto;
+      max-width: 94.5vw;
+
+      h5 {
+         color: $green;
+         margin-bottom: 3vw;
+      }
+
+      & img {
+         width: 100%;
+      }
+
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
       }
    }
 
@@ -435,7 +275,7 @@ body.styleguide {
 }
 
 @media screen and (max-width: 768px) {
-   body.landing {
+   body.styleguide {
       & h4 {
          color: $white;
          font-size: 3.5vw;
@@ -473,344 +313,8 @@ body.styleguide {
          }
       }
 
-      .block-shortcut {
-         color: $white;
-
-         & div {
-            margin: 10vw auto 10vw auto;
-            font-size: 25vw;
-            text-align: center;
-            animation: change-text 3.5s infinite;
-            // animation-play-state: running;
-            cursor: help;
-
-            &:hover {
-               // animation-play-state: paused;
-               color: $green;
-            }
-         }
-      }
-
-      .block-arrow {
-         margin: 0 auto;
-
-         a {
-            svg {
-               margin: 0 49.5%;
-               width: 0.94vw;
-               height: 1.56vw;
-
-               #arrow {
-                  fill: $white;
-
-                  &:hover {
-                     fill: $green;
-                  }
-               }
-            }
-         }
-
-         // & h2 {
-         //    font-size: 1.3vw;
-         //    line-height: 1vw;
-         //    font-weight: 400;
-         //    color: $white;
-         //    text-align: center;
-
-         //    &:hover {
-         //       color: $green;
-         //       text-decoration: underline;
-         //    }
-         // }
-      }
-
-      .title-main {
-         padding: 25vw 0 3.5vw 0;
-         margin: 0 auto;
-
-         & h5 {
-            padding-top: 2.5vw;
-            line-height: 135%;
-         }
-      }
-
-      .title-mission {
-         padding: 25vw 0 27.5vw 0;
-         margin: 0 auto;
-
-         & h5 {
-            padding-top: 2.5vw;
-            line-height: 115%;
-         }
-      }
-
-      .title-dev {
-         padding: 1vw 0 10vw 0;
-         margin: 0 auto;
-      }
-
-      .items-dev {
-         padding-top: 1vw;
-         margin: 0 auto;
-         width: 94vw;
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-         column-gap: 2vw;
-         row-gap: 2vw;
-
-         & h2 {
-            margin: 5% 0 1% 6%;
-            font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
-            line-height: 120%;
-            font-weight: 400;
-         }
-
-         & h1 {
-            margin: 5% 0 1% 6%;
-            font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
-            line-height: 100%;
-            font-weight: 500;
-         }
-
-         .item {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            min-height: 190px;
-            min-width: 235px;
-            border-radius: 5px;
-            font-weight: 500;
-            cursor: help;
-
-            &:hover {
-               color: $white-hov;
-               background-color: $black-hov;
-               border: 1.5px solid $black-hov;
-            }
-         }
-
-         .archive,
-         .about,
-         .selections,
-         .design {
-            color: $black;
-            background-color: $green;
-         }
-
-         .clipboard,
-         .hide,
-         .switch,
-         .undo {
-            background-color: transparent;
-            border: 1.5px solid $grey;
-
-            & h1 {
-               color: white;
-            }
-
-            & h2 {
-               color: gray;
-            }
-         }
-      }
-
-      .title-unique {
-         padding: 25vw 0 27.5vw 0;
-         margin: 0 auto;
-
-         .element {
-            font-size: 3.13vw;
-            padding-top: 2.5vw;
-            line-height: 100%;
-            color: $white;
-            font-style: italic;
-            text-transform: uppercase;
-
-            opacity: 0;
-            transform: translateX(-50%);
-         }
-
-         .element._show {
-            opacity: 1;
-            transition: all 1s, opacity 0.1s;
-            transform: translateX(0%);
-
-            color: $green;
-            font-style: italic;
-         }
-      }
-
-      .title-who {
-         padding: 1vw 0 3.5vw 0;
-         margin: 0 auto;
-
-         & h4 {
-            padding-top: 2.5vw;
-            line-height: 1.5vw;
-
-            & span {
-               font-weight: 450;
-               font-style: italic;
-               color: $green;
-               text-transform: uppercase;
-
-               // &:hover {
-               //    color: $grey;
-               // }
-            }
-         }
-
-         & h5 {
-            padding-top: 2vw;
-            line-height: 115%;
-         }
-      }
-
-      .img-who {
-         margin: 0 auto;
-         max-width: 74.5vw;
-
-         & img {
-            width: 100%;
-         }
-
-         &:hover {
-            transition: 0.5s ease-in-out;
-            transform: scale(1.01);
-         }
-      }
-
-      .mail-index {
-         padding: 0 5.5vw;
-
-         .mail-text-index {
-            padding-top: 10vw;
-            padding-bottom: 15vw;
-
-            & h4 {
-               font-size: 6.9vw;
-               text-align: center;
-               font-weight: 400;
-               color: $white;
-
-               & b {
-                  color: $green;
-                  & :hover {
-                     text-decoration: underline;
-                  }
-               }
-            }
-
-            & h5 {
-               padding-top: 7vw;
-               font-size: 3.5vw;
-               line-height: 4.5vw;
-               text-align: center;
-               font-weight: 300;
-               color: $white;
-
-               & b {
-                  color: $green;
-                  & :hover {
-                     text-decoration: underline;
-                  }
-               }
-            }
-         }
-
-         .mail-input-index {
-            margin: 0 auto;
-            width: 50vw;
-            position: relative;
-         }
-
-         .email-form {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-
-            .input-email {
-               color: $white;
-               width: 50vw;
-               height: 5.6vw;
-               border: 1.5px solid $grey;
-               border-radius: 2px;
-               background-color: $black;
-            }
-
-            input[placeholder] {
-               padding-left: 1vw;
-               font-size: 3.5vw;
-            }
-
-            .input-email::-webkit-input-placeholder {
-               color: $grey;
-            }
-
-            button {
-               width: 4.3vw;
-               height: 4.3vw;
-               outline: none;
-               border: 0;
-               background: transparent;
-               position: absolute;
-               top: 0.7vw;
-               right: 0.7vw;
-            }
-
-            #email-form-done {
-               position: absolute;
-               padding-top: 3%;
-               margin: 0.5vw 11.5vw;
-               font-size: 1vw;
-               font-style: normal;
-               font-weight: 300;
-               color: $green;
-            }
-         }
-      }
-
       .footer {
          padding: 2.5vw 0 3.5vw 0;
-      }
-   }
-}
-
-@media screen and (max-width: 420px) {
-   body.landing {
-      .mail-index {
-         .email-form {
-            button {
-               width: 4vw;
-               height: 4vw;
-               outline: none;
-               border: 0;
-               background: transparent;
-               position: absolute;
-               top: -0.4vw;
-               right: 0.8vw;
-            }
-         }
-      }
-   }
-}
-
-@media screen and (max-width: 360px) {
-   body.landing {
-      .mail-index {
-         .email-form {
-            button {
-               width: 4vw;
-               height: 4vw;
-               outline: none;
-               border: 0;
-               background: transparent;
-               position: absolute;
-               top: -0.2vw;
-               right: 0.8vw;
-            }
-         }
       }
    }
 }

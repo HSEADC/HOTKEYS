@@ -6,7 +6,7 @@
       transform: translate(0px);
 
       &:hover {
-         animation: shift-text 1.5s infinite;
+         animation: shift-text 1s infinite;
       }
 
       @keyframes shift-text {
@@ -20,7 +20,7 @@
 
       &:hover g:first-child {
          visibility: visible;
-         animation: shift 1.5s infinite;
+         animation: shift 1s infinite;
 
          @keyframes shift {
             1% {
@@ -36,7 +36,7 @@
 
       &:hover g:first-child.two-shift {
          visibility: visible;
-         animation: shift-two 1.5s infinite;
+         animation: shift-two 1s infinite;
 
          @keyframes shift-two {
             25% {
