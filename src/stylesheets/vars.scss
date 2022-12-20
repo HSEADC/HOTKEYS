@@ -12,74 +12,74 @@ $black2: #1e1e1e;
 
 // ** item menu
 @mixin itemConfig($w, $h, $c, $bc, $b, $br, $fs, $fw) {
-   width: $w;
-   height: $h;
-   color: $c;
-   background-color: $bc;
-   border: $b;
-   border-radius: $br;
-   font-size: $fs;
-   font-weight: $fw;
+  width: $w;
+  height: $h;
+  color: $c;
+  background-color: $bc;
+  border: $b;
+  border-radius: $br;
+  font-size: $fs;
+  font-weight: $fw;
 }
 
 @mixin itemOpenConfig($c, $bc, $b, $fw, $fs) {
-   color: $c;
-   background-color: $bc;
-   border: $b;
-   font-weight: $fw;
-   font-style: $fs;
+  color: $c;
+  background-color: $bc;
+  border: $b;
+  font-weight: $fw;
+  font-style: $fs;
 }
 
 @mixin itemGrid {
-   display: grid;
-   place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 // ** item team - about
 
 @mixin itemTeam($w, $h, $b, $br) {
-   width: $w;
-   height: $h;
-   outline: $b;
-   border-radius: $br;
+  width: $w;
+  height: $h;
+  outline: $b;
+  border-radius: $br;
 }
 
 // ** item catalog
 
 @mixin shortcutConfig($mw, $mh, $br, $c, $bg) {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   cursor: help;
-   min-width: $mw;
-   min-height: $mh;
-   border-radius: $br;
-   color: $c;
-   background-color: $bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  cursor: help;
+  min-width: $mw;
+  min-height: $mh;
+  border-radius: $br;
+  color: $c;
+  background-color: $bg;
 }
 
 @mixin shortcutHover {
-   color: $white-hov;
-   background-color: $black-hov;
+  color: $white-hov;
+  background-color: $black-hov;
 }
 
 // ** item selections
 
 %menu-selection {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   min-height: 235px;
-   min-width: 585px;
-   border-radius: 5px;
-   font-size: 1.5rem;
-   font-weight: 500;
-   color: $white;
-   background-color: $black2;
-   cursor: help;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 235px;
+  min-width: 585px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $white;
+  background-color: $black2;
+  cursor: help;
 }
 
 %menu-selection-hover {
-   color: $white-hov;
-   background-color: $black-hov;
+  color: $white-hov;
+  background-color: $black-hov;
 }
