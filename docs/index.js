@@ -67,6 +67,26 @@ form.addEventListener('submit', handleSubmit);
 
 /***/ }),
 
+/***/ 601:
+/***/ (() => {
+
+// Show the modal window after 15 seconds
+setTimeout(function () {
+  document.querySelector('.modal').style.display = 'block';
+}, 5000); // Hide the modal window when the close button is clicked
+
+document.querySelector('.close-button').addEventListener('click', function () {
+  document.querySelector('.modal').style.display = 'none';
+}); // Hide the modal window when the 'ESC' key is pressed
+
+document.addEventListener('keydown', function (event) {
+  if (event.keyCode === 27) {
+    document.querySelector('.modal').style.display = 'none';
+  }
+});
+
+/***/ }),
+
 /***/ 557:
 /***/ (() => {
 
@@ -191,14 +211,21 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-/* harmony import */ var _javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(197);
-/* harmony import */ var _javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _javascript_form_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(545);
-/* harmony import */ var _javascript_form_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_javascript_form_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(557);
-/* harmony import */ var _javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _javascript_modal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(601);
+/* harmony import */ var _javascript_modal_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_javascript_modal_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(197);
+/* harmony import */ var _javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _javascript_form_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(545);
+/* harmony import */ var _javascript_form_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_javascript_form_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(557);
+/* harmony import */ var _javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_3__);
+ // modal window
 
+ // shortcut change animation
 
+ // form done script
+
+ // landing text apperance
 
  // import './javascript/training.js';
 })();
