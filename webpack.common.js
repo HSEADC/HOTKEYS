@@ -104,6 +104,15 @@ module.exports = {
          // chunks: ['page']
       }),
 
+      // Style Guide page
+      new HtmlWebpackPlugin({
+         hash: true,
+         scriptLoading: 'blocking',
+         template: './src/styleguide.html',
+         filename: './styleguide.html',
+         // chunks: ['page']
+      }),
+
       // Catalog page
       new HtmlWebpackPlugin({
          hash: true,
@@ -228,6 +237,15 @@ module.exports = {
          {
             path: path.join(__dirname, './src/partials/hotkeys.html'),
             location: 'hotkeys',
+            template_filename: '*',
+            priority: 'replace',
+         },
+      ]),
+
+      new HtmlWebpackPartialsPlugin([
+         {
+            path: path.join(__dirname, './src/partials/modal.html'),
+            location: 'modal',
             template_filename: '*',
             priority: 'replace',
          },
