@@ -252,7 +252,7 @@
             & h3 {
                @include itemGrid;
                @include itemConfig(7.4vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-               cursor: wait;
+               // // cursor: wait;
 
                &:hover {
                   @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
@@ -263,7 +263,7 @@
             & h3 {
                @include itemGrid;
                @include itemConfig(8.54vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-               cursor: wait;
+               // cursor: wait;
 
                &:hover {
                   @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
@@ -274,7 +274,7 @@
             & h3 {
                @include itemGrid;
                @include itemConfig(7.5vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-               cursor: wait;
+               // cursor: wait;
 
                &:hover {
                   @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
@@ -285,7 +285,7 @@
             & h3 {
                @include itemGrid;
                @include itemConfig(8.65vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-               cursor: wait;
+               // cursor: wait;
 
                &:hover {
                   @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
@@ -296,7 +296,7 @@
             & h3 {
                @include itemGrid;
                @include itemConfig(9.69vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-               cursor: wait;
+               // cursor: wait;
 
                &:hover {
                   @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
@@ -425,7 +425,7 @@
                & h3 {
                   @include itemGrid;
                   @include itemConfig(17.4vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
-                  cursor: wait;
+                  // cursor: wait;
 
                   &:hover {
                      @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
@@ -436,7 +436,7 @@
                & h3 {
                   @include itemGrid;
                   @include itemConfig(18.54vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
-                  cursor: wait;
+                  // cursor: wait;
 
                   &:hover {
                      @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
@@ -447,7 +447,7 @@
                & h3 {
                   @include itemGrid;
                   @include itemConfig(17.5vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
-                  cursor: wait;
+                  // cursor: wait;
 
                   &:hover {
                      @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
@@ -458,7 +458,7 @@
                & h3 {
                   @include itemGrid;
                   @include itemConfig(18.65vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
-                  cursor: wait;
+                  // cursor: wait;
 
                   &:hover {
                      @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
@@ -469,7 +469,7 @@
                & h3 {
                   @include itemGrid;
                   @include itemConfig(19.69vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
-                  cursor: wait;
+                  // cursor: wait;
 
                   &:hover {
                      @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);

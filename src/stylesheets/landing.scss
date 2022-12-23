@@ -42,10 +42,6 @@ body.landing {
          font-weight: 450;
          font-style: italic;
          color: $green;
-
-         // &:hover {
-         //    color: $grey;
-         // }
       }
    }
 
@@ -149,6 +145,7 @@ body.landing {
             margin: 0 49.5%;
             width: 0.94vw;
             height: 1.56vw;
+            overflow: visible;
 
             #arrow {
                fill: $white;
@@ -159,23 +156,10 @@ body.landing {
             }
          }
       }
-
-      // & h2 {
-      //    font-size: 1.3vw;
-      //    line-height: 1vw;
-      //    font-weight: 400;
-      //    color: $white;
-      //    text-align: center;
-
-      //    &:hover {
-      //       color: $green;
-      //       text-decoration: underline;
-      //    }
-      // }
    }
 
    .title-main {
-      padding: 25vw 0 3.5vw 0;
+      padding: 22.5vw 0 3.5vw 0;
       margin: 0 auto;
 
       & h5 {
@@ -185,7 +169,7 @@ body.landing {
    }
 
    .title-mission {
-      padding: 25vw 0 27.5vw 0;
+      padding: 22.5vw 0 27.5vw 0;
       margin: 0 auto;
 
       & h5 {
@@ -266,7 +250,7 @@ body.landing {
    }
 
    .title-unique {
-      padding: 25vw 0 27.5vw 0;
+      padding: 22.5vw 0 27.5vw 0;
       margin: 0 auto;
 
       .element {
@@ -325,14 +309,14 @@ body.landing {
          width: 100%;
       }
 
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
+      // &:hover {
+      //    transition: 0.5s ease-in-out;
+      //    transform: scale(1.01);
+      // }
    }
 
    .mail-index {
-      padding: 17vw 5.5vw 10vw 5.5vw;
+      padding: 14vw 5.5vw 10vw 5.5vw;
 
       .mail-text-index {
          padding-top: 8vw;
@@ -674,10 +658,10 @@ body.landing {
             width: 100%;
          }
 
-         &:hover {
-            transition: 0.5s ease-in-out;
-            transform: scale(1.01);
-         }
+         // &:hover {
+         //    transition: 0.5s ease-in-out;
+         //    transform: scale(1.01);
+         // }
       }
 
       .mail-index {
