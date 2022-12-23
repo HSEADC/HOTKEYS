@@ -13,7 +13,7 @@ document.addEventListener('keydown', function (event) {
 
    if (event.ctrlKey && event.keyCode == 70) {
       h1.style.color = '#cbfb45';
-      h3.innerHTML = `${keyCombination} ${shortcutsUse[0]}`;
+      h3.innerHTML = `${shortcutsUse[0]}`;
 
       setTimeout(() => {
          keyCombination = shortcuts[1];
@@ -23,7 +23,7 @@ document.addEventListener('keydown', function (event) {
       }, 2000);
    } else if (event.ctrlKey && event.keyCode == 65) {
       h1.style.color = '#cbfb45';
-      h3.innerHTML = `${keyCombination} → ${shortcutsUse[1]}`;
+      h3.innerHTML = `${shortcutsUse[1]}`;
 
       setTimeout(() => {
          keyCombination = shortcuts[2];
@@ -33,7 +33,7 @@ document.addEventListener('keydown', function (event) {
       }, 2000);
    } else if (event.ctrlKey && event.keyCode == 67) {
       h1.style.color = '#cbfb45';
-      h3.innerHTML = `${keyCombination} → ${shortcutsUse[2]}`;
+      h3.innerHTML = `${shortcutsUse[2]}`;
 
       setTimeout(() => {
          keyCombination = shortcuts[3];
@@ -43,7 +43,7 @@ document.addEventListener('keydown', function (event) {
       }, 2000);
    } else if (event.ctrlKey && event.keyCode == 86) {
       h1.style.color = '#cbfb45';
-      h3.innerHTML = `${keyCombination} → ${shortcutsUse[3]}`;
+      h3.innerHTML = `${shortcutsUse[3]}`;
 
       setTimeout(() => {
          keyCombination = shortcuts[4];
@@ -53,7 +53,7 @@ document.addEventListener('keydown', function (event) {
       }, 2000);
    } else if (event.ctrlKey && event.keyCode == 83) {
       h1.style.color = '#cbfb45';
-      h3.innerHTML = `${keyCombination} → ${shortcutsUse[4]}`;
+      h3.innerHTML = `${shortcutsUse[4]}`;
 
       setTimeout(() => {
          keyCombination = 'Все!';
