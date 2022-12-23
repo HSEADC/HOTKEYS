@@ -84,10 +84,10 @@ body.about {
          width: 100%;
       }
 
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
+      // &:hover {
+      //    transition: 0.5s ease-in-out;
+      //    transform: scale(1.01);
+      // }
    }
 
    .title-research {
@@ -108,10 +108,10 @@ body.about {
          width: 100%;
       }
 
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
+      // &:hover {
+      //    transition: 0.5s ease-in-out;
+      //    transform: scale(1.01);
+      // }
    }
 
    .title-often {
@@ -147,10 +147,10 @@ body.about {
          width: 100%;
       }
 
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
+      // &:hover {
+      //    transition: 0.5s ease-in-out;
+      //    transform: scale(1.01);
+      // }
    }
 
    .title-team {
@@ -163,6 +163,7 @@ body.about {
 
          span {
             color: $green;
+            font-style: italic;
          }
       }
    }
