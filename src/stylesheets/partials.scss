@@ -138,13 +138,16 @@
             width: 0.68vw;
             height: 0.68vw;
             float: right;
-            overflow: hidden;
+            overflow: visible;
             vertical-align: middle;
-            margin: 0.3vw 0.3vw 0.3vw 0vw;
+            margin: 0.3vw 0.3vw 0.3vw 20.7vw;
+
+            &:hover {
+               cursor: pointer;
+            }
 
             #modal-close {
                fill: $black;
-               cursor: pointer;
             }
 
             &:hover #modal-close {
