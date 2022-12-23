@@ -29,6 +29,10 @@ body.about {
       flex-direction: row;
       justify-content: space-between;
 
+      .hotkeys {
+         margin-top: 0.4vw;
+      }
+
       .menu {
          .items-menu {
             .item-menu2 {
