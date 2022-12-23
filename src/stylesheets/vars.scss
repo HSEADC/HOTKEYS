@@ -6,6 +6,7 @@ $green: #cbfb45;
 
 $black-hov: #141414;
 $white-hov: #868686;
+$grey-hov: #333333;
 $black2: #1e1e1e;
 
 // *! config templates
@@ -46,13 +47,14 @@ $black2: #1e1e1e;
 
 // ** item catalog
 
-@mixin shortcutConfig($mw, $mh, $br, $c, $bg) {
+@mixin shortcutConfig($mw, $mh, $b, $br, $c, $bg) {
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
    cursor: help;
    min-width: $mw;
    min-height: $mh;
+   border: $b;
    border-radius: $br;
    color: $c;
    background-color: $bg;
@@ -60,26 +62,5 @@ $black2: #1e1e1e;
 
 @mixin shortcutHover {
    color: $white-hov;
-   background-color: $black-hov;
-}
-
-// ** item selections
-
-%menu-selection {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   min-height: 235px;
-   min-width: 585px;
-   border-radius: 5px;
-   font-size: 1.5rem;
-   font-weight: 500;
-   color: $white;
-   background-color: $black2;
-   cursor: help;
-}
-
-%menu-selection-hover {
-   color: $white-hov;
-   background-color: $black-hov;
+   background-color: $grey-hov;
 }

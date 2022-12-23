@@ -218,9 +218,12 @@ body.landing {
          cursor: help;
 
          &:hover {
-            color: $white-hov;
-            background-color: $black-hov;
-            border: 1.5px solid $black-hov;
+            background-color: $grey-hov;
+            border: 1.5px solid $grey;
+
+            h1 {
+               color: $green;
+            }
          }
       }
 
@@ -228,8 +231,26 @@ body.landing {
       .about,
       .selections,
       .design {
-         color: $black;
          background-color: $green;
+         border: 1.5px solid $green;
+
+         h1 {
+            color: black;
+         }
+
+         h2 {
+            color: black;
+         }
+
+         &:hover {
+            h1 {
+               color: $green;
+            }
+
+            h2 {
+               color: white;
+            }
+         }
       }
 
       .clipboard,
@@ -239,12 +260,22 @@ body.landing {
          background-color: transparent;
          border: 1.5px solid $grey;
 
-         & h1 {
+         h1 {
             color: white;
          }
 
-         & h2 {
+         h2 {
             color: gray;
+         }
+
+         &:hover {
+            h1 {
+               color: $green;
+            }
+
+            h2 {
+               color: white;
+            }
          }
       }
    }
