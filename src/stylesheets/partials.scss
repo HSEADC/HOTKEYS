@@ -183,11 +183,15 @@
 }
 
 .macos {
-   padding-top: 4%;
-   margin: 0 auto;
+   margin: 3vw auto;
 
    .macos-keyboard {
-      margin: auto;
+      display: grid;
+      place-items: center;
+
+      svg {
+         width: 85vw;
+      }
 
       // .fn-win {
       //   fill: rgb(141, 39, 39);

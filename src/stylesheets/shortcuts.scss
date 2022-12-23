@@ -125,7 +125,7 @@ body.shortcut {
    .wrapper {
       margin: 2.5vw;
 
-      h1 {
+      .desktop {
          font-size: 1.25vw;
          line-height: 120%;
          text-align: center;
@@ -159,7 +159,7 @@ body.shortcut {
 
          .nav-btn.last {
             @include itemGrid;
-            @include itemConfig(7.5vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
+            @include itemConfig(8.5vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
 
             &:hover {
                color: $green;
@@ -173,16 +173,62 @@ body.shortcut {
       h1:last-child {
          margin-top: 3vw;
       }
+      div.alt-tab {
+         .windows {
+            .windows-keyboard {
+               svg {
+                  .alt-win {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
 
-      .windows {
-         .windows-keyboard {
-            svg {
-               .alt-win {
-                  animation: alt-win 4s infinite ease-out;
+                  .tab-win {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
                }
+            }
+         }
+      }
+      div.cmd-tab {
+         .macos {
+            .macos-keyboard {
+               svg {
+                  .cmd-mac {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
 
-               .tab-win {
-                  animation: tab-win 4s infinite ease-out;
+                  .tab-mac {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.ctrl-z {
+         .windows {
+            .windows-keyboard {
+               svg {
+                  .ctrl-win {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .z-win {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.cmd-z {
+         .macos {
+            .macos-keyboard {
+               svg {
+                  .cmd-mac {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .z-mac {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
                }
             }
          }
@@ -226,7 +272,7 @@ body.shortcut {
 
             .nav-btn.last {
                @include itemGrid;
-               @include itemConfig(18vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
+               @include itemConfig(19vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
 
                &:hover {
                   color: $green;
@@ -267,18 +313,42 @@ body.shortcut {
             color: $white;
          }
 
-         .windows {
-            .windows-keyboard {
-               svg {
-                  margin-left: 1vw;
-                  width: 175vw;
-
-                  .alt-win {
-                     animation: alt-win 4s infinite ease-out;
+         div.alt-tab {
+            .windows {
+               .windows-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
                   }
-
-                  .tab-win {
-                     animation: tab-win 4s infinite ease-out;
+               }
+            }
+         }
+         div.cmd-tab {
+            .macos {
+               .macos-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.ctrl-z {
+            .windows {
+               .windows-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.cmd-z {
+            .macos {
+               .macos-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
                   }
                }
             }
@@ -287,7 +357,7 @@ body.shortcut {
    }
 }
 
-@keyframes alt-win {
+@keyframes shortcut-first {
    9% {
       fill: #515151;
    }
@@ -313,7 +383,7 @@ body.shortcut {
    }
 }
 
-@keyframes tab-win {
+@keyframes shortcut-second {
    39% {
       fill: #515151;
    }
@@ -334,11 +404,15 @@ body.shortcut {
       fill: #515151;
    }
 }
-//
-//
-//
-//
-//
+
+///
+///
+///
+///
+///
+///
+///
+///
 body.win-v {
    overflow-y: hidden;
    background-color: $black;
@@ -453,56 +527,6 @@ body.win-v {
       }
    }
 }
-
-@keyframes win-win {
-   9% {
-      fill: #515151;
-   }
-
-   10% {
-      fill: $green;
-   }
-
-   50% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-@keyframes v-win {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-// ctrl+z
 
 body.ctrl-z {
    overflow-y: hidden;
@@ -641,56 +665,6 @@ body.ctrl-z {
    }
 }
 
-@keyframes ctrl-win {
-   9% {
-      fill: #515151;
-   }
-
-   10% {
-      fill: $green;
-   }
-
-   50% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-@keyframes z-win {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-//cmd+z
-
 body.cmd-z {
    overflow-y: hidden;
    background-color: $black;
@@ -828,56 +802,6 @@ body.cmd-z {
    }
 }
 
-@keyframes cmd-mac {
-   9% {
-      fill: #515151;
-   }
-
-   10% {
-      fill: $green;
-   }
-
-   50% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-@keyframes z-mac {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-// win+d
-
 body.win-d {
    overflow-y: hidden;
    background-color: $black;
@@ -992,30 +916,6 @@ body.win-d {
       }
    }
 }
-
-@keyframes d-win {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-// alt+tab
 
 body.alt-tab {
    overflow-y: hidden;
@@ -1154,8 +1054,6 @@ body.alt-tab {
    }
 }
 
-//cmd+tab
-
 body.cmd-tab {
    overflow-y: hidden;
    background-color: $black;
@@ -1292,30 +1190,6 @@ body.cmd-tab {
       }
    }
 }
-
-@keyframes tab-mac {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-// ctrl+w
 
 body.ctrl-w {
    overflow-y: hidden;
@@ -1454,8 +1328,6 @@ body.ctrl-w {
    }
 }
 
-// cmd+h
-
 body.cmd-h {
    overflow-y: hidden;
    background-color: $black;
@@ -1570,30 +1442,6 @@ body.cmd-h {
       }
    }
 }
-
-@keyframes h-mac {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-//cmd+o
 
 body.cmd-o {
    overflow-y: hidden;
@@ -1731,30 +1579,6 @@ body.cmd-o {
       }
    }
 }
-
-@keyframes o-mac {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-// alt+f4
 
 body.alt-f4 {
    overflow-y: hidden;
