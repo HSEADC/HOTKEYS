@@ -7,6 +7,7 @@
 
       &:hover {
          animation: shift-text 1s infinite;
+         animation-iteration-count: 1;
       }
 
       @keyframes shift-text {
@@ -21,6 +22,7 @@
       &:hover g:first-child {
          visibility: visible;
          animation: shift 1s infinite;
+         animation-iteration-count: 1;
 
          @keyframes shift {
             1% {
@@ -37,6 +39,7 @@
       &:hover g:first-child.two-shift {
          visibility: visible;
          animation: shift-two 1s infinite;
+         animation-iteration-count: 1;
 
          @keyframes shift-two {
             25% {
