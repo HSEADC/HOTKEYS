@@ -1,5 +1,342 @@
-// win+v
+body.shortcut {
+   background-color: $black;
+   font-family: 'IBM-PlexSans', sans-serif;
+   font-style: normal;
 
+   &::-webkit-scrollbar {
+      position: absolute;
+      width: 17px;
+   }
+   &::-webkit-scrollbar-track {
+      background: $black2;
+   }
+   &::-webkit-scrollbar-thumb {
+      background-color: $grey;
+   }
+
+   a {
+      color: $white;
+   }
+
+   .header {
+      margin: 2.5vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .hotkeys {
+         margin-top: 0.4vw;
+      }
+   }
+   .wrapper {
+      margin: 2.5vw;
+
+      .nav {
+         padding-top: 3%;
+         display: flex;
+         justify-content: space-between;
+
+         .nav-btn.first {
+            @include itemGrid;
+            @include itemConfig(11vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
+
+            &:hover {
+               color: $green;
+               border: 1.5px solid $green;
+            }
+         }
+
+         .nav-btn.last {
+            @include itemGrid;
+            @include itemConfig(8.5vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
+
+            &:hover {
+               color: $green;
+               border: 1.5px solid $green;
+            }
+         }
+      }
+
+      h1 {
+         font-size: 1.25vw;
+         line-height: 120%;
+         text-align: center;
+         font-weight: 400;
+         color: $white;
+
+         b {
+            font-size: 1.5vw;
+            font-style: italic;
+            font-weight: 700;
+            color: $green;
+         }
+      }
+
+      h1:last-child {
+         margin-top: 3vw;
+      }
+
+      .windows {
+         .windows-keyboard {
+            svg {
+               .alt-win {
+                  animation: alt-win 4s infinite ease-out;
+               }
+
+               .tab-win {
+                  animation: tab-win 4s infinite ease-out;
+               }
+            }
+         }
+      }
+   }
+}
+
+body.shortcut {
+   background-color: $black;
+   font-family: 'IBM-PlexSans', sans-serif;
+   font-style: normal;
+
+   &::-webkit-scrollbar {
+      position: absolute;
+      width: 17px;
+   }
+   &::-webkit-scrollbar-track {
+      background: $black2;
+   }
+   &::-webkit-scrollbar-thumb {
+      background-color: $grey;
+   }
+
+   a {
+      color: $white;
+   }
+
+   .header {
+      margin: 2.5vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .hotkeys {
+         margin-top: 0.4vw;
+      }
+   }
+   .wrapper {
+      margin: 2.5vw;
+
+      h1 {
+         font-size: 1.25vw;
+         line-height: 120%;
+         text-align: center;
+         font-weight: 400;
+         color: $white;
+         max-width: 50%;
+         margin: 0 auto;
+
+         b {
+            font-size: 1.5vw;
+            font-style: italic;
+            font-weight: 700;
+            color: $green;
+         }
+      }
+
+      .nav {
+         padding-top: 0%;
+         display: flex;
+         justify-content: space-between;
+
+         .nav-btn.first {
+            @include itemGrid;
+            @include itemConfig(11vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
+
+            &:hover {
+               color: $green;
+               border: 1.5px solid $green;
+            }
+         }
+
+         .nav-btn.last {
+            @include itemGrid;
+            @include itemConfig(8.5vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
+
+            &:hover {
+               color: $green;
+               border: 1.5px solid $green;
+            }
+         }
+      }
+      .mobile {
+         display: none;
+      }
+      h1:last-child {
+         margin-top: 3vw;
+      }
+
+      .windows {
+         .windows-keyboard {
+            svg {
+               .alt-win {
+                  animation: alt-win 4s infinite ease-out;
+               }
+
+               .tab-win {
+                  animation: tab-win 4s infinite ease-out;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   body.shortcut {
+      overflow-x: hidden;
+
+      .header {
+         margin: 2.5vw;
+         flex-direction: column;
+         margin: 0 auto;
+         margin-bottom: 5vw;
+
+         .hotkeys {
+            @include itemGrid;
+            margin: 7vw auto;
+         }
+      }
+
+      .wrapper {
+         margin: 2.5vw;
+
+         .nav {
+            padding-top: 3%;
+            display: flex;
+            justify-content: space-between;
+
+            .nav-btn.first {
+               @include itemGrid;
+               @include itemConfig(25vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
+
+               &:hover {
+                  color: $green;
+                  border: 1.5px solid $green;
+               }
+            }
+
+            .nav-btn.last {
+               @include itemGrid;
+               @include itemConfig(19.5vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
+
+               &:hover {
+                  color: $green;
+                  border: 1.5px solid $green;
+               }
+            }
+
+            .desktop {
+               display: none;
+            }
+         }
+
+         .mobile {
+            max-width: 90%;
+            margin: 40vw auto;
+            font-size: 4vw;
+            line-height: 105%;
+            text-align: center;
+            font-weight: 400;
+            color: $white;
+
+            b {
+               font-size: 4.15vw;
+               font-style: italic;
+               font-weight: 700;
+               color: $green;
+            }
+         }
+
+         h1:last-child {
+            max-width: 90%;
+            margin-top: 5vw;
+            font-size: 40vw;
+            line-height: 105%;
+            text-align: center;
+            font-weight: 400;
+            color: $white;
+         }
+
+         .windows {
+            .windows-keyboard {
+               svg {
+                  width: 175vw;
+
+                  .alt-win {
+                     animation: alt-win 4s infinite ease-out;
+                  }
+
+                  .tab-win {
+                     animation: tab-win 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@keyframes alt-win {
+   9% {
+      fill: #515151;
+   }
+
+   10% {
+      fill: $green;
+   }
+
+   50% {
+      fill: $green;
+   }
+
+   90% {
+      fill: $green;
+   }
+
+   95% {
+      fill: #515151;
+   }
+
+   100% {
+      fill: #515151;
+   }
+}
+
+@keyframes tab-win {
+   39% {
+      fill: #515151;
+   }
+
+   40% {
+      fill: $green;
+   }
+
+   90% {
+      fill: $green;
+   }
+
+   95% {
+      fill: #515151;
+   }
+
+   100% {
+      fill: #515151;
+   }
+}
+//
+//
+//
+//
+//
 body.win-v {
    overflow-y: hidden;
    background-color: $black;
@@ -812,54 +1149,6 @@ body.alt-tab {
             }
          }
       }
-   }
-}
-
-@keyframes alt-win {
-   9% {
-      fill: #515151;
-   }
-
-   10% {
-      fill: $green;
-   }
-
-   50% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-@keyframes tab-win {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
    }
 }
 

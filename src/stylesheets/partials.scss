@@ -166,11 +166,15 @@
 }
 
 .windows {
-   padding-top: 4%;
-   margin: 0 auto;
+   margin: 3vw auto;
 
    .windows-keyboard {
-      margin: auto;
+      display: grid;
+      place-items: center;
+
+      svg {
+         width: 85vw;
+      }
 
       // .fn-win {
       //   fill: rgb(141, 39, 39);
@@ -188,52 +192,6 @@
       // .fn-win {
       //   fill: rgb(141, 39, 39);
       // }
-   }
-}
-
-.footer-items-mw {
-   width: 6.5%;
-   display: flex;
-   flex-direction: row;
-
-   & a:first-child {
-      margin-right: 6%;
-   }
-
-   .win :hover {
-      .win-icon {
-         fill: $green;
-      }
-   }
-
-   .mac :hover {
-      .mac-icon {
-         fill: $green;
-      }
-   }
-}
-
-.footer-items-m {
-   width: 2.7%;
-   display: flex;
-   flex-direction: row;
-
-   .mac :hover {
-      .mac-icon {
-         fill: $green;
-      }
-   }
-}
-
-.footer-items-w {
-   width: 2.7%;
-   display: flex;
-   flex-direction: row;
-
-   .win :hover {
-      .win-icon {
-         fill: $green;
-      }
    }
 }
 
@@ -406,6 +364,17 @@
             fill-opacity: 0.5;
             visibility: visible;
             transform: translate(0px);
+         }
+      }
+   }
+
+   .windows {
+      margin: 3vw auto;
+
+      .windows-keyboard {
+         svg {
+            overflow: visible;
+            width: 95vw;
          }
       }
    }
