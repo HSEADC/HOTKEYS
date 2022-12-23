@@ -233,6 +233,104 @@ body.shortcut {
             }
          }
       }
+      div.alt-f4 {
+         .windows {
+            .windows-keyboard {
+               svg {
+                  .fn-win {
+                     fill: $green;
+                  }
+
+                  .fn2-win {
+                     fill: $white;
+                  }
+                  .alt-win {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .four-win {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.cmd-h {
+         .macos {
+            .macos-keyboard {
+               svg {
+                  .cmd-mac {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .h-mac {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.cmd-o {
+         .macos {
+            .macos-keyboard {
+               svg {
+                  margin-left: -33vw;
+                  .cmd-mac {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .o-mac {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.ctrl-w {
+         .windows {
+            .windows-keyboard {
+               svg {
+                  .ctrl-win {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .w-win {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.win-d {
+         .windows {
+            .windows-keyboard {
+               svg {
+                  .win-win {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .d-win {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.win-v {
+         .windows {
+            .windows-keyboard {
+               svg {
+                  .win-win {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .v-win {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
    }
 }
 
@@ -346,6 +444,66 @@ body.shortcut {
          div.cmd-z {
             .macos {
                .macos-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.alt-f4 {
+            .windows {
+               .windows-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.cmd-h {
+            .macos {
+               .macos-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.cmd-o {
+            .macos {
+               .macos-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.ctrl-w {
+            .windows {
+               .windows-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.win-d {
+            .windows {
+               .windows-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.win-v {
+            .windows {
+               .windows-keyboard {
                   svg {
                      margin-left: 1vw;
                      width: 175vw;
