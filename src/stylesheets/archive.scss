@@ -1,391 +1,391 @@
 html.archive {
-   scroll-behavior: smooth;
-   scroll-padding-block-start: 2.5vw;
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 2.5vw;
 }
 
 body.archive {
-   background-color: $black;
-   font-family: 'IBM-PlexSans', sans-serif;
-   font-style: normal;
+  background-color: $black;
+  font-family: 'IBM-PlexSans', sans-serif;
+  font-style: normal;
 
-   &::-webkit-scrollbar {
-      position: absolute;
-      width: 17px;
-   }
-   &::-webkit-scrollbar-track {
-      background: $black2;
-   }
-   &::-webkit-scrollbar-thumb {
-      background-color: $grey;
-   }
+  &::-webkit-scrollbar {
+    position: absolute;
+    width: 17px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $black2;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $grey;
+  }
 
-   a {
-      color: $white;
-   }
+  a {
+    color: $white;
+  }
 
-   .header {
-      margin: 2.5vw;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+  .header {
+    margin: 2.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-      .hotkeys {
-         margin-top: 0.4vw;
+    .hotkeys {
+      margin-top: 0.4vw;
+    }
+
+    .menu {
+      .items-menu {
+        .item-menu3 {
+          & h3 {
+            @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+          }
+        }
       }
+    }
+  }
 
-      .menu {
-         .items-menu {
-            .item-menu3 {
-               & h3 {
-                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-               }
-            }
-         }
-      }
-   }
+  .wrapper {
+    padding: 0% 2% 2% 2%;
 
-   .wrapper {
-      padding: 0% 2% 2% 2%;
+    .block-search {
+      margin-top: 3%;
+      width: 100%;
 
-      .block-search {
-         margin-top: 3%;
-         width: 100%;
+      & form {
+        width: 100%;
 
-         & form {
+        .search-bar {
+          position: relative;
+          max-width: 100%;
+
+          & input {
             width: 100%;
+            height: 3.6vw;
+            border-radius: 2px;
+            background-color: $black;
+            color: $white;
+            border: 1.5px solid $grey;
+            font-size: 1.25vw;
+            font-weight: 500;
+            cursor: help;
+          }
 
-            .search-bar {
-               position: relative;
-               max-width: 100%;
+          .search-input:focus-visible {
+            outline-color: transparent;
+            border-color: transparent;
+          }
 
-               & input {
-                  width: 100%;
-                  height: 3.6vw;
-                  border-radius: 2px;
-                  background-color: $black;
-                  color: $white;
-                  border: 1.5px solid $grey;
-                  font-size: 1.25vw;
-                  font-weight: 500;
-                  cursor: help;
-               }
+          .search-input::-webkit-input-placeholder {
+            color: $grey;
+          }
 
-               .search-input:focus-visible {
-                  outline-color: transparent;
-                  border-color: transparent;
-               }
+          input[placeholder] {
+            padding-left: 1.3%;
+            font-size: 1.25vw;
+            font-weight: 500;
+          }
 
-               .search-input::-webkit-input-placeholder {
-                  color: $grey;
-               }
+          & button {
+            position: absolute;
+            top: 8%;
+            right: 2%;
+            font-size: 1.25vw;
+            color: transparent;
+            border: none;
+            background-color: transparent;
+          }
 
-               input[placeholder] {
-                  padding-left: 1.3%;
-                  font-size: 1.25vw;
-                  font-weight: 500;
-               }
-
-               & button {
-                  position: absolute;
-                  top: 8%;
-                  right: 2%;
-                  font-size: 1.25vw;
-                  color: transparent;
-                  border: none;
-                  background-color: transparent;
-               }
-
-               .select-flex {
-                  margin-top: 1%;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: space-between;
-                  max-width: 30%;
-
-                  & select {
-                     font-size: 1.25vw;
-                     height: 45px;
-                     color: $white;
-                     -webkit-appearance: none;
-                     -moz-appearance: none;
-                     appearance: none;
-                     border: none;
-                     background-color: transparent;
-                     // background: url(images/select-point.svg) 90% / 10% no-repeat;
-
-                     option {
-                        border: none;
-                        background-color: $black;
-                        color: $white;
-                     }
-                  }
-
-                  & select:focus-visible {
-                     border: rgb(206, 45, 45);
-                  }
-               }
-            }
-         }
-      }
-
-      .block-shortcuts {
-         padding-top: 2.5%;
-         padding-bottom: 5%;
-
-         .block-shortcuts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
-            column-gap: 1vw;
-            row-gap: 1vw;
-         }
-
-         .shortcut-flex {
-            margin: 1vw;
+          .select-flex {
+            margin-top: 1%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-         }
+            max-width: 30%;
 
-         .block-shortcut-item {
-            @include shortcutConfig(300px, 300px, 1.5px solid $grey, 5px, $white, $black);
+            & select {
+              font-size: 1.25vw;
+              height: 45px;
+              color: $white;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              border: none;
+              background-color: transparent;
+              // background: url(images/select-point.svg) 90% / 10% no-repeat;
 
-            &:hover {
-               @include shortcutHover;
+              option {
+                border: none;
+                background-color: $black;
+                color: $white;
+              }
             }
 
-            &:hover h1 {
-               color: $green;
+            & select:focus-visible {
+              border: rgb(206, 45, 45);
             }
+          }
+        }
+      }
+    }
 
-            & h2 {
-               // margin: 5% 0 1% 6%;
-               color: $white;
-               font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
-               line-height: 120%;
-               letter-spacing: -0.03em;
-               font-weight: 400;
-            }
+    .block-shortcuts {
+      padding-top: 2.5%;
+      padding-bottom: 5%;
 
-            & h1 {
-               margin: 1vw;
-               color: $white;
-               font-size: clamp(2rem, 8vw - 2rem, 2.25vw);
-               line-height: 100%;
-               font-weight: 500;
-            }
-         }
+      .block-shortcuts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
+        column-gap: 1vw;
+        row-gap: 1vw;
       }
 
-      .footer {
-         padding-top: 2%;
-         padding-bottom: 1%;
-
-         & .footer-items {
-            justify-content: left;
-         }
+      .shortcut-flex {
+        margin: 1vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
       }
-   }
+
+      .block-shortcut-item {
+        @include shortcutConfig(300px, 300px, 1.5px solid $grey, 5px, $white, $black);
+
+        &:hover {
+          @include shortcutHover;
+        }
+
+        &:hover h1 {
+          color: $green;
+        }
+
+        & h2 {
+          // margin: 5% 0 1% 6%;
+          color: $white;
+          font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
+          line-height: 120%;
+          letter-spacing: -0.03em;
+          font-weight: 400;
+        }
+
+        & h1 {
+          margin: 1vw;
+          color: $white;
+          font-size: clamp(2rem, 8vw - 2rem, 2.25vw);
+          line-height: 100%;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .footer {
+      padding-top: 2%;
+      padding-bottom: 1%;
+
+      & .footer-items {
+        justify-content: left;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-   body.archive {
-      .header {
-         margin: 2.5vw;
-         flex-direction: column;
-         margin: 0 auto;
-         margin-bottom: 5vw;
+  body.archive {
+    .header {
+      margin: 2.5vw;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 5vw;
 
-         .hotkeys {
-            @include itemGrid;
-            margin: 7vw auto;
-         }
+      .hotkeys {
+        @include itemGrid;
+        margin: 7vw auto;
+      }
+    }
+
+    .wrapper {
+      padding: 0% 2% 2% 2%;
+
+      .block-search {
+        margin-top: 3%;
+        width: 100%;
+
+        & form {
+          width: 100%;
+
+          .search-bar {
+            position: relative;
+            max-width: 100%;
+
+            & input {
+              width: 100%;
+              height: 5.6vw;
+              border-radius: 2px;
+              color: $white;
+              background-color: $black;
+              border: 1.5px solid $grey;
+              font-size: 1.25vw;
+              font-weight: 500;
+              cursor: help;
+            }
+
+            .search-input:focus-visible {
+              outline-color: transparent;
+              border-color: transparent;
+            }
+
+            .search-input::-webkit-input-placeholder {
+              color: $grey;
+            }
+
+            input[placeholder] {
+              padding-left: 1.3%;
+              font-size: 2.2vw;
+              font-weight: 500;
+            }
+
+            & button {
+              position: absolute;
+              top: 8%;
+              right: 2%;
+              font-size: 1.25vw;
+              color: transparent;
+              border: none;
+              background-color: transparent;
+            }
+
+            .select-flex {
+              margin: 1% auto;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              max-width: 50%;
+              gap: 2vw;
+
+              & select {
+                font-size: 2.2vw;
+                height: 45px;
+                color: $white;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                border: none;
+                background-color: transparent;
+                // background: url(images/select-point.svg) 90% / 10% no-repeat;
+
+                option {
+                  border: none;
+                  background-color: $black;
+                  color: $white;
+                }
+              }
+
+              & select:focus-visible {
+                border: rgb(206, 45, 45);
+              }
+            }
+          }
+        }
       }
 
-      .wrapper {
-         padding: 0% 2% 2% 2%;
+      .block-shortcuts {
+        padding-top: 2.5%;
+        padding-bottom: 5%;
 
-         .block-search {
-            margin-top: 3%;
-            width: 100%;
+        .block-shortcuts-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+          column-gap: 2vw;
+          row-gap: 2vw;
+        }
 
-            & form {
-               width: 100%;
+        .shortcut-flex {
+          margin: 1vw;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
 
-               .search-bar {
-                  position: relative;
-                  max-width: 100%;
+          svg {
+            margin-top: 1.5vw;
+            transform: scale(0.8);
+            overflow: visible;
+          }
+        }
 
-                  & input {
-                     width: 100%;
-                     height: 5.6vw;
-                     border-radius: 2px;
-                     color: $white;
-                     background-color: $black;
-                     border: 1.5px solid $grey;
-                     font-size: 1.25vw;
-                     font-weight: 500;
-                     cursor: help;
-                  }
+        .block-shortcut-item {
+          @include shortcutConfig(235px, 245px, 1.5px solid $grey, 5px, $white, $black);
 
-                  .search-input:focus-visible {
-                     outline-color: transparent;
-                     border-color: transparent;
-                  }
+          &:hover {
+            @include shortcutHover;
+          }
 
-                  .search-input::-webkit-input-placeholder {
-                     color: $grey;
-                  }
+          & h2 {
+            margin: 5% 0 1% 6%;
+            font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
+            line-height: 120%;
+            font-weight: 400;
+          }
 
-                  input[placeholder] {
-                     padding-left: 1.3%;
-                     font-size: 2.2vw;
-                     font-weight: 500;
-                  }
-
-                  & button {
-                     position: absolute;
-                     top: 8%;
-                     right: 2%;
-                     font-size: 1.25vw;
-                     color: transparent;
-                     border: none;
-                     background-color: transparent;
-                  }
-
-                  .select-flex {
-                     margin: 1% auto;
-                     display: flex;
-                     flex-direction: row;
-                     justify-content: center;
-                     max-width: 50%;
-                     gap: 2vw;
-
-                     & select {
-                        font-size: 2.2vw;
-                        height: 45px;
-                        color: $white;
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-                        border: none;
-                        background-color: transparent;
-                        // background: url(images/select-point.svg) 90% / 10% no-repeat;
-
-                        option {
-                           border: none;
-                           background-color: $black;
-                           color: $white;
-                        }
-                     }
-
-                     & select:focus-visible {
-                        border: rgb(206, 45, 45);
-                     }
-                  }
-               }
-            }
-         }
-
-         .block-shortcuts {
-            padding-top: 2.5%;
-            padding-bottom: 5%;
-
-            .block-shortcuts-grid {
-               display: grid;
-               grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-               column-gap: 2vw;
-               row-gap: 2vw;
-            }
-
-            .shortcut-flex {
-               margin: 1vw;
-               display: flex;
-               flex-direction: row;
-               justify-content: space-between;
-
-               svg {
-                  margin-top: 1.5vw;
-                  transform: scale(0.8);
-                  overflow: visible;
-               }
-            }
-
-            .block-shortcut-item {
-               @include shortcutConfig(235px, 245px, 1.5px solid $grey, 5px, $white, $black);
-
-               &:hover {
-                  @include shortcutHover;
-               }
-
-               & h2 {
-                  margin: 5% 0 1% 6%;
-                  font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
-                  line-height: 120%;
-                  font-weight: 400;
-               }
-
-               & h1 {
-                  margin: 5% 0 1% 6%;
-                  font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
-                  line-height: 100%;
-                  font-weight: 500;
-               }
-            }
-         }
+          & h1 {
+            margin: 5% 0 1% 6%;
+            font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
+            line-height: 100%;
+            font-weight: 500;
+          }
+        }
       }
-   }
+    }
+  }
 }
 
 @media screen and (max-width: 420px) {
-   body.archive {
-      .wrapper {
-         .block-shortcuts {
-            padding-top: 2.5%;
-            padding-bottom: 5%;
+  body.archive {
+    .wrapper {
+      .block-shortcuts {
+        padding-top: 2.5%;
+        padding-bottom: 5%;
 
-            .block-shortcuts-grid {
-               display: grid;
-               grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-               column-gap: 2vw;
-               row-gap: 2vw;
-            }
+        .block-shortcuts-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+          column-gap: 2vw;
+          row-gap: 2vw;
+        }
 
-            .shortcut-flex {
-               margin: 1vw;
-               display: flex;
-               flex-direction: row;
-               justify-content: space-between;
+        .shortcut-flex {
+          margin: 1vw;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
 
-               svg {
-                  margin-top: 4vw;
-                  margin-right: 4vw;
-                  transform: scale(0.8);
-                  overflow: visible;
-               }
-            }
+          svg {
+            margin-top: 4vw;
+            margin-right: 4vw;
+            transform: scale(0.8);
+            overflow: visible;
+          }
+        }
 
-            .block-shortcut-item {
-               @include shortcutConfig(235px, 245px, 1.5px solid $grey, 5px, $white, $black);
+        .block-shortcut-item {
+          @include shortcutConfig(235px, 245px, 1.5px solid $grey, 5px, $white, $black);
 
-               &:hover {
-                  @include shortcutHover;
-               }
+          &:hover {
+            @include shortcutHover;
+          }
 
-               & h2 {
-                  margin: 5% 0 1% 6%;
-                  font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
-                  line-height: 120%;
-                  font-weight: 400;
-               }
+          & h2 {
+            margin: 5% 0 1% 6%;
+            font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
+            line-height: 120%;
+            font-weight: 400;
+          }
 
-               & h1 {
-                  margin: 5% 0 1% 6%;
-                  font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
-                  line-height: 100%;
-                  font-weight: 500;
-               }
-            }
-         }
+          & h1 {
+            margin: 5% 0 1% 6%;
+            font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
+            line-height: 100%;
+            font-weight: 500;
+          }
+        }
       }
-   }
+    }
+  }
 }
