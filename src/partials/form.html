@@ -1,57 +1,57 @@
 <div class="mail-input-index">
-  <div class="email-form">
-    <form id="email" action="https://formspree.io/f/mzbwvwen" method="POST">
-      <input class="input-email" type="email" name="email" placeholder="e-mail" />
-      <button id="email-form-button">
-        <svg viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="button">
-            <path id="base" d="M0 2.16667C0 0.970051 0.97005 0 2.16667 0H36.8333C38.0299 0 39 0.97005 39 2.16667V36.8333C39 38.0299 38.0299 39 36.8333 39H2.16667C0.970051 39 0 38.0299 0 36.8333V2.16667Z" fill="#CBFB45" />
-            <path id="arrow" d="M23.006 23.5859L21.8381 22.4419L23.9116 20.3923L25.1033 19.3913L25.0795 19.3198L22.7676 19.4628H11.0178V17.8421H22.7676L25.0795 17.9851L25.1033 17.9136L23.9116 16.9126L21.8381 14.8629L23.006 13.7189L27.9395 18.6524L23.006 23.5859Z" fill="url(#paint0_linear_418_1685)" />
-          </g>
-          <defs>
-            <linearGradient id="paint0_linear_418_1685" x1="19.4786" y1="23.5859" x2="19.4786" y2="13.7189" gradientUnits="userSpaceOnUse">
-              <stop />
-              <stop offset="1" stop-color="#232323" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </button>
-      <p id="email-form-done"></p>
-    </form>
-  </div>
+   <div class="email-form">
+      <form id="email" action="https://formspree.io/f/mzbwvwen" method="POST">
+         <input class="input-email" type="email" name="email" placeholder="e-mail" />
+         <button id="email-form-button">
+            <svg viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <g id="button">
+                  <path id="base" d="M0 2.16667C0 0.970051 0.97005 0 2.16667 0H36.8333C38.0299 0 39 0.97005 39 2.16667V36.8333C39 38.0299 38.0299 39 36.8333 39H2.16667C0.970051 39 0 38.0299 0 36.8333V2.16667Z" fill="#CBFB45" />
+                  <path id="arrow" d="M23.006 23.5859L21.8381 22.4419L23.9116 20.3923L25.1033 19.3913L25.0795 19.3198L22.7676 19.4628H11.0178V17.8421H22.7676L25.0795 17.9851L25.1033 17.9136L23.9116 16.9126L21.8381 14.8629L23.006 13.7189L27.9395 18.6524L23.006 23.5859Z" fill="url(#paint0_linear_418_1685)" />
+               </g>
+               <defs>
+                  <linearGradient id="paint0_linear_418_1685" x1="19.4786" y1="23.5859" x2="19.4786" y2="13.7189" gradientUnits="userSpaceOnUse">
+                     <stop />
+                     <stop offset="1" stop-color="#232323" />
+                  </linearGradient>
+               </defs>
+            </svg>
+         </button>
+         <p id="email-form-done"></p>
+      </form>
+   </div>
 </div>
 
 <script type="text/javascript">
-  var form = document.getElementById('email');
+   var form = document.getElementById('email');
 
-  async function handleSubmit(event) {
-    event.preventDefault();
-    var status = document.getElementById('email-form-done');
-    var data = new FormData(event.target);
-    fetch(event.target.action, {
-      method: form.method,
-      body: data,
-      headers: {
-        Accept: 'application/json',
-      },
-    })
-      .then((response) => {
-        if (response.ok) {
-          status.innerHTML = 'e-mail отправлен!';
-          form.reset();
-        } else {
-          response.json().then((data) => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data['errors'].map((error) => error['message']).join(', ');
-            } else {
-              status.innerHTML = 'ошибка';
-            }
-          });
-        }
+   async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById('email-form-done');
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+         method: form.method,
+         body: data,
+         headers: {
+            Accept: 'application/json',
+         },
       })
-      .catch((error) => {
-        status.innerHTML = 'ошибка';
-      });
-  }
-  form.addEventListener('submit', handleSubmit);
+         .then((response) => {
+            if (response.ok) {
+               status.innerHTML = 'e-mail отправлен!';
+               form.reset();
+            } else {
+               response.json().then((data) => {
+                  if (Object.hasOwn(data, 'errors')) {
+                     status.innerHTML = data['errors'].map((error) => error['message']).join(', ');
+                  } else {
+                     status.innerHTML = 'ошибка';
+                  }
+               });
+            }
+         })
+         .catch((error) => {
+            status.innerHTML = 'ошибка';
+         });
+   }
+   form.addEventListener('submit', handleSubmit);
 </script>

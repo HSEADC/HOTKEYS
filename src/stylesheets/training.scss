@@ -1,102 +1,102 @@
 html.training {
-  scroll-behavior: smooth;
-  scroll-padding-block-start: 2.5vw;
+   scroll-behavior: smooth;
+   scroll-padding-block-start: 2.5vw;
 }
 
 body.training {
-  overflow-y: hidden;
-  background-color: $black;
-  font-family: 'IBM-PlexSans', sans-serif;
-  font-style: normal;
+   overflow-y: hidden;
+   background-color: $black;
+   font-family: 'IBM-PlexSans', sans-serif;
+   font-style: normal;
 
-  &::-webkit-scrollbar {
-    position: absolute;
-    width: 17px;
-  }
-  &::-webkit-scrollbar-track {
-    background: $black2;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: $grey;
-  }
+   &::-webkit-scrollbar {
+      position: absolute;
+      width: 17px;
+   }
+   &::-webkit-scrollbar-track {
+      background: $black2;
+   }
+   &::-webkit-scrollbar-thumb {
+      background-color: $grey;
+   }
 
-  a {
-    color: $white;
-  }
-
-  .header {
-    margin: 2.5vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    .menu {
-      .items-menu {
-        .item-menu5 {
-          & h3 {
-            @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-          }
-        }
-      }
-    }
-  }
-
-  .wrapper {
-    padding: 0% 2% 2% 0%;
-
-    h2 {
-      margin-top: 5vw;
-      text-align: center;
+   a {
       color: $white;
-      font-size: 1.5vw;
-      font-weight: 400;
-      line-height: 120%;
-      letter-spacing: -0.03em;
-    }
+   }
 
-    h6 {
-      margin-top: 0vw;
-      text-align: center;
-      color: $grey;
-      font-size: 1.5vw;
-      font-weight: 400;
-      line-height: 120%;
-      letter-spacing: -0.03em;
+   .header {
+      margin: 2.5vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
 
-      & b {
-        color: $green;
+      .menu {
+         .items-menu {
+            .item-menu5 {
+               & h3 {
+                  @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+               }
+            }
+         }
       }
-    }
+   }
 
-    #shortcut {
-      --smpl-shortcut: #eee;
-      --done-shortcut: #cbfb45;
-      --wrong-shortcut: #ce2f2f;
+   .wrapper {
+      padding: 0% 2% 2% 0%;
 
-      font-size: 20vw;
-      text-align: center;
-      // animation: change-text 3.5s infinite;
-      color: var(--smpl-shortcut);
-    }
-  }
+      h2 {
+         margin-top: 5vw;
+         text-align: center;
+         color: $white;
+         font-size: 1.5vw;
+         font-weight: 400;
+         line-height: 120%;
+         letter-spacing: -0.03em;
+      }
+
+      h6 {
+         margin-top: 0vw;
+         text-align: center;
+         color: $grey;
+         font-size: 1.5vw;
+         font-weight: 400;
+         line-height: 120%;
+         letter-spacing: -0.03em;
+
+         & b {
+            color: $green;
+         }
+      }
+
+      #shortcut {
+         --smpl-shortcut: #eee;
+         --done-shortcut: #cbfb45;
+         --wrong-shortcut: #ce2f2f;
+
+         font-size: 20vw;
+         text-align: center;
+         // animation: change-text 3.5s infinite;
+         color: var(--smpl-shortcut);
+      }
+   }
 }
 
 @media screen and (max-width: 768px) {
-  body.training {
-    .header {
-      margin: 2.5vw;
-      flex-direction: column;
-      margin: 0 auto;
-      margin-bottom: 5vw;
+   body.training {
+      .header {
+         margin: 2.5vw;
+         flex-direction: column;
+         margin: 0 auto;
+         margin-bottom: 5vw;
 
-      .hotkeys {
-        @include itemGrid;
-        margin: 7vw auto;
+         .hotkeys {
+            @include itemGrid;
+            margin: 7vw auto;
+         }
       }
-    }
 
-    .wrapper {
-      padding: 0% 2% 2% 2%;
-    }
-  }
+      .wrapper {
+         padding: 0% 2% 2% 2%;
+      }
+   }
 }

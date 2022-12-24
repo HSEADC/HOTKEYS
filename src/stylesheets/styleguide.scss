@@ -1,320 +1,320 @@
 html.styleguide {
-  scroll-behavior: smooth;
-  scroll-padding-block-start: 2.5vw;
+   scroll-behavior: smooth;
+   scroll-padding-block-start: 2.5vw;
 }
 
 body.styleguide {
-  background-color: $black;
-  font-family: 'IBM-PlexSans', sans-serif;
-  font-style: normal;
+   background-color: $black;
+   font-family: 'IBM-PlexSans', sans-serif;
+   font-style: normal;
 
-  &::-webkit-scrollbar {
-    position: absolute;
-    width: 17px;
-  }
-  &::-webkit-scrollbar-track {
-    background: $black2;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: $grey;
-  }
+   &::-webkit-scrollbar {
+      position: absolute;
+      width: 17px;
+   }
+   &::-webkit-scrollbar-track {
+      background: $black2;
+   }
+   &::-webkit-scrollbar-thumb {
+      background-color: $grey;
+   }
 
-  & a {
-    color: $white;
-  }
+   & a {
+      color: $white;
+   }
 
-  & h4 {
-    color: $white;
-    font-size: 1.15vw;
-    font-weight: 200;
-    text-align: center;
-    letter-spacing: -0.03em;
-    line-height: 120%;
-  }
+   & h4 {
+      color: $white;
+      font-size: 1.15vw;
+      font-weight: 200;
+      text-align: center;
+      letter-spacing: -0.03em;
+      line-height: 120%;
+   }
 
-  & h5 {
-    color: $white;
-    font-size: 3.13vw;
-    font-weight: 500;
-    text-align: center;
-
-    b {
+   & h5 {
+      color: $white;
       font-size: 3.13vw;
-      font-weight: 450;
-      font-style: italic;
-      color: $green;
-    }
-  }
-
-  .header {
-    margin: 2.5vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .title-main {
-    padding-top: 15vw;
-
-    h4 {
-      padding-top: 1vw;
-
-      a {
-        &:hover {
-          color: $green;
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  .block-arrow {
-    margin-top: 16vw;
-
-    a {
-      svg {
-        margin: 0 49.5%;
-        width: 0.94vw;
-        height: 1.56vw;
-
-        #arrow {
-          fill: $white;
-
-          &:hover {
-            fill: $green;
-          }
-        }
-      }
-    }
-  }
-
-  .title-tone {
-    margin-top: 25vw;
-
-    h4 {
-      padding-top: 1vw;
-
-      a {
-        &:hover {
-          color: $green;
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  .block-logo {
-    margin-top: 25vw;
-
-    div {
-      padding-top: 3vw;
+      font-weight: 500;
       text-align: center;
 
-      svg {
-        width: 20vw;
+      b {
+         font-size: 3.13vw;
+         font-weight: 450;
+         font-style: italic;
+         color: $green;
       }
-    }
+   }
 
-    img {
-      z-index: 1;
-      width: 8.5vw;
-      margin-top: 2vw;
-      margin-left: 57vw;
-    }
-  }
+   .header {
+      margin: 2.5vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
 
-  .title-colors {
-    margin-top: 25vw;
+   .title-main {
+      padding-top: 15vw;
 
-    h4 {
-      padding-top: 1vw;
+      h4 {
+         padding-top: 1vw;
+
+         a {
+            &:hover {
+               color: $green;
+               text-decoration: underline;
+            }
+         }
+      }
+   }
+
+   .block-arrow {
+      margin-top: 16vw;
 
       a {
-        &:hover {
-          color: $green;
-          text-decoration: underline;
-        }
+         svg {
+            margin: 0 49.5%;
+            width: 0.94vw;
+            height: 1.56vw;
+
+            #arrow {
+               fill: $white;
+
+               &:hover {
+                  fill: $green;
+               }
+            }
+         }
       }
-    }
-  }
+   }
 
-  .block-colors {
-    padding-top: 4vw;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3vw;
+   .title-tone {
+      margin-top: 25vw;
 
-    img {
-      width: 10vw;
-    }
-  }
+      h4 {
+         padding-top: 1vw;
 
-  .title-system {
-    margin-top: 25vw;
+         a {
+            &:hover {
+               color: $green;
+               text-decoration: underline;
+            }
+         }
+      }
+   }
 
-    h5 {
-      font-size: 2.71vw;
-      padding-top: 5vw;
-      line-height: 110%;
-    }
-  }
+   .block-logo {
+      margin-top: 25vw;
 
-  .img-system {
-    margin: 20vw auto;
-    max-width: 55vw;
+      div {
+         padding-top: 3vw;
+         text-align: center;
 
-    & img {
-      width: 100%;
-    }
+         svg {
+            width: 20vw;
+         }
+      }
 
-    &:hover {
-      transition: 0.5s ease-in-out;
-      transform: scale(1.01);
-    }
-  }
+      img {
+         z-index: 1;
+         width: 8.5vw;
+         margin-top: 2vw;
+         margin-left: 57vw;
+      }
+   }
 
-  .img-items {
-    margin: 20vw auto;
-    max-width: 90vw;
+   .title-colors {
+      margin-top: 25vw;
 
-    & img {
-      width: 100%;
-    }
+      h4 {
+         padding-top: 1vw;
 
-    &:hover {
-      transition: 0.5s ease-in-out;
-      transform: scale(1.01);
-    }
-  }
+         a {
+            &:hover {
+               color: $green;
+               text-decoration: underline;
+            }
+         }
+      }
+   }
 
-  .title-mockup {
-    margin-top: 20vw;
-  }
+   .block-colors {
+      padding-top: 4vw;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3vw;
 
-  .mockup-cap {
-    margin: 10vw auto;
-    max-width: 35vw;
+      img {
+         width: 10vw;
+      }
+   }
 
-    h5 {
-      color: $green;
-    }
+   .title-system {
+      margin-top: 25vw;
 
-    & img {
-      width: 100%;
-    }
+      h5 {
+         font-size: 2.71vw;
+         padding-top: 5vw;
+         line-height: 110%;
+      }
+   }
 
-    &:hover {
-      transition: 0.5s ease-in-out;
-      transform: scale(1.01);
-    }
-  }
+   .img-system {
+      margin: 20vw auto;
+      max-width: 55vw;
 
-  .mockup-tshirt {
-    margin: 15vw auto;
-    max-width: 45vw;
+      & img {
+         width: 100%;
+      }
 
-    h5 {
-      color: $green;
-    }
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
 
-    & img {
-      width: 100%;
-    }
+   .img-items {
+      margin: 20vw auto;
+      max-width: 90vw;
 
-    &:hover {
-      transition: 0.5s ease-in-out;
-      transform: scale(1.01);
-    }
-  }
+      & img {
+         width: 100%;
+      }
 
-  .mockup-stikers {
-    margin: 15vw auto;
-    max-width: 50vw;
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
 
-    h5 {
-      color: $green;
-      margin-bottom: 3vw;
-    }
+   .title-mockup {
+      margin-top: 20vw;
+   }
 
-    & img {
-      transform: translate(50px, 0px);
-      width: 100%;
-    }
+   .mockup-cap {
+      margin: 10vw auto;
+      max-width: 35vw;
 
-    &:hover {
-      transition: 0.5s ease-in-out;
-      transform: scale(1.01);
-    }
-  }
+      h5 {
+         color: $green;
+      }
 
-  .mockup-website {
-    margin: 10vw auto 5vw auto;
-    max-width: 94.5vw;
+      & img {
+         width: 100%;
+      }
 
-    h5 {
-      color: $green;
-      margin-bottom: 3vw;
-    }
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
 
-    & img {
-      width: 100%;
-    }
+   .mockup-tshirt {
+      margin: 15vw auto;
+      max-width: 45vw;
 
-    &:hover {
-      transition: 0.5s ease-in-out;
-      transform: scale(1.01);
-    }
-  }
+      h5 {
+         color: $green;
+      }
 
-  .footer {
-    padding: 2.5vw 0 3.5vw 0;
-  }
+      & img {
+         width: 100%;
+      }
+
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
+
+   .mockup-stikers {
+      margin: 15vw auto;
+      max-width: 50vw;
+
+      h5 {
+         color: $green;
+         margin-bottom: 3vw;
+      }
+
+      & img {
+         transform: translate(50px, 0px);
+         width: 100%;
+      }
+
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
+
+   .mockup-website {
+      margin: 10vw auto 5vw auto;
+      max-width: 94.5vw;
+
+      h5 {
+         color: $green;
+         margin-bottom: 3vw;
+      }
+
+      & img {
+         width: 100%;
+      }
+
+      &:hover {
+         transition: 0.5s ease-in-out;
+         transform: scale(1.01);
+      }
+   }
+
+   .footer {
+      padding: 2.5vw 0 3.5vw 0;
+   }
 }
 
 @media screen and (max-width: 768px) {
-  body.styleguide {
-    & h4 {
-      color: $white;
-      font-size: 3.5vw;
-      font-weight: 200;
-      text-align: center;
-    }
-    & h5 {
-      color: $white;
-      font-size: 4vw;
-      font-weight: 500;
-      text-align: center;
-      letter-spacing: 0.1vw;
-
-      & b {
-        font-size: 4vw;
-        font-weight: 450;
-        font-style: italic;
-        color: $green;
-
-        &:hover {
-          color: $grey;
-        }
+   body.styleguide {
+      & h4 {
+         color: $white;
+         font-size: 3.5vw;
+         font-weight: 200;
+         text-align: center;
       }
-    }
+      & h5 {
+         color: $white;
+         font-size: 4vw;
+         font-weight: 500;
+         text-align: center;
+         letter-spacing: 0.1vw;
 
-    .header {
-      margin: 2.5vw;
-      flex-direction: column;
-      margin: 0 auto;
-      margin-bottom: 5vw;
+         & b {
+            font-size: 4vw;
+            font-weight: 450;
+            font-style: italic;
+            color: $green;
 
-      .hotkeys {
-        @include itemGrid;
-        margin: 7vw auto;
+            &:hover {
+               color: $grey;
+            }
+         }
       }
-    }
 
-    .footer {
-      padding: 2.5vw 0 3.5vw 0;
-    }
-  }
+      .header {
+         margin: 2.5vw;
+         flex-direction: column;
+         margin: 0 auto;
+         margin-bottom: 5vw;
+
+         .hotkeys {
+            @include itemGrid;
+            margin: 7vw auto;
+         }
+      }
+
+      .footer {
+         padding: 2.5vw 0 3.5vw 0;
+      }
+   }
 }
