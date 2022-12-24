@@ -51,6 +51,10 @@ body.styleguide {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+
+      .hotkeys {
+         margin-top: 0.4vw;
+      }
    }
 
    .title-main {
@@ -139,16 +143,16 @@ body.styleguide {
    }
 
    .block-colors {
-      padding-top: 4vw;
+      padding-top: 7vw;
       margin: 0 auto;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
-      gap: 3vw;
+      gap: 6vw;
 
       img {
-         width: 10vw;
+         width: 13vw;
       }
    }
 
@@ -159,6 +163,10 @@ body.styleguide {
          font-size: 2.71vw;
          padding-top: 5vw;
          line-height: 110%;
+
+         b {
+            line-height: 135%;
+         }
       }
    }
 
@@ -170,10 +178,10 @@ body.styleguide {
          width: 100%;
       }
 
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
+      // &:hover {
+      //    transition: 0.5s ease-in-out;
+      //    transform: scale(1.01);
+      // }
    }
 
    .img-items {
@@ -184,10 +192,10 @@ body.styleguide {
          width: 100%;
       }
 
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
+      // &:hover {
+      //    transition: 0.5s ease-in-out;
+      //    transform: scale(1.01);
+      // }
    }
 
    .title-mockup {
@@ -206,10 +214,10 @@ body.styleguide {
          width: 100%;
       }
 
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
+      // &:hover {
+      //    transition: 0.5s ease-in-out;
+      //    transform: scale(1.01);
+      // }
    }
 
    .mockup-tshirt {
@@ -224,10 +232,10 @@ body.styleguide {
          width: 100%;
       }
 
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
+      // &:hover {
+      //    transition: 0.5s ease-in-out;
+      //    transform: scale(1.01);
+      // }
    }
 
    .mockup-stikers {
@@ -244,10 +252,10 @@ body.styleguide {
          width: 100%;
       }
 
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
+      // &:hover {
+      //    transition: 0.5s ease-in-out;
+      //    transform: scale(1.01);
+      // }
    }
 
    .mockup-website {
@@ -263,10 +271,14 @@ body.styleguide {
          width: 100%;
       }
 
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
+      // &:hover {
+      //    transition: 0.5s ease-in-out;
+      //    transform: scale(1.01);
+      // }
+   }
+
+   .title-finish {
+      margin-top: 1vw;
    }
 
    .footer {

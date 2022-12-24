@@ -29,6 +29,10 @@ body.selections {
       flex-direction: row;
       justify-content: space-between;
 
+      .hotkeys {
+         margin-top: 0.4vw;
+      }
+
       .menu {
          .items-menu {
             .item-menu4 {
@@ -105,7 +109,7 @@ body.selections {
          }
 
          .block-shortcut-item {
-            @include shortcutConfig(585px, 300px, 2px, $white, $black2);
+            @include shortcutConfig(585px, 300px, 1.5px solid $grey, 5px, $white, $black);
 
             &:hover {
                @include shortcutHover;
@@ -224,7 +228,7 @@ body.selections {
             }
 
             .block-shortcut-item {
-               @include shortcutConfig(235px, 245px, 2px, $white, $black2);
+               @include shortcutConfig(235px, 245px, 1.5px solid $grey, 5px, $white, $black);
 
                &:hover {
                   @include shortcutHover;

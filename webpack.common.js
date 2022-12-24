@@ -118,7 +118,7 @@ module.exports = {
          // chunks: ['page']
       }),
 
-      // Catalog page
+      // archive page
       new HtmlWebpackPlugin({
          hash: true,
          scriptLoading: 'blocking',
@@ -145,93 +145,93 @@ module.exports = {
          // chunks: ['page']
       }),
 
-      // Catalog Item page
+      // archive Item page
       new HtmlWebpackPlugin({
          hash: true,
          scriptLoading: 'blocking',
-         template: './src/catalog/alt-tab.html',
-         filename: './catalog/alt-tab.html',
+         template: './src/archive/alt-tab.html',
+         filename: './archive/alt-tab.html',
          // chunks: ['page']
       }),
 
-      // Catalog Item page
+      // archive Item page
       new HtmlWebpackPlugin({
          hash: true,
          scriptLoading: 'blocking',
-         template: './src/catalog/cmd-tab.html',
-         filename: './catalog/cmd-tab.html',
+         template: './src/archive/cmd-tab.html',
+         filename: './archive/cmd-tab.html',
          // chunks: ['page']
       }),
 
-      // Catalog Item page
+      // archive Item page
       new HtmlWebpackPlugin({
          hash: true,
          scriptLoading: 'blocking',
-         template: './src/catalog/ctrl-z.html',
-         filename: './catalog/ctrl-z.html',
+         template: './src/archive/ctrl-z.html',
+         filename: './archive/ctrl-z.html',
          // chunks: ['page']
       }),
 
-      // Catalog Item page
+      // archive Item page
       new HtmlWebpackPlugin({
          hash: true,
          scriptLoading: 'blocking',
-         template: './src/catalog/cmd-z.html',
-         filename: './catalog/cmd-z.html',
+         template: './src/archive/cmd-z.html',
+         filename: './archive/cmd-z.html',
          // chunks: ['page']
       }),
 
-      // Catalog Item page
+      // archive Item page
       new HtmlWebpackPlugin({
          hash: true,
          scriptLoading: 'blocking',
-         template: './src/catalog/cmd-h.html',
-         filename: './catalog/cmd-h.html',
+         template: './src/archive/cmd-h.html',
+         filename: './archive/cmd-h.html',
          // chunks: ['page']
       }),
 
-      // Catalog Item page
+      // archive Item page
       new HtmlWebpackPlugin({
          hash: true,
          scriptLoading: 'blocking',
-         template: './src/catalog/cmd-o.html',
-         filename: './catalog/cmd-o.html',
+         template: './src/archive/cmd-o.html',
+         filename: './archive/cmd-o.html',
          // chunks: ['page']
       }),
 
-      // Catalog Item page
+      // archive Item page
       new HtmlWebpackPlugin({
          hash: true,
          scriptLoading: 'blocking',
-         template: './src/catalog/ctrl-w.html',
-         filename: './catalog/ctrl-w.html',
+         template: './src/archive/ctrl-w.html',
+         filename: './archive/ctrl-w.html',
          // chunks: ['page']
       }),
 
-      // Catalog Item page
+      // archive Item page
       new HtmlWebpackPlugin({
          hash: true,
          scriptLoading: 'blocking',
-         template: './src/catalog/win-d.html',
-         filename: './catalog/win-d.html',
+         template: './src/archive/win-d.html',
+         filename: './archive/win-d.html',
          // chunks: ['page']
       }),
 
-      // Catalog Item page
+      // archive Item page
       new HtmlWebpackPlugin({
          hash: true,
          scriptLoading: 'blocking',
-         template: './src/catalog/win-v.html',
-         filename: './catalog/win-v.html',
+         template: './src/archive/win-v.html',
+         filename: './archive/win-v.html',
          // chunks: ['page']
       }),
 
-      // Catalog Item page
+      // archive Item page
       new HtmlWebpackPlugin({
          hash: true,
          scriptLoading: 'blocking',
-         template: './src/catalog/alt-f4.html',
-         filename: './catalog/alt-f4.html',
+         template: './src/archive/alt-f4.html',
+         filename: './archive/alt-f4.html',
          // chunks: ['page']
       }),
 

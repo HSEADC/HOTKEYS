@@ -29,6 +29,10 @@ body.about {
       flex-direction: row;
       justify-content: space-between;
 
+      .hotkeys {
+         margin-top: 0.4vw;
+      }
+
       .menu {
          .items-menu {
             .item-menu2 {
@@ -84,10 +88,10 @@ body.about {
          width: 100%;
       }
 
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
+      // &:hover {
+      //    transition: 0.5s ease-in-out;
+      //    transform: scale(1.01);
+      // }
    }
 
    .title-research {
@@ -108,10 +112,10 @@ body.about {
          width: 100%;
       }
 
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
+      // &:hover {
+      //    transition: 0.5s ease-in-out;
+      //    transform: scale(1.01);
+      // }
    }
 
    .title-often {
@@ -147,10 +151,10 @@ body.about {
          width: 100%;
       }
 
-      &:hover {
-         transition: 0.5s ease-in-out;
-         transform: scale(1.01);
-      }
+      // &:hover {
+      //    transition: 0.5s ease-in-out;
+      //    transform: scale(1.01);
+      // }
    }
 
    .title-team {
@@ -163,6 +167,7 @@ body.about {
 
          span {
             color: $green;
+            font-style: italic;
          }
       }
    }
@@ -616,6 +621,8 @@ body.about {
                   font-weight: 500;
                   font-style: italic;
                   line-height: 100%;
+                  font-style: italic;
+                  text-transform: uppercase;
                }
             }
          }
@@ -824,6 +831,9 @@ body.about {
                color: $green;
             }
          }
+      }
+      .footer {
+         padding: 25.5vw 0 3.5vw 0;
       }
    }
 }

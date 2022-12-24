@@ -29,6 +29,10 @@ body.archive {
       flex-direction: row;
       justify-content: space-between;
 
+      .hotkeys {
+         margin-top: 0.4vw;
+      }
+
       .menu {
          .items-menu {
             .item-menu3 {
@@ -59,6 +63,7 @@ body.archive {
                   height: 3.6vw;
                   border-radius: 2px;
                   background-color: $black;
+                  color: $white;
                   border: 1.5px solid $grey;
                   font-size: 1.25vw;
                   font-weight: 500;
@@ -134,8 +139,15 @@ body.archive {
             row-gap: 1vw;
          }
 
+         .shortcut-flex {
+            margin: 1vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+         }
+
          .block-shortcut-item {
-            @include shortcutConfig(300px, 300px, 2px, $white, $black2);
+            @include shortcutConfig(300px, 300px, 1.5px solid $grey, 5px, $white, $black);
 
             &:hover {
                @include shortcutHover;
@@ -146,7 +158,7 @@ body.archive {
             }
 
             & h2 {
-               margin: 5% 0 1% 6%;
+               // margin: 5% 0 1% 6%;
                color: $white;
                font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
                line-height: 120%;
@@ -155,7 +167,7 @@ body.archive {
             }
 
             & h1 {
-               margin: 5% 0 1% 6%;
+               margin: 1vw;
                color: $white;
                font-size: clamp(2rem, 8vw - 2rem, 2.25vw);
                line-height: 100%;
@@ -207,6 +219,7 @@ body.archive {
                      width: 100%;
                      height: 5.6vw;
                      border-radius: 2px;
+                     color: $white;
                      background-color: $black;
                      border: 1.5px solid $grey;
                      font-size: 1.25vw;
@@ -284,8 +297,75 @@ body.archive {
                row-gap: 2vw;
             }
 
+            .shortcut-flex {
+               margin: 1vw;
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+
+               svg {
+                  margin-top: 1.5vw;
+                  transform: scale(0.8);
+                  overflow: visible;
+               }
+            }
+
             .block-shortcut-item {
-               @include shortcutConfig(235px, 245px, 2px, $white, $black2);
+               @include shortcutConfig(235px, 245px, 1.5px solid $grey, 5px, $white, $black);
+
+               &:hover {
+                  @include shortcutHover;
+               }
+
+               & h2 {
+                  margin: 5% 0 1% 6%;
+                  font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
+                  line-height: 120%;
+                  font-weight: 400;
+               }
+
+               & h1 {
+                  margin: 5% 0 1% 6%;
+                  font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
+                  line-height: 100%;
+                  font-weight: 500;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 420px) {
+   body.archive {
+      .wrapper {
+         .block-shortcuts {
+            padding-top: 2.5%;
+            padding-bottom: 5%;
+
+            .block-shortcuts-grid {
+               display: grid;
+               grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+               column-gap: 2vw;
+               row-gap: 2vw;
+            }
+
+            .shortcut-flex {
+               margin: 1vw;
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+
+               svg {
+                  margin-top: 4vw;
+                  margin-right: 4vw;
+                  transform: scale(0.8);
+                  overflow: visible;
+               }
+            }
+
+            .block-shortcut-item {
+               @include shortcutConfig(235px, 245px, 1.5px solid $grey, 5px, $white, $black);
 
                &:hover {
                   @include shortcutHover;

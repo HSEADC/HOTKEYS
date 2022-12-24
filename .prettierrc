@@ -1,7 +1,7 @@
 {
    "trailingComma": "all",
    "useTabs": false,
-   "tabWidth": 3,
+   "tabWidth": 2,
    "printWidth": 1000,
    "proseWrap": "never",
    "semi": true,

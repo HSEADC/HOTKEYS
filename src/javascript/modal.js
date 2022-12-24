@@ -1,16 +1,27 @@
-// Show the modal window after 15 seconds
-setTimeout(function () {
-   document.querySelector('.modal').style.display = 'block';
-}, 5000);
+function get_cookie(cookie_name) {
+   let results = document.cookie.match('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
 
-// Hide the modal window when the close button is clicked
-document.querySelector('.close-button').addEventListener('click', function () {
-   document.querySelector('.modal').style.display = 'none';
-});
+   if (results) return unescape(results[2]);
+   else return null;
+}
 
-// Hide the modal window when the 'ESC' key is pressed
-document.addEventListener('keydown', function (event) {
-   if (event.keyCode === 27) {
+let interval = 300;
+let delay_popup = 3000;
+
+if (get_cookie('modal') == null) {
+   setTimeout(function () {
+      document.querySelector('.modal').style.display = 'block';
+   }, 5000);
+
+   document.querySelector('.close-button').addEventListener('click', function () {
       document.querySelector('.modal').style.display = 'none';
-   }
-});
+   });
+
+   document.addEventListener('keydown', function (event) {
+      if (event.keyCode === 27) {
+         document.querySelector('.modal').style.display = 'none';
+      }
+   });
+
+   document.cookie = 'modal=1; domain=; max-age=' + interval;
+}

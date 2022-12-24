@@ -1,5 +1,576 @@
-// win+v
+body.shortcut {
+   background-color: $black;
+   font-family: 'IBM-PlexSans', sans-serif;
+   font-style: normal;
 
+   &::-webkit-scrollbar {
+      position: absolute;
+      width: 17px;
+   }
+   &::-webkit-scrollbar-track {
+      background: $black2;
+   }
+   &::-webkit-scrollbar-thumb {
+      background-color: $grey;
+   }
+
+   a {
+      color: $white;
+   }
+
+   .header {
+      margin: 2.5vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .hotkeys {
+         margin-top: 0.4vw;
+      }
+   }
+   .wrapper {
+      margin: 2.5vw;
+
+      .nav {
+         padding-top: 3%;
+         display: flex;
+         justify-content: space-between;
+
+         .nav-btn.first {
+            @include itemGrid;
+            @include itemConfig(11vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
+
+            &:hover {
+               color: $green;
+               border: 1.5px solid $green;
+            }
+         }
+
+         .nav-btn.last {
+            @include itemGrid;
+            @include itemConfig(8.5vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
+
+            &:hover {
+               color: $green;
+               border: 1.5px solid $green;
+            }
+         }
+      }
+
+      h1 {
+         font-size: 1.25vw;
+         line-height: 120%;
+         text-align: center;
+         font-weight: 400;
+         color: $white;
+
+         b {
+            font-size: 1.5vw;
+            font-style: italic;
+            font-weight: 700;
+            color: $green;
+         }
+      }
+
+      h1:last-child {
+         margin-top: 3vw;
+      }
+
+      .windows {
+         .windows-keyboard {
+            svg {
+               .alt-win {
+                  animation: alt-win 4s infinite ease-out;
+               }
+
+               .tab-win {
+                  animation: tab-win 4s infinite ease-out;
+               }
+            }
+         }
+      }
+   }
+}
+
+body.shortcut {
+   background-color: $black;
+   font-family: 'IBM-PlexSans', sans-serif;
+   font-style: normal;
+
+   &::-webkit-scrollbar {
+      position: absolute;
+      width: 17px;
+   }
+   &::-webkit-scrollbar-track {
+      background: $black2;
+   }
+   &::-webkit-scrollbar-thumb {
+      background-color: $grey;
+   }
+
+   a {
+      color: $white;
+   }
+
+   .header {
+      margin: 2.5vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .hotkeys {
+         margin-top: 0.4vw;
+      }
+   }
+   .wrapper {
+      margin: 2.5vw;
+
+      .desktop {
+         font-size: 1.25vw;
+         line-height: 120%;
+         text-align: center;
+         font-weight: 400;
+         color: $white;
+         max-width: 37%;
+         margin: 0 auto;
+
+         b {
+            font-size: 1.5vw;
+            font-style: italic;
+            font-weight: 700;
+            color: $green;
+         }
+      }
+
+      .nav {
+         padding-top: 0%;
+         display: flex;
+         justify-content: space-between;
+
+         .nav-btn.first {
+            @include itemGrid;
+            @include itemConfig(11vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
+
+            &:hover {
+               color: $green;
+               border: 1.5px solid $green;
+            }
+         }
+
+         .nav-btn.last {
+            @include itemGrid;
+            @include itemConfig(8.5vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
+
+            &:hover {
+               color: $green;
+               border: 1.5px solid $green;
+            }
+         }
+      }
+      .mobile {
+         display: none;
+      }
+      h1:last-child {
+         margin-top: 3vw;
+      }
+      div.alt-tab {
+         .windows {
+            .windows-keyboard {
+               svg {
+                  .alt-win {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .tab-win {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.cmd-tab {
+         .macos {
+            .macos-keyboard {
+               svg {
+                  .cmd-mac {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .tab-mac {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.ctrl-z {
+         .windows {
+            .windows-keyboard {
+               svg {
+                  .ctrl-win {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .z-win {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.cmd-z {
+         .macos {
+            .macos-keyboard {
+               svg {
+                  .cmd-mac {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .z-mac {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.alt-f4 {
+         .windows {
+            .windows-keyboard {
+               svg {
+                  .fn-win {
+                     fill: $green;
+                  }
+
+                  .fn2-win {
+                     fill: $white;
+                  }
+                  .alt-win {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .four-win {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.cmd-h {
+         .macos {
+            .macos-keyboard {
+               svg {
+                  .cmd-mac {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .h-mac {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.cmd-o {
+         .macos {
+            .macos-keyboard {
+               svg {
+                  margin-left: -33vw;
+                  .cmd-mac {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .o-mac {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.ctrl-w {
+         .windows {
+            .windows-keyboard {
+               svg {
+                  .ctrl-win {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .w-win {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.win-d {
+         .windows {
+            .windows-keyboard {
+               svg {
+                  .win-win {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .d-win {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+      div.win-v {
+         .windows {
+            .windows-keyboard {
+               svg {
+                  .win-win {
+                     animation: shortcut-first 4s infinite ease-out;
+                  }
+
+                  .v-win {
+                     animation: shortcut-second 4s infinite ease-out;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   body.shortcut {
+      overflow-x: hidden;
+
+      .header {
+         margin: 2.5vw;
+         flex-direction: column;
+         margin: 0 auto;
+         margin-bottom: 5vw;
+
+         .hotkeys {
+            @include itemGrid;
+            margin: 7vw auto;
+         }
+      }
+
+      .wrapper {
+         margin: 2.5vw;
+
+         .nav {
+            padding-top: 3%;
+            display: flex;
+            justify-content: space-between;
+
+            .nav-btn.first {
+               @include itemGrid;
+               @include itemConfig(25vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
+
+               &:hover {
+                  color: $green;
+                  border: 1.5px solid $green;
+               }
+            }
+
+            .nav-btn.last {
+               @include itemGrid;
+               @include itemConfig(19vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
+
+               &:hover {
+                  color: $green;
+                  border: 1.5px solid $green;
+               }
+            }
+
+            .desktop {
+               display: none;
+            }
+         }
+
+         .mobile {
+            display: block;
+            max-width: 90%;
+            margin: 13vw auto;
+            font-size: 4vw;
+            line-height: 105%;
+            text-align: center;
+            font-weight: 400;
+            color: $white;
+
+            b {
+               font-size: 4.15vw;
+               font-style: italic;
+               font-weight: 700;
+               color: $green;
+            }
+         }
+
+         h1:last-child {
+            max-width: 90%;
+            margin: 7vw auto;
+            font-size: 3vw;
+            line-height: 105%;
+            text-align: center;
+            font-weight: 400;
+            color: $white;
+         }
+
+         div.alt-tab {
+            .windows {
+               .windows-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.cmd-tab {
+            .macos {
+               .macos-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.ctrl-z {
+            .windows {
+               .windows-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.cmd-z {
+            .macos {
+               .macos-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.alt-f4 {
+            .windows {
+               .windows-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.cmd-h {
+            .macos {
+               .macos-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.cmd-o {
+            .macos {
+               .macos-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.ctrl-w {
+            .windows {
+               .windows-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.win-d {
+            .windows {
+               .windows-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+         div.win-v {
+            .windows {
+               .windows-keyboard {
+                  svg {
+                     margin-left: 1vw;
+                     width: 175vw;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@keyframes shortcut-first {
+   9% {
+      fill: #515151;
+   }
+
+   10% {
+      fill: $green;
+   }
+
+   50% {
+      fill: $green;
+   }
+
+   90% {
+      fill: $green;
+   }
+
+   95% {
+      fill: #515151;
+   }
+
+   100% {
+      fill: #515151;
+   }
+}
+
+@keyframes shortcut-second {
+   39% {
+      fill: #515151;
+   }
+
+   40% {
+      fill: $green;
+   }
+
+   90% {
+      fill: $green;
+   }
+
+   95% {
+      fill: #515151;
+   }
+
+   100% {
+      fill: #515151;
+   }
+}
+
+///
+///
+///
+///
+///
+///
+///
+///
 body.win-v {
    overflow-y: hidden;
    background-color: $black;
@@ -114,56 +685,6 @@ body.win-v {
       }
    }
 }
-
-@keyframes win-win {
-   9% {
-      fill: #515151;
-   }
-
-   10% {
-      fill: $green;
-   }
-
-   50% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-@keyframes v-win {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-// ctrl+z
 
 body.ctrl-z {
    overflow-y: hidden;
@@ -302,56 +823,6 @@ body.ctrl-z {
    }
 }
 
-@keyframes ctrl-win {
-   9% {
-      fill: #515151;
-   }
-
-   10% {
-      fill: $green;
-   }
-
-   50% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-@keyframes z-win {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-//cmd+z
-
 body.cmd-z {
    overflow-y: hidden;
    background-color: $black;
@@ -489,56 +960,6 @@ body.cmd-z {
    }
 }
 
-@keyframes cmd-mac {
-   9% {
-      fill: #515151;
-   }
-
-   10% {
-      fill: $green;
-   }
-
-   50% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-@keyframes z-mac {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-// win+d
-
 body.win-d {
    overflow-y: hidden;
    background-color: $black;
@@ -653,30 +1074,6 @@ body.win-d {
       }
    }
 }
-
-@keyframes d-win {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-// alt+tab
 
 body.alt-tab {
    overflow-y: hidden;
@@ -815,56 +1212,6 @@ body.alt-tab {
    }
 }
 
-@keyframes alt-win {
-   9% {
-      fill: #515151;
-   }
-
-   10% {
-      fill: $green;
-   }
-
-   50% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-@keyframes tab-win {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-//cmd+tab
-
 body.cmd-tab {
    overflow-y: hidden;
    background-color: $black;
@@ -1001,30 +1348,6 @@ body.cmd-tab {
       }
    }
 }
-
-@keyframes tab-mac {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-// ctrl+w
 
 body.ctrl-w {
    overflow-y: hidden;
@@ -1163,8 +1486,6 @@ body.ctrl-w {
    }
 }
 
-// cmd+h
-
 body.cmd-h {
    overflow-y: hidden;
    background-color: $black;
@@ -1279,30 +1600,6 @@ body.cmd-h {
       }
    }
 }
-
-@keyframes h-mac {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-//cmd+o
 
 body.cmd-o {
    overflow-y: hidden;
@@ -1440,30 +1737,6 @@ body.cmd-o {
       }
    }
 }
-
-@keyframes o-mac {
-   39% {
-      fill: #515151;
-   }
-
-   40% {
-      fill: $green;
-   }
-
-   90% {
-      fill: $green;
-   }
-
-   95% {
-      fill: #515151;
-   }
-
-   100% {
-      fill: #515151;
-   }
-}
-
-// alt+f4
 
 body.alt-f4 {
    overflow-y: hidden;
