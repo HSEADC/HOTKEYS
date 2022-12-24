@@ -6,8 +6,20 @@
     transform: translate(0px);
 
     &:hover {
-      animation: shift-text 1s infinite;
+      animation: shift-text 1s infinite, text-opacity 1s infinite;
       animation-iteration-count: 1;
+    }
+
+    @keyframes text-opacity {
+      1% {
+        opacity: 1;
+      }
+      95% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
     }
 
     @keyframes shift-text {

@@ -45,6 +45,7 @@ body.shortcut {
         font-style: italic;
         font-weight: 700;
         color: $green;
+        text-transform: uppercase;
       }
     }
 
@@ -76,9 +77,19 @@ body.shortcut {
     .mobile {
       display: none;
     }
-    h1:last-child {
-      margin-top: 3vw;
+
+    .title-footer {
+      h1 {
+        font-size: 1.25vw;
+        line-height: 120%;
+        text-align: center;
+        font-weight: 400;
+        color: $white;
+        max-width: 37%;
+        margin: 0 auto;
+      }
     }
+
     div.alt-tab {
       .windows {
         .windows-keyboard {
@@ -303,17 +314,21 @@ body.shortcut {
           font-style: italic;
           font-weight: 700;
           color: $green;
+          text-transform: uppercase;
         }
       }
 
-      h1:last-child {
-        max-width: 90%;
-        margin: 7vw auto;
-        font-size: 3vw;
-        line-height: 105%;
-        text-align: center;
-        font-weight: 400;
-        color: $white;
+      .title-footer {
+        h1 {
+          display: block;
+          max-width: 90%;
+          margin: 13vw auto;
+          font-size: 4vw;
+          line-height: 105%;
+          text-align: center;
+          font-weight: 400;
+          color: $white;
+        }
       }
 
       div.alt-tab {
