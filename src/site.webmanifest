@@ -1,16 +1,16 @@
 {
-   "name": "HOT KEYS",
-   "short_name": "HOTKEYS",
-   "icons": [
-      {"src": "images/favicons/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png"},
-      {"src": "images/favicons/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png"}
-   ],
+  "name": "HOT KEYS",
+  "short_name": "HOTKEYS",
+  "icons": [
+    {"src": "images/favicons/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "images/favicons/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png"}
+  ],
 
-   "start_url": "https://hotkeys.adc.ac",
-   "theme_color": "#cbfb45",
-   "background_color": "#0e0e0e",
-   "orientation": "portrait",
-   "display": "standalone",
-   "scope": "/",
-   "description": "Архив полезных сочетаний клавиш"
+  "start_url": "https://hotkeys.adc.ac",
+  "theme_color": "#cbfb45",
+  "background_color": "#0e0e0e",
+  "orientation": "portrait",
+  "display": "standalone",
+  "scope": "/",
+  "description": "Архив полезных сочетаний клавиш"
 }

@@ -1,12 +1,12 @@
-import './page.css'
+import './page.css';
 
-import React from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react';
+import {createRoot} from 'react-dom/client';
 
-import ComponentExample from './javascript/ComponentExample.jsx'
+import ComponentExample from './javascript/ComponentExample.jsx';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const container = document.getElementById('reactComponentRoot')
-  const root = createRoot(container)
-  root.render(<ComponentExample />)
-})
+  const container = document.getElementById('reactComponentRoot');
+  const root = createRoot(container);
+  root.render(<ComponentExample />);
+});
