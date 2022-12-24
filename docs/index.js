@@ -4,20 +4,28 @@
 /***/ 601:
 /***/ (() => {
 
-// Show the modal window after 15 seconds
-setTimeout(function () {
-  document.querySelector('.modal').style.display = 'block';
-}, 5000); // Hide the modal window when the close button is clicked
+function get_cookie(cookie_name) {
+  var results = document.cookie.match('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
+  if (results) return unescape(results[2]);else return null;
+}
 
-document.querySelector('.close-button').addEventListener('click', function () {
-  document.querySelector('.modal').style.display = 'none';
-}); // Hide the modal window when the 'ESC' key is pressed
+var interval = 300;
+var delay_popup = 3000;
 
-document.addEventListener('keydown', function (event) {
-  if (event.keyCode === 27) {
+if (get_cookie('modal') == null) {
+  setTimeout(function () {
+    document.querySelector('.modal').style.display = 'block';
+  }, 5000);
+  document.querySelector('.close-button').addEventListener('click', function () {
     document.querySelector('.modal').style.display = 'none';
-  }
-});
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.keyCode === 27) {
+      document.querySelector('.modal').style.display = 'none';
+    }
+  });
+  document.cookie = 'modal=1; domain=; max-age=' + interval;
+}
 
 /***/ }),
 
