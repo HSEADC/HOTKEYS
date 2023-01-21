@@ -4,7 +4,7 @@ html.styleguide {
 }
 
 body.styleguide {
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'IBM-PlexSans', sans-serif;
   font-style: normal;
 
@@ -13,18 +13,18 @@ body.styleguide {
     width: 17px;
   }
   &::-webkit-scrollbar-track {
-    background: $black2;
+    background: var(--black) 2;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $grey;
+    background-color: var(--grey);
   }
 
   & a {
-    color: $white;
+    color: var(--white);
   }
 
   & h4 {
-    color: $white;
+    color: var(--white);
     font-size: 1.15vw;
     font-weight: 200;
     text-align: center;
@@ -33,7 +33,7 @@ body.styleguide {
   }
 
   & h5 {
-    color: $white;
+    color: var(--white);
     font-size: 3.13vw;
     font-weight: 500;
     text-align: center;
@@ -42,7 +42,7 @@ body.styleguide {
       font-size: 3.13vw;
       font-weight: 450;
       font-style: italic;
-      color: $green;
+      color: var(--green);
     }
   }
 
@@ -65,7 +65,7 @@ body.styleguide {
 
       a {
         &:hover {
-          color: $green;
+          color: var(--green);
           text-decoration: underline;
         }
       }
@@ -82,10 +82,10 @@ body.styleguide {
         height: 1.56vw;
 
         #arrow {
-          fill: $white;
+          fill: var(--white);
 
           &:hover {
-            fill: $green;
+            fill: var(--green);
           }
         }
       }
@@ -100,7 +100,7 @@ body.styleguide {
 
       a {
         &:hover {
-          color: $green;
+          color: var(--green);
           text-decoration: underline;
         }
       }
@@ -135,7 +135,7 @@ body.styleguide {
 
       a {
         &:hover {
-          color: $green;
+          color: var(--green);
           text-decoration: underline;
         }
       }
@@ -207,7 +207,7 @@ body.styleguide {
     max-width: 35vw;
 
     h5 {
-      color: $green;
+      color: var(--green);
     }
 
     & img {
@@ -225,7 +225,7 @@ body.styleguide {
     max-width: 45vw;
 
     h5 {
-      color: $green;
+      color: var(--green);
     }
 
     & img {
@@ -243,7 +243,7 @@ body.styleguide {
     max-width: 50vw;
 
     h5 {
-      color: $green;
+      color: var(--green);
       margin-bottom: 3vw;
     }
 
@@ -263,7 +263,7 @@ body.styleguide {
     max-width: 94.5vw;
 
     h5 {
-      color: $green;
+      color: var(--green);
       margin-bottom: 3vw;
     }
 
@@ -289,13 +289,13 @@ body.styleguide {
 @media screen and (max-width: 768px) {
   body.styleguide {
     & h4 {
-      color: $white;
+      color: var(--white);
       font-size: 3.5vw;
       font-weight: 200;
       text-align: center;
     }
     & h5 {
-      color: $white;
+      color: var(--white);
       font-size: 4vw;
       font-weight: 500;
       text-align: center;
@@ -305,10 +305,10 @@ body.styleguide {
         font-size: 4vw;
         font-weight: 450;
         font-style: italic;
-        color: $green;
+        color: var(--green);
 
         &:hover {
-          color: $grey;
+          color: var(--grey);
         }
       }
     }

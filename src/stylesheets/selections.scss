@@ -4,7 +4,7 @@ html.selections {
 }
 
 body.selections {
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'IBM-PlexSans', sans-serif;
   font-style: normal;
 
@@ -13,14 +13,14 @@ body.selections {
     width: 17px;
   }
   &::-webkit-scrollbar-track {
-    background: $black2;
+    background: var(--black) 2;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $grey;
+    background-color: var(--grey);
   }
 
   a {
-    color: $white;
+    color: var(--white);
   }
 
   .header {
@@ -37,7 +37,7 @@ body.selections {
       .items-menu {
         .item-menu4 {
           & h3 {
-            @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+            @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
           }
         }
       }
@@ -62,8 +62,8 @@ body.selections {
             width: 100%;
             height: 3.6vw;
             border-radius: 2px;
-            background-color: $black;
-            border: 1.5px solid $grey;
+            background-color: var(--black);
+            border: 1.5px solid var(--grey);
             font-size: 1.25vw;
             font-weight: 500;
             cursor: help;
@@ -75,7 +75,7 @@ body.selections {
           }
 
           .search-input::-webkit-input-placeholder {
-            color: $grey;
+            color: var(--grey);
           }
 
           input[placeholder] {
@@ -109,19 +109,19 @@ body.selections {
       }
 
       .block-shortcut-item {
-        @include shortcutConfig(585px, 300px, 1.5px solid $grey, 5px, $white, $black);
+        @include shortcutConfig(585px, 300px, 1.5px solid var(--grey), 5px, var(--white), var(--black));
 
         &:hover {
           @include shortcutHover;
         }
 
         &:hover h1 {
-          color: $green;
+          color: var(--green);
         }
 
         & h2 {
           margin: 5% 0 1% 6%;
-          color: $white;
+          color: var(--white);
           font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
           line-height: 120%;
           letter-spacing: -0.03em;
@@ -130,7 +130,7 @@ body.selections {
 
         & h1 {
           margin: 2% 0 1% 6%;
-          color: $white;
+          color: var(--white);
           font-size: clamp(2rem, 8vw - 2rem, 2.25vw);
           line-height: 100%;
           font-weight: 500;
@@ -181,8 +181,8 @@ body.selections {
               width: 100%;
               height: 5.6vw;
               border-radius: 2px;
-              background-color: $black;
-              border: 1.5px solid $grey;
+              background-color: var(--black);
+              border: 1.5px solid var(--grey);
               font-size: 1.25vw;
               font-weight: 500;
               cursor: help;
@@ -194,7 +194,7 @@ body.selections {
             }
 
             .search-input::-webkit-input-placeholder {
-              color: $grey;
+              color: var(--grey);
             }
 
             input[placeholder] {
@@ -228,7 +228,7 @@ body.selections {
         }
 
         .block-shortcut-item {
-          @include shortcutConfig(235px, 245px, 1.5px solid $grey, 5px, $white, $black);
+          @include shortcutConfig(235px, 245px, 1.5px solid var(--grey), 5px, var(--white), var(--black));
 
           &:hover {
             @include shortcutHover;

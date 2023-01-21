@@ -4,7 +4,7 @@ html.index {
 }
 
 body.index {
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'IBM-PlexSans', sans-serif;
   font-style: normal;
 
@@ -13,14 +13,14 @@ body.index {
     width: 17px;
   }
   &::-webkit-scrollbar-track {
-    background: $black2;
+    background: var(--black) 2;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $grey;
+    background-color: var(--grey);
   }
 
   & a {
-    color: $white;
+    color: var(--white);
   }
 
   .block-main {
@@ -35,7 +35,7 @@ body.index {
   }
 
   .block-main-shortcut {
-    color: $white;
+    color: var(--white);
 
     & div {
       margin: 4vw auto 10vw auto;
@@ -47,7 +47,7 @@ body.index {
 
       &:hover {
         // animation-play-state: paused;
-        color: $green;
+        color: var(--green);
       }
     }
 
@@ -117,10 +117,10 @@ body.index {
       font-size: 1.3vw;
       line-height: 1vw;
       font-weight: 400;
-      color: $white;
+      color: var(--white);
 
       &:hover {
-        color: $green;
+        color: var(--green);
         text-decoration: underline;
       }
     }
@@ -142,7 +142,7 @@ body.index {
       .items-menu {
         .item-menu1 {
           & h3 {
-            @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+            @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
           }
         }
       }
@@ -159,10 +159,10 @@ body.index {
           font-size: 4vw;
           text-align: center;
           font-weight: 400;
-          color: $white;
+          color: var(--white);
 
           & b {
-            color: $green;
+            color: var(--green);
             font-style: italic;
 
             & :hover {
@@ -177,14 +177,14 @@ body.index {
           line-height: 1.8vw;
           text-align: center;
           font-weight: 300;
-          color: $white;
+          color: var(--white);
 
           & b {
             font-size: inherit;
             font-weight: 300;
             font-style: italic;
             text-transform: uppercase;
-            color: $green;
+            color: var(--green);
 
             & :hover {
               text-decoration: underline;
@@ -206,12 +206,12 @@ body.index {
         position: relative;
 
         .input-email {
-          color: $white;
+          color: var(--white);
           width: 25vw;
           height: 2.6vw;
-          border: 1.5px solid $grey;
+          border: 1.5px solid var(--grey);
           border-radius: 5px;
-          background-color: $black;
+          background-color: var(--black);
         }
 
         input[placeholder] {
@@ -220,7 +220,7 @@ body.index {
         }
 
         .input-email::-webkit-input-placeholder {
-          color: $grey;
+          color: var(--grey);
         }
 
         button {
@@ -241,7 +241,7 @@ body.index {
           font-size: 1vw;
           font-style: normal;
           font-weight: 300;
-          color: $green;
+          color: var(--green);
         }
       }
     }
@@ -260,7 +260,7 @@ body.index {
     }
 
     .block-main-shortcut {
-      color: $white;
+      color: var(--white);
 
       & div {
         // transform: rotate(-90deg);
@@ -273,7 +273,7 @@ body.index {
 
         &:hover {
           // animation-play-state: paused;
-          color: $green;
+          color: var(--green);
         }
       }
     }
@@ -286,10 +286,10 @@ body.index {
         font-size: 2.5vw;
         line-height: 1vw;
         font-weight: 400;
-        color: $white;
+        color: var(--white);
 
         &:hover {
-          color: $green;
+          color: var(--green);
           text-decoration: underline;
         }
       }
@@ -307,7 +307,7 @@ body.index {
         .items-menu {
           .item-menu1 {
             & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+              @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
             }
           }
         }
@@ -324,10 +324,10 @@ body.index {
             font-size: 6.9vw;
             text-align: center;
             font-weight: 400;
-            color: $white;
+            color: var(--white);
 
             & b {
-              color: $green;
+              color: var(--green);
               & :hover {
                 text-decoration: underline;
               }
@@ -340,10 +340,10 @@ body.index {
             line-height: 4.5vw;
             text-align: center;
             font-weight: 300;
-            color: $white;
+            color: var(--white);
 
             & b {
-              color: $green;
+              color: var(--green);
               & :hover {
                 text-decoration: underline;
               }
@@ -364,12 +364,12 @@ body.index {
           position: relative;
 
           .input-email {
-            color: $white;
+            color: var(--white);
             width: 50vw;
             height: 5.6vw;
-            border: 1.5px solid $grey;
+            border: 1.5px solid var(--grey);
             border-radius: 2px;
-            background-color: $black;
+            background-color: var(--black);
           }
 
           input[placeholder] {
@@ -378,7 +378,7 @@ body.index {
           }
 
           .input-email::-webkit-input-placeholder {
-            color: $grey;
+            color: var(--grey);
           }
 
           button {
@@ -399,7 +399,7 @@ body.index {
             font-size: 1vw;
             font-style: normal;
             font-weight: 300;
-            color: $green;
+            color: var(--green);
           }
         }
       }

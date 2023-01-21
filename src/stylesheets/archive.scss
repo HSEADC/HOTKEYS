@@ -4,7 +4,7 @@ html.archive {
 }
 
 body.archive {
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'IBM-PlexSans', sans-serif;
   font-style: normal;
 
@@ -13,14 +13,14 @@ body.archive {
     width: 17px;
   }
   &::-webkit-scrollbar-track {
-    background: $black2;
+    background: var(--black) 2;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $grey;
+    background-color: var(--grey);
   }
 
   a {
-    color: $white;
+    color: var(--white);
   }
 
   .header {
@@ -37,7 +37,7 @@ body.archive {
       .items-menu {
         .item-menu3 {
           & h3 {
-            @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+            @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
           }
         }
       }
@@ -62,9 +62,9 @@ body.archive {
             width: 100%;
             height: 3.6vw;
             border-radius: 2px;
-            background-color: $black;
-            color: $white;
-            border: 1.5px solid $grey;
+            background-color: var(--black);
+            color: var(--white);
+            border: 1.5px solid var(--grey);
             font-size: 1.25vw;
             font-weight: 500;
             cursor: help;
@@ -76,7 +76,7 @@ body.archive {
           }
 
           .search-input::-webkit-input-placeholder {
-            color: $grey;
+            color: var(--grey);
           }
 
           input[placeholder] {
@@ -105,7 +105,7 @@ body.archive {
             & select {
               font-size: 1.25vw;
               height: 45px;
-              color: $white;
+              color: var(--white);
               -webkit-appearance: none;
               -moz-appearance: none;
               appearance: none;
@@ -115,8 +115,8 @@ body.archive {
 
               option {
                 border: none;
-                background-color: $black;
-                color: $white;
+                background-color: var(--black);
+                color: var(--white);
               }
             }
 
@@ -147,19 +147,19 @@ body.archive {
       }
 
       .block-shortcut-item {
-        @include shortcutConfig(300px, 300px, 1.5px solid $grey, 5px, $white, $black);
+        @include shortcutConfig(300px, 300px, 1.5px solid var(--grey), 5px, var(--white), var(--black));
 
         &:hover {
           @include shortcutHover;
         }
 
         &:hover h1 {
-          color: $green;
+          color: var(--green);
         }
 
         & h2 {
           // margin: 5% 0 1% 6%;
-          color: $white;
+          color: var(--white);
           font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
           line-height: 120%;
           letter-spacing: -0.03em;
@@ -168,7 +168,7 @@ body.archive {
 
         & h1 {
           margin: 1vw;
-          color: $white;
+          color: var(--white);
           font-size: clamp(2rem, 8vw - 2rem, 2.25vw);
           line-height: 100%;
           font-weight: 500;
@@ -219,9 +219,9 @@ body.archive {
               width: 100%;
               height: 5.6vw;
               border-radius: 2px;
-              color: $white;
-              background-color: $black;
-              border: 1.5px solid $grey;
+              color: var(--white);
+              background-color: var(--black);
+              border: 1.5px solid var(--grey);
               font-size: 1.25vw;
               font-weight: 500;
               cursor: help;
@@ -233,7 +233,7 @@ body.archive {
             }
 
             .search-input::-webkit-input-placeholder {
-              color: $grey;
+              color: var(--grey);
             }
 
             input[placeholder] {
@@ -263,7 +263,7 @@ body.archive {
               & select {
                 font-size: 2.2vw;
                 height: 45px;
-                color: $white;
+                color: var(--white);
                 -webkit-appearance: none;
                 -moz-appearance: none;
                 appearance: none;
@@ -273,8 +273,8 @@ body.archive {
 
                 option {
                   border: none;
-                  background-color: $black;
-                  color: $white;
+                  background-color: var(--black);
+                  color: var(--white);
                 }
               }
 
@@ -311,7 +311,7 @@ body.archive {
         }
 
         .block-shortcut-item {
-          @include shortcutConfig(235px, 245px, 1.5px solid $grey, 5px, $white, $black);
+          @include shortcutConfig(235px, 245px, 1.5px solid var(--grey), 5px, var(--white), var(--black));
 
           &:hover {
             @include shortcutHover;
@@ -365,7 +365,7 @@ body.archive {
         }
 
         .block-shortcut-item {
-          @include shortcutConfig(235px, 245px, 1.5px solid $grey, 5px, $white, $black);
+          @include shortcutConfig(235px, 245px, 1.5px solid var(--grey), 5px, var(--white), var(--black));
 
           &:hover {
             @include shortcutHover;

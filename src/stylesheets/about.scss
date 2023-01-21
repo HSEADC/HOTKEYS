@@ -4,7 +4,7 @@ html.about {
 }
 
 body.about {
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'IBM-PlexSans', sans-serif;
   font-style: normal;
 
@@ -13,14 +13,14 @@ body.about {
     width: 17px;
   }
   &::-webkit-scrollbar-track {
-    background: $black2;
+    background: var(--black) 2;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $grey;
+    background-color: var(--grey);
   }
 
   & a {
-    color: $white;
+    color: var(--white);
   }
 
   .header {
@@ -37,7 +37,7 @@ body.about {
       .items-menu {
         .item-menu2 {
           & h3 {
-            @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+            @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
           }
         }
       }
@@ -45,14 +45,14 @@ body.about {
   }
 
   & h4 {
-    color: $white;
+    color: var(--white);
     font-size: 1.15vw;
     font-weight: 200;
     text-align: center;
   }
 
   & h5 {
-    color: $white;
+    color: var(--white);
     font-size: 2.5vw;
     font-weight: 500;
     text-align: center;
@@ -62,10 +62,10 @@ body.about {
       font-size: 3vw;
       font-weight: 450;
       font-style: italic;
-      color: $green;
+      color: var(--green);
 
       // &:hover {
-      //    color: $grey;
+      //    color: var(--grey);
       // }
     }
   }
@@ -129,11 +129,11 @@ body.about {
       & span {
         font-weight: 450;
         font-style: italic;
-        color: $green;
+        color: var(--green);
         text-transform: uppercase;
 
         // &:hover {
-        //    color: $grey;
+        //    color: var(--grey);
         // }
       }
     }
@@ -166,7 +166,7 @@ body.about {
       line-height: 115%;
 
       span {
-        color: $green;
+        color: var(--green);
         font-style: italic;
       }
     }
@@ -182,8 +182,8 @@ body.about {
 
     .item-bozhik {
       position: relative;
-      background-color: $green;
-      @include itemTeam(22.6vw, 15.78vw, 1.5px solid $green, 0.25vw);
+      background-color: var(--green);
+      @include itemTeam(22.6vw, 15.78vw, 1.5px solid var(--green), 0.25vw);
 
       &:hover {
         padding: 0;
@@ -202,7 +202,7 @@ body.about {
 
       & h1 {
         margin: 1.25vw;
-        color: $black;
+        color: var(--black);
         font-size: 3.13vw;
         font-weight: 500;
         line-height: 75%;
@@ -216,7 +216,7 @@ body.about {
 
         & h2 {
           margin: 1.25vw;
-          color: $white;
+          color: var(--white);
           font-size: 1.15vw;
           font-weight: 400;
           line-height: 120%;
@@ -225,7 +225,7 @@ body.about {
         & h3 {
           padding-top: 0.5vw;
           margin: 1.25vw;
-          color: $green;
+          color: var(--green);
           font-size: 3.13vw;
           font-weight: 500;
           font-style: italic;
@@ -236,7 +236,7 @@ body.about {
 
     .item-day {
       position: relative;
-      @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+      @include itemTeam(22.6vw, 15.78vw, 1.5px solid var(--grey), 0.25vw);
 
       &:hover {
         padding: 0;
@@ -255,7 +255,7 @@ body.about {
 
       & h1 {
         margin: 1.25vw;
-        color: $white;
+        color: var(--white);
         font-size: 3.13vw;
         font-weight: 500;
         line-height: 75%;
@@ -269,7 +269,7 @@ body.about {
 
         & h2 {
           margin: 1.25vw;
-          color: $white;
+          color: var(--white);
           font-size: 1.15vw;
           font-weight: 400;
           line-height: 1.3vw;
@@ -278,7 +278,7 @@ body.about {
         & h3 {
           padding-top: 0.5vw;
           margin: 1.25vw;
-          color: $green;
+          color: var(--green);
           font-size: 3.13vw;
           font-weight: 500;
           font-style: italic;
@@ -289,8 +289,8 @@ body.about {
 
     .item-gulevich {
       position: relative;
-      background-color: $green;
-      @include itemTeam(22.6vw, 15.78vw, 1.5px solid $green, 0.25vw);
+      background-color: var(--green);
+      @include itemTeam(22.6vw, 15.78vw, 1.5px solid var(--green), 0.25vw);
 
       &:hover {
         padding: 0;
@@ -309,7 +309,7 @@ body.about {
 
       & h1 {
         margin: 1.25vw;
-        color: $black;
+        color: var(--black);
         font-size: 3.13vw;
         font-weight: 500;
         line-height: 75%;
@@ -323,7 +323,7 @@ body.about {
 
         & h2 {
           margin: 1.25vw;
-          color: $white;
+          color: var(--white);
           font-size: 1.15vw;
           font-weight: 400;
           line-height: 1.3vw;
@@ -332,7 +332,7 @@ body.about {
         & h3 {
           padding-top: 0.5vw;
           margin: 1.25vw;
-          color: $green;
+          color: var(--green);
           font-size: 3.13vw;
           font-weight: 500;
           font-style: italic;
@@ -343,7 +343,7 @@ body.about {
 
     .item-kaem {
       position: relative;
-      @include itemTeam(22.6vw, 15.78vw, 1.5px solid $grey, 0.25vw);
+      @include itemTeam(22.6vw, 15.78vw, 1.5px solid var(--grey), 0.25vw);
 
       &:hover {
         padding: 0;
@@ -362,7 +362,7 @@ body.about {
 
       & h1 {
         margin: 1.25vw;
-        color: $white;
+        color: var(--white);
         font-size: 3.13vw;
         font-weight: 500;
         line-height: 75%;
@@ -376,7 +376,7 @@ body.about {
 
         & h2 {
           margin: 1.25vw;
-          color: $white;
+          color: var(--white);
           font-size: 1.15vw;
           font-weight: 400;
           line-height: 1.3vw;
@@ -385,7 +385,7 @@ body.about {
         & h3 {
           padding-top: 0.5vw;
           margin: 1.25vw;
-          color: $green;
+          color: var(--green);
           font-size: 3.13vw;
           font-weight: 500;
           font-style: italic;
@@ -406,10 +406,10 @@ body.about {
         font-size: 4vw;
         text-align: center;
         font-weight: 400;
-        color: $white;
+        color: var(--white);
 
         & b {
-          color: $green;
+          color: var(--green);
           font-style: italic;
 
           & :hover {
@@ -424,14 +424,14 @@ body.about {
         line-height: 1.8vw;
         text-align: center;
         font-weight: 300;
-        color: $white;
+        color: var(--white);
 
         & b {
           font-size: inherit;
           font-weight: 300;
           font-style: italic;
           text-transform: uppercase;
-          color: $green;
+          color: var(--green);
 
           & :hover {
             text-decoration: underline;
@@ -453,12 +453,12 @@ body.about {
       position: relative;
 
       .input-email {
-        color: $white;
+        color: var(--white);
         width: 25vw;
         height: 2.6vw;
-        border: 1.5px solid $grey;
+        border: 1.5px solid var(--grey);
         border-radius: 5px;
-        background-color: $black;
+        background-color: var(--black);
       }
 
       input[placeholder] {
@@ -467,7 +467,7 @@ body.about {
       }
 
       .input-email::-webkit-input-placeholder {
-        color: $grey;
+        color: var(--grey);
       }
 
       button {
@@ -488,7 +488,7 @@ body.about {
         font-size: 1vw;
         font-style: normal;
         font-weight: 300;
-        color: $green;
+        color: var(--green);
       }
     }
   }
@@ -501,13 +501,13 @@ body.about {
 @media screen and (max-width: 768px) {
   body.about {
     & h4 {
-      color: $white;
+      color: var(--white);
       font-size: 3.5vw;
       font-weight: 200;
       text-align: center;
     }
     & h5 {
-      color: $white;
+      color: var(--white);
       font-size: 4vw;
       font-weight: 500;
       text-align: center;
@@ -517,10 +517,10 @@ body.about {
         font-size: 4vw;
         font-weight: 450;
         font-style: italic;
-        color: $green;
+        color: var(--green);
 
         &:hover {
-          color: $grey;
+          color: var(--grey);
         }
       }
     }
@@ -588,12 +588,12 @@ body.about {
 
       .item-bozhik {
         position: relative;
-        background-color: $green;
-        @include itemTeam(100%, 29vw, 1.5px solid $grey, 0.25vw);
+        background-color: var(--green);
+        @include itemTeam(100%, 29vw, 1.5px solid var(--grey), 0.25vw);
 
         & h1 {
           margin: 2.5vw;
-          color: $black;
+          color: var(--black);
           font-size: 6.13vw;
           font-weight: 500;
           line-height: 75%;
@@ -607,7 +607,7 @@ body.about {
 
           & h2 {
             margin: 1.25vw;
-            color: $white;
+            color: var(--white);
             font-size: 2.7vw;
             font-weight: 400;
             line-height: 100%;
@@ -616,7 +616,7 @@ body.about {
           & h3 {
             padding-top: 0.5vw;
             margin: 1.25vw;
-            color: $green;
+            color: var(--green);
             font-size: 6.13vw;
             font-weight: 500;
             font-style: italic;
@@ -629,11 +629,11 @@ body.about {
 
       .item-day {
         position: relative;
-        @include itemTeam(100%, 29vw, 1.5px solid $grey, 0.25vw);
+        @include itemTeam(100%, 29vw, 1.5px solid var(--grey), 0.25vw);
 
         & h1 {
           margin: 2.5vw;
-          color: $white;
+          color: var(--white);
           font-size: 6.13vw;
           font-weight: 500;
           line-height: 75%;
@@ -647,7 +647,7 @@ body.about {
 
           & h2 {
             margin: 1.25vw;
-            color: $white;
+            color: var(--white);
             font-size: 2.5vw;
             font-weight: 400;
             line-height: 100%;
@@ -656,7 +656,7 @@ body.about {
           & h3 {
             padding-top: 0.5vw;
             margin: 1.25vw;
-            color: $green;
+            color: var(--green);
             font-size: 6.13vw;
             font-weight: 500;
             font-style: italic;
@@ -667,12 +667,12 @@ body.about {
 
       .item-gulevich {
         position: relative;
-        background-color: $green;
-        @include itemTeam(100%, 29vw, 1.5px solid $grey, 0.25vw);
+        background-color: var(--green);
+        @include itemTeam(100%, 29vw, 1.5px solid var(--grey), 0.25vw);
 
         & h1 {
           margin: 2.5vw;
-          color: $black;
+          color: var(--black);
           font-size: 6.13vw;
           font-weight: 500;
           line-height: 75%;
@@ -686,7 +686,7 @@ body.about {
 
           & h2 {
             margin: 1.25vw;
-            color: $white;
+            color: var(--white);
             font-size: 2.5vw;
             font-weight: 400;
             line-height: 100%;
@@ -695,7 +695,7 @@ body.about {
           & h3 {
             padding-top: 0.5vw;
             margin: 1.25vw;
-            color: $green;
+            color: var(--green);
             font-size: 6.13vw;
             font-weight: 500;
             font-style: italic;
@@ -706,11 +706,11 @@ body.about {
 
       .item-kaem {
         position: relative;
-        @include itemTeam(100%, 29vw, 1.5px solid $grey, 0.25vw);
+        @include itemTeam(100%, 29vw, 1.5px solid var(--grey), 0.25vw);
 
         & h1 {
           margin: 2.5vw;
-          color: $white;
+          color: var(--white);
           font-size: 6.13vw;
           font-weight: 500;
           line-height: 75%;
@@ -724,7 +724,7 @@ body.about {
 
           & h2 {
             margin: 1.25vw;
-            color: $white;
+            color: var(--white);
             font-size: 2.5vw;
             font-weight: 400;
             line-height: 100%;
@@ -733,7 +733,7 @@ body.about {
           & h3 {
             padding-top: 0.5vw;
             margin: 1.25vw;
-            color: $green;
+            color: var(--green);
             font-size: 6.13vw;
             font-weight: 500;
             font-style: italic;
@@ -753,10 +753,10 @@ body.about {
           font-size: 6.9vw;
           text-align: center;
           font-weight: 400;
-          color: $white;
+          color: var(--white);
 
           & b {
-            color: $green;
+            color: var(--green);
             & :hover {
               text-decoration: underline;
             }
@@ -769,10 +769,10 @@ body.about {
           line-height: 4.5vw;
           text-align: center;
           font-weight: 300;
-          color: $white;
+          color: var(--white);
 
           & b {
-            color: $green;
+            color: var(--green);
             & :hover {
               text-decoration: underline;
             }
@@ -793,12 +793,12 @@ body.about {
         position: relative;
 
         .input-email {
-          color: $white;
+          color: var(--white);
           width: 50vw;
           height: 5.6vw;
-          border: 1.5px solid $grey;
+          border: 1.5px solid var(--grey);
           border-radius: 2px;
-          background-color: $black;
+          background-color: var(--black);
         }
 
         input[placeholder] {
@@ -807,7 +807,7 @@ body.about {
         }
 
         .input-email::-webkit-input-placeholder {
-          color: $grey;
+          color: var(--grey);
         }
 
         button {
@@ -828,7 +828,7 @@ body.about {
           font-size: 1vw;
           font-style: normal;
           font-weight: 300;
-          color: $green;
+          color: var(--green);
         }
       }
     }

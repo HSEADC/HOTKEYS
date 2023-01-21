@@ -1,13 +1,14 @@
-$black: #0e0e0e;
-$white: #eee;
-$white-dark: #b4b4b4;
-$grey: #595959;
-$green: #cbfb45;
+:root {
+  --black: #0e0e0e;
+  --white: #eee;
+  --grey: #595959;
+  --green: #cbfb45;
 
-$black-hov: #141414;
-$white-hov: #868686;
-$grey-hov: #333333;
-$black2: #1e1e1e;
+  // --black-hov: #141414;
+  // --white-hov: #868686;
+  --grey-hov: #333333;
+  // --black2: #1e1e1e;
+}
 
 // *! config templates
 
@@ -61,6 +62,6 @@ $black2: #1e1e1e;
 }
 
 @mixin shortcutHover {
-  color: $white-hov;
-  background-color: $grey-hov;
+  color: var(--white)-hov;
+  background-color: var(--grey-hov);
 }

@@ -1,5 +1,5 @@
 body.shortcut {
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'IBM-PlexSans', sans-serif;
   font-style: normal;
 
@@ -8,14 +8,14 @@ body.shortcut {
     width: 17px;
   }
   &::-webkit-scrollbar-track {
-    background: $black2;
+    background: var(--black) 2;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $grey;
+    background-color: var(--grey);
   }
 
   a {
-    color: $white;
+    color: var(--white);
   }
 
   .header {
@@ -36,7 +36,7 @@ body.shortcut {
       line-height: 120%;
       text-align: center;
       font-weight: 400;
-      color: $white;
+      color: var(--white);
       max-width: 37%;
       margin: 0 auto;
 
@@ -44,7 +44,7 @@ body.shortcut {
         font-size: 1.5vw;
         font-style: italic;
         font-weight: 700;
-        color: $green;
+        color: var(--green);
         text-transform: uppercase;
       }
     }
@@ -56,21 +56,21 @@ body.shortcut {
 
       .nav-btn.first {
         @include itemGrid;
-        @include itemConfig(11vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
+        @include itemConfig(11vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0.25vw, 1vw, 500);
 
         &:hover {
-          color: $green;
-          border: 1.5px solid $green;
+          color: var(--green);
+          border: 1.5px solid var(--green);
         }
       }
 
       .nav-btn.last {
         @include itemGrid;
-        @include itemConfig(8.5vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
+        @include itemConfig(8.5vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0.25vw, 1vw, 500);
 
         &:hover {
-          color: $green;
-          border: 1.5px solid $green;
+          color: var(--green);
+          border: 1.5px solid var(--green);
         }
       }
     }
@@ -84,7 +84,7 @@ body.shortcut {
         line-height: 120%;
         text-align: center;
         font-weight: 400;
-        color: $white;
+        color: var(--white);
         max-width: 37%;
         margin: 0 auto;
       }
@@ -155,11 +155,11 @@ body.shortcut {
         .windows-keyboard {
           svg {
             .fn-win {
-              fill: $green;
+              fill: var(--green);
             }
 
             .fn2-win {
-              fill: $white;
+              fill: var(--white);
             }
             .alt-win {
               animation: shortcut-first 4s infinite ease-out;
@@ -276,21 +276,21 @@ body.shortcut {
 
         .nav-btn.first {
           @include itemGrid;
-          @include itemConfig(25vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
+          @include itemConfig(25vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
 
           &:hover {
-            color: $green;
-            border: 1.5px solid $green;
+            color: var(--green);
+            border: 1.5px solid var(--green);
           }
         }
 
         .nav-btn.last {
           @include itemGrid;
-          @include itemConfig(19vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
+          @include itemConfig(19vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
 
           &:hover {
-            color: $green;
-            border: 1.5px solid $green;
+            color: var(--green);
+            border: 1.5px solid var(--green);
           }
         }
 
@@ -307,13 +307,13 @@ body.shortcut {
         line-height: 105%;
         text-align: center;
         font-weight: 400;
-        color: $white;
+        color: var(--white);
 
         b {
           font-size: 4.15vw;
           font-style: italic;
           font-weight: 700;
-          color: $green;
+          color: var(--green);
           text-transform: uppercase;
         }
       }
@@ -327,7 +327,7 @@ body.shortcut {
           line-height: 105%;
           text-align: center;
           font-weight: 400;
-          color: $white;
+          color: var(--white);
         }
       }
 
@@ -441,15 +441,15 @@ body.shortcut {
   }
 
   10% {
-    fill: $green;
+    fill: var(--green);
   }
 
   50% {
-    fill: $green;
+    fill: var(--green);
   }
 
   90% {
-    fill: $green;
+    fill: var(--green);
   }
 
   95% {
@@ -467,11 +467,11 @@ body.shortcut {
   }
 
   40% {
-    fill: $green;
+    fill: var(--green);
   }
 
   90% {
-    fill: $green;
+    fill: var(--green);
   }
 
   95% {
@@ -493,7 +493,7 @@ body.shortcut {
 ///
 body.win-v {
   overflow-y: hidden;
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'IBM-PlexSans', sans-serif;
   font-style: normal;
 
@@ -515,10 +515,10 @@ body.win-v {
     & h1 {
       font-size: 3rem;
       font-weight: 600;
-      color: $white;
+      color: var(--white);
 
       &:hover {
-        color: $green;
+        color: var(--green);
       }
     }
 
@@ -529,7 +529,7 @@ body.win-v {
         .items-menu {
           .item-menu1-4 {
             & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+              @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
             }
           }
         }
@@ -549,11 +549,11 @@ body.win-v {
     justify-content: space-between;
 
     .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
 
       &:hover {
-        color: $green;
-        border: 2px solid $green;
+        color: var(--green);
+        border: 2px solid var(--green);
       }
     }
 
@@ -563,12 +563,12 @@ body.win-v {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .nav-back-none {
       opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
     }
   }
 
@@ -601,14 +601,14 @@ body.win-v {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
   }
 }
 
 body.ctrl-z {
   overflow-y: hidden;
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'Inter', sans-serif;
   font-style: normal;
 
@@ -630,10 +630,10 @@ body.ctrl-z {
     & h1 {
       font-size: 3rem;
       font-weight: 600;
-      color: $white;
+      color: var(--white);
 
       &:hover {
-        color: $green;
+        color: var(--green);
       }
     }
 
@@ -644,7 +644,7 @@ body.ctrl-z {
         .items-menu {
           .item-menu1-1 {
             & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+              @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
             }
           }
         }
@@ -664,11 +664,11 @@ body.ctrl-z {
     justify-content: space-between;
 
     .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
 
       &:hover {
-        color: $green;
-        border: 2px solid $green;
+        color: var(--green);
+        border: 2px solid var(--green);
       }
     }
 
@@ -678,12 +678,12 @@ body.ctrl-z {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .nav-back-none {
       opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
     }
   }
 
@@ -716,7 +716,7 @@ body.ctrl-z {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .footer-items {
@@ -730,13 +730,13 @@ body.ctrl-z {
 
       & :nth-child(2) {
         .win-icon {
-          fill: $green;
+          fill: var(--green);
         }
       }
 
       .mac :hover {
         .mac-icon {
-          fill: $green;
+          fill: var(--green);
         }
       }
     }
@@ -745,7 +745,7 @@ body.ctrl-z {
 
 body.cmd-z {
   overflow-y: hidden;
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'Inter', sans-serif;
   font-style: normal;
 
@@ -767,10 +767,10 @@ body.cmd-z {
     & h1 {
       font-size: 3rem;
       font-weight: 600;
-      color: $white;
+      color: var(--white);
 
       &:hover {
-        color: $green;
+        color: var(--green);
       }
     }
 
@@ -781,7 +781,7 @@ body.cmd-z {
         .items-menu {
           .item-menu1-2 {
             & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+              @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
             }
           }
         }
@@ -801,11 +801,11 @@ body.cmd-z {
     justify-content: space-between;
 
     .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
 
       &:hover {
-        color: $green;
-        border: 2px solid $green;
+        color: var(--green);
+        border: 2px solid var(--green);
       }
     }
 
@@ -815,12 +815,12 @@ body.cmd-z {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .nav-back-none {
       opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
     }
   }
 
@@ -853,7 +853,7 @@ body.cmd-z {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .footer-items {
@@ -866,14 +866,14 @@ body.cmd-z {
 
         & svg {
           &:hover .win-icon {
-            fill: $green;
+            fill: var(--green);
           }
         }
       }
 
       .mac {
         .win-icon {
-          fill: $green;
+          fill: var(--green);
         }
       }
     }
@@ -882,7 +882,7 @@ body.cmd-z {
 
 body.win-d {
   overflow-y: hidden;
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'Inter', sans-serif;
   font-style: normal;
 
@@ -904,10 +904,10 @@ body.win-d {
     & h1 {
       font-size: 3rem;
       font-weight: 600;
-      color: $white;
+      color: var(--white);
 
       &:hover {
-        color: $green;
+        color: var(--green);
       }
     }
 
@@ -918,7 +918,7 @@ body.win-d {
         .items-menu {
           .item-menu1-8 {
             & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+              @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
             }
           }
         }
@@ -938,11 +938,11 @@ body.win-d {
     justify-content: space-between;
 
     .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
 
       &:hover {
-        color: $green;
-        border: 2px solid $green;
+        color: var(--green);
+        border: 2px solid var(--green);
       }
     }
 
@@ -952,12 +952,12 @@ body.win-d {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .nav-back-none {
       opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
     }
   }
 
@@ -990,14 +990,14 @@ body.win-d {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
   }
 }
 
 body.alt-tab {
   overflow-y: hidden;
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'Inter', sans-serif;
   font-style: normal;
 
@@ -1019,10 +1019,10 @@ body.alt-tab {
     & h1 {
       font-size: 3rem;
       font-weight: 600;
-      color: $white;
+      color: var(--white);
 
       &:hover {
-        color: $green;
+        color: var(--green);
       }
     }
 
@@ -1033,7 +1033,7 @@ body.alt-tab {
         .items-menu-2 {
           .item-menu2-6 {
             & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+              @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
             }
           }
         }
@@ -1053,11 +1053,11 @@ body.alt-tab {
     justify-content: space-between;
 
     .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
 
       &:hover {
-        color: $green;
-        border: 2px solid $green;
+        color: var(--green);
+        border: 2px solid var(--green);
       }
     }
 
@@ -1067,12 +1067,12 @@ body.alt-tab {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .nav-back-none {
       opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
     }
   }
 
@@ -1105,7 +1105,7 @@ body.alt-tab {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .footer-items {
@@ -1119,13 +1119,13 @@ body.alt-tab {
 
       & :nth-child(2) {
         .win-icon {
-          fill: $green;
+          fill: var(--green);
         }
       }
 
       .mac :hover {
         .mac-icon {
-          fill: $green;
+          fill: var(--green);
         }
       }
     }
@@ -1134,7 +1134,7 @@ body.alt-tab {
 
 body.cmd-tab {
   overflow-y: hidden;
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'Inter', sans-serif;
   font-style: normal;
 
@@ -1156,10 +1156,10 @@ body.cmd-tab {
     & h1 {
       font-size: 3rem;
       font-weight: 600;
-      color: $white;
+      color: var(--white);
 
       &:hover {
-        color: $green;
+        color: var(--green);
       }
     }
 
@@ -1170,7 +1170,7 @@ body.cmd-tab {
         .items-menu-2 {
           .item-menu2-2 {
             & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+              @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
             }
           }
         }
@@ -1190,11 +1190,11 @@ body.cmd-tab {
     justify-content: space-between;
 
     .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
 
       &:hover {
-        color: $green;
-        border: 2px solid $green;
+        color: var(--green);
+        border: 2px solid var(--green);
       }
     }
 
@@ -1204,12 +1204,12 @@ body.cmd-tab {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .nav-back-none {
       opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
     }
   }
 
@@ -1242,7 +1242,7 @@ body.cmd-tab {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .footer-items {
@@ -1255,14 +1255,14 @@ body.cmd-tab {
 
         & svg {
           &:hover .win-icon {
-            fill: $green;
+            fill: var(--green);
           }
         }
       }
 
       .mac {
         .win-icon {
-          fill: $green;
+          fill: var(--green);
         }
       }
     }
@@ -1271,7 +1271,7 @@ body.cmd-tab {
 
 body.ctrl-w {
   overflow-y: hidden;
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'Inter', sans-serif;
   font-style: normal;
 
@@ -1293,10 +1293,10 @@ body.ctrl-w {
     & h1 {
       font-size: 3rem;
       font-weight: 600;
-      color: $white;
+      color: var(--white);
 
       &:hover {
-        color: $green;
+        color: var(--green);
       }
     }
 
@@ -1307,7 +1307,7 @@ body.ctrl-w {
         .items-menu-2 {
           .item-menu2-5 {
             & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+              @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
             }
           }
         }
@@ -1327,11 +1327,11 @@ body.ctrl-w {
     justify-content: space-between;
 
     .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
 
       &:hover {
-        color: $green;
-        border: 2px solid $green;
+        color: var(--green);
+        border: 2px solid var(--green);
       }
     }
 
@@ -1341,12 +1341,12 @@ body.ctrl-w {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .nav-back-none {
       opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
     }
   }
 
@@ -1379,7 +1379,7 @@ body.ctrl-w {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
   }
 }
@@ -1390,11 +1390,11 @@ body.ctrl-w {
   }
 
   40% {
-    fill: $green;
+    fill: var(--green);
   }
 
   90% {
-    fill: $green;
+    fill: var(--green);
   }
 
   95% {
@@ -1408,7 +1408,7 @@ body.ctrl-w {
 
 body.cmd-h {
   overflow-y: hidden;
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'Inter', sans-serif;
   font-style: normal;
 
@@ -1430,10 +1430,10 @@ body.cmd-h {
     & h1 {
       font-size: 3rem;
       font-weight: 600;
-      color: $white;
+      color: var(--white);
 
       &:hover {
-        color: $green;
+        color: var(--green);
       }
     }
 
@@ -1444,7 +1444,7 @@ body.cmd-h {
         .items-menu {
           .item-menu1-5 {
             & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+              @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
             }
           }
         }
@@ -1464,11 +1464,11 @@ body.cmd-h {
     justify-content: space-between;
 
     .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
 
       &:hover {
-        color: $green;
-        border: 2px solid $green;
+        color: var(--green);
+        border: 2px solid var(--green);
       }
     }
 
@@ -1478,12 +1478,12 @@ body.cmd-h {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .nav-back-none {
       opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
     }
   }
 
@@ -1516,14 +1516,14 @@ body.cmd-h {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
   }
 }
 
 body.cmd-o {
   overflow-y: hidden;
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'Inter', sans-serif;
   font-style: normal;
 
@@ -1545,10 +1545,10 @@ body.cmd-o {
     & h1 {
       font-size: 3rem;
       font-weight: 600;
-      color: $white;
+      color: var(--white);
 
       &:hover {
-        color: $green;
+        color: var(--green);
       }
     }
 
@@ -1559,7 +1559,7 @@ body.cmd-o {
         .items-menu {
           .item-menu1-7 {
             & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
+              @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
             }
           }
         }
@@ -1579,11 +1579,11 @@ body.cmd-o {
     justify-content: space-between;
 
     .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
 
       &:hover {
-        color: $green;
-        border: 2px solid $green;
+        color: var(--green);
+        border: 2px solid var(--green);
       }
     }
 
@@ -1593,12 +1593,12 @@ body.cmd-o {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .nav-back-none {
       opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
     }
   }
 
@@ -1631,7 +1631,7 @@ body.cmd-o {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .footer-items {
@@ -1644,14 +1644,14 @@ body.cmd-o {
 
         & svg {
           &:hover .win-icon {
-            fill: $green;
+            fill: var(--green);
           }
         }
       }
 
       .mac {
         .win-icon {
-          fill: $green;
+          fill: var(--green);
         }
       }
     }
@@ -1660,7 +1660,7 @@ body.cmd-o {
 
 body.alt-f4 {
   overflow-y: hidden;
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'Inter', sans-serif;
   font-style: normal;
 
@@ -1682,10 +1682,10 @@ body.alt-f4 {
     & h1 {
       font-size: 3rem;
       font-weight: 600;
-      color: $white;
+      color: var(--white);
 
       &:hover {
-        color: $green;
+        color: var(--green);
       }
     }
 
@@ -1702,11 +1702,11 @@ body.alt-f4 {
     justify-content: space-between;
 
     .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
 
       &:hover {
-        color: $green;
-        border: 2px solid $green;
+        color: var(--green);
+        border: 2px solid var(--green);
       }
     }
 
@@ -1716,12 +1716,12 @@ body.alt-f4 {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
 
     .nav-back-none {
       opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
+      @include itemConfig(268px, 55px, var(--grey), transparent, 1.5px solid var(--grey), 42px, 1.5rem, 500);
     }
   }
 
@@ -1729,11 +1729,11 @@ body.alt-f4 {
     .windows-keyboard {
       & svg {
         .fn-win {
-          fill: $green;
+          fill: var(--green);
         }
 
         .fn2-win {
-          fill: $white;
+          fill: var(--white);
         }
 
         .alt-win {
@@ -1762,7 +1762,7 @@ body.alt-f4 {
       letter-spacing: 0.07rem;
       text-align: center;
       font-weight: 300;
-      color: $white;
+      color: var(--white);
     }
   }
 }
@@ -1773,11 +1773,11 @@ body.alt-f4 {
   }
 
   40% {
-    fill: $green;
+    fill: var(--green);
   }
 
   90% {
-    fill: $green;
+    fill: var(--green);
   }
 
   95% {
