@@ -265,14 +265,14 @@ module.exports = {
       },
     ]),
 
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/modal.html'),
-        location: 'modal',
-        template_filename: '*',
-        priority: 'replace',
-      },
-    ]),
+    // new HtmlWebpackPartialsPlugin([
+    //   {
+    //     path: path.join(__dirname, './src/partials/modal.html'),
+    //     location: 'modal',
+    //     template_filename: '*',
+    //     priority: 'replace',
+    //   },
+    // ]),
 
     new HtmlWebpackPartialsPlugin([
       {
