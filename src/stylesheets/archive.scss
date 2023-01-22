@@ -8,17 +8,6 @@ body.archive {
   font-family: 'IBM-PlexSans', sans-serif;
   font-style: normal;
 
-  &::-webkit-scrollbar {
-    position: absolute;
-    width: 17px;
-  }
-  &::-webkit-scrollbar-track {
-    background: var(--black) 2;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--grey);
-  }
-
   a {
     color: var(--white);
   }
