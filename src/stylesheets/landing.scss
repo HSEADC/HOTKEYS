@@ -43,23 +43,13 @@ body.landing {
     .hotkeys {
       margin-top: 0.4vw;
     }
-
-    // .menu {
-    //    .items-menu {
-    //       .item-menu2 {
-    //          & h3 {
-    //             @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
-    //          }
-    //       }
-    //    }
-    // }
   }
 
   .block-shortcut {
     color: var(--white);
 
     & div {
-      margin: 4vw auto 9vw auto;
+      margin: 4vw auto 8vw auto;
       font-size: 20vw;
       text-align: center;
       animation: change-text 3.5s infinite;
@@ -135,9 +125,11 @@ body.landing {
 
     a {
       svg {
-        margin: 0 49.5%;
-        width: 0.94vw;
-        height: 1.56vw;
+        display: block;
+        margin: 0 auto;
+        width: 1.7vw;
+        height: 3vw;
+        transform: scale(0.8);
         overflow: visible;
 
         #arrow {
@@ -427,7 +419,7 @@ body.landing {
         border: 0;
         background: transparent;
         position: absolute;
-        top: 0.3vw;
+        top: 0.1vw;
         right: 0.3vw;
       }
 
