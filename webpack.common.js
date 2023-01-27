@@ -149,8 +149,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/archive/alt-tab.html',
-      filename: './archive/alt-tab.html',
+      template: './src/archive/switch-between-programs.html',
+      filename: './archive/switch-between-programs.html',
       // chunks: ['page']
     }),
 

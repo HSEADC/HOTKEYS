@@ -20,62 +20,49 @@ body.shortcut {
   .wrapper {
     margin: 2.5vw;
 
-    .desktop {
-      font-size: 1.25vw;
-      line-height: 120%;
+    .nav {
+      max-width: 87.5%;
+      display: flex;
+      justify-content: flex-start;
+
+      .btn-back {
+        @include itemGrid;
+        @include itemConfigg(7vw, 3vw, var(--white), transparent, 1.5px solid var(--grey), 0.25vw, 1vw, 300);
+
+        &:hover {
+          color: var(--green);
+          border: 1.5px solid var(--green);
+        }
+      }
+    }
+
+    .caption {
+      margin: 1.5vw 0 1.5vw;
+      font-size: 2vw;
+      line-height: 100%;
+      font-weight: 500;
       text-align: center;
-      font-weight: 400;
+      color: var(--white);
+
+      span {
+        color: var(--green);
+      }
+    }
+
+    .description {
+      font-size: 1.15vw;
+      line-height: 110%;
+      text-align: center;
       color: var(--white);
       max-width: 37%;
-      margin: 0 auto;
+      margin: 0vw auto 2vw auto;
+      font-weight: 400;
 
       b {
-        font-size: 1.5vw;
         font-style: italic;
         font-weight: 700;
         color: var(--green);
         text-transform: uppercase;
-      }
-    }
-
-    .nav {
-      padding-top: 0%;
-      display: flex;
-      justify-content: space-between;
-
-      // .nav-btn.first {
-      //   @include itemGrid;
-      //   @include itemConfig(11vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0.25vw, 1vw, 500);
-
-      //   &:hover {
-      //     color: var(--green);
-      //     border: 1.5px solid var(--green);
-      //   }
-      // }
-
-      // .nav-btn.last {
-      //   @include itemGrid;
-      //   @include itemConfig(8.5vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0.25vw, 1vw, 500);
-
-      //   &:hover {
-      //     color: var(--green);
-      //     border: 1.5px solid var(--green);
-      //   }
-      // }
-    }
-    .mobile {
-      display: none;
-    }
-
-    .title-footer {
-      h1 {
-        font-size: 1.25vw;
-        line-height: 120%;
-        text-align: center;
-        font-weight: 400;
-        color: var(--white);
-        max-width: 37%;
-        margin: 0 auto;
       }
     }
 
