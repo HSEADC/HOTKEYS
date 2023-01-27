@@ -252,12 +252,12 @@
           }
         }
 
-        &:active {
-          h3 {
-            @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
-            border-radius: 2px;
-          }
-        }
+        // &:active {
+        //   h3 {
+        //     @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
+        //     border-radius: 2px;
+        //   }
+        // }
       }
 
       .archive {
