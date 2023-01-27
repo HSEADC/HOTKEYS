@@ -225,7 +225,7 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      gap: -1vw;
+      gap: 0vw;
 
       .line {
         display: flex;
@@ -278,27 +278,35 @@
     justify-content: center;
 
     & .footer-item-up h3 {
-      // footer-item
       @include itemGrid;
       @include itemConfigg(6.51vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 500);
 
       &:hover {
-        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--green), 700, italic);
+        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 700, italic);
       }
     }
 
-    & .footer-item-vk {
-      // footer-item
+    & .footer-item-vk,
+    & .footer-item-dzen,
+    & .footer-item-tg {
       @include itemGrid;
       @include itemConfigg(2.6vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 500);
+    }
 
+    & .footer-item-vk,
+    & .footer-item-dzen {
+      border-left: 0px;
+    }
+
+    & .footer-item-tg {
+      border-right: 0px;
+      border-left: 0px;
+    }
+
+    & .footer-item-vk {
       & svg {
-        width: 1.51vw;
-        height: 0.94vw;
-      }
-
-      &:hover {
-        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--green), 700, italic);
+        width: 1.41vw;
+        height: 0.84vw;
       }
 
       &:hover .footer-vk {
@@ -307,17 +315,9 @@
     }
 
     & .footer-item-dzen {
-      // footer-item
-      @include itemGrid;
-      @include itemConfigg(2.6vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 500);
-
       & svg {
-        width: 1.82vw;
-        height: 1.82vw;
-      }
-
-      &:hover {
-        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--green), 700, italic);
+        width: 1.62vw;
+        height: 1.62vw;
       }
 
       &:hover .footer-dzen {
@@ -326,17 +326,9 @@
     }
 
     & .footer-item-tg {
-      // footer-item
-      @include itemGrid;
-      @include itemConfigg(2.6vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 500);
-
       & svg {
-        width: 1.51vw;
-        height: 1.25vw;
-      }
-
-      &:hover {
-        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--green), 700, italic);
+        width: 1.41vw;
+        height: 1.15vw;
       }
 
       &:hover .footer-tg {
@@ -344,13 +336,26 @@
       }
 
       & svg {
-        transform: translate(-2px);
+        transform: translate(-1px);
       }
     }
-  }
 
-  & a:nth-child(-n + 3) {
-    margin-right: 0.5vw;
+    & .footer-item-about h3 {
+      @include itemGrid;
+      @include itemConfigg(8vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 500);
+
+      &:hover {
+        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 700, italic);
+      }
+    }
+
+    & .footer-item-up h3 {
+      border-radius: 4px 0px 0px 4px;
+    }
+
+    & .footer-item-about h3 {
+      border-radius: 0px 4px 4px 0px;
+    }
   }
 }
 
