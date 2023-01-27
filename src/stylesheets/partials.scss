@@ -1,85 +1,85 @@
 .hotkeys {
   & svg {
     margin-left: -1.88vw;
-    width: 11.98vw;
+    width: 13vw;
     overflow: visible;
     transform: translate(0px);
 
-    &:hover {
-      animation: shift-text 1s infinite, text-opacity 1s infinite;
-      animation-iteration-count: 1;
-    }
+    // &:hover {
+    //   animation: shift-text 1s infinite, text-opacity 1s infinite;
+    //   animation-iteration-count: 1;
+    // }
 
-    @keyframes text-opacity {
-      1% {
-        opacity: 1;
-      }
-      95% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
+    // @keyframes text-opacity {
+    //   1% {
+    //     opacity: 1;
+    //   }
+    //   95% {
+    //     opacity: 1;
+    //   }
+    //   100% {
+    //     opacity: 0;
+    //   }
+    // }
 
-    @keyframes shift-text {
-      1% {
-        margin-left: -1.88vw;
-      }
-      100% {
-        margin-left: 0px;
-      }
-    }
+    // @keyframes shift-text {
+    //   1% {
+    //     margin-left: -1.88vw;
+    //   }
+    //   100% {
+    //     margin-left: 0px;
+    //   }
+    // }
 
-    &:hover g:first-child {
-      visibility: visible;
-      animation: shift 1s infinite;
-      animation-iteration-count: 1;
+    // &:hover g:first-child {
+    // visibility: visible;
+    // animation: shift 1s infinite;
+    // animation-iteration-count: 1;
 
-      @keyframes shift {
-        1% {
-          transform: translate(1.88vw);
-          opacity: 0;
-        }
-        100% {
-          transform: translate(0px);
-          opacity: 1;
-        }
-      }
-    }
+    // @keyframes shift {
+    //   1% {
+    //     transform: translate(1.88vw);
+    //     opacity: 0;
+    //   }
+    //   100% {
+    //     transform: translate(0px);
+    //     opacity: 1;
+    //   }
+    // }
+    // }
 
-    &:hover g:first-child.two-shift {
-      visibility: visible;
-      animation: shift-two 1s infinite;
-      animation-iteration-count: 1;
+    // &:hover g:first-child.two-shift {
+    // visibility: visible;
+    // animation: shift-two 1s infinite;
+    // animation-iteration-count: 1;
 
-      @keyframes shift-two {
-        25% {
-          fill-opacity: 0;
-        }
-        35% {
-          fill-opacity: 0.5;
-        }
-        50% {
-          fill-opacity: 0.5;
-        }
-        100% {
-          fill-opacity: 0.5;
-        }
-      }
-    }
+    // @keyframes shift-two {
+    //   25% {
+    //     fill-opacity: 0;
+    //   }
+    //   35% {
+    //     fill-opacity: 0.5;
+    //   }
+    //   50% {
+    //     fill-opacity: 0.5;
+    //   }
+    //   100% {
+    //     fill-opacity: 0.5;
+    //   }
+    // }
+    // }
 
     & g:first-child {
       visibility: hidden;
       transform: translate(1.88vw);
 
       .one-shift {
-        fill: $green;
+        fill: var(--green);
         fill-opacity: 0.5;
       }
       .two-shift {
         fill-opacity: 0.5;
-        fill: $green;
+        fill: var(--green);
       }
     }
 
@@ -87,13 +87,13 @@
       .h-logo,
       .o-logo,
       .t-logo {
-        fill: $green;
+        fill: var(--green);
       }
       .k-logo,
       .e-logo,
       .y-logo,
       .s-logo {
-        fill: $white;
+        fill: var(--white);
       }
     }
   }
@@ -121,10 +121,10 @@
     width: 22.5vw;
     height: 7.5vw;
     border-radius: 5px;
-    background-color: $green;
+    background-color: var(--green);
 
     h1 {
-      color: $black;
+      color: var(--black);
       text-align: center;
       font-size: 1.1vw;
       font-weight: 400;
@@ -139,7 +139,7 @@
       a {
         font-style: italic;
         font-weight: 700;
-        color: $black;
+        color: var(--black);
         text-decoration: underline;
 
         &:hover {
@@ -162,7 +162,7 @@
         }
 
         #modal-close {
-          fill: $black;
+          fill: var(--black);
         }
 
         &:hover #modal-close {
@@ -170,7 +170,7 @@
         }
 
         &:active #modal-close {
-          fill: $black;
+          fill: var(--black);
         }
       }
     }
@@ -185,7 +185,7 @@
     place-items: center;
 
     svg {
-      width: 85vw;
+      width: 77.5vw;
     }
 
     // .fn-win {
@@ -202,7 +202,7 @@
     place-items: center;
 
     svg {
-      width: 85vw;
+      width: 77.5vw;
     }
 
     // .fn-win {
@@ -216,73 +216,126 @@
   flex-direction: column;
 
   .menu {
-    & a {
-      margin-right: 0.5vw;
-    }
+    margin: 0 auto;
+    width: 17vw;
+    border: 1.5px solid var(--grey);
+    border-radius: 4px;
 
     .items-menu {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      gap: 0vw;
 
-      .item-menu1 {
-        & h3 {
-          @include itemGrid;
-          @include itemConfig(7.4vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-          // // cursor: wait;
-
-          &:hover {
-            @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-          }
-        }
-      }
-      .item-menu2 {
-        & h3 {
-          @include itemGrid;
-          @include itemConfig(8.54vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-          // cursor: wait;
-
-          &:hover {
-            @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-          }
-        }
-      }
-      .item-menu3 {
-        & h3 {
-          @include itemGrid;
-          @include itemConfig(7.5vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-          // cursor: wait;
-
-          &:hover {
-            @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-          }
-        }
-      }
-      .item-menu4 {
-        & h3 {
-          @include itemGrid;
-          @include itemConfig(8.65vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-          // cursor: wait;
-
-          &:hover {
-            @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-          }
-        }
-      }
-      .item-menu5 {
-        & h3 {
-          @include itemGrid;
-          @include itemConfig(9.69vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-          // cursor: wait;
-
-          &:hover {
-            @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-          }
-        }
+      .line {
+        display: flex;
+        align-self: center;
+        height: 1.7vw;
+        border: 0.5px solid var(--grey);
+        background-color: var(--grey);
+        z-index: -99;
       }
 
-      & a:last-child {
-        margin-right: 0vw;
+      .item {
+        margin: 0 -0.25vw;
+        padding: 0.25vw 0.1vw 0.2vw;
+
+        & h3 {
+          @include itemGrid;
+          @include itemConfig(var(--white), transparent, 0px solid var(--grey), 0px, 1vw, 500);
+        }
+
+        &:hover {
+          h3 {
+            @include itemOpenConfig(var(--green), transparent, 0px solid var(--grey), 700, italic);
+            border-radius: 2px;
+          }
+        }
+
+        // &:active {
+        //   h3 {
+        //     @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
+        //     border-radius: 2px;
+        //   }
+        // }
+      }
+
+      .archive {
+        & h3 {
+          width: 8.25vw;
+          height: 2.3vw;
+        }
+      }
+      .selections {
+        & h3 {
+          width: 8.3vw;
+          height: 2.3vw;
+        }
+      }
+    }
+  }
+}
+
+.block-system {
+  display: flex;
+  flex-direction: column;
+
+  .os {
+    margin: 0 auto;
+    width: 6vw;
+    height: 3vw;
+    border: 1.5px solid var(--grey);
+    border-radius: 4px;
+
+    .items-system {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .macos-item {
+        @include itemGrid;
+        margin: 0.27vw 0.25vw;
+        width: 2.3vw;
+        height: 2.3vw;
+
+        svg {
+          // transform: scale(0.9);
+          width: 0.99vw;
+          height: 1.2vw;
+          overflow: visible;
+        }
+
+        .macos-logo {
+          fill: var(--black);
+        }
+
+        @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
+        border-radius: 2px;
+      }
+      .windows-item {
+        @include itemGrid;
+        margin: 0.27vw 0.25vw;
+        width: 2.3vw;
+        height: 2.3vw;
+
+        svg {
+          width: 1.15vw;
+          height: 1.15vw;
+          overflow: visible;
+        }
+
+        .windows-logo {
+          fill: var(--white);
+        }
+
+        &:hover {
+          @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
+          border-radius: 2px;
+
+          .windows-logo {
+            fill: var(--black);
+          }
+        }
       }
     }
   }
@@ -295,79 +348,84 @@
     justify-content: center;
 
     & .footer-item-up h3 {
-      // footer-item
       @include itemGrid;
-      @include itemConfig(6.51vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
+      @include itemConfigg(6.51vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
 
       &:hover {
-        @include itemOpenConfig($green, transparent, 1.5px solid $green, 600, italic);
+        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
       }
     }
 
-    & .footer-item-vk {
-      // footer-item
+    & .footer-item-vk,
+    & .footer-item-dzen,
+    & .footer-item-tg {
       @include itemGrid;
-      @include itemConfig(2.6vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
+      @include itemConfigg(2.6vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
+    }
 
+    & .footer-item-vk,
+    & .footer-item-dzen {
+      border-left: 0px;
+    }
+
+    & .footer-item-tg {
+      border-right: 0px;
+      border-left: 0px;
+    }
+
+    & .footer-item-vk {
       & svg {
-        width: 1.51vw;
-        height: 0.94vw;
-      }
-
-      &:hover {
-        @include itemOpenConfig($green, transparent, 1.5px solid $green, 600, italic);
+        width: 1.41vw;
+        height: 0.84vw;
       }
 
       &:hover .footer-vk {
-        fill: $green;
+        fill: var(--green);
       }
     }
 
     & .footer-item-dzen {
-      // footer-item
-      @include itemGrid;
-      @include itemConfig(2.6vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-
       & svg {
-        width: 1.82vw;
-        height: 1.82vw;
-      }
-
-      &:hover {
-        @include itemOpenConfig($green, transparent, 1.5px solid $green, 600, italic);
+        width: 1.62vw;
+        height: 1.62vw;
       }
 
       &:hover .footer-dzen {
-        fill: $green;
+        fill: var(--green);
       }
     }
 
     & .footer-item-tg {
-      // footer-item
-      @include itemGrid;
-      @include itemConfig(2.6vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-
       & svg {
-        width: 1.51vw;
-        height: 1.25vw;
-      }
-
-      &:hover {
-        @include itemOpenConfig($green, transparent, 1.5px solid $green, 600, italic);
+        width: 1.41vw;
+        height: 1.15vw;
       }
 
       &:hover .footer-tg {
-        fill: $green;
+        fill: var(--green);
       }
 
       & svg {
-        transform: translate(-2px);
+        transform: translate(-1px);
       }
     }
-  }
 
-  & a:nth-child(-n + 3) {
-    margin-right: 0.5vw;
+    & .footer-item-about h3 {
+      @include itemGrid;
+      @include itemConfigg(8vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
+
+      &:hover {
+        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
+      }
+    }
+
+    & .footer-item-up h3 {
+      border-radius: 4px 0px 0px 4px;
+    }
+
+    & .footer-item-about h3 {
+      border-radius: 0px 4px 4px 0px;
+    }
   }
 }
 
@@ -406,11 +464,11 @@
       width: 50vw;
       height: 18.5vw;
       border-radius: 5px;
-      background-color: $green;
+      background-color: var(--green);
 
       h1 {
         margin-top: -0.5vw;
-        color: $black;
+        color: var(--black);
         text-align: center;
         font-size: 1.1vw;
         font-weight: 400;
@@ -433,7 +491,7 @@
           }
 
           #modal-close {
-            fill: $black;
+            fill: var(--black);
           }
 
           &:hover #modal-close {
@@ -441,7 +499,7 @@
           }
 
           &:active #modal-close {
-            fill: $black;
+            fill: var(--black);
           }
         }
       }
@@ -459,160 +517,160 @@
     }
   }
 
-  .block-menu {
-    display: flex;
-    flex-direction: column;
+  // .block-menu {
+  //   display: flex;
+  //   flex-direction: column;
 
-    .menu {
-      & a {
-        margin-right: 1vw;
-      }
+  //   .menu {
+  //     & a {
+  //       margin-right: 1vw;
+  //     }
 
-      .items-menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+  //     .items-menu {
+  //       display: flex;
+  //       flex-direction: row;
+  //       justify-content: center;
 
-        .item-menu1 {
-          & h3 {
-            @include itemGrid;
-            @include itemConfig(17.4vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
-            // cursor: wait;
+  //       .item-menu1 {
+  //         & h3 {
+  //           @include itemGrid;
+  //           @include itemConfig(17.4vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
+  //           // cursor: wait;
 
-            &:hover {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
-        .item-menu2 {
-          & h3 {
-            @include itemGrid;
-            @include itemConfig(18.54vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
-            // cursor: wait;
+  //           &:hover {
+  //             @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 700, italic);
+  //           }
+  //         }
+  //       }
+  //       .item-menu2 {
+  //         & h3 {
+  //           @include itemGrid;
+  //           @include itemConfig(18.54vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
+  //           // cursor: wait;
 
-            &:hover {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
-        .item-menu3 {
-          & h3 {
-            @include itemGrid;
-            @include itemConfig(17.5vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
-            // cursor: wait;
+  //           &:hover {
+  //             @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 700, italic);
+  //           }
+  //         }
+  //       }
+  //       .item-menu3 {
+  //         & h3 {
+  //           @include itemGrid;
+  //           @include itemConfig(17.5vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
+  //           // cursor: wait;
 
-            &:hover {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
-        .item-menu4 {
-          & h3 {
-            @include itemGrid;
-            @include itemConfig(18.65vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
-            // cursor: wait;
+  //           &:hover {
+  //             @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 700, italic);
+  //           }
+  //         }
+  //       }
+  //       .item-menu4 {
+  //         & h3 {
+  //           @include itemGrid;
+  //           @include itemConfig(18.65vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
+  //           // cursor: wait;
 
-            &:hover {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
-        .item-menu5 {
-          & h3 {
-            @include itemGrid;
-            @include itemConfig(19.69vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
-            // cursor: wait;
+  //           &:hover {
+  //             @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 700, italic);
+  //           }
+  //         }
+  //       }
+  //       .item-menu5 {
+  //         & h3 {
+  //           @include itemGrid;
+  //           @include itemConfig(19.69vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
+  //           // cursor: wait;
 
-            &:hover {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
+  //           &:hover {
+  //             @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 700, italic);
+  //           }
+  //         }
+  //       }
 
-        & a:last-child {
-          margin-right: 0vw;
-        }
-      }
-    }
-  }
+  //       & a:last-child {
+  //         margin-right: 0vw;
+  //       }
+  //     }
+  //   }
+  // }
 
-  .footer {
-    & .footer-items {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+  // .footer {
+  //   & .footer-items {
+  //     display: flex;
+  //     flex-direction: row;
+  //     justify-content: center;
 
-      & a {
-        margin-right: 1vw;
-      }
+  //     & a {
+  //       margin-right: 1vw;
+  //     }
 
-      & .footer-item-up h3 {
-        // footer-item
-        @include itemGrid;
-        @include itemConfig(16.51vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
+  //     & .footer-item-up h3 {
+  //       // footer-item
+  //       @include itemGrid;
+  //       @include itemConfig(16.51vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
 
-        &:hover {
-          @include itemOpenConfig($green, transparent, 1.5px solid $green, 700, italic);
-        }
-      }
+  //       &:hover {
+  //         @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--green), 700, italic);
+  //       }
+  //     }
 
-      & .footer-item-vk {
-        // footer-item
-        @include itemGrid;
-        @include itemConfig(5.6vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
+  //     & .footer-item-vk {
+  //       // footer-item
+  //       @include itemGrid;
+  //       @include itemConfig(5.6vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
 
-        & svg {
-          width: 3.51vw;
-          height: 2.94vw;
-        }
+  //       & svg {
+  //         width: 3.51vw;
+  //         height: 2.94vw;
+  //       }
 
-        &:hover {
-          @include itemOpenConfig($green, transparent, 1.5px solid $green, 700, italic);
-        }
+  //       &:hover {
+  //         @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--green), 700, italic);
+  //       }
 
-        &:hover .footer-vk {
-          fill: $green;
-        }
-      }
+  //       &:hover .footer-vk {
+  //         fill: var(--green);
+  //       }
+  //     }
 
-      & .footer-item-dzen {
-        // footer-item
-        @include itemGrid;
-        @include itemConfig(5.6vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
+  //     & .footer-item-dzen {
+  //       // footer-item
+  //       @include itemGrid;
+  //       @include itemConfig(5.6vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
 
-        & svg {
-          width: 3.82vw;
-          height: 3.82vw;
-        }
+  //       & svg {
+  //         width: 3.82vw;
+  //         height: 3.82vw;
+  //       }
 
-        &:hover {
-          @include itemOpenConfig($green, transparent, 1.5px solid $green, 700, italic);
-        }
+  //       &:hover {
+  //         @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--green), 700, italic);
+  //       }
 
-        &:hover .footer-dzen {
-          fill: $green;
-        }
-      }
+  //       &:hover .footer-dzen {
+  //         fill: var(--green);
+  //       }
+  //     }
 
-      & .footer-item-tg {
-        // footer-item
-        @include itemGrid;
-        @include itemConfig(5.6vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
+  //     & .footer-item-tg {
+  //       // footer-item
+  //       @include itemGrid;
+  //       @include itemConfig(5.6vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
 
-        & svg {
-          width: 3.51vw;
-          height: 3.25vw;
-          transform: translate(-1px);
-        }
+  //       & svg {
+  //         width: 3.51vw;
+  //         height: 3.25vw;
+  //         transform: translate(-1px);
+  //       }
 
-        &:hover {
-          @include itemOpenConfig($green, transparent, 1.5px solid $green, 700, italic);
-        }
+  //       &:hover {
+  //         @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--green), 700, italic);
+  //       }
 
-        &:hover .footer-tg {
-          fill: $green;
-        }
-      }
-    }
-  }
+  //       &:hover .footer-tg {
+  //         fill: var(--green);
+  //       }
+  //     }
+  //   }
+  // }
 }

@@ -1,7 +1,7 @@
 import './index.css';
 
 // modal window
-import './javascript/modal.js';
+// import './javascript/modal.js';
 
 // shortcut change animation
 import './javascript/shortcut.js';

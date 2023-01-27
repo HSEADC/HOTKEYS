@@ -104,7 +104,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/landing.html',
+      template: './src/zagluska.html',
       filename: './landing.html',
       // chunks: ['page']
     }),
@@ -149,8 +149,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/archive/alt-tab.html',
-      filename: './archive/alt-tab.html',
+      template: './src/archive/switch-between-programs.html',
+      filename: './archive/switch-between-programs.html',
       // chunks: ['page']
     }),
 
@@ -265,14 +265,14 @@ module.exports = {
       },
     ]),
 
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/modal.html'),
-        location: 'modal',
-        template_filename: '*',
-        priority: 'replace',
-      },
-    ]),
+    // new HtmlWebpackPartialsPlugin([
+    //   {
+    //     path: path.join(__dirname, './src/partials/modal.html'),
+    //     location: 'modal',
+    //     template_filename: '*',
+    //     priority: 'replace',
+    //   },
+    // ]),
 
     new HtmlWebpackPartialsPlugin([
       {
@@ -287,6 +287,15 @@ module.exports = {
       {
         path: path.join(__dirname, './src/partials/menu-item.html'),
         location: 'menu-item',
+        template_filename: '*',
+        priority: 'replace',
+      },
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/os-system.html'),
+        location: 'os-system',
         template_filename: '*',
         priority: 'replace',
       },

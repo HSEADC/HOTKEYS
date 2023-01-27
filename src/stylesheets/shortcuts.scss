@@ -1,21 +1,10 @@
 body.shortcut {
-  background-color: $black;
+  background-color: var(--black);
   font-family: 'IBM-PlexSans', sans-serif;
   font-style: normal;
 
-  &::-webkit-scrollbar {
-    position: absolute;
-    width: 17px;
-  }
-  &::-webkit-scrollbar-track {
-    background: $black2;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: $grey;
-  }
-
   a {
-    color: $white;
+    color: var(--white);
   }
 
   .header {
@@ -27,66 +16,57 @@ body.shortcut {
     .hotkeys {
       margin-top: 0.4vw;
     }
+
+    .block-menu {
+      margin-right: 6vw;
+    }
   }
   .wrapper {
     margin: 2.5vw;
 
-    .desktop {
-      font-size: 1.25vw;
-      line-height: 120%;
+    .nav {
+      max-width: 87.5%;
+      display: flex;
+      justify-content: flex-start;
+
+      .btn-back {
+        @include itemGrid;
+        @include itemConfigg(7vw, 3vw, var(--white), transparent, 1.5px solid var(--grey), 0.25vw, 1vw, 300);
+
+        &:hover {
+          color: var(--green);
+          border: 1.5px solid var(--green);
+        }
+      }
+    }
+
+    .caption {
+      margin: 0.5vw 0 1.5vw;
+      font-size: 2vw;
+      line-height: 100%;
+      font-weight: 500;
       text-align: center;
-      font-weight: 400;
-      color: $white;
+      color: var(--white);
+
+      span {
+        color: var(--green);
+      }
+    }
+
+    .description {
+      font-size: 1.15vw;
+      line-height: 110%;
+      text-align: center;
+      color: var(--white);
       max-width: 37%;
-      margin: 0 auto;
+      margin: 0vw auto 2vw auto;
+      font-weight: 400;
 
       b {
-        font-size: 1.5vw;
         font-style: italic;
         font-weight: 700;
-        color: $green;
+        color: var(--green);
         text-transform: uppercase;
-      }
-    }
-
-    .nav {
-      padding-top: 0%;
-      display: flex;
-      justify-content: space-between;
-
-      .nav-btn.first {
-        @include itemGrid;
-        @include itemConfig(11vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-
-        &:hover {
-          color: $green;
-          border: 1.5px solid $green;
-        }
-      }
-
-      .nav-btn.last {
-        @include itemGrid;
-        @include itemConfig(8.5vw, 2.6vw, $white, transparent, 1.5px solid $grey, 0.25vw, 1vw, 500);
-
-        &:hover {
-          color: $green;
-          border: 1.5px solid $green;
-        }
-      }
-    }
-    .mobile {
-      display: none;
-    }
-
-    .title-footer {
-      h1 {
-        font-size: 1.25vw;
-        line-height: 120%;
-        text-align: center;
-        font-weight: 400;
-        color: $white;
-        max-width: 37%;
-        margin: 0 auto;
       }
     }
 
@@ -155,11 +135,11 @@ body.shortcut {
         .windows-keyboard {
           svg {
             .fn-win {
-              fill: $green;
+              fill: var(--green);
             }
 
             .fn2-win {
-              fill: $white;
+              fill: var(--white);
             }
             .alt-win {
               animation: shortcut-first 4s infinite ease-out;
@@ -274,25 +254,25 @@ body.shortcut {
         display: flex;
         justify-content: space-between;
 
-        .nav-btn.first {
-          @include itemGrid;
-          @include itemConfig(25vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
+        // .nav-btn.first {
+        //   @include itemGrid;
+        //   @include itemConfig(25vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
 
-          &:hover {
-            color: $green;
-            border: 1.5px solid $green;
-          }
-        }
+        //   &:hover {
+        //     color: var(--green);
+        //     border: 1.5px solid var(--green);
+        //   }
+        // }
 
-        .nav-btn.last {
-          @include itemGrid;
-          @include itemConfig(19vw, 5.6vw, $white, transparent, 1.5px solid $grey, 2px, 2.2vw, 500);
+        // .nav-btn.last {
+        //   @include itemGrid;
+        //   @include itemConfig(19vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
 
-          &:hover {
-            color: $green;
-            border: 1.5px solid $green;
-          }
-        }
+        //   &:hover {
+        //     color: var(--green);
+        //     border: 1.5px solid var(--green);
+        //   }
+        // }
 
         .desktop {
           display: none;
@@ -307,13 +287,13 @@ body.shortcut {
         line-height: 105%;
         text-align: center;
         font-weight: 400;
-        color: $white;
+        color: var(--white);
 
         b {
           font-size: 4.15vw;
           font-style: italic;
           font-weight: 700;
-          color: $green;
+          color: var(--green);
           text-transform: uppercase;
         }
       }
@@ -327,7 +307,7 @@ body.shortcut {
           line-height: 105%;
           text-align: center;
           font-weight: 400;
-          color: $white;
+          color: var(--white);
         }
       }
 
@@ -441,15 +421,15 @@ body.shortcut {
   }
 
   10% {
-    fill: $green;
+    fill: var(--green);
   }
 
   50% {
-    fill: $green;
+    fill: var(--green);
   }
 
   90% {
-    fill: $green;
+    fill: var(--green);
   }
 
   95% {
@@ -467,1317 +447,11 @@ body.shortcut {
   }
 
   40% {
-    fill: $green;
+    fill: var(--green);
   }
 
   90% {
-    fill: $green;
-  }
-
-  95% {
-    fill: #515151;
-  }
-
-  100% {
-    fill: #515151;
-  }
-}
-
-///
-///
-///
-///
-///
-///
-///
-///
-body.win-v {
-  overflow-y: hidden;
-  background-color: $black;
-  font-family: 'IBM-PlexSans', sans-serif;
-  font-style: normal;
-
-  .container {
-    padding: 1.5% 2% 2% 2%;
-  }
-
-  .block {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .block-header {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-
-    & h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      color: $white;
-
-      &:hover {
-        color: $green;
-      }
-    }
-
-    .block-menu {
-      padding-top: 1.4%;
-
-      .menu {
-        .items-menu {
-          .item-menu1-4 {
-            & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
-      }
-    }
-
-    & h2 {
-      font-size: 3rem;
-      font-weight: 600;
-      opacity: 0;
-    }
-  }
-
-  .block-nav {
-    padding-top: 3%;
-    display: flex;
-    justify-content: space-between;
-
-    .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-
-      &:hover {
-        color: $green;
-        border: 2px solid $green;
-      }
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .nav-back-none {
-      opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-    }
-  }
-
-  .windows {
-    .windows-keyboard {
-      & svg {
-        .win-win {
-          animation: win-win 4s infinite ease-out;
-        }
-
-        .v-win {
-          animation: v-win 4s infinite ease-out;
-        }
-      }
-    }
-  }
-
-  .block-footer {
-    padding-top: 3.5%;
-    display: flex;
-    justify-content: space-between;
-
-    .footer-text {
-      align-self: center;
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-  }
-}
-
-body.ctrl-z {
-  overflow-y: hidden;
-  background-color: $black;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-
-  .container {
-    padding: 1.5% 2% 2% 2%;
-  }
-
-  .block {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .block-header {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-
-    & h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      color: $white;
-
-      &:hover {
-        color: $green;
-      }
-    }
-
-    .block-menu {
-      padding-top: 1.4%;
-
-      .menu {
-        .items-menu {
-          .item-menu1-1 {
-            & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
-      }
-    }
-
-    & h2 {
-      font-size: 3rem;
-      font-weight: 600;
-      opacity: 0;
-    }
-  }
-
-  .block-nav {
-    padding-top: 3%;
-    display: flex;
-    justify-content: space-between;
-
-    .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-
-      &:hover {
-        color: $green;
-        border: 2px solid $green;
-      }
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .nav-back-none {
-      opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-    }
-  }
-
-  .windows {
-    .windows-keyboard {
-      & svg {
-        .ctrl-win {
-          animation: ctrl-win 4s infinite ease-out;
-        }
-
-        .z-win {
-          animation: z-win 4s infinite ease-out;
-        }
-      }
-    }
-  }
-
-  .block-footer {
-    padding-top: 3.5%;
-    display: flex;
-    justify-content: space-between;
-
-    .footer-text {
-      align-self: center;
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .footer-items {
-      width: 6.5%;
-      display: flex;
-      flex-direction: row;
-
-      & :first-child {
-        margin-right: 8%;
-      }
-
-      & :nth-child(2) {
-        .win-icon {
-          fill: $green;
-        }
-      }
-
-      .mac :hover {
-        .mac-icon {
-          fill: $green;
-        }
-      }
-    }
-  }
-}
-
-body.cmd-z {
-  overflow-y: hidden;
-  background-color: $black;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-
-  .container {
-    padding: 1.5% 2% 2% 2%;
-  }
-
-  .block {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .block-header {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-
-    & h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      color: $white;
-
-      &:hover {
-        color: $green;
-      }
-    }
-
-    .block-menu {
-      padding-top: 1.4%;
-
-      .menu {
-        .items-menu {
-          .item-menu1-2 {
-            & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
-      }
-    }
-
-    & h2 {
-      font-size: 3rem;
-      font-weight: 600;
-      opacity: 0;
-    }
-  }
-
-  .block-nav {
-    padding-top: 3%;
-    display: flex;
-    justify-content: space-between;
-
-    .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-
-      &:hover {
-        color: $green;
-        border: 2px solid $green;
-      }
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .nav-back-none {
-      opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-    }
-  }
-
-  .macos {
-    .macos-keyboard {
-      & svg {
-        .cmd-mac {
-          animation: cmd-mac 4s infinite ease-out;
-        }
-
-        .z-mac {
-          animation: z-mac 4s infinite ease-out;
-        }
-      }
-    }
-  }
-
-  .block-footer {
-    padding-top: 3.5%;
-    display: flex;
-    justify-content: space-between;
-
-    .footer-text {
-      align-self: center;
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .footer-items {
-      width: 6.5%;
-      display: flex;
-      flex-direction: row;
-
-      .win {
-        margin-right: 8%;
-
-        & svg {
-          &:hover .win-icon {
-            fill: $green;
-          }
-        }
-      }
-
-      .mac {
-        .win-icon {
-          fill: $green;
-        }
-      }
-    }
-  }
-}
-
-body.win-d {
-  overflow-y: hidden;
-  background-color: $black;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-
-  .container {
-    padding: 1.5% 2% 2% 2%;
-  }
-
-  .block {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .block-header {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-
-    & h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      color: $white;
-
-      &:hover {
-        color: $green;
-      }
-    }
-
-    .block-menu {
-      padding-top: 1.4%;
-
-      .menu {
-        .items-menu {
-          .item-menu1-8 {
-            & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
-      }
-    }
-
-    & h2 {
-      font-size: 3rem;
-      font-weight: 600;
-      opacity: 0;
-    }
-  }
-
-  .block-nav {
-    padding-top: 3%;
-    display: flex;
-    justify-content: space-between;
-
-    .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-
-      &:hover {
-        color: $green;
-        border: 2px solid $green;
-      }
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .nav-back-none {
-      opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-    }
-  }
-
-  .windows {
-    .windows-keyboard {
-      & svg {
-        .win-win {
-          animation: win-win 4s infinite ease-out;
-        }
-
-        .d-win {
-          animation: d-win 4s infinite ease-out;
-        }
-      }
-    }
-  }
-
-  .block-footer {
-    padding-top: 3.5%;
-    display: flex;
-    justify-content: space-between;
-
-    .footer-text {
-      align-self: center;
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-  }
-}
-
-body.alt-tab {
-  overflow-y: hidden;
-  background-color: $black;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-
-  .container {
-    padding: 1.5% 2% 2% 2%;
-  }
-
-  .block {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .block-header {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-
-    & h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      color: $white;
-
-      &:hover {
-        color: $green;
-      }
-    }
-
-    .block-menu {
-      padding-top: 1.4%;
-
-      .menu {
-        .items-menu-2 {
-          .item-menu2-6 {
-            & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
-      }
-    }
-
-    & h2 {
-      font-size: 3rem;
-      font-weight: 600;
-      opacity: 0;
-    }
-  }
-
-  .block-nav {
-    padding-top: 3%;
-    display: flex;
-    justify-content: space-between;
-
-    .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-
-      &:hover {
-        color: $green;
-        border: 2px solid $green;
-      }
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .nav-back-none {
-      opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-    }
-  }
-
-  .windows {
-    .windows-keyboard {
-      & svg {
-        .alt-win {
-          animation: alt-win 4s infinite ease-out;
-        }
-
-        .tab-win {
-          animation: tab-win 4s infinite ease-out;
-        }
-      }
-    }
-  }
-
-  .block-footer {
-    padding-top: 3.5%;
-    display: flex;
-    justify-content: space-between;
-
-    .footer-text {
-      align-self: center;
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .footer-items {
-      width: 6.5%;
-      display: flex;
-      flex-direction: row;
-
-      & :first-child {
-        margin-right: 8%;
-      }
-
-      & :nth-child(2) {
-        .win-icon {
-          fill: $green;
-        }
-      }
-
-      .mac :hover {
-        .mac-icon {
-          fill: $green;
-        }
-      }
-    }
-  }
-}
-
-body.cmd-tab {
-  overflow-y: hidden;
-  background-color: $black;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-
-  .container {
-    padding: 1.5% 2% 2% 2%;
-  }
-
-  .block {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .block-header {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-
-    & h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      color: $white;
-
-      &:hover {
-        color: $green;
-      }
-    }
-
-    .block-menu {
-      padding-top: 1.4%;
-
-      .menu {
-        .items-menu-2 {
-          .item-menu2-2 {
-            & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
-      }
-    }
-
-    & h2 {
-      font-size: 3rem;
-      font-weight: 600;
-      opacity: 0;
-    }
-  }
-
-  .block-nav {
-    padding-top: 3%;
-    display: flex;
-    justify-content: space-between;
-
-    .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-
-      &:hover {
-        color: $green;
-        border: 2px solid $green;
-      }
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .nav-back-none {
-      opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-    }
-  }
-
-  .macos {
-    .macos-keyboard {
-      & svg {
-        .cmd-mac {
-          animation: cmd-mac 4s infinite ease-out;
-        }
-
-        .tab-mac {
-          animation: tab-mac 4s infinite ease-out;
-        }
-      }
-    }
-  }
-
-  .block-footer {
-    padding-top: 3.5%;
-    display: flex;
-    justify-content: space-between;
-
-    .footer-text {
-      align-self: center;
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .footer-items {
-      width: 6.5%;
-      display: flex;
-      flex-direction: row;
-
-      .win {
-        margin-right: 8%;
-
-        & svg {
-          &:hover .win-icon {
-            fill: $green;
-          }
-        }
-      }
-
-      .mac {
-        .win-icon {
-          fill: $green;
-        }
-      }
-    }
-  }
-}
-
-body.ctrl-w {
-  overflow-y: hidden;
-  background-color: $black;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-
-  .container {
-    padding: 1.5% 2% 2% 2%;
-  }
-
-  .block {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .block-header {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-
-    & h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      color: $white;
-
-      &:hover {
-        color: $green;
-      }
-    }
-
-    .block-menu {
-      padding-top: 1.4%;
-
-      .menu {
-        .items-menu-2 {
-          .item-menu2-5 {
-            & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
-      }
-    }
-
-    & h2 {
-      font-size: 3rem;
-      font-weight: 600;
-      opacity: 0;
-    }
-  }
-
-  .block-nav {
-    padding-top: 3%;
-    display: flex;
-    justify-content: space-between;
-
-    .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-
-      &:hover {
-        color: $green;
-        border: 2px solid $green;
-      }
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .nav-back-none {
-      opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-    }
-  }
-
-  .windows {
-    .windows-keyboard {
-      & svg {
-        .ctrl-win {
-          animation: ctrl-win 4s infinite ease-out;
-        }
-
-        .w-win {
-          animation: w-win 4s infinite ease-out;
-        }
-      }
-    }
-  }
-
-  .block-footer {
-    padding-top: 3.5%;
-    display: flex;
-    justify-content: space-between;
-
-    .footer-text {
-      align-self: center;
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-  }
-}
-
-@keyframes w-win {
-  39% {
-    fill: #515151;
-  }
-
-  40% {
-    fill: $green;
-  }
-
-  90% {
-    fill: $green;
-  }
-
-  95% {
-    fill: #515151;
-  }
-
-  100% {
-    fill: #515151;
-  }
-}
-
-body.cmd-h {
-  overflow-y: hidden;
-  background-color: $black;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-
-  .container {
-    padding: 1.5% 2% 2% 2%;
-  }
-
-  .block {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .block-header {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-
-    & h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      color: $white;
-
-      &:hover {
-        color: $green;
-      }
-    }
-
-    .block-menu {
-      padding-top: 1.4%;
-
-      .menu {
-        .items-menu {
-          .item-menu1-5 {
-            & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
-      }
-    }
-
-    & h2 {
-      font-size: 3rem;
-      font-weight: 600;
-      opacity: 0;
-    }
-  }
-
-  .block-nav {
-    padding-top: 3%;
-    display: flex;
-    justify-content: space-between;
-
-    .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-
-      &:hover {
-        color: $green;
-        border: 2px solid $green;
-      }
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .nav-back-none {
-      opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-    }
-  }
-
-  .macos {
-    .macos-keyboard {
-      & svg {
-        .cmd-mac {
-          animation: cmd-mac 4s infinite ease-out;
-        }
-
-        .h-mac {
-          animation: h-mac 4s infinite ease-out;
-        }
-      }
-    }
-  }
-
-  .block-footer {
-    padding-top: 3.5%;
-    display: flex;
-    justify-content: space-between;
-
-    .footer-text {
-      align-self: center;
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-  }
-}
-
-body.cmd-o {
-  overflow-y: hidden;
-  background-color: $black;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-
-  .container {
-    padding: 1.5% 2% 2% 2%;
-  }
-
-  .block {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .block-header {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-
-    & h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      color: $white;
-
-      &:hover {
-        color: $green;
-      }
-    }
-
-    .block-menu {
-      padding-top: 1.4%;
-
-      .menu {
-        .items-menu {
-          .item-menu1-7 {
-            & h3 {
-              @include itemOpenConfig($black, $green, 1.5px solid $green, 600, italic);
-            }
-          }
-        }
-      }
-    }
-
-    & h2 {
-      font-size: 3rem;
-      font-weight: 600;
-      opacity: 0;
-    }
-  }
-
-  .block-nav {
-    padding-top: 3%;
-    display: flex;
-    justify-content: space-between;
-
-    .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-
-      &:hover {
-        color: $green;
-        border: 2px solid $green;
-      }
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .nav-back-none {
-      opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-    }
-  }
-
-  .macos {
-    .macos-keyboard {
-      & svg {
-        .cmd-mac {
-          animation: cmd-mac 4s infinite ease-out;
-        }
-
-        .o-mac {
-          animation: o-mac 4s infinite ease-out;
-        }
-      }
-    }
-  }
-
-  .block-footer {
-    padding-top: 3.5%;
-    display: flex;
-    justify-content: space-between;
-
-    .footer-text {
-      align-self: center;
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .footer-items {
-      width: 6.5%;
-      display: flex;
-      flex-direction: row;
-
-      .win {
-        margin-right: 8%;
-
-        & svg {
-          &:hover .win-icon {
-            fill: $green;
-          }
-        }
-      }
-
-      .mac {
-        .win-icon {
-          fill: $green;
-        }
-      }
-    }
-  }
-}
-
-body.alt-f4 {
-  overflow-y: hidden;
-  background-color: $black;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-
-  .container {
-    padding: 1.5% 2% 2% 2%;
-  }
-
-  .block {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .block-header {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-
-    & h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      color: $white;
-
-      &:hover {
-        color: $green;
-      }
-    }
-
-    & h2 {
-      font-size: 3rem;
-      font-weight: 600;
-      opacity: 0;
-    }
-  }
-
-  .block-nav {
-    padding-top: 3%;
-    display: flex;
-    justify-content: space-between;
-
-    .nav-back {
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-
-      &:hover {
-        color: $green;
-        border: 2px solid $green;
-      }
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-
-    .nav-back-none {
-      opacity: 0;
-      @include itemConfig(268px, 55px, $grey, transparent, 1.5px solid $grey, 42px, 1.5rem, 500);
-    }
-  }
-
-  .windows {
-    .windows-keyboard {
-      & svg {
-        .fn-win {
-          fill: $green;
-        }
-
-        .fn2-win {
-          fill: $white;
-        }
-
-        .alt-win {
-          animation: ctrl-win 4s infinite ease-out;
-        }
-
-        .four-win {
-          animation: four-win 4s infinite ease-out;
-        }
-      }
-    }
-  }
-
-  .block-footer {
-    padding-top: 3.5%;
-    display: flex;
-    justify-content: space-between;
-
-    .footer-text {
-      align-self: center;
-    }
-
-    & h1 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      letter-spacing: 0.07rem;
-      text-align: center;
-      font-weight: 300;
-      color: $white;
-    }
-  }
-}
-
-@keyframes four-win {
-  39% {
-    fill: #515151;
-  }
-
-  40% {
-    fill: $green;
-  }
-
-  90% {
-    fill: $green;
+    fill: var(--green);
   }
 
   95% {

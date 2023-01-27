@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr" class="index">
+<html lang="ru" dir="ltr" class="about">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
     />
     <meta name="keywords" content="HOT KEYS adc, hotkeys, shortcuts, keyboard shortcuts, keyboard keys, adc ac, хоткейс, шорткаты, сочетания клавиш, горячие клавиши" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hotkeys.adc.ac" />
+    <meta property="og:url" content="https://hotkeys.adc.ac/landing" />
     <meta property="og:title" content="HOT KEYS — архив шорткатов" />
     <meta
       property="og:description"
@@ -23,9 +23,8 @@
 Уникальные подборки и возможность тренировки шорткатов доступны на нашем сайте."
     />
     <meta property="og:image" content="https://hotkeys.adc.ac/share/seo.png" />
-
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://hotkeys.adc.ac" />
+    <meta property="twitter:url" content="https://hotkeys.adc.ac/landing" />
     <meta property="twitter:title" content="HOT KEYS — архив шорткатов" />
     <meta
       property="twitter:description"
@@ -33,54 +32,129 @@
 Уникальные подборки и возможность тренировки шорткатов доступны на нашем сайте."
     />
     <meta property="twitter:image" content="https://hotkeys.adc.ac/share/seo.png" />
-
-    <analytics></analytics>
   </head>
-  <body class="index">
+
+  <body class="landing">
     <modal></modal>
     <div id="up-target"></div>
-    <div class="block-main">
-      <div class="block-main-header">
+    <div class="wrapper">
+      <div class="header">
         <a href="./">
           <hotkeys></hotkeys>
         </a>
-        <div class="null"></div>
+        <menu></menu>
       </div>
-      <div class="block-main-shortcut">
+      <div class="block-shortcut">
         <a href="./archive.html">
           <div class="shortcut-text">CTRL+F</div>
         </a>
       </div>
-      <div class="block-main-text">
-        <a href="./archive.html">
-          <h2>архив шорткатов в бета-тесте</h2>
-        </a>
-        <a href="#mail-target">
-          <h2>попробовать сервис ↓</h2>
+      <div class="block-arrow">
+        <a href="#target-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none"><path id="arrow" d="m.209 20.934 1.384-1.384 4.396 4.396 1.831 2.076.123-.04-.163-4.071V.623h1.994v21.288l-.163 4.07.122.041 1.832-2.076 4.396-4.396 1.384 1.384-8.588 8.588-8.548-8.588Z" /></svg>
         </a>
       </div>
-    </div>
-    <div id="mail-target">
-      <div class="block-form">
-        <menu></menu>
-        <div class="mail-index">
-          <div class="mail-text-index">
-            <h4>Узнай о запуске <b>HOT KEYS!</b></h4>
-            <h5>
-              HOT KEYS — это архив полезных сочетаний клавиш.<br />
-              Узнать подробнее можно во вкладке
-              <a href="about.html">
-                <b>«о проекте»</b>
-              </a>
-              <br /><br />
-              Отправь e-mail и участвуй в бета-тесте!
-            </h5>
+      <div class="title-main">
+        <h4>Что это такое?</h4>
+        <h5>
+          <a href=""><b>HOT KEYS</b></a
+          >&nbsp;&mdash; архив сочетаний<br />клавиш c&nbsp;удобной системой поиска<br />и&nbsp;навигацией
+        </h5>
+      </div>
+      <div class="title-mission">
+        <h4>Наша миссия</h4>
+        <h5>
+          Мы&nbsp;делаем вашу работу<br />
+          за&nbsp;компьютером более <b>БЫСТРОЙ</b>,<br />
+          комфортной и&nbsp;эффективной
+        </h5>
+      </div>
+      <div id="target-arrow" class="title-dev">
+        <h4>Архив ещё на этапе разработки, но...</h4>
+        <h5>Вот что уже доступно:</h5>
+      </div>
+      <div class="items-dev">
+        <a href="archive.html">
+          <div class="archive item">
+            <h1><span>Каталог</span> сочетаний клавиш</h1>
+            <h2>Архив</h2>
           </div>
-
-          <emailform></emailform>
-        </div>
+        </a>
+        <a href="./archive/win-v.html">
+          <div class="clipboard item">
+            <h1><span>Открыть</span> буфер <br />обмена</h1>
+            <h2>Win+V</h2>
+          </div>
+        </a>
+        <a href="about.html">
+          <div class="about item">
+            <h1><span>Прочитайте</span> про авторов проекта</h1>
+            <h2>О проекте</h2>
+          </div>
+        </a>
+        <a href="./archive/cmd-h.html">
+          <div class="hide item">
+            <h1><span>Скрытие</span> открытой <span>программы</span></h1>
+            <h2>CMD+H</h2>
+          </div>
+        </a>
+        <a href="./archive/alt-tab.html">
+          <div class="switch item">
+            <h1><span>Переключение</span> между открытыми <span>приложениями</span></h1>
+            <h2>Alt+Tab</h2>
+          </div>
+        </a>
+        <a href="selections.html">
+          <div class="selections item">
+            <h1>Различные <span>подборки сочетаний</span> клавиш</h1>
+            <h2>Подборки</h2>
+          </div>
+        </a>
+        <a href="./archive/cmd-z.html">
+          <div class="undo item">
+            <h1><span>Отмена</span> последнего выполненного <span>действия</span></h1>
+            <h2>Cmd+Z</h2>
+          </div>
+        </a>
+        <a href="styleguide.html">
+          <div class="design item">
+            <h1><span>Узнайте</span> обо всех тонкостях нашей <span>дизайн-системы</span></h1>
+            <h2>Стайлгайд</h2>
+          </div>
+        </a>
       </div>
+      <div class="title-unique">
+        <h4>Почему именно мы?</h4>
+        <h5 class="element">Всё по полочкам</h5>
+        <h5 class="element">Удобный поиск</h5>
+        <h5 class="element">Единая система</h5>
+        <h5 class="element">Узкая специализация</h5>
+        <h5 class="element">Много программ</h5>
+      </div>
+      <div class="title-who">
+        <h4>Кому подойдёт этот сервис?</h4>
+        <h5>Всем тем, кто часто сталкиваются<br />с&nbsp;монотонной работой за&nbsp;компьютером<br />и&nbsp;хочет ее&nbsp;<b>УСКОРИТЬ</b></h5>
+      </div>
+      <div class="img-who">
+        <img src="images/about/who.svg" alt="main-artwork" />
+      </div>
+      <div class="mail-index">
+        <div class="mail-text-index">
+          <h4>Узнай о запуске <b>HOT KEYS!</b></h4>
+          <h5>
+            HOT KEYS — это архив полезных сочетаний клавиш.<br />
+            Узнать подробнее можно во вкладке
+            <a href="about.html">
+              <b>«о проекте»</b>
+            </a>
+            <br /><br />
+            Отправь e-mail и участвуй в бета-тесте!
+          </h5>
+        </div>
+
+        <emailform></emailform>
+      </div>
+      <footer></footer>
     </div>
-    <footer></footer>
   </body>
 </html>
