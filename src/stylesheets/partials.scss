@@ -5,68 +5,68 @@
     overflow: visible;
     transform: translate(0px);
 
-    &:hover {
-      animation: shift-text 1s infinite, text-opacity 1s infinite;
-      animation-iteration-count: 1;
-    }
+    // &:hover {
+    //   animation: shift-text 1s infinite, text-opacity 1s infinite;
+    //   animation-iteration-count: 1;
+    // }
 
-    @keyframes text-opacity {
-      1% {
-        opacity: 1;
-      }
-      95% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
+    // @keyframes text-opacity {
+    //   1% {
+    //     opacity: 1;
+    //   }
+    //   95% {
+    //     opacity: 1;
+    //   }
+    //   100% {
+    //     opacity: 0;
+    //   }
+    // }
 
-    @keyframes shift-text {
-      1% {
-        margin-left: -1.88vw;
-      }
-      100% {
-        margin-left: 0px;
-      }
-    }
+    // @keyframes shift-text {
+    //   1% {
+    //     margin-left: -1.88vw;
+    //   }
+    //   100% {
+    //     margin-left: 0px;
+    //   }
+    // }
 
     &:hover g:first-child {
-      visibility: visible;
-      animation: shift 1s infinite;
-      animation-iteration-count: 1;
+      // visibility: visible;
+      // animation: shift 1s infinite;
+      // animation-iteration-count: 1;
 
-      @keyframes shift {
-        1% {
-          transform: translate(1.88vw);
-          opacity: 0;
-        }
-        100% {
-          transform: translate(0px);
-          opacity: 1;
-        }
-      }
+      // @keyframes shift {
+      //   1% {
+      //     transform: translate(1.88vw);
+      //     opacity: 0;
+      //   }
+      //   100% {
+      //     transform: translate(0px);
+      //     opacity: 1;
+      //   }
+      // }
     }
 
     &:hover g:first-child.two-shift {
-      visibility: visible;
-      animation: shift-two 1s infinite;
-      animation-iteration-count: 1;
+      // visibility: visible;
+      // animation: shift-two 1s infinite;
+      // animation-iteration-count: 1;
 
-      @keyframes shift-two {
-        25% {
-          fill-opacity: 0;
-        }
-        35% {
-          fill-opacity: 0.5;
-        }
-        50% {
-          fill-opacity: 0.5;
-        }
-        100% {
-          fill-opacity: 0.5;
-        }
-      }
+      // @keyframes shift-two {
+      //   25% {
+      //     fill-opacity: 0;
+      //   }
+      //   35% {
+      //     fill-opacity: 0.5;
+      //   }
+      //   50% {
+      //     fill-opacity: 0.5;
+      //   }
+      //   100% {
+      //     fill-opacity: 0.5;
+      //   }
+      // }
     }
 
     & g:first-child {
