@@ -2,12 +2,9 @@
   --black: #0e0e0e;
   --white: #eee;
   --grey: #595959;
+  --gray: #3a3a3a;
   --green: #cbfb45;
-
-  // --black-hov: #141414;
-  // --white-hov: #868686;
-  --grey-hov: #333333;
-  // --black2: #1e1e1e;
+  --black2: #1e1e1e;
 }
 
 // *! config templates
@@ -72,5 +69,5 @@
 
 @mixin shortcutHover {
   color: var(--white)-hov;
-  background-color: var(--grey-hov);
+  background-color: var(--black2);
 }

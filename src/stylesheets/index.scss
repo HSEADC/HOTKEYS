@@ -40,8 +40,13 @@ body.landing {
     flex-direction: row;
     justify-content: space-between;
 
-    .hotkeys {
-      margin-top: 0.4vw;
+    & {
+      display: flex;
+      align-items: center;
+
+      // .hotkeys {
+      //   margin-top: 0.4vw;
+      // }
     }
   }
 
@@ -176,96 +181,57 @@ body.landing {
     column-gap: 1vw;
     row-gap: 1vw;
 
-    & h2 {
-      margin: 5% 0 1% 6%;
-      font-size: 1.15vw;
-      line-height: 1.3vw;
+    & h1 {
+      font-size: 1.72vw;
+      line-height: 110%;
       font-weight: 400;
+      text-transform: uppercase;
+      color: var(--white);
+
+      & span {
+        color: var(--green);
+      }
     }
 
-    & h1 {
-      margin: 4% 0 1% 6%;
-      font-size: 2.71vw;
+    & h2 {
+      font-size: 1.15vw;
       line-height: 100%;
-      font-weight: 500;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: var(--white);
     }
 
     .item {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: space-between;
+      padding: 1.25vw;
       min-height: 300px;
       min-width: 435px;
       border-radius: 5px;
       font-size: 1.5rem;
       font-weight: 500;
       cursor: help;
-
-      &:hover {
-        background-color: var(--grey)-hov;
-        border: 1.5px solid var(--grey);
-
-        h1 {
-          color: var(--green);
-          font-style: italic;
-          text-transform: uppercase;
-        }
-      }
-    }
-
-    .archive,
-    .about,
-    .selections,
-    .design {
-      background-color: var(--green);
-      border: 1.5px solid var(--green);
-
-      h1 {
-        color: black;
-      }
-
-      h2 {
-        color: black;
-      }
-
-      &:hover {
-        h1 {
-          color: var(--green);
-          font-style: italic;
-          text-transform: uppercase;
-        }
-
-        h2 {
-          color: white;
-        }
-      }
-    }
-
-    .clipboard,
-    .hide,
-    .switch,
-    .undo {
-      background-color: transparent;
       border: 1.5px solid var(--grey);
 
-      h1 {
-        color: white;
-      }
-
-      h2 {
-        color: gray;
-      }
-
       &:hover {
-        h1 {
-          color: var(--green);
+        background-color: var(--black2);
+        border: 1.5px solid var(--green);
+
+        h1,
+        h2 {
           font-style: italic;
-          text-transform: uppercase;
         }
 
         h2 {
-          color: white;
+          color: var(--green);
+          // font-weight: 700;
         }
+      }
+
+      &:active {
+        background-color: var(--gray);
+        box-shadow: 0px 1px 50px rgba(203, 251, 69, 0.4);
       }
     }
   }
@@ -418,7 +384,7 @@ body.landing {
         border: 0;
         background: transparent;
         position: absolute;
-        top: 0.1vw;
+        top: 0.325vw;
         right: 0.3vw;
       }
 
