@@ -31,43 +31,43 @@
     //   }
     // }
 
-    &:hover g:first-child {
-      // visibility: visible;
-      // animation: shift 1s infinite;
-      // animation-iteration-count: 1;
+    // &:hover g:first-child {
+    // visibility: visible;
+    // animation: shift 1s infinite;
+    // animation-iteration-count: 1;
 
-      // @keyframes shift {
-      //   1% {
-      //     transform: translate(1.88vw);
-      //     opacity: 0;
-      //   }
-      //   100% {
-      //     transform: translate(0px);
-      //     opacity: 1;
-      //   }
-      // }
-    }
+    // @keyframes shift {
+    //   1% {
+    //     transform: translate(1.88vw);
+    //     opacity: 0;
+    //   }
+    //   100% {
+    //     transform: translate(0px);
+    //     opacity: 1;
+    //   }
+    // }
+    // }
 
-    &:hover g:first-child.two-shift {
-      // visibility: visible;
-      // animation: shift-two 1s infinite;
-      // animation-iteration-count: 1;
+    // &:hover g:first-child.two-shift {
+    // visibility: visible;
+    // animation: shift-two 1s infinite;
+    // animation-iteration-count: 1;
 
-      // @keyframes shift-two {
-      //   25% {
-      //     fill-opacity: 0;
-      //   }
-      //   35% {
-      //     fill-opacity: 0.5;
-      //   }
-      //   50% {
-      //     fill-opacity: 0.5;
-      //   }
-      //   100% {
-      //     fill-opacity: 0.5;
-      //   }
-      // }
-    }
+    // @keyframes shift-two {
+    //   25% {
+    //     fill-opacity: 0;
+    //   }
+    //   35% {
+    //     fill-opacity: 0.5;
+    //   }
+    //   50% {
+    //     fill-opacity: 0.5;
+    //   }
+    //   100% {
+    //     fill-opacity: 0.5;
+    //   }
+    // }
+    // }
 
     & g:first-child {
       visibility: hidden;
@@ -270,6 +270,71 @@
         & h3 {
           width: 8.3vw;
           height: 2.3vw;
+        }
+      }
+    }
+  }
+}
+
+.block-system {
+  display: flex;
+  flex-direction: column;
+
+  .os {
+    margin: 0 auto;
+    width: 6vw;
+    height: 3vw;
+    border: 1.5px solid var(--grey);
+    border-radius: 4px;
+
+    .items-system {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .macos-item {
+        @include itemGrid;
+        margin: 0.27vw 0.25vw;
+        width: 2.3vw;
+        height: 2.3vw;
+
+        svg {
+          // transform: scale(0.9);
+          width: 0.99vw;
+          height: 1.2vw;
+          overflow: visible;
+        }
+
+        .macos-logo {
+          fill: var(--black);
+        }
+
+        @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
+        border-radius: 2px;
+      }
+      .windows-item {
+        @include itemGrid;
+        margin: 0.27vw 0.25vw;
+        width: 2.3vw;
+        height: 2.3vw;
+
+        svg {
+          width: 1.15vw;
+          height: 1.15vw;
+          overflow: visible;
+        }
+
+        .windows-logo {
+          fill: var(--white);
+        }
+
+        &:hover {
+          @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
+          border-radius: 2px;
+
+          .windows-logo {
+            fill: var(--black);
+          }
         }
       }
     }
