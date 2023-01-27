@@ -1,34 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 601:
-/***/ (() => {
-
-function get_cookie(cookie_name) {
-  var results = document.cookie.match('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
-  if (results) return unescape(results[2]);else return null;
-}
-
-var interval = 300;
-var delay_popup = 3000;
-
-if (get_cookie('modal') == null) {
-  setTimeout(function () {
-    document.querySelector('.modal').style.display = 'block';
-  }, 5000);
-  document.querySelector('.close-button').addEventListener('click', function () {
-    document.querySelector('.modal').style.display = 'none';
-  });
-  document.addEventListener('keydown', function (event) {
-    if (event.keyCode === 27) {
-      document.querySelector('.modal').style.display = 'none';
-    }
-  });
-  document.cookie = 'modal=1; domain=; max-age=' + interval;
-}
-
-/***/ }),
-
 /***/ 557:
 /***/ (() => {
 
@@ -153,15 +125,13 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-/* harmony import */ var _javascript_modal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(601);
-/* harmony import */ var _javascript_modal_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_javascript_modal_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(197);
-/* harmony import */ var _javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(557);
-/* harmony import */ var _javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(197);
+/* harmony import */ var _javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(557);
+/* harmony import */ var _javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_1__);
  // modal window
-
- // shortcut change animation
+// import './javascript/modal.js';
+// shortcut change animation
 
  // landing text apperance
 
