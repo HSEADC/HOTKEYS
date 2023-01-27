@@ -279,10 +279,10 @@
 
     & .footer-item-up h3 {
       @include itemGrid;
-      @include itemConfigg(6.51vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 500);
+      @include itemConfigg(6.51vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
 
       &:hover {
-        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 700, italic);
+        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
       }
     }
 
@@ -290,7 +290,7 @@
     & .footer-item-dzen,
     & .footer-item-tg {
       @include itemGrid;
-      @include itemConfigg(2.6vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 500);
+      @include itemConfigg(2.6vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
     }
 
     & .footer-item-vk,
@@ -342,10 +342,10 @@
 
     & .footer-item-about h3 {
       @include itemGrid;
-      @include itemConfigg(8vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 500);
+      @include itemConfigg(8vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
 
       &:hover {
-        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 700, italic);
+        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
       }
     }
 
