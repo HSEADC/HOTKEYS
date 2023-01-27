@@ -104,7 +104,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/landing.html',
+      template: './src/zagluska.html',
       filename: './landing.html',
       // chunks: ['page']
     }),

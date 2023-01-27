@@ -217,7 +217,7 @@
 
   .menu {
     margin: 0 auto;
-    width: 18.4vw;
+    width: 17vw;
     border: 1.5px solid var(--grey);
     border-radius: 4px;
 
@@ -237,8 +237,8 @@
       }
 
       .item {
-        margin: 0 -0.35svw;
-        padding: 0.15vw 0.15vw 0.2vw 0.15vw;
+        margin: 0 -0.25vw;
+        padding: 0.25vw 0.1vw 0.2vw;
 
         & h3 {
           @include itemGrid;
@@ -260,11 +260,16 @@
         }
       }
 
-      .archive,
+      .archive {
+        & h3 {
+          width: 8.25vw;
+          height: 2.3vw;
+        }
+      }
       .selections {
         & h3 {
-          width: 9vw;
-          height: 2.7vw;
+          width: 8.3vw;
+          height: 2.3vw;
         }
       }
     }
