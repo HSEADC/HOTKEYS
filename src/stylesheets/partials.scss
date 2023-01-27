@@ -217,7 +217,7 @@
 
   .menu {
     margin: 0 auto;
-    width: 17.2vw;
+    width: 18.3vw;
     border: 1.5px solid var(--grey);
     border-radius: 4px;
 
@@ -225,7 +225,7 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      gap: 0.1vw;
+      gap: -1vw;
 
       .line {
         display: flex;
@@ -233,10 +233,12 @@
         height: 1.7vw;
         border: 0.5px solid var(--grey);
         background-color: var(--grey);
+        z-index: -99;
       }
 
       .item {
-        padding: 0.15vw;
+        margin: 0 -0.35vw;
+        padding: 0.15vw 0.15vw 0.2vw 0.15vw;
 
         & h3 {
           @include itemGrid;
@@ -245,7 +247,7 @@
 
         &:hover {
           h3 {
-            @include itemOpenConfig(var(--black), var(--grey), 0px solid var(--grey), 700, italic);
+            @include itemOpenConfig(var(--green), transparent, 0px solid var(--grey), 700, italic);
             border-radius: 2px;
           }
         }
@@ -261,7 +263,7 @@
       .archive,
       .selections {
         & h3 {
-          width: 8vw;
+          width: 9vw;
           height: 2.7vw;
         }
       }
