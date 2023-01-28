@@ -118,12 +118,12 @@ module.exports = {
       // chunks: ['page']
     }),
 
-    // archive page
+    // shortcuts page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/archive.html',
-      filename: './archive.html',
+      template: './src/shortcuts.html',
+      filename: './shortcuts.html',
       // chunks: ['page']
     }),
 
@@ -145,93 +145,93 @@ module.exports = {
       // chunks: ['page']
     }),
 
-    // archive Item page
+    // shortcuts Item page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/archive/switch-between-programs.html',
-      filename: './archive/switch-between-programs.html',
+      template: './src/shortcuts/switch-between-programs.html',
+      filename: './shortcuts/switch-between-programs.html',
       // chunks: ['page']
     }),
 
-    // archive Item page
+    // shortcuts Item page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/archive/cmd-tab.html',
-      filename: './archive/cmd-tab.html',
+      template: './src/shortcuts/cmd-tab.html',
+      filename: './shortcuts/cmd-tab.html',
       // chunks: ['page']
     }),
 
-    // archive Item page
+    // shortcuts Item page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/archive/ctrl-z.html',
-      filename: './archive/ctrl-z.html',
+      template: './src/shortcuts/ctrl-z.html',
+      filename: './shortcuts/ctrl-z.html',
       // chunks: ['page']
     }),
 
-    // archive Item page
+    // shortcuts Item page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/archive/cmd-z.html',
-      filename: './archive/cmd-z.html',
+      template: './src/shortcuts/cmd-z.html',
+      filename: './shortcuts/cmd-z.html',
       // chunks: ['page']
     }),
 
-    // archive Item page
+    // shortcuts Item page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/archive/cmd-h.html',
-      filename: './archive/cmd-h.html',
+      template: './src/shortcuts/cmd-h.html',
+      filename: './shortcuts/cmd-h.html',
       // chunks: ['page']
     }),
 
-    // archive Item page
+    // shortcuts Item page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/archive/cmd-o.html',
-      filename: './archive/cmd-o.html',
+      template: './src/shortcuts/cmd-o.html',
+      filename: './shortcuts/cmd-o.html',
       // chunks: ['page']
     }),
 
-    // archive Item page
+    // shortcuts Item page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/archive/ctrl-w.html',
-      filename: './archive/ctrl-w.html',
+      template: './src/shortcuts/ctrl-w.html',
+      filename: './shortcuts/ctrl-w.html',
       // chunks: ['page']
     }),
 
-    // archive Item page
+    // shortcuts Item page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/archive/win-d.html',
-      filename: './archive/win-d.html',
+      template: './src/shortcuts/win-d.html',
+      filename: './shortcuts/win-d.html',
       // chunks: ['page']
     }),
 
-    // archive Item page
+    // shortcuts Item page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/archive/win-v.html',
-      filename: './archive/win-v.html',
+      template: './src/shortcuts/win-v.html',
+      filename: './shortcuts/win-v.html',
       // chunks: ['page']
     }),
 
-    // archive Item page
+    // shortcuts Item page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/archive/alt-f4.html',
-      filename: './archive/alt-f4.html',
+      template: './src/shortcuts/alt-f4.html',
+      filename: './shortcuts/alt-f4.html',
       // chunks: ['page']
     }),
 
