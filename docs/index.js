@@ -45,13 +45,13 @@ try {
 /***/ 197:
 /***/ (() => {
 
-var texts = ['ctrl+f', 'cmd+c', 'ctrl+v', 'cmd+a', 'cmd+z', 'cmd+s', 'cmd+d'];
+var shortcuts = ['ctrl+f', 'cmd+c', 'ctrl+v', 'cmd+a', 'cmd+z', 'cmd+s', 'cmd+d'];
 var textElement = document.querySelector('.shortcut-text');
 
 function changeText(idx) {
-  textElement.innerText = texts[idx];
+  textElement.innerText = shortcuts[idx];
   setTimeout(function () {
-    if (idx + 1 === texts.length) {
+    if (idx + 1 === shortcuts.length) {
       changeText(0);
       return;
     }
