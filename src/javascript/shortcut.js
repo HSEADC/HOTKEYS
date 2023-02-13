@@ -1,11 +1,11 @@
-const texts = ['ctrl+f', 'cmd+c', 'ctrl+v', 'cmd+a', 'cmd+z', 'cmd+s', 'cmd+d'];
+const shortcuts = ['ctrl+f', 'cmd+c', 'ctrl+v', 'cmd+a', 'cmd+z', 'cmd+s', 'cmd+d'];
 const textElement = document.querySelector('.shortcut-text');
 
 function changeText(idx) {
-  textElement.innerText = texts[idx];
+  textElement.innerText = shortcuts[idx];
 
   setTimeout(() => {
-    if (idx + 1 === texts.length) {
+    if (idx + 1 === shortcuts.length) {
       changeText(0);
       return;
     }
