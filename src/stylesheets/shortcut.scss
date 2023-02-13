@@ -1,0 +1,464 @@
+body.shortcut {
+  background-color: var(--black);
+  font-family: 'IBM-PlexSans', sans-serif;
+  font-style: normal;
+
+  a {
+    color: var(--white);
+  }
+
+  .header {
+    margin: 2.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .hotkeys {
+      margin-top: 0.4vw;
+    }
+
+    .block-menu {
+      margin-right: 6vw;
+    }
+  }
+  .wrapper {
+    margin: 2.5vw;
+
+    .nav {
+      max-width: 87.5%;
+      display: flex;
+      justify-content: flex-start;
+
+      .btn-back {
+        @include itemGrid;
+        @include itemConfigg(7vw, 3vw, var(--white), transparent, 1.5px solid var(--grey), 0.25vw, 1vw, 300);
+
+        &:hover {
+          color: var(--green);
+          border: 1.5px solid var(--green);
+        }
+      }
+    }
+
+    .caption {
+      margin: 0.5vw 0 1.5vw;
+      font-size: 2vw;
+      line-height: 100%;
+      font-weight: 500;
+      text-align: center;
+      color: var(--white);
+
+      span {
+        color: var(--green);
+      }
+    }
+
+    .description {
+      font-size: 1.15vw;
+      line-height: 110%;
+      text-align: center;
+      color: var(--white);
+      max-width: 37%;
+      margin: 0vw auto 2vw auto;
+      font-weight: 400;
+
+      b {
+        font-style: italic;
+        font-weight: 700;
+        color: var(--green);
+        text-transform: uppercase;
+      }
+    }
+
+    div.alt-tab {
+      .windows {
+        .windows-keyboard {
+          svg {
+            .alt-win {
+              animation: shortcut-first 4s infinite ease-out;
+            }
+
+            .tab-win {
+              animation: shortcut-second 4s infinite ease-out;
+            }
+          }
+        }
+      }
+    }
+    div.cmd-tab {
+      .macos {
+        .macos-keyboard {
+          svg {
+            .cmd-mac {
+              animation: shortcut-first 4s infinite ease-out;
+            }
+
+            .tab-mac {
+              animation: shortcut-second 4s infinite ease-out;
+            }
+          }
+        }
+      }
+    }
+    div.ctrl-z {
+      .windows {
+        .windows-keyboard {
+          svg {
+            .ctrl-win {
+              animation: shortcut-first 4s infinite ease-out;
+            }
+
+            .z-win {
+              animation: shortcut-second 4s infinite ease-out;
+            }
+          }
+        }
+      }
+    }
+    div.cmd-z {
+      .macos {
+        .macos-keyboard {
+          svg {
+            .cmd-mac {
+              animation: shortcut-first 4s infinite ease-out;
+            }
+
+            .z-mac {
+              animation: shortcut-second 4s infinite ease-out;
+            }
+          }
+        }
+      }
+    }
+    div.alt-f4 {
+      .windows {
+        .windows-keyboard {
+          svg {
+            .fn-win {
+              fill: var(--green);
+            }
+
+            .fn2-win {
+              fill: var(--white);
+            }
+            .alt-win {
+              animation: shortcut-first 4s infinite ease-out;
+            }
+
+            .four-win {
+              animation: shortcut-second 4s infinite ease-out;
+            }
+          }
+        }
+      }
+    }
+    div.cmd-h {
+      .macos {
+        .macos-keyboard {
+          svg {
+            .cmd-mac {
+              animation: shortcut-first 4s infinite ease-out;
+            }
+
+            .h-mac {
+              animation: shortcut-second 4s infinite ease-out;
+            }
+          }
+        }
+      }
+    }
+    div.cmd-o {
+      .macos {
+        .macos-keyboard {
+          svg {
+            .cmd-mac {
+              animation: shortcut-first 4s infinite ease-out;
+            }
+
+            .o-mac {
+              animation: shortcut-second 4s infinite ease-out;
+            }
+          }
+        }
+      }
+    }
+    div.ctrl-w {
+      .windows {
+        .windows-keyboard {
+          svg {
+            .ctrl-win {
+              animation: shortcut-first 4s infinite ease-out;
+            }
+
+            .w-win {
+              animation: shortcut-second 4s infinite ease-out;
+            }
+          }
+        }
+      }
+    }
+    div.win-d {
+      .windows {
+        .windows-keyboard {
+          svg {
+            .win-win {
+              animation: shortcut-first 4s infinite ease-out;
+            }
+
+            .d-win {
+              animation: shortcut-second 4s infinite ease-out;
+            }
+          }
+        }
+      }
+    }
+    div.win-v {
+      .windows {
+        .windows-keyboard {
+          svg {
+            .win-win {
+              animation: shortcut-first 4s infinite ease-out;
+            }
+
+            .v-win {
+              animation: shortcut-second 4s infinite ease-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body.shortcut {
+    overflow-x: hidden;
+
+    .header {
+      margin: 2.5vw;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 5vw;
+
+      .hotkeys {
+        @include itemGrid;
+        margin: 7vw auto;
+      }
+    }
+
+    .wrapper {
+      margin: 2.5vw;
+
+      .nav {
+        padding-top: 3%;
+        display: flex;
+        justify-content: space-between;
+
+        // .nav-btn.first {
+        //   @include itemGrid;
+        //   @include itemConfig(25vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
+
+        //   &:hover {
+        //     color: var(--green);
+        //     border: 1.5px solid var(--green);
+        //   }
+        // }
+
+        // .nav-btn.last {
+        //   @include itemGrid;
+        //   @include itemConfig(19vw, 5.6vw, var(--white), transparent, 1.5px solid var(--grey), 2px, 2.2vw, 500);
+
+        //   &:hover {
+        //     color: var(--green);
+        //     border: 1.5px solid var(--green);
+        //   }
+        // }
+
+        .desktop {
+          display: none;
+        }
+      }
+
+      .mobile {
+        display: block;
+        max-width: 90%;
+        margin: 13vw auto;
+        font-size: 4vw;
+        line-height: 105%;
+        text-align: center;
+        font-weight: 400;
+        color: var(--white);
+
+        b {
+          font-size: 4.15vw;
+          font-style: italic;
+          font-weight: 700;
+          color: var(--green);
+          text-transform: uppercase;
+        }
+      }
+
+      .title-footer {
+        h1 {
+          display: block;
+          max-width: 90%;
+          margin: 13vw auto;
+          font-size: 4vw;
+          line-height: 105%;
+          text-align: center;
+          font-weight: 400;
+          color: var(--white);
+        }
+      }
+
+      div.alt-tab {
+        .windows {
+          .windows-keyboard {
+            svg {
+              margin-left: 1vw;
+              width: 175vw;
+            }
+          }
+        }
+      }
+      div.cmd-tab {
+        .macos {
+          .macos-keyboard {
+            svg {
+              margin-left: 1vw;
+              width: 175vw;
+            }
+          }
+        }
+      }
+      div.ctrl-z {
+        .windows {
+          .windows-keyboard {
+            svg {
+              margin-left: 1vw;
+              width: 175vw;
+            }
+          }
+        }
+      }
+      div.cmd-z {
+        .macos {
+          .macos-keyboard {
+            svg {
+              margin-left: 1vw;
+              width: 175vw;
+            }
+          }
+        }
+      }
+      div.alt-f4 {
+        .windows {
+          .windows-keyboard {
+            svg {
+              margin-left: 1vw;
+              width: 175vw;
+            }
+          }
+        }
+      }
+      div.cmd-h {
+        .macos {
+          .macos-keyboard {
+            svg {
+              margin-left: 1vw;
+              width: 175vw;
+            }
+          }
+        }
+      }
+      div.cmd-o {
+        .macos {
+          .macos-keyboard {
+            svg {
+              margin-left: -33vw;
+              width: 175vw;
+            }
+          }
+        }
+      }
+      div.ctrl-w {
+        .windows {
+          .windows-keyboard {
+            svg {
+              margin-left: 1vw;
+              width: 175vw;
+            }
+          }
+        }
+      }
+      div.win-d {
+        .windows {
+          .windows-keyboard {
+            svg {
+              margin-left: 1vw;
+              width: 175vw;
+            }
+          }
+        }
+      }
+      div.win-v {
+        .windows {
+          .windows-keyboard {
+            svg {
+              margin-left: 1vw;
+              width: 175vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes shortcut-first {
+  9% {
+    fill: #515151;
+  }
+
+  10% {
+    fill: var(--green);
+  }
+
+  50% {
+    fill: var(--green);
+  }
+
+  90% {
+    fill: var(--green);
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
+
+@keyframes shortcut-second {
+  39% {
+    fill: #515151;
+  }
+
+  40% {
+    fill: var(--green);
+  }
+
+  90% {
+    fill: var(--green);
+  }
+
+  95% {
+    fill: #515151;
+  }
+
+  100% {
+    fill: #515151;
+  }
+}
