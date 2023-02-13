@@ -3,10 +3,9 @@
 @import 'stylesheets/fonts.scss';
 @import 'stylesheets/partials.scss';
 @import 'stylesheets/index.scss';
-@import 'stylesheets/about.scss';
-@import 'stylesheets/zagluska.scss';
-@import 'stylesheets/styleguide.scss';
-@import 'stylesheets/archive.scss';
-@import 'stylesheets/selections.scss';
-@import 'stylesheets/training.scss';
 @import 'stylesheets/shortcuts.scss';
+@import 'stylesheets/shortcut.scss';
+@import 'stylesheets/selections.scss';
+@import 'stylesheets/about.scss';
+@import 'stylesheets/styleguide.scss';
+@import 'stylesheets/training.scss';

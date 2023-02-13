@@ -100,15 +100,6 @@ module.exports = {
       // chunks: ['page']
     }),
 
-    // Landing page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/zagluska.html',
-      filename: './landing.html',
-      // chunks: ['page']
-    }),
-
     // Style Guide page
     new HtmlWebpackPlugin({
       hash: true,
