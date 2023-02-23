@@ -1,59 +1,54 @@
-.block-menu {
-  display: flex;
-  flex-direction: column;
+.O_Menu {
+  width: 17vw;
+  border: 1.5px solid var(--grey);
+  border-radius: 4px;
 
-  .menu {
-    margin: 0 auto;
-    width: 17vw;
-    border: 1.5px solid var(--grey);
-    border-radius: 4px;
+  .C_MenuItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0vw;
 
-    .items-menu {
+    .Q_MenuSeparator {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 0vw;
+      align-self: center;
+      height: 1.7vw;
+      border: 0.5px solid var(--grey);
+      background-color: var(--grey);
+      z-index: -99;
+    }
 
-      .line {
-        display: flex;
-        align-self: center;
-        height: 1.7vw;
-        border: 0.5px solid var(--grey);
-        background-color: var(--grey);
-        z-index: -99;
+    .M_MenuItem {
+      margin: 0 -0.25vw;
+      padding: 0.25vw 0.1vw 0.2vw;
+
+      h3 {
+        @include itemGrid;
+        @include itemConfig(var(--white), transparent, 0px solid var(--grey), 0px, 1vw, 500);
       }
 
-      .item {
-        margin: 0 -0.25vw;
-        padding: 0.25vw 0.1vw 0.2vw;
-
-        & h3 {
-          @include itemGrid;
-          @include itemConfig(var(--white), transparent, 0px solid var(--grey), 0px, 1vw, 500);
+      &:hover {
+        h3 {
+          @include itemOpenConfig(var(--green), transparent, 0px solid var(--grey), 700, italic);
+          border-radius: 2px;
         }
-
-        &:hover {
-          h3 {
-            @include itemOpenConfig(var(--green), transparent, 0px solid var(--grey), 700, italic);
-            border-radius: 2px;
-          }
-        }
-
-        // &:active {
-        //   h3 {
-        //     @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
-        //     border-radius: 2px;
-        //   }
-        // }
       }
 
-      .shortcuts {
-        & h3 {
+      &:active {
+        h3 {
+          @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
+          border-radius: 2px;
+        }
+      }
+
+      &.Shortcuts {
+        h3 {
           width: 8.25vw;
           height: 2.3vw;
         }
       }
-      .selections {
+
+      &.Selections {
         & h3 {
           width: 8.3vw;
           height: 2.3vw;

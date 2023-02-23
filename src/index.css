@@ -14,6 +14,10 @@
 @import 'stylesheets/about.scss';
 @import 'stylesheets/styleguide.scss';
 
+/* components css styles */
+
+@import 'stylesheets/components/S_Header.scss';
+
 /* partials css styles */
 
 @import 'stylesheets/partials/menu.scss';

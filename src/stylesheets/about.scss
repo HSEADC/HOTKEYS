@@ -23,7 +23,7 @@ body.about {
     }
 
     .menu {
-      .items-menu {
+      .C_MenuItems {
         .item-menu2 {
           & h3 {
             @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);

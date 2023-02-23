@@ -1,27 +1,3 @@
-.S_Header {
-  margin: 2.5vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  .hotkeys {
-    margin-top: 0.4vw;
-  }
-
-  .block-menu {
-    .menu {
-      .items-menu {
-        .shortcuts {
-          & h3 {
-            @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
-            border-radius: 2px;
-          }
-        }
-      }
-    }
-  }
-}
-
 .W_WrapperBlock {
   margin: 0 2.5vw;
 
@@ -156,174 +132,174 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  body.shortcuts {
-    .S_Header {
-      margin: 2.5vw;
-      flex-direction: column;
-      margin: 0 auto;
-      margin-bottom: 5vw;
+// @media screen and (max-width: 768px) {
+//   body.shortcuts {
+//     .S_Header {
+//       margin: 2.5vw;
+//       flex-direction: column;
+//       margin: 0 auto;
+//       margin-bottom: 5vw;
 
-      .hotkeys {
-        @include itemGrid;
-        margin: 7vw auto;
-      }
-    }
+//       .hotkeys {
+//         @include itemGrid;
+//         margin: 7vw auto;
+//       }
+//     }
 
-    .W_WrapperBlock {
-      padding: 0% 2% 2% 2%;
+//     .W_WrapperBlock {
+//       padding: 0% 2% 2% 2%;
 
-      .S_SearchBar {
-        margin-top: 3%;
-        width: 100%;
+//       .S_SearchBar {
+//         margin-top: 3%;
+//         width: 100%;
 
-        & form {
-          width: 100%;
+//         & form {
+//           width: 100%;
 
-          .M_SearchLine {
-            position: relative;
-            max-width: 100%;
+//           .M_SearchLine {
+//             position: relative;
+//             max-width: 100%;
 
-            & input {
-              width: 100%;
-              height: 5.6vw;
-              border-radius: 2px;
-              color: var(--white);
-              background-color: var(--black);
-              border: 1.5px solid var(--grey);
-              font-size: 1.25vw;
-              font-weight: 500;
-              cursor: help;
-            }
+//             & input {
+//               width: 100%;
+//               height: 5.6vw;
+//               border-radius: 2px;
+//               color: var(--white);
+//               background-color: var(--black);
+//               border: 1.5px solid var(--grey);
+//               font-size: 1.25vw;
+//               font-weight: 500;
+//               cursor: help;
+//             }
 
-            .A_SearchInput:focus-visible {
-              outline-color: transparent;
-              border-color: transparent;
-            }
+//             .A_SearchInput:focus-visible {
+//               outline-color: transparent;
+//               border-color: transparent;
+//             }
 
-            .A_SearchInput::-webkit-input-placeholder {
-              color: var(--grey);
-            }
+//             .A_SearchInput::-webkit-input-placeholder {
+//               color: var(--grey);
+//             }
 
-            input[placeholder] {
-              padding-left: 1.3%;
-              font-size: 2.2vw;
-              font-weight: 500;
-            }
+//             input[placeholder] {
+//               padding-left: 1.3%;
+//               font-size: 2.2vw;
+//               font-weight: 500;
+//             }
 
-            & button {
-              position: absolute;
-              top: 8%;
-              right: 2%;
-              font-size: 1.25vw;
-              color: transparent;
-              border: none;
-              background-color: transparent;
-            }
-          }
-        }
-      }
+//             & button {
+//               position: absolute;
+//               top: 8%;
+//               right: 2%;
+//               font-size: 1.25vw;
+//               color: transparent;
+//               border: none;
+//               background-color: transparent;
+//             }
+//           }
+//         }
+//       }
 
-      .block-shortcuts {
-        padding-top: 2.5%;
-        padding-bottom: 5%;
+//       .block-shortcuts {
+//         padding-top: 2.5%;
+//         padding-bottom: 5%;
 
-        .block-shortcuts-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-          column-gap: 2vw;
-          row-gap: 2vw;
-        }
+//         .block-shortcuts-grid {
+//           display: grid;
+//           grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+//           column-gap: 2vw;
+//           row-gap: 2vw;
+//         }
 
-        .shortcut-flex {
-          margin: 1vw;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
+//         .shortcut-flex {
+//           margin: 1vw;
+//           display: flex;
+//           flex-direction: row;
+//           justify-content: space-between;
 
-          svg {
-            margin-top: 1.5vw;
-            transform: scale(0.8);
-            overflow: visible;
-          }
-        }
+//           svg {
+//             margin-top: 1.5vw;
+//             transform: scale(0.8);
+//             overflow: visible;
+//           }
+//         }
 
-        .block-shortcut-item {
-          @include shortcutConfig(235px, 245px, 1.5px solid var(--grey), 5px, var(--white), var(--black));
+//         .block-shortcut-item {
+//           @include shortcutConfig(235px, 245px, 1.5px solid var(--grey), 5px, var(--white), var(--black));
 
-          &:hover {
-            @include shortcutHover;
-          }
+//           &:hover {
+//             @include shortcutHover;
+//           }
 
-          & h2 {
-            margin: 5% 0 1% 6%;
-            font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
-            line-height: 120%;
-            font-weight: 400;
-          }
+//           & h2 {
+//             margin: 5% 0 1% 6%;
+//             font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
+//             line-height: 120%;
+//             font-weight: 400;
+//           }
 
-          & h1 {
-            margin: 5% 0 1% 6%;
-            font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
-            line-height: 100%;
-            font-weight: 500;
-          }
-        }
-      }
-    }
-  }
-}
+//           & h1 {
+//             margin: 5% 0 1% 6%;
+//             font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
+//             line-height: 100%;
+//             font-weight: 500;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media screen and (max-width: 420px) {
-  body.shortcuts {
-    .W_WrapperBlock {
-      .block-shortcuts {
-        padding-top: 2.5%;
-        padding-bottom: 5%;
+// @media screen and (max-width: 420px) {
+//   body.shortcuts {
+//     .W_WrapperBlock {
+//       .block-shortcuts {
+//         padding-top: 2.5%;
+//         padding-bottom: 5%;
 
-        .block-shortcuts-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-          column-gap: 2vw;
-          row-gap: 2vw;
-        }
+//         .block-shortcuts-grid {
+//           display: grid;
+//           grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+//           column-gap: 2vw;
+//           row-gap: 2vw;
+//         }
 
-        .shortcut-flex {
-          margin: 1vw;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
+//         .shortcut-flex {
+//           margin: 1vw;
+//           display: flex;
+//           flex-direction: row;
+//           justify-content: space-between;
 
-          svg {
-            margin-top: 4vw;
-            margin-right: 4vw;
-            transform: scale(0.8);
-            overflow: visible;
-          }
-        }
+//           svg {
+//             margin-top: 4vw;
+//             margin-right: 4vw;
+//             transform: scale(0.8);
+//             overflow: visible;
+//           }
+//         }
 
-        .block-shortcut-item {
-          @include shortcutConfig(235px, 245px, 1.5px solid var(--grey), 5px, var(--white), var(--black));
+//         .block-shortcut-item {
+//           @include shortcutConfig(235px, 245px, 1.5px solid var(--grey), 5px, var(--white), var(--black));
 
-          &:hover {
-            @include shortcutHover;
-          }
+//           &:hover {
+//             @include shortcutHover;
+//           }
 
-          & h2 {
-            margin: 5% 0 1% 6%;
-            font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
-            line-height: 120%;
-            font-weight: 400;
-          }
+//           & h2 {
+//             margin: 5% 0 1% 6%;
+//             font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
+//             line-height: 120%;
+//             font-weight: 400;
+//           }
 
-          & h1 {
-            margin: 5% 0 1% 6%;
-            font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
-            line-height: 100%;
-            font-weight: 500;
-          }
-        }
-      }
-    }
-  }
-}
+//           & h1 {
+//             margin: 5% 0 1% 6%;
+//             font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
+//             line-height: 100%;
+//             font-weight: 500;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

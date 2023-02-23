@@ -1,0 +1,36 @@
+.S_Header {
+  margin: 2.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &.Shortcuts {
+    .O_Menu {
+      .C_MenuItems {
+        .M_MenuItem {
+          &.Shortcuts {
+            h3 {
+              @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.Selections {
+    .O_Menu {
+      .C_MenuItems {
+        .M_MenuItem {
+          &.Selections {
+            h3 {
+              @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

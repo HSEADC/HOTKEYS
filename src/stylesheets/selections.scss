@@ -22,9 +22,9 @@ body.selections {
       margin-top: 0.4vw;
     }
 
-    .block-menu {
+    .O_Menu {
       .menu {
-        .items-menu {
+        .C_MenuItems {
           .selections {
             & h3 {
               @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
