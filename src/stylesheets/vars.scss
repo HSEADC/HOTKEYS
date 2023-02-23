@@ -7,9 +7,6 @@
   --black2: #1e1e1e;
 }
 
-// *! config templates
-
-// ** item menu
 @mixin itemConfig($c, $bc, $b, $br, $fs, $fw) {
   color: $c;
   background-color: $bc;
@@ -43,16 +40,12 @@
   place-items: center;
 }
 
-// ** item team - about
-
 @mixin itemTeam($w, $h, $b, $br) {
   width: $w;
   height: $h;
   outline: $b;
   border-radius: $br;
 }
-
-// ** item shortcuts
 
 @mixin shortcutConfig($mw, $mh, $b, $br, $c, $bg) {
   display: flex;

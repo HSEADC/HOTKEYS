@@ -10,7 +10,6 @@ const path = require('path');
 module.exports = {
   entry: {
     index: './src/index.js',
-    page: './src/page.jsx',
   },
   output: {
     filename: '[name].js',
@@ -124,15 +123,6 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/selections.html',
       filename: './selections.html',
-      // chunks: ['page']
-    }),
-
-    // Training page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/training.html',
-      filename: './training.html',
       // chunks: ['page']
     }),
 
