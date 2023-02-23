@@ -1,6 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--black);
   font-family: 'IBM-PlexSans', sans-serif;
-  font-style: normal;
   color: var(--white);
 }

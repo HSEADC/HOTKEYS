@@ -1,0 +1,87 @@
+.footer {
+  & .footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & .footer-item-up h3 {
+      @include itemGrid;
+      @include itemConfigg(6.51vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
+
+      &:hover {
+        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
+      }
+    }
+
+    & .footer-item-vk,
+    & .footer-item-dzen,
+    & .footer-item-tg {
+      @include itemGrid;
+      @include itemConfigg(2.6vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
+    }
+
+    & .footer-item-vk,
+    & .footer-item-dzen {
+      border-left: 0px;
+    }
+
+    & .footer-item-tg {
+      border-right: 0px;
+      border-left: 0px;
+    }
+
+    & .footer-item-vk {
+      & svg {
+        width: 1.41vw;
+        height: 0.84vw;
+      }
+
+      &:hover .footer-vk {
+        fill: var(--green);
+      }
+    }
+
+    & .footer-item-dzen {
+      & svg {
+        width: 1.62vw;
+        height: 1.62vw;
+      }
+
+      &:hover .footer-dzen {
+        fill: var(--green);
+      }
+    }
+
+    & .footer-item-tg {
+      & svg {
+        width: 1.41vw;
+        height: 1.15vw;
+      }
+
+      &:hover .footer-tg {
+        fill: var(--green);
+      }
+
+      & svg {
+        transform: translate(-1px);
+      }
+    }
+
+    & .footer-item-about h3 {
+      @include itemGrid;
+      @include itemConfigg(8vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
+
+      &:hover {
+        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
+      }
+    }
+
+    & .footer-item-up h3 {
+      border-radius: 4px 0px 0px 4px;
+    }
+
+    & .footer-item-about h3 {
+      border-radius: 0px 4px 4px 0px;
+    }
+  }
+}

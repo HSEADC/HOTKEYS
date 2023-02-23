@@ -246,15 +246,6 @@ module.exports = {
       },
     ]),
 
-    // new HtmlWebpackPartialsPlugin([
-    //   {
-    //     path: path.join(__dirname, './src/partials/modal.html'),
-    //     location: 'modal',
-    //     template_filename: '*',
-    //     priority: 'replace',
-    //   },
-    // ]),
-
     new HtmlWebpackPartialsPlugin([
       {
         path: path.join(__dirname, './src/partials/menu.html'),
@@ -266,7 +257,7 @@ module.exports = {
 
     new HtmlWebpackPartialsPlugin([
       {
-        path: path.join(__dirname, './src/partials/menu-item.html'),
+        path: path.join(__dirname, './src/partials/menu-shortcut.html'),
         location: 'menu-item',
         template_filename: '*',
         priority: 'replace',
@@ -275,8 +266,8 @@ module.exports = {
 
     new HtmlWebpackPartialsPlugin([
       {
-        path: path.join(__dirname, './src/partials/os-system.html'),
-        location: 'os-system',
+        path: path.join(__dirname, './src/partials/sistem-switch.html'),
+        location: 'sistem-switch',
         template_filename: '*',
         priority: 'replace',
       },
@@ -284,7 +275,7 @@ module.exports = {
 
     new HtmlWebpackPartialsPlugin([
       {
-        path: path.join(__dirname, './src/partials/windows.html'),
+        path: path.join(__dirname, './src/partials/keyboard-win.html'),
         location: 'windows',
         template_filename: '*',
         priority: 'replace',
@@ -293,7 +284,7 @@ module.exports = {
 
     new HtmlWebpackPartialsPlugin([
       {
-        path: path.join(__dirname, './src/partials/macos.html'),
+        path: path.join(__dirname, './src/partials/keyboard-mac.html'),
         location: 'macos',
         template_filename: '*',
         priority: 'replace',

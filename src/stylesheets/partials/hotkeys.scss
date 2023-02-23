@@ -1,0 +1,50 @@
+.hotkeys {
+  & svg {
+    margin-left: -1.88vw;
+    width: 13vw;
+    overflow: visible;
+    transform: translate(0px);
+
+    & g:first-child {
+      visibility: hidden;
+      transform: translate(1.88vw);
+
+      .one-shift {
+        fill: var(--green);
+        fill-opacity: 0.5;
+      }
+      .two-shift {
+        fill-opacity: 0.5;
+        fill: var(--green);
+      }
+    }
+
+    & g:last-child {
+      .h-logo,
+      .o-logo,
+      .t-logo {
+        fill: var(--green);
+      }
+      .k-logo,
+      .e-logo,
+      .y-logo,
+      .s-logo {
+        fill: var(--white);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hotkeys {
+    & svg {
+      width: 45.98vw;
+
+      & g:first-child {
+        fill-opacity: 0.5;
+        visibility: visible;
+        transform: translate(0px);
+      }
+    }
+  }
+}

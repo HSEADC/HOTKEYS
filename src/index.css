@@ -1,9 +1,11 @@
+/* basics files to reset and to upload */
+
 @import url('https://bozzhik.ru/css/reboot.css');
 @import 'stylesheets/basics.scss';
 @import 'stylesheets/vars.scss';
 @import 'stylesheets/fonts.scss';
 
-@import 'stylesheets/partials.scss';
+/* page css styles */
 
 @import 'stylesheets/index.scss';
 @import 'stylesheets/shortcuts.scss';
@@ -11,3 +13,11 @@
 @import 'stylesheets/selections.scss';
 @import 'stylesheets/about.scss';
 @import 'stylesheets/styleguide.scss';
+
+/* partials css styles */
+
+@import 'stylesheets/partials/menu.scss';
+@import 'stylesheets/partials/hotkeys.scss';
+@import 'stylesheets/partials/sistem-switch.scss';
+@import 'stylesheets/partials/keyboard.scss';
+@import 'stylesheets/partials/footer.scss';
