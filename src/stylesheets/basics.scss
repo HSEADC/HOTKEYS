@@ -1,4 +1,8 @@
 html {
+  &.Shortcuts,
+  &.Selections {
+    scroll-padding-block-start: 2.5vw;
+  }
   scroll-behavior: smooth;
 }
 
@@ -8,6 +12,14 @@ body {
   color: var(--white);
 }
 
+.C_Wrapper {
+  margin: 0 2.5vw;
+}
+
 .Q_TextSelection {
   color: var(--green);
+
+  &.Fancy {
+    font-style: italic;
+  }
 }

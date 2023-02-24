@@ -46,21 +46,3 @@
   outline: $b;
   border-radius: $br;
 }
-
-@mixin shortcutConfig($mw, $mh, $b, $br, $c, $bg) {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  cursor: help;
-  min-width: $mw;
-  min-height: $mh;
-  border: $b;
-  border-radius: $br;
-  color: $c;
-  background-color: $bg;
-}
-
-@mixin shortcutHover {
-  color: var(--white)-hov;
-  background-color: var(--black2);
-}

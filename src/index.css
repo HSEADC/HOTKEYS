@@ -14,10 +14,6 @@
 @import 'stylesheets/about.scss';
 @import 'stylesheets/styleguide.scss';
 
-/* components css styles */
-
-@import 'stylesheets/components/S_Header.scss';
-
 /* partials css styles */
 
 @import 'stylesheets/partials/menu.scss';
@@ -25,3 +21,9 @@
 @import 'stylesheets/partials/sistem-switch.scss';
 @import 'stylesheets/partials/keyboard.scss';
 @import 'stylesheets/partials/footer.scss';
+
+/* components css styles */
+
+@import 'stylesheets/components/S_Header.scss';
+@import 'stylesheets/components/S_SearchForm.scss';
+@import 'stylesheets/components/A_CardName&Key.scss';
