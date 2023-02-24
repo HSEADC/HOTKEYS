@@ -266,7 +266,7 @@ module.exports = {
 
     new HtmlWebpackPartialsPlugin([
       {
-        path: path.join(__dirname, './src/partials/sistem-switch.html'),
+        path: path.join(__dirname, './src/partials/system-switch.html'),
         location: 'sistem-switch',
         template_filename: '*',
         priority: 'replace',

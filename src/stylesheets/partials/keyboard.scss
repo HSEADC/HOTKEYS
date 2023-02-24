@@ -1,46 +1,18 @@
-.windows {
+.O_Keyboard {
   margin: 3vw auto;
+  display: grid;
+  place-items: center;
 
-  .windows-keyboard {
-    display: grid;
-    place-items: center;
-
-    svg {
-      width: 77.5vw;
-    }
-
-    // .fn-win {
-    //   fill: rgb(141, 39, 39);
-    // }
-  }
-}
-
-.macos {
-  margin: 3vw auto;
-
-  .macos-keyboard {
-    display: grid;
-    place-items: center;
-
-    svg {
-      width: 77.5vw;
-    }
-
-    // .fn-win {
-    //   fill: rgb(141, 39, 39);
-    // }
+  .A_KeyboardSVG {
+    width: 77.5vw;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .windows {
-    margin: 3vw auto;
-
-    .windows-keyboard {
-      svg {
-        overflow: visible;
-        width: 95vw;
-      }
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      overflow: visible;
+      width: 95vw;
     }
   }
 }
