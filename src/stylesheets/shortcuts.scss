@@ -1,91 +1,76 @@
-.W_WrapperBlock {
+.C_WrapperShortcuts {
   margin: 0 2.5vw;
 
-  .S_SearchBar {
+  .S_SearchForm {
     width: 100%;
 
-    & form {
-      width: 100%;
+    .C_SearchBar {
+      display: flex;
+      flex-direction: row;
+      height: 3.6vw;
+      border-radius: 5px;
+      background-color: var(--black);
+      color: var(--white);
+      border: 1.5px solid var(--grey);
+      font-size: 1.25vw;
+      font-weight: 500;
+      cursor: help;
 
-      .M_SearchLine {
-        position: relative;
-        max-width: 100%;
+      &:hover {
+        outline: 1.5px solid var(--green);
 
-        & input {
-          width: 100%;
-          height: 3.6vw;
-          border-radius: 5px;
-          background-color: var(--black);
-          color: var(--white);
-          border: 1.5px solid var(--grey);
-          font-size: 1.25vw;
-          font-weight: 500;
-          cursor: help;
-        }
-
-        .A_SearchInput {
-          &:hover {
-            outline: 1.5px solid var(--green);
-          }
-
-          &:focus-visible {
-            outline: 1.5px solid var(--green);
-            box-shadow: 0px 1px 50px rgba(203, 251, 69, 0.4);
-            border-color: transparent;
-          }
-
-          &::-webkit-input-placeholder {
-            color: var(--grey);
-          }
-
-          &[placeholder] {
-            padding-left: 1.3%;
-            font-size: 1.25vw;
-            font-weight: 300;
+        .M_SearchButton {
+          .A_ButtonSVG {
+            .Q_ButtonIcon {
+              fill: var(--green);
+            }
           }
         }
 
-        & button {
-          position: absolute;
-          top: 8%;
-          right: 2%;
+        .M_SearchInput::-webkit-input-placeholder {
+          color: var(--green);
+        }
+      }
+
+      .M_SearchInput {
+        width: 96%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+
+        &[placeholder] {
+          padding-left: 1.3%;
           font-size: 1.25vw;
-          color: transparent;
-          border: none;
-          background-color: transparent;
+          font-weight: 300;
+          color: var(--green);
+        }
+      }
+
+      .M_SearchButton {
+        margin-bottom: 0.2vw;
+        margin-left: 0.9vw;
+        color: transparent;
+        border: none;
+        background-color: transparent;
+
+        .A_ButtonSVG {
+          .Q_ButtonIcon {
+            fill: var(--grey);
+          }
         }
       }
     }
   }
 
-  .C_ShortcutCards {
+  .S_Shortcuts {
     padding: 3vw 0 5vw 0;
     margin: 0 auto;
-    width: 94vw;
+    width: 95vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
     column-gap: 1vw;
     row-gap: 1vw;
-
-    h1.A_ShortcutCardName {
-      font-size: 1.75vw;
-      line-height: 110%;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: var(--white);
-
-      & span {
-        color: var(--green);
-      }
-    }
-
-    h2.A_ShortcutCardKey {
-      font-size: 1.15vw;
-      line-height: 100%;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: var(--white);
-    }
 
     .M_ShortcutCard {
       display: flex;
@@ -100,18 +85,33 @@
       cursor: help;
       border: 1.5px solid var(--grey);
 
+      .A_ShortcutCardName {
+        font-size: clamp(1.5rem, 2rem, 2vw);
+        line-height: 110%;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: var(--white);
+      }
+
+      .A_ShortcutCardKey {
+        font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
+        line-height: 100%;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: var(--white);
+      }
+
       &:hover {
         background-color: var(--black2);
         border: 1.5px solid var(--green);
 
-        h1,
-        h2 {
+        .A_ShortcutCardName,
+        .A_ShortcutCardKey {
           font-style: italic;
         }
 
-        h2 {
+        .A_ShortcutCardKey {
           color: var(--green);
-          // font-weight: 700;
         }
       }
 
@@ -121,185 +121,79 @@
       }
     }
   }
+}
 
-  .footer {
-    padding-top: 2vw;
-    padding-bottom: 1.5vw;
+@media screen and (max-width: 768px) {
+  .C_WrapperShortcuts {
+    .S_Shortcuts {
+      padding: 3vw 0 5vw 0;
+      margin: 0 auto;
+      width: 94vw;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+      column-gap: 2vw;
+      row-gap: 2vw;
 
-    & .footer-items {
-      justify-content: left;
+      .M_ShortcutCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.25vw;
+        min-height: 245px;
+        min-width: 235px;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        cursor: help;
+        border: 1.5px solid var(--grey);
+
+        .A_ShortcutCardName {
+          margin: 3% 0 1% 3%;
+          font-size: clamp(1.5rem, 2rem, 2vw);
+          line-height: 100%;
+          font-weight: 500;
+        }
+
+        .A_ShortcutCardKey {
+          margin: 3% 0 1% 3%;
+          font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
+          line-height: 120%;
+        }
+
+        &:hover {
+          background-color: var(--black2);
+          border: 1.5px solid var(--green);
+
+          .A_ShortcutCardName,
+          .A_ShortcutCardKey {
+            font-style: italic;
+          }
+
+          .A_ShortcutCardKey {
+            color: var(--green);
+          }
+        }
+
+        &:active {
+          background-color: var(--gray);
+          box-shadow: 0px 1px 50px rgba(203, 251, 69, 0.4);
+        }
+      }
     }
   }
 }
 
-// @media screen and (max-width: 768px) {
-//   body.shortcuts {
-//     .S_Header {
-//       margin: 2.5vw;
-//       flex-direction: column;
-//       margin: 0 auto;
-//       margin-bottom: 5vw;
-
-//       .hotkeys {
-//         @include itemGrid;
-//         margin: 7vw auto;
-//       }
-//     }
-
-//     .W_WrapperBlock {
-//       padding: 0% 2% 2% 2%;
-
-//       .S_SearchBar {
-//         margin-top: 3%;
-//         width: 100%;
-
-//         & form {
-//           width: 100%;
-
-//           .M_SearchLine {
-//             position: relative;
-//             max-width: 100%;
-
-//             & input {
-//               width: 100%;
-//               height: 5.6vw;
-//               border-radius: 2px;
-//               color: var(--white);
-//               background-color: var(--black);
-//               border: 1.5px solid var(--grey);
-//               font-size: 1.25vw;
-//               font-weight: 500;
-//               cursor: help;
-//             }
-
-//             .A_SearchInput:focus-visible {
-//               outline-color: transparent;
-//               border-color: transparent;
-//             }
-
-//             .A_SearchInput::-webkit-input-placeholder {
-//               color: var(--grey);
-//             }
-
-//             input[placeholder] {
-//               padding-left: 1.3%;
-//               font-size: 2.2vw;
-//               font-weight: 500;
-//             }
-
-//             & button {
-//               position: absolute;
-//               top: 8%;
-//               right: 2%;
-//               font-size: 1.25vw;
-//               color: transparent;
-//               border: none;
-//               background-color: transparent;
-//             }
-//           }
-//         }
-//       }
-
-//       .block-shortcuts {
-//         padding-top: 2.5%;
-//         padding-bottom: 5%;
-
-//         .block-shortcuts-grid {
-//           display: grid;
-//           grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-//           column-gap: 2vw;
-//           row-gap: 2vw;
-//         }
-
-//         .shortcut-flex {
-//           margin: 1vw;
-//           display: flex;
-//           flex-direction: row;
-//           justify-content: space-between;
-
-//           svg {
-//             margin-top: 1.5vw;
-//             transform: scale(0.8);
-//             overflow: visible;
-//           }
-//         }
-
-//         .block-shortcut-item {
-//           @include shortcutConfig(235px, 245px, 1.5px solid var(--grey), 5px, var(--white), var(--black));
-
-//           &:hover {
-//             @include shortcutHover;
-//           }
-
-//           & h2 {
-//             margin: 5% 0 1% 6%;
-//             font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
-//             line-height: 120%;
-//             font-weight: 400;
-//           }
-
-//           & h1 {
-//             margin: 5% 0 1% 6%;
-//             font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
-//             line-height: 100%;
-//             font-weight: 500;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 420px) {
-//   body.shortcuts {
-//     .W_WrapperBlock {
-//       .block-shortcuts {
-//         padding-top: 2.5%;
-//         padding-bottom: 5%;
-
-//         .block-shortcuts-grid {
-//           display: grid;
-//           grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-//           column-gap: 2vw;
-//           row-gap: 2vw;
-//         }
-
-//         .shortcut-flex {
-//           margin: 1vw;
-//           display: flex;
-//           flex-direction: row;
-//           justify-content: space-between;
-
-//           svg {
-//             margin-top: 4vw;
-//             margin-right: 4vw;
-//             transform: scale(0.8);
-//             overflow: visible;
-//           }
-//         }
-
-//         .block-shortcut-item {
-//           @include shortcutConfig(235px, 245px, 1.5px solid var(--grey), 5px, var(--white), var(--black));
-
-//           &:hover {
-//             @include shortcutHover;
-//           }
-
-//           & h2 {
-//             margin: 5% 0 1% 6%;
-//             font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
-//             line-height: 120%;
-//             font-weight: 400;
-//           }
-
-//           & h1 {
-//             margin: 5% 0 1% 6%;
-//             font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
-//             line-height: 100%;
-//             font-weight: 500;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+@media screen and (max-width: 420px) {
+  .C_WrapperShortcuts {
+    .S_Shortcuts {
+      .M_ShortcutCard {
+        .A_ShortcutCardName {
+          font-size: clamp(2rem, 3rem, 3vw);
+        }
+        .A_ShortcutCardKey {
+          font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
+        }
+      }
+    }
+  }
+}
