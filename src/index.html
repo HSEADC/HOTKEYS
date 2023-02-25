@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr" class="about">
+<html lang="ru" dir="ltr" class="Index">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,126 +33,141 @@
     />
     <meta property="twitter:image" content="https://hotkeys.adc.ac/share/seo.png" />
   </head>
-
-  <body class="landing">
+  <body>
     <modal></modal>
     <div id="A_UpTarget"></div>
-    <div class="wrapper">
-      <div class="header">
-        <a href="./">
-          <hotkeys></hotkeys>
-        </a>
-        <menu></menu>
+    <div class="S_Header">
+      <a class="W_LinkLogo" href="./">
+        <hotkeys></hotkeys>
+      </a>
+      <menu></menu>
+    </div>
+    <div class="C_Wrapper">
+      <div class="M_ShortcutValue">CTRL+F</div>
+      <a href="#A_DevTarget" class="M_TargetArrow">
+        <svg class="A_ArrowSVG" xmlns="http://www.w3.org/2000/svg" fill="none"><path class="Q_ArrowVector" d="m.209 20.934 1.384-1.384 4.396 4.396 1.831 2.076.123-.04-.163-4.071V.623h1.994v21.288l-.163 4.07.122.041 1.832-2.076 4.396-4.396 1.384 1.384-8.588 8.588-8.548-8.588Z" /></svg>
+      </a>
+      <div class="M_BlockMain">
+        <h1 class="A_TextMainH1">Что это такое?</h1>
+        <h2 class="A_TextMainH2"><span class="Q_TextMainSelection">HOT KEYS</span>&nbsp;&mdash; архив сочетаний<br />клавиш c&nbsp;удобной системой поиска<br />и&nbsp;навигацией</h2>
       </div>
-      <div class="block-shortcut">
-        <a href="./shortcuts.html">
-          <div class="shortcut-text">CTRL+F</div>
-        </a>
-      </div>
-      <div class="block-arrow">
-        <a href="#target-arrow">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none"><path id="arrow" d="m.209 20.934 1.384-1.384 4.396 4.396 1.831 2.076.123-.04-.163-4.071V.623h1.994v21.288l-.163 4.07.122.041 1.832-2.076 4.396-4.396 1.384 1.384-8.588 8.588-8.548-8.588Z" /></svg>
-        </a>
-      </div>
-      <div class="title-main">
-        <h4>Что это такое?</h4>
-        <h5>
-          <a href=""><b>HOT KEYS</b></a
-          >&nbsp;&mdash; архив сочетаний<br />клавиш c&nbsp;удобной системой поиска<br />и&nbsp;навигацией
-        </h5>
-      </div>
-      <div class="title-mission">
-        <h4>Наша миссия</h4>
-        <h5>
+      <div class="M_BlockMission">
+        <h1 class="A_TextMainH1">Наша миссия</h1>
+        <h2 class="A_TextMainH2">
           Мы&nbsp;делаем вашу работу<br />
-          за&nbsp;компьютером более <b>БЫСТРОЙ</b>,<br />
+          за&nbsp;компьютером более <span class="Q_TextMainSelection">БЫСТРОЙ</span>,<br />
           комфортной и&nbsp;эффективной
-        </h5>
+        </h2>
       </div>
-      <div id="target-arrow" class="title-dev">
-        <h4>Архив ещё на этапе разработки, но...</h4>
-        <h5>Вот что уже доступно:</h5>
+      <div class="M_BlockDev" id="A_DevTarget">
+        <h4 class="A_TextMainH1">Архив ещё на этапе разработки, но...</h4>
+        <h5 class="A_TextMainH2">Вот что уже доступно:</h5>
       </div>
-      <div class="items-dev">
+      <div class="S_Shortcuts">
         <a href="shortcuts.html">
-          <div class="shortcuts item">
-            <h1><span>Каталог</span> сочетаний клавиш</h1>
-            <h2>Архив</h2>
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName"><span class="Q_TextSelection">Каталог</span> сочетаний клавиш</h1>
+            <h2 class="A_CardKey">Архив</h2>
           </div>
         </a>
         <a href="./shortcuts/win-v.html">
-          <div class="clipboard item">
-            <h1><span>Открыть</span> буфер <br />обмена</h1>
-            <h2>Win+V</h2>
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName"><span class="Q_TextSelection">Открыть</span> буфер обмена</h1>
+            <h2 class="A_CardKey">Win+V</h2>
           </div>
         </a>
         <a href="about.html">
-          <div class="about item">
-            <h1><span>Прочитайте</span> про авторов проекта</h1>
-            <h2>О проекте</h2>
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName"><span class="Q_TextSelection">Прочитайте</span> про авторов проекта</h1>
+            <h2 class="A_CardKey">О проекте</h2>
           </div>
         </a>
         <a href="./shortcuts/cmd-h.html">
-          <div class="hide item">
-            <h1><span>Скрытие</span> открытой <span>программы</span></h1>
-            <h2>CMD+H</h2>
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName"><span class="Q_TextSelection">Скрытие</span> открытой программы</h1>
+            <h2 class="A_CardKey">CMD+H</h2>
           </div>
         </a>
         <a href="./shortcuts/alt-tab.html">
-          <div class="switch item">
-            <h1><span>Переключение</span> между открытыми <span>приложениями</span></h1>
-            <h2>Alt+Tab</h2>
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName"><span class="Q_TextSelection">Переключение</span> между открытыми приложениями</h1>
+            <h2 class="A_CardKey">Alt+Tab</h2>
           </div>
         </a>
         <a href="selections.html">
-          <div class="selections item">
-            <h1>Различные <span>подборки сочетаний</span> клавиш</h1>
-            <h2>Подборки</h2>
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName">Различные <span class="Q_TextSelection">подборки</span> сочетаний клавиш</h1>
+            <h2 class="A_CardKey">Подборки</h2>
           </div>
         </a>
         <a href="./shortcuts/cmd-z.html">
-          <div class="undo item">
-            <h1><span>Отмена</span> последнего выполненного <span>действия</span></h1>
-            <h2>Cmd+Z</h2>
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName"><span class="Q_TextSelection">Отмена</span> последнего выполненного действия</h1>
+            <h2 class="A_CardKey">Cmd+Z</h2>
           </div>
         </a>
         <a href="styleguide.html">
-          <div class="design item">
-            <h1><span>Узнайте</span> обо всех тонкостях нашей <span>дизайн-системы</span></h1>
-            <h2>Стайлгайд</h2>
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName">Узнайте обо всех тонкостях нашей <span class="Q_TextSelection">дизайн-системы</span></h1>
+            <h2 class="A_CardKey">Стайлгайд</h2>
           </div>
         </a>
       </div>
-      <div class="title-unique">
-        <h4>Почему именно мы?</h4>
-        <h5 class="element">Всё по полочкам</h5>
-        <h5 class="element">Удобный поиск</h5>
-        <h5 class="element">Единая система</h5>
-        <h5 class="element">Узкая специализация</h5>
-        <h5 class="element">Много программ</h5>
+      <div class="M_BlockUnique">
+        <h1 class="A_TextMainH1">Почему именно мы?</h1>
+        <h2 class="A_TextUnique">Всё по полочкам</h2>
+        <h2 class="A_TextUnique">Удобный поиск</h2>
+        <h2 class="A_TextUnique">Единая система</h2>
+        <h2 class="A_TextUnique">Узкая специализация</h2>
+        <h2 class="A_TextUnique">Много программ</h2>
       </div>
-      <div class="title-who">
-        <h4>Кому подойдёт этот сервис?</h4>
-        <h5>Всем тем, кто часто сталкиваются<br />с&nbsp;монотонной работой за&nbsp;компьютером<br />и&nbsp;хочет ее&nbsp;<b>УСКОРИТЬ</b></h5>
+      <div class="M_BlockWho">
+        <h4 class="A_TextMainH1">Кому подойдёт этот сервис?</h4>
+        <h5 class="A_TextMainH2">
+          Всем тем, кто часто сталкиваются <br />
+          с&nbsp;монотонной работой за&nbsp;компьютером<br />и&nbsp;хочет ее&nbsp;<span class="Q_TextMainSelection">УСКОРИТЬ</span>
+        </h5>
+        <img class="A_ImgWho" src="images/about/who.svg" alt="main-artwork" />
       </div>
-      <div class="img-who">
-        <img src="images/about/who.svg" alt="main-artwork" />
-      </div>
-      <div class="mail-index">
-        <div class="mail-text-index">
-          <h4>Узнай о запуске <b>HOT KEYS!</b></h4>
-          <h5>
-            HOT KEYS — это архив полезных сочетаний клавиш.<br />
-            Узнать подробнее можно во вкладке
-            <a href="about.html">
-              <b>«о проекте»</b>
-            </a>
-            <br /><br />
-            Отправь e-mail и участвуй в бета-тесте!
-          </h5>
-        </div>
-
-        <emailform></emailform>
+      <div class="S_BlockMail">
+        <h1 class="A_TextMainH1">Узнай о запуске <span class="Q_TextFormSelection">HOT KEYS!</span></h1>
+        <form class="M_Form" id="M_Form" action="https://formspree.io/f/mzbwvwen" method="POST">
+          <input class="A_FormInput" type="email" name="email" placeholder="e-mail" />
+          <p id="A_FormDoneText" class="A_TextMainH1"></p>
+        </form>
+        <script type="text/javascript">
+          var form = document.getElementById('M_Form');
+          async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById('A_FormDoneText');
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+              method: form.method,
+              body: data,
+              headers: {
+                Accept: 'application/json',
+              },
+            })
+              .then((response) => {
+                if (response.ok) {
+                  status.innerHTML = 'E-MAIL ОТПРАВЛЕН';
+                  form.reset();
+                } else {
+                  response.json().then((data) => {
+                    if (Object.hasOwn(data, 'errors')) {
+                      status.innerHTML = data['errors'].map((error) => error['message']).join(', ');
+                    } else {
+                      status.innerHTML = 'ошибка';
+                    }
+                  });
+                }
+              })
+              .catch((error) => {
+                status.innerHTML = 'ошибка';
+              });
+          }
+          form.addEventListener('submit', handleSubmit);
+        </script>
       </div>
       <footer></footer>
     </div>

@@ -10,16 +10,12 @@ body {
   background-color: var(--black);
   font-family: 'IBM-PlexSans', sans-serif;
   color: var(--white);
+
+  a {
+    color: white;
+  }
 }
 
 .C_Wrapper {
   margin: 0 2.5vw;
-}
-
-.Q_TextSelection {
-  color: var(--green);
-
-  &.Fancy {
-    font-style: italic;
-  }
 }

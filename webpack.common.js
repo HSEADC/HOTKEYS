@@ -230,15 +230,6 @@ module.exports = {
 
     new HtmlWebpackPartialsPlugin([
       {
-        path: path.join(__dirname, './src/partials/form.html'),
-        location: 'emailform',
-        template_filename: '*',
-        priority: 'replace',
-      },
-    ]),
-
-    new HtmlWebpackPartialsPlugin([
-      {
         path: path.join(__dirname, './src/partials/hotkeys.html'),
         location: 'hotkeys',
         template_filename: '*',

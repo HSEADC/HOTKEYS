@@ -1,787 +1,128 @@
-html.landing {
-  scroll-behavior: smooth;
-  scroll-padding-block-start: 2.5vw;
-}
+.M_ShortcutValue {
+  margin: 4vw auto 8vw auto;
+  font-size: 20vw;
+  text-align: center;
+  animation: modify-shortcut-style 3.5s infinite;
+  // animation-play-state: running;
+  // cursor: help;
 
-body.landing {
-  background-color: var(--black);
-  font-family: 'IBM-PlexSans', sans-serif;
-  font-style: normal;
-
-  & a {
-    color: var(--white);
+  &:hover {
+    // animation-play-state: paused;
+    color: var(--green);
   }
 
-  & h4 {
-    color: var(--white);
-    font-size: 1.15vw;
-    font-weight: 200;
-    text-align: center;
-  }
-
-  & h5 {
-    color: var(--white);
-    font-size: 2.5vw;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 0.1vw;
-
-    b {
-      font-size: 3vw;
-      font-weight: 450;
-      font-style: italic;
-      color: var(--green);
-    }
-  }
-
-  .header {
-    margin: 2.5vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    & {
-      display: flex;
-      align-items: center;
-
-      // .hotkeys {
-      //   margin-top: 0.4vw;
-      // }
-    }
-  }
-
-  .block-shortcut {
-    color: var(--white);
-
-    & div {
-      margin: 4vw auto 8vw auto;
-      font-size: 20vw;
-      text-align: center;
-      animation: change-text 3.5s infinite;
-      // animation-play-state: running;
-      cursor: help;
-
-      &:hover {
-        // animation-play-state: paused;
-        color: var(--green);
-      }
+  @keyframes modify-shortcut-style {
+    10% {
+      font-weight: 300;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
     }
 
-    @keyframes change-text {
-      10% {
-        font-weight: 300;
-        font-style: normal;
-        text-decoration: none;
-        text-transform: none;
-      }
-
-      20% {
-        font-weight: 500;
-        font-style: italic;
-        text-decoration: underline;
-        text-decoration-thickness: 0.6rem;
-        text-underline-offset: 2rem;
-        text-transform: capitalize;
-      }
-
-      30% {
-        font-weight: 200;
-        font-style: normal;
-        text-decoration-line: line-through;
-        text-decoration-thickness: 0.7rem;
-        text-transform: none;
-      }
-
-      40% {
-        font-weight: 600;
-        font-style: italic;
-        text-decoration: none;
-        text-transform: lowercase;
-      }
-
-      50% {
-        font-weight: 100;
-        font-style: italic;
-        text-decoration-line: line-through;
-        text-decoration-thickness: 0.7rem;
-        text-transform: none;
-      }
-
-      60% {
-        font-weight: 700;
-        font-style: normal;
-        text-decoration: none;
-        text-transform: lowercase;
-      }
-
-      70% {
-        font-weight: 400;
-        font-style: italic;
-        text-decoration: underline;
-        text-decoration-thickness: 0.7rem;
-        text-underline-offset: 3rem;
-        text-transform: capitalize;
-      }
-    }
-  }
-
-  .block-arrow {
-    margin: 0 auto;
-
-    a {
-      svg {
-        display: block;
-        margin: 0 auto;
-        width: 1vw;
-        height: 1.5vw;
-        overflow: visible;
-
-        #arrow {
-          fill: var(--white);
-
-          &:hover {
-            fill: var(--green);
-          }
-        }
-      }
-    }
-  }
-
-  .title-main {
-    padding: 22.5vw 0 3.5vw 0;
-    margin: 0 auto;
-
-    & h5 {
-      padding-top: 2.5vw;
-      line-height: 135%;
-    }
-  }
-
-  .title-mission {
-    padding: 22.5vw 0 27.5vw 0;
-    margin: 0 auto;
-
-    & h5 {
-      padding-top: 2.5vw;
-      line-height: 115%;
-    }
-  }
-
-  .title-dev {
-    padding: 1vw 0 4vw 0;
-    margin: 0 auto;
-  }
-
-  .items-dev {
-    padding-top: 1vw;
-    margin: 0 auto;
-    width: 94vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
-    column-gap: 1vw;
-    row-gap: 1vw;
-
-    & h1 {
-      font-size: 1.72vw;
-      line-height: 110%;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: var(--white);
-
-      & span {
-        color: var(--green);
-      }
-    }
-
-    & h2 {
-      font-size: 1.15vw;
-      line-height: 100%;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: var(--white);
-    }
-
-    .item {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 1.25vw;
-      min-height: 300px;
-      min-width: 435px;
-      border-radius: 5px;
-      font-size: 1.5rem;
+    20% {
       font-weight: 500;
-      cursor: help;
-      border: 1.5px solid var(--grey);
-
-      &:hover {
-        background-color: var(--black2);
-        border: 1.5px solid var(--green);
-
-        h1,
-        h2 {
-          font-style: italic;
-        }
-
-        h2 {
-          color: var(--green);
-          // font-weight: 700;
-        }
-      }
-
-      &:active {
-        background-color: var(--gray);
-        box-shadow: 0px 1px 50px rgba(203, 251, 69, 0.4);
-      }
-    }
-  }
-
-  .title-unique {
-    padding: 22.5vw 0 27.5vw 0;
-    margin: 0 auto;
-
-    .element {
-      font-size: 3.13vw;
-      padding-top: 2.5vw;
-      line-height: 100%;
-      color: var(--white);
       font-style: italic;
-      text-transform: uppercase;
-
-      opacity: 0;
-      transform: translateX(-50%);
+      text-decoration: underline;
+      text-decoration-thickness: 0.6rem;
+      text-underline-offset: 2rem;
+      text-transform: capitalize;
     }
 
-    .element._show {
-      opacity: 1;
-      transition: all 1s, opacity 0.1s;
-      transform: translateX(0%);
-
-      color: var(--green);
-      font-style: italic;
-    }
-  }
-
-  .title-who {
-    padding: 1vw 0 3.5vw 0;
-    margin: 0 auto;
-
-    & h4 {
-      padding-top: 2.5vw;
-      line-height: 1.5vw;
-
-      & span {
-        font-weight: 450;
-        font-style: italic;
-        color: var(--green);
-        text-transform: uppercase;
-
-        // &:hover {
-        //    color: var(--grey);
-        // }
-      }
-    }
-
-    & h5 {
-      padding-top: 2vw;
-      line-height: 115%;
-    }
-  }
-
-  .img-who {
-    margin: 0 auto;
-    max-width: 74.5vw;
-
-    & img {
-      width: 100%;
-    }
-
-    // &:hover {
-    //    transition: 0.5s ease-in-out;
-    //    transform: scale(1.01);
-    // }
-  }
-
-  .mail-index {
-    padding: 14vw 5.5vw 10vw 5.5vw;
-
-    .mail-text-index {
-      padding-top: 8vw;
-      padding-bottom: 6vw;
-
-      & h4 {
-        font-size: 4vw;
-        text-align: center;
-        font-weight: 400;
-        color: var(--white);
-
-        & b {
-          color: var(--green);
-          font-style: italic;
-
-          & :hover {
-            text-decoration: underline;
-          }
-        }
-      }
-
-      & h5 {
-        padding-top: 3%;
-        font-size: 1.5vw;
-        line-height: 1.8vw;
-        text-align: center;
-        font-weight: 300;
-        color: var(--white);
-
-        & b {
-          font-size: inherit;
-          font-weight: 300;
-          font-style: italic;
-          text-transform: uppercase;
-          color: var(--green);
-
-          & :hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-
-    .mail-input-index {
-      margin: 0 auto;
-      width: 25vw;
-      position: relative;
-    }
-
-    .email-form {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-
-      .input-email {
-        color: var(--white);
-        width: 25vw;
-        height: 2.6vw;
-        border: 1.5px solid var(--grey);
-        border-radius: 5px;
-        background-color: var(--black);
-      }
-
-      input[placeholder] {
-        padding-left: 0.8vw;
-        font-size: 1.5vw;
-      }
-
-      .input-email::-webkit-input-placeholder {
-        color: var(--grey);
-      }
-
-      button {
-        width: 2.03vw;
-        height: 2.03vw;
-        outline: none;
-        border: 0;
-        background: transparent;
-        position: absolute;
-        top: 0.325vw;
-        right: 0.3vw;
-      }
-
-      #email-form-done {
-        position: absolute;
-        padding-top: 3%;
-        margin: 0.5vw 8.3vw;
-        font-size: 1vw;
-        font-style: normal;
-        font-weight: 300;
-        color: var(--green);
-      }
-    }
-  }
-
-  .footer {
-    padding: 2.5vw 0 3.5vw 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body.landing {
-    & h4 {
-      color: var(--white);
-      font-size: 3.5vw;
+    30% {
       font-weight: 200;
-      text-align: center;
-    }
-    & h5 {
-      color: var(--white);
-      font-size: 4vw;
-      font-weight: 500;
-      text-align: center;
-      letter-spacing: 0.1vw;
-
-      & b {
-        font-size: 4vw;
-        font-weight: 450;
-        font-style: italic;
-        color: var(--green);
-
-        &:hover {
-          color: var(--grey);
-        }
-      }
+      font-style: normal;
+      text-decoration-line: line-through;
+      text-decoration-thickness: 0.7rem;
+      text-transform: none;
     }
 
-    .header {
-      margin: 2.5vw;
-      flex-direction: column;
-      margin: 0 auto;
-      margin-bottom: 5vw;
-
-      .hotkeys {
-        @include itemGrid;
-        margin: 7vw auto;
-      }
+    40% {
+      font-weight: 600;
+      font-style: italic;
+      text-decoration: none;
+      text-transform: lowercase;
     }
 
-    .block-shortcut {
-      color: var(--white);
-
-      & div {
-        margin: 10vw auto 10vw auto;
-        font-size: 25vw;
-        text-align: center;
-        animation: change-text 3.5s infinite;
-        // animation-play-state: running;
-        cursor: help;
-
-        &:hover {
-          // animation-play-state: paused;
-          color: var(--green);
-        }
-      }
+    50% {
+      font-weight: 100;
+      font-style: italic;
+      text-decoration-line: line-through;
+      text-decoration-thickness: 0.7rem;
+      text-transform: none;
     }
 
-    .block-arrow {
-      margin: 0 auto;
-
-      a {
-        svg {
-          margin: 0 49.5%;
-          width: 0.94vw;
-          height: 1.56vw;
-
-          #arrow {
-            fill: var(--white);
-
-            &:hover {
-              fill: var(--green);
-            }
-          }
-        }
-      }
-
-      // & h2 {
-      //    font-size: 1.3vw;
-      //    line-height: 1vw;
-      //    font-weight: 400;
-      //    color: var(--white);
-      //    text-align: center;
-
-      //    &:hover {
-      //       color: var(--green);
-      //       text-decoration: underline;
-      //    }
-      // }
+    60% {
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: lowercase;
     }
 
-    .title-main {
-      padding: 25vw 0 3.5vw 0;
-      margin: 0 auto;
-
-      & h5 {
-        padding-top: 2.5vw;
-        line-height: 135%;
-      }
-    }
-
-    .title-mission {
-      padding: 25vw 0 27.5vw 0;
-      margin: 0 auto;
-
-      & h5 {
-        padding-top: 2.5vw;
-        line-height: 115%;
-      }
-    }
-
-    .title-dev {
-      padding: 1vw 0 10vw 0;
-      margin: 0 auto;
-    }
-
-    .items-dev {
-      padding-top: 1vw;
-      margin: 0 auto;
-      width: 94vw;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-      column-gap: 2vw;
-      row-gap: 2vw;
-
-      & h2 {
-        margin: 5% 0 1% 6%;
-        font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
-        line-height: 120%;
-        font-weight: 400;
-      }
-
-      & h1 {
-        margin: 5% 0 1% 6%;
-        font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
-        line-height: 100%;
-        font-weight: 500;
-      }
-
-      .item {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        min-height: 190px;
-        min-width: 235px;
-        border-radius: 5px;
-        font-weight: 500;
-        cursor: help;
-
-        &:hover {
-          color: var(--white)-hov;
-          background-color: var(--black)-hov;
-          border: 1.5px solid var(--black)-hov;
-        }
-      }
-
-      .shortcuts,
-      .about,
-      .selections,
-      .design {
-        color: var(--black);
-        background-color: var(--green);
-      }
-
-      .clipboard,
-      .hide,
-      .switch,
-      .undo {
-        background-color: transparent;
-        border: 1.5px solid var(--grey);
-
-        & h1 {
-          color: white;
-        }
-
-        & h2 {
-          color: gray;
-        }
-      }
-    }
-
-    .title-unique {
-      padding: 25vw 0 27.5vw 0;
-      margin: 0 auto;
-
-      .element {
-        font-size: 3.13vw;
-        padding-top: 2.5vw;
-        line-height: 100%;
-        color: var(--white);
-        font-style: italic;
-        text-transform: uppercase;
-
-        opacity: 0;
-        transform: translateX(-50%);
-      }
-
-      .element._show {
-        opacity: 1;
-        transition: all 1s, opacity 0.1s;
-        transform: translateX(0%);
-
-        color: var(--green);
-        font-style: italic;
-      }
-    }
-
-    .title-who {
-      padding: 1vw 0 3.5vw 0;
-      margin: 0 auto;
-
-      & h4 {
-        padding-top: 2.5vw;
-        line-height: 1.5vw;
-
-        & span {
-          font-weight: 450;
-          font-style: italic;
-          color: var(--green);
-          text-transform: uppercase;
-
-          // &:hover {
-          //    color: var(--grey);
-          // }
-        }
-      }
-
-      & h5 {
-        padding-top: 2vw;
-        line-height: 115%;
-      }
-    }
-
-    .img-who {
-      margin: 0 auto;
-      max-width: 74.5vw;
-
-      & img {
-        width: 100%;
-      }
-
-      // &:hover {
-      //    transition: 0.5s ease-in-out;
-      //    transform: scale(1.01);
-      // }
-    }
-
-    .mail-index {
-      padding: 0 5.5vw;
-
-      .mail-text-index {
-        padding-top: 10vw;
-        padding-bottom: 15vw;
-
-        & h4 {
-          font-size: 6.9vw;
-          text-align: center;
-          font-weight: 400;
-          color: var(--white);
-
-          & b {
-            color: var(--green);
-            & :hover {
-              text-decoration: underline;
-            }
-          }
-        }
-
-        & h5 {
-          padding-top: 7vw;
-          font-size: 3.5vw;
-          line-height: 4.5vw;
-          text-align: center;
-          font-weight: 300;
-          color: var(--white);
-
-          & b {
-            color: var(--green);
-            & :hover {
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-
-      .mail-input-index {
-        margin: 0 auto;
-        width: 50vw;
-        position: relative;
-      }
-
-      .email-form {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-
-        .input-email {
-          color: var(--white);
-          width: 50vw;
-          height: 5.6vw;
-          border: 1.5px solid var(--grey);
-          border-radius: 2px;
-          background-color: var(--black);
-        }
-
-        input[placeholder] {
-          padding-left: 1vw;
-          font-size: 3.5vw;
-        }
-
-        .input-email::-webkit-input-placeholder {
-          color: var(--grey);
-        }
-
-        button {
-          width: 4.3vw;
-          height: 4.3vw;
-          outline: none;
-          border: 0;
-          background: transparent;
-          position: absolute;
-          top: 0.7vw;
-          right: 0.7vw;
-        }
-
-        #email-form-done {
-          position: absolute;
-          padding-top: 3%;
-          margin: 0.5vw 11.5vw;
-          font-size: 1vw;
-          font-style: normal;
-          font-weight: 300;
-          color: var(--green);
-        }
-      }
-    }
-
-    .footer {
-      padding: 20vw 0 3.5vw 0;
+    70% {
+      font-weight: 400;
+      font-style: italic;
+      text-decoration: underline;
+      text-decoration-thickness: 0.7rem;
+      text-underline-offset: 3rem;
+      text-transform: capitalize;
     }
   }
 }
 
-@media screen and (max-width: 420px) {
-  body.landing {
-    .mail-index {
-      .email-form {
-        button {
-          width: 4vw;
-          height: 4vw;
-          outline: none;
-          border: 0;
-          background: transparent;
-          position: absolute;
-          top: -0.4vw;
-          right: 0.8vw;
-        }
+.M_TargetArrow {
+  margin: 0 auto;
+
+  .A_ArrowSVG {
+    display: block;
+    margin: 0 auto;
+    width: 1vw;
+    overflow: visible;
+
+    .Q_ArrowVector {
+      fill: var(--white);
+
+      &:hover {
+        fill: var(--green);
       }
     }
   }
 }
 
-@media screen and (max-width: 360px) {
-  body.landing {
-    .mail-index {
-      .email-form {
-        button {
-          width: 4vw;
-          height: 4vw;
-          outline: none;
-          border: 0;
-          background: transparent;
-          position: absolute;
-          top: -0.2vw;
-          right: 0.8vw;
-        }
-      }
-    }
+.M_BlockMain {
+  margin: 22.5vw 0 3.5vw 0;
+}
+
+.M_BlockMission {
+  margin: 22.5vw 0 27.5vw 0;
+}
+
+.M_BlockDev {
+  margin: 1vw 0 4vw 0;
+}
+
+.M_BlockUnique {
+  margin: 22.5vw 0 27.5vw 0;
+}
+
+.M_BlockWho {
+  margin: 1vw 0 3.5vw 0;
+
+  .A_TextMainH1 {
+    padding: 2.5vw 0 0.5vw;
   }
+
+  .A_TextMainH2 {
+    padding-top: 2vw;
+    line-height: 115%;
+  }
+
+  .A_ImgWho {
+    margin: 3.5vw auto 0;
+    width: 74.5vw;
+    display: block;
+  }
+}
+
+.C_Footer {
+  justify-content: center;
 }
