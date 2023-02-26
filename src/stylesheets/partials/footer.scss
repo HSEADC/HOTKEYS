@@ -5,7 +5,7 @@
 
   .M_FooterUp h3 {
     @include itemGrid;
-    @include itemConfigg(6.51vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
+    @include itemConfigg(7vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
 
     &:hover {
       @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
