@@ -1,8 +1,5 @@
 html {
-  &.Shortcuts,
-  &.Selections {
-    scroll-padding-block-start: 2.5vw;
-  }
+  scroll-padding-block-start: 2.5vw;
   scroll-behavior: smooth;
 }
 
