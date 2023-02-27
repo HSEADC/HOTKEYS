@@ -13,9 +13,9 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function onEntry(entry) {
   entry.forEach(function (change) {
     if (change.isIntersecting) {
-      change.target.classList.add('_show');
+      change.target.classList.add('_Show');
     } else {
-      change.target.classList.remove('_show');
+      change.target.classList.remove('_Show');
     }
   });
 }
@@ -24,7 +24,7 @@ var options = {
   threshold: [0.5]
 };
 var observer = new IntersectionObserver(onEntry, options);
-var elements = document.querySelectorAll('.element');
+var elements = document.querySelectorAll('.A_TextUnique');
 
 var _iterator = _createForOfIteratorHelper(elements),
     _step;
@@ -46,18 +46,14 @@ try {
 /***/ (() => {
 
 var shortcuts = ['ctrl+f', 'cmd+c', 'ctrl+v', 'cmd+a', 'cmd+z', 'cmd+s', 'cmd+d'];
-var textElement = document.querySelector('.shortcut-text');
+var textElement = document.querySelector('.M_ShortcutValue');
 
 function changeText(idx) {
   textElement.innerText = shortcuts[idx];
+  var nextIdx = idx + 1 === shortcuts.length ? 0 : idx + 1;
   setTimeout(function () {
-    if (idx + 1 === shortcuts.length) {
-      changeText(0);
-      return;
-    }
-
-    changeText(idx + 1);
-  }, 500); // 1 second
+    return changeText(nextIdx);
+  }, 500);
 }
 
 changeText(0);
