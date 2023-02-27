@@ -1,137 +1,57 @@
-html.styleguide {
-  scroll-behavior: smooth;
-  scroll-padding-block-start: 2.5vw;
+.M_BlockStyleMain {
+  margin-top: 18vw;
+
+  .A_TextMainH1 {
+    padding-top: 0.75vw;
+
+    .Q_TergetLinks {
+      &:hover {
+        color: var(--green);
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
-body.styleguide {
-  background-color: var(--black);
-  font-family: 'IBM-PlexSans', sans-serif;
-  font-style: normal;
-
-  & a {
-    color: var(--white);
+.M_TargetArrow {
+  &.Styleguide {
+    display: block;
+    margin-top: 17vw;
   }
+}
 
-  & h4 {
-    color: var(--white);
-    font-size: 1.15vw;
-    font-weight: 200;
-    text-align: center;
-    letter-spacing: -0.03em;
-    line-height: 120%;
-  }
+.M_BlockStyleTone {
+  margin-top: 25vw;
+}
 
-  & h5 {
-    color: var(--white);
-    font-size: 3.13vw;
-    font-weight: 500;
+.M_BlockStyleLogo {
+  margin-top: 25vw;
+
+  .O_Logo {
+    padding-top: 2vw;
     text-align: center;
 
-    b {
-      font-size: 3.13vw;
-      font-weight: 450;
-      font-style: italic;
-      color: var(--green);
+    .M_LogoSVG {
+      width: 20vw;
     }
   }
 
-  .header {
-    margin: 2.5vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .A_ImgDetails {
+    z-index: 1;
+    width: 8.5vw;
+    margin-top: 2vw;
+    margin-left: 57vw;
+  }
+}
 
-    .hotkeys {
-      margin-top: 0.4vw;
-    }
+.M_BlockStyleColors {
+  margin-top: 25vw;
+
+  .A_TextMainH1 {
+    padding-top: 1vw;
   }
 
-  .title-main {
-    padding-top: 15vw;
-
-    h4 {
-      padding-top: 1vw;
-
-      a {
-        &:hover {
-          color: var(--green);
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  .block-arrow {
-    margin-top: 16vw;
-
-    a {
-      svg {
-        margin: 0 49.5%;
-        width: 0.94vw;
-        height: 1.56vw;
-
-        #arrow {
-          fill: var(--white);
-
-          &:hover {
-            fill: var(--green);
-          }
-        }
-      }
-    }
-  }
-
-  .title-tone {
-    margin-top: 25vw;
-
-    h4 {
-      padding-top: 1vw;
-
-      a {
-        &:hover {
-          color: var(--green);
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  .block-logo {
-    margin-top: 25vw;
-
-    div {
-      padding-top: 3vw;
-      text-align: center;
-
-      svg {
-        width: 20vw;
-      }
-    }
-
-    img {
-      z-index: 1;
-      width: 8.5vw;
-      margin-top: 2vw;
-      margin-left: 57vw;
-    }
-  }
-
-  .title-colors {
-    margin-top: 25vw;
-
-    h4 {
-      padding-top: 1vw;
-
-      a {
-        &:hover {
-          color: var(--green);
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  .block-colors {
+  .C_Colors {
     padding-top: 7vw;
     margin: 0 auto;
     display: flex;
@@ -140,182 +60,75 @@ body.styleguide {
     justify-content: center;
     gap: 6vw;
 
-    img {
+    .A_ColorsIMG {
       width: 13vw;
     }
   }
-
-  .title-system {
-    margin-top: 25vw;
-
-    h5 {
-      font-size: 2.71vw;
-      padding-top: 5vw;
-      line-height: 110%;
-
-      b {
-        line-height: 135%;
-      }
-    }
-  }
-
-  .img-system {
-    margin: 20vw auto;
-    max-width: 55vw;
-
-    & img {
-      width: 100%;
-    }
-
-    // &:hover {
-    //    transition: 0.5s ease-in-out;
-    //    transform: scale(1.01);
-    // }
-  }
-
-  .img-items {
-    margin: 20vw auto;
-    max-width: 90vw;
-
-    & img {
-      width: 100%;
-    }
-
-    // &:hover {
-    //    transition: 0.5s ease-in-out;
-    //    transform: scale(1.01);
-    // }
-  }
-
-  .title-mockup {
-    margin-top: 20vw;
-  }
-
-  .mockup-cap {
-    margin: 10vw auto;
-    max-width: 35vw;
-
-    h5 {
-      color: var(--green);
-    }
-
-    & img {
-      width: 100%;
-    }
-
-    // &:hover {
-    //    transition: 0.5s ease-in-out;
-    //    transform: scale(1.01);
-    // }
-  }
-
-  .mockup-tshirt {
-    margin: 15vw auto;
-    max-width: 45vw;
-
-    h5 {
-      color: var(--green);
-    }
-
-    & img {
-      width: 100%;
-    }
-
-    // &:hover {
-    //    transition: 0.5s ease-in-out;
-    //    transform: scale(1.01);
-    // }
-  }
-
-  .mockup-stikers {
-    margin: 15vw auto;
-    max-width: 50vw;
-
-    h5 {
-      color: var(--green);
-      margin-bottom: 3vw;
-    }
-
-    & img {
-      transform: translate(50px, 0px);
-      width: 100%;
-    }
-
-    // &:hover {
-    //    transition: 0.5s ease-in-out;
-    //    transform: scale(1.01);
-    // }
-  }
-
-  .mockup-website {
-    margin: 10vw auto 5vw auto;
-    max-width: 94.5vw;
-
-    h5 {
-      color: var(--green);
-      margin-bottom: 3vw;
-    }
-
-    & img {
-      width: 100%;
-    }
-
-    // &:hover {
-    //    transition: 0.5s ease-in-out;
-    //    transform: scale(1.01);
-    // }
-  }
-
-  .title-finish {
-    margin-top: 1vw;
-  }
-
-  .footer {
-    padding: 2.5vw 0 3.5vw 0;
-  }
 }
 
-@media screen and (max-width: 768px) {
-  body.styleguide {
-    & h4 {
-      color: var(--white);
-      font-size: 3.5vw;
-      font-weight: 200;
-      text-align: center;
+.M_BlockStyleSystem {
+  margin-top: 25vw;
+}
+
+.A_FontsIMG {
+  margin: 20vw auto;
+  max-width: 55vw;
+  display: block;
+}
+
+.A_DesignIMG {
+  margin: 20vw auto;
+  max-width: 90vw;
+  display: block;
+}
+
+.S_Mockups {
+  .A_TextMainH1 {
+    .Q_TextMainSelection {
+      font-size: inherit;
+      font-style: normal;
     }
-    & h5 {
-      color: var(--white);
-      font-size: 4vw;
-      font-weight: 500;
-      text-align: center;
-      letter-spacing: 0.1vw;
+  }
 
-      & b {
-        font-size: 4vw;
-        font-weight: 450;
-        font-style: italic;
-        color: var(--green);
+  .C_MockupItems {
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vw;
+    align-items: center;
 
-        &:hover {
-          color: var(--grey);
+    .M_Mockup {
+      &.Cap {
+        .A_TextMainH1 {
+          margin-bottom: -2vw;
+        }
+        .A_CapIMG {
+          max-width: 45vw;
         }
       }
-    }
-
-    .header {
-      margin: 2.5vw;
-      flex-direction: column;
-      margin: 0 auto;
-      margin-bottom: 5vw;
-
-      .hotkeys {
-        @include itemGrid;
-        margin: 7vw auto;
+      &.Tshirt {
+        .A_TextMainH1 {
+          margin-bottom: -2vw;
+        }
+        .A_TshirtIMG {
+          max-width: 55vw;
+        }
       }
-    }
-
-    .footer {
-      padding: 2.5vw 0 3.5vw 0;
+      &.Stikers {
+        .A_StikersIMG {
+          max-width: 55vw;
+          transform: translate(5vw, 0px);
+        }
+      }
+      &.Website {
+        .A_TextMainH1 {
+          margin-bottom: 2vw;
+        }
+        margin-bottom: 3vw;
+        .A_WebsiteIMG {
+          max-width: 94.5vw;
+        }
+      }
     }
   }
 }

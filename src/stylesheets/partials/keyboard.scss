@@ -1,0 +1,18 @@
+.O_Keyboard {
+  margin: 3vw auto;
+  display: grid;
+  place-items: center;
+
+  .A_KeyboardSVG {
+    width: 77.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      overflow: visible;
+      width: 95vw;
+    }
+  }
+}

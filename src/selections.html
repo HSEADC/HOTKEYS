@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr" class="shortcuts">
+<html lang="ru" dir="ltr" class="Selections">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="mainfest" href="site.webmanifest" />
+
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml" />
     <title>HOT KEYS — подборки шорткатов</title>
@@ -32,58 +32,62 @@
     />
     <meta property="twitter:image" content="https://hotkeys.adc.ac/share/seo.png" />
   </head>
-  <body class="selections">
-    <div id="up-target"></div>
-    <div class="header">
-      <a href="./">
+  <body>
+    <div id="A_UpTarget"></div>
+    <div class="S_Header Selections">
+      <a class="W_LinkLogo" href="./">
         <hotkeys></hotkeys>
       </a>
       <menu></menu>
     </div>
-    <div class="wrapper">
-      <div class="block-search">
-        <form class="search">
-          <div class="search-bar">
-            <input class="search-input" type="text" placeholder="Поиск подборок" type="search" />
-            <button type="submit">Найти</button>
-          </div>
-        </form>
-      </div>
-      <div class="items-selections">
-        <a href="shortcuts.html">
-          <div class="item">
-            <h1><span>Полезные шорткаты</span> для дизайнера</h1>
-            <h2>Adobe Illustrator + Figma</h2>
-          </div>
-        </a>
-        <a href="shortcuts.html">
-          <div class="item">
-            <h1><span>Полезные шорткаты</span> для программиста</h1>
-            <h2>VS CODE + Chrome Dev Tools</h2>
+    <div class="C_Wrapper">
+      <form class="S_SearchForm">
+        <div class="C_SearchBar">
+          <input class="M_SearchInput" type="text" placeholder="Поиск шорткатов" type="search" />
+          <button class="M_SearchButton" type="submit">
+            <svg class="A_ButtonSVG" xmlns="http://www.w3.org/2000/svg" width="23" height="24" fill="none">
+              <path class="Q_ButtonIcon" fill-rule="evenodd" d="M7.5 8.5a7 7 0 1 0 14 0 7 7 0 0 0-14 0Zm1.355 6.355a8.5 8.5 0 1 0-.71-.71L8 14l-8 8 1.06 1.06 8-8-.205-.205Z" clip-rule="evenodd" />
+              <path class="Q_ButtonIcon" fill-opacity=".2" fill-rule="evenodd" d="M7.5 8.5a7 7 0 1 0 14 0 7 7 0 0 0-14 0Zm1.355 6.355a8.5 8.5 0 1 0-.71-.71L8 14l-8 8 1.06 1.06 8-8-.205-.205Z" clip-rule="evenodd" />
+              <path class="Q_ButtonIcon" fill-opacity=".2" fill-rule="evenodd" d="M7.5 8.5a7 7 0 1 0 14 0 7 7 0 0 0-14 0Zm1.355 6.355a8.5 8.5 0 1 0-.71-.71L8 14l-8 8 1.06 1.06 8-8-.205-.205Z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </form>
+      <div class="S_Selections">
+        <a href="shortcuts/switch-between-programs.html">
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName"><span class="Q_TextSelection">Полезные</span> шорткаты для дизайнера</h1>
+            <h2 class="A_CardKey">Adobe Illustrator + Figma</h2>
           </div>
         </a>
-        <a href="shortcuts.html">
-          <div class="item">
-            <h1><span>Топ 10</span> сочетаний клавиш для <span>юзеров пк</span></h1>
-            <h2>Легкость + Полезность</h2>
+        <a href="shortcuts/hide-open-program.html">
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName"><span class="Q_TextSelection">Полезные</span> шорткаты для программиста</h1>
+            <h2 class="A_CardKey">VS CODE + Chrome Dev Tools</h2>
           </div>
         </a>
-        <a href="shortcuts.html">
-          <div class="item">
-            <h1><span>Топ 10</span> сочетаний клавиш для <span>юзеров пк</span></h1>
-            <h2>Простота + Скорость</h2>
+        <a href="shortcuts/minimizing-all-open-windows.html">
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName"><span class="Q_TextSelection">Топ 10</span> сочетаний клавиш для юзеров пк</h1>
+            <h2 class="A_CardKey">Легкость + Полезность</h2>
           </div>
         </a>
-        <a href="shortcuts.html">
-          <div class="item">
-            <h1><span>5 шорткатов</span> для значительного <span>ускорения</span> работы с документами</h1>
-            <h2>Google Docs + MS Office</h2>
+        <a href="shortcuts/undo-last-action.html">
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName"><span class="Q_TextSelection">Топ 10</span> сочетаний клавиш для пользователей пк</h1>
+            <h2 class="A_CardKey">Простота + Скорость</h2>
           </div>
         </a>
-        <a href="shortcuts.html">
-          <div class="item">
-            <h1>Подборка<span> стартовых шорткатов</span> в <span>Figma</span> для начала работы</h1>
-            <h2>Начало работы в Figma</h2>
+        <a href="shortcuts/open-clipboard.html">
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName"><span class="Q_TextSelection">5</span> шоркатов для ускорения работы с документами</h1>
+            <h2 class="A_CardKey">Google Docs + MS Office</h2>
+          </div>
+        </a>
+        <a href="shortcuts/switching-between-running-apps.html">
+          <div class="M_ShortcutCard">
+            <h1 class="A_CardName">Подборка <span class="Q_TextSelection">простых</span> шорткатов для новичка в Figma</h1>
+            <h2 class="A_CardKey">Начало работы в Figma</h2>
           </div>
         </a>
       </div>

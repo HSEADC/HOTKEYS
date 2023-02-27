@@ -1,343 +1,55 @@
-html.shortcuts {
-  scroll-behavior: smooth;
+.S_Shortcuts {
+  padding: 3vw 0 5vw 0;
+  margin: 0 auto;
+  width: 95vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
+  column-gap: 1vw;
+  row-gap: 1vw;
 }
 
-body.shortcuts {
-  background-color: var(--black);
-  font-family: 'IBM-PlexSans', sans-serif;
-  font-style: normal;
+.M_ShortcutCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25vw;
+  min-height: 300px;
+  min-width: 435px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: help;
+  border: 1.5px solid var(--grey);
 
-  a {
-    color: var(--white);
-  }
+  &:hover {
+    background-color: var(--black2);
+    border: 1.5px solid var(--green);
 
-  .S_Header {
-    margin: 2.5vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    .hotkeys {
-      margin-top: 0.4vw;
+    .A_CardName,
+    .A_CardKey {
+      font-style: italic;
     }
 
-    .block-menu {
-      .menu {
-        .items-menu {
-          .shortcuts {
-            & h3 {
-              @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
-              border-radius: 2px;
-            }
-          }
-        }
-      }
+    .A_CardKey {
+      color: var(--green);
     }
   }
 
-  .W_WrapperBlock {
-    margin: 0 2.5vw;
-
-    .S_SearchBar {
-      width: 100%;
-
-      & form {
-        width: 100%;
-
-        .M_SearchLine {
-          position: relative;
-          max-width: 100%;
-
-          & input {
-            width: 100%;
-            height: 3.6vw;
-            border-radius: 5px;
-            background-color: var(--black);
-            color: var(--white);
-            border: 1.5px solid var(--grey);
-            font-size: 1.25vw;
-            font-weight: 500;
-            cursor: help;
-          }
-
-          .A_SearchInput {
-            &:hover {
-              outline: 1.5px solid var(--green);
-            }
-
-            &:focus-visible {
-              outline: 1.5px solid var(--green);
-              box-shadow: 0px 1px 50px rgba(203, 251, 69, 0.4);
-              border-color: transparent;
-            }
-
-            &::-webkit-input-placeholder {
-              color: var(--grey);
-            }
-
-            &[placeholder] {
-              padding-left: 1.3%;
-              font-size: 1.25vw;
-              font-weight: 300;
-            }
-          }
-
-          & button {
-            position: absolute;
-            top: 8%;
-            right: 2%;
-            font-size: 1.25vw;
-            color: transparent;
-            border: none;
-            background-color: transparent;
-          }
-        }
-      }
-    }
-
-    .C_ShortcutCards {
-      padding: 3vw 0 5vw 0;
-      margin: 0 auto;
-      width: 94vw;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
-      column-gap: 1vw;
-      row-gap: 1vw;
-
-      h1.A_ShortcutCardName {
-        font-size: 1.75vw;
-        line-height: 110%;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: var(--white);
-
-        & span {
-          color: var(--green);
-        }
-      }
-
-      h2.A_ShortcutCardKey {
-        font-size: 1.15vw;
-        line-height: 100%;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: var(--white);
-      }
-
-      .M_ShortcutCard {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 1.25vw;
-        min-height: 300px;
-        min-width: 435px;
-        border-radius: 5px;
-        font-size: 1.5rem;
-        font-weight: 500;
-        cursor: help;
-        border: 1.5px solid var(--grey);
-
-        &:hover {
-          background-color: var(--black2);
-          border: 1.5px solid var(--green);
-
-          h1,
-          h2 {
-            font-style: italic;
-          }
-
-          h2 {
-            color: var(--green);
-            // font-weight: 700;
-          }
-        }
-
-        &:active {
-          background-color: var(--gray);
-          box-shadow: 0px 1px 50px rgba(203, 251, 69, 0.4);
-        }
-      }
-    }
-
-    .footer {
-      padding-top: 2vw;
-      padding-bottom: 1.5vw;
-
-      & .footer-items {
-        justify-content: left;
-      }
-    }
+  &:active {
+    background-color: var(--gray);
+    box-shadow: 0px 1px 50px rgba(203, 251, 69, 0.4);
   }
 }
 
 @media screen and (max-width: 768px) {
-  body.shortcuts {
-    .S_Header {
-      margin: 2.5vw;
-      flex-direction: column;
-      margin: 0 auto;
-      margin-bottom: 5vw;
-
-      .hotkeys {
-        @include itemGrid;
-        margin: 7vw auto;
-      }
-    }
-
-    .W_WrapperBlock {
-      padding: 0% 2% 2% 2%;
-
-      .S_SearchBar {
-        margin-top: 3%;
-        width: 100%;
-
-        & form {
-          width: 100%;
-
-          .M_SearchLine {
-            position: relative;
-            max-width: 100%;
-
-            & input {
-              width: 100%;
-              height: 5.6vw;
-              border-radius: 2px;
-              color: var(--white);
-              background-color: var(--black);
-              border: 1.5px solid var(--grey);
-              font-size: 1.25vw;
-              font-weight: 500;
-              cursor: help;
-            }
-
-            .A_SearchInput:focus-visible {
-              outline-color: transparent;
-              border-color: transparent;
-            }
-
-            .A_SearchInput::-webkit-input-placeholder {
-              color: var(--grey);
-            }
-
-            input[placeholder] {
-              padding-left: 1.3%;
-              font-size: 2.2vw;
-              font-weight: 500;
-            }
-
-            & button {
-              position: absolute;
-              top: 8%;
-              right: 2%;
-              font-size: 1.25vw;
-              color: transparent;
-              border: none;
-              background-color: transparent;
-            }
-          }
-        }
-      }
-
-      .block-shortcuts {
-        padding-top: 2.5%;
-        padding-bottom: 5%;
-
-        .block-shortcuts-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-          column-gap: 2vw;
-          row-gap: 2vw;
-        }
-
-        .shortcut-flex {
-          margin: 1vw;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-
-          svg {
-            margin-top: 1.5vw;
-            transform: scale(0.8);
-            overflow: visible;
-          }
-        }
-
-        .block-shortcut-item {
-          @include shortcutConfig(235px, 245px, 1.5px solid var(--grey), 5px, var(--white), var(--black));
-
-          &:hover {
-            @include shortcutHover;
-          }
-
-          & h2 {
-            margin: 5% 0 1% 6%;
-            font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
-            line-height: 120%;
-            font-weight: 400;
-          }
-
-          & h1 {
-            margin: 5% 0 1% 6%;
-            font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
-            line-height: 100%;
-            font-weight: 500;
-          }
-        }
-      }
-    }
+  .S_Shortcuts {
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    column-gap: 2vw;
+    row-gap: 2vw;
   }
-}
 
-@media screen and (max-width: 420px) {
-  body.shortcuts {
-    .W_WrapperBlock {
-      .block-shortcuts {
-        padding-top: 2.5%;
-        padding-bottom: 5%;
-
-        .block-shortcuts-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-          column-gap: 2vw;
-          row-gap: 2vw;
-        }
-
-        .shortcut-flex {
-          margin: 1vw;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-
-          svg {
-            margin-top: 4vw;
-            margin-right: 4vw;
-            transform: scale(0.8);
-            overflow: visible;
-          }
-        }
-
-        .block-shortcut-item {
-          @include shortcutConfig(235px, 245px, 1.5px solid var(--grey), 5px, var(--white), var(--black));
-
-          &:hover {
-            @include shortcutHover;
-          }
-
-          & h2 {
-            margin: 5% 0 1% 6%;
-            font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
-            line-height: 120%;
-            font-weight: 400;
-          }
-
-          & h1 {
-            margin: 5% 0 1% 6%;
-            font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
-            line-height: 100%;
-            font-weight: 500;
-          }
-        }
-      }
-    }
+  .M_ShortcutCard {
+    min-height: 245px;
+    min-width: 235px;
   }
 }

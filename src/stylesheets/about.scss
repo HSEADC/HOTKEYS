@@ -1,167 +1,61 @@
-html.about {
-  scroll-behavior: smooth;
-  scroll-padding-block-start: 2.5vw;
+.M_BlockAboutMain {
+  margin: 9vw 0 3.5vw 0;
+
+  .A_TextMainH2 {
+    margin: 2.5vw 0 2.5vw;
+  }
+
+  .A_ImgMain {
+    max-width: 94.5vw;
+  }
 }
 
-body.about {
-  background-color: var(--black);
-  font-family: 'IBM-PlexSans', sans-serif;
-  font-style: normal;
+.M_BlockAboutResearch {
+  margin: 25vw 0 0;
 
-  & a {
-    color: var(--white);
+  .A_TextMainH2 {
+    margin: 2vw 0 4vw;
   }
 
-  .header {
-    margin: 2.5vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    .hotkeys {
-      margin-top: 0.4vw;
-    }
-
-    .menu {
-      .items-menu {
-        .item-menu2 {
-          & h3 {
-            @include itemOpenConfig(var(--black), var(--green), 1.5px solid var(--green), 600, italic);
-          }
-        }
-      }
-    }
-  }
-
-  & h4 {
-    color: var(--white);
-    font-size: 1.15vw;
-    font-weight: 200;
-    text-align: center;
-  }
-
-  & h5 {
-    color: var(--white);
-    font-size: 2.5vw;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 0.1vw;
-
-    & b {
-      font-size: 3vw;
-      font-weight: 450;
-      font-style: italic;
-      color: var(--green);
-
-      // &:hover {
-      //    color: var(--grey);
-      // }
-    }
-  }
-
-  .title-main {
-    padding: 7vw 0 3.5vw 0;
-    margin: 0 auto;
-
-    & h5 {
-      padding-top: 2.5vw;
-      line-height: 135%;
-    }
-  }
-
-  .img-main {
-    margin: 0 auto;
-    max-width: 94.5vw;
-
-    & img {
-      width: 100%;
-    }
-
-    // &:hover {
-    //    transition: 0.5s ease-in-out;
-    //    transform: scale(1.01);
-    // }
-  }
-
-  .title-research {
-    padding: 15vw 0 3.5vw 0;
-    margin: 0 auto;
-
-    & h5 {
-      padding-top: 2.5vw;
-      line-height: 115%;
-    }
-  }
-
-  .img-research {
+  .A_ImgResearch {
+    display: block;
     margin: 0 auto;
     max-width: 34vw;
+  }
+}
 
-    & img {
-      width: 100%;
-    }
+.M_BlockAboutOften {
+  margin: 20vw 0 0;
 
-    // &:hover {
-    //    transition: 0.5s ease-in-out;
-    //    transform: scale(1.01);
-    // }
+  .A_TextMainH2 {
+    margin: 2vw 0 2vw;
   }
 
-  .title-often {
-    padding: 15vw 0 3.5vw 0;
-    margin: 0 auto;
+  .A_TextMainH1 {
+    margin-bottom: 3vw;
 
-    & h4 {
-      padding-top: 2.5vw;
-      line-height: 1.5vw;
-
-      & span {
-        font-weight: 450;
-        font-style: italic;
-        color: var(--green);
-        text-transform: uppercase;
-
-        // &:hover {
-        //    color: var(--grey);
-        // }
-      }
-    }
-
-    & h5 {
-      line-height: 115%;
+    .Q_TextMainSelection {
+      font-size: inherit;
+      text-transform: uppercase;
+      font-style: normal;
     }
   }
 
-  .img-often {
+  .A_ImgOften {
+    display: block;
     margin: 0 auto;
     max-width: 74.5vw;
+  }
+}
 
-    & img {
-      width: 100%;
-    }
+.S_BlockAboutTeam {
+  margin: 25vw 0 15vw 0;
 
-    // &:hover {
-    //    transition: 0.5s ease-in-out;
-    //    transform: scale(1.01);
-    // }
+  .A_TextMainH2 {
+    margin: 2vw 0 4vw;
   }
 
-  .title-team {
-    padding: 15vw 0 3.5vw 0;
-    margin: 0 auto;
-
-    h5 {
-      padding-top: 2.5vw;
-      line-height: 115%;
-
-      span {
-        color: var(--green);
-        font-style: italic;
-      }
-    }
-  }
-
-  .items-team {
+  .C_TeamItems {
     padding-top: 1vw;
     margin: 0 auto;
     width: 94vw;
@@ -169,41 +63,40 @@ body.about {
     flex-direction: row;
     justify-content: space-between;
 
-    .item-bozhik {
+    .O_Item {
       position: relative;
-      background-color: var(--green);
-      @include itemTeam(22.6vw, 15.78vw, 1.5px solid var(--green), 0.25vw);
+      background-color: var(--black);
+      @include itemTeam(22.6vw, 15.78vw, 1.5px solid var(--grey), 0.25vw);
 
       &:hover {
         padding: 0;
-        background-image: url('images/about/team-bozhik.png');
         background-size: cover;
         outline: 0px;
+
+        & .A_ItemLetter {
+          display: none;
+        }
+
+        & .M_ItemInfo {
+          visibility: visible;
+        }
       }
 
-      &:hover h1 {
-        display: none;
-      }
-
-      &:hover .item-bozhik-info {
-        visibility: visible;
-      }
-
-      & h1 {
+      .A_ItemLetter {
         margin: 1.25vw;
-        color: var(--black);
+        color: var(--white);
         font-size: 3.13vw;
         font-weight: 500;
         line-height: 75%;
       }
 
-      .item-bozhik-info {
+      .M_ItemInfo {
         visibility: hidden;
         width: 100%;
         max-height: 100%;
         position: absolute;
 
-        & h2 {
+        .A_InfoText {
           margin: 1.25vw;
           color: var(--white);
           font-size: 1.15vw;
@@ -211,7 +104,8 @@ body.about {
           line-height: 120%;
           letter-spacing: -0.03em;
         }
-        & h3 {
+
+        .A_InfoName {
           padding-top: 0.5vw;
           margin: 1.25vw;
           color: var(--green);
@@ -221,547 +115,18 @@ body.about {
           line-height: 100%;
         }
       }
-    }
 
-    .item-day {
-      position: relative;
-      @include itemTeam(22.6vw, 15.78vw, 1.5px solid var(--grey), 0.25vw);
-
-      &:hover {
-        padding: 0;
+      &.Bozhik:hover {
+        background-image: url('images/about/team-bozhik.png');
+      }
+      &.Day:hover {
         background-image: url('images/about/team-day.png');
-        background-size: cover;
-        outline: 0px;
       }
-
-      &:hover h1 {
-        display: none;
-      }
-
-      &:hover .item-day-info {
-        visibility: visible;
-      }
-
-      & h1 {
-        margin: 1.25vw;
-        color: var(--white);
-        font-size: 3.13vw;
-        font-weight: 500;
-        line-height: 75%;
-      }
-
-      .item-day-info {
-        visibility: hidden;
-        width: 100%;
-        max-height: 100%;
-        position: absolute;
-
-        & h2 {
-          margin: 1.25vw;
-          color: var(--white);
-          font-size: 1.15vw;
-          font-weight: 400;
-          line-height: 1.3vw;
-          letter-spacing: -0.03em;
-        }
-        & h3 {
-          padding-top: 0.5vw;
-          margin: 1.25vw;
-          color: var(--green);
-          font-size: 3.13vw;
-          font-weight: 500;
-          font-style: italic;
-          line-height: 100%;
-        }
-      }
-    }
-
-    .item-gulevich {
-      position: relative;
-      background-color: var(--green);
-      @include itemTeam(22.6vw, 15.78vw, 1.5px solid var(--green), 0.25vw);
-
-      &:hover {
-        padding: 0;
+      &.Gulevich:hover {
         background-image: url('images/about/team-gulevich.png');
-        background-size: cover;
-        outline: 0px;
       }
-
-      &:hover h1 {
-        display: none;
-      }
-
-      &:hover .item-gulevich-info {
-        visibility: visible;
-      }
-
-      & h1 {
-        margin: 1.25vw;
-        color: var(--black);
-        font-size: 3.13vw;
-        font-weight: 500;
-        line-height: 75%;
-      }
-
-      .item-gulevich-info {
-        visibility: hidden;
-        width: 100%;
-        max-height: 100%;
-        position: absolute;
-
-        & h2 {
-          margin: 1.25vw;
-          color: var(--white);
-          font-size: 1.15vw;
-          font-weight: 400;
-          line-height: 1.3vw;
-          letter-spacing: -0.03em;
-        }
-        & h3 {
-          padding-top: 0.5vw;
-          margin: 1.25vw;
-          color: var(--green);
-          font-size: 3.13vw;
-          font-weight: 500;
-          font-style: italic;
-          line-height: 100%;
-        }
-      }
-    }
-
-    .item-kaem {
-      position: relative;
-      @include itemTeam(22.6vw, 15.78vw, 1.5px solid var(--grey), 0.25vw);
-
-      &:hover {
-        padding: 0;
+      &.Kaem:hover {
         background-image: url('images/about/team-kaem.png');
-        background-size: cover;
-        outline: 0px;
-      }
-
-      &:hover h1 {
-        display: none;
-      }
-
-      &:hover .item-kaem-info {
-        visibility: visible;
-      }
-
-      & h1 {
-        margin: 1.25vw;
-        color: var(--white);
-        font-size: 3.13vw;
-        font-weight: 500;
-        line-height: 75%;
-      }
-
-      .item-kaem-info {
-        visibility: hidden;
-        width: 100%;
-        max-height: 100%;
-        position: absolute;
-
-        & h2 {
-          margin: 1.25vw;
-          color: var(--white);
-          font-size: 1.15vw;
-          font-weight: 400;
-          line-height: 1.3vw;
-          letter-spacing: -0.03em;
-        }
-        & h3 {
-          padding-top: 0.5vw;
-          margin: 1.25vw;
-          color: var(--green);
-          font-size: 3.13vw;
-          font-weight: 500;
-          font-style: italic;
-          line-height: 100%;
-        }
-      }
-    }
-  }
-
-  .footer {
-    padding: 10vw 0 3.5vw 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body.about {
-    & h4 {
-      color: var(--white);
-      font-size: 3.5vw;
-      font-weight: 200;
-      text-align: center;
-    }
-    & h5 {
-      color: var(--white);
-      font-size: 4vw;
-      font-weight: 500;
-      text-align: center;
-      letter-spacing: 0.1vw;
-
-      & b {
-        font-size: 4vw;
-        font-weight: 450;
-        font-style: italic;
-        color: var(--green);
-
-        &:hover {
-          color: var(--grey);
-        }
-      }
-    }
-    .header {
-      margin: 2.5vw;
-      flex-direction: column;
-      margin: 0 auto;
-      margin-bottom: 5vw;
-
-      .hotkeys {
-        @include itemGrid;
-        margin: 7vw auto;
-      }
-    }
-    .title-main {
-      padding: 15vw 0 10vw 0;
-
-      & h5 {
-        padding-top: 2.5vw;
-        line-height: 135%;
-      }
-    }
-    .title-research {
-      padding: 20vw 0 15vw 0;
-
-      & h5 {
-        padding-top: 2.5vw;
-        line-height: 120%;
-      }
-    }
-    .img-research {
-      max-width: 85vw;
-    }
-    .title-often {
-      padding: 20vw 0 10vw 0;
-
-      & h4 {
-        padding-top: 3.5vw;
-        padding-bottom: 3vw;
-        line-height: 135%;
-      }
-
-      & h5 {
-        line-height: 135%;
-      }
-    }
-    .img-often {
-      max-width: 90vw;
-    }
-    .title-team {
-      padding: 20vw 0 5vw 0;
-
-      & h5 {
-        line-height: 135%;
-      }
-    }
-    .items-team {
-      padding-top: 5vw;
-      width: 85vw;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      place-items: center;
-      gap: 3vw;
-
-      .item-bozhik {
-        position: relative;
-        background-color: var(--green);
-        @include itemTeam(100%, 29vw, 1.5px solid var(--grey), 0.25vw);
-
-        & h1 {
-          margin: 2.5vw;
-          color: var(--black);
-          font-size: 6.13vw;
-          font-weight: 500;
-          line-height: 75%;
-        }
-
-        .item-bozhik-info {
-          visibility: hidden;
-          width: 100%;
-          max-height: 100%;
-          position: absolute;
-
-          & h2 {
-            margin: 1.25vw;
-            color: var(--white);
-            font-size: 2.7vw;
-            font-weight: 400;
-            line-height: 100%;
-            letter-spacing: -0.03em;
-          }
-          & h3 {
-            padding-top: 0.5vw;
-            margin: 1.25vw;
-            color: var(--green);
-            font-size: 6.13vw;
-            font-weight: 500;
-            font-style: italic;
-            line-height: 100%;
-            font-style: italic;
-            text-transform: uppercase;
-          }
-        }
-      }
-
-      .item-day {
-        position: relative;
-        @include itemTeam(100%, 29vw, 1.5px solid var(--grey), 0.25vw);
-
-        & h1 {
-          margin: 2.5vw;
-          color: var(--white);
-          font-size: 6.13vw;
-          font-weight: 500;
-          line-height: 75%;
-        }
-
-        .item-day-info {
-          visibility: hidden;
-          width: 100%;
-          max-height: 100%;
-          position: absolute;
-
-          & h2 {
-            margin: 1.25vw;
-            color: var(--white);
-            font-size: 2.5vw;
-            font-weight: 400;
-            line-height: 100%;
-            letter-spacing: -0.03em;
-          }
-          & h3 {
-            padding-top: 0.5vw;
-            margin: 1.25vw;
-            color: var(--green);
-            font-size: 6.13vw;
-            font-weight: 500;
-            font-style: italic;
-            line-height: 100%;
-          }
-        }
-      }
-
-      .item-gulevich {
-        position: relative;
-        background-color: var(--green);
-        @include itemTeam(100%, 29vw, 1.5px solid var(--grey), 0.25vw);
-
-        & h1 {
-          margin: 2.5vw;
-          color: var(--black);
-          font-size: 6.13vw;
-          font-weight: 500;
-          line-height: 75%;
-        }
-
-        .item-gulevich-info {
-          visibility: hidden;
-          width: 100%;
-          max-height: 100%;
-          position: absolute;
-
-          & h2 {
-            margin: 1.25vw;
-            color: var(--white);
-            font-size: 2.5vw;
-            font-weight: 400;
-            line-height: 100%;
-            letter-spacing: -0.03em;
-          }
-          & h3 {
-            padding-top: 0.5vw;
-            margin: 1.25vw;
-            color: var(--green);
-            font-size: 6.13vw;
-            font-weight: 500;
-            font-style: italic;
-            line-height: 100%;
-          }
-        }
-      }
-
-      .item-kaem {
-        position: relative;
-        @include itemTeam(100%, 29vw, 1.5px solid var(--grey), 0.25vw);
-
-        & h1 {
-          margin: 2.5vw;
-          color: var(--white);
-          font-size: 6.13vw;
-          font-weight: 500;
-          line-height: 75%;
-        }
-
-        .item-kaem-info {
-          visibility: hidden;
-          width: 100%;
-          max-height: 100%;
-          position: absolute;
-
-          & h2 {
-            margin: 1.25vw;
-            color: var(--white);
-            font-size: 2.5vw;
-            font-weight: 400;
-            line-height: 100%;
-            letter-spacing: -0.03em;
-          }
-          & h3 {
-            padding-top: 0.5vw;
-            margin: 1.25vw;
-            color: var(--green);
-            font-size: 6.13vw;
-            font-weight: 500;
-            font-style: italic;
-            line-height: 100%;
-          }
-        }
-      }
-    }
-    .mail-index {
-      padding: 0 5.5vw;
-
-      .mail-text-index {
-        padding-top: 10vw;
-        padding-bottom: 15vw;
-
-        & h4 {
-          font-size: 6.9vw;
-          text-align: center;
-          font-weight: 400;
-          color: var(--white);
-
-          & b {
-            color: var(--green);
-            & :hover {
-              text-decoration: underline;
-            }
-          }
-        }
-
-        & h5 {
-          padding-top: 7vw;
-          font-size: 3.5vw;
-          line-height: 4.5vw;
-          text-align: center;
-          font-weight: 300;
-          color: var(--white);
-
-          & b {
-            color: var(--green);
-            & :hover {
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-
-      .mail-input-index {
-        margin: 0 auto;
-        width: 50vw;
-        position: relative;
-      }
-
-      .email-form {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-
-        .input-email {
-          color: var(--white);
-          width: 50vw;
-          height: 5.6vw;
-          border: 1.5px solid var(--grey);
-          border-radius: 2px;
-          background-color: var(--black);
-        }
-
-        input[placeholder] {
-          padding-left: 1vw;
-          font-size: 3.5vw;
-        }
-
-        .input-email::-webkit-input-placeholder {
-          color: var(--grey);
-        }
-
-        button {
-          width: 4.3vw;
-          height: 4.3vw;
-          outline: none;
-          border: 0;
-          background: transparent;
-          position: absolute;
-          top: 0.7vw;
-          right: 0.7vw;
-        }
-
-        #email-form-done {
-          position: absolute;
-          padding-top: 3%;
-          margin: 0.5vw 11.5vw;
-          font-size: 1vw;
-          font-style: normal;
-          font-weight: 300;
-          color: var(--green);
-        }
-      }
-    }
-    .footer {
-      padding: 25.5vw 0 3.5vw 0;
-    }
-  }
-}
-
-@media screen and (max-width: 420px) {
-  body.about {
-    .mail-index {
-      .email-form {
-        button {
-          width: 4vw;
-          height: 4vw;
-          outline: none;
-          border: 0;
-          background: transparent;
-          position: absolute;
-          top: -0.4vw;
-          right: 0.8vw;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 360px) {
-  body.about {
-    .mail-index {
-      .email-form {
-        button {
-          width: 4vw;
-          height: 4vw;
-          outline: none;
-          border: 0;
-          background: transparent;
-          position: absolute;
-          top: -0.2vw;
-          right: 0.8vw;
-        }
       }
     }
   }

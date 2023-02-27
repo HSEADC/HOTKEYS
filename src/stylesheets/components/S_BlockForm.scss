@@ -1,0 +1,50 @@
+.S_BlockMail {
+  margin: 25vw auto 20vw;
+
+  .Q_TextFormSelection {
+    font-weight: 450;
+    color: var(--green);
+  }
+
+  .M_Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .A_FormInput {
+      margin-top: 1.5vw;
+      color: var(--white);
+      width: 20vw;
+      height: 2.6vw;
+      border: 1.5px solid var(--grey);
+      border-radius: 5px;
+      background-color: var(--black);
+      color: var(--green);
+
+      &:hover,
+      &:focus {
+        outline: 1.5px solid var(--green);
+      }
+
+      &:hover::-webkit-input-placeholder,
+      &:focus::-webkit-input-placeholder {
+        color: var(--green);
+      }
+
+      &[placeholder] {
+        padding-left: 0.55vw;
+        font-size: 1.25vw;
+      }
+
+      &::-webkit-input-placeholder {
+        color: var(--grey);
+      }
+    }
+
+    #A_FormDoneText {
+      margin-top: 1vw;
+      font-weight: 450;
+      color: var(--green);
+    }
+  }
+}
