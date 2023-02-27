@@ -1,8 +1,8 @@
 const userAgent = navigator.userAgent.toLowerCase()
 const isMac = /macintosh|mac os x/i.test(userAgent)
 
-const macEl = document.getElementById('O_Mac')
-const winEl = document.getElementById('O_Win')
+const macEl = document.getElementById('S_Mac')
+const winEl = document.getElementById('S_Win')
 let mySystem
 
 const macBtn = document.querySelector('#mac')

@@ -12,11 +12,13 @@
     justify-content: center;
 
     .M_MacosItem {
-      background-color: transparent;
       @include itemGrid;
       margin: 0.27vw 0.25vw;
       width: 2.3vw;
       height: 2.3vw;
+      border: none;
+      outline: none;
+      background-color: transparent;
 
       .A_MacosSVG {
         width: 0.99vw;
@@ -29,11 +31,13 @@
       }
     }
     .M_WindowsItem {
-      background-color: transparent;
       @include itemGrid;
       margin: 0.27vw 0.25vw;
       width: 2.3vw;
       height: 2.3vw;
+      border: none;
+      outline: none;
+      background-color: transparent;
 
       .A_WindowsSVG {
         width: 1.15vw;
