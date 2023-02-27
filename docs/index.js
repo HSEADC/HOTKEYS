@@ -49,14 +49,66 @@ var shortcuts = ['ctrl+f', 'cmd+c', 'ctrl+v', 'cmd+a', 'cmd+z', 'cmd+s', 'cmd+d'
 var textElement = document.querySelector('.M_ShortcutValue');
 
 function changeText(idx) {
-  textElement.innerText = shortcuts[idx];
-  var nextIdx = idx + 1 === shortcuts.length ? 0 : idx + 1;
-  setTimeout(function () {
-    return changeText(nextIdx);
-  }, 500);
+  if (textElement) {
+    textElement.innerText = shortcuts[idx];
+    var nextIdx = idx + 1 === shortcuts.length ? 0 : idx + 1;
+    setTimeout(function () {
+      return changeText(nextIdx);
+    }, 500);
+  }
 }
 
 changeText(0);
+
+/***/ }),
+
+/***/ 549:
+/***/ (() => {
+
+var userAgent = navigator.userAgent.toLowerCase();
+var isMac = /macintosh|mac os x/i.test(userAgent);
+var macEl = document.getElementById('O_Mac');
+var winEl = document.getElementById('O_Win');
+var mySystem;
+var macBtn = document.querySelector('#mac');
+var winBtn = document.querySelector('#win');
+var winVector = document.querySelector('.Q_WindowsVector');
+var macVector = document.querySelector('.Q_MacosVector');
+
+if (isMac) {
+  if (macEl) {
+    macEl.style.display = 'block';
+    mySystem = 'mac';
+    macBtn.classList.add('_Active');
+    macVector.style.fill = 'black';
+  }
+} else {
+  if (winEl) {
+    winEl.style.display = 'block';
+    mySystem = 'win';
+    winBtn.classList.add('_Active');
+    winVector.style.fill = 'black';
+  }
+}
+
+winBtn.addEventListener('click', function () {
+  winEl.style.display = 'block';
+  macEl.style.display = 'none';
+  mySystem = 'win';
+  winBtn.classList.add('_Active');
+  winVector.style.fill = 'black';
+  macBtn.classList.remove('_Active');
+  macVector.style.fill = 'white';
+});
+macBtn.addEventListener('click', function () {
+  macEl.style.display = 'block';
+  winEl.style.display = 'none';
+  mySystem = 'mac';
+  macBtn.classList.add('_Active');
+  macVector.style.fill = 'black';
+  winBtn.classList.remove('_Active');
+  winVector.style.fill = 'white';
+});
 
 /***/ })
 
@@ -125,11 +177,15 @@ var __webpack_exports__ = {};
 /* harmony import */ var _javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(557);
 /* harmony import */ var _javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _javascript_system_switch_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(549);
+/* harmony import */ var _javascript_system_switch_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_javascript_system_switch_js__WEBPACK_IMPORTED_MODULE_2__);
  // modal window
 // import './javascript/modal.js';
 // shortcut change animation
 
  // landing text apperance
+
+ // shortcut page sistem check and load content
 
  // import './javascript/training.js';
 })();
