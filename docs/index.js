@@ -65,36 +65,27 @@ changeText(0);
 /***/ 549:
 /***/ (() => {
 
-var userAgent = navigator.userAgent.toLowerCase();
-var isMac = /macintosh|mac os x/i.test(userAgent);
-var macEl = document.getElementById('O_Mac');
-var winEl = document.getElementById('O_Win');
-var mySystem;
+var isMac = navigator.userAgent.toLowerCase().includes('macintosh');
+var macEl = document.getElementById('S_Mac');
+var winEl = document.getElementById('S_Win');
 var macBtn = document.querySelector('#mac');
 var winBtn = document.querySelector('#win');
 var winVector = document.querySelector('.Q_WindowsVector');
 var macVector = document.querySelector('.Q_MacosVector');
 
-if (isMac) {
-  if (macEl) {
-    macEl.style.display = 'block';
-    mySystem = 'mac';
-    macBtn.classList.add('_Active');
-    macVector.style.fill = 'black';
-  }
-} else {
-  if (winEl) {
-    winEl.style.display = 'block';
-    mySystem = 'win';
-    winBtn.classList.add('_Active');
-    winVector.style.fill = 'black';
-  }
+if (isMac && macEl) {
+  macEl.style.display = 'block';
+  macBtn.classList.add('_Active');
+  macVector.style.fill = 'black';
+} else if (winEl) {
+  winEl.style.display = 'block';
+  winBtn.classList.add('_Active');
+  winVector.style.fill = 'black';
 }
 
 winBtn.addEventListener('click', function () {
   winEl.style.display = 'block';
   macEl.style.display = 'none';
-  mySystem = 'win';
   winBtn.classList.add('_Active');
   winVector.style.fill = 'black';
   macBtn.classList.remove('_Active');
@@ -103,7 +94,6 @@ winBtn.addEventListener('click', function () {
 macBtn.addEventListener('click', function () {
   macEl.style.display = 'block';
   winEl.style.display = 'none';
-  mySystem = 'mac';
   macBtn.classList.add('_Active');
   macVector.style.fill = 'black';
   winBtn.classList.remove('_Active');
