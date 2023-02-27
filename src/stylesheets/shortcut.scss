@@ -1,229 +1,194 @@
-body.shortcut {
-  background-color: var(--black);
-  font-family: 'IBM-PlexSans', sans-serif;
-  font-style: normal;
+.M_NavBar {
+  margin-bottom: 1vw;
+  max-width: 87.5%;
+  display: flex;
+  justify-content: flex-start;
 
-  a {
-    color: var(--white);
-  }
+  .A_ButtonBack {
+    .Q_TextButton {
+      @include itemGrid;
+      @include itemConfigg(6.25vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 5px, 1vw, 400);
 
-  .header {
-    margin: 2.5vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    .hotkeys {
-      margin-top: 0.4vw;
-    }
-
-    .O_Menu {
-      margin-right: 6vw;
+      &:hover {
+        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
+      }
     }
   }
-  .wrapper {
-    margin: 2.5vw;
+}
 
-    .nav {
-      max-width: 87.5%;
-      display: flex;
-      justify-content: flex-start;
+#O_Win,
+#O_Mac {
+  display: none;
+}
 
-      .btn-back {
-        @include itemGrid;
-        @include itemConfigg(7vw, 3vw, var(--white), transparent, 1.5px solid var(--grey), 0.25vw, 1vw, 300);
+#O_Win,
+#O_Mac {
+  .O_Keyboard {
+    margin: 3vw auto 2vw;
+  }
 
-        &:hover {
-          color: var(--green);
-          border: 1.5px solid var(--green);
+  .A_TextMainH1 {
+    max-width: 40%;
+    margin: 0vw auto;
+
+    .Q_TextMainSelection {
+      font-size: inherit;
+    }
+  }
+}
+
+div.alt-tab {
+  .windows {
+    .windows-keyboard {
+      svg {
+        .alt-win {
+          animation: shortcut-first 4s infinite ease-out;
+        }
+
+        .tab-win {
+          animation: shortcut-second 4s infinite ease-out;
         }
       }
     }
+  }
+}
+div.cmd-tab {
+  .macos {
+    .macos-keyboard {
+      svg {
+        .cmd-mac {
+          animation: shortcut-first 4s infinite ease-out;
+        }
 
-    .caption {
-      margin: 0.5vw 0 1.5vw;
-      font-size: 2vw;
-      line-height: 100%;
-      font-weight: 500;
-      text-align: center;
-      color: var(--white);
-
-      span {
-        color: var(--green);
-      }
-    }
-
-    .description {
-      font-size: 1.15vw;
-      line-height: 110%;
-      text-align: center;
-      color: var(--white);
-      max-width: 37%;
-      margin: 0vw auto 2vw auto;
-      font-weight: 400;
-
-      b {
-        font-style: italic;
-        font-weight: 700;
-        color: var(--green);
-        text-transform: uppercase;
-      }
-    }
-
-    div.alt-tab {
-      .windows {
-        .windows-keyboard {
-          svg {
-            .alt-win {
-              animation: shortcut-first 4s infinite ease-out;
-            }
-
-            .tab-win {
-              animation: shortcut-second 4s infinite ease-out;
-            }
-          }
+        .tab-mac {
+          animation: shortcut-second 4s infinite ease-out;
         }
       }
     }
-    div.cmd-tab {
-      .macos {
-        .macos-keyboard {
-          svg {
-            .cmd-mac {
-              animation: shortcut-first 4s infinite ease-out;
-            }
+  }
+}
+div.ctrl-z {
+  .windows {
+    .windows-keyboard {
+      svg {
+        .ctrl-win {
+          animation: shortcut-first 4s infinite ease-out;
+        }
 
-            .tab-mac {
-              animation: shortcut-second 4s infinite ease-out;
-            }
-          }
+        .z-win {
+          animation: shortcut-second 4s infinite ease-out;
         }
       }
     }
-    div.ctrl-z {
-      .windows {
-        .windows-keyboard {
-          svg {
-            .ctrl-win {
-              animation: shortcut-first 4s infinite ease-out;
-            }
+  }
+}
+div.cmd-z {
+  .macos {
+    .macos-keyboard {
+      svg {
+        .cmd-mac {
+          animation: shortcut-first 4s infinite ease-out;
+        }
 
-            .z-win {
-              animation: shortcut-second 4s infinite ease-out;
-            }
-          }
+        .z-mac {
+          animation: shortcut-second 4s infinite ease-out;
         }
       }
     }
-    div.cmd-z {
-      .macos {
-        .macos-keyboard {
-          svg {
-            .cmd-mac {
-              animation: shortcut-first 4s infinite ease-out;
-            }
+  }
+}
+div.alt-f4 {
+  .windows {
+    .windows-keyboard {
+      svg {
+        .fn-win {
+          fill: var(--green);
+        }
 
-            .z-mac {
-              animation: shortcut-second 4s infinite ease-out;
-            }
-          }
+        .fn2-win {
+          fill: var(--white);
+        }
+        .alt-win {
+          animation: shortcut-first 4s infinite ease-out;
+        }
+
+        .four-win {
+          animation: shortcut-second 4s infinite ease-out;
         }
       }
     }
-    div.alt-f4 {
-      .windows {
-        .windows-keyboard {
-          svg {
-            .fn-win {
-              fill: var(--green);
-            }
+  }
+}
+div.cmd-h {
+  .macos {
+    .macos-keyboard {
+      svg {
+        .cmd-mac {
+          animation: shortcut-first 4s infinite ease-out;
+        }
 
-            .fn2-win {
-              fill: var(--white);
-            }
-            .alt-win {
-              animation: shortcut-first 4s infinite ease-out;
-            }
-
-            .four-win {
-              animation: shortcut-second 4s infinite ease-out;
-            }
-          }
+        .h-mac {
+          animation: shortcut-second 4s infinite ease-out;
         }
       }
     }
-    div.cmd-h {
-      .macos {
-        .macos-keyboard {
-          svg {
-            .cmd-mac {
-              animation: shortcut-first 4s infinite ease-out;
-            }
+  }
+}
+div.cmd-o {
+  .macos {
+    .macos-keyboard {
+      svg {
+        .cmd-mac {
+          animation: shortcut-first 4s infinite ease-out;
+        }
 
-            .h-mac {
-              animation: shortcut-second 4s infinite ease-out;
-            }
-          }
+        .o-mac {
+          animation: shortcut-second 4s infinite ease-out;
         }
       }
     }
-    div.cmd-o {
-      .macos {
-        .macos-keyboard {
-          svg {
-            .cmd-mac {
-              animation: shortcut-first 4s infinite ease-out;
-            }
+  }
+}
+div.ctrl-w {
+  .windows {
+    .windows-keyboard {
+      svg {
+        .ctrl-win {
+          animation: shortcut-first 4s infinite ease-out;
+        }
 
-            .o-mac {
-              animation: shortcut-second 4s infinite ease-out;
-            }
-          }
+        .w-win {
+          animation: shortcut-second 4s infinite ease-out;
         }
       }
     }
-    div.ctrl-w {
-      .windows {
-        .windows-keyboard {
-          svg {
-            .ctrl-win {
-              animation: shortcut-first 4s infinite ease-out;
-            }
+  }
+}
+div.win-d {
+  .windows {
+    .windows-keyboard {
+      svg {
+        .win-win {
+          animation: shortcut-first 4s infinite ease-out;
+        }
 
-            .w-win {
-              animation: shortcut-second 4s infinite ease-out;
-            }
-          }
+        .d-win {
+          animation: shortcut-second 4s infinite ease-out;
         }
       }
     }
-    div.win-d {
-      .windows {
-        .windows-keyboard {
-          svg {
-            .win-win {
-              animation: shortcut-first 4s infinite ease-out;
-            }
-
-            .d-win {
-              animation: shortcut-second 4s infinite ease-out;
-            }
-          }
+  }
+}
+div.win-v {
+  .windows {
+    .windows-keyboard {
+      svg {
+        .win-win {
+          animation: shortcut-first 4s infinite ease-out;
         }
-      }
-    }
-    div.win-v {
-      .windows {
-        .windows-keyboard {
-          svg {
-            .win-win {
-              animation: shortcut-first 4s infinite ease-out;
-            }
 
-            .v-win {
-              animation: shortcut-second 4s infinite ease-out;
-            }
-          }
+        .v-win {
+          animation: shortcut-second 4s infinite ease-out;
         }
       }
     }

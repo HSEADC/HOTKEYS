@@ -1,7 +1,6 @@
 .O_SystemSwitch {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   width: 6vw;
   height: 3vw;
   border: 1.5px solid var(--grey);
@@ -13,6 +12,7 @@
     justify-content: center;
 
     .M_MacosItem {
+      background-color: transparent;
       @include itemGrid;
       margin: 0.27vw 0.25vw;
       width: 2.3vw;
@@ -24,14 +24,12 @@
         overflow: visible;
 
         .Q_MacosVector {
-          fill: var(--black);
+          fill: var(--white);
         }
       }
-
-      @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
-      border-radius: 2px;
     }
     .M_WindowsItem {
+      background-color: transparent;
       @include itemGrid;
       margin: 0.27vw 0.25vw;
       width: 2.3vw;
@@ -46,15 +44,11 @@
           fill: var(--white);
         }
       }
+    }
 
-      &:hover {
-        @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
-        border-radius: 2px;
-
-        .Q_WindowsVector {
-          fill: var(--black);
-        }
-      }
+    ._Active {
+      @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
+      border-radius: 2px;
     }
   }
 }
