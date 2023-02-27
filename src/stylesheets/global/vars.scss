@@ -5,6 +5,8 @@
   --gray: #3a3a3a;
   --green: #cbfb45;
   --black2: #1e1e1e;
+
+  --bg-gradient: linear-gradient(180deg, #000000 0%, #232323 100%);
 }
 
 @mixin itemConfig($c, $bc, $b, $br, $fs, $fw) {

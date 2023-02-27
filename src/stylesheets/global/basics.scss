@@ -4,7 +4,9 @@ html {
 }
 
 body {
-  background-color: var(--black);
+  background-image: var(--bg-gradient);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: 'IBM-PlexSans', sans-serif;
   color: var(--white);
 
