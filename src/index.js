@@ -1,15 +1,15 @@
 import './index.css'
 
-// modal window
-// import './javascript/modal.js';
+//* modal window
+import './javascript/modal.js'
 
-// shortcut change animation
+//* shortcut change animation
 import './javascript/shortcut.js'
 
-// landing text apperance
+//* landing text apperance
 import './javascript/on-scroll.js'
 
-// shortcut page sistem check and load content
+//* shortcut page sistem check and load content
 import './javascript/system-switch.js'
 
-// import './javascript/training.js';
+//* import './javascript/training.js';
