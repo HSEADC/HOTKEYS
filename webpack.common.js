@@ -10,6 +10,7 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
+    shortcuts: './src/shortcuts.jsx',
   },
   output: {
     filename: '[name].js',
