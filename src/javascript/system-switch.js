@@ -19,20 +19,24 @@ if (isMac && macEl) {
   winVector.style.fill = 'black'
 }
 
-winBtn.addEventListener('click', () => {
-  winEl.style.display = 'block'
-  macEl.style.display = 'none'
-  winBtn.classList.add('_Active')
-  winVector.style.fill = 'black'
-  macBtn.classList.remove('_Active')
-  macVector.style.fill = 'white'
-})
+if (winBtn) {
+  winBtn.addEventListener('click', () => {
+    winEl.style.display = 'block'
+    macEl.style.display = 'none'
+    winBtn.classList.add('_Active')
+    winVector.style.fill = 'black'
+    macBtn.classList.remove('_Active')
+    macVector.style.fill = 'white'
+  })
+}
 
-macBtn.addEventListener('click', () => {
-  macEl.style.display = 'block'
-  winEl.style.display = 'none'
-  macBtn.classList.add('_Active')
-  macVector.style.fill = 'black'
-  winBtn.classList.remove('_Active')
-  winVector.style.fill = 'white'
-})
+if (macBtn) {
+  macBtn.addEventListener('click', () => {
+    macEl.style.display = 'block'
+    winEl.style.display = 'none'
+    macBtn.classList.add('_Active')
+    macVector.style.fill = 'black'
+    winBtn.classList.remove('_Active')
+    winVector.style.fill = 'white'
+  })
+}
