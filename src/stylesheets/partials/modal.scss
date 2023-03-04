@@ -50,6 +50,10 @@
         font-weight: 700;
         font-style: italic;
         color: var(--black);
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
