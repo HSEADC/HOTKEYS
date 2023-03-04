@@ -1,16 +1,24 @@
+import Cookies from 'js-cookie'
+
 document.addEventListener('DOMContentLoaded', () => {
   const isMac = navigator.userAgent.toLowerCase().includes('macintosh')
 
   const macEl = document.getElementById('S_Mac')
   const winEl = document.getElementById('S_Win')
-
   const macBtn = document.querySelector('#mac')
   const winBtn = document.querySelector('#win')
-
   const winVector = document.querySelector('.Q_WindowsVector')
   const macVector = document.querySelector('.Q_MacosVector')
 
   if (isMac) {
+    Cookies.set('os', 'macos')
+  } else {
+    Cookies.set('os', 'windows')
+  }
+
+  const osCookie = Cookies.get('os')
+
+  if (osCookie === 'macos') {
     if (macEl) macEl.style.display = 'block'
     macBtn.classList.add('_Active')
     macVector.style.fill = 'black'
