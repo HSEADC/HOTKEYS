@@ -1,0 +1,30 @@
+[
+  {
+    "link": "shortcuts/switch-between-programs.html",
+    "selected": "Переключение",
+    "text": "запущеннных приложений",
+    "windows": "Alt+Tab",
+    "macos": "Cmd+Tab"
+  },
+  {
+    "link": "shortcuts/hide-open-program.html",
+    "selected": "Сворачивание",
+    "text": "всех открытых окон",
+    "windows": "Ctrl+W",
+    "macos": "Cmd+H"
+  },
+  {
+    "link": "shortcuts/minimizing-all-open-windows.html",
+    "selected": "Открытие",
+    "text": "буфера обмена",
+    "windows": "Win+V",
+    "macos": "Cmd+Ctrl+Shift+V"
+  },
+  {
+    "link": "shortcuts/undo-last-action.html",
+    "selected": "Отмена",
+    "text": "последнего выполненного действия",
+    "windows": "Ctrl+Z",
+    "macos": "Cmd+Z"
+  }
+]
