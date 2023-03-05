@@ -1,38 +1,60 @@
-const isMac = navigator.userAgent.toLowerCase().includes('macintosh')
+import Cookies from 'js-cookie'
 
-const macEl = document.getElementById('S_Mac')
-const winEl = document.getElementById('S_Win')
+document.addEventListener('DOMContentLoaded', () => {
+  const isMac = navigator.userAgent.toLowerCase().includes('macintosh')
 
-const macBtn = document.querySelector('#mac')
-const winBtn = document.querySelector('#win')
+  const macEl = document.getElementById('S_Mac')
+  const winEl = document.getElementById('S_Win')
+  const macBtn = document.querySelector('#mac')
+  const winBtn = document.querySelector('#win')
+  const winVector = document.querySelector('.Q_WindowsVector')
+  const macVector = document.querySelector('.Q_MacosVector')
 
-const winVector = document.querySelector('.Q_WindowsVector')
-const macVector = document.querySelector('.Q_MacosVector')
+  if (isMac) {
+    Cookies.set('os', 'macos')
+  } else {
+    Cookies.set('os', 'windows')
+  }
 
-if (isMac && macEl) {
-  macEl.style.display = 'block'
-  macBtn.classList.add('_Active')
-  macVector.style.fill = 'black'
-} else if (winEl) {
-  winEl.style.display = 'block'
-  winBtn.classList.add('_Active')
-  winVector.style.fill = 'black'
-}
+  const osCookie = Cookies.get('os')
 
-winBtn.addEventListener('click', () => {
-  winEl.style.display = 'block'
-  macEl.style.display = 'none'
-  winBtn.classList.add('_Active')
-  winVector.style.fill = 'black'
-  macBtn.classList.remove('_Active')
-  macVector.style.fill = 'white'
-})
+  if (osCookie === 'macos') {
+  } else {
+  }
 
-macBtn.addEventListener('click', () => {
-  macEl.style.display = 'block'
-  winEl.style.display = 'none'
-  macBtn.classList.add('_Active')
-  macVector.style.fill = 'black'
-  winBtn.classList.remove('_Active')
-  winVector.style.fill = 'white'
+  if (osCookie === 'macos') {
+    if (macEl) macEl.style.display = 'block'
+    if (macBtn && macVector) {
+      macBtn.classList.add('_Active')
+      macVector.style.fill = 'black'
+    }
+  } else {
+    if (winEl) winEl.style.display = 'block'
+    if (winBtn && winVector) {
+      winBtn.classList.add('_Active')
+      winVector.style.fill = 'black'
+    }
+  }
+
+  winBtn?.addEventListener('click', () => {
+    if (macEl && winEl) {
+      winEl.style.display = 'block'
+      macEl.style.display = 'none'
+    }
+    winBtn.classList.toggle('_Active')
+    winVector.style.fill = 'black'
+    macBtn.classList.toggle('_Active')
+    macVector.style.fill = 'white'
+  })
+
+  macBtn?.addEventListener('click', () => {
+    if (macEl && winEl) {
+      macEl.style.display = 'block'
+      winEl.style.display = 'none'
+    }
+    macBtn.classList.toggle('_Active')
+    macVector.style.fill = 'black'
+    winBtn.classList.toggle('_Active')
+    winVector.style.fill = 'white'
+  })
 })

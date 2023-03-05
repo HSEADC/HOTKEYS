@@ -1,6 +1,6 @@
 {
   "name": "hotkeys",
-  "version": "3.2.3",
+  "version": "3.2.6",
   "author": "HSE ADC",
   "license": "MIT",
   "repository": {
@@ -41,6 +41,7 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "js-cookie": "^3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
