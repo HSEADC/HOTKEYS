@@ -1,5 +1,5 @@
 .O_Menu {
-  width: 17vw;
+  width: 17.25vw;
   border: 1.5px solid var(--grey);
   border-radius: 4px;
 
@@ -20,7 +20,7 @@
 
     .M_MenuItem {
       margin: 0 -0.25vw;
-      padding: 0.25vw 0.1vw 0.2vw;
+      padding: 0.3vw 0.1vw 0.2vw;
 
       h3 {
         @include itemGrid;

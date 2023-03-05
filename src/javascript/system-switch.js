@@ -19,13 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const osCookie = Cookies.get('os')
 
   if (osCookie === 'macos') {
+  } else {
+  }
+
+  if (osCookie === 'macos') {
     if (macEl) macEl.style.display = 'block'
-    macBtn.classList.add('_Active')
-    macVector.style.fill = 'black'
+    if (macBtn && macVector) {
+      macBtn.classList.add('_Active')
+      macVector.style.fill = 'black'
+    }
   } else {
     if (winEl) winEl.style.display = 'block'
-    winBtn.classList.add('_Active')
-    winVector.style.fill = 'black'
+    if (winBtn && winVector) {
+      winBtn.classList.add('_Active')
+      winVector.style.fill = 'black'
+    }
   }
 
   winBtn?.addEventListener('click', () => {

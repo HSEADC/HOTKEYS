@@ -1,13 +1,26 @@
 import React, {Component} from 'react'
-import ReactDOM from 'react-dom'
 import Cookies from 'js-cookie'
-
 import hotkeys from './hotkeys.json'
 
 export default class Shortcuts extends Component {
-  render() {
+  constructor(props) {
+    super(props)
     const osCookie = Cookies.get('os')
-    const system = osCookie === 'macos' ? 'macos' : 'windows'
+    this.state = {
+      system: osCookie === 'macos' ? 'macos' : 'windows',
+    }
+  }
+
+  handleWindowsClick = () => {
+    this.setState({system: 'windows'})
+  }
+
+  handleMacosClick = () => {
+    this.setState({system: 'macos'})
+  }
+
+  render() {
+    const {system} = this.state
 
     return (
       <div className="S_Shortcuts">
@@ -22,6 +35,14 @@ export default class Shortcuts extends Component {
             </div>
           </a>
         ))}
+        <div className="buttons">
+          <button id="win" onClick={this.handleWindowsClick}>
+            Windows
+          </button>
+          <button id="mac" onClick={this.handleMacosClick}>
+            MacOS
+          </button>
+        </div>
       </div>
     )
   }
