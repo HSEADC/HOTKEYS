@@ -60,46 +60,6 @@ function changeText(idx) {
 
 changeText(0);
 
-/***/ }),
-
-/***/ 549:
-/***/ (() => {
-
-var isMac = navigator.userAgent.toLowerCase().includes('macintosh');
-var macEl = document.getElementById('S_Mac');
-var winEl = document.getElementById('S_Win');
-var macBtn = document.querySelector('#mac');
-var winBtn = document.querySelector('#win');
-var winVector = document.querySelector('.Q_WindowsVector');
-var macVector = document.querySelector('.Q_MacosVector');
-
-if (isMac && macEl) {
-  macEl.style.display = 'block';
-  macBtn.classList.add('_Active');
-  macVector.style.fill = 'black';
-} else if (winEl) {
-  winEl.style.display = 'block';
-  winBtn.classList.add('_Active');
-  winVector.style.fill = 'black';
-}
-
-winBtn.addEventListener('click', function () {
-  winEl.style.display = 'block';
-  macEl.style.display = 'none';
-  winBtn.classList.add('_Active');
-  winVector.style.fill = 'black';
-  macBtn.classList.remove('_Active');
-  macVector.style.fill = 'white';
-});
-macBtn.addEventListener('click', function () {
-  macEl.style.display = 'block';
-  winEl.style.display = 'none';
-  macBtn.classList.add('_Active');
-  macVector.style.fill = 'black';
-  winBtn.classList.remove('_Active');
-  winVector.style.fill = 'white';
-});
-
 /***/ })
 
 /******/ 	});
@@ -129,55 +89,241 @@ macBtn.addEventListener('click', function () {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-/* harmony import */ var _javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(197);
-/* harmony import */ var _javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_javascript_shortcut_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(557);
-/* harmony import */ var _javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_javascript_on_scroll_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _javascript_system_switch_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(549);
-/* harmony import */ var _javascript_system_switch_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_javascript_system_switch_js__WEBPACK_IMPORTED_MODULE_2__);
- // modal window
-// import './javascript/modal.js';
-// shortcut change animation
 
- // landing text apperance
+;// CONCATENATED MODULE: ./node_modules/js-cookie/dist/js.cookie.mjs
+/*! js-cookie v3.0.1 | MIT */
+/* eslint-disable no-var */
+function js_cookie_assign (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+    for (var key in source) {
+      target[key] = source[key];
+    }
+  }
+  return target
+}
+/* eslint-enable no-var */
 
- // shortcut page sistem check and load content
+/* eslint-disable no-var */
+var defaultConverter = {
+  read: function (value) {
+    if (value[0] === '"') {
+      value = value.slice(1, -1);
+    }
+    return value.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent)
+  },
+  write: function (value) {
+    return encodeURIComponent(value).replace(
+      /%(2[346BF]|3[AC-F]|40|5[BDE]|60|7[BCD])/g,
+      decodeURIComponent
+    )
+  }
+};
+/* eslint-enable no-var */
 
- // import './javascript/training.js';
+/* eslint-disable no-var */
+
+function init (converter, defaultAttributes) {
+  function set (key, value, attributes) {
+    if (typeof document === 'undefined') {
+      return
+    }
+
+    attributes = js_cookie_assign({}, defaultAttributes, attributes);
+
+    if (typeof attributes.expires === 'number') {
+      attributes.expires = new Date(Date.now() + attributes.expires * 864e5);
+    }
+    if (attributes.expires) {
+      attributes.expires = attributes.expires.toUTCString();
+    }
+
+    key = encodeURIComponent(key)
+      .replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent)
+      .replace(/[()]/g, escape);
+
+    var stringifiedAttributes = '';
+    for (var attributeName in attributes) {
+      if (!attributes[attributeName]) {
+        continue
+      }
+
+      stringifiedAttributes += '; ' + attributeName;
+
+      if (attributes[attributeName] === true) {
+        continue
+      }
+
+      // Considers RFC 6265 section 5.2:
+      // ...
+      // 3.  If the remaining unparsed-attributes contains a %x3B (";")
+      //     character:
+      // Consume the characters of the unparsed-attributes up to,
+      // not including, the first %x3B (";") character.
+      // ...
+      stringifiedAttributes += '=' + attributes[attributeName].split(';')[0];
+    }
+
+    return (document.cookie =
+      key + '=' + converter.write(value, key) + stringifiedAttributes)
+  }
+
+  function get (key) {
+    if (typeof document === 'undefined' || (arguments.length && !key)) {
+      return
+    }
+
+    // To prevent the for loop in the first place assign an empty array
+    // in case there are no cookies at all.
+    var cookies = document.cookie ? document.cookie.split('; ') : [];
+    var jar = {};
+    for (var i = 0; i < cookies.length; i++) {
+      var parts = cookies[i].split('=');
+      var value = parts.slice(1).join('=');
+
+      try {
+        var foundKey = decodeURIComponent(parts[0]);
+        jar[foundKey] = converter.read(value, foundKey);
+
+        if (key === foundKey) {
+          break
+        }
+      } catch (e) {}
+    }
+
+    return key ? jar[key] : jar
+  }
+
+  return Object.create(
+    {
+      set: set,
+      get: get,
+      remove: function (key, attributes) {
+        set(
+          key,
+          '',
+          js_cookie_assign({}, attributes, {
+            expires: -1
+          })
+        );
+      },
+      withAttributes: function (attributes) {
+        return init(this.converter, js_cookie_assign({}, this.attributes, attributes))
+      },
+      withConverter: function (converter) {
+        return init(js_cookie_assign({}, this.converter, converter), this.attributes)
+      }
+    },
+    {
+      attributes: { value: Object.freeze(defaultAttributes) },
+      converter: { value: Object.freeze(converter) }
+    }
+  )
+}
+
+var api = init(defaultConverter, { path: '/' });
+/* eslint-enable no-var */
+
+/* harmony default export */ const js_cookie = (api);
+
+;// CONCATENATED MODULE: ./src/javascript/modal.js
+
+var modal = document.getElementById('modal');
+var modalButton = document.getElementById('modalButton');
+
+if (modal !== null && modal !== void 0 && modal.style && modalButton) {
+  if (!js_cookie.get('modal')) {
+    js_cookie.set('modal', true);
+    setTimeout(function () {
+      modal.style.display = 'flex';
+    }, 1000);
+  }
+
+  modalButton.addEventListener('click', function () {
+    modal.style.display = 'none';
+  });
+  modal.addEventListener('click', function () {
+    modal.style.display = 'none';
+  });
+}
+// EXTERNAL MODULE: ./src/javascript/shortcut.js
+var shortcut = __webpack_require__(197);
+// EXTERNAL MODULE: ./src/javascript/on-scroll.js
+var on_scroll = __webpack_require__(557);
+;// CONCATENATED MODULE: ./src/javascript/system-switch.js
+
+document.addEventListener('DOMContentLoaded', function () {
+  var isMac = navigator.userAgent.toLowerCase().includes('macintosh');
+  var macEl = document.getElementById('S_Mac');
+  var winEl = document.getElementById('S_Win');
+  var macBtn = document.querySelector('#mac');
+  var winBtn = document.querySelector('#win');
+  var winVector = document.querySelector('.Q_WindowsVector');
+  var macVector = document.querySelector('.Q_MacosVector');
+
+  if (isMac) {
+    js_cookie.set('os', 'macos');
+  } else {
+    js_cookie.set('os', 'windows');
+  }
+
+  var osCookie = js_cookie.get('os');
+
+  if (osCookie === 'macos') {} else {}
+
+  if (osCookie === 'macos') {
+    if (macEl) macEl.style.display = 'block';
+
+    if (macBtn && macVector) {
+      macBtn.classList.add('_Active');
+      macVector.style.fill = 'black';
+    }
+  } else {
+    if (winEl) winEl.style.display = 'block';
+
+    if (winBtn && winVector) {
+      winBtn.classList.add('_Active');
+      winVector.style.fill = 'black';
+    }
+  }
+
+  winBtn === null || winBtn === void 0 ? void 0 : winBtn.addEventListener('click', function () {
+    if (macEl && winEl) {
+      winEl.style.display = 'block';
+      macEl.style.display = 'none';
+    }
+
+    winBtn.classList.toggle('_Active');
+    winVector.style.fill = 'black';
+    macBtn.classList.toggle('_Active');
+    macVector.style.fill = 'white';
+  });
+  macBtn === null || macBtn === void 0 ? void 0 : macBtn.addEventListener('click', function () {
+    if (macEl && winEl) {
+      macEl.style.display = 'block';
+      winEl.style.display = 'none';
+    }
+
+    macBtn.classList.toggle('_Active');
+    macVector.style.fill = 'black';
+    winBtn.classList.toggle('_Active');
+    winVector.style.fill = 'white';
+  });
+});
+;// CONCATENATED MODULE: ./src/index.js
+ //* modal window
+
+ //* shortcut change animation
+
+ //* landing text apperance
+
+ //* shortcut page sistem check and load content
+
+ //* import './javascript/training.js';
 })();
 
 /******/ })()
