@@ -45,16 +45,13 @@
     }
 
     .M_SearchButton {
-      margin-bottom: 0.2vw;
       margin-left: 0.9vw;
       color: transparent;
       border: none;
       background-color: transparent;
 
-      .A_ButtonSVG {
-        .Q_ButtonIcon {
-          fill: var(--grey);
-        }
+      .A_ButtonIcon {
+        color: var(--grey);
       }
     }
   }
