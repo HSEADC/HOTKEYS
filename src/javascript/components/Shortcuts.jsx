@@ -6,6 +6,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
 import {faWindows, faApple} from '@fortawesome/free-brands-svg-icons'
 
+import SelectInput from './SelectInput.jsx'
+
 export default class Shortcuts extends Component {
   constructor(props) {
     super(props)
@@ -35,6 +37,7 @@ export default class Shortcuts extends Component {
               <FontAwesomeIcon icon={faSearch} className="A_ButtonIcon" />
             </button>
           </div>
+          <SelectInput></SelectInput>
         </form>
         <div className="S_Shortcuts">
           {hotkeys.map((hotkey, index) => (
