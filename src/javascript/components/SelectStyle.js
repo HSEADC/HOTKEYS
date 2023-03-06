@@ -35,5 +35,6 @@ export const colorStyles = {
   indicatorSeparator: (styles) => ({...styles, display: 'none'}),
   menu: (styles) => ({...styles, backgroundColor: 'transparent', boxShadow: '0px 0px 5px 1px #cbfb4550'}),
   placeholder: (styles) => ({...styles, color: 'white'}),
+  input: (styles) => ({...styles, color: 'white'}),
   singleValue: (styles) => ({...styles, color: 'white'}),
 }

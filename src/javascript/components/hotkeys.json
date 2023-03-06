@@ -8,6 +8,7 @@
     "popular": true,
     "useful": true,
     "simple": true,
+    "complex": true,
     "target": "system"
   },
   {
@@ -19,6 +20,7 @@
     "popular": false,
     "useful": false,
     "simple": true,
+    "complex": true,
     "target": "system"
   },
   {
@@ -29,7 +31,8 @@
     "macos": "Cmd+Ctrl+Shift+V",
     "popular": true,
     "useful": true,
-    "simple": true,
+    "simple": false,
+    "complex": false,
     "target": "system"
   },
   {
@@ -38,9 +41,10 @@
     "text": "последнего выполненного действия",
     "windows": "Ctrl+Z",
     "macos": "Cmd+Z",
-    "popular": true,
+    "popular": false,
     "useful": true,
     "simple": true,
-    "target": "system"
+    "complex": false,
+    "target": "ms-office"
   }
 ]

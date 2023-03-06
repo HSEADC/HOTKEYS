@@ -15,6 +15,8 @@ export default class Shortcuts extends Component {
     const osCookie = Cookies.get('os')
     this.state = {
       system: osCookie === 'macos' ? 'macos' : 'windows',
+      selectedProgramOption: null,
+      selectedMainOption: null,
     }
   }
 
@@ -33,27 +35,40 @@ export default class Shortcuts extends Component {
   }
 
   render() {
-    const {system} = this.state
+    const {system, selectedProgramOption, selectedMainOption} = this.state
 
     const programOptions = [
       {value: 'system', label: 'Система'},
       {value: 'ms-office', label: 'Microsoft Office'},
       {value: 'photoshop', label: 'Adobe Photoshop'},
-      {value: 'vs-code', label: 'Microsoft Visual Studio Code'},
+      {value: 'vs-code', label: 'VS Code'},
     ]
 
     const mainOptions = [
       {value: 'popular', label: 'Популярные'},
       {value: 'useful', label: 'Самые полезные'},
-      {value: 'simple-first', label: 'Сначала простые'},
-      {value: 'complex-first', label: 'Сначала сложные'},
+      {value: 'simple', label: 'Сначала простые'},
+      {value: 'complex', label: 'Сначала сложные'},
     ]
 
-    const handleChange = (selectedOption, actionMeta) => {
-      console.log('handleChange', selectedOption, actionMeta)
+    const filteredHotkeys = hotkeys.filter((hotkey) => {
+      if (selectedProgramOption && hotkey.target !== selectedProgramOption.value) {
+        return false
+      }
+      if (selectedMainOption) {
+        if (hotkey[selectedMainOption.value] !== true) {
+          return false
+        }
+      }
+      return true
+    })
+
+    const handleProgramChange = (selectedProgramOption) => {
+      this.setState({selectedProgramOption})
     }
-    const handleInputChange = (inputValue, actionMeta) => {
-      console.log('handleInputChange', inputValue, actionMeta)
+
+    const handleMainChange = (selectedMainOption) => {
+      this.setState({selectedMainOption})
     }
 
     return (
@@ -67,8 +82,8 @@ export default class Shortcuts extends Component {
           </div>
           <div className="S_Filters">
             <div className="C_SelectBar">
-              <Select options={programOptions} onChange={handleChange} onInputChange={handleInputChange} styles={colorStyles} placeholder="Все программы" />
-              <Select options={mainOptions} onChange={handleChange} onInputChange={handleInputChange} styles={colorStyles} placeholder="Сортировка" />
+              <Select options={programOptions} onChange={handleProgramChange} styles={colorStyles} placeholder="Все программы" />
+              <Select options={mainOptions} onChange={handleMainChange} styles={colorStyles} placeholder="Сортировка" />
             </div>
             <div className="O_SystemSwitch Filter">
               <div className="C_SwitchItems">
@@ -87,17 +102,22 @@ export default class Shortcuts extends Component {
           </div>
         </form>
         <div className="S_Shortcuts">
-          {hotkeys.map((hotkey, index) => (
-            <a href={hotkey.link} key={index}>
-              <div className="M_ShortcutCard">
-                <h1 className="A_CardName">
-                  <span className="Q_TextSelection">{hotkey.selected} </span>
-                  {hotkey.text}
-                </h1>
-                <h2 className="A_CardKey">{hotkey[system]}</h2>
-              </div>
-            </a>
-          ))}
+          {filteredHotkeys.map(
+            (
+              hotkey,
+              index, // use the filtered hotkeys array to render the hotkeys
+            ) => (
+              <a href={hotkey.link} key={index}>
+                <div className="M_ShortcutCard">
+                  <h1 className="A_CardName">
+                    <span className="Q_TextSelection">{hotkey.selected} </span>
+                    {hotkey.text}
+                  </h1>
+                  <h2 className="A_CardKey">{hotkey[system]}</h2>
+                </div>
+              </a>
+            ),
+          )}
         </div>
       </>
     )
