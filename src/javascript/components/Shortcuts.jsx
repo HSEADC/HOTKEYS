@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Cookies from 'js-cookie'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faSearch} from '@fortawesome/free-solid-svg-icons'
+import {faSearch, faTimes} from '@fortawesome/free-solid-svg-icons'
 
 import Select from 'react-select'
 import {colorStyles, green, black, lightBlack} from './SelectStyle'
@@ -32,6 +32,14 @@ export default class Shortcuts extends Component {
     this.setState({system: 'macos'})
     document.getElementById('win').classList.remove('active')
     document.getElementById('mac').classList.add('active')
+  }
+
+  handleReset = (event) => {
+    event.preventDefault()
+    this.setState({
+      selectedProgramOption: null,
+      selectedMainOption: null,
+    })
   }
 
   render() {
@@ -82,8 +90,8 @@ export default class Shortcuts extends Component {
           </div>
           <div className="S_Filters">
             <div className="C_SelectBar">
-              <Select options={programOptions} onChange={handleProgramChange} styles={colorStyles} placeholder="Все программы" />
-              <Select options={mainOptions} onChange={handleMainChange} styles={colorStyles} placeholder="Сортировка" />
+              <Select options={programOptions} value={selectedProgramOption} onChange={handleProgramChange} styles={colorStyles} placeholder="Все программы" />
+              <Select options={mainOptions} value={selectedMainOption} onChange={handleMainChange} styles={colorStyles} placeholder="Сортировка" />
             </div>
             <div className="O_SystemSwitch Filter">
               <div className="C_SwitchItems">
@@ -99,6 +107,9 @@ export default class Shortcuts extends Component {
                 </button>
               </div>
             </div>
+            <button className="M_ResetFilters" onClick={this.handleReset}>
+              <FontAwesomeIcon icon={faTimes} className="A_ResetIcon" />
+            </button>
           </div>
         </form>
         <div className="S_Shortcuts">
