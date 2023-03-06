@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 6vw;
   height: 3vw;
-  border: 1.5px solid var(--grey);
+  border: 1.5px solid var(--white);
   border-radius: 4px;
 
   .C_SwitchItems {
@@ -53,6 +53,57 @@
     ._Active {
       @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
       border-radius: 2px;
+    }
+  }
+}
+
+.O_SystemSwitch.Filter {
+  height: 2vw;
+  width: 3.8vw;
+  align-items: center;
+  align-self: center;
+
+  .C_SwitchItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 0.25vw;
+
+    .M_MacosSwitch,
+    .M_WindowsSwitch {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: var(--white);
+      display: flex;
+      justify-self: center;
+
+      .A_MacosSVG {
+        width: 0.79vw;
+        height: 1vw;
+        overflow: visible;
+
+        .Q_MacosVector {
+          fill: var(--white);
+        }
+      }
+
+      .A_WindowsSVG {
+        width: 0.85vw;
+        height: 0.85vw;
+        overflow: visible;
+
+        .Q_WindowsVector {
+          fill: var(--white);
+        }
+      }
+
+      ._Active {
+        @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
+        border-radius: 2px;
+      }
     }
   }
 }
