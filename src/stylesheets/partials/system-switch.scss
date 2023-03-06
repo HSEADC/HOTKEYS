@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 6vw;
   height: 3vw;
-  border: 1.5px solid var(--white);
+  border: 1.5px solid var(--grey);
   border-radius: 4px;
 
   .C_SwitchItems {
@@ -54,55 +54,38 @@
       @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
       border-radius: 2px;
     }
+
+    .M_MacosItem._Active .Q_MacosVector,
+    .M_WindowsItem._Active .Q_WindowsVector {
+      fill: black;
+    }
   }
 }
 
 .O_SystemSwitch.Filter {
-  height: 2vw;
-  width: 3.8vw;
-  align-items: center;
-  align-self: center;
+  width: 4vw;
+  height: 2.35vw;
 
   .C_SwitchItems {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    gap: 0.25vw;
-
-    .M_MacosSwitch,
-    .M_WindowsSwitch {
-      background-color: transparent;
-      border: none;
-      outline: none;
-      color: var(--white);
-      display: flex;
-      justify-self: center;
+    .M_MacosItem {
+      @include itemGrid;
+      margin: 0.35vw 0.25vw 0.35vw 0.6vw;
+      width: 1.5vw;
+      height: 1.5vw;
 
       .A_MacosSVG {
-        width: 0.79vw;
-        height: 1vw;
-        overflow: visible;
-
-        .Q_MacosVector {
-          fill: var(--white);
-        }
+        width: 0.75vw;
+        height: 0.85vw;
       }
+    }
+    .M_WindowsItem {
+      margin: 0.35vw 0.6vw 0.35vw 0.25vw;
+      width: 1.5vw;
+      height: 1.5vw;
 
       .A_WindowsSVG {
-        width: 0.85vw;
-        height: 0.85vw;
-        overflow: visible;
-
-        .Q_WindowsVector {
-          fill: var(--white);
-        }
-      }
-
-      ._Active {
-        @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
-        border-radius: 2px;
+        width: 0.8vw;
+        height: 0.8vw;
       }
     }
   }
