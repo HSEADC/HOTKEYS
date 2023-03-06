@@ -4,7 +4,6 @@ import hotkeys from './hotkeys.json'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
-import {faWindows, faApple} from '@fortawesome/free-brands-svg-icons'
 
 import SelectInput from './SelectInput.jsx'
 
