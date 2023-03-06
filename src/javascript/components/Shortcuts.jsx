@@ -1,11 +1,13 @@
 import React, {Component} from 'react'
 import Cookies from 'js-cookie'
-import hotkeys from './hotkeys.json'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
 
-import SelectInput from './SelectInput.jsx'
+import Select from 'react-select'
+import {colorStyles, green, black, lightBlack} from './SelectStyle'
+
+import hotkeys from './hotkeys.json'
 
 export default class Shortcuts extends Component {
   constructor(props) {
@@ -33,6 +35,27 @@ export default class Shortcuts extends Component {
   render() {
     const {system} = this.state
 
+    const programOptions = [
+      {value: 'system', label: 'Система'},
+      {value: 'ms-office', label: 'Microsoft Office'},
+      {value: 'photoshop', label: 'Adobe Photoshop'},
+      {value: 'vs-code', label: 'Microsoft Visual Studio Code'},
+    ]
+
+    const mainOptions = [
+      {value: 'popular', label: 'Популярные'},
+      {value: 'useful', label: 'Самые полезные'},
+      {value: 'simple-first', label: 'Сначала простые'},
+      {value: 'complex-first', label: 'Сначала сложные'},
+    ]
+
+    const handleChange = (selectedOption, actionMeta) => {
+      console.log('handleChange', selectedOption, actionMeta)
+    }
+    const handleInputChange = (inputValue, actionMeta) => {
+      console.log('handleInputChange', inputValue, actionMeta)
+    }
+
     return (
       <>
         <form className="S_SearchForm">
@@ -43,7 +66,10 @@ export default class Shortcuts extends Component {
             </button>
           </div>
           <div className="S_Filters">
-            <SelectInput></SelectInput>
+            <div className="C_SelectBar">
+              <Select options={programOptions} onChange={handleChange} onInputChange={handleInputChange} styles={colorStyles} placeholder="Все программы" />
+              <Select options={mainOptions} onChange={handleChange} onInputChange={handleInputChange} styles={colorStyles} placeholder="Сортировка" />
+            </div>
             <div className="O_SystemSwitch Filter">
               <div className="C_SwitchItems">
                 <button id="mac" className={system === 'macos' ? 'M_MacosItem _Active' : 'M_MacosItem'} onClick={this.handleMacosClick}>
