@@ -41,6 +41,13 @@
   }
 }
 
+.C_SelectBar {
+  margin-top: 1vw;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
 @media screen and (max-width: 768px) {
   .S_Shortcuts {
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
