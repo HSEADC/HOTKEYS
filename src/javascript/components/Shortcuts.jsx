@@ -48,9 +48,9 @@ export default class Shortcuts extends Component {
 
     const programOptions = [
       {value: 'system', label: 'Система'},
+      {value: 'vs-code', label: 'VS Code'},
       {value: 'ms-office', label: 'Microsoft Office'},
       {value: 'photoshop', label: 'Adobe Photoshop'},
-      {value: 'vs-code', label: 'VS Code'},
     ]
 
     const mainOptions = [
