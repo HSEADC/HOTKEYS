@@ -17,19 +17,20 @@ export default class Shortcuts extends Component {
       system: osCookie === 'macos' ? 'macos' : 'windows',
       selectedProgramOption: null,
       selectedMainOption: null,
+      systemSelected: false,
     }
   }
 
   handleWindowsClick = (event) => {
     event.preventDefault()
-    this.setState({system: 'windows'})
+    this.setState({system: 'windows', systemSelected: true})
     document.getElementById('mac').classList.remove('active')
     document.getElementById('win').classList.add('active')
   }
 
   handleMacosClick = (event) => {
     event.preventDefault()
-    this.setState({system: 'macos'})
+    this.setState({system: 'macos', systemSelected: true})
     document.getElementById('win').classList.remove('active')
     document.getElementById('mac').classList.add('active')
   }
@@ -43,7 +44,7 @@ export default class Shortcuts extends Component {
   }
 
   render() {
-    const {system, selectedProgramOption, selectedMainOption} = this.state
+    const {system, selectedProgramOption, selectedMainOption, systemSelected} = this.state
 
     const programOptions = [
       {value: 'system', label: 'Система'},
@@ -59,17 +60,21 @@ export default class Shortcuts extends Component {
       {value: 'complex', label: 'Сначала сложные'},
     ]
 
-    const filteredHotkeys = hotkeys.filter((hotkey) => {
-      if (selectedProgramOption && hotkey.target !== selectedProgramOption.value) {
-        return false
-      }
-      if (selectedMainOption) {
-        if (hotkey[selectedMainOption.value] !== true) {
+    let filteredHotkeys = hotkeys
+
+    if (systemSelected) {
+      filteredHotkeys = hotkeys.filter((hotkey) => {
+        if (selectedProgramOption && hotkey.target !== selectedProgramOption.value) {
           return false
         }
-      }
-      return true
-    })
+        if (selectedMainOption) {
+          if (hotkey[selectedMainOption.value] !== true) {
+            return false
+          }
+        }
+        return true
+      })
+    }
 
     const handleProgramChange = (selectedProgramOption) => {
       this.setState({selectedProgramOption})
@@ -113,11 +118,9 @@ export default class Shortcuts extends Component {
           </div>
         </form>
         <div className="S_Shortcuts">
-          {filteredHotkeys.map(
-            (
-              hotkey,
-              index, // use the filtered hotkeys array to render the hotkeys
-            ) => (
+          {filteredHotkeys
+            .sort(() => Math.random() - 0.5)
+            .map((hotkey, index) => (
               <a href={hotkey.link} key={index}>
                 <div className="M_ShortcutCard">
                   <h1 className="A_CardName">
@@ -127,8 +130,7 @@ export default class Shortcuts extends Component {
                   <h2 className="A_CardKey">{hotkey[system]}</h2>
                 </div>
               </a>
-            ),
-          )}
+            ))}
         </div>
       </>
     )
