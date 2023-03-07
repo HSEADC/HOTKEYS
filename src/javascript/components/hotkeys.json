@@ -310,5 +310,101 @@
     "simple": true,
     "complex": false,
     "target": "vs-code"
+  },
+  {
+    "link": "shortcuts/browser-open-new-tab.html",
+    "selected": "Открыть",
+    "text": "новое окно",
+    "windows": "Ctrl+N",
+    "macos": "Cmd+N",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "browser"
+  },
+  {
+    "link": "shortcuts/browser-open-new-tab.html",
+    "selected": "Открыть",
+    "text": "новое окно икогнито",
+    "windows": "Ctrl+Shift+N",
+    "macos": "Cmd+Shift+N",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "browser"
+  },
+  {
+    "link": "shortcuts/browser-open-new-tab.html",
+    "selected": "Открыть",
+    "text": "новую вкладку",
+    "windows": "Ctrl+T",
+    "macos": "Cmd+T",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "browser"
+  },
+  {
+    "link": "shortcuts/browser-reopen-closed-tab.html",
+    "selected": "Восстановить",
+    "text": "закрытую вкладку",
+    "windows": "Ctrl+Shift+T",
+    "macos": "Cmd+Shift+T",
+    "popular": true,
+    "useful": true,
+    "simple": false,
+    "complex": true,
+    "target": "browser"
+  },
+  {
+    "link": "shortcuts/browser-switch-tab.html",
+    "selected": "Переключение",
+    "text": "между вкладками",
+    "windows": "Ctrl+Tab",
+    "macos": "Cmd+Option+ →",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "browser"
+  },
+  {
+    "link": "shortcuts/browser-history-back-forward.html",
+    "selected": "Перемещение",
+    "text": "назад/вперед",
+    "windows": "Alt+ ← / Alt+ →",
+    "macos": "Cmd+ ← / Cmd+ →",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "browser"
+  },
+  {
+    "link": "shortcuts/browser-refresh-page.html",
+    "selected": "Обновить",
+    "text": "страницу",
+    "windows": "F5 / Ctrl+R",
+    "macos": "Cmd+R",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "browser"
+  },
+  {
+    "link": "shortcuts/browser-open-history.html",
+    "selected": "Открыть",
+    "text": "историю",
+    "windows": "Ctrl+H",
+    "macos": "Cmd+Y",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "browser"
   }
 ]
