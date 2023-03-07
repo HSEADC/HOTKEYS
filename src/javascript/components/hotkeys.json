@@ -214,5 +214,101 @@
     "simple": true,
     "complex": false,
     "target": "system"
+  },
+  {
+    "link": "shortcuts/vscode-comment.html",
+    "selected": "Комментирование",
+    "text": "кода для отключения его выполнения",
+    "windows": "Ctrl+/",
+    "macos": "Cmd+/",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "vs-code"
+  },
+  {
+    "link": "shortcuts/vscode-find-replace.html",
+    "selected": "Поиск",
+    "text": "выбранного фрагмента",
+    "windows": "Ctrl+F",
+    "macos": "Cmd+F",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "vs-code"
+  },
+  {
+    "link": "shortcuts/vscode-find-replace.html",
+    "selected": "Замена",
+    "text": "выбранного фрагмента",
+    "windows": "Ctrl+H",
+    "macos": "Cmd+H",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "vs-code"
+  },
+  {
+    "link": "shortcuts/vscode-find-replace.html",
+    "selected": "Поиск",
+    "text": "выбранного фрагмента по всему проекту",
+    "windows": "Ctrl+Shift+F",
+    "macos": "Cmd+Shift+F",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "vs-code"
+  },
+  {
+    "link": "shortcuts/vscode-find-replace.html",
+    "selected": "Замена",
+    "text": "выбранного фрагмента  по всему проекту",
+    "windows": "Ctrl+Shift+H",
+    "macos": "Cmd+Shift+H",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "vs-code"
+  },
+  {
+    "link": "shortcuts/vscode-toggle-sidebar.html",
+    "selected": "Переключение",
+    "text": "боковой панели",
+    "windows": "Ctrl+B",
+    "macos": "Cmd+B",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "vs-code"
+  },
+  {
+    "link": "shortcuts/vscode-select-next-occurrence.html",
+    "selected": "Выделение",
+    "text": "схожих фрагментов кода",
+    "windows": "Ctrl+D",
+    "macos": "Cmd+D",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "vs-code"
+  },
+  {
+    "link": "shortcuts/vscode-command-palette.html",
+    "selected": "Открытие",
+    "text": "палитры команд",
+    "windows": "Ctrl+Shift+P",
+    "macos": "Cmd+Shift+P",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "vs-code"
   }
 ]

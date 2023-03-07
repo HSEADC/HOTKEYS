@@ -44,7 +44,7 @@ export default class Shortcuts extends Component {
   }
 
   render() {
-    const {system, selectedProgramOption, selectedMainOption, systemSelected} = this.state
+    const {system, selectedProgramOption, selectedMainOption} = this.state
 
     const programOptions = [
       {value: 'system', label: 'Система'},
@@ -62,19 +62,17 @@ export default class Shortcuts extends Component {
 
     let filteredHotkeys = hotkeys
 
-    if (systemSelected) {
-      filteredHotkeys = hotkeys.filter((hotkey) => {
-        if (selectedProgramOption && hotkey.target !== selectedProgramOption.value) {
+    filteredHotkeys = hotkeys.filter((hotkey) => {
+      if (selectedProgramOption && hotkey.target !== selectedProgramOption.value) {
+        return false
+      }
+      if (selectedMainOption) {
+        if (hotkey[selectedMainOption.value] !== true) {
           return false
         }
-        if (selectedMainOption) {
-          if (hotkey[selectedMainOption.value] !== true) {
-            return false
-          }
-        }
-        return true
-      })
-    }
+      }
+      return true
+    })
 
     const handleProgramChange = (selectedProgramOption) => {
       this.setState({selectedProgramOption})
