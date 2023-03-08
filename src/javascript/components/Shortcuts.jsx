@@ -9,18 +9,15 @@ import {colorStyles, green, black, lightBlack} from './SelectStyle'
 import hotkeys from './hotkeys.json'
 
 export default class Shortcuts extends Component {
-  constructor(props) {
-    super(props)
-    const osCookie = Cookies.get('os')
-    this.state = {
-      system: osCookie === 'macos' ? 'macos' : 'windows',
-      selectedProgramOption: null,
-      selectedMainOption: null,
-      systemSelected: false,
-      searchQuery: '', // add search query state
-    }
+  state = {
+    system: Cookies.get('os') === 'macos' ? 'macos' : 'windows',
+    selectedProgramOption: null,
+    selectedMainOption: null,
+    systemSelected: false,
+    searchQuery: '',
   }
 
+  //* [windows button] switch system on click and add active class
   handleWindowsClick = (event) => {
     event.preventDefault()
     this.setState({system: 'windows', systemSelected: true})
@@ -28,6 +25,7 @@ export default class Shortcuts extends Component {
     document.getElementById('win').classList.add('active')
   }
 
+  //* [macos button] switch system on click and add active class
   handleMacosClick = (event) => {
     event.preventDefault()
     this.setState({system: 'macos', systemSelected: true})
@@ -35,6 +33,7 @@ export default class Shortcuts extends Component {
     document.getElementById('mac').classList.add('active')
   }
 
+  //* [reset button] reset search filters on click
   handleReset = (event) => {
     event.preventDefault()
     this.setState({
@@ -46,12 +45,14 @@ export default class Shortcuts extends Component {
   render() {
     const {system, selectedProgramOption, selectedMainOption, searchQuery} = this.state // destructure search query state
 
+    //? [Все программы] select program options
     const programOptions = [
       {value: 'system', label: 'Система'},
       {value: 'browser', label: 'Браузер'},
       {value: 'vs-code', label: 'VS Code'},
     ]
 
+    //? [Сортировка] select main options
     const mainOptions = [
       {value: 'popular', label: 'Популярные'},
       {value: 'useful', label: 'Самые полезные'},
@@ -59,8 +60,19 @@ export default class Shortcuts extends Component {
       {value: 'complex', label: 'Сначала сложные'},
     ]
 
+    //* [Все программы] apply select program option and reRender {hotkeys}
+    const handleProgramChange = (selectedProgramOption) => {
+      this.setState({selectedProgramOption})
+    }
+
+    //* [Все программы] apply select main option and reRender {hotkeys}
+    const handleMainChange = (selectedMainOption) => {
+      this.setState({selectedMainOption})
+    }
+
     let filteredHotkeys = hotkeys
 
+    //* search filter {hotkeys}
     if (searchQuery) {
       filteredHotkeys = filteredHotkeys.filter((hotkey) => {
         const {selected, text} = hotkey
@@ -69,6 +81,7 @@ export default class Shortcuts extends Component {
       })
     }
 
+    //* on load filter {hotkeys}
     filteredHotkeys = filteredHotkeys.filter((hotkey) => {
       if (selectedProgramOption && hotkey.target !== selectedProgramOption.value) {
         return false
@@ -80,14 +93,6 @@ export default class Shortcuts extends Component {
       }
       return true
     })
-
-    const handleProgramChange = (selectedProgramOption) => {
-      this.setState({selectedProgramOption})
-    }
-
-    const handleMainChange = (selectedMainOption) => {
-      this.setState({selectedMainOption})
-    }
 
     return (
       <>
