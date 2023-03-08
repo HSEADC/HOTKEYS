@@ -262,8 +262,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var winEl = document.getElementById('S_Win');
   var macBtn = document.querySelector('#mac');
   var winBtn = document.querySelector('#win');
-  var winVector = document.querySelector('.Q_WindowsVector');
-  var macVector = document.querySelector('.Q_MacosVector');
 
   if (isMac) {
     js_cookie.set('os', 'macos');
@@ -278,16 +276,14 @@ document.addEventListener('DOMContentLoaded', function () {
   if (osCookie === 'macos') {
     if (macEl) macEl.style.display = 'block';
 
-    if (macBtn && macVector) {
+    if (macBtn) {
       macBtn.classList.add('_Active');
-      macVector.style.fill = 'black';
     }
   } else {
     if (winEl) winEl.style.display = 'block';
 
-    if (winBtn && winVector) {
+    if (winBtn) {
       winBtn.classList.add('_Active');
-      winVector.style.fill = 'black';
     }
   }
 
@@ -298,9 +294,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     winBtn.classList.toggle('_Active');
-    winVector.style.fill = 'black';
     macBtn.classList.toggle('_Active');
-    macVector.style.fill = 'white';
   });
   macBtn === null || macBtn === void 0 ? void 0 : macBtn.addEventListener('click', function () {
     if (macEl && winEl) {
@@ -309,9 +303,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     macBtn.classList.toggle('_Active');
-    macVector.style.fill = 'black';
     winBtn.classList.toggle('_Active');
-    winVector.style.fill = 'white';
   });
 });
 ;// CONCATENATED MODULE: ./src/index.js
