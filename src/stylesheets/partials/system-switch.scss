@@ -54,5 +54,39 @@
       @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
       border-radius: 2px;
     }
+
+    .M_MacosItem._Active .Q_MacosVector,
+    .M_WindowsItem._Active .Q_WindowsVector {
+      fill: black;
+    }
+  }
+}
+
+.O_SystemSwitch.Filter {
+  width: 4vw;
+  height: 2.35vw;
+
+  .C_SwitchItems {
+    .M_MacosItem {
+      @include itemGrid;
+      margin: 0.35vw 0.25vw 0.35vw 0.6vw;
+      width: 1.5vw;
+      height: 1.5vw;
+
+      .A_MacosSVG {
+        width: 0.75vw;
+        height: 0.85vw;
+      }
+    }
+    .M_WindowsItem {
+      margin: 0.35vw 0.6vw 0.35vw 0.25vw;
+      width: 1.5vw;
+      height: 1.5vw;
+
+      .A_WindowsSVG {
+        width: 0.8vw;
+        height: 0.8vw;
+      }
+    }
   }
 }
