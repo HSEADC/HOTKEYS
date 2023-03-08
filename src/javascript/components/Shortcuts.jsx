@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
 import Cookies from 'js-cookie'
+import Select from 'react-select'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faSearch, faTimes} from '@fortawesome/free-solid-svg-icons'
 
-import Select from 'react-select'
 import {colorStyles, green, black, lightBlack} from './SelectStyle'
-
 import hotkeys from './hotkeys.json'
 
 export default class Shortcuts extends Component {
@@ -18,6 +17,7 @@ export default class Shortcuts extends Component {
       selectedProgramOption: null,
       selectedMainOption: null,
       systemSelected: false,
+      searchQuery: '', // add search query state
     }
   }
 
@@ -44,14 +44,12 @@ export default class Shortcuts extends Component {
   }
 
   render() {
-    const {system, selectedProgramOption, selectedMainOption} = this.state
+    const {system, selectedProgramOption, selectedMainOption, searchQuery} = this.state // destructure search query state
 
     const programOptions = [
       {value: 'system', label: 'Система'},
       {value: 'browser', label: 'Браузер'},
       {value: 'vs-code', label: 'VS Code'},
-      {value: 'ms-office', label: 'Microsoft Office'},
-      {value: 'photoshop', label: 'Adobe Photoshop'},
     ]
 
     const mainOptions = [
@@ -63,7 +61,15 @@ export default class Shortcuts extends Component {
 
     let filteredHotkeys = hotkeys
 
-    filteredHotkeys = hotkeys.filter((hotkey) => {
+    if (searchQuery) {
+      filteredHotkeys = filteredHotkeys.filter((hotkey) => {
+        const {selected, text} = hotkey
+        const combinedText = `${selected} ${text}`
+        return combinedText.toLowerCase().includes(searchQuery.toLowerCase())
+      })
+    }
+
+    filteredHotkeys = filteredHotkeys.filter((hotkey) => {
       if (selectedProgramOption && hotkey.target !== selectedProgramOption.value) {
         return false
       }
@@ -87,7 +93,7 @@ export default class Shortcuts extends Component {
       <>
         <form className="S_SearchForm">
           <div className="C_SearchBar">
-            <input className="M_SearchInput" type="text" placeholder="Поиск шорткатов" />
+            <input className="M_SearchInput" type="text" placeholder="Поиск шорткатов" value={searchQuery} onChange={(e) => this.setState({searchQuery: e.target.value})} />
             <button className="M_SearchButton" type="submit">
               <FontAwesomeIcon icon={faSearch} className="A_ButtonIcon" />
             </button>
