@@ -50,14 +50,15 @@ export default class Shortcuts extends Component {
       {value: 'system', label: 'Система'},
       {value: 'browser', label: 'Браузер'},
       {value: 'vs-code', label: 'VS Code'},
+      {value: 'figma', label: 'Figma'},
     ]
 
     //? [Сортировка] select main options
     const mainOptions = [
       {value: 'popular', label: 'Популярные'},
       {value: 'useful', label: 'Самые полезные'},
-      {value: 'simple', label: 'Сначала простые'},
-      {value: 'complex', label: 'Сначала сложные'},
+      {value: 'simple', label: 'Самые простые'},
+      {value: 'complex', label: 'Самые сложные'},
     ]
 
     //* [Все программы] apply select program option and reRender {hotkeys}
