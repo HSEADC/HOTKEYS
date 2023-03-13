@@ -40,6 +40,7 @@ export default class Shortcuts extends Component {
     this.setState({
       selectedProgramOption: null,
       selectedMainOption: null,
+      system: Cookies.get('os') === 'macos' ? 'macos' : 'windows',
     })
   }
 

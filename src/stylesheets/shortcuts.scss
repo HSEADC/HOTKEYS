@@ -56,7 +56,7 @@
   justify-content: space-between;
   padding: 1.25vw;
   height: 300px;
-  width: 435px;
+  // min-width: 435px;
   border-radius: 5px;
   font-size: 1.5rem;
   font-weight: 500;
@@ -83,6 +83,13 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .S_Shortcuts {
+    grid-template-columns: repeat(3, 1fr);
+    // column-gap: 1vw;
+    // row-gap: 1vw;
+  }
+}
 @media screen and (max-width: 768px) {
   .S_Shortcuts {
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
