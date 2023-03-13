@@ -810,6 +810,18 @@ if (true) {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -824,6 +836,26 @@ if (true) {
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -1041,171 +1073,6 @@ function objectSpread2_objectSpread2(target) {
   }
   return target;
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js
-function _iterableToArrayLimit(arr, i) {
-  var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"];
-  if (null != _i) {
-    var _s,
-      _e,
-      _x,
-      _r,
-      _arr = [],
-      _n = !0,
-      _d = !1;
-    try {
-      if (_x = (_i = _i.call(arr)).next, 0 === i) {
-        if (Object(_i) !== _i) return;
-        _n = !1;
-      } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0);
-    } catch (err) {
-      _d = !0, _e = err;
-    } finally {
-      try {
-        if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return;
-      } finally {
-        if (_d) throw _e;
-      }
-    }
-    return _arr;
-  }
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
-  return arr2;
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
-
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js
-
-
-
-
-function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-  return target;
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-  var target = _objectWithoutPropertiesLoose(source, excluded);
-  var key, i;
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-  return target;
-}
-;// CONCATENATED MODULE: ./node_modules/react-select/dist/useStateManager-7e1e8489.esm.js
-
-
-
-
-
-var _excluded = ["defaultInputValue", "defaultMenuIsOpen", "defaultValue", "inputValue", "menuIsOpen", "onChange", "onInputChange", "onMenuClose", "onMenuOpen", "value"];
-function useStateManager(_ref) {
-  var _ref$defaultInputValu = _ref.defaultInputValue,
-    defaultInputValue = _ref$defaultInputValu === void 0 ? '' : _ref$defaultInputValu,
-    _ref$defaultMenuIsOpe = _ref.defaultMenuIsOpen,
-    defaultMenuIsOpen = _ref$defaultMenuIsOpe === void 0 ? false : _ref$defaultMenuIsOpe,
-    _ref$defaultValue = _ref.defaultValue,
-    defaultValue = _ref$defaultValue === void 0 ? null : _ref$defaultValue,
-    propsInputValue = _ref.inputValue,
-    propsMenuIsOpen = _ref.menuIsOpen,
-    propsOnChange = _ref.onChange,
-    propsOnInputChange = _ref.onInputChange,
-    propsOnMenuClose = _ref.onMenuClose,
-    propsOnMenuOpen = _ref.onMenuOpen,
-    propsValue = _ref.value,
-    restSelectProps = _objectWithoutProperties(_ref, _excluded);
-  var _useState = (0,react.useState)(propsInputValue !== undefined ? propsInputValue : defaultInputValue),
-    _useState2 = _slicedToArray(_useState, 2),
-    stateInputValue = _useState2[0],
-    setStateInputValue = _useState2[1];
-  var _useState3 = (0,react.useState)(propsMenuIsOpen !== undefined ? propsMenuIsOpen : defaultMenuIsOpen),
-    _useState4 = _slicedToArray(_useState3, 2),
-    stateMenuIsOpen = _useState4[0],
-    setStateMenuIsOpen = _useState4[1];
-  var _useState5 = (0,react.useState)(propsValue !== undefined ? propsValue : defaultValue),
-    _useState6 = _slicedToArray(_useState5, 2),
-    stateValue = _useState6[0],
-    setStateValue = _useState6[1];
-  var onChange = (0,react.useCallback)(function (value, actionMeta) {
-    if (typeof propsOnChange === 'function') {
-      propsOnChange(value, actionMeta);
-    }
-    setStateValue(value);
-  }, [propsOnChange]);
-  var onInputChange = (0,react.useCallback)(function (value, actionMeta) {
-    var newValue;
-    if (typeof propsOnInputChange === 'function') {
-      newValue = propsOnInputChange(value, actionMeta);
-    }
-    setStateInputValue(newValue !== undefined ? newValue : value);
-  }, [propsOnInputChange]);
-  var onMenuOpen = (0,react.useCallback)(function () {
-    if (typeof propsOnMenuOpen === 'function') {
-      propsOnMenuOpen();
-    }
-    setStateMenuIsOpen(true);
-  }, [propsOnMenuOpen]);
-  var onMenuClose = (0,react.useCallback)(function () {
-    if (typeof propsOnMenuClose === 'function') {
-      propsOnMenuClose();
-    }
-    setStateMenuIsOpen(false);
-  }, [propsOnMenuClose]);
-  var inputValue = propsInputValue !== undefined ? propsInputValue : stateInputValue;
-  var menuIsOpen = propsMenuIsOpen !== undefined ? propsMenuIsOpen : stateMenuIsOpen;
-  var value = propsValue !== undefined ? propsValue : stateValue;
-  return objectSpread2_objectSpread2(objectSpread2_objectSpread2({}, restSelectProps), {}, {
-    inputValue: inputValue,
-    menuIsOpen: menuIsOpen,
-    onChange: onChange,
-    onInputChange: onInputChange,
-    onMenuClose: onMenuClose,
-    onMenuOpen: onMenuOpen,
-    value: value
-  });
-}
-
-
-
 ;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
 function extends_extends() {
   extends_extends = Object.assign ? Object.assign.bind() : function (target) {
@@ -1220,133 +1087,6 @@ function extends_extends() {
     return target;
   };
   return extends_extends.apply(this, arguments);
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/createClass.js
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor);
-  }
-}
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  Object.defineProperty(Constructor, "prototype", {
-    writable: false
-  });
-  return Constructor;
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-  return _setPrototypeOf(o, p);
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/inherits.js
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  Object.defineProperty(subClass, "prototype", {
-    writable: false
-  });
-  if (superClass) _setPrototypeOf(subClass, superClass);
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js
-function _getPrototypeOf(o) {
-  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js
-function _isNativeReflectConstruct() {
-  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
-  if (Reflect.construct.sham) return false;
-  if (typeof Proxy === "function") return true;
-  try {
-    Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
-    return true;
-  } catch (e) {
-    return false;
-  }
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-  return self;
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js
-
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  } else if (call !== void 0) {
-    throw new TypeError("Derived constructors may only return object or undefined");
-  }
-  return _assertThisInitialized(self);
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/createSuper.js
-
-
-
-function _createSuper(Derived) {
-  var hasNativeReflectConstruct = _isNativeReflectConstruct();
-  return function _createSuperInternal() {
-    var Super = _getPrototypeOf(Derived),
-      result;
-    if (hasNativeReflectConstruct) {
-      var NewTarget = _getPrototypeOf(this).constructor;
-      result = Reflect.construct(Super, arguments, NewTarget);
-    } else {
-      result = Super.apply(this, arguments);
-    }
-    return _possibleConstructorReturn(this, result);
-  };
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js
-
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js
-function _iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js
-function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js
-
-
-
-
-function _toConsumableArray(arr) {
-  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
 }
 ;// CONCATENATED MODULE: ./node_modules/@emotion/sheet/dist/emotion-sheet.browser.esm.js
 /*
@@ -3784,6 +3524,96 @@ if (false) { var globalKey, globalContext, isTestEnv, emotion_react_browser_esm_
 
 
 
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js
+function _iterableToArrayLimit(arr, i) {
+  var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"];
+  if (null != _i) {
+    var _s,
+      _e,
+      _x,
+      _r,
+      _arr = [],
+      _n = !0,
+      _d = !1;
+    try {
+      if (_x = (_i = _i.call(arr)).next, 0 === i) {
+        if (Object(_i) !== _i) return;
+        _n = !1;
+      } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0);
+    } catch (err) {
+      _d = !0, _e = err;
+    } finally {
+      try {
+        if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return;
+      } finally {
+        if (_d) throw _e;
+      }
+    }
+    return _arr;
+  }
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+  return arr2;
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js
+
+
+
+
+function _slicedToArray(arr, i) {
+  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
 ;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js
 function _taggedTemplateLiteral(strings, raw) {
   if (!raw) {
@@ -3798,10 +3628,10 @@ function _taggedTemplateLiteral(strings, raw) {
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
 var react_dom = __webpack_require__(935);
 ;// CONCATENATED MODULE: ./node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs
-function t(t){return t.split("-")[1]}function floating_ui_core_browser_min_e(t){return"y"===t?"height":"width"}function n(t){return t.split("-")[0]}function o(t){return["top","bottom"].includes(n(t))?"x":"y"}function i(i,r,a){let{reference:l,floating:s}=i;const c=l.x+l.width/2-s.width/2,f=l.y+l.height/2-s.height/2,m=o(r),u=floating_ui_core_browser_min_e(m),g=l[u]/2-s[u]/2,d="x"===m;let p;switch(n(r)){case"top":p={x:c,y:l.y-s.height};break;case"bottom":p={x:c,y:l.y+l.height};break;case"right":p={x:l.x+l.width,y:f};break;case"left":p={x:l.x-s.width,y:f};break;default:p={x:l.x,y:l.y}}switch(t(r)){case"start":p[m]-=g*(a&&d?-1:1);break;case"end":p[m]+=g*(a&&d?-1:1)}return p}const r=async(t,e,n)=>{const{placement:o="bottom",strategy:r="absolute",middleware:a=[],platform:l}=n,s=a.filter(Boolean),c=await(null==l.isRTL?void 0:l.isRTL(e));let f=await l.getElementRects({reference:t,floating:e,strategy:r}),{x:m,y:u}=i(f,o,c),g=o,d={},p=0;for(let n=0;n<s.length;n++){const{name:a,fn:h}=s[n],{x:y,y:x,data:w,reset:v}=await h({x:m,y:u,initialPlacement:o,placement:g,strategy:r,middlewareData:d,rects:f,platform:l,elements:{reference:t,floating:e}});m=null!=y?y:m,u=null!=x?x:u,d={...d,[a]:{...d[a],...w}},v&&p<=50&&(p++,"object"==typeof v&&(v.placement&&(g=v.placement),v.rects&&(f=!0===v.rects?await l.getElementRects({reference:t,floating:e,strategy:r}):v.rects),({x:m,y:u}=i(f,g,c))),n=-1)}return{x:m,y:u,placement:g,strategy:r,middlewareData:d}};function a(t){return"number"!=typeof t?function(t){return{top:0,right:0,bottom:0,left:0,...t}}(t):{top:t,right:t,bottom:t,left:t}}function floating_ui_core_browser_min_l(t){return{...t,top:t.y,left:t.x,right:t.x+t.width,bottom:t.y+t.height}}async function s(t,e){var n;void 0===e&&(e={});const{x:o,y:i,platform:r,rects:s,elements:c,strategy:f}=t,{boundary:m="clippingAncestors",rootBoundary:u="viewport",elementContext:g="floating",altBoundary:d=!1,padding:p=0}=e,h=a(p),y=c[d?"floating"===g?"reference":"floating":g],x=floating_ui_core_browser_min_l(await r.getClippingRect({element:null==(n=await(null==r.isElement?void 0:r.isElement(y)))||n?y:y.contextElement||await(null==r.getDocumentElement?void 0:r.getDocumentElement(c.floating)),boundary:m,rootBoundary:u,strategy:f})),w="floating"===g?{...s.floating,x:o,y:i}:s.reference,v=await(null==r.getOffsetParent?void 0:r.getOffsetParent(c.floating)),b=await(null==r.isElement?void 0:r.isElement(v))&&await(null==r.getScale?void 0:r.getScale(v))||{x:1,y:1},R=floating_ui_core_browser_min_l(r.convertOffsetParentRelativeRectToViewportRelativeRect?await r.convertOffsetParentRelativeRectToViewportRelativeRect({rect:w,offsetParent:v,strategy:f}):w);return{top:(x.top-R.top+h.top)/b.y,bottom:(R.bottom-x.bottom+h.bottom)/b.y,left:(x.left-R.left+h.left)/b.x,right:(R.right-x.right+h.right)/b.x}}const c=Math.min,f=Math.max;function m(t,e,n){return f(t,c(e,n))}const u=n=>({name:"arrow",options:n,async fn(i){const{element:r,padding:l=0}=n||{},{x:s,y:c,placement:f,rects:u,platform:g,elements:d}=i;if(null==r)return{};const p=a(l),h={x:s,y:c},y=o(f),x=floating_ui_core_browser_min_e(y),w=await g.getDimensions(r),v="y"===y,b=v?"top":"left",R=v?"bottom":"right",A=v?"clientHeight":"clientWidth",P=u.reference[x]+u.reference[y]-h[y]-u.floating[x],T=h[y]-u.reference[y],O=await(null==g.getOffsetParent?void 0:g.getOffsetParent(r));let E=O?O[A]:0;E&&await(null==g.isElement?void 0:g.isElement(O))||(E=d.floating[A]||u.floating[x]);const D=P/2-T/2,L=p[b],k=E-w[x]-p[R],B=E/2-w[x]/2+D,C=m(L,B,k),H=null!=t(f)&&B!=C&&u.reference[x]/2-(B<L?p[b]:p[R])-w[x]/2<0;return{[y]:h[y]-(H?B<L?L-B:k-B:0),data:{[y]:C,centerOffset:B-C}}}}),g=["top","right","bottom","left"],d=g.reduce(((t,e)=>t.concat(e,e+"-start",e+"-end")),[]),p={left:"right",right:"left",bottom:"top",top:"bottom"};function h(t){return t.replace(/left|right|bottom|top/g,(t=>p[t]))}function y(n,i,r){void 0===r&&(r=!1);const a=t(n),l=o(n),s=floating_ui_core_browser_min_e(l);let c="x"===l?a===(r?"end":"start")?"right":"left":"start"===a?"bottom":"top";return i.reference[s]>i.floating[s]&&(c=h(c)),{main:c,cross:h(c)}}const x={start:"end",end:"start"};function w(t){return t.replace(/start|end/g,(t=>x[t]))}const v=function(e){return void 0===e&&(e={}),{name:"autoPlacement",options:e,async fn(o){var i,r,a;const{rects:l,middlewareData:c,placement:f,platform:m,elements:u}=o,{crossAxis:g=!1,alignment:p,allowedPlacements:h=d,autoAlignment:x=!0,...v}=e,b=void 0!==p||h===d?function(e,o,i){return(e?[...i.filter((n=>t(n)===e)),...i.filter((n=>t(n)!==e))]:i.filter((t=>n(t)===t))).filter((n=>!e||t(n)===e||!!o&&w(n)!==n))}(p||null,x,h):h,R=await s(o,v),A=(null==(i=c.autoPlacement)?void 0:i.index)||0,P=b[A];if(null==P)return{};const{main:T,cross:O}=y(P,l,await(null==m.isRTL?void 0:m.isRTL(u.floating)));if(f!==P)return{reset:{placement:b[0]}};const E=[R[n(P)],R[T],R[O]],D=[...(null==(r=c.autoPlacement)?void 0:r.overflows)||[],{placement:P,overflows:E}],L=b[A+1];if(L)return{data:{index:A+1,overflows:D},reset:{placement:L}};const k=D.map((e=>{const n=t(e.placement);return[e.placement,n&&g?e.overflows.slice(0,2).reduce(((t,e)=>t+e),0):e.overflows[0],e.overflows]})).sort(((t,e)=>t[1]-e[1])),B=(null==(a=k.filter((e=>e[2].slice(0,t(e[0])?2:3).every((t=>t<=0))))[0])?void 0:a[0])||k[0][0];return B!==f?{data:{index:A+1,overflows:D},reset:{placement:B}}:{}}}};const b=function(e){return void 0===e&&(e={}),{name:"flip",options:e,async fn(o){var i;const{placement:r,middlewareData:a,rects:l,initialPlacement:c,platform:f,elements:m}=o,{mainAxis:u=!0,crossAxis:g=!0,fallbackPlacements:d,fallbackStrategy:p="bestFit",fallbackAxisSideDirection:x="none",flipAlignment:v=!0,...b}=e,R=n(r),A=n(c)===c,P=await(null==f.isRTL?void 0:f.isRTL(m.floating)),T=d||(A||!v?[h(c)]:function(t){const e=h(t);return[w(t),e,w(e)]}(c));d||"none"===x||T.push(...function(e,o,i,r){const a=t(e);let l=function(t,e,n){const o=["left","right"],i=["right","left"],r=["top","bottom"],a=["bottom","top"];switch(t){case"top":case"bottom":return n?e?i:o:e?o:i;case"left":case"right":return e?r:a;default:return[]}}(n(e),"start"===i,r);return a&&(l=l.map((t=>t+"-"+a)),o&&(l=l.concat(l.map(w)))),l}(c,v,x,P));const O=[c,...T],E=await s(o,b),D=[];let L=(null==(i=a.flip)?void 0:i.overflows)||[];if(u&&D.push(E[R]),g){const{main:t,cross:e}=y(r,l,P);D.push(E[t],E[e])}if(L=[...L,{placement:r,overflows:D}],!D.every((t=>t<=0))){var k,B;const t=((null==(k=a.flip)?void 0:k.index)||0)+1,e=O[t];if(e)return{data:{index:t,overflows:L},reset:{placement:e}};let n=null==(B=L.filter((t=>t.overflows[0]<=0)).sort(((t,e)=>t.overflows[1]-e.overflows[1]))[0])?void 0:B.placement;if(!n)switch(p){case"bestFit":{var C;const t=null==(C=L.map((t=>[t.placement,t.overflows.filter((t=>t>0)).reduce(((t,e)=>t+e),0)])).sort(((t,e)=>t[1]-e[1]))[0])?void 0:C[0];t&&(n=t);break}case"initialPlacement":n=c}if(r!==n)return{reset:{placement:n}}}return{}}}};function R(t,e){return{top:t.top-e.height,right:t.right-e.width,bottom:t.bottom-e.height,left:t.left-e.width}}function A(t){return g.some((e=>t[e]>=0))}const P=function(t){return void 0===t&&(t={}),{name:"hide",options:t,async fn(e){const{strategy:n="referenceHidden",...o}=t,{rects:i}=e;switch(n){case"referenceHidden":{const t=R(await s(e,{...o,elementContext:"reference"}),i.reference);return{data:{referenceHiddenOffsets:t,referenceHidden:A(t)}}}case"escaped":{const t=R(await s(e,{...o,altBoundary:!0}),i.floating);return{data:{escapedOffsets:t,escaped:A(t)}}}default:return{}}}}},T=function(t){return void 0===t&&(t={}),{name:"inline",options:t,async fn(e){const{placement:i,elements:r,rects:s,platform:m,strategy:u}=e,{padding:g=2,x:d,y:p}=t,h=floating_ui_core_browser_min_l(m.convertOffsetParentRelativeRectToViewportRelativeRect?await m.convertOffsetParentRelativeRectToViewportRelativeRect({rect:s.reference,offsetParent:await(null==m.getOffsetParent?void 0:m.getOffsetParent(r.floating)),strategy:u}):s.reference),y=await(null==m.getClientRects?void 0:m.getClientRects(r.reference))||[],x=a(g);const w=await m.getElementRects({reference:{getBoundingClientRect:function(){if(2===y.length&&y[0].left>y[1].right&&null!=d&&null!=p)return y.find((t=>d>t.left-x.left&&d<t.right+x.right&&p>t.top-x.top&&p<t.bottom+x.bottom))||h;if(y.length>=2){if("x"===o(i)){const t=y[0],e=y[y.length-1],o="top"===n(i),r=t.top,a=e.bottom,l=o?t.left:e.left,s=o?t.right:e.right;return{top:r,bottom:a,left:l,right:s,width:s-l,height:a-r,x:l,y:r}}const t="left"===n(i),e=f(...y.map((t=>t.right))),r=c(...y.map((t=>t.left))),a=y.filter((n=>t?n.left===r:n.right===e)),l=a[0].top,s=a[a.length-1].bottom;return{top:l,bottom:s,left:r,right:e,width:e-r,height:s-l,x:r,y:l}}return h}},floating:r.floating,strategy:u});return s.reference.x!==w.reference.x||s.reference.y!==w.reference.y||s.reference.width!==w.reference.width||s.reference.height!==w.reference.height?{reset:{rects:w}}:{}}}};const O=function(e){return void 0===e&&(e=0),{name:"offset",options:e,async fn(i){const{x:r,y:a}=i,l=await async function(e,i){const{placement:r,platform:a,elements:l}=e,s=await(null==a.isRTL?void 0:a.isRTL(l.floating)),c=n(r),f=t(r),m="x"===o(r),u=["left","top"].includes(c)?-1:1,g=s&&m?-1:1,d="function"==typeof i?i(e):i;let{mainAxis:p,crossAxis:h,alignmentAxis:y}="number"==typeof d?{mainAxis:d,crossAxis:0,alignmentAxis:null}:{mainAxis:0,crossAxis:0,alignmentAxis:null,...d};return f&&"number"==typeof y&&(h="end"===f?-1*y:y),m?{x:h*g,y:p*u}:{x:p*u,y:h*g}}(i,e);return{x:r+l.x,y:a+l.y,data:l}}}};function E(t){return"x"===t?"y":"x"}const D=function(t){return void 0===t&&(t={}),{name:"shift",options:t,async fn(e){const{x:i,y:r,placement:a}=e,{mainAxis:l=!0,crossAxis:c=!1,limiter:f={fn:t=>{let{x:e,y:n}=t;return{x:e,y:n}}},...u}=t,g={x:i,y:r},d=await s(e,u),p=o(n(a)),h=E(p);let y=g[p],x=g[h];if(l){const t="y"===p?"bottom":"right";y=m(y+d["y"===p?"top":"left"],y,y-d[t])}if(c){const t="y"===h?"bottom":"right";x=m(x+d["y"===h?"top":"left"],x,x-d[t])}const w=f.fn({...e,[p]:y,[h]:x});return{...w,data:{x:w.x-i,y:w.y-r}}}}},L=function(t){return void 0===t&&(t={}),{options:t,fn(e){const{x:i,y:r,placement:a,rects:l,middlewareData:s}=e,{offset:c=0,mainAxis:f=!0,crossAxis:m=!0}=t,u={x:i,y:r},g=o(a),d=E(g);let p=u[g],h=u[d];const y="function"==typeof c?c(e):c,x="number"==typeof y?{mainAxis:y,crossAxis:0}:{mainAxis:0,crossAxis:0,...y};if(f){const t="y"===g?"height":"width",e=l.reference[g]-l.floating[t]+x.mainAxis,n=l.reference[g]+l.reference[t]-x.mainAxis;p<e?p=e:p>n&&(p=n)}if(m){var w,v;const t="y"===g?"width":"height",e=["top","left"].includes(n(a)),o=l.reference[d]-l.floating[t]+(e&&(null==(w=s.offset)?void 0:w[d])||0)+(e?0:x.crossAxis),i=l.reference[d]+l.reference[t]+(e?0:(null==(v=s.offset)?void 0:v[d])||0)-(e?x.crossAxis:0);h<o?h=o:h>i&&(h=i)}return{[g]:p,[d]:h}}}},k=function(e){return void 0===e&&(e={}),{name:"size",options:e,async fn(i){const{placement:r,rects:a,platform:l,elements:m}=i,{apply:u=(()=>{}),...g}=e,d=await s(i,g),p=n(r),h=t(r),y="x"===o(r),{width:x,height:w}=a.floating;let v,b;"top"===p||"bottom"===p?(v=p,b=h===(await(null==l.isRTL?void 0:l.isRTL(m.floating))?"start":"end")?"left":"right"):(b=p,v="end"===h?"top":"bottom");const R=w-d[v],A=x-d[b];let P=R,T=A;if(y?T=c(x-d.right-d.left,A):P=c(w-d.bottom-d.top,R),!i.middlewareData.shift&&!h){const t=f(d.left,0),e=f(d.right,0),n=f(d.top,0),o=f(d.bottom,0);y?T=x-2*(0!==t||0!==e?t+e:f(d.left,d.right)):P=w-2*(0!==n||0!==o?n+o:f(d.top,d.bottom))}await u({...i,availableWidth:T,availableHeight:P});const O=await l.getDimensions(m.floating);return x!==O.width||w!==O.height?{reset:{rects:!0}}:{}}}};
+function t(t){return t.split("-")[1]}function floating_ui_core_browser_min_e(t){return"y"===t?"height":"width"}function n(t){return t.split("-")[0]}function o(t){return["top","bottom"].includes(n(t))?"x":"y"}function i(i,r,a){let{reference:l,floating:s}=i;const c=l.x+l.width/2-s.width/2,f=l.y+l.height/2-s.height/2,u=o(r),m=floating_ui_core_browser_min_e(u),g=l[m]/2-s[m]/2,d="x"===u;let p;switch(n(r)){case"top":p={x:c,y:l.y-s.height};break;case"bottom":p={x:c,y:l.y+l.height};break;case"right":p={x:l.x+l.width,y:f};break;case"left":p={x:l.x-s.width,y:f};break;default:p={x:l.x,y:l.y}}switch(t(r)){case"start":p[u]-=g*(a&&d?-1:1);break;case"end":p[u]+=g*(a&&d?-1:1)}return p}const r=async(t,e,n)=>{const{placement:o="bottom",strategy:r="absolute",middleware:a=[],platform:l}=n,s=a.filter(Boolean),c=await(null==l.isRTL?void 0:l.isRTL(e));let f=await l.getElementRects({reference:t,floating:e,strategy:r}),{x:u,y:m}=i(f,o,c),g=o,d={},p=0;for(let n=0;n<s.length;n++){const{name:a,fn:h}=s[n],{x:y,y:x,data:w,reset:v}=await h({x:u,y:m,initialPlacement:o,placement:g,strategy:r,middlewareData:d,rects:f,platform:l,elements:{reference:t,floating:e}});u=null!=y?y:u,m=null!=x?x:m,d={...d,[a]:{...d[a],...w}},v&&p<=50&&(p++,"object"==typeof v&&(v.placement&&(g=v.placement),v.rects&&(f=!0===v.rects?await l.getElementRects({reference:t,floating:e,strategy:r}):v.rects),({x:u,y:m}=i(f,g,c))),n=-1)}return{x:u,y:m,placement:g,strategy:r,middlewareData:d}};function a(t){return"number"!=typeof t?function(t){return{top:0,right:0,bottom:0,left:0,...t}}(t):{top:t,right:t,bottom:t,left:t}}function floating_ui_core_browser_min_l(t){return{...t,top:t.y,left:t.x,right:t.x+t.width,bottom:t.y+t.height}}async function s(t,e){var n;void 0===e&&(e={});const{x:o,y:i,platform:r,rects:s,elements:c,strategy:f}=t,{boundary:u="clippingAncestors",rootBoundary:m="viewport",elementContext:g="floating",altBoundary:d=!1,padding:p=0}=e,h=a(p),y=c[d?"floating"===g?"reference":"floating":g],x=floating_ui_core_browser_min_l(await r.getClippingRect({element:null==(n=await(null==r.isElement?void 0:r.isElement(y)))||n?y:y.contextElement||await(null==r.getDocumentElement?void 0:r.getDocumentElement(c.floating)),boundary:u,rootBoundary:m,strategy:f})),w="floating"===g?{...s.floating,x:o,y:i}:s.reference,v=await(null==r.getOffsetParent?void 0:r.getOffsetParent(c.floating)),b=await(null==r.isElement?void 0:r.isElement(v))&&await(null==r.getScale?void 0:r.getScale(v))||{x:1,y:1},R=floating_ui_core_browser_min_l(r.convertOffsetParentRelativeRectToViewportRelativeRect?await r.convertOffsetParentRelativeRectToViewportRelativeRect({rect:w,offsetParent:v,strategy:f}):w);return{top:(x.top-R.top+h.top)/b.y,bottom:(R.bottom-x.bottom+h.bottom)/b.y,left:(x.left-R.left+h.left)/b.x,right:(R.right-x.right+h.right)/b.x}}const c=Math.min,f=Math.max;function u(t,e,n){return f(t,c(e,n))}const m=n=>({name:"arrow",options:n,async fn(i){const{element:r,padding:l=0}=n||{},{x:s,y:c,placement:f,rects:m,platform:g,elements:d}=i;if(null==r)return{};const p=a(l),h={x:s,y:c},y=o(f),x=floating_ui_core_browser_min_e(y),w=await g.getDimensions(r),v="y"===y,b=v?"top":"left",R=v?"bottom":"right",A=v?"clientHeight":"clientWidth",P=m.reference[x]+m.reference[y]-h[y]-m.floating[x],T=h[y]-m.reference[y],E=await(null==g.getOffsetParent?void 0:g.getOffsetParent(r));let O=E?E[A]:0;O&&await(null==g.isElement?void 0:g.isElement(E))||(O=d.floating[A]||m.floating[x]);const D=P/2-T/2,L=p[b],k=O-w[x]-p[R],B=O/2-w[x]/2+D,C=u(L,B,k),H=null!=t(f)&&B!=C&&m.reference[x]/2-(B<L?p[b]:p[R])-w[x]/2<0;return{[y]:h[y]-(H?B<L?L-B:k-B:0),data:{[y]:C,centerOffset:B-C}}}}),g=["top","right","bottom","left"],d=g.reduce(((t,e)=>t.concat(e,e+"-start",e+"-end")),[]),p={left:"right",right:"left",bottom:"top",top:"bottom"};function h(t){return t.replace(/left|right|bottom|top/g,(t=>p[t]))}function y(n,i,r){void 0===r&&(r=!1);const a=t(n),l=o(n),s=floating_ui_core_browser_min_e(l);let c="x"===l?a===(r?"end":"start")?"right":"left":"start"===a?"bottom":"top";return i.reference[s]>i.floating[s]&&(c=h(c)),{main:c,cross:h(c)}}const x={start:"end",end:"start"};function w(t){return t.replace(/start|end/g,(t=>x[t]))}const v=function(e){return void 0===e&&(e={}),{name:"autoPlacement",options:e,async fn(o){var i,r,a;const{rects:l,middlewareData:c,placement:f,platform:u,elements:m}=o,{crossAxis:g=!1,alignment:p,allowedPlacements:h=d,autoAlignment:x=!0,...v}=e,b=void 0!==p||h===d?function(e,o,i){return(e?[...i.filter((n=>t(n)===e)),...i.filter((n=>t(n)!==e))]:i.filter((t=>n(t)===t))).filter((n=>!e||t(n)===e||!!o&&w(n)!==n))}(p||null,x,h):h,R=await s(o,v),A=(null==(i=c.autoPlacement)?void 0:i.index)||0,P=b[A];if(null==P)return{};const{main:T,cross:E}=y(P,l,await(null==u.isRTL?void 0:u.isRTL(m.floating)));if(f!==P)return{reset:{placement:b[0]}};const O=[R[n(P)],R[T],R[E]],D=[...(null==(r=c.autoPlacement)?void 0:r.overflows)||[],{placement:P,overflows:O}],L=b[A+1];if(L)return{data:{index:A+1,overflows:D},reset:{placement:L}};const k=D.map((e=>{const n=t(e.placement);return[e.placement,n&&g?e.overflows.slice(0,2).reduce(((t,e)=>t+e),0):e.overflows[0],e.overflows]})).sort(((t,e)=>t[1]-e[1])),B=(null==(a=k.filter((e=>e[2].slice(0,t(e[0])?2:3).every((t=>t<=0))))[0])?void 0:a[0])||k[0][0];return B!==f?{data:{index:A+1,overflows:D},reset:{placement:B}}:{}}}};const b=function(e){return void 0===e&&(e={}),{name:"flip",options:e,async fn(o){var i;const{placement:r,middlewareData:a,rects:l,initialPlacement:c,platform:f,elements:u}=o,{mainAxis:m=!0,crossAxis:g=!0,fallbackPlacements:d,fallbackStrategy:p="bestFit",fallbackAxisSideDirection:x="none",flipAlignment:v=!0,...b}=e,R=n(r),A=n(c)===c,P=await(null==f.isRTL?void 0:f.isRTL(u.floating)),T=d||(A||!v?[h(c)]:function(t){const e=h(t);return[w(t),e,w(e)]}(c));d||"none"===x||T.push(...function(e,o,i,r){const a=t(e);let l=function(t,e,n){const o=["left","right"],i=["right","left"],r=["top","bottom"],a=["bottom","top"];switch(t){case"top":case"bottom":return n?e?i:o:e?o:i;case"left":case"right":return e?r:a;default:return[]}}(n(e),"start"===i,r);return a&&(l=l.map((t=>t+"-"+a)),o&&(l=l.concat(l.map(w)))),l}(c,v,x,P));const E=[c,...T],O=await s(o,b),D=[];let L=(null==(i=a.flip)?void 0:i.overflows)||[];if(m&&D.push(O[R]),g){const{main:t,cross:e}=y(r,l,P);D.push(O[t],O[e])}if(L=[...L,{placement:r,overflows:D}],!D.every((t=>t<=0))){var k,B;const t=((null==(k=a.flip)?void 0:k.index)||0)+1,e=E[t];if(e)return{data:{index:t,overflows:L},reset:{placement:e}};let n=null==(B=L.filter((t=>t.overflows[0]<=0)).sort(((t,e)=>t.overflows[1]-e.overflows[1]))[0])?void 0:B.placement;if(!n)switch(p){case"bestFit":{var C;const t=null==(C=L.map((t=>[t.placement,t.overflows.filter((t=>t>0)).reduce(((t,e)=>t+e),0)])).sort(((t,e)=>t[1]-e[1]))[0])?void 0:C[0];t&&(n=t);break}case"initialPlacement":n=c}if(r!==n)return{reset:{placement:n}}}return{}}}};function R(t,e){return{top:t.top-e.height,right:t.right-e.width,bottom:t.bottom-e.height,left:t.left-e.width}}function A(t){return g.some((e=>t[e]>=0))}const P=function(t){return void 0===t&&(t={}),{name:"hide",options:t,async fn(e){const{strategy:n="referenceHidden",...o}=t,{rects:i}=e;switch(n){case"referenceHidden":{const t=R(await s(e,{...o,elementContext:"reference"}),i.reference);return{data:{referenceHiddenOffsets:t,referenceHidden:A(t)}}}case"escaped":{const t=R(await s(e,{...o,altBoundary:!0}),i.floating);return{data:{escapedOffsets:t,escaped:A(t)}}}default:return{}}}}};const T=function(t){return void 0===t&&(t={}),{name:"inline",options:t,async fn(e){const{placement:i,elements:r,rects:s,platform:u,strategy:m}=e,{padding:g=2,x:d,y:p}=t,h=floating_ui_core_browser_min_l(u.convertOffsetParentRelativeRectToViewportRelativeRect?await u.convertOffsetParentRelativeRectToViewportRelativeRect({rect:s.reference,offsetParent:await(null==u.getOffsetParent?void 0:u.getOffsetParent(r.floating)),strategy:m}):s.reference),y=function(t){const e=[],n=new Map;return t.forEach((t=>{const{x:o,y:i,width:r,height:a}=t,l=n.get(i);null!=l?n.set(i,l+r):(n.set(i,r),e.push({x:o,y:i,width:r,height:a}))})),e.map((t=>{const e=n.get(t.y);return null!=e&&(t.width=e),floating_ui_core_browser_min_l(t)}))}(await(null==u.getClientRects?void 0:u.getClientRects(r.reference))||[]),x=a(g);const w=await u.getElementRects({reference:{getBoundingClientRect:function(){if(2===y.length&&y[0].left>y[1].right&&null!=d&&null!=p)return y.find((t=>d>t.left-x.left&&d<t.right+x.right&&p>t.top-x.top&&p<t.bottom+x.bottom))||h;if(y.length>=2){if("x"===o(i)){const t=y[0],e=y[y.length-1],o="top"===n(i),r=t.top,a=e.bottom,l=o?t.left:e.left,s=o?t.right:e.right;return{top:r,bottom:a,left:l,right:s,width:s-l,height:a-r,x:l,y:r}}const t="left"===n(i),e=f(...y.map((t=>t.right))),r=c(...y.map((t=>t.left))),a=y.filter((n=>t?n.left===r:n.right===e)),l=a[0].top,s=a[a.length-1].bottom;return{top:l,bottom:s,left:r,right:e,width:e-r,height:s-l,x:r,y:l}}return h}},floating:r.floating,strategy:m});return s.reference.x!==w.reference.x||s.reference.y!==w.reference.y||s.reference.width!==w.reference.width||s.reference.height!==w.reference.height?{reset:{rects:w}}:{}}}};const E=function(e){return void 0===e&&(e=0),{name:"offset",options:e,async fn(i){const{x:r,y:a}=i,l=await async function(e,i){const{placement:r,platform:a,elements:l}=e,s=await(null==a.isRTL?void 0:a.isRTL(l.floating)),c=n(r),f=t(r),u="x"===o(r),m=["left","top"].includes(c)?-1:1,g=s&&u?-1:1,d="function"==typeof i?i(e):i;let{mainAxis:p,crossAxis:h,alignmentAxis:y}="number"==typeof d?{mainAxis:d,crossAxis:0,alignmentAxis:null}:{mainAxis:0,crossAxis:0,alignmentAxis:null,...d};return f&&"number"==typeof y&&(h="end"===f?-1*y:y),u?{x:h*g,y:p*m}:{x:p*m,y:h*g}}(i,e);return{x:r+l.x,y:a+l.y,data:l}}}};function O(t){return"x"===t?"y":"x"}const D=function(t){return void 0===t&&(t={}),{name:"shift",options:t,async fn(e){const{x:i,y:r,placement:a}=e,{mainAxis:l=!0,crossAxis:c=!1,limiter:f={fn:t=>{let{x:e,y:n}=t;return{x:e,y:n}}},...m}=t,g={x:i,y:r},d=await s(e,m),p=o(n(a)),h=O(p);let y=g[p],x=g[h];if(l){const t="y"===p?"bottom":"right";y=u(y+d["y"===p?"top":"left"],y,y-d[t])}if(c){const t="y"===h?"bottom":"right";x=u(x+d["y"===h?"top":"left"],x,x-d[t])}const w=f.fn({...e,[p]:y,[h]:x});return{...w,data:{x:w.x-i,y:w.y-r}}}}},L=function(t){return void 0===t&&(t={}),{options:t,fn(e){const{x:i,y:r,placement:a,rects:l,middlewareData:s}=e,{offset:c=0,mainAxis:f=!0,crossAxis:u=!0}=t,m={x:i,y:r},g=o(a),d=O(g);let p=m[g],h=m[d];const y="function"==typeof c?c(e):c,x="number"==typeof y?{mainAxis:y,crossAxis:0}:{mainAxis:0,crossAxis:0,...y};if(f){const t="y"===g?"height":"width",e=l.reference[g]-l.floating[t]+x.mainAxis,n=l.reference[g]+l.reference[t]-x.mainAxis;p<e?p=e:p>n&&(p=n)}if(u){var w,v;const t="y"===g?"width":"height",e=["top","left"].includes(n(a)),o=l.reference[d]-l.floating[t]+(e&&(null==(w=s.offset)?void 0:w[d])||0)+(e?0:x.crossAxis),i=l.reference[d]+l.reference[t]+(e?0:(null==(v=s.offset)?void 0:v[d])||0)-(e?x.crossAxis:0);h<o?h=o:h>i&&(h=i)}return{[g]:p,[d]:h}}}},k=function(e){return void 0===e&&(e={}),{name:"size",options:e,async fn(i){const{placement:r,rects:a,platform:l,elements:u}=i,{apply:m=(()=>{}),...g}=e,d=await s(i,g),p=n(r),h=t(r),y="x"===o(r),{width:x,height:w}=a.floating;let v,b;"top"===p||"bottom"===p?(v=p,b=h===(await(null==l.isRTL?void 0:l.isRTL(u.floating))?"start":"end")?"left":"right"):(b=p,v="end"===h?"top":"bottom");const R=w-d[v],A=x-d[b];let P=R,T=A;if(y?T=c(x-d.right-d.left,A):P=c(w-d.bottom-d.top,R),!i.middlewareData.shift&&!h){const t=f(d.left,0),e=f(d.right,0),n=f(d.top,0),o=f(d.bottom,0);y?T=x-2*(0!==t||0!==e?t+e:f(d.left,d.right)):P=w-2*(0!==n||0!==o?n+o:f(d.top,d.bottom))}await m({...i,availableWidth:T,availableHeight:P});const E=await l.getDimensions(u.floating);return x!==E.width||w!==E.height?{reset:{rects:!0}}:{}}}};
 
 ;// CONCATENATED MODULE: ./node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs
-function floating_ui_dom_browser_min_n(t){var e;return(null==(e=t.ownerDocument)?void 0:e.defaultView)||window}function floating_ui_dom_browser_min_o(t){return floating_ui_dom_browser_min_n(t).getComputedStyle(t)}const floating_ui_dom_browser_min_i=Math.min,floating_ui_dom_browser_min_r=Math.max,l=Math.round;function floating_ui_dom_browser_min_c(t){const e=floating_ui_dom_browser_min_o(t);let n=parseFloat(e.width),i=parseFloat(e.height);const r=t.offsetWidth,c=t.offsetHeight,s=l(n)!==r||l(i)!==c;return s&&(n=r,i=c),{width:n,height:i,fallback:s}}function floating_ui_dom_browser_min_s(t){return floating_ui_dom_browser_min_h(t)?(t.nodeName||"").toLowerCase():""}let floating_ui_dom_browser_min_f;function floating_ui_dom_browser_min_u(){if(floating_ui_dom_browser_min_f)return floating_ui_dom_browser_min_f;const t=navigator.userAgentData;return t&&Array.isArray(t.brands)?(floating_ui_dom_browser_min_f=t.brands.map((t=>t.brand+"/"+t.version)).join(" "),floating_ui_dom_browser_min_f):navigator.userAgent}function floating_ui_dom_browser_min_a(t){return t instanceof floating_ui_dom_browser_min_n(t).HTMLElement}function floating_ui_dom_browser_min_d(t){return t instanceof floating_ui_dom_browser_min_n(t).Element}function floating_ui_dom_browser_min_h(t){return t instanceof floating_ui_dom_browser_min_n(t).Node}function floating_ui_dom_browser_min_p(t){if("undefined"==typeof ShadowRoot)return!1;return t instanceof floating_ui_dom_browser_min_n(t).ShadowRoot||t instanceof ShadowRoot}function floating_ui_dom_browser_min_g(t){const{overflow:e,overflowX:n,overflowY:i,display:r}=floating_ui_dom_browser_min_o(t);return/auto|scroll|overlay|hidden|clip/.test(e+i+n)&&!["inline","contents"].includes(r)}function floating_ui_dom_browser_min_m(t){return["table","td","th"].includes(floating_ui_dom_browser_min_s(t))}function floating_ui_dom_browser_min_y(t){const e=/firefox/i.test(floating_ui_dom_browser_min_u()),n=floating_ui_dom_browser_min_o(t),i=n.backdropFilter||n.WebkitBackdropFilter;return"none"!==n.transform||"none"!==n.perspective||!!i&&"none"!==i||e&&"filter"===n.willChange||e&&!!n.filter&&"none"!==n.filter||["transform","perspective"].some((t=>n.willChange.includes(t)))||["paint","layout","strict","content"].some((t=>{const e=n.contain;return null!=e&&e.includes(t)}))}function floating_ui_dom_browser_min_x(){return/^((?!chrome|android).)*safari/i.test(floating_ui_dom_browser_min_u())}function floating_ui_dom_browser_min_w(t){return["html","body","#document"].includes(floating_ui_dom_browser_min_s(t))}function floating_ui_dom_browser_min_v(t){return floating_ui_dom_browser_min_d(t)?t:t.contextElement}const floating_ui_dom_browser_min_b={x:1,y:1};function floating_ui_dom_browser_min_L(t){const e=floating_ui_dom_browser_min_v(t);if(!floating_ui_dom_browser_min_a(e))return floating_ui_dom_browser_min_b;const n=e.getBoundingClientRect(),{width:o,height:i,fallback:r}=floating_ui_dom_browser_min_c(e);let s=(r?l(n.width):n.width)/o,f=(r?l(n.height):n.height)/i;return s&&Number.isFinite(s)||(s=1),f&&Number.isFinite(f)||(f=1),{x:s,y:f}}function floating_ui_dom_browser_min_E(e,o,i,r){var l,c;void 0===o&&(o=!1),void 0===i&&(i=!1);const s=e.getBoundingClientRect(),f=floating_ui_dom_browser_min_v(e);let u=floating_ui_dom_browser_min_b;o&&(r?floating_ui_dom_browser_min_d(r)&&(u=floating_ui_dom_browser_min_L(r)):u=floating_ui_dom_browser_min_L(e));const a=f?floating_ui_dom_browser_min_n(f):window,h=floating_ui_dom_browser_min_x()&&i;let p=(s.left+(h&&(null==(l=a.visualViewport)?void 0:l.offsetLeft)||0))/u.x,g=(s.top+(h&&(null==(c=a.visualViewport)?void 0:c.offsetTop)||0))/u.y,m=s.width/u.x,y=s.height/u.y;if(f){const t=floating_ui_dom_browser_min_n(f),e=r&&floating_ui_dom_browser_min_d(r)?floating_ui_dom_browser_min_n(r):r;let o=t.frameElement;for(;o&&r&&e!==t;){const t=floating_ui_dom_browser_min_L(o),e=o.getBoundingClientRect(),i=getComputedStyle(o);e.x+=(o.clientLeft+parseFloat(i.paddingLeft))*t.x,e.y+=(o.clientTop+parseFloat(i.paddingTop))*t.y,p*=t.x,g*=t.y,m*=t.x,y*=t.y,p+=e.x,g+=e.y,o=floating_ui_dom_browser_min_n(o).frameElement}}return floating_ui_core_browser_min_l({width:m,height:y,x:p,y:g})}function floating_ui_dom_browser_min_R(t){return((floating_ui_dom_browser_min_h(t)?t.ownerDocument:t.document)||window.document).documentElement}function floating_ui_dom_browser_min_T(t){return floating_ui_dom_browser_min_d(t)?{scrollLeft:t.scrollLeft,scrollTop:t.scrollTop}:{scrollLeft:t.pageXOffset,scrollTop:t.pageYOffset}}function C(t){return floating_ui_dom_browser_min_E(floating_ui_dom_browser_min_R(t)).left+floating_ui_dom_browser_min_T(t).scrollLeft}function F(t){if("html"===floating_ui_dom_browser_min_s(t))return t;const e=t.assignedSlot||t.parentNode||floating_ui_dom_browser_min_p(t)&&t.host||floating_ui_dom_browser_min_R(t);return floating_ui_dom_browser_min_p(e)?e.host:e}function W(t){const e=F(t);return floating_ui_dom_browser_min_w(e)?e.ownerDocument.body:floating_ui_dom_browser_min_a(e)&&floating_ui_dom_browser_min_g(e)?e:W(e)}function floating_ui_dom_browser_min_D(t,e){var o;void 0===e&&(e=[]);const i=W(t),r=i===(null==(o=t.ownerDocument)?void 0:o.body),l=floating_ui_dom_browser_min_n(i);return r?e.concat(l,l.visualViewport||[],floating_ui_dom_browser_min_g(i)?i:[]):e.concat(i,floating_ui_dom_browser_min_D(i))}function S(e,i,l){let c;if("viewport"===i)c=function(t,e){const o=floating_ui_dom_browser_min_n(t),i=floating_ui_dom_browser_min_R(t),r=o.visualViewport;let l=i.clientWidth,c=i.clientHeight,s=0,f=0;if(r){l=r.width,c=r.height;const t=floating_ui_dom_browser_min_x();(!t||t&&"fixed"===e)&&(s=r.offsetLeft,f=r.offsetTop)}return{width:l,height:c,x:s,y:f}}(e,l);else if("document"===i)c=function(t){const e=floating_ui_dom_browser_min_R(t),n=floating_ui_dom_browser_min_T(t),i=t.ownerDocument.body,l=floating_ui_dom_browser_min_r(e.scrollWidth,e.clientWidth,i.scrollWidth,i.clientWidth),c=floating_ui_dom_browser_min_r(e.scrollHeight,e.clientHeight,i.scrollHeight,i.clientHeight);let s=-n.scrollLeft+C(t);const f=-n.scrollTop;return"rtl"===floating_ui_dom_browser_min_o(i).direction&&(s+=floating_ui_dom_browser_min_r(e.clientWidth,i.clientWidth)-l),{width:l,height:c,x:s,y:f}}(floating_ui_dom_browser_min_R(e));else if(floating_ui_dom_browser_min_d(i))c=function(t,e){const n=floating_ui_dom_browser_min_E(t,!0,"fixed"===e),o=n.top+t.clientTop,i=n.left+t.clientLeft,r=floating_ui_dom_browser_min_a(t)?floating_ui_dom_browser_min_L(t):{x:1,y:1};return{width:t.clientWidth*r.x,height:t.clientHeight*r.y,x:i*r.x,y:o*r.y}}(i,l);else{const t={...i};if(floating_ui_dom_browser_min_x()){var s,f;const o=floating_ui_dom_browser_min_n(e);t.x-=(null==(s=o.visualViewport)?void 0:s.offsetLeft)||0,t.y-=(null==(f=o.visualViewport)?void 0:f.offsetTop)||0}c=t}return floating_ui_core_browser_min_l(c)}function floating_ui_dom_browser_min_A(t,e){return floating_ui_dom_browser_min_a(t)&&"fixed"!==floating_ui_dom_browser_min_o(t).position?e?e(t):t.offsetParent:null}function H(t,e){const i=floating_ui_dom_browser_min_n(t);if(!floating_ui_dom_browser_min_a(t))return i;let r=floating_ui_dom_browser_min_A(t,e);for(;r&&floating_ui_dom_browser_min_m(r)&&"static"===floating_ui_dom_browser_min_o(r).position;)r=floating_ui_dom_browser_min_A(r,e);return r&&("html"===floating_ui_dom_browser_min_s(r)||"body"===floating_ui_dom_browser_min_s(r)&&"static"===floating_ui_dom_browser_min_o(r).position&&!floating_ui_dom_browser_min_y(r))?i:r||function(t){let e=F(t);for(;floating_ui_dom_browser_min_a(e)&&!floating_ui_dom_browser_min_w(e);){if(floating_ui_dom_browser_min_y(e))return e;e=F(e)}return null}(t)||i}function V(t,e,n){const o=floating_ui_dom_browser_min_a(e),i=floating_ui_dom_browser_min_R(e),r=floating_ui_dom_browser_min_E(t,!0,"fixed"===n,e);let l={scrollLeft:0,scrollTop:0};const c={x:0,y:0};if(o||!o&&"fixed"!==n)if(("body"!==floating_ui_dom_browser_min_s(e)||floating_ui_dom_browser_min_g(i))&&(l=floating_ui_dom_browser_min_T(e)),floating_ui_dom_browser_min_a(e)){const t=floating_ui_dom_browser_min_E(e,!0);c.x=t.x+e.clientLeft,c.y=t.y+e.clientTop}else i&&(c.x=C(i));return{x:r.left+l.scrollLeft-c.x,y:r.top+l.scrollTop-c.y,width:r.width,height:r.height}}const floating_ui_dom_browser_min_O={getClippingRect:function(t){let{element:e,boundary:n,rootBoundary:l,strategy:c}=t;const f="clippingAncestors"===n?function(t,e){const n=e.get(t);if(n)return n;let i=floating_ui_dom_browser_min_D(t).filter((t=>floating_ui_dom_browser_min_d(t)&&"body"!==floating_ui_dom_browser_min_s(t))),r=null;const l="fixed"===floating_ui_dom_browser_min_o(t).position;let c=l?F(t):t;for(;floating_ui_dom_browser_min_d(c)&&!floating_ui_dom_browser_min_w(c);){const t=floating_ui_dom_browser_min_o(c),e=floating_ui_dom_browser_min_y(c);"fixed"===t.position?r=null:(l?e||r:e||"static"!==t.position||!r||!["absolute","fixed"].includes(r.position))?r=t:i=i.filter((t=>t!==c)),c=F(c)}return e.set(t,i),i}(e,this._c):[].concat(n),u=[...f,l],a=u[0],h=u.reduce(((t,n)=>{const o=S(e,n,c);return t.top=floating_ui_dom_browser_min_r(o.top,t.top),t.right=floating_ui_dom_browser_min_i(o.right,t.right),t.bottom=floating_ui_dom_browser_min_i(o.bottom,t.bottom),t.left=floating_ui_dom_browser_min_r(o.left,t.left),t}),S(e,a,c));return{width:h.right-h.left,height:h.bottom-h.top,x:h.left,y:h.top}},convertOffsetParentRelativeRectToViewportRelativeRect:function(t){let{rect:e,offsetParent:n,strategy:o}=t;const i=floating_ui_dom_browser_min_a(n),r=floating_ui_dom_browser_min_R(n);if(n===r)return e;let l={scrollLeft:0,scrollTop:0},c={x:1,y:1};const f={x:0,y:0};if((i||!i&&"fixed"!==o)&&(("body"!==floating_ui_dom_browser_min_s(n)||floating_ui_dom_browser_min_g(r))&&(l=floating_ui_dom_browser_min_T(n)),floating_ui_dom_browser_min_a(n))){const t=floating_ui_dom_browser_min_E(n);c=floating_ui_dom_browser_min_L(n),f.x=t.x+n.clientLeft,f.y=t.y+n.clientTop}return{width:e.width*c.x,height:e.height*c.y,x:e.x*c.x-l.scrollLeft*c.x+f.x,y:e.y*c.y-l.scrollTop*c.y+f.y}},isElement:floating_ui_dom_browser_min_d,getDimensions:function(t){return floating_ui_dom_browser_min_a(t)?floating_ui_dom_browser_min_c(t):t.getBoundingClientRect()},getOffsetParent:H,getDocumentElement:floating_ui_dom_browser_min_R,getScale:floating_ui_dom_browser_min_L,async getElementRects(t){let{reference:e,floating:n,strategy:o}=t;const i=this.getOffsetParent||H,r=this.getDimensions;return{reference:V(e,await i(n),o),floating:{x:0,y:0,...await r(n)}}},getClientRects:t=>Array.from(t.getClientRects()),isRTL:t=>"rtl"===floating_ui_dom_browser_min_o(t).direction};function floating_ui_dom_browser_min_P(t,e,n,o){void 0===o&&(o={});const{ancestorScroll:i=!0,ancestorResize:r=!0,elementResize:l=!0,animationFrame:c=!1}=o,s=i&&!c,f=s||r?[...floating_ui_dom_browser_min_d(t)?floating_ui_dom_browser_min_D(t):t.contextElement?floating_ui_dom_browser_min_D(t.contextElement):[],...floating_ui_dom_browser_min_D(e)]:[];f.forEach((t=>{s&&t.addEventListener("scroll",n,{passive:!0}),r&&t.addEventListener("resize",n)}));let u,a=null;if(l){let o=!0;a=new ResizeObserver((()=>{o||n(),o=!1})),floating_ui_dom_browser_min_d(t)&&!c&&a.observe(t),floating_ui_dom_browser_min_d(t)||!t.contextElement||c||a.observe(t.contextElement),a.observe(e)}let h=c?floating_ui_dom_browser_min_E(t):null;return c&&function e(){const o=floating_ui_dom_browser_min_E(t);!h||o.x===h.x&&o.y===h.y&&o.width===h.width&&o.height===h.height||n();h=o,u=requestAnimationFrame(e)}(),n(),()=>{var t;f.forEach((t=>{s&&t.removeEventListener("scroll",n),r&&t.removeEventListener("resize",n)})),null==(t=a)||t.disconnect(),a=null,c&&cancelAnimationFrame(u)}}const z=(t,n,o)=>{const i=new Map,r={platform:floating_ui_dom_browser_min_O,...o},l={...r.platform,_c:i};return e(t,n,{...r,platform:l})};
+function floating_ui_dom_browser_min_n(t){var e;return(null==(e=t.ownerDocument)?void 0:e.defaultView)||window}function floating_ui_dom_browser_min_o(t){return floating_ui_dom_browser_min_n(t).getComputedStyle(t)}function floating_ui_dom_browser_min_i(t){return t instanceof floating_ui_dom_browser_min_n(t).Node}function floating_ui_dom_browser_min_r(t){return floating_ui_dom_browser_min_i(t)?(t.nodeName||"").toLowerCase():""}let l;function floating_ui_dom_browser_min_c(){if(l)return l;const t=navigator.userAgentData;return t&&Array.isArray(t.brands)?(l=t.brands.map((t=>t.brand+"/"+t.version)).join(" "),l):navigator.userAgent}function floating_ui_dom_browser_min_s(t){return t instanceof floating_ui_dom_browser_min_n(t).HTMLElement}function floating_ui_dom_browser_min_f(t){return t instanceof floating_ui_dom_browser_min_n(t).Element}function floating_ui_dom_browser_min_u(t){if("undefined"==typeof ShadowRoot)return!1;return t instanceof floating_ui_dom_browser_min_n(t).ShadowRoot||t instanceof ShadowRoot}function floating_ui_dom_browser_min_a(t){const{overflow:e,overflowX:n,overflowY:i,display:r}=floating_ui_dom_browser_min_o(t);return/auto|scroll|overlay|hidden|clip/.test(e+i+n)&&!["inline","contents"].includes(r)}function floating_ui_dom_browser_min_d(t){return["table","td","th"].includes(floating_ui_dom_browser_min_r(t))}function floating_ui_dom_browser_min_h(t){const e=/firefox/i.test(floating_ui_dom_browser_min_c()),n=floating_ui_dom_browser_min_o(t),i=n.backdropFilter||n.WebkitBackdropFilter;return"none"!==n.transform||"none"!==n.perspective||!!i&&"none"!==i||e&&"filter"===n.willChange||e&&!!n.filter&&"none"!==n.filter||["transform","perspective"].some((t=>n.willChange.includes(t)))||["paint","layout","strict","content"].some((t=>{const e=n.contain;return null!=e&&e.includes(t)}))}function floating_ui_dom_browser_min_p(){return/^((?!chrome|android).)*safari/i.test(floating_ui_dom_browser_min_c())}function floating_ui_dom_browser_min_g(t){return["html","body","#document"].includes(floating_ui_dom_browser_min_r(t))}const floating_ui_dom_browser_min_m=Math.min,floating_ui_dom_browser_min_y=Math.max,floating_ui_dom_browser_min_x=Math.round;function floating_ui_dom_browser_min_w(t){const e=floating_ui_dom_browser_min_o(t);let n=parseFloat(e.width),i=parseFloat(e.height);const r=floating_ui_dom_browser_min_s(t),l=r?t.offsetWidth:n,c=r?t.offsetHeight:i,f=floating_ui_dom_browser_min_x(n)!==l||floating_ui_dom_browser_min_x(i)!==c;return f&&(n=l,i=c),{width:n,height:i,fallback:f}}function floating_ui_dom_browser_min_v(t){return floating_ui_dom_browser_min_f(t)?t:t.contextElement}const floating_ui_dom_browser_min_b={x:1,y:1};function floating_ui_dom_browser_min_L(t){const e=floating_ui_dom_browser_min_v(t);if(!floating_ui_dom_browser_min_s(e))return floating_ui_dom_browser_min_b;const n=e.getBoundingClientRect(),{width:o,height:i,fallback:r}=floating_ui_dom_browser_min_w(e);let l=(r?floating_ui_dom_browser_min_x(n.width):n.width)/o,c=(r?floating_ui_dom_browser_min_x(n.height):n.height)/i;return l&&Number.isFinite(l)||(l=1),c&&Number.isFinite(c)||(c=1),{x:l,y:c}}function floating_ui_dom_browser_min_E(e,o,i,r){var l,c;void 0===o&&(o=!1),void 0===i&&(i=!1);const s=e.getBoundingClientRect(),u=floating_ui_dom_browser_min_v(e);let a=floating_ui_dom_browser_min_b;o&&(r?floating_ui_dom_browser_min_f(r)&&(a=floating_ui_dom_browser_min_L(r)):a=floating_ui_dom_browser_min_L(e));const d=u?floating_ui_dom_browser_min_n(u):window,h=floating_ui_dom_browser_min_p()&&i;let g=(s.left+(h&&(null==(l=d.visualViewport)?void 0:l.offsetLeft)||0))/a.x,m=(s.top+(h&&(null==(c=d.visualViewport)?void 0:c.offsetTop)||0))/a.y,y=s.width/a.x,x=s.height/a.y;if(u){const t=floating_ui_dom_browser_min_n(u),e=r&&floating_ui_dom_browser_min_f(r)?floating_ui_dom_browser_min_n(r):r;let o=t.frameElement;for(;o&&r&&e!==t;){const t=floating_ui_dom_browser_min_L(o),e=o.getBoundingClientRect(),i=getComputedStyle(o);e.x+=(o.clientLeft+parseFloat(i.paddingLeft))*t.x,e.y+=(o.clientTop+parseFloat(i.paddingTop))*t.y,g*=t.x,m*=t.y,y*=t.x,x*=t.y,g+=e.x,m+=e.y,o=floating_ui_dom_browser_min_n(o).frameElement}}return floating_ui_core_browser_min_l({width:y,height:x,x:g,y:m})}function floating_ui_dom_browser_min_T(t){return((floating_ui_dom_browser_min_i(t)?t.ownerDocument:t.document)||window.document).documentElement}function floating_ui_dom_browser_min_R(t){return floating_ui_dom_browser_min_f(t)?{scrollLeft:t.scrollLeft,scrollTop:t.scrollTop}:{scrollLeft:t.pageXOffset,scrollTop:t.pageYOffset}}function C(t){return floating_ui_dom_browser_min_E(floating_ui_dom_browser_min_T(t)).left+floating_ui_dom_browser_min_R(t).scrollLeft}function F(t){if("html"===floating_ui_dom_browser_min_r(t))return t;const e=t.assignedSlot||t.parentNode||floating_ui_dom_browser_min_u(t)&&t.host||floating_ui_dom_browser_min_T(t);return floating_ui_dom_browser_min_u(e)?e.host:e}function W(t){const e=F(t);return floating_ui_dom_browser_min_g(e)?e.ownerDocument.body:floating_ui_dom_browser_min_s(e)&&floating_ui_dom_browser_min_a(e)?e:W(e)}function floating_ui_dom_browser_min_D(t,e){var o;void 0===e&&(e=[]);const i=W(t),r=i===(null==(o=t.ownerDocument)?void 0:o.body),l=floating_ui_dom_browser_min_n(i);return r?e.concat(l,l.visualViewport||[],floating_ui_dom_browser_min_a(i)?i:[]):e.concat(i,floating_ui_dom_browser_min_D(i))}function S(e,i,r){let l;if("viewport"===i)l=function(t,e){const o=floating_ui_dom_browser_min_n(t),i=floating_ui_dom_browser_min_T(t),r=o.visualViewport;let l=i.clientWidth,c=i.clientHeight,s=0,f=0;if(r){l=r.width,c=r.height;const t=floating_ui_dom_browser_min_p();(!t||t&&"fixed"===e)&&(s=r.offsetLeft,f=r.offsetTop)}return{width:l,height:c,x:s,y:f}}(e,r);else if("document"===i)l=function(t){const e=floating_ui_dom_browser_min_T(t),n=floating_ui_dom_browser_min_R(t),i=t.ownerDocument.body,r=floating_ui_dom_browser_min_y(e.scrollWidth,e.clientWidth,i.scrollWidth,i.clientWidth),l=floating_ui_dom_browser_min_y(e.scrollHeight,e.clientHeight,i.scrollHeight,i.clientHeight);let c=-n.scrollLeft+C(t);const s=-n.scrollTop;return"rtl"===floating_ui_dom_browser_min_o(i).direction&&(c+=floating_ui_dom_browser_min_y(e.clientWidth,i.clientWidth)-r),{width:r,height:l,x:c,y:s}}(floating_ui_dom_browser_min_T(e));else if(floating_ui_dom_browser_min_f(i))l=function(t,e){const n=floating_ui_dom_browser_min_E(t,!0,"fixed"===e),o=n.top+t.clientTop,i=n.left+t.clientLeft,r=floating_ui_dom_browser_min_s(t)?floating_ui_dom_browser_min_L(t):{x:1,y:1};return{width:t.clientWidth*r.x,height:t.clientHeight*r.y,x:i*r.x,y:o*r.y}}(i,r);else{const t={...i};if(floating_ui_dom_browser_min_p()){var c,u;const o=floating_ui_dom_browser_min_n(e);t.x-=(null==(c=o.visualViewport)?void 0:c.offsetLeft)||0,t.y-=(null==(u=o.visualViewport)?void 0:u.offsetTop)||0}l=t}return floating_ui_core_browser_min_l(l)}function floating_ui_dom_browser_min_A(t,e){return floating_ui_dom_browser_min_s(t)&&"fixed"!==floating_ui_dom_browser_min_o(t).position?e?e(t):t.offsetParent:null}function H(t,e){const i=floating_ui_dom_browser_min_n(t);if(!floating_ui_dom_browser_min_s(t))return i;let l=floating_ui_dom_browser_min_A(t,e);for(;l&&floating_ui_dom_browser_min_d(l)&&"static"===floating_ui_dom_browser_min_o(l).position;)l=floating_ui_dom_browser_min_A(l,e);return l&&("html"===floating_ui_dom_browser_min_r(l)||"body"===floating_ui_dom_browser_min_r(l)&&"static"===floating_ui_dom_browser_min_o(l).position&&!floating_ui_dom_browser_min_h(l))?i:l||function(t){let e=F(t);for(;floating_ui_dom_browser_min_s(e)&&!floating_ui_dom_browser_min_g(e);){if(floating_ui_dom_browser_min_h(e))return e;e=F(e)}return null}(t)||i}function V(t,e,n){const o=floating_ui_dom_browser_min_s(e),i=floating_ui_dom_browser_min_T(e),l=floating_ui_dom_browser_min_E(t,!0,"fixed"===n,e);let c={scrollLeft:0,scrollTop:0};const f={x:0,y:0};if(o||!o&&"fixed"!==n)if(("body"!==floating_ui_dom_browser_min_r(e)||floating_ui_dom_browser_min_a(i))&&(c=floating_ui_dom_browser_min_R(e)),floating_ui_dom_browser_min_s(e)){const t=floating_ui_dom_browser_min_E(e,!0);f.x=t.x+e.clientLeft,f.y=t.y+e.clientTop}else i&&(f.x=C(i));return{x:l.left+c.scrollLeft-f.x,y:l.top+c.scrollTop-f.y,width:l.width,height:l.height}}const floating_ui_dom_browser_min_O={getClippingRect:function(t){let{element:e,boundary:n,rootBoundary:i,strategy:l}=t;const c="clippingAncestors"===n?function(t,e){const n=e.get(t);if(n)return n;let i=floating_ui_dom_browser_min_D(t).filter((t=>floating_ui_dom_browser_min_f(t)&&"body"!==floating_ui_dom_browser_min_r(t))),l=null;const c="fixed"===floating_ui_dom_browser_min_o(t).position;let s=c?F(t):t;for(;floating_ui_dom_browser_min_f(s)&&!floating_ui_dom_browser_min_g(s);){const t=floating_ui_dom_browser_min_o(s),e=floating_ui_dom_browser_min_h(s);"fixed"===t.position?l=null:(c?e||l:e||"static"!==t.position||!l||!["absolute","fixed"].includes(l.position))?l=t:i=i.filter((t=>t!==s)),s=F(s)}return e.set(t,i),i}(e,this._c):[].concat(n),s=[...c,i],u=s[0],a=s.reduce(((t,n)=>{const o=S(e,n,l);return t.top=floating_ui_dom_browser_min_y(o.top,t.top),t.right=floating_ui_dom_browser_min_m(o.right,t.right),t.bottom=floating_ui_dom_browser_min_m(o.bottom,t.bottom),t.left=floating_ui_dom_browser_min_y(o.left,t.left),t}),S(e,u,l));return{width:a.right-a.left,height:a.bottom-a.top,x:a.left,y:a.top}},convertOffsetParentRelativeRectToViewportRelativeRect:function(t){let{rect:e,offsetParent:n,strategy:o}=t;const i=floating_ui_dom_browser_min_s(n),l=floating_ui_dom_browser_min_T(n);if(n===l)return e;let c={scrollLeft:0,scrollTop:0},f={x:1,y:1};const u={x:0,y:0};if((i||!i&&"fixed"!==o)&&(("body"!==floating_ui_dom_browser_min_r(n)||floating_ui_dom_browser_min_a(l))&&(c=floating_ui_dom_browser_min_R(n)),floating_ui_dom_browser_min_s(n))){const t=floating_ui_dom_browser_min_E(n);f=floating_ui_dom_browser_min_L(n),u.x=t.x+n.clientLeft,u.y=t.y+n.clientTop}return{width:e.width*f.x,height:e.height*f.y,x:e.x*f.x-c.scrollLeft*f.x+u.x,y:e.y*f.y-c.scrollTop*f.y+u.y}},isElement:floating_ui_dom_browser_min_f,getDimensions:function(t){return floating_ui_dom_browser_min_w(t)},getOffsetParent:H,getDocumentElement:floating_ui_dom_browser_min_T,getScale:floating_ui_dom_browser_min_L,async getElementRects(t){let{reference:e,floating:n,strategy:o}=t;const i=this.getOffsetParent||H,r=this.getDimensions;return{reference:V(e,await i(n),o),floating:{x:0,y:0,...await r(n)}}},getClientRects:t=>Array.from(t.getClientRects()),isRTL:t=>"rtl"===floating_ui_dom_browser_min_o(t).direction};function floating_ui_dom_browser_min_P(t,e,n,o){void 0===o&&(o={});const{ancestorScroll:i=!0,ancestorResize:r=!0,elementResize:l=!0,animationFrame:c=!1}=o,s=i&&!c,u=s||r?[...floating_ui_dom_browser_min_f(t)?floating_ui_dom_browser_min_D(t):t.contextElement?floating_ui_dom_browser_min_D(t.contextElement):[],...floating_ui_dom_browser_min_D(e)]:[];u.forEach((t=>{s&&t.addEventListener("scroll",n,{passive:!0}),r&&t.addEventListener("resize",n)}));let a,d=null;if(l){let o=!0;d=new ResizeObserver((()=>{o||n(),o=!1})),floating_ui_dom_browser_min_f(t)&&!c&&d.observe(t),floating_ui_dom_browser_min_f(t)||!t.contextElement||c||d.observe(t.contextElement),d.observe(e)}let h=c?floating_ui_dom_browser_min_E(t):null;return c&&function e(){const o=floating_ui_dom_browser_min_E(t);!h||o.x===h.x&&o.y===h.y&&o.width===h.width&&o.height===h.height||n();h=o,a=requestAnimationFrame(e)}(),n(),()=>{var t;u.forEach((t=>{s&&t.removeEventListener("scroll",n),r&&t.removeEventListener("resize",n)})),null==(t=d)||t.disconnect(),d=null,c&&cancelAnimationFrame(a)}}const z=(t,n,o)=>{const i=new Map,r={platform:floating_ui_dom_browser_min_O,...o},l={...r.platform,_c:i};return e(t,n,{...r,platform:l})};
 
 ;// CONCATENATED MODULE: ./node_modules/use-isomorphic-layout-effect/dist/use-isomorphic-layout-effect.browser.esm.js
 
@@ -4882,7 +4712,7 @@ var GroupHeading = function GroupHeading(props) {
   }), innerProps));
 };
 
-var index_a86253bb_esm_excluded = ["innerRef", "isDisabled", "isHidden", "inputClassName"];
+var _excluded = ["innerRef", "isDisabled", "isHidden", "inputClassName"];
 var inputCSS = function inputCSS(_ref, unstyled) {
   var isDisabled = _ref.isDisabled,
     value = _ref.value,
@@ -4938,7 +4768,7 @@ var Input = function Input(props) {
     isDisabled = _cleanCommonProps.isDisabled,
     isHidden = _cleanCommonProps.isHidden,
     inputClassName = _cleanCommonProps.inputClassName,
-    innerProps = _objectWithoutProperties(_cleanCommonProps, index_a86253bb_esm_excluded);
+    innerProps = _objectWithoutProperties(_cleanCommonProps, _excluded);
   return jsx("div", extends_extends({}, getStyleProps(props, 'input', {
     'input-container': true
   }), {
@@ -5181,6 +5011,208 @@ var defaultComponents = function defaultComponents(props) {
 
 
 
+;// CONCATENATED MODULE: ./node_modules/react-select/dist/useStateManager-7e1e8489.esm.js
+
+
+
+
+
+var useStateManager_7e1e8489_esm_excluded = ["defaultInputValue", "defaultMenuIsOpen", "defaultValue", "inputValue", "menuIsOpen", "onChange", "onInputChange", "onMenuClose", "onMenuOpen", "value"];
+function useStateManager(_ref) {
+  var _ref$defaultInputValu = _ref.defaultInputValue,
+    defaultInputValue = _ref$defaultInputValu === void 0 ? '' : _ref$defaultInputValu,
+    _ref$defaultMenuIsOpe = _ref.defaultMenuIsOpen,
+    defaultMenuIsOpen = _ref$defaultMenuIsOpe === void 0 ? false : _ref$defaultMenuIsOpe,
+    _ref$defaultValue = _ref.defaultValue,
+    defaultValue = _ref$defaultValue === void 0 ? null : _ref$defaultValue,
+    propsInputValue = _ref.inputValue,
+    propsMenuIsOpen = _ref.menuIsOpen,
+    propsOnChange = _ref.onChange,
+    propsOnInputChange = _ref.onInputChange,
+    propsOnMenuClose = _ref.onMenuClose,
+    propsOnMenuOpen = _ref.onMenuOpen,
+    propsValue = _ref.value,
+    restSelectProps = _objectWithoutProperties(_ref, useStateManager_7e1e8489_esm_excluded);
+  var _useState = (0,react.useState)(propsInputValue !== undefined ? propsInputValue : defaultInputValue),
+    _useState2 = _slicedToArray(_useState, 2),
+    stateInputValue = _useState2[0],
+    setStateInputValue = _useState2[1];
+  var _useState3 = (0,react.useState)(propsMenuIsOpen !== undefined ? propsMenuIsOpen : defaultMenuIsOpen),
+    _useState4 = _slicedToArray(_useState3, 2),
+    stateMenuIsOpen = _useState4[0],
+    setStateMenuIsOpen = _useState4[1];
+  var _useState5 = (0,react.useState)(propsValue !== undefined ? propsValue : defaultValue),
+    _useState6 = _slicedToArray(_useState5, 2),
+    stateValue = _useState6[0],
+    setStateValue = _useState6[1];
+  var onChange = (0,react.useCallback)(function (value, actionMeta) {
+    if (typeof propsOnChange === 'function') {
+      propsOnChange(value, actionMeta);
+    }
+    setStateValue(value);
+  }, [propsOnChange]);
+  var onInputChange = (0,react.useCallback)(function (value, actionMeta) {
+    var newValue;
+    if (typeof propsOnInputChange === 'function') {
+      newValue = propsOnInputChange(value, actionMeta);
+    }
+    setStateInputValue(newValue !== undefined ? newValue : value);
+  }, [propsOnInputChange]);
+  var onMenuOpen = (0,react.useCallback)(function () {
+    if (typeof propsOnMenuOpen === 'function') {
+      propsOnMenuOpen();
+    }
+    setStateMenuIsOpen(true);
+  }, [propsOnMenuOpen]);
+  var onMenuClose = (0,react.useCallback)(function () {
+    if (typeof propsOnMenuClose === 'function') {
+      propsOnMenuClose();
+    }
+    setStateMenuIsOpen(false);
+  }, [propsOnMenuClose]);
+  var inputValue = propsInputValue !== undefined ? propsInputValue : stateInputValue;
+  var menuIsOpen = propsMenuIsOpen !== undefined ? propsMenuIsOpen : stateMenuIsOpen;
+  var value = propsValue !== undefined ? propsValue : stateValue;
+  return objectSpread2_objectSpread2(objectSpread2_objectSpread2({}, restSelectProps), {}, {
+    inputValue: inputValue,
+    menuIsOpen: menuIsOpen,
+    onChange: onChange,
+    onInputChange: onInputChange,
+    onMenuClose: onMenuClose,
+    onMenuOpen: onMenuOpen,
+    value: value
+  });
+}
+
+
+
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/createClass.js
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor);
+  }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  Object.defineProperty(Constructor, "prototype", {
+    writable: false
+  });
+  return Constructor;
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+  return _setPrototypeOf(o, p);
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/inherits.js
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  Object.defineProperty(subClass, "prototype", {
+    writable: false
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js
+function _isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+  try {
+    Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+  return self;
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js
+
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  } else if (call !== void 0) {
+    throw new TypeError("Derived constructors may only return object or undefined");
+  }
+  return _assertThisInitialized(self);
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/createSuper.js
+
+
+
+function _createSuper(Derived) {
+  var hasNativeReflectConstruct = _isNativeReflectConstruct();
+  return function _createSuperInternal() {
+    var Super = _getPrototypeOf(Derived),
+      result;
+    if (hasNativeReflectConstruct) {
+      var NewTarget = _getPrototypeOf(this).constructor;
+      result = Reflect.construct(Super, arguments, NewTarget);
+    } else {
+      result = Super.apply(this, arguments);
+    }
+    return _possibleConstructorReturn(this, result);
+  };
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js
+
+
+
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+}
 ;// CONCATENATED MODULE: ./node_modules/memoize-one/dist/memoize-one.esm.js
 var safeIsNaN = Number.isNaN ||
     function ponyfill(value) {
@@ -20823,6 +20855,8 @@ var icons = {
 
 
 
+;// CONCATENATED MODULE: ./src/images/triangle.svg
+const triangle_namespaceObject = __webpack_require__.p + "images/b5db52da946bb33cffca.svg";
 ;// CONCATENATED MODULE: ./src/javascript/components/SelectStyle.js
 function SelectStyle_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
@@ -20841,7 +20875,7 @@ var colorStyles = {
       border: 'none',
       outline: 'none',
       width: 'fit-content',
-      fontSize: '1.05vw'
+      fontSize: '1.15vw'
     }, "outline", "1px solid ".concat(isFocused ? green : 'transparent')));
   },
   option: function option(styles, _ref2) {
@@ -20894,7 +20928,7 @@ var colorStyles = {
   }
 };
 ;// CONCATENATED MODULE: ./src/javascript/components/hotkeys.json
-const hotkeys_namespaceObject = JSON.parse('[{"link":"shortcuts/switch-between-programs.html","selected":"Переключение","text":"запущенных приложений","windows":"Alt+Tab","macos":"Cmd+Tab","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/hide-open-program.html","selected":"Сворачивание","text":"всех открытых окон","windows":"Ctrl+W","macos":"Cmd+H","popular":false,"useful":false,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/minimizing-all-open-windows.html","selected":"Открытие","text":"буфера обмена","windows":"Win+V","macos":"Cmd+Ctrl+Shift+V","popular":false,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/redo-last-action.html","selected":"Повтор","text":"последнего последнего действия","windows":"Ctrl+Y","macos":"Cmd+Y","popular":false,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/undo-last-action.html","selected":"Отмена","text":"последнего выполненного действия","windows":"Ctrl+Z","macos":"Cmd+Z","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/cut-selected-text.html","selected":"Вырезать","text":"выделенный текст в буфер обмена","windows":"Ctrl+X","macos":"Cmd+X","popular":false,"useful":false,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/copy-selected-text.html","selected":"Скопировать","text":"выделенный текст в буфер обмена","windows":"Ctrl+C","macos":"Cmd+C","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/paste-selected-text.html","selected":"Вставить","text":"выделенный текст в буфер обмена","windows":"Ctrl+V","macos":"Cmd+V","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/open-file-explorer.html","selected":"Открытие","text":"проводника файлов","windows":"Win+E","macos":"Cmd+Shift+F","popular":false,"useful":true,"simple":false,"complex":true,"target":"system"},{"link":"shortcuts/select-all.html","selected":"Выделение","text":"всего на странице или в окне","windows":"Ctrl+A","macos":"Cmd+A","popular":false,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/save.html","selected":"Сохранение","text":"документа или файла","windows":"Ctrl+S","macos":"Cmd+S","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/print.html","selected":"Печать","text":"документа или страницы","windows":"Ctrl+P","macos":"Cmd+P","popular":false,"useful":false,"simple":false,"complex":true,"target":"system"},{"link":"shortcuts/new-window.html","selected":"Создание","text":"нового окна или документа","windows":"Ctrl+N","macos":"Cmd+N","popular":false,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/open-settings.html","selected":"Открытие","text":"настроек системы","windows":"Win+I","macos":"Cmd+,","popular":false,"useful":false,"simple":false,"complex":false,"target":"system"},{"link":"shortcuts/minimize-window.html","selected":"Открепить","text":"активное окно","windows":"Win+↓","macos":"Cmd+M","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/maximize-window.html","selected":"Закрепить","text":"активное окно","windows":"Win+↑","macos":"Cmd+Ctrl+F","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/close-window.html","selected":"Закрыть","text":"активное окно приложения","windows":"Ctrl+W","macos":"Cmd+W","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/close-program.html","selected":"Закрыть","text":"активную программу","windows":"Alt+F4","macos":"Cmd+Q","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/vscode-comment.html","selected":"Комментирование","text":"кода для отключения его выполнения","windows":"Ctrl+/","macos":"Cmd+/","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code"},{"link":"shortcuts/vscode-find-replace.html","selected":"Поиск","text":"выбранного фрагмента","windows":"Ctrl+F","macos":"Cmd+F","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code"},{"link":"shortcuts/vscode-find-replace.html","selected":"Замена","text":"выбранного фрагмента","windows":"Ctrl+H","macos":"Cmd+H","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code"},{"link":"shortcuts/vscode-find-replace.html","selected":"Поиск","text":"выбранного фрагмента по всему проекту","windows":"Ctrl+Shift+F","macos":"Cmd+Shift+F","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code"},{"link":"shortcuts/vscode-find-replace.html","selected":"Замена","text":"выбранного фрагмента  по всему проекту","windows":"Ctrl+Shift+H","macos":"Cmd+Shift+H","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code"},{"link":"shortcuts/vscode-toggle-sidebar.html","selected":"Переключение","text":"боковой панели","windows":"Ctrl+B","macos":"Cmd+B","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code"},{"link":"shortcuts/vscode-select-next-occurrence.html","selected":"Выделение","text":"схожих фрагментов кода","windows":"Ctrl+D","macos":"Cmd+D","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code"},{"link":"shortcuts/vscode-command-palette.html","selected":"Открытие","text":"палитры команд","windows":"Ctrl+Shift+P","macos":"Cmd+Shift+P","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code"},{"link":"shortcuts/browser-open-new-tab.html","selected":"Открыть","text":"новое окно","windows":"Ctrl+N","macos":"Cmd+N","popular":true,"useful":true,"simple":true,"complex":false,"target":"browser"},{"link":"shortcuts/browser-open-new-tab.html","selected":"Открыть","text":"новое окно икогнито","windows":"Ctrl+Shift+N","macos":"Cmd+Shift+N","popular":true,"useful":true,"simple":true,"complex":false,"target":"browser"},{"link":"shortcuts/browser-open-new-tab.html","selected":"Открыть","text":"новую вкладку","windows":"Ctrl+T","macos":"Cmd+T","popular":true,"useful":true,"simple":true,"complex":false,"target":"browser"},{"link":"shortcuts/browser-reopen-closed-tab.html","selected":"Восстановить","text":"закрытую вкладку","windows":"Ctrl+Shift+T","macos":"Cmd+Shift+T","popular":true,"useful":true,"simple":false,"complex":true,"target":"browser"},{"link":"shortcuts/browser-switch-tab.html","selected":"Переключение","text":"между вкладками","windows":"Ctrl+Tab","macos":"Cmd+Option+ →","popular":true,"useful":true,"simple":true,"complex":false,"target":"browser"},{"link":"shortcuts/browser-history-back-forward.html","selected":"Перемещение","text":"назад/вперед","windows":"Alt+ ← / Alt+ →","macos":"Cmd+ ← / Cmd+ →","popular":true,"useful":true,"simple":true,"complex":false,"target":"browser"},{"link":"shortcuts/browser-refresh-page.html","selected":"Обновить","text":"страницу","windows":"F5 / Ctrl+R","macos":"Cmd+R","popular":true,"useful":true,"simple":true,"complex":false,"target":"browser"},{"link":"shortcuts/browser-open-history.html","selected":"Открыть","text":"историю","windows":"Ctrl+H","macos":"Cmd+Y","popular":true,"useful":true,"simple":true,"complex":false,"target":"browser"}]');
+const hotkeys_namespaceObject = JSON.parse('[{"link":"shortcuts/switch-between-programs.html","selected":"Переключение","text":"запущенных приложений","windows":"Alt+Tab","macos":"Cmd+Tab","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/hide-open-program.html","selected":"Сворачивание","text":"всех открытых окон","windows":"Ctrl+W","macos":"Cmd+H","popular":false,"useful":false,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/minimizing-all-open-windows.html","selected":"Открытие","text":"буфера обмена","windows":"Win+V","macos":"Cmd+Ctrl+Shift+V","popular":false,"useful":true,"simple":false,"complex":true,"target":"system"},{"link":"shortcuts/redo-last-action.html","selected":"Повтор","text":"последнего последнего действия","windows":"Ctrl+Y","macos":"Cmd+Y","popular":false,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/undo-last-action.html","selected":"Отмена","text":"последнего выполненного действия","windows":"Ctrl+Z","macos":"Cmd+Z","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/undo-last-action.html","selected":"Отмена","text":"последнего отмененного действия","windows":"Ctrl+SHift+Z","macos":"Cmd+Shift+Z","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/cut-selected-text.html","selected":"Вырезать","text":"выделенный текст в буфер обмена","windows":"Ctrl+X","macos":"Cmd+X","popular":false,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/copy-selected-text.html","selected":"Скопировать","text":"выделенный текст в буфер обмена","windows":"Ctrl+C","macos":"Cmd+C","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/paste-selected-text.html","selected":"Вставить","text":"выделенный текст в буфер обмена","windows":"Ctrl+V","macos":"Cmd+V","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/open-file-explorer.html","selected":"Открытие","text":"проводника файлов","windows":"Win+E","macos":"Cmd+Shift+F","popular":false,"useful":false,"simple":false,"complex":true,"target":"system"},{"link":"shortcuts/select-all.html","selected":"Выделение","text":"всего на странице или в окне","windows":"Ctrl+A","macos":"Cmd+A","popular":false,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/save.html","selected":"Сохранение","text":"документа или файла","windows":"Ctrl+S","macos":"Cmd+S","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/print.html","selected":"Печать","text":"документа или страницы","windows":"Ctrl+P","macos":"Cmd+P","popular":false,"useful":false,"simple":false,"complex":true,"target":"system"},{"link":"shortcuts/new-window.html","selected":"Создание","text":"нового окна или документа","windows":"Ctrl+N","macos":"Cmd+N","popular":false,"useful":false,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/open-settings.html","selected":"Открытие","text":"настроек системы","windows":"Win+I","macos":"Cmd+,","popular":false,"useful":false,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/minimize-window.html","selected":"Открепить","text":"активное окно","windows":"Win+↓","macos":"Cmd+M","popular":false,"useful":false,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/maximize-window.html","selected":"Закрепить","text":"активное окно","windows":"Win+↑","macos":"Cmd+Ctrl+F","popular":false,"useful":false,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/close-window.html","selected":"Закрыть","text":"активное окно приложения","windows":"Ctrl+W","macos":"Cmd+W","popular":false,"useful":false,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/close-program.html","selected":"Закрыть","text":"активную программу","windows":"Alt+F4","macos":"Cmd+Q","popular":true,"useful":true,"simple":true,"complex":false,"target":"system"},{"link":"shortcuts/vscode-comment.html","selected":"Комментирование","text":"кода для отключения его выполнения","windows":"Ctrl+/","macos":"Cmd+/","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code"},{"link":"shortcuts/vscode-find-replace.html","selected":"Поиск","text":"выбранного фрагмента","windows":"Ctrl+F","macos":"Cmd+F","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code"},{"link":"shortcuts/vscode-find-replace.html","selected":"Замена","text":"выбранного фрагмента","windows":"Ctrl+H","macos":"Cmd+H","popular":false,"useful":true,"simple":true,"complex":false,"target":"vs-code"},{"link":"shortcuts/vscode-find-replace.html","selected":"Поиск","text":"выбранного фрагмента по всему проекту","windows":"Ctrl+Shift+F","macos":"Cmd+Shift+F","popular":false,"useful":true,"simple":false,"complex":true,"target":"vs-code"},{"link":"shortcuts/vscode-find-replace.html","selected":"Замена","text":"выбранного фрагмента  по всему проекту","windows":"Ctrl+Shift+H","macos":"Cmd+Shift+H","popular":false,"useful":true,"simple":false,"complex":true,"target":"vs-code"},{"link":"shortcuts/vscode-toggle-sidebar.html","selected":"Переключение","text":"боковой панели","windows":"Ctrl+B","macos":"Cmd+B","popular":false,"useful":false,"simple":true,"complex":false,"target":"vs-code"},{"link":"shortcuts/vscode-select-next-occurrence.html","selected":"Выделение","text":"схожих фрагментов кода","windows":"Ctrl+D","macos":"Cmd+D","popular":false,"useful":true,"simple":true,"complex":false,"target":"vs-code"},{"link":"shortcuts/vscode-command-palette.html","selected":"Открытие","text":"палитры команд","windows":"Ctrl+Shift+P","macos":"Cmd+Shift+P","popular":true,"useful":true,"simple":false,"complex":true,"target":"vs-code"},{"link":"shortcuts/browser-open-new-tab.html","selected":"Открыть","text":"новое окно","windows":"Ctrl+N","macos":"Cmd+N","popular":false,"useful":false,"simple":true,"complex":false,"target":"browser"},{"link":"shortcuts/browser-open-new-tab.html","selected":"Открыть","text":"новое окно икогнито","windows":"Ctrl+Shift+N","macos":"Cmd+Shift+N","popular":false,"useful":false,"simple":false,"complex":true,"target":"browser"},{"link":"shortcuts/browser-open-new-tab.html","selected":"Открыть","text":"новую вкладку","windows":"Ctrl+T","macos":"Cmd+T","popular":false,"useful":false,"simple":true,"complex":false,"target":"browser"},{"link":"shortcuts/browser-reopen-closed-tab.html","selected":"Восстановить","text":"закрытую вкладку","windows":"Ctrl+Shift+T","macos":"Cmd+Shift+T","popular":false,"useful":true,"simple":false,"complex":true,"target":"browser"},{"link":"shortcuts/browser-switch-tab.html","selected":"Переключение","text":"между вкладками","windows":"Ctrl+Tab","macos":"Cmd+Option+ →","popular":false,"useful":false,"simple":false,"complex":true,"target":"browser"},{"link":"shortcuts/browser-history-back-forward.html","selected":"Перемещение","text":"назад/вперед","windows":"Alt+ ← / Alt+ →","macos":"Cmd+ ← / Cmd+ →","popular":false,"useful":false,"simple":false,"complex":true,"target":"browser"},{"link":"shortcuts/browser-refresh-page.html","selected":"Обновить","text":"страницу","windows":"F5 / Ctrl+R","macos":"Cmd+R","popular":true,"useful":true,"simple":true,"complex":false,"target":"browser"},{"link":"shortcuts/browser-open-history.html","selected":"Открыть","text":"историю","windows":"Ctrl+H","macos":"Cmd+Y","popular":true,"useful":true,"simple":true,"complex":false,"target":"browser"},{"link":"shortcuts/figma-group-layers.html","selected":"Сгрупировать","text":"выделенные элементы во фрейм","windows":"Ctrl+Alt+G","macos":"Cmd+Option+G","popular":false,"useful":true,"simple":false,"complex":true,"target":"figma"},{"link":"shortcuts/figma-group-layers.html","selected":"Сгрупировать","text":"выделенные элементы в группу","windows":"Ctrl+G","macos":"Cmd+G","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma"},{"link":"shortcuts/figma-ungroup-layers.html","selected":"Разгрубировать","text":"выделенные элементы из группы","windows":"Ctrl+Shift+G","macos":"Cmd+Shift+G","popular":true,"useful":true,"simple":false,"complex":true,"target":"figma"},{"link":"shortcuts/duplicate-selection.html","selected":"Дубликовать","text":"выделенные элементы","windows":"Ctrl+D","macos":"Cmd+D","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma"},{"link":"shortcuts/duplicate-selection.html","selected":"Скрыть","text":"пользовательский интерфейс","windows":"Ctrl+\\\\","macos":"Cmd+\\\\","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma"},{"link":"shortcuts/duplicate-selection.html","selected":"Скрыть","text":"интерфейс панели слоев","windows":"Ctrl+Shift+/","macos":"Cmd+Shift+/","popular":false,"useful":false,"simple":false,"complex":true,"target":"figma"},{"link":"shortcuts/duplicate-selection.html","selected":"Получить","text":"цвет у элемета из файла","windows":"I","macos":"I","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma"},{"link":"shortcuts/duplicate-selection.html","selected":"Открыть","text":"панель быстрых действий","windows":"Ctrl+/","macos":"Cmd+/","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma"}]');
 ;// CONCATENATED MODULE: ./src/javascript/components/Shortcuts.jsx
 function Shortcuts_typeof(obj) { "@babel/helpers - typeof"; return Shortcuts_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, Shortcuts_typeof(obj); }
 
@@ -20928,17 +20962,30 @@ function Shortcuts_defineProperty(obj, key, value) { if (key in obj) { Object.de
 
 
 
+
 var Shortcuts = /*#__PURE__*/function (_Component) {
   Shortcuts_inherits(Shortcuts, _Component);
 
   var _super = Shortcuts_createSuper(Shortcuts);
 
-  function Shortcuts(props) {
+  function Shortcuts() {
     var _this;
 
     Shortcuts_classCallCheck(this, Shortcuts);
 
-    _this = _super.call(this, props);
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    Shortcuts_defineProperty(Shortcuts_assertThisInitialized(_this), "state", {
+      system: js_cookie.get('os') === 'macos' ? 'macos' : 'windows',
+      selectedProgramOption: null,
+      selectedMainOption: null,
+      systemSelected: false,
+      searchQuery: ''
+    });
 
     Shortcuts_defineProperty(Shortcuts_assertThisInitialized(_this), "handleWindowsClick", function (event) {
       event.preventDefault();
@@ -20969,19 +21016,11 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
 
       _this.setState({
         selectedProgramOption: null,
-        selectedMainOption: null
+        selectedMainOption: null,
+        system: js_cookie.get('os') === 'macos' ? 'macos' : 'windows'
       });
     });
 
-    var osCookie = js_cookie.get('os');
-    _this.state = {
-      system: osCookie === 'macos' ? 'macos' : 'windows',
-      selectedProgramOption: null,
-      selectedMainOption: null,
-      systemSelected: false,
-      searchQuery: '' // add search query state
-
-    };
     return _this;
   }
 
@@ -20995,6 +21034,16 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
           selectedProgramOption = _this$state.selectedProgramOption,
           selectedMainOption = _this$state.selectedMainOption,
           searchQuery = _this$state.searchQuery; // destructure search query state
+      //* set custom icon resetButton
+
+      var DropdownIndicator = function DropdownIndicator(props) {
+        return /*#__PURE__*/react.createElement(components.DropdownIndicator, props, /*#__PURE__*/react.createElement("img", {
+          src: triangle_namespaceObject,
+          alt: "Dropdown Indicator",
+          className: "A_SelectIcon"
+        }));
+      }; //? [Все программы] select program options
+
 
       var programOptions = [{
         value: 'system',
@@ -21005,7 +21054,11 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
       }, {
         value: 'vs-code',
         label: 'VS Code'
-      }];
+      }, {
+        value: 'figma',
+        label: 'Figma'
+      }]; //? [Сортировка] select main options
+
       var mainOptions = [{
         value: 'popular',
         label: 'Популярные'
@@ -21014,12 +21067,26 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
         label: 'Самые полезные'
       }, {
         value: 'simple',
-        label: 'Сначала простые'
+        label: 'Самые простые'
       }, {
         value: 'complex',
-        label: 'Сначала сложные'
-      }];
-      var filteredHotkeys = hotkeys_namespaceObject;
+        label: 'Самые сложные'
+      }]; //* [Все программы] apply select program option and reRender {hotkeys}
+
+      var handleProgramChange = function handleProgramChange(selectedProgramOption) {
+        _this2.setState({
+          selectedProgramOption: selectedProgramOption
+        });
+      }; //* [Все программы] apply select main option and reRender {hotkeys}
+
+
+      var handleMainChange = function handleMainChange(selectedMainOption) {
+        _this2.setState({
+          selectedMainOption: selectedMainOption
+        });
+      };
+
+      var filteredHotkeys = hotkeys_namespaceObject; //* search filter {hotkeys}
 
       if (searchQuery) {
         filteredHotkeys = filteredHotkeys.filter(function (hotkey) {
@@ -21028,7 +21095,8 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
           var combinedText = "".concat(selected, " ").concat(text);
           return combinedText.toLowerCase().includes(searchQuery.toLowerCase());
         });
-      }
+      } //* on load filter {hotkeys}
+
 
       filteredHotkeys = filteredHotkeys.filter(function (hotkey) {
         if (selectedProgramOption && hotkey.target !== selectedProgramOption.value) {
@@ -21043,57 +21111,51 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
 
         return true;
       });
-
-      var handleProgramChange = function handleProgramChange(selectedProgramOption) {
-        _this2.setState({
-          selectedProgramOption: selectedProgramOption
-        });
-      };
-
-      var handleMainChange = function handleMainChange(selectedMainOption) {
-        _this2.setState({
-          selectedMainOption: selectedMainOption
-        });
-      };
-
-      return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("form", {
-        className: "S_SearchForm"
+      return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+        className: "S_Header Shortcuts"
+      }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("a", {
+        className: "W_LinkLogo",
+        href: "./"
       }, /*#__PURE__*/react.createElement("div", {
-        className: "C_SearchBar"
-      }, /*#__PURE__*/react.createElement("input", {
-        className: "M_SearchInput",
-        type: "text",
-        placeholder: "\u041F\u043E\u0438\u0441\u043A \u0448\u043E\u0440\u0442\u043A\u0430\u0442\u043E\u0432",
-        value: searchQuery,
-        onChange: function onChange(e) {
-          return _this2.setState({
-            searchQuery: e.target.value
-          });
-        }
-      }), /*#__PURE__*/react.createElement("button", {
-        className: "M_SearchButton",
-        type: "submit"
-      }, /*#__PURE__*/react.createElement(FontAwesomeIcon, {
-        icon: faSearch,
-        className: "A_ButtonIcon"
-      }))), /*#__PURE__*/react.createElement("div", {
-        className: "S_Filters"
-      }, /*#__PURE__*/react.createElement("div", {
-        className: "C_SelectBar"
-      }, /*#__PURE__*/react.createElement(react_select_esm, {
-        options: programOptions,
-        value: selectedProgramOption,
-        onChange: handleProgramChange,
-        styles: colorStyles,
-        placeholder: "\u0412\u0441\u0435 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B"
-      }), /*#__PURE__*/react.createElement(react_select_esm, {
-        options: mainOptions,
-        value: selectedMainOption,
-        onChange: handleMainChange,
-        styles: colorStyles,
-        placeholder: "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u043A\u0430"
-      })), /*#__PURE__*/react.createElement("div", {
-        className: "O_SystemSwitch Filter"
+        className: "O_Logo"
+      }, /*#__PURE__*/react.createElement("svg", {
+        className: "M_LogoSVG",
+        viewBox: "0 0 230 33",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg"
+      }, /*#__PURE__*/react.createElement("g", {
+        className: "A_VectorShift"
+      }, /*#__PURE__*/react.createElement("path", {
+        className: "Q_ShiftFirst",
+        d: "M14.7285 17.7402L6.58445 17.8007L3.67821 32.2411H0L6.3574 0.544922H10.0356L7.2656 14.5312L15.5 14.5L14.7285 17.7402Z"
+      }), /*#__PURE__*/react.createElement("path", {
+        className: "Q_ShiftSecond",
+        d: "M23.145 18.8452L20.4658 32.2411H14.7441L21.1015 0.544922H26.8232L24.1894 13.7592H33.2285L32.2285 18.7402L23.145 18.8452Z"
+      })), /*#__PURE__*/react.createElement("g", {
+        className: "A_TextShift"
+      }, /*#__PURE__*/react.createElement("path", {
+        className: "Q_LetterH",
+        d: "M53.8901 19.1176H42.0835L39.4497 32.2411H32.8652L39.2226 0.544922H45.8071L43.2641 13.3051H55.0707L57.6137 0.544922H64.1981L57.8407 32.2411H51.2563L53.8901 19.1176Z"
+      }), /*#__PURE__*/react.createElement("path", {
+        className: "Q_LetterO",
+        d: "M75.832 32.786C74.3183 32.786 72.8652 32.5438 71.4726 32.0595C70.1103 31.5448 68.8994 30.7728 67.8398 29.7436C66.8105 28.684 65.978 27.352 65.3423 25.7475C64.7368 24.1127 64.4341 22.1752 64.4341 19.935C64.4341 17.2104 64.8427 14.6372 65.6601 12.2153C66.4775 9.79342 67.6128 7.67429 69.0659 5.85789C70.519 4.04149 72.2446 2.61864 74.2426 1.58935C76.2407 0.529784 78.4203 0 80.7817 0C82.2953 0 83.7333 0.257324 85.0956 0.771971C86.4882 1.25634 87.6991 2.02831 88.7284 3.08788C89.788 4.11717 90.6205 5.4492 91.226 7.08396C91.8617 8.68845 92.1796 10.6108 92.1796 12.851C92.1796 15.5756 91.7709 18.1489 90.9535 20.5707C90.1361 22.9926 89.0009 25.1117 87.5477 26.9281C86.0946 28.7445 84.369 30.1825 82.371 31.2421C80.373 32.2714 78.1933 32.786 75.832 32.786ZM76.2861 26.9281C78.4052 26.9281 80.1459 26.2167 81.5082 24.7939C82.8705 23.371 83.809 21.373 84.3236 18.7997L85.2772 14.0317C85.3681 13.5473 85.4286 13.1235 85.4589 12.7602C85.4892 12.3667 85.5043 12.0034 85.5043 11.6704C85.5043 7.79538 83.7787 5.85789 80.3276 5.85789C78.2084 5.85789 76.4677 6.56931 75.1054 7.99216C73.7431 9.41501 72.8046 11.413 72.29 13.9863L71.3364 18.7543C71.2456 19.2084 71.185 19.6323 71.1547 20.0258C71.1245 20.4194 71.1093 20.7826 71.1093 21.1157C71.1093 24.9906 72.8349 26.9281 76.2861 26.9281Z"
+      }), /*#__PURE__*/react.createElement("path", {
+        className: "Q_LetterT",
+        d: "M109.677 6.3574L104.5 32.2411H97.9154L103.092 6.3574H94.7367L95.9174 0.544922H119.213L118.032 6.3574H109.677Z"
+      }), /*#__PURE__*/react.createElement("path", {
+        className: "Q_LetterK",
+        d: "M139.541 16.6655L133.865 21.9784L131.821 32.2411H128.143L134.501 0.544922H138.179L134.955 16.7109H135.182L140.586 11.4887L151.893 0.544922H156.57L142.357 14.3042L151.302 32.2411H147.306L139.541 16.6655Z"
+      }), /*#__PURE__*/react.createElement("path", {
+        className: "Q_LetterE",
+        d: "M155.627 32.2411L161.984 0.544922H180.648L179.967 3.81444H165.027L162.893 14.5312H176.334L175.698 17.8007H162.211L159.986 28.9716H175.698L175.062 32.2411H155.627Z"
+      }), /*#__PURE__*/react.createElement("path", {
+        className: "Q_LetterY",
+        d: "M188.432 32.2411L190.93 19.8442L184.3 0.544922H188.024L193.291 16.0297H193.518L204.871 0.544922H209.094L194.608 19.8442L192.111 32.2411H188.432Z"
+      }), /*#__PURE__*/react.createElement("path", {
+        className: "Q_LetterS",
+        d: "M214.777 32.786C212.446 32.786 210.312 32.3319 208.374 31.4237C206.437 30.5155 204.968 29.0775 203.969 27.1098L206.785 25.0663C207.723 26.6708 208.874 27.8061 210.236 28.4721C211.598 29.1381 213.142 29.4711 214.868 29.4711C216.2 29.4711 217.38 29.3046 218.41 28.9716C219.439 28.6083 220.287 28.1239 220.953 27.5185C221.649 26.8827 222.164 26.1562 222.497 25.3388C222.86 24.5214 223.042 23.6435 223.042 22.705C223.042 21.3427 222.663 20.2529 221.906 19.4355C221.15 18.6181 219.923 18.0429 218.228 17.7099L215.186 17.1196C212.945 16.6957 211.22 15.8178 210.009 14.4858C208.828 13.1235 208.238 11.413 208.238 9.35446C208.238 8.08298 208.48 6.88719 208.965 5.76707C209.449 4.61668 210.145 3.61766 211.053 2.77001C211.992 1.92236 213.142 1.25634 214.505 0.771971C215.867 0.257324 217.426 0 219.182 0C221.634 0 223.677 0.454102 225.312 1.3623C226.977 2.2705 228.339 3.45116 229.399 4.90428L226.72 7.12937C225.842 5.94871 224.782 5.02538 223.541 4.35936C222.3 3.66307 220.771 3.31493 218.955 3.31493C216.805 3.31493 215.095 3.81444 213.823 4.81346C212.552 5.81248 211.916 7.23533 211.916 9.082C211.916 11.7461 213.521 13.396 216.73 14.0317L219.772 14.622C222.012 15.0458 223.723 15.9238 224.903 17.2558C226.114 18.5878 226.72 20.3437 226.72 22.5234C226.72 23.9462 226.447 25.2782 225.902 26.5194C225.388 27.7606 224.616 28.8505 223.587 29.789C222.588 30.7274 221.346 31.4691 219.863 32.0141C218.38 32.5287 216.684 32.786 214.777 32.786Z"
+      })))))), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
+        className: "O_SystemSwitch"
       }, /*#__PURE__*/react.createElement("div", {
         className: "C_SwitchItems"
       }, /*#__PURE__*/react.createElement("button", {
@@ -21126,10 +21188,70 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react.createElement("path", {
         className: "Q_WindowsVector",
         d: "M11.045 1.727A862.493 862.493 0 0 1 22.935 0c.002 3.476 0 6.949.002 10.425-3.963.015-7.927.075-11.892.087-.003-2.93-.003-5.858 0-8.785ZM.992 3.129c2.98-.46 5.974-.857 8.967-1.232.003 2.883.003 5.763.005 8.646-2.99-.003-5.981.042-8.972.035v-7.45Zm0 8.356c2.989-.01 5.976.038 8.965.033 0 2.89.007 5.78.002 8.67-2.985-.442-5.976-.83-8.967-1.234v-7.469Zm10.035.116h11.907c.005 3.465 0 6.93 0 10.399a856.508 856.508 0 0 0-11.89-1.681c-.004-2.905-.012-5.81-.017-8.718Z"
-      }))))), /*#__PURE__*/react.createElement("button", {
+      })))))), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
+        className: "O_Menu"
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "C_MenuItems"
+      }, /*#__PURE__*/react.createElement("a", {
+        className: "M_MenuItem Shortcuts",
+        href: "shortcuts.html"
+      }, /*#__PURE__*/react.createElement("h3", {
+        className: "Q_MenuText"
+      }, "\u0428\u041E\u0420\u0422\u041A\u0410\u0422\u042B")), /*#__PURE__*/react.createElement("div", {
+        className: "Q_MenuSeparator"
+      }), /*#__PURE__*/react.createElement("a", {
+        className: "M_MenuItem Selections",
+        href: "selections.html"
+      }, /*#__PURE__*/react.createElement("h3", {
+        className: "Q_MenuText"
+      }, "\u041F\u041E\u0414\u0411\u041E\u0420\u041A\u0418")))))), /*#__PURE__*/react.createElement("div", {
+        className: "C_Wrapper"
+      }, /*#__PURE__*/react.createElement("form", {
+        className: "S_SearchForm"
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "C_SearchBar"
+      }, /*#__PURE__*/react.createElement("input", {
+        className: "M_SearchInput",
+        type: "text",
+        placeholder: "\u041F\u043E\u0438\u0441\u043A \u0448\u043E\u0440\u0442\u043A\u0430\u0442\u043E\u0432",
+        value: searchQuery,
+        onChange: function onChange(e) {
+          return _this2.setState({
+            searchQuery: e.target.value
+          });
+        }
+      }), /*#__PURE__*/react.createElement("button", {
+        className: "M_SearchButton",
+        type: "submit"
+      }, /*#__PURE__*/react.createElement(FontAwesomeIcon, {
+        icon: faSearch,
+        className: "A_ButtonIcon"
+      }))), /*#__PURE__*/react.createElement("div", {
+        className: "S_Filters"
+      }, /*#__PURE__*/react.createElement("div", {
+        className: "C_SelectBar"
+      }, /*#__PURE__*/react.createElement(react_select_esm, {
+        options: programOptions,
+        value: selectedProgramOption,
+        onChange: handleProgramChange,
+        styles: colorStyles,
+        components: {
+          DropdownIndicator: DropdownIndicator
+        },
+        placeholder: "\u0412\u0441\u0435 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B"
+      }), /*#__PURE__*/react.createElement(react_select_esm, {
+        options: mainOptions,
+        value: selectedMainOption,
+        onChange: handleMainChange,
+        styles: colorStyles,
+        components: {
+          DropdownIndicator: DropdownIndicator
+        },
+        placeholder: "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u043A\u0430"
+      })), /*#__PURE__*/react.createElement("button", {
         className: "M_ResetFilters",
         onClick: this.handleReset
-      }, /*#__PURE__*/react.createElement(FontAwesomeIcon, {
+      }, "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C", /*#__PURE__*/react.createElement(FontAwesomeIcon, {
         icon: faTimes,
         className: "A_ResetIcon"
       })))), /*#__PURE__*/react.createElement("div", {
@@ -21149,7 +21271,7 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
         }, hotkey.selected, " "), hotkey.text), /*#__PURE__*/react.createElement("h2", {
           className: "A_CardKey"
         }, hotkey[system])));
-      })));
+      }))));
     }
   }]);
 
@@ -21163,7 +21285,7 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  var container = document.getElementById('reactComponentShortcuts');
+  var container = document.getElementById('reactShortcuts');
 
   if (container) {
     var root = (0,client/* createRoot */.s)(container);
