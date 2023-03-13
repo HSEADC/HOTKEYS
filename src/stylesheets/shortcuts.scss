@@ -2,12 +2,17 @@
 .S_Filters {
   display: flex;
   flex-direction: row;
-  gap: 0.5vw;
+  gap: 0.6vw;
 }
 
 .S_Filters {
   margin-top: 1vw;
   align-self: center;
+}
+
+.A_SelectIcon {
+  color: var(--grey);
+  transform: scale(1.5);
 }
 
 .M_ResetFilters {
@@ -29,9 +34,9 @@
   }
 
   .A_ResetIcon {
-    margin-left: 0.5vw;
+    margin-left: 0.75vw;
     color: var(--grey);
-    transform: scale(0.75);
+    transform: scale(1);
   }
 }
 

@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
 import Cookies from 'js-cookie'
-import Select from 'react-select'
+import Select, {components} from 'react-select'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faSearch, faTimes} from '@fortawesome/free-solid-svg-icons'
+import TriangleDown from '../../images/triangle.svg'
 
 import {colorStyles, green, black, lightBlack} from './SelectStyle'
 import hotkeys from './hotkeys.json'
@@ -44,6 +45,15 @@ export default class Shortcuts extends Component {
 
   render() {
     const {system, selectedProgramOption, selectedMainOption, searchQuery} = this.state // destructure search query state
+
+    //* set custom icon resetButton
+    const DropdownIndicator = (props) => {
+      return (
+        <components.DropdownIndicator {...props}>
+          <img src={TriangleDown} alt="Dropdown Indicator" className="A_SelectIcon" />
+        </components.DropdownIndicator>
+      )
+    }
 
     //? [Все программы] select program options
     const programOptions = [
@@ -97,9 +107,9 @@ export default class Shortcuts extends Component {
 
     return (
       <>
-        <div class="S_Header Shortcuts">
+        <div className="S_Header Shortcuts">
           <div>
-            <a class="W_LinkLogo" href="./">
+            <a className="W_LinkLogo" href="./">
               <div className="O_Logo">
                 <svg className="M_LogoSVG" viewBox="0 0 230 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g className="A_VectorShift">
@@ -159,8 +169,8 @@ export default class Shortcuts extends Component {
             </div>
             <div className="S_Filters">
               <div className="C_SelectBar">
-                <Select options={programOptions} value={selectedProgramOption} onChange={handleProgramChange} styles={colorStyles} placeholder="Все программы" />
-                <Select options={mainOptions} value={selectedMainOption} onChange={handleMainChange} styles={colorStyles} placeholder="Сортировка" />
+                <Select options={programOptions} value={selectedProgramOption} onChange={handleProgramChange} styles={colorStyles} components={{DropdownIndicator}} placeholder="Все программы" />
+                <Select options={mainOptions} value={selectedMainOption} onChange={handleMainChange} styles={colorStyles} components={{DropdownIndicator}} placeholder="Сортировка" />
               </div>
               <button className="M_ResetFilters" onClick={this.handleReset}>
                 Сбросить
