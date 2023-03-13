@@ -2,7 +2,7 @@
 .S_Filters {
   display: flex;
   flex-direction: row;
-  gap: 1vw;
+  gap: 0.5vw;
 }
 
 .S_Filters {
@@ -14,15 +14,24 @@
   background-color: transparent;
   border: none;
   outline: none;
+  font-size: 1.15vw;
+  font-weight: 400;
+  color: var(--grey);
+
+  &:hover {
+    color: var(--green);
+
+    .A_ResetIcon {
+      color: var(--green);
+      // transform: scale(1.05);
+      // transition: transform 0.5s ease;
+    }
+  }
 
   .A_ResetIcon {
+    margin-left: 0.5vw;
     color: var(--grey);
-
-    &:hover {
-      color: var(--green);
-      transform: scale(1.15);
-      transition: transform 0.5s ease;
-    }
+    transform: scale(0.75);
   }
 }
 

@@ -163,6 +163,7 @@ export default class Shortcuts extends Component {
                 <Select options={mainOptions} value={selectedMainOption} onChange={handleMainChange} styles={colorStyles} placeholder="Сортировка" />
               </div>
               <button className="M_ResetFilters" onClick={this.handleReset}>
+                Сбросить
                 <FontAwesomeIcon icon={faTimes} className="A_ResetIcon" />
               </button>
             </div>
