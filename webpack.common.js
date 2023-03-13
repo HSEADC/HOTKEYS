@@ -7,6 +7,29 @@ const CopyPlugin = require('copy-webpack-plugin')
 const webpack = require('webpack')
 const path = require('path')
 
+// prettier-ignore
+const pages = [
+  'index',
+  'about',
+  'styleguide',
+  'shortcuts',
+  'selections',
+  'shortcuts/switch-between-programs',
+]
+
+// prettier-ignore
+const partials = [
+  'analytics',
+  'hotkeys',
+  'menu',
+  'menu-shortcut',
+  'system-switch',
+  'keyboard-win',
+  'keyboard-mac',
+  'modal',
+  'footer',
+]
+
 module.exports = {
   entry: {
     index: './src/index.js',
@@ -80,226 +103,23 @@ module.exports = {
       patterns: [{from: 'src/share', to: 'share'}],
     }),
 
-    ///////
-
-    // Index (home page)
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/index.html',
-      filename: './index.html',
-      // chunks: ['index']
+    ...pages.map((page) => {
+      const pageName = `${page}.html`
+      return new HtmlWebpackPlugin({
+        hash: true,
+        template: `./src/${pageName}`,
+        filename: `./${pageName}`,
+      })
     }),
 
-    // About us page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/about.html',
-      filename: './about.html',
-      // chunks: ['page']
-    }),
-
-    // Style Guide page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/styleguide.html',
-      filename: './styleguide.html',
-      // chunks: ['page']
-    }),
-
-    // shortcuts page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/shortcuts.html',
-      filename: './shortcuts.html',
-      // chunks: ['page']
-    }),
-
-    // Selections page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/selections.html',
-      filename: './selections.html',
-      // chunks: ['page']
-    }),
-
-    // shortcuts Item page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/shortcuts/switch-between-programs.html',
-      filename: './shortcuts/switch-between-programs.html',
-      // chunks: ['page']
-    }),
-
-    // shortcuts Item page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/shortcuts/cmd-tab.html',
-      filename: './shortcuts/cmd-tab.html',
-      // chunks: ['page']
-    }),
-
-    // shortcuts Item page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/shortcuts/ctrl-z.html',
-      filename: './shortcuts/ctrl-z.html',
-      // chunks: ['page']
-    }),
-
-    // shortcuts Item page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/shortcuts/cmd-z.html',
-      filename: './shortcuts/cmd-z.html',
-      // chunks: ['page']
-    }),
-
-    // shortcuts Item page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/shortcuts/cmd-h.html',
-      filename: './shortcuts/cmd-h.html',
-      // chunks: ['page']
-    }),
-
-    // shortcuts Item page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/shortcuts/cmd-o.html',
-      filename: './shortcuts/cmd-o.html',
-      // chunks: ['page']
-    }),
-
-    // shortcuts Item page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/shortcuts/ctrl-w.html',
-      filename: './shortcuts/ctrl-w.html',
-      // chunks: ['page']
-    }),
-
-    // shortcuts Item page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/shortcuts/win-d.html',
-      filename: './shortcuts/win-d.html',
-      // chunks: ['page']
-    }),
-
-    // shortcuts Item page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/shortcuts/win-v.html',
-      filename: './shortcuts/win-v.html',
-      // chunks: ['page']
-    }),
-
-    // shortcuts Item page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/shortcuts/alt-f4.html',
-      filename: './shortcuts/alt-f4.html',
-      // chunks: ['page']
-    }),
-
-    //////
-
-    // Partials
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/analytics.html'),
-        location: 'analytics',
+    new HtmlWebpackPartialsPlugin(
+      partials.map((partial) => ({
+        path: path.join(__dirname, `./src/partials/${partial}.html`),
+        location: `${partial}`,
         template_filename: '*',
         priority: 'replace',
-      },
-    ]),
-
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/hotkeys.html'),
-        location: 'hotkeys',
-        template_filename: '*',
-        priority: 'replace',
-      },
-    ]),
-
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/menu.html'),
-        location: 'menu',
-        template_filename: '*',
-        priority: 'replace',
-      },
-    ]),
-
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/menu-shortcut.html'),
-        location: 'menu-item',
-        template_filename: '*',
-        priority: 'replace',
-      },
-    ]),
-
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/system-switch.html'),
-        location: 'sistem-switch',
-        template_filename: '*',
-        priority: 'replace',
-      },
-    ]),
-
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/keyboard-win.html'),
-        location: 'windows',
-        template_filename: '*',
-        priority: 'replace',
-      },
-    ]),
-
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/keyboard-mac.html'),
-        location: 'macos',
-        template_filename: '*',
-        priority: 'replace',
-      },
-    ]),
-
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/footer.html'),
-        location: 'footer',
-        template_filename: '*',
-        priority: 'replace',
-      },
-    ]),
-
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/modal.html'),
-        location: 'modal',
-        template_filename: '*',
-        priority: 'replace',
-      },
-    ]),
+      })),
+    ),
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()],

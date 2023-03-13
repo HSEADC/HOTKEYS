@@ -31,8 +31,8 @@
     "macos": "Cmd+Ctrl+Shift+V",
     "popular": false,
     "useful": true,
-    "simple": true,
-    "complex": false,
+    "simple": false,
+    "complex": true,
     "target": "system"
   },
   {
@@ -60,13 +60,25 @@
     "target": "system"
   },
   {
+    "link": "shortcuts/undo-last-action.html",
+    "selected": "Отмена",
+    "text": "последнего отмененного действия",
+    "windows": "Ctrl+SHift+Z",
+    "macos": "Cmd+Shift+Z",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "system"
+  },
+  {
     "link": "shortcuts/cut-selected-text.html",
     "selected": "Вырезать",
     "text": "выделенный текст в буфер обмена",
     "windows": "Ctrl+X",
     "macos": "Cmd+X",
     "popular": false,
-    "useful": false,
+    "useful": true,
     "simple": true,
     "complex": false,
     "target": "system"
@@ -102,7 +114,7 @@
     "windows": "Win+E",
     "macos": "Cmd+Shift+F",
     "popular": false,
-    "useful": true,
+    "useful": false,
     "simple": false,
     "complex": true,
     "target": "system"
@@ -150,7 +162,7 @@
     "windows": "Ctrl+N",
     "macos": "Cmd+N",
     "popular": false,
-    "useful": true,
+    "useful": false,
     "simple": true,
     "complex": false,
     "target": "system"
@@ -163,7 +175,7 @@
     "macos": "Cmd+,",
     "popular": false,
     "useful": false,
-    "simple": false,
+    "simple": true,
     "complex": false,
     "target": "system"
   },
@@ -173,8 +185,8 @@
     "text": "активное окно",
     "windows": "Win+↓",
     "macos": "Cmd+M",
-    "popular": true,
-    "useful": true,
+    "popular": false,
+    "useful": false,
     "simple": true,
     "complex": false,
     "target": "system"
@@ -185,8 +197,8 @@
     "text": "активное окно",
     "windows": "Win+↑",
     "macos": "Cmd+Ctrl+F",
-    "popular": true,
-    "useful": true,
+    "popular": false,
+    "useful": false,
     "simple": true,
     "complex": false,
     "target": "system"
@@ -197,8 +209,8 @@
     "text": "активное окно приложения",
     "windows": "Ctrl+W",
     "macos": "Cmd+W",
-    "popular": true,
-    "useful": true,
+    "popular": false,
+    "useful": false,
     "simple": true,
     "complex": false,
     "target": "system"
@@ -245,7 +257,7 @@
     "text": "выбранного фрагмента",
     "windows": "Ctrl+H",
     "macos": "Cmd+H",
-    "popular": true,
+    "popular": false,
     "useful": true,
     "simple": true,
     "complex": false,
@@ -257,10 +269,10 @@
     "text": "выбранного фрагмента по всему проекту",
     "windows": "Ctrl+Shift+F",
     "macos": "Cmd+Shift+F",
-    "popular": true,
+    "popular": false,
     "useful": true,
-    "simple": true,
-    "complex": false,
+    "simple": false,
+    "complex": true,
     "target": "vs-code"
   },
   {
@@ -269,10 +281,10 @@
     "text": "выбранного фрагмента  по всему проекту",
     "windows": "Ctrl+Shift+H",
     "macos": "Cmd+Shift+H",
-    "popular": true,
+    "popular": false,
     "useful": true,
-    "simple": true,
-    "complex": false,
+    "simple": false,
+    "complex": true,
     "target": "vs-code"
   },
   {
@@ -281,8 +293,8 @@
     "text": "боковой панели",
     "windows": "Ctrl+B",
     "macos": "Cmd+B",
-    "popular": true,
-    "useful": true,
+    "popular": false,
+    "useful": false,
     "simple": true,
     "complex": false,
     "target": "vs-code"
@@ -293,7 +305,7 @@
     "text": "схожих фрагментов кода",
     "windows": "Ctrl+D",
     "macos": "Cmd+D",
-    "popular": true,
+    "popular": false,
     "useful": true,
     "simple": true,
     "complex": false,
@@ -307,8 +319,8 @@
     "macos": "Cmd+Shift+P",
     "popular": true,
     "useful": true,
-    "simple": true,
-    "complex": false,
+    "simple": false,
+    "complex": true,
     "target": "vs-code"
   },
   {
@@ -317,8 +329,8 @@
     "text": "новое окно",
     "windows": "Ctrl+N",
     "macos": "Cmd+N",
-    "popular": true,
-    "useful": true,
+    "popular": false,
+    "useful": false,
     "simple": true,
     "complex": false,
     "target": "browser"
@@ -329,10 +341,10 @@
     "text": "новое окно икогнито",
     "windows": "Ctrl+Shift+N",
     "macos": "Cmd+Shift+N",
-    "popular": true,
-    "useful": true,
-    "simple": true,
-    "complex": false,
+    "popular": false,
+    "useful": false,
+    "simple": false,
+    "complex": true,
     "target": "browser"
   },
   {
@@ -341,8 +353,8 @@
     "text": "новую вкладку",
     "windows": "Ctrl+T",
     "macos": "Cmd+T",
-    "popular": true,
-    "useful": true,
+    "popular": false,
+    "useful": false,
     "simple": true,
     "complex": false,
     "target": "browser"
@@ -353,7 +365,7 @@
     "text": "закрытую вкладку",
     "windows": "Ctrl+Shift+T",
     "macos": "Cmd+Shift+T",
-    "popular": true,
+    "popular": false,
     "useful": true,
     "simple": false,
     "complex": true,
@@ -365,10 +377,10 @@
     "text": "между вкладками",
     "windows": "Ctrl+Tab",
     "macos": "Cmd+Option+ →",
-    "popular": true,
-    "useful": true,
-    "simple": true,
-    "complex": false,
+    "popular": false,
+    "useful": false,
+    "simple": false,
+    "complex": true,
     "target": "browser"
   },
   {
@@ -377,10 +389,10 @@
     "text": "назад/вперед",
     "windows": "Alt+ ← / Alt+ →",
     "macos": "Cmd+ ← / Cmd+ →",
-    "popular": true,
-    "useful": true,
-    "simple": true,
-    "complex": false,
+    "popular": false,
+    "useful": false,
+    "simple": false,
+    "complex": true,
     "target": "browser"
   },
   {
@@ -406,5 +418,101 @@
     "simple": true,
     "complex": false,
     "target": "browser"
+  },
+  {
+    "link": "shortcuts/figma-group-layers.html",
+    "selected": "Сгрупировать",
+    "text": "выделенные элементы во фрейм",
+    "windows": "Ctrl+Alt+G",
+    "macos": "Cmd+Option+G",
+    "popular": false,
+    "useful": true,
+    "simple": false,
+    "complex": true,
+    "target": "figma"
+  },
+  {
+    "link": "shortcuts/figma-group-layers.html",
+    "selected": "Сгрупировать",
+    "text": "выделенные элементы в группу",
+    "windows": "Ctrl+G",
+    "macos": "Cmd+G",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "figma"
+  },
+  {
+    "link": "shortcuts/figma-ungroup-layers.html",
+    "selected": "Разгрубировать",
+    "text": "выделенные элементы из группы",
+    "windows": "Ctrl+Shift+G",
+    "macos": "Cmd+Shift+G",
+    "popular": true,
+    "useful": true,
+    "simple": false,
+    "complex": true,
+    "target": "figma"
+  },
+  {
+    "link": "shortcuts/duplicate-selection.html",
+    "selected": "Дубликовать",
+    "text": "выделенные элементы",
+    "windows": "Ctrl+D",
+    "macos": "Cmd+D",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "figma"
+  },
+  {
+    "link": "shortcuts/duplicate-selection.html",
+    "selected": "Скрыть",
+    "text": "пользовательский интерфейс",
+    "windows": "Ctrl+\\",
+    "macos": "Cmd+\\",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "figma"
+  },
+  {
+    "link": "shortcuts/duplicate-selection.html",
+    "selected": "Скрыть",
+    "text": "интерфейс панели слоев",
+    "windows": "Ctrl+Shift+/",
+    "macos": "Cmd+Shift+/",
+    "popular": false,
+    "useful": false,
+    "simple": false,
+    "complex": true,
+    "target": "figma"
+  },
+  {
+    "link": "shortcuts/duplicate-selection.html",
+    "selected": "Получить",
+    "text": "цвет у элемета из файла",
+    "windows": "I",
+    "macos": "I",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "figma"
+  },
+  {
+    "link": "shortcuts/duplicate-selection.html",
+    "selected": "Открыть",
+    "text": "панель быстрых действий",
+    "windows": "Ctrl+/",
+    "macos": "Cmd+/",
+    "popular": true,
+    "useful": true,
+    "simple": true,
+    "complex": false,
+    "target": "figma"
   }
 ]

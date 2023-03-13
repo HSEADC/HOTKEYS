@@ -1,18 +1,5 @@
-.M_NavBar {
-  margin-bottom: 1vw;
-  display: flex;
-  justify-content: flex-start;
-
-  .A_ButtonBack {
-    .Q_TextButton {
-      @include itemGrid;
-      @include itemConfigg(6.25vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 5px, 1vw, 400);
-
-      &:hover {
-        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
-      }
-    }
-  }
+.A_TextMainH2 {
+  margin-top: 5vw;
 }
 
 #S_Win,

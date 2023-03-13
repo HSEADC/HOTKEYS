@@ -2,7 +2,7 @@
 .S_Filters {
   display: flex;
   flex-direction: row;
-  gap: 1vw;
+  gap: 0.6vw;
 }
 
 .S_Filters {
@@ -10,19 +10,33 @@
   align-self: center;
 }
 
+.A_SelectIcon {
+  color: var(--grey);
+  transform: scale(1.5);
+}
+
 .M_ResetFilters {
   background-color: transparent;
   border: none;
   outline: none;
+  font-size: 1.15vw;
+  font-weight: 400;
+  color: var(--grey);
+
+  &:hover {
+    color: var(--green);
+
+    .A_ResetIcon {
+      color: var(--green);
+      // transform: scale(1.05);
+      // transition: transform 0.5s ease;
+    }
+  }
 
   .A_ResetIcon {
+    margin-left: 0.75vw;
     color: var(--grey);
-
-    &:hover {
-      color: var(--green);
-      transform: scale(1.15);
-      transition: transform 0.5s ease;
-    }
+    transform: scale(1);
   }
 }
 
@@ -42,7 +56,7 @@
   justify-content: space-between;
   padding: 1.25vw;
   height: 300px;
-  width: 435px;
+  // min-width: 435px;
   border-radius: 5px;
   font-size: 1.5rem;
   font-weight: 500;
@@ -69,6 +83,13 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .S_Shortcuts {
+    grid-template-columns: repeat(3, 1fr);
+    // column-gap: 1vw;
+    // row-gap: 1vw;
+  }
+}
 @media screen and (max-width: 768px) {
   .S_Shortcuts {
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
