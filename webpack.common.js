@@ -115,7 +115,7 @@ module.exports = {
     new HtmlWebpackPartialsPlugin(
       partials.map((partial) => ({
         path: path.join(__dirname, `./src/partials/${partial}.html`),
-        location: partial,
+        location: `${partial}`,
         template_filename: '*',
         priority: 'replace',
       })),

@@ -21,6 +21,10 @@
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "babel-loader": "^8.2.3",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^5.2.4",
@@ -29,10 +33,12 @@
     "html-loader": "^4.2.0",
     "html-webpack-partials-plugin": "^0.8.0",
     "html-webpack-plugin": "^5.3.1",
+    "js-cookie": "^3.0.1",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss": "^8.4.14",
     "postcss-loader": "^7.0.0",
     "postcss-preset-env": "^7.7.0",
+    "react-select": "^5.7.0",
     "sass": "^1.32.12",
     "sass-loader": "^11.0.1",
     "url-loader": "^4.1.1",
@@ -42,13 +48,7 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.3.0",
-    "@fortawesome/free-brands-svg-icons": "^6.3.0",
-    "@fortawesome/free-solid-svg-icons": "^6.3.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "js-cookie": "^3.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-select": "^5.7.0"
+    "react-dom": "^18.2.0"
   }
 }
