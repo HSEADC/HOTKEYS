@@ -81,6 +81,10 @@
     background-color: var(--gray);
     box-shadow: 0px 1px 50px rgba(203, 251, 69, 0.4);
   }
+
+  &.Render {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 1200px) {

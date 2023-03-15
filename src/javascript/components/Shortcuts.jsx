@@ -87,8 +87,8 @@ export default class Shortcuts extends Component {
     //* search filter {hotkeys}
     if (searchQuery) {
       filteredHotkeys = filteredHotkeys.filter((hotkey) => {
-        const {selected, text} = hotkey
-        const combinedText = `${selected} ${text}`
+        const {selected, text, windows, macos} = hotkey
+        const combinedText = `${selected} ${text} ${windows} ${macos}`.replace(/\+/g, ' ')
         return combinedText.toLowerCase().includes(searchQuery.toLowerCase())
       })
     }

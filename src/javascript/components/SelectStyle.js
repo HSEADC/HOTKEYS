@@ -33,7 +33,8 @@ export const colorStyles = {
     }
   },
   indicatorSeparator: (styles) => ({...styles, display: 'none'}),
-  menu: (styles) => ({...styles, backgroundColor: 'transparent', boxShadow: '0px 0px 5px 1px #cbfb4550'}),
+  menu: (styles) => ({...styles, backgroundColor: 'transparent', border: '1.5px solid #595959', boxShadow: '0px 5px 95px rgba(0, 0, 0, 0.4)', borderRadius: '5px'}),
+  menuList: (styles) => ({...styles, margin: '0px', padding: '0px'}),
   placeholder: (styles) => ({...styles, color: 'white'}),
   input: (styles) => ({...styles, color: 'white'}),
   singleValue: (styles) => ({...styles, color: 'white'}),
