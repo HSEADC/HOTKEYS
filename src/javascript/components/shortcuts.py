@@ -13,10 +13,10 @@ with open('src/javascript/components/hotkeys.json') as f:
 html = ''
 for d in hotkeys:
     html += f"""
-        <div class="M_ShortcutCard">
+        <div class="M_ShortcutCard Render">
             <a href="{d['link']}">
                 <h1 class="A_CardName"><span class="Q_TextSelection">{d['selected']} </span> {d['text']}</h1>
-                <h2 class="A_CardKey">{d['windows']}, {d['macos']}</h2>
+                <h2 class="A_CardKey">Windows: {d['windows']}, MacOS: {d['macos']}</h2>
             </a>
         </div>
     """
