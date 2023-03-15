@@ -20908,7 +20908,15 @@ var colorStyles = {
   menu: function menu(styles) {
     return SelectStyle_objectSpread(SelectStyle_objectSpread({}, styles), {}, {
       backgroundColor: 'transparent',
-      boxShadow: '0px 0px 5px 1px #cbfb4550'
+      border: '1.5px solid #595959',
+      boxShadow: '0px 5px 95px rgba(0, 0, 0, 0.4)',
+      borderRadius: '5px'
+    });
+  },
+  menuList: function menuList(styles) {
+    return SelectStyle_objectSpread(SelectStyle_objectSpread({}, styles), {}, {
+      margin: '0px',
+      padding: '0px'
     });
   },
   placeholder: function placeholder(styles) {
@@ -21091,8 +21099,10 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
       if (searchQuery) {
         filteredHotkeys = filteredHotkeys.filter(function (hotkey) {
           var selected = hotkey.selected,
-              text = hotkey.text;
-          var combinedText = "".concat(selected, " ").concat(text);
+              text = hotkey.text,
+              windows = hotkey.windows,
+              macos = hotkey.macos;
+          var combinedText = "".concat(selected, " ").concat(text, " ").concat(windows, " ").concat(macos).replace(/\+/g, ' ');
           return combinedText.toLowerCase().includes(searchQuery.toLowerCase());
         });
       } //* on load filter {hotkeys}
@@ -21283,6 +21293,12 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
 
 
 
+
+var pythonGenerated = document.getElementById('PYTHON_GENERATED');
+
+if (pythonGenerated) {
+  pythonGenerated.parentNode.removeChild(pythonGenerated);
+}
 
 document.addEventListener('DOMContentLoaded', function () {
   var container = document.getElementById('reactShortcuts');
