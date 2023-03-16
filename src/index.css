@@ -25,6 +25,7 @@
 
 /* components css styles */
 
+@import 'stylesheets/components/C_Wrapper.scss';
 @import 'stylesheets/components/S_Header.scss';
 @import 'stylesheets/components/S_SearchForm.scss';
 @import 'stylesheets/components/A_CardName&Key.scss';

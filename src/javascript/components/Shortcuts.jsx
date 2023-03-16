@@ -160,7 +160,7 @@ export default class Shortcuts extends Component {
             </div>
           </div>
         </div>
-        <div className="C_Wrapper">
+        <div className="C_Wrapper Shortcuts">
           <form className="S_SearchForm">
             <div className="C_SearchBar">
               <input className="M_SearchInput" type="text" placeholder="Поиск шорткатов" value={searchQuery} onChange={(e) => this.setState({searchQuery: e.target.value})} />
