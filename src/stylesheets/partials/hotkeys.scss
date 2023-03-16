@@ -1,37 +1,13 @@
 .O_Logo {
   .M_LogoSVG {
     margin-top: 0.4vw;
-    margin-left: -1.88vw;
-    width: 13vw;
+    // margin-left: -1.88vw;
+    // width: 13vw;
     overflow: visible;
     transform: translate(0px);
 
-    .A_VectorShift {
-      visibility: hidden;
-      transform: translate(1.88vw);
-
-      .Q_ShiftFirst {
-        fill: var(--green);
-        fill-opacity: 0.5;
-      }
-      .Q_ShiftSecond {
-        fill-opacity: 0.5;
-        fill: var(--green);
-      }
-    }
-
-    .A_TextShift {
-      .Q_LetterH,
-      .Q_LetterO,
-      .Q_LetterT {
-        fill: var(--green);
-      }
-      .Q_LetterK,
-      .Q_LetterE,
-      .Q_LetterY,
-      .Q_LetterS {
-        fill: var(--white);
-      }
-    }
+    // .A_VectorShift {
+    //   transform: translate(1.88vw);
+    // }
   }
 }
