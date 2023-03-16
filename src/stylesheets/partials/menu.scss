@@ -1,5 +1,5 @@
 .O_Menu {
-  width: 17.25vw;
+  width: 17.25rem;
   border: 1.5px solid var(--grey);
   border-radius: 4px;
 
@@ -7,24 +7,24 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 0vw;
+    gap: 0rem;
 
     .Q_MenuSeparator {
       display: flex;
       align-self: center;
-      height: 1.7vw;
+      height: 1.7rem;
       border: 0.5px solid var(--grey);
       background-color: var(--grey);
       z-index: -99;
     }
 
     .M_MenuItem {
-      margin: 0 -0.25vw;
-      padding: 0.3vw 0.1vw 0.3vw;
+      margin: 0 -0.25rem;
+      padding: 0.3rem 0.1rem 0.3rem;
 
       h3 {
         @include itemGrid;
-        @include itemConfig(var(--white), transparent, 0px solid var(--grey), 0px, 1vw, 500);
+        @include itemConfig(var(--white), transparent, 0px solid var(--grey), 0px, 1rem, 500);
       }
 
       &:hover {
@@ -43,15 +43,15 @@
 
       &.Shortcuts {
         h3 {
-          width: 8.25vw;
-          height: 2.3vw;
+          width: 8.25rem;
+          height: 2.3rem;
         }
       }
 
       &.Selections {
         & h3 {
-          width: 8.3vw;
-          height: 2.3vw;
+          width: 8.3rem;
+          height: 2.3rem;
         }
       }
     }

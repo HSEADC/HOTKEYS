@@ -1,6 +1,6 @@
 .M_ShortcutValue {
-  margin: 4vw auto 8vw auto;
-  font-size: 20vw;
+  margin: 4rem auto 8rem auto;
+  font-size: 20rem;
   text-align: center;
   animation: modify-shortcut-style 3.5s infinite;
   // animation-play-state: running;
@@ -75,7 +75,7 @@
   .A_ArrowSVG {
     display: block;
     margin: 0 auto;
-    width: 1vw;
+    width: 1rem;
     overflow: visible;
 
     .Q_ArrowVector {
@@ -89,36 +89,36 @@
 }
 
 .M_BlockMain {
-  margin: 22.5vw 0 3.5vw 0;
+  margin: 22.5rem 0 3.5rem 0;
 }
 
 .M_BlockMission {
-  margin: 22.5vw 0 27.5vw 0;
+  margin: 22.5rem 0 27.5rem 0;
 }
 
 .M_BlockDev {
-  margin: 1vw 0 4vw 0;
+  margin: 1rem 0 4rem 0;
 }
 
 .M_BlockUnique {
-  margin: 22.5vw 0 27.5vw 0;
+  margin: 22.5rem 0 27.5rem 0;
 }
 
 .M_BlockWho {
-  margin: 1vw 0 3.5vw 0;
+  margin: 1rem 0 3.5rem 0;
 
   .A_TextMainH1 {
-    padding: 2.5vw 0 0.5vw;
+    padding: 2.5rem 0 0.5rem;
   }
 
   .A_TextMainH2 {
-    padding-top: 2vw;
+    padding-top: 2rem;
     line-height: 115%;
   }
 
   .A_ImgWho {
-    margin: 3.5vw auto 0;
-    width: 74.5vw;
+    margin: 3.5rem auto 0;
+    width: 74.5rem;
     display: block;
   }
 }
@@ -129,14 +129,14 @@
 
 // @media screen and (max-width: 768px) {
 //   .header {
-//     margin: 2.5vw;
+//     margin: 2.5rem;
 //     flex-direction: column;
 //     margin: 0 auto;
-//     margin-bottom: 5vw;
+//     margin-bottom: 5rem;
 
 //     .hotkeys {
 //       @include itemGrid;
-//       margin: 7vw auto;
+//       margin: 7rem auto;
 //     }
 //   }
 
@@ -144,8 +144,8 @@
 //     color: var(--white);
 
 //     & div {
-//       margin: 10vw auto 10vw auto;
-//       font-size: 25vw;
+//       margin: 10rem auto 10rem auto;
+//       font-size: 25rem;
 //       text-align: center;
 //       animation: change-text 3.5s infinite;
 //       // animation-play-state: running;
@@ -164,8 +164,8 @@
 //     a {
 //       svg {
 //         margin: 0 49.5%;
-//         width: 0.94vw;
-//         height: 1.56vw;
+//         width: 0.94rem;
+//         height: 1.56rem;
 
 //         #arrow {
 //           fill: var(--white);
@@ -178,8 +178,8 @@
 //     }
 
 //     // & h2 {
-//     //    font-size: 1.3vw;
-//     //    line-height: 1vw;
+//     //    font-size: 1.3rem;
+//     //    line-height: 1rem;
 //     //    font-weight: 400;
 //     //    color: var(--white);
 //     //    text-align: center;
@@ -192,49 +192,49 @@
 //   }
 
 //   .title-main {
-//     padding: 25vw 0 3.5vw 0;
+//     padding: 25rem 0 3.5rem 0;
 //     margin: 0 auto;
 
 //     & h5 {
-//       padding-top: 2.5vw;
+//       padding-top: 2.5rem;
 //       line-height: 135%;
 //     }
 //   }
 
 //   .title-mission {
-//     padding: 25vw 0 27.5vw 0;
+//     padding: 25rem 0 27.5rem 0;
 //     margin: 0 auto;
 
 //     & h5 {
-//       padding-top: 2.5vw;
+//       padding-top: 2.5rem;
 //       line-height: 115%;
 //     }
 //   }
 
 //   .title-dev {
-//     padding: 1vw 0 10vw 0;
+//     padding: 1rem 0 10rem 0;
 //     margin: 0 auto;
 //   }
 
 //   .items-dev {
-//     padding-top: 1vw;
+//     padding-top: 1rem;
 //     margin: 0 auto;
-//     width: 94vw;
+//     width: 94rem;
 //     display: grid;
 //     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-//     column-gap: 2vw;
-//     row-gap: 2vw;
+//     column-gap: 2rem;
+//     row-gap: 2rem;
 
 //     & h2 {
 //       margin: 5% 0 1% 6%;
-//       font-size: clamp(1rem, 3vw - 2rem, 1.15vw);
+//       font-size: clamp(1rem, 3rem - 2rem, 1.15rem);
 //       line-height: 120%;
 //       font-weight: 400;
 //     }
 
 //     & h1 {
 //       margin: 5% 0 1% 6%;
-//       font-size: clamp(2rem, 8vw - 2rem, 2.75vw);
+//       font-size: clamp(2rem, 8rem - 2rem, 2.75rem);
 //       line-height: 100%;
 //       font-weight: 500;
 //     }
@@ -282,12 +282,12 @@
 //   }
 
 //   .title-unique {
-//     padding: 25vw 0 27.5vw 0;
+//     padding: 25rem 0 27.5rem 0;
 //     margin: 0 auto;
 
 //     .element {
-//       font-size: 3.13vw;
-//       padding-top: 2.5vw;
+//       font-size: 3.13rem;
+//       padding-top: 2.5rem;
 //       line-height: 100%;
 //       color: var(--white);
 //       font-style: italic;
@@ -308,12 +308,12 @@
 //   }
 
 //   .title-who {
-//     padding: 1vw 0 3.5vw 0;
+//     padding: 1rem 0 3.5rem 0;
 //     margin: 0 auto;
 
 //     & h4 {
-//       padding-top: 2.5vw;
-//       line-height: 1.5vw;
+//       padding-top: 2.5rem;
+//       line-height: 1.5rem;
 
 //       & span {
 //         font-weight: 450;
@@ -328,7 +328,7 @@
 //     }
 
 //     & h5 {
-//       padding-top: 2vw;
+//       padding-top: 2rem;
 //       line-height: 115%;
 //     }
 //   }

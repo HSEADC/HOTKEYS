@@ -1,38 +1,38 @@
 .M_BlockAboutMain {
-  margin: 9vw 0 3.5vw 0;
+  margin: 9rem 0 3.5rem 0;
 
   .A_TextMainH2 {
-    margin: 2.5vw 0 2.5vw;
+    margin: 2.5rem 0 2.5rem;
   }
 
   .A_ImgMain {
-    max-width: 94.5vw;
+    max-width: 94.5rem;
   }
 }
 
 .M_BlockAboutResearch {
-  margin: 25vw 0 0;
+  margin: 25rem 0 0;
 
   .A_TextMainH2 {
-    margin: 2vw 0 4vw;
+    margin: 2rem 0 4rem;
   }
 
   .A_ImgResearch {
     display: block;
     margin: 0 auto;
-    max-width: 34vw;
+    max-width: 34rem;
   }
 }
 
 .M_BlockAboutOften {
-  margin: 20vw 0 0;
+  margin: 20rem 0 0;
 
   .A_TextMainH2 {
-    margin: 2vw 0 2vw;
+    margin: 2rem 0 2rem;
   }
 
   .A_TextMainH1 {
-    margin-bottom: 3vw;
+    margin-bottom: 3rem;
 
     .Q_TextMainSelection {
       font-size: inherit;
@@ -44,21 +44,21 @@
   .A_ImgOften {
     display: block;
     margin: 0 auto;
-    max-width: 74.5vw;
+    max-width: 74.5rem;
   }
 }
 
 .S_BlockAboutTeam {
-  margin: 25vw 0 15vw 0;
+  margin: 25rem 0 15rem 0;
 
   .A_TextMainH2 {
-    margin: 2vw 0 4vw;
+    margin: 2rem 0 4rem;
   }
 
   .C_TeamItems {
-    padding-top: 1vw;
+    padding-top: 1rem;
     margin: 0 auto;
-    width: 94vw;
+    width: 94rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -66,7 +66,7 @@
     .O_Item {
       position: relative;
       background-color: var(--black);
-      @include itemTeam(22.6vw, 15.78vw, 1.5px solid var(--grey), 0.25vw);
+      @include itemTeam(22.6rem, 15.78rem, 1.5px solid var(--grey), 0.25rem);
 
       &:hover {
         padding: 0;
@@ -83,9 +83,9 @@
       }
 
       .A_ItemLetter {
-        margin: 1.25vw;
+        margin: 1.25rem;
         color: var(--white);
-        font-size: 3.13vw;
+        font-size: 3.13rem;
         font-weight: 500;
         line-height: 75%;
       }
@@ -97,19 +97,19 @@
         position: absolute;
 
         .A_InfoText {
-          margin: 1.25vw;
+          margin: 1.25rem;
           color: var(--white);
-          font-size: 1.15vw;
+          font-size: 1.15rem;
           font-weight: 400;
           line-height: 120%;
           letter-spacing: -0.03em;
         }
 
         .A_InfoName {
-          padding-top: 0.5vw;
-          margin: 1.25vw;
+          padding-top: 0.5rem;
+          margin: 1.25rem;
           color: var(--green);
-          font-size: 3.13vw;
+          font-size: 3.13rem;
           font-weight: 500;
           font-style: italic;
           line-height: 100%;

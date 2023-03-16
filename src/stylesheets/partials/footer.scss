@@ -1,11 +1,11 @@
 .C_Footer {
   display: flex;
   flex-direction: row;
-  margin: 2vw 0 1.5vw;
+  margin: 2rem 0 1.5rem;
 
   .M_FooterUp h3 {
     @include itemGrid;
-    @include itemConfigg(7vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
+    @include itemConfigg(7rem, 2.6rem, var(--white), transparent, 1.5px solid var(--grey), 0px, 1rem, 400);
 
     &:hover {
       @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
@@ -16,7 +16,7 @@
   & .M_FooterDzen,
   & .M_FooterTg {
     @include itemGrid;
-    @include itemConfigg(2.6vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
+    @include itemConfigg(2.6rem, 2.6rem, var(--white), transparent, 1.5px solid var(--grey), 0px, 1rem, 400);
   }
 
   & .M_FooterVk,
@@ -31,8 +31,8 @@
 
   & .M_FooterVk {
     & svg {
-      width: 1.41vw;
-      height: 0.84vw;
+      width: 1.41rem;
+      height: 0.84rem;
     }
 
     &:hover .A_IconVk {
@@ -42,8 +42,8 @@
 
   & .M_FooterDzen {
     & svg {
-      width: 1.62vw;
-      height: 1.62vw;
+      width: 1.62rem;
+      height: 1.62rem;
     }
 
     &:hover .A_IconDzen {
@@ -53,8 +53,8 @@
 
   & .M_FooterTg {
     & svg {
-      width: 1.41vw;
-      height: 1.15vw;
+      width: 1.41rem;
+      height: 1.15rem;
     }
 
     &:hover .A_IconTg {
@@ -68,7 +68,7 @@
 
   & .M_FooterAbout h3 {
     @include itemGrid;
-    @include itemConfigg(8vw, 2.6vw, var(--white), transparent, 1.5px solid var(--grey), 0px, 1vw, 400);
+    @include itemConfigg(8rem, 2.6rem, var(--white), transparent, 1.5px solid var(--grey), 0px, 1rem, 400);
 
     &:hover {
       @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);

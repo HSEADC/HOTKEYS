@@ -1,8 +1,8 @@
 .O_SystemSwitch {
   display: flex;
   flex-direction: column;
-  width: 5.85vw;
-  height: 3vw;
+  width: 5.85rem;
+  height: 3rem;
   border: 1.5px solid var(--grey);
   border-radius: 4px;
 
@@ -13,16 +13,16 @@
 
     .M_MacosItem {
       @include itemGrid;
-      margin: 0.27vw 0.25vw;
-      width: 2.3vw;
-      height: 2.3vw;
+      margin: 0.27rem 0.25rem;
+      width: 2.3rem;
+      height: 2.3rem;
       border: none;
       outline: none;
       background-color: transparent;
 
       .A_MacosSVG {
-        width: 0.99vw;
-        height: 1.2vw;
+        width: 0.99rem;
+        height: 1.2rem;
         overflow: visible;
 
         .Q_MacosVector {
@@ -32,16 +32,16 @@
     }
     .M_WindowsItem {
       @include itemGrid;
-      margin: 0.27vw 0.25vw;
-      width: 2.3vw;
-      height: 2.3vw;
+      margin: 0.27rem 0.25rem;
+      width: 2.3rem;
+      height: 2.3rem;
       border: none;
       outline: none;
       background-color: transparent;
 
       .A_WindowsSVG {
-        width: 1.15vw;
-        height: 1.15vw;
+        width: 1.15rem;
+        height: 1.15rem;
         overflow: visible;
 
         .Q_WindowsVector {

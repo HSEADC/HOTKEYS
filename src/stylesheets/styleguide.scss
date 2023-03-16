@@ -1,8 +1,8 @@
 .M_BlockStyleMain {
-  margin-top: 18vw;
+  margin-top: 18rem;
 
   .A_TextMainH1 {
-    padding-top: 0.75vw;
+    padding-top: 0.75rem;
 
     .Q_TergetLinks {
       &:hover {
@@ -16,69 +16,69 @@
 .M_TargetArrow {
   &.Styleguide {
     display: block;
-    margin-top: 17vw;
+    margin-top: 17rem;
   }
 }
 
 .M_BlockStyleTone {
-  margin-top: 25vw;
+  margin-top: 25rem;
 }
 
 .M_BlockStyleLogo {
-  margin-top: 25vw;
+  margin-top: 25rem;
 
   .O_Logo {
-    padding-top: 2vw;
+    padding-top: 2rem;
     text-align: center;
 
     .M_LogoSVG {
-      width: 20vw;
+      width: 20rem;
     }
   }
 
   .A_ImgDetails {
     z-index: 1;
-    width: 8.5vw;
-    margin-top: 2vw;
-    margin-left: 57vw;
+    width: 8.5rem;
+    margin-top: 2rem;
+    margin-left: 57rem;
   }
 }
 
 .M_BlockStyleColors {
-  margin-top: 25vw;
+  margin-top: 25rem;
 
   .A_TextMainH1 {
-    padding-top: 1vw;
+    padding-top: 1rem;
   }
 
   .C_Colors {
-    padding-top: 7vw;
+    padding-top: 7rem;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 6vw;
+    gap: 6rem;
 
     .A_ColorsIMG {
-      width: 13vw;
+      width: 13rem;
     }
   }
 }
 
 .M_BlockStyleSystem {
-  margin-top: 25vw;
+  margin-top: 25rem;
 }
 
 .A_FontsIMG {
-  margin: 20vw auto;
-  max-width: 55vw;
+  margin: 20rem auto;
+  max-width: 55rem;
   display: block;
 }
 
 .A_DesignIMG {
-  margin: 20vw auto;
-  max-width: 90vw;
+  margin: 20rem auto;
+  max-width: 90rem;
   display: block;
 }
 
@@ -91,42 +91,42 @@
   }
 
   .C_MockupItems {
-    margin-top: 10vw;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
-    row-gap: 10vw;
+    row-gap: 10rem;
     align-items: center;
 
     .M_Mockup {
       &.Cap {
         .A_TextMainH1 {
-          margin-bottom: -2vw;
+          margin-bottom: -2rem;
         }
         .A_CapIMG {
-          max-width: 45vw;
+          max-width: 45rem;
         }
       }
       &.Tshirt {
         .A_TextMainH1 {
-          margin-bottom: -2vw;
+          margin-bottom: -2rem;
         }
         .A_TshirtIMG {
-          max-width: 55vw;
+          max-width: 55rem;
         }
       }
       &.Stikers {
         .A_StikersIMG {
-          max-width: 55vw;
-          transform: translate(5vw, 0px);
+          max-width: 55rem;
+          transform: translate(5rem, 0px);
         }
       }
       &.Website {
         .A_TextMainH1 {
-          margin-bottom: 2vw;
+          margin-bottom: 2rem;
         }
-        margin-bottom: 3vw;
+        margin-bottom: 3rem;
         .A_WebsiteIMG {
-          max-width: 94.5vw;
+          max-width: 94.5rem;
         }
       }
     }

@@ -2,11 +2,11 @@
 .S_Filters {
   display: flex;
   flex-direction: row;
-  gap: 0.6vw;
+  gap: 0.6rem;
 }
 
 .S_Filters {
-  margin-top: 1vw;
+  margin-top: 1rem;
   align-self: center;
 }
 
@@ -19,7 +19,7 @@
   background-color: transparent;
   border: none;
   outline: none;
-  font-size: 1.15vw;
+  font-size: 1.15rem;
   font-weight: 400;
   color: var(--grey);
 
@@ -34,27 +34,27 @@
   }
 
   .A_ResetIcon {
-    margin-left: 0.75vw;
+    margin-left: 0.75rem;
     color: var(--grey);
     transform: scale(1);
   }
 }
 
 .S_Shortcuts {
-  padding: 2.5vw 0 5vw 0;
+  padding: 2.5rem 0 5rem 0;
   margin: 0 auto;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 1vw;
-  row-gap: 1vw;
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
 
 .M_ShortcutCard {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.25vw;
+  padding: 1.25rem;
   height: 300px;
   // min-width: 435px;
   border-radius: 5px;
@@ -90,15 +90,15 @@
 @media screen and (max-width: 1200px) {
   .S_Shortcuts {
     grid-template-columns: repeat(3, 1fr);
-    // column-gap: 1vw;
-    // row-gap: 1vw;
+    // column-gap: 1rem;
+    // row-gap: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
   .S_Shortcuts {
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-    column-gap: 2vw;
-    row-gap: 2vw;
+    column-gap: 2rem;
+    row-gap: 2rem;
   }
 
   .M_ShortcutCard {

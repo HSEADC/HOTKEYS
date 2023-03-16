@@ -1,18 +1,18 @@
 .S_Selections {
-  padding: 3vw 0 5vw 0;
+  padding: 3rem 0 5rem 0;
   margin: 0 auto;
-  width: 95vw;
+  width: 95rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(585px, 1fr));
-  column-gap: 1vw;
-  row-gap: 1vw;
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
 
 .M_SelectionCard {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.25vw;
+  padding: 1.25rem;
   min-height: 300px;
   min-width: 400px;
   border-radius: 5px;
@@ -44,8 +44,8 @@
 @media screen and (max-width: 768px) {
   .S_Selections {
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-    column-gap: 2vw;
-    row-gap: 2vw;
+    column-gap: 2rem;
+    row-gap: 2rem;
   }
 
   .M_SelectionCard {
