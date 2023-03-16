@@ -1,57 +1,96 @@
 .O_Menu {
-  width: 17.25rem;
+  width: 19rem;
   border: 1.5px solid var(--grey);
-  border-radius: 4px;
+  border-radius: 5px;
 
   .C_MenuItems {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 0rem;
-
-    .Q_MenuSeparator {
-      display: flex;
-      align-self: center;
-      height: 1.7rem;
-      border: 0.5px solid var(--grey);
-      background-color: var(--grey);
-      z-index: -99;
-    }
 
     .M_MenuItem {
       margin: 0 -0.25rem;
-      padding: 0.3rem 0.1rem 0.3rem;
+      padding: 0.4rem 0.1rem;
 
       h3 {
         @include itemGrid;
         @include itemConfig(var(--white), transparent, 0px solid var(--grey), 0px, 1rem, 500);
+        border-radius: 2px;
       }
 
       &:hover {
         h3 {
           @include itemOpenConfig(var(--green), transparent, 0px solid var(--grey), 700, italic);
-          border-radius: 2px;
         }
       }
 
-      // &:active {
-      //   h3 {
-      //     @include itemOpenConfig(var(--black), var(--green), 0px solid var(--green), 700, italic);
-      //     border-radius: 2px;
-      //   }
-      // }
-
       &.Shortcuts {
         h3 {
-          width: 8.25rem;
-          height: 2.3rem;
+          font-size: 1.15rem;
+          width: 9.05rem;
+          height: 2.9rem;
         }
       }
 
       &.Selections {
         & h3 {
-          width: 8.3rem;
-          height: 2.3rem;
+          font-size: 1.15rem;
+          width: 9.2rem;
+          height: 2.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1770px) {
+  .O_Menu {
+    width: 16rem;
+
+    .C_MenuItems {
+      .M_MenuItem {
+        &.Shortcuts {
+          h3 {
+            font-size: 1rem;
+            width: 7.55rem;
+            height: 2.3rem;
+          }
+        }
+
+        &.Selections {
+          & h3 {
+            font-size: 1rem;
+            width: 7.7rem;
+            height: 2.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 645px) {
+  .O_Menu {
+    width: 13rem;
+
+    .C_MenuItems {
+      .M_MenuItem {
+        margin: 0 0rem;
+
+        &.Shortcuts {
+          h3 {
+            font-size: 0.9rem;
+            width: 6.35rem;
+            height: 2.5rem;
+          }
+        }
+
+        &.Selections {
+          & h3 {
+            font-size: 0.9rem;
+            width: 5.5rem;
+            height: 2.5rem;
+          }
         }
       }
     }

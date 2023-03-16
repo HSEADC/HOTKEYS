@@ -1,13 +1,43 @@
 .O_Logo {
   .M_LogoSVG {
-    margin-top: 0.4rem;
-    // margin-left: -1.88rem;
-    width: 11rem;
+    width: rem(225);
     overflow: visible;
-    transform: translate(0px);
+  }
+}
 
-    // .A_VectorShift {
-    //   transform: translate(1.88rem);
-    // }
+@media (max-width: 1770px) {
+  .O_Logo {
+    .M_LogoSVG {
+      width: rem(165);
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .O_Logo {
+    .M_LogoSVG {
+      width: rem(165);
+    }
+  }
+}
+
+@media (max-width: 645px) {
+  .O_Logo {
+    .M_LogoSVG {
+      display: none;
+    }
+
+    &::before {
+      content: '';
+      line-height: 100%;
+      width: rem(55);
+      height: rem(55);
+      display: flex;
+      align-self: center;
+      background-image: url(images/hotkeys-min.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 }

@@ -1,5 +1,5 @@
 .S_Header {
-  margin: 2.5rem;
+  margin: rem(50) rem(70);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,13 +9,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    div:nth-child(1) {
+    .O_HeaderShortcutsLogo {
       justify-self: start;
     }
-    div:nth-child(2) {
+    .O_HeaderShortcutsSwitch {
       justify-self: center;
     }
-    div:nth-child(3) {
+    .O_HeaderShortcutsMenu {
       justify-self: end;
     }
 
@@ -46,5 +46,31 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .S_Header {
+    margin: rem(35) rem(31) rem(50);
+  }
+}
+
+@media (max-width: 768px) {
+  .S_Header {
+    margin: rem(35) rem(31) rem(40);
+
+    &.Shortcuts {
+      grid-template-columns: repeat(2, 1fr);
+
+      .O_HeaderShortcutsSwitch {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 656px) {
+  .S_Header {
+    margin: rem(25) rem(15) rem(25);
   }
 }

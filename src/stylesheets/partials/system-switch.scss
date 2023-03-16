@@ -1,28 +1,31 @@
 .O_SystemSwitch {
   display: flex;
   flex-direction: column;
-  width: 5.85rem;
-  height: 3rem;
+  width: 7.15rem;
+  height: 3.75rem;
   border: 1.5px solid var(--grey);
-  border-radius: 4px;
+  border-radius: 5px;
 
   .C_SwitchItems {
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 
-    .M_MacosItem {
+    .M_MacosItem,
+    .M_WindowsItem {
+      @include resetButton;
       @include itemGrid;
       margin: 0.27rem 0.25rem;
-      width: 2.3rem;
-      height: 2.3rem;
-      border: none;
-      outline: none;
-      background-color: transparent;
+      width: 2.9rem;
+      height: 2.9rem;
+    }
 
+    .M_MacosItem {
       .A_MacosSVG {
-        width: 0.99rem;
-        height: 1.2rem;
+        width: 1.39rem;
+        height: 1.5rem;
         overflow: visible;
 
         .Q_MacosVector {
@@ -31,17 +34,9 @@
       }
     }
     .M_WindowsItem {
-      @include itemGrid;
-      margin: 0.27rem 0.25rem;
-      width: 2.3rem;
-      height: 2.3rem;
-      border: none;
-      outline: none;
-      background-color: transparent;
-
       .A_WindowsSVG {
-        width: 1.15rem;
-        height: 1.15rem;
+        width: 1.45rem;
+        height: 1.45rem;
         overflow: visible;
 
         .Q_WindowsVector {
@@ -58,6 +53,35 @@
     .M_MacosItem._Active .Q_MacosVector,
     .M_WindowsItem._Active .Q_WindowsVector {
       fill: black;
+    }
+  }
+}
+
+@media (max-width: 1770px) {
+  .O_SystemSwitch {
+    width: 6.15rem;
+    height: 3.25rem;
+
+    .C_SwitchItems {
+      .M_MacosItem,
+      .M_WindowsItem {
+        margin: 0.27rem 0.1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      .M_MacosItem {
+        .A_MacosSVG {
+          width: 1.09rem;
+          height: 1.2rem;
+        }
+      }
+      .M_WindowsItem {
+        .A_WindowsSVG {
+          width: 1.15rem;
+          height: 1.15rem;
+        }
+      }
     }
   }
 }

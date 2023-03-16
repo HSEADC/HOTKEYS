@@ -1,16 +1,19 @@
 .S_SearchForm {
   width: 100%;
 
+  &.Selections {
+    margin: rem(10) 0 rem(45);
+  }
+
   .C_SearchBar {
     display: flex;
     flex-direction: row;
-    height: 3.6rem;
+    height: rem(56);
     border-radius: 5px;
-    background-color: transparent;
-    color: var(--white);
-    border: 1.5px solid var(--grey);
+    background-color: #0d0d0d;
+    border: 1.75px solid var(--grey);
+    color: var(--gray);
     font-size: 1.25rem;
-    font-weight: 500;
     cursor: help;
 
     &:hover {
@@ -30,29 +33,38 @@
     }
 
     .M_SearchInput {
-      width: 96%;
+      @include resetButton;
+      width: 97%;
       height: 100%;
-      background: transparent;
-      border: none;
-      outline: none;
+      color: var(--green);
 
       &[placeholder] {
-        padding-left: 1.3%;
-        font-size: 1.25rem;
-        font-weight: 300;
-        color: var(--green);
+        padding-left: 1.25rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+
+      &::-webkit-input-placeholder {
+        color: var(--grey);
       }
     }
 
     .M_SearchButton {
-      margin-left: 0.9rem;
-      color: transparent;
-      border: none;
-      background-color: transparent;
+      @include resetButton;
+      visibility: collapse;
+      margin-left: 0.45rem;
 
       .A_ButtonIcon {
         color: var(--grey);
       }
+    }
+  }
+}
+
+@media (max-width: 645px) {
+  .S_SearchForm {
+    &.Shortcuts {
+      margin: rem(10) 0 rem(45);
     }
   }
 }

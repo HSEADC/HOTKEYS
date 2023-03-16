@@ -19,12 +19,10 @@
     background-color: var(--green);
 
     .M_ModalButton {
+      @include resetButton;
       margin: 0.3rem;
       width: fit-content;
       align-self: flex-end;
-      background-color: transparent;
-      border: none;
-      outline: none;
 
       .A_ModalButtonSVG {
         width: 1rem;

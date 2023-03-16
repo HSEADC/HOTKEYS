@@ -44,6 +44,12 @@
   place-items: center;
 }
 
+@mixin resetButton {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 @mixin itemTeam($w, $h, $b, $br) {
   width: $w;
   height: $h;
