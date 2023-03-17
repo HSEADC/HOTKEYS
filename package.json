@@ -1,6 +1,6 @@
 {
   "name": "hotkeys",
-  "version": "3.8.2",
+  "version": "3.8.3",
   "author": "HSE ADC",
   "license": "MIT",
   "repository": {
@@ -12,7 +12,7 @@
   },
   "homepage": "https://github.com/HSEADC/HOTKEYS#readme",
   "scripts": {
-    "start": "webpack serve --open --config webpack.dev.js",
+    "start": "webpack serve --open --config webpack.dev.js --port 2000",
     "watch": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "render": "node src/javascript/render-shortcuts.js"

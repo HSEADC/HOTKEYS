@@ -82,11 +82,19 @@
   .S_Shortcuts {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .M_ShortcutCard {
+    height: rem(235);
+  }
 }
 
 @media (max-width: 1024px) {
   .S_Shortcuts {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .M_ShortcutCard {
+    height: rem(225);
   }
 }
 
@@ -95,9 +103,9 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .M_ShortcutCard {
-    height: rem(272);
-  }
+  // .M_ShortcutCard {
+  //   height: rem(272);
+  // }
 
   .S_Filters {
     display: none;
