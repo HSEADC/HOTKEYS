@@ -1,55 +1,17 @@
-.S_Selections {
-  padding: 3rem 0 5rem 0;
-  margin: 0 auto;
-  width: 95rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(585px, 1fr));
-  column-gap: 1rem;
-  row-gap: 1rem;
+.A_CardIcon {
+  position: absolute;
+  width: rem(67);
 }
 
-.M_SelectionCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1.25rem;
-  min-height: 300px;
-  min-width: 400px;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  cursor: help;
-  border: 1.5px solid var(--grey);
-
-  &:hover {
-    background-color: var(--black2);
-    border: 1.5px solid var(--green);
-
-    .A_SelectionCardName,
-    .A_SelectionCardKey {
-      font-style: italic;
-    }
-
-    .A_SelectionCardKey {
-      color: var(--green);
-    }
-  }
-
-  &:active {
-    background-color: var(--gray);
-    box-shadow: 0px 1px 50px rgba(203, 251, 69, 0.4);
+@media (max-width: 1770px) {
+  .A_CardIcon {
+    position: absolute;
+    width: rem(47);
   }
 }
 
-@media screen and (max-width: 768px) {
-  .S_Selections {
-    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-    column-gap: 2rem;
-    row-gap: 2rem;
-  }
-
-  .M_SelectionCard {
-    min-height: 245px;
-    min-width: 235px;
+@media (max-width: 656px) {
+  .A_CardKey {
+    font-size: rem(18);
   }
 }

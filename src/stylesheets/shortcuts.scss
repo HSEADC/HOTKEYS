@@ -37,6 +37,7 @@
 }
 
 .M_ShortcutCard {
+  position: relative;
   padding: rem(15) rem(17);
   display: flex;
   flex-direction: column;
@@ -85,5 +86,11 @@
 @media (max-width: 645px) {
   .S_Filters {
     display: none;
+  }
+
+  .M_ShortcutCard {
+    &.Selections {
+      height: rem(240);
+    }
   }
 }

@@ -12,16 +12,28 @@
 .A_CardName {
   font-size: rem(33);
   line-height: 110%;
+
+  &.Selections {
+    padding-top: 5rem;
+  }
 }
 
 .A_CardKey {
   font-size: rem(22);
   line-height: 100%;
+
+  &.Selections {
+    color: #8f8f8f;
+  }
 }
 
 @media (max-width: 1770px) {
   .A_CardName {
     font-size: rem(24);
+
+    &.Selections {
+      padding-top: 3.5rem;
+    }
   }
   .A_CardKey {
     font-size: rem(16);
@@ -31,5 +43,9 @@
 @media (max-width: 656px) {
   .A_CardKey {
     font-size: rem(18);
+
+    &.Selections {
+      padding-top: 3.5rem;
+    }
   }
 }
