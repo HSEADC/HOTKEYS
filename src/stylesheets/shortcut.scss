@@ -1,8 +1,24 @@
-.A_TextMainH2 {
-  margin-top: 5rem;
+.C_Shortcut {
+  margin: 0 auto;
+  width: 100%;
 }
 
-#S_Win,
+//*! код-черновик (будет заменен)
+.A_ShortcutTextDescribtion,
+.A_ShortcutTextFunctionality {
+  text-align: center;
+  font-size: clamp(1rem, 1vw + 0.5rem, 2.5rem);
+  width: 80%;
+  margin: 0 auto;
+
+  span {
+    font-size: inherit;
+  }
+}
+
+//*? код для функциональности страницы.
+
+.A #S_Win,
 #S_Mac {
   display: none;
 }
@@ -10,12 +26,12 @@
 #S_Win,
 #S_Mac {
   .O_Keyboard {
-    margin: 3rem auto 2rem;
+    margin: 3vw auto 2vw;
   }
 
   .A_TextMainH1 {
     max-width: 40%;
-    margin: 0rem auto;
+    margin: 0vw auto;
 
     .Q_TextMainSelection {
       font-size: inherit;
@@ -98,131 +114,3 @@
     fill: #515151;
   }
 }
-
-// div.ctrl-z {
-//   .windows {
-//     .windows-keyboard {
-//       svg {
-//         .ctrl-win {
-//           animation: shortcut-first 4s infinite ease-out;
-//         }
-
-//         .z-win {
-//           animation: shortcut-second 4s infinite ease-out;
-//         }
-//       }
-//     }
-//   }
-// }
-// div.cmd-z {
-//   .macos {
-//     .macos-keyboard {
-//       svg {
-//         .cmd-mac {
-//           animation: shortcut-first 4s infinite ease-out;
-//         }
-
-//         .z-mac {
-//           animation: shortcut-second 4s infinite ease-out;
-//         }
-//       }
-//     }
-//   }
-// }
-// div.alt-f4 {
-//   .windows {
-//     .windows-keyboard {
-//       svg {
-//         .fn-win {
-//           fill: var(--green);
-//         }
-
-//         .fn2-win {
-//           fill: var(--white);
-//         }
-//         .alt-win {
-//           animation: shortcut-first 4s infinite ease-out;
-//         }
-
-//         .four-win {
-//           animation: shortcut-second 4s infinite ease-out;
-//         }
-//       }
-//     }
-//   }
-// }
-// div.cmd-h {
-//   .macos {
-//     .macos-keyboard {
-//       svg {
-//         .cmd-mac {
-//           animation: shortcut-first 4s infinite ease-out;
-//         }
-
-//         .h-mac {
-//           animation: shortcut-second 4s infinite ease-out;
-//         }
-//       }
-//     }
-//   }
-// }
-// div.cmd-o {
-//   .macos {
-//     .macos-keyboard {
-//       svg {
-//         .cmd-mac {
-//           animation: shortcut-first 4s infinite ease-out;
-//         }
-
-//         .o-mac {
-//           animation: shortcut-second 4s infinite ease-out;
-//         }
-//       }
-//     }
-//   }
-// }
-// div.ctrl-w {
-//   .windows {
-//     .windows-keyboard {
-//       svg {
-//         .ctrl-win {
-//           animation: shortcut-first 4s infinite ease-out;
-//         }
-
-//         .w-win {
-//           animation: shortcut-second 4s infinite ease-out;
-//         }
-//       }
-//     }
-//   }
-// }
-// div.win-d {
-//   .windows {
-//     .windows-keyboard {
-//       svg {
-//         .win-win {
-//           animation: shortcut-first 4s infinite ease-out;
-//         }
-
-//         .d-win {
-//           animation: shortcut-second 4s infinite ease-out;
-//         }
-//       }
-//     }
-//   }
-// }
-// div.win-v {
-//   .windows {
-//     .windows-keyboard {
-//       svg {
-//         .win-win {
-//           animation: shortcut-first 4s infinite ease-out;
-//         }
-
-//         .v-win {
-//           animation: shortcut-second 4s infinite ease-out;
-//         }
-//       }
-//     }
-//   }
-// }

@@ -40,6 +40,15 @@
         }
       }
     }
+
+    .Q_MenuSeparator {
+      display: flex;
+      align-self: center;
+      height: 1.7rem;
+      border: 0.5px solid var(--grey);
+      background-color: var(--grey);
+      z-index: -99;
+    }
   }
 }
 

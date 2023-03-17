@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
 
+  &.Shortcuts,
   &.Shortcuts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -18,7 +19,9 @@
     .O_HeaderShortcutsMenu {
       justify-self: end;
     }
+  }
 
+  &.Shortcuts {
     .O_Menu {
       .C_MenuItems {
         .M_MenuItem {
