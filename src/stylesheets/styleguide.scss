@@ -1,7 +1,7 @@
 .M_BlockStyleMain {
   margin-top: 18rem;
 
-  .A_TextMainH1 {
+  .A_TextMainSmall {
     padding-top: 0.75rem;
 
     .Q_TergetLinks {
@@ -47,7 +47,7 @@
 .M_BlockStyleColors {
   margin-top: 25rem;
 
-  .A_TextMainH1 {
+  .A_TextMainSmall {
     padding-top: 1rem;
   }
 
@@ -83,7 +83,7 @@
 }
 
 .S_Mockups {
-  .A_TextMainH1 {
+  .A_TextMainSmall {
     .Q_TextMainSelection {
       font-size: inherit;
       font-style: normal;
@@ -99,7 +99,7 @@
 
     .M_Mockup {
       &.Cap {
-        .A_TextMainH1 {
+        .A_TextMainSmall {
           margin-bottom: -2rem;
         }
         .A_CapIMG {
@@ -107,7 +107,7 @@
         }
       }
       &.Tshirt {
-        .A_TextMainH1 {
+        .A_TextMainSmall {
           margin-bottom: -2rem;
         }
         .A_TshirtIMG {
@@ -121,7 +121,7 @@
         }
       }
       &.Website {
-        .A_TextMainH1 {
+        .A_TextMainSmall {
           margin-bottom: 2rem;
         }
         margin-bottom: 3rem;
