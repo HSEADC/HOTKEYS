@@ -1,133 +1,168 @@
-.M_BlockAboutMain {
-  margin: 9rem 0 3.5rem 0;
-
-  .A_TextMainBig {
-    margin: 2.5rem 0 2.5rem;
+.M_Block {
+  &.Main {
+    padding-top: 5rem;
   }
-
-  .A_ImgMain {
-    max-width: 94.5rem;
-  }
-}
-
-.M_BlockAboutResearch {
-  margin: 25rem 0 0;
-
-  .A_TextMainBig {
-    margin: 2rem 0 4rem;
-  }
-
-  .A_ImgResearch {
-    display: block;
-    margin: 0 auto;
-    max-width: 34rem;
-  }
-}
-
-.M_BlockAboutOften {
-  margin: 20rem 0 0;
-
-  .A_TextMainBig {
-    margin: 2rem 0 2rem;
-  }
-
-  .A_TextMainSmall {
-    margin-bottom: 3rem;
-
-    .Q_TextMainSelection {
-      font-size: inherit;
-      text-transform: uppercase;
-      font-style: normal;
+  &.Main,
+  &.Research {
+    .A_TextMainBig {
+      margin-bottom: 2rem;
     }
   }
 
-  .A_ImgOften {
-    display: block;
-    margin: 0 auto;
-    max-width: 74.5rem;
+  &.Often {
+    .A_TextMainSmall {
+      margin: 2rem 0 3rem;
+
+      .Q_TextMainSelection {
+        text-transform: uppercase;
+        font-style: normal;
+      }
+    }
   }
 }
 
-.S_BlockAboutTeam {
-  margin: 25rem 0 15rem 0;
+.A_Img {
+  display: block;
+  margin: 0 auto;
 
-  .A_TextMainBig {
-    margin: 2rem 0 4rem;
+  &.Main {
+    max-width: 94.5%;
   }
 
-  .C_TeamItems {
-    padding-top: 1rem;
-    margin: 0 auto;
-    width: 94rem;
+  &.Research {
+    max-width: 34%;
+  }
+
+  &.Often {
+    max-width: 74.5%;
+  }
+}
+
+.M_BlockTeam {
+  margin-bottom: 15rem;
+  .A_TextMainBig {
+    margin-bottom: 2rem;
+  }
+}
+
+.C_TeamItems {
+  padding-top: 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: rem(19);
+  row-gap: rem(19);
+
+  .O_Item {
+    position: relative;
+    padding: rem(15) rem(17);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    height: rem(302);
+    border-radius: 5px;
+    border: 1.5px solid var(--grey);
+    cursor: help;
 
-    .O_Item {
-      position: relative;
-      background-color: var(--black);
-      @include itemTeam(22.6rem, 15.78rem, 1.5px solid var(--grey), 0.25rem);
+    &:hover {
+      padding: 0;
+      background-size: cover;
+      outline: 0px;
 
-      &:hover {
-        padding: 0;
-        background-size: cover;
-        outline: 0px;
-
-        & .A_ItemLetter {
-          display: none;
-        }
-
-        & .M_ItemInfo {
-          visibility: visible;
-        }
+      & .A_ItemLetter {
+        display: none;
       }
 
-      .A_ItemLetter {
+      & .M_ItemInfo {
+        visibility: visible;
+      }
+    }
+
+    .A_ItemLetter {
+      margin: 1.25rem;
+      color: var(--white);
+      font-size: 3.13rem;
+      font-weight: 500;
+      line-height: 75%;
+    }
+
+    .M_ItemInfo {
+      visibility: hidden;
+      width: 100%;
+      max-height: 100%;
+      position: absolute;
+
+      .A_InfoText {
         margin: 1.25rem;
         color: var(--white);
+        font-size: 1.15rem;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+      }
+
+      .A_InfoName {
+        padding-top: 0.5rem;
+        margin: 1.25rem;
+        color: var(--green);
         font-size: 3.13rem;
         font-weight: 500;
-        line-height: 75%;
+        font-style: italic;
+        line-height: 100%;
       }
+    }
 
-      .M_ItemInfo {
-        visibility: hidden;
-        width: 100%;
-        max-height: 100%;
-        position: absolute;
+    &.Bozhik:hover {
+      background-image: url('images/about/team-bozhik.png');
+    }
+    &.Day:hover {
+      background-image: url('images/about/team-day.png');
+    }
+    &.Gulevich:hover {
+      background-image: url('images/about/team-gulevich.png');
+    }
+    &.Kaem:hover {
+      background-image: url('images/about/team-kaem.png');
+    }
+  }
+}
 
-        .A_InfoText {
-          margin: 1.25rem;
-          color: var(--white);
-          font-size: 1.15rem;
-          font-weight: 400;
-          line-height: 120%;
-          letter-spacing: -0.03em;
-        }
+@media (max-width: 1770px) {
+  .C_TeamItems {
+    grid-template-columns: repeat(3, 1fr);
 
-        .A_InfoName {
-          padding-top: 0.5rem;
-          margin: 1.25rem;
-          color: var(--green);
-          font-size: 3.13rem;
-          font-weight: 500;
-          font-style: italic;
-          line-height: 100%;
-        }
-      }
+    .O_Item {
+      height: rem(235);
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .C_TeamItems {
+    grid-template-columns: repeat(2, 1fr);
 
-      &.Bozhik:hover {
-        background-image: url('images/about/team-bozhik.png');
-      }
-      &.Day:hover {
-        background-image: url('images/about/team-day.png');
-      }
-      &.Gulevich:hover {
-        background-image: url('images/about/team-gulevich.png');
-      }
-      &.Kaem:hover {
-        background-image: url('images/about/team-kaem.png');
-      }
+    .O_Item {
+      height: rem(225);
+    }
+  }
+}
+
+@media (max-width: 645px) {
+  .C_TeamItems {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .M_BlockTeam {
+    margin-bottom: 10rem;
+  }
+
+  .A_Img {
+    &.Main,
+    &.Often {
+      max-width: 90%;
+    }
+
+    &.Research {
+      max-width: 80%;
     }
   }
 }

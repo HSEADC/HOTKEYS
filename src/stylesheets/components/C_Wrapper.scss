@@ -11,24 +11,40 @@
 @media (min-width: 2560px) {
   .C_Wrapper {
     width: 69.53%;
+
+    &.About {
+      width: 100%;
+    }
   }
 }
 
 @media (min-width: 2048px) {
   .C_Wrapper {
     width: 86.91%;
+
+    &.About {
+      width: 100%;
+    }
   }
 }
 
 @media (max-width: 1770px) {
   .C_Wrapper {
     width: 70.24%;
+
+    &.About {
+      width: 100%;
+    }
   }
 }
 
 @media (max-width: 1440px) {
   .C_Wrapper {
     width: 81.94%;
+
+    &.About {
+      width: 100%;
+    }
   }
 }
 
