@@ -14,6 +14,7 @@ const pages = [
   'styleguide',
   'shortcuts',
   'selections',
+  'training',
   'shortcuts/switch-between-programs',
 ]
 
