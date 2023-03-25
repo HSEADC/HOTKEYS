@@ -306,6 +306,87 @@ document.addEventListener('DOMContentLoaded', function () {
     winBtn.classList.toggle('_Active');
   });
 });
+;// CONCATENATED MODULE: ./src/javascript/training.js
+
+var value = document.getElementById('shortcut-value');
+var description = document.getElementById('shortcut-description');
+var counter = document.getElementById('shortcut-counter');
+var isMac = navigator.userAgent.toLowerCase().includes('macintosh');
+
+if (isMac) {
+  js_cookie.set('os', 'macos');
+} else {
+  js_cookie.set('os', 'windows');
+}
+
+var osCookie = js_cookie.get('os');
+var isMacOS = osCookie === 'macos';
+var shortcuts = isMacOS ? {
+  'Cmd+F': 'Поиск по странице',
+  'Cmd+A': 'Выделение всего текста',
+  'Cmd+C': 'Копирование текста',
+  'Cmd+V': 'Вставка текста',
+  'Cmd+S': 'Сохранить изменения в окне',
+  'Cmd+Shift+A': 'Что-то оно делает'
+} : {
+  'Ctrl+F': 'Поиск по странице',
+  'Ctrl+A': 'Выделение всего текста',
+  'Ctrl+C': 'Копирование текста',
+  'Ctrl+V': 'Вставка текста',
+  'Ctrl+S': 'Сохранить изменения в окне',
+  'Ctrl+Shift+A': 'Что-то оно делает'
+};
+var shortcutKeys = Object.keys(shortcuts);
+var shortcutIndex = 0;
+var correctCount = 0;
+value.innerHTML = shortcutKeys[shortcutIndex];
+counter.innerHTML = "\u0423\u0440\u043E\u0432\u0435\u043D\u044C: ".concat(correctCount);
+document.addEventListener('keydown', function (event) {
+  event.preventDefault();
+
+  if (event.key === 'Escape') {
+    value.innerHTML = 'Все!';
+    description.innerHTML = '';
+    value.style.color = '#cbfb45';
+  }
+
+  var shortcutKey = shortcutKeys[shortcutIndex];
+  var shortcutParts = shortcutKey.split('+');
+  var isCorrectKey = isMac ? event.metaKey : event.ctrlKey;
+
+  if (isCorrectKey && event.shiftKey && event.key.toUpperCase() === shortcutParts[2]) {
+    showShortcutInfo(shortcuts[shortcutKey], ++shortcutIndex);
+    correctCount++;
+  } else if (isCorrectKey && !event.shiftKey && event.key.toUpperCase() === shortcutParts[1]) {
+    showShortcutInfo(shortcuts[shortcutKey], ++shortcutIndex);
+    correctCount++;
+  }
+
+  counter.innerHTML = "\u0423\u0440\u043E\u0432\u0435\u043D\u044C: ".concat(correctCount);
+});
+
+function showShortcutInfo(shortcutInfo, shortcutIndex) {
+  value.style.color = '#cbfb45';
+  description.innerHTML = shortcutInfo;
+  setTimeout(function () {
+    if (shortcutIndex < shortcutKeys.length) {
+      value.innerHTML = shortcutKeys[shortcutIndex];
+      description.innerHTML = '';
+      value.style.color = 'white';
+    } else {
+      value.innerHTML = 'Все!';
+      description.innerHTML = '';
+      value.style.color = '#cbfb45';
+      var restart = document.getElementById('reset-button');
+      restart.style.display = 'block';
+      counter.style.display = 'none';
+
+      restart.onclick = function () {
+        window.location.reload();
+      };
+    }
+  }, 2000);
+}
 ;// CONCATENATED MODULE: ./src/index.js
  //* modal window
 
@@ -315,7 +396,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
  //* shortcut page sistem check and load content
 
- //* import './javascript/training.js';
+ //* training page fuctionality
+
+
 })();
 
 /******/ })()
