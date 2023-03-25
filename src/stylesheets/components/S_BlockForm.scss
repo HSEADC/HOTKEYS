@@ -1,5 +1,5 @@
 .S_BlockMail {
-  margin: 25vw auto 20vw;
+  margin: 25rem auto 20rem;
 
   .Q_TextFormSelection {
     font-weight: 450;
@@ -12,10 +12,10 @@
     align-items: center;
 
     .A_FormInput {
-      margin-top: 1.5vw;
+      margin-top: 1.5rem;
       color: var(--white);
-      width: 20vw;
-      height: 2.6vw;
+      width: 20rem;
+      height: 2.6rem;
       border: 1.5px solid var(--grey);
       border-radius: 5px;
       background-color: var(--black);
@@ -32,8 +32,8 @@
       }
 
       &[placeholder] {
-        padding-left: 0.55vw;
-        font-size: 1.25vw;
+        padding-left: 0.55rem;
+        font-size: 1.25rem;
       }
 
       &::-webkit-input-placeholder {
@@ -42,7 +42,7 @@
     }
 
     #A_FormDoneText {
-      margin-top: 1vw;
+      margin-top: 1rem;
       font-weight: 450;
       color: var(--green);
     }

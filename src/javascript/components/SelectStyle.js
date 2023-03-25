@@ -9,7 +9,8 @@ export const colorStyles = {
     border: 'none',
     outline: 'none',
     width: 'fit-content',
-    fontSize: '1.15vw',
+    fontSize: '1.35rem',
+    fontWeight: '400',
     outline: `1px solid ${isFocused ? green : 'transparent'}`,
   }),
 
@@ -25,6 +26,7 @@ export const colorStyles = {
       ...styles,
       backgroundColor,
       color: `${isSelected ? green : 'white'}`,
+      fontSize: '1.25rem',
       ':active': {
         ...styles[':active'],
         backgroundColor: lightBlack,

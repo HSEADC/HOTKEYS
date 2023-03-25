@@ -1,0 +1,31 @@
+.A_TextMainSmall {
+  color: var(--white);
+  font-size: rem(22);
+  line-height: 110%;
+  font-weight: 400;
+  text-align: center;
+}
+
+.A_TextMainBig {
+  color: var(--white);
+  font-size: rem(33);
+  font-weight: 400;
+  text-align: center;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.Q_TextMainSelection {
+  color: var(--green);
+}
+
+@media (max-width: 1680px) {
+  .A_TextMainSmall {
+    font-size: rem(16);
+  }
+
+  .A_TextMainBig {
+    font-size: rem(24);
+  }
+}

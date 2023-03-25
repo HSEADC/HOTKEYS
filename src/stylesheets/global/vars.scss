@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 :root {
   --black: #0e0e0e;
   --white: #eee;
@@ -42,9 +44,30 @@
   place-items: center;
 }
 
+@mixin resetButton {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 @mixin itemTeam($w, $h, $b, $br) {
   width: $w;
   height: $h;
   outline: $b;
   border-radius: $br;
+}
+
+@function prc($pxOne, $pxTwo) {
+  $result: math.div($pxOne, $pxTwo) * 100%;
+  @return $result;
+}
+
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result;
+}
+
+@function em($px) {
+  $result: math.div($px, 16) + em;
+  @return $result;
 }

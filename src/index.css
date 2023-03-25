@@ -25,9 +25,10 @@
 
 /* components css styles */
 
+@import 'stylesheets/components/C_Wrapper.scss';
 @import 'stylesheets/components/S_Header.scss';
 @import 'stylesheets/components/S_SearchForm.scss';
+@import 'stylesheets/components/S_Shortcuts.scss';
 @import 'stylesheets/components/A_CardName&Key.scss';
-@import 'stylesheets/components/A_TextMainH1&H2.scss';
-@import 'stylesheets/components/A_TextUnique.scss';
+@import 'stylesheets/components/A_TextMainBigSmall.scss';
 @import 'stylesheets/components/S_BlockForm.scss';

@@ -12,4 +12,5 @@ import './javascript/on-scroll.js'
 //* shortcut page sistem check and load content
 import './javascript/system-switch.js'
 
-//* import './javascript/training.js';
+//* training page fuctionality
+import './javascript/training.js'

@@ -2,11 +2,11 @@
 .S_Filters {
   display: flex;
   flex-direction: row;
-  gap: 0.6vw;
+  gap: rem(7.5);
 }
 
 .S_Filters {
-  margin-top: 1vw;
+  margin: rem(10) 0 rem(45);
   align-self: center;
 }
 
@@ -16,10 +16,8 @@
 }
 
 .M_ResetFilters {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  font-size: 1.15vw;
+  @include resetButton;
+  font-size: 1.35rem;
   font-weight: 400;
   color: var(--grey);
 
@@ -28,40 +26,26 @@
 
     .A_ResetIcon {
       color: var(--green);
-      // transform: scale(1.05);
-      // transition: transform 0.5s ease;
     }
   }
 
   .A_ResetIcon {
-    margin-left: 0.75vw;
+    margin-left: 0.5rem;
     color: var(--grey);
-    transform: scale(1);
+    transform: scale(0.75);
   }
 }
 
-.S_Shortcuts {
-  padding: 2.5vw 0 5vw 0;
-  margin: 0 auto;
-  width: 95vw;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 1vw;
-  row-gap: 1vw;
-}
-
 .M_ShortcutCard {
+  position: relative;
+  padding: rem(15) rem(17);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.25vw;
-  height: 300px;
-  // min-width: 435px;
+  height: rem(302);
   border-radius: 5px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  cursor: help;
   border: 1.5px solid var(--grey);
+  cursor: help;
 
   &:hover {
     background-color: var(--black2);
@@ -78,7 +62,7 @@
   }
 
   &:active {
-    background-color: var(--gray);
+    background-color: var(--black2);
     box-shadow: 0px 1px 50px rgba(203, 251, 69, 0.4);
   }
 
@@ -87,22 +71,26 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .S_Shortcuts {
-    grid-template-columns: repeat(3, 1fr);
-    // column-gap: 1vw;
-    // row-gap: 1vw;
+@media (max-width: 1770px) {
+  .M_ShortcutCard {
+    height: rem(235);
   }
 }
-@media screen and (max-width: 768px) {
-  .S_Shortcuts {
-    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-    column-gap: 2vw;
-    row-gap: 2vw;
+
+@media (max-width: 1024px) {
+  .M_ShortcutCard {
+    height: rem(225);
+  }
+}
+
+@media (max-width: 645px) {
+  .S_Filters {
+    display: none;
   }
 
   .M_ShortcutCard {
-    min-height: 245px;
-    min-width: 235px;
+    &.Selections {
+      height: rem(240);
+    }
   }
 }

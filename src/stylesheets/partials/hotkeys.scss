@@ -1,37 +1,43 @@
 .O_Logo {
   .M_LogoSVG {
-    margin-top: 0.4vw;
-    margin-left: -1.88vw;
-    width: 13vw;
+    width: rem(225);
     overflow: visible;
-    transform: translate(0px);
+  }
+}
 
-    .A_VectorShift {
-      visibility: hidden;
-      transform: translate(1.88vw);
+@media (max-width: 1770px) {
+  .O_Logo {
+    .M_LogoSVG {
+      width: rem(165);
+    }
+  }
+}
 
-      .Q_ShiftFirst {
-        fill: var(--green);
-        fill-opacity: 0.5;
-      }
-      .Q_ShiftSecond {
-        fill-opacity: 0.5;
-        fill: var(--green);
-      }
+@media (max-width: 1440px) {
+  .O_Logo {
+    .M_LogoSVG {
+      width: rem(165);
+    }
+  }
+}
+
+@media (max-width: 645px) {
+  .O_Logo {
+    .M_LogoSVG {
+      display: none;
     }
 
-    .A_TextShift {
-      .Q_LetterH,
-      .Q_LetterO,
-      .Q_LetterT {
-        fill: var(--green);
-      }
-      .Q_LetterK,
-      .Q_LetterE,
-      .Q_LetterY,
-      .Q_LetterS {
-        fill: var(--white);
-      }
+    &::before {
+      content: '';
+      line-height: 100%;
+      width: rem(55);
+      height: rem(55);
+      display: flex;
+      align-self: center;
+      background-image: url(images/hotkeys-min.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 }

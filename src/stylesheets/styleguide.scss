@@ -1,132 +1,154 @@
-.M_BlockStyleMain {
-  margin-top: 18vw;
+.M_Block {
+  &.Style {
+    height: 40rem;
 
-  .A_TextMainH1 {
-    padding-top: 0.75vw;
+    &.Tone {
+      .A_TextMainBig {
+        margin-bottom: 2rem;
+      }
+    }
 
-    .Q_TergetLinks {
-      &:hover {
-        color: var(--green);
-        text-decoration: underline;
+    &.Logo {
+      .O_Logo {
+        padding-top: 2rem;
+        text-align: center;
+
+        .M_LogoSVG {
+          width: 20rem;
+        }
+      }
+
+      .A_ImgDetails {
+        z-index: 1;
+        width: 8.5rem;
+        margin-top: 1rem;
+        margin-left: 25vw;
+      }
+    }
+
+    &.Design {
+      .A_TextMainBig {
+        .Q_TextMainSelection {
+          font-style: italic;
+        }
       }
     }
   }
 }
 
-.M_TargetArrow {
-  &.Styleguide {
-    display: block;
-    margin-top: 17vw;
+.Q_TargetLinks {
+  &:hover {
+    color: var(--green);
+    text-decoration: underline;
   }
 }
 
-.M_BlockStyleTone {
-  margin-top: 25vw;
-}
+.C_Colors {
+  padding-top: 5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
 
-.M_BlockStyleLogo {
-  margin-top: 25vw;
-
-  .O_Logo {
-    padding-top: 2vw;
-    text-align: center;
-
-    .M_LogoSVG {
-      width: 20vw;
-    }
+  .A_ColorsIMG {
+    width: 13vw;
   }
-
-  .A_ImgDetails {
-    z-index: 1;
-    width: 8.5vw;
-    margin-top: 2vw;
-    margin-left: 57vw;
-  }
-}
-
-.M_BlockStyleColors {
-  margin-top: 25vw;
-
-  .A_TextMainH1 {
-    padding-top: 1vw;
-  }
-
-  .C_Colors {
-    padding-top: 7vw;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 6vw;
-
-    .A_ColorsIMG {
-      width: 13vw;
-    }
-  }
-}
-
-.M_BlockStyleSystem {
-  margin-top: 25vw;
 }
 
 .A_FontsIMG {
-  margin: 20vw auto;
+  min-height: 30rem;
+  margin: 0 auto 15rem;
   max-width: 55vw;
   display: block;
+  object-fit: contain;
 }
 
 .A_DesignIMG {
-  margin: 20vw auto;
+  min-height: 30rem;
+  margin: 0 auto 20rem;
   max-width: 90vw;
   display: block;
+  object-fit: contain;
 }
 
 .S_Mockups {
-  .A_TextMainH1 {
-    .Q_TextMainSelection {
-      font-size: inherit;
-      font-style: normal;
-    }
-  }
-
   .C_MockupItems {
-    margin-top: 10vw;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
-    row-gap: 10vw;
+    row-gap: 10rem;
     align-items: center;
+    justify-content: center;
 
     .M_Mockup {
       &.Cap {
-        .A_TextMainH1 {
-          margin-bottom: -2vw;
+        .A_TextMainSmall {
+          margin-bottom: -2rem;
         }
         .A_CapIMG {
-          max-width: 45vw;
+          max-width: 45%;
         }
       }
       &.Tshirt {
-        .A_TextMainH1 {
-          margin-bottom: -2vw;
+        .A_TextMainSmall {
+          margin-bottom: -2rem;
         }
         .A_TshirtIMG {
-          max-width: 55vw;
+          max-width: 55%;
         }
       }
       &.Stikers {
         .A_StikersIMG {
-          max-width: 55vw;
-          transform: translate(5vw, 0px);
+          max-width: 55%;
+          transform: translate(5rem, 0px);
         }
       }
       &.Website {
-        .A_TextMainH1 {
-          margin-bottom: 2vw;
+        .A_TextMainSmall {
+          margin-bottom: 2rem;
         }
-        margin-bottom: 3vw;
+        margin-bottom: 3rem;
         .A_WebsiteIMG {
-          max-width: 94.5vw;
+          max-width: 94.5%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 758px) {
+  .S_Mockups {
+    .C_MockupItems {
+      margin-top: 10rem;
+      row-gap: 5rem;
+
+      .M_Mockup {
+        &.Cap {
+          .A_CapIMG {
+            max-width: 85%;
+          }
+        }
+        &.Tshirt {
+          .A_TshirtIMG {
+            max-width: 55%;
+          }
+        }
+        &.Stikers {
+          .A_StikersIMG {
+            max-width: 85%;
+            transform: translate(5rem, 0px);
+          }
+        }
+        &.Website {
+          .A_TextMainSmall {
+            margin-bottom: 2rem;
+          }
+          margin-bottom: 3rem;
+          .A_WebsiteIMG {
+            max-width: 85%;
+          }
         }
       }
     }
