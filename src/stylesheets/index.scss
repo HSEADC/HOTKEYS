@@ -7,11 +7,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70rem;
+  height: clamp(25rem, 36vw, 45rem);
 }
 
 .M_BlockUnique {
-  height: 70rem;
+  height: clamp(25rem, 36vw, 45rem);
   margin: 17.5rem 0 15rem;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .M_BlockWho {
-  height: 70rem;
+  height: clamp(25rem, 36vw, 45rem);
   margin-bottom: 15rem;
 
   .A_TextMainSmall {
@@ -56,34 +56,37 @@
   justify-content: center;
 }
 
-@media (max-width: 758px) {
-  .A_TextMainBig {
-    padding-top: rem(30);
-    width: 85%;
-  }
+// @media (max-width: 758px) {
+//   .A_TextMainBig {
+//     padding-top: rem(30);
+//     width: 85%;
+//   }
 
-  .M_Block {
-    height: 25rem;
+//   .M_Block {
+//     height: 25rem;
 
-    &.About {
-      height: 40rem;
-    }
-  }
+//     &.About {
+//       height: 40rem;
+//     }
+//     &.Style {
+//       height: 40rem;
+//     }
+//   }
 
-  .M_BlockUnique {
-    height: 25rem;
-  }
+//   .M_BlockUnique {
+//     height: 25rem;
+//   }
 
-  .A_TextUnique {
-    font-size: rem(24);
-  }
+//   .A_TextUnique {
+//     font-size: rem(24);
+//   }
 
-  .M_BlockWho {
-    height: 25rem;
-    margin-bottom: 10rem;
+//   .M_BlockWho {
+//     height: 25rem;
+//     margin-bottom: 10rem;
 
-    .A_ImgWho {
-      width: 90vw;
-    }
-  }
-}
+//     .A_ImgWho {
+//       width: 90vw;
+//     }
+//   }
+// }

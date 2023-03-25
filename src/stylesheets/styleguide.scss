@@ -1,101 +1,86 @@
-.M_BlockStyleMain {
-  margin-top: 18rem;
+.M_Block {
+  &.Style {
+    height: 40rem;
 
-  .A_TextMainSmall {
-    padding-top: 0.75rem;
+    &.Tone {
+      .A_TextMainBig {
+        margin-bottom: 2rem;
+      }
+    }
 
-    .Q_TergetLinks {
-      &:hover {
-        color: var(--green);
-        text-decoration: underline;
+    &.Logo {
+      .O_Logo {
+        padding-top: 2rem;
+        text-align: center;
+
+        .M_LogoSVG {
+          width: 20rem;
+        }
+      }
+
+      .A_ImgDetails {
+        z-index: 1;
+        width: 8.5rem;
+        margin-top: 1rem;
+        margin-left: 25vw;
+      }
+    }
+
+    &.Design {
+      .A_TextMainBig {
+        .Q_TextMainSelection {
+          font-style: italic;
+        }
       }
     }
   }
 }
 
-.M_TargetArrow {
-  &.Styleguide {
-    display: block;
-    margin-top: 17rem;
+.Q_TargetLinks {
+  &:hover {
+    color: var(--green);
+    text-decoration: underline;
   }
 }
 
-.M_BlockStyleTone {
-  margin-top: 25rem;
-}
+.C_Colors {
+  padding-top: 5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
 
-.M_BlockStyleLogo {
-  margin-top: 25rem;
-
-  .O_Logo {
-    padding-top: 2rem;
-    text-align: center;
-
-    .M_LogoSVG {
-      width: 20rem;
-    }
+  .A_ColorsIMG {
+    width: 13vw;
   }
-
-  .A_ImgDetails {
-    z-index: 1;
-    width: 8.5rem;
-    margin-top: 2rem;
-    margin-left: 57rem;
-  }
-}
-
-.M_BlockStyleColors {
-  margin-top: 25rem;
-
-  .A_TextMainSmall {
-    padding-top: 1rem;
-  }
-
-  .C_Colors {
-    padding-top: 7rem;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 6rem;
-
-    .A_ColorsIMG {
-      width: 13rem;
-    }
-  }
-}
-
-.M_BlockStyleSystem {
-  margin-top: 25rem;
 }
 
 .A_FontsIMG {
-  margin: 20rem auto;
-  max-width: 55rem;
+  min-height: 30rem;
+  margin: 0 auto 15rem;
+  max-width: 55vw;
   display: block;
+  object-fit: contain;
 }
 
 .A_DesignIMG {
-  margin: 20rem auto;
-  max-width: 90rem;
+  min-height: 30rem;
+  margin: 0 auto 20rem;
+  max-width: 90vw;
   display: block;
+  object-fit: contain;
 }
 
 .S_Mockups {
-  .A_TextMainSmall {
-    .Q_TextMainSelection {
-      font-size: inherit;
-      font-style: normal;
-    }
-  }
-
   .C_MockupItems {
     margin-top: 10rem;
     display: flex;
     flex-direction: column;
     row-gap: 10rem;
     align-items: center;
+    justify-content: center;
 
     .M_Mockup {
       &.Cap {
@@ -103,7 +88,7 @@
           margin-bottom: -2rem;
         }
         .A_CapIMG {
-          max-width: 45rem;
+          max-width: 45%;
         }
       }
       &.Tshirt {
@@ -111,12 +96,12 @@
           margin-bottom: -2rem;
         }
         .A_TshirtIMG {
-          max-width: 55rem;
+          max-width: 55%;
         }
       }
       &.Stikers {
         .A_StikersIMG {
-          max-width: 55rem;
+          max-width: 55%;
           transform: translate(5rem, 0px);
         }
       }
@@ -126,7 +111,44 @@
         }
         margin-bottom: 3rem;
         .A_WebsiteIMG {
-          max-width: 94.5rem;
+          max-width: 94.5%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 758px) {
+  .S_Mockups {
+    .C_MockupItems {
+      margin-top: 10rem;
+      row-gap: 5rem;
+
+      .M_Mockup {
+        &.Cap {
+          .A_CapIMG {
+            max-width: 85%;
+          }
+        }
+        &.Tshirt {
+          .A_TshirtIMG {
+            max-width: 55%;
+          }
+        }
+        &.Stikers {
+          .A_StikersIMG {
+            max-width: 85%;
+            transform: translate(5rem, 0px);
+          }
+        }
+        &.Website {
+          .A_TextMainSmall {
+            margin-bottom: 2rem;
+          }
+          margin-bottom: 3rem;
+          .A_WebsiteIMG {
+            max-width: 85%;
+          }
         }
       }
     }
