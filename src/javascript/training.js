@@ -1,19 +1,41 @@
+import Cookies from 'js-cookie'
+
 const value = document.getElementById('shortcut-value')
 const description = document.getElementById('shortcut-description')
-const resetButton = document.getElementById('reset-button')
 const counter = document.getElementById('shortcut-counter')
-const shortcuts = {
-  'Ctrl+F': 'Поиск по странице',
-  'Ctrl+A': 'Выделение всего текста',
-  'Ctrl+C': 'Копирование текста',
-  'Ctrl+V': 'Вставка текста',
-  'Ctrl+S': 'Сохранить изменения в окне',
-  'Ctrl+Shift+A': 'Пример сочетания Ctrl+Shift+A',
+const isMac = navigator.userAgent.toLowerCase().includes('macintosh')
+
+if (isMac) {
+  Cookies.set('os', 'macos')
+} else {
+  Cookies.set('os', 'windows')
 }
+const osCookie = Cookies.get('os')
+const isMacOS = osCookie === 'macos'
+
+const shortcuts = isMacOS
+  ? {
+      'Cmd+F': 'Поиск по странице',
+      'Cmd+A': 'Выделение всего текста',
+      'Cmd+C': 'Копирование текста',
+      'Cmd+V': 'Вставка текста',
+      'Cmd+S': 'Сохранить изменения в окне',
+      'Cmd+Shift+A': 'Что-то оно делает',
+    }
+  : {
+      'Ctrl+F': 'Поиск по странице',
+      'Ctrl+A': 'Выделение всего текста',
+      'Ctrl+C': 'Копирование текста',
+      'Ctrl+V': 'Вставка текста',
+      'Ctrl+S': 'Сохранить изменения в окне',
+      'Ctrl+Shift+A': 'Что-то оно делает',
+    }
+
 const shortcutKeys = Object.keys(shortcuts)
 let shortcutIndex = 0
 let correctCount = 0
 value.innerHTML = shortcutKeys[shortcutIndex]
+counter.innerHTML = `Уровень: ${correctCount}`
 
 document.addEventListener('keydown', function (event) {
   event.preventDefault()
@@ -26,14 +48,15 @@ document.addEventListener('keydown', function (event) {
 
   const shortcutKey = shortcutKeys[shortcutIndex]
   const shortcutParts = shortcutKey.split('+')
-  if (event.ctrlKey && event.shiftKey && event.key.toUpperCase() === shortcutParts[2]) {
+  const isCorrectKey = isMac ? event.metaKey : event.ctrlKey
+  if (isCorrectKey && event.shiftKey && event.key.toUpperCase() === shortcutParts[2]) {
     showShortcutInfo(shortcuts[shortcutKey], ++shortcutIndex)
     correctCount++
-  } else if (event.ctrlKey && !event.shiftKey && event.key.toUpperCase() === shortcutParts[1]) {
+  } else if (isCorrectKey && !event.shiftKey && event.key.toUpperCase() === shortcutParts[1]) {
     showShortcutInfo(shortcuts[shortcutKey], ++shortcutIndex)
     correctCount++
   }
-  counter.innerHTML = `Правильных ответов: ${correctCount}`
+  counter.innerHTML = `Уровень: ${correctCount}`
 })
 
 function showShortcutInfo(shortcutInfo, shortcutIndex) {
@@ -46,14 +69,16 @@ function showShortcutInfo(shortcutInfo, shortcutIndex) {
       description.innerHTML = ''
       value.style.color = 'white'
     } else {
-      value.innerHTML = `Все! Количество правильных сочетаний: ${correctCount}`
+      value.innerHTML = 'Все!'
       description.innerHTML = ''
       value.style.color = '#cbfb45'
-      resetButton.style.display = 'block'
+
+      const restart = document.getElementById('reset-button')
+      restart.style.display = 'block'
+      counter.style.display = 'none'
+      restart.onclick = () => {
+        window.location.reload()
+      }
     }
   }, 2000)
 }
-
-resetButton.addEventListener('click', function () {
-  window.location.reload()
-})
