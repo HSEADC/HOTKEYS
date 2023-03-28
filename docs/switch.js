@@ -138,28 +138,57 @@ var api = init(defaultConverter, { path: '/' });
 
 /* harmony default export */ const js_cookie = (api);
 
-;// CONCATENATED MODULE: ./src/javascript/modal.js
+;// CONCATENATED MODULE: ./src/javascript/system-switch.js
 
-var modal = document.getElementById('modal');
-var modalButton = document.getElementById('modalButton');
+document.addEventListener('DOMContentLoaded', function () {
+  var isMac = navigator.userAgent.toLowerCase().includes('macintosh');
+  var macEl = document.getElementById('S_Mac');
+  var winEl = document.getElementById('S_Win');
+  var macBtn = document.querySelector('#mac');
+  var winBtn = document.querySelector('#win');
 
-if (modal !== null && modal !== void 0 && modal.style && modalButton) {
-  if (!js_cookie.get('modal')) {
-    js_cookie.set('modal', true);
-    setTimeout(function () {
-      modal.style.display = 'flex';
-    }, 1500);
+  if (isMac) {
+    js_cookie.set('os', 'macos');
+  } else {
+    js_cookie.set('os', 'windows');
   }
 
-  modalButton.addEventListener('click', function () {
-    modal.style.display = 'none';
-  });
-  modal.addEventListener('click', function () {
-    modal.style.display = 'none';
-  });
-}
-;// CONCATENATED MODULE: ./src/index.js
+  var osCookie = js_cookie.get('os');
 
+  if (osCookie === 'macos') {} else {}
 
+  if (osCookie === 'macos') {
+    if (macEl) macEl.style.display = 'block';
+
+    if (macBtn) {
+      macBtn.classList.add('_Active');
+    }
+  } else {
+    if (winEl) winEl.style.display = 'block';
+
+    if (winBtn) {
+      winBtn.classList.add('_Active');
+    }
+  }
+
+  winBtn === null || winBtn === void 0 ? void 0 : winBtn.addEventListener('click', function () {
+    if (macEl && winEl) {
+      winEl.style.display = 'block';
+      macEl.style.display = 'none';
+    }
+
+    winBtn.classList.toggle('_Active');
+    macBtn.classList.toggle('_Active');
+  });
+  macBtn === null || macBtn === void 0 ? void 0 : macBtn.addEventListener('click', function () {
+    if (macEl && winEl) {
+      macEl.style.display = 'block';
+      winEl.style.display = 'none';
+    }
+
+    macBtn.classList.toggle('_Active');
+    winBtn.classList.toggle('_Active');
+  });
+});
 /******/ })()
 ;
