@@ -7,15 +7,13 @@ const CopyPlugin = require('copy-webpack-plugin')
 const webpack = require('webpack')
 const path = require('path')
 
-// prettier-ignore
 const pages = [
-  'index',
-  'about',
-  'styleguide',
-  'shortcuts',
-  'selections',
-  'training',
-  'shortcuts/switch-between-programs',
+  {name: 'index', chunks: ['index', 'on-scroll']},
+  {name: 'about', chunks: ['index']},
+  {name: 'styleguide', chunks: ['index', 'on-scroll']},
+  {name: 'shortcuts', chunks: ['index', 'shortcuts']},
+  {name: 'selections', chunks: ['index']},
+  {name: 'shortcuts/switch-between-programs', chunks: ['index', 'switch']},
 ]
 
 // prettier-ignore
@@ -34,7 +32,9 @@ const partials = [
 module.exports = {
   entry: {
     index: './src/index.js',
+    on_scroll: './src/javascript/on-scroll.js',
     shortcuts: './src/shortcuts.jsx',
+    switch: './src/javascript/system-switch.js',
   },
   output: {
     filename: '[name].js',
@@ -105,11 +105,12 @@ module.exports = {
     }),
 
     ...pages.map((page) => {
-      const pageName = `${page}.html`
+      const pageName = `${page.name}.html`
       return new HtmlWebpackPlugin({
         hash: true,
         template: `./src/${pageName}`,
         filename: `./${pageName}`,
+        chunks: page.chunks,
       })
     }),
 

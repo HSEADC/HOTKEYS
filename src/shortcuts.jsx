@@ -1,7 +1,6 @@
 import React from 'react'
 import {createRoot} from 'react-dom/client'
 
-import './index.css'
 import Shortcuts from './javascript/components/Shortcuts.jsx'
 
 const pythonGenerated = document.getElementById('PYTHON_GENERATED')
