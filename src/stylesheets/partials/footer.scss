@@ -6,8 +6,35 @@
   .M_FooterUp {
     .A_UpText {
       @include itemGrid;
-      @include itemConfigg(7rem, 2.6rem, var(--white), transparent, 1.5px solid var(--grey), 0px, 1rem, 400);
+      width: 6.6rem;
+      height: 2.9rem;
+      color: var(--white);
+      background-color: transparent;
+      border: 1.5px solid var(--grey);
+      font-size: 1rem;
+      font-weight: 400;
       border-radius: 4px 0px 0px 4px;
+
+      &:hover {
+        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
+      }
+    }
+  }
+
+  .M_FooterAbout {
+    .A_AboutText {
+      @include itemGrid;
+      width: 7rem;
+      height: 2.9rem;
+      color: var(--white);
+      background-color: transparent;
+      border-top: 1.5px solid var(--grey);
+      border-bottom: 1.5px solid var(--grey);
+      border-right: 1.5px solid var(--grey);
+
+      font-size: 1rem;
+      font-weight: 400;
+      border-radius: 0px 4px 4px 0px;
 
       &:hover {
         @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
@@ -19,7 +46,15 @@
   .M_FooterDzen,
   .M_FooterTg {
     @include itemGrid;
-    @include itemConfigg(2.6rem, 2.6rem, var(--white), transparent, 1.5px solid var(--grey), 0px, 1rem, 400);
+    width: 2.9rem;
+    height: 2.9rem;
+    color: var(--white);
+    background-color: transparent;
+    border-top: 1.5px solid var(--grey);
+    border-bottom: 1.5px solid var(--grey);
+    border-right: 1.5px solid var(--grey);
+    font-size: 1rem;
+    font-weight: 400;
   }
 
   .M_FooterVk {
@@ -55,18 +90,6 @@
       fill: var(--green);
     }
   }
-
-  .M_FooterAbout {
-    .A_AboutText {
-      @include itemGrid;
-      @include itemConfigg(8rem, 2.6rem, var(--white), transparent, 1.5px solid var(--grey), 0px, 1rem, 400);
-      border-radius: 0px 4px 4px 0px;
-
-      &:hover {
-        @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
-      }
-    }
-  }
 }
 
 @media (max-width: 1200px) {
@@ -83,17 +106,22 @@
 
 @media (max-width: 656px) {
   .C_Footer {
-    margin: rem(25) rem(15) rem(25);
+    margin: rem(25) auto;
 
     .M_FooterUp {
       .A_UpText {
         @include itemGrid;
-        @include itemConfigg(5.5rem, 2.6rem, var(--white), transparent, 1.5px solid var(--grey), 0px, 0.8rem, 400);
-        border-radius: 4px 0px 0px 4px;
+        width: 5.75rem;
+        height: 2.5rem;
+      }
+    }
 
-        &:hover {
-          @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
-        }
+    .M_FooterAbout {
+      .A_AboutText {
+        @include itemGrid;
+        width: 6.5rem;
+        height: 2.5rem;
+        border-radius: 0px 4px 4px 0px;
       }
     }
 
@@ -101,7 +129,8 @@
     .M_FooterDzen,
     .M_FooterTg {
       @include itemGrid;
-      @include itemConfigg(2.6rem, 2.6rem, var(--white), transparent, 1.5px solid var(--grey), 0px, 0.8rem, 400);
+      width: 2.7rem;
+      height: 2.5rem;
     }
 
     .M_FooterVk {
@@ -135,18 +164,6 @@
 
       &:hover .A_IconTg {
         fill: var(--green);
-      }
-    }
-
-    .M_FooterAbout {
-      .A_AboutText {
-        @include itemGrid;
-        @include itemConfigg(5.75rem, 2.6rem, var(--white), transparent, 1.5px solid var(--grey), 0px, 0.8rem, 400);
-        border-radius: 0px 4px 4px 0px;
-
-        &:hover {
-          @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
-        }
       }
     }
   }

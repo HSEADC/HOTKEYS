@@ -20,17 +20,6 @@
   font-weight: $fw;
 }
 
-@mixin itemConfigg($w, $h, $c, $bc, $b, $br, $fs, $fw) {
-  width: $w;
-  height: $h;
-  color: $c;
-  background-color: $bc;
-  border: $b;
-  border-radius: $br;
-  font-size: $fs;
-  font-weight: $fw;
-}
-
 @mixin itemOpenConfig($c, $bc, $b, $fw, $fs) {
   color: $c;
   background-color: $bc;

@@ -85,20 +85,21 @@
     .C_MenuItems {
       .M_MenuItem {
         margin: 0 0rem;
+        height: 2.75rem;
 
         &.Shortcuts {
           h3 {
             font-size: 0.9rem;
             width: 6.35rem;
-            height: 2.5rem;
+            height: 2rem;
           }
         }
 
         &.Selections {
           & h3 {
             font-size: 0.9rem;
-            width: 5.5rem;
-            height: 2.5rem;
+            width: 6rem;
+            height: 2rem;
           }
         }
       }
