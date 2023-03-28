@@ -15,7 +15,7 @@
   transform: scale(1.5);
 }
 
-.M_ResetFilters {
+.M_ResetFilter {
   @include resetButton;
   font-size: 1.35rem;
   font-weight: 400;
@@ -84,13 +84,40 @@
 }
 
 @media (max-width: 645px) {
+  .C_SelectBar,
   .S_Filters {
-    display: none;
+    gap: rem(0);
+  }
+
+  .S_Filters {
+    margin: rem(10) 0 rem(10) rem(-10);
+    .M_ResetFilter {
+      width: 0;
+      .A_ResetText {
+        display: none;
+      }
+
+      .A_ResetIcon {
+        margin-left: 0rem;
+        color: var(--grey);
+        transform: scale(0.75);
+      }
+    }
   }
 
   .M_ShortcutCard {
     &.Selections {
       height: rem(240);
+    }
+  }
+}
+
+@media (max-width: 355px) {
+  .S_Filters {
+    .M_ResetFilter {
+      .A_ResetIcon {
+        transform: scale(0.5);
+      }
     }
   }
 }

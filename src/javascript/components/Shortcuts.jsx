@@ -168,11 +168,11 @@ export default class Shortcuts extends Component {
             </div>
             <div className="S_Filters">
               <div className="C_SelectBar">
-                <Select options={programOptions} value={selectedProgramOption} onChange={handleProgramChange} styles={colorStyles} components={{DropdownIndicator}} placeholder="Все программы" />
+                <Select options={programOptions} value={selectedProgramOption} onChange={handleProgramChange} styles={colorStyles} components={{DropdownIndicator}} placeholder="Все шорткаты" />
                 <Select options={mainOptions} value={selectedMainOption} onChange={handleMainChange} styles={colorStyles} components={{DropdownIndicator}} placeholder="Сортировка" />
               </div>
-              <button className="M_ResetFilters" onClick={this.handleReset}>
-                Сбросить
+              <button className="M_ResetFilter" onClick={this.handleReset}>
+                <span className="A_ResetText">Сбросить</span>
                 <FontAwesomeIcon icon={faTimes} className="A_ResetIcon" />
               </button>
             </div>
