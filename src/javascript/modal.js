@@ -8,7 +8,7 @@ if (modal?.style && modalButton) {
     Cookies.set('modal', true)
     setTimeout(() => {
       modal.style.display = 'flex'
-    }, 1000)
+    }, 1500)
   }
 
   modalButton.addEventListener('click', () => {

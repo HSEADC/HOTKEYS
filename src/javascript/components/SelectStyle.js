@@ -9,7 +9,7 @@ export const colorStyles = {
     border: 'none',
     outline: 'none',
     width: 'fit-content',
-    fontSize: '1.35rem',
+    fontSize: window.innerWidth >= 645 ? '1.35rem' : window.innerWidth >= 355 ? '1.15rem' : '0.95rem',
     fontWeight: '400',
     outline: `1px solid ${isFocused ? green : 'transparent'}`,
   }),

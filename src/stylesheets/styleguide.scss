@@ -1,38 +1,36 @@
-.M_Block {
-  &.Style {
-    height: 40rem;
+.M_BlockStyle {
+  height: 20rem;
+  margin-top: clamp(12.5rem, 17.5vw, 25rem);
 
-    &.Tone {
-      .A_TextMainBig {
-        margin-bottom: 2rem;
+  &.Main,
+  &.Tone {
+    .A_TextMainXL {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &.Logo {
+    .O_Logo {
+      position: relative;
+      padding-top: 2rem;
+      text-align: center;
+
+      .M_LogoSVG {
+        width: 20rem;
       }
     }
 
-    &.Logo {
-      .O_Logo {
-        padding-top: 2rem;
-        text-align: center;
-
-        .M_LogoSVG {
-          width: 20rem;
-        }
-      }
-
-      .A_ImgDetails {
-        z-index: 1;
-        width: 8.5rem;
-        margin-top: 1rem;
-        margin-left: 25vw;
-      }
+    .A_ImgDetails {
+      position: absolute;
+      display: block;
+      width: 8.5rem;
+      left: 57%;
+      margin-top: clamp(1rem, 1.5vw, 3rem);
     }
+  }
 
-    &.Design {
-      .A_TextMainBig {
-        .Q_TextMainSelection {
-          font-style: italic;
-        }
-      }
-    }
+  &.Colors {
+    height: 45rem;
   }
 }
 
@@ -44,36 +42,33 @@
 }
 
 .C_Colors {
-  padding-top: 5rem;
-  margin: 0 auto;
+  margin-top: 2.5rem;
   display: flex;
-  flex-flow: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
+}
 
-  .A_ColorsIMG {
-    width: 13vw;
-  }
+.A_ColorsIMG {
+  width: 10rem;
 }
 
 .A_FontsIMG {
-  min-height: 30rem;
-  margin: 0 auto 15rem;
-  max-width: 55vw;
+  margin: 7.5rem auto;
+  max-width: 55%;
   display: block;
   object-fit: contain;
 }
 
 .A_DesignIMG {
-  min-height: 30rem;
-  margin: 0 auto 20rem;
-  max-width: 90vw;
+  margin: 15rem auto;
+  max-width: 80%;
   display: block;
   object-fit: contain;
 }
 
 .S_Mockups {
+  overflow-x: hidden;
   .C_MockupItems {
     margin-top: 10rem;
     display: flex;
@@ -84,33 +79,41 @@
 
     .M_Mockup {
       &.Cap {
-        .A_TextMainSmall {
+        .A_TextMainL {
           margin-bottom: -2rem;
         }
         .A_CapIMG {
+          display: block;
+          margin: 3rem auto 0;
           max-width: 45%;
         }
       }
       &.Tshirt {
-        .A_TextMainSmall {
+        .A_TextMainL {
           margin-bottom: -2rem;
         }
         .A_TshirtIMG {
+          display: block;
+          margin: 0 auto;
           max-width: 55%;
         }
       }
       &.Stikers {
         .A_StikersIMG {
+          display: block;
+          margin: 0 auto;
           max-width: 55%;
           transform: translate(5rem, 0px);
         }
       }
       &.Website {
-        .A_TextMainSmall {
+        .A_TextMainL {
           margin-bottom: 2rem;
         }
         margin-bottom: 3rem;
         .A_WebsiteIMG {
+          display: block;
+          margin: 0 auto;
           max-width: 94.5%;
         }
       }
@@ -118,10 +121,10 @@
   }
 }
 
-@media (max-width: 758px) {
+@media (max-width: 768px) {
   .S_Mockups {
     .C_MockupItems {
-      margin-top: 10rem;
+      margin-top: 5rem;
       row-gap: 5rem;
 
       .M_Mockup {
@@ -131,23 +134,26 @@
           }
         }
         &.Tshirt {
+          .A_TextMainL {
+            margin-bottom: 2rem;
+          }
           .A_TshirtIMG {
-            max-width: 55%;
+            margin: 0 auto;
+            max-width: 95%;
           }
         }
         &.Stikers {
           .A_StikersIMG {
-            max-width: 85%;
-            transform: translate(5rem, 0px);
+            margin: 3rem auto 0;
+            max-width: 90%;
+            transform: translate(4rem, 0px);
           }
         }
         &.Website {
-          .A_TextMainSmall {
-            margin-bottom: 2rem;
-          }
           margin-bottom: 3rem;
           .A_WebsiteIMG {
-            max-width: 85%;
+            margin: 3rem auto 0;
+            max-width: 90%;
           }
         }
       }

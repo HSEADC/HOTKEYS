@@ -58,3 +58,17 @@
     }
   }
 }
+
+@media (max-width: 645px) {
+  .W_ModalWrapper {
+    .O_Modal {
+      width: 85%;
+      height: fit-content;
+
+      .A_ModalText {
+        padding-bottom: 2rem;
+        width: 80%;
+      }
+    }
+  }
+}

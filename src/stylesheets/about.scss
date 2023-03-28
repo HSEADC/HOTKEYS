@@ -1,22 +1,28 @@
-.M_Block {
+.M_BlockAbout {
   &.Main {
-    padding-top: 5rem;
+    margin-top: clamp(7rem, 9vw, 20rem);
   }
+
+  &.Research,
+  &.Often,
+  &.Team {
+    margin-top: clamp(10rem, 12.5vw, 15rem);
+  }
+
   &.Main,
-  &.Research {
-    .A_TextMainBig {
+  &.Research,
+  &.Team {
+    .A_TextMainXL {
       margin-bottom: 2rem;
     }
   }
-
   &.Often {
-    .A_TextMainSmall {
-      margin: 2rem 0 3rem;
+    .A_TextMainL {
+      margin: 2rem auto 3rem;
+    }
 
-      .Q_TextMainSelection {
-        text-transform: uppercase;
-        font-style: normal;
-      }
+    .A_TextMainL {
+      margin: 2rem 0 3rem;
     }
   }
 }
@@ -26,21 +32,21 @@
   margin: 0 auto;
 
   &.Main {
-    max-width: 94.5%;
+    max-width: 95%;
   }
 
   &.Research {
-    max-width: 34%;
+    width: clamp(35rem, 40vw, 50vw);
   }
 
   &.Often {
-    max-width: 74.5%;
+    width: clamp(35rem, 40vw, 50vw);
   }
 }
 
 .M_BlockTeam {
   margin-bottom: 15rem;
-  .A_TextMainBig {
+  .A_TextMainXL {
     margin-bottom: 2rem;
   }
 }
@@ -59,7 +65,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: rem(302);
+    height: rem(240);
     border-radius: 5px;
     border: 1.5px solid var(--grey);
     cursor: help;
@@ -105,7 +111,7 @@
         padding-top: 0.5rem;
         margin: 1.25rem;
         color: var(--green);
-        font-size: 3.13rem;
+        font-size: 2.75rem;
         font-weight: 500;
         font-style: italic;
         line-height: 100%;
@@ -132,17 +138,13 @@
     grid-template-columns: repeat(3, 1fr);
 
     .O_Item {
-      height: rem(235);
+      height: rem(200);
     }
   }
 }
 @media (max-width: 1024px) {
   .C_TeamItems {
     grid-template-columns: repeat(2, 1fr);
-
-    .O_Item {
-      height: rem(225);
-    }
   }
 }
 
@@ -158,7 +160,7 @@
   .A_Img {
     &.Main,
     &.Often {
-      max-width: 90%;
+      max-width: 95%;
     }
 
     &.Research {

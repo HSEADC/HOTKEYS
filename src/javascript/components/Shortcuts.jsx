@@ -109,7 +109,7 @@ export default class Shortcuts extends Component {
     return (
       <>
         <div className="S_Header Shortcuts">
-          <a className="W_LinkLogo O_HeaderShortcutsLogo" href="./">
+          <a className="W_LinkLogo O_HeaderShortcutsLogo Shortcuts" href="./">
             <div className="O_Logo">
               <svg className="M_LogoSVG" width="224" height="33" viewBox="0 0 224 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g className="A_VectorShift">
@@ -168,11 +168,11 @@ export default class Shortcuts extends Component {
             </div>
             <div className="S_Filters">
               <div className="C_SelectBar">
-                <Select options={programOptions} value={selectedProgramOption} onChange={handleProgramChange} styles={colorStyles} components={{DropdownIndicator}} placeholder="Все программы" />
+                <Select options={programOptions} value={selectedProgramOption} onChange={handleProgramChange} styles={colorStyles} components={{DropdownIndicator}} placeholder="Все шорткаты" />
                 <Select options={mainOptions} value={selectedMainOption} onChange={handleMainChange} styles={colorStyles} components={{DropdownIndicator}} placeholder="Сортировка" />
               </div>
-              <button className="M_ResetFilters" onClick={this.handleReset}>
-                Сбросить
+              <button className="M_ResetFilter" onClick={this.handleReset}>
+                <span className="A_ResetText">Сбросить</span>
                 <FontAwesomeIcon icon={faTimes} className="A_ResetIcon" />
               </button>
             </div>

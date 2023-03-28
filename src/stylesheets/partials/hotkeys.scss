@@ -40,4 +40,17 @@
       background-repeat: no-repeat;
     }
   }
+
+  .M_BlockStyle.Logo {
+    .O_Logo {
+      .M_LogoSVG {
+        display: block;
+        margin: 0 auto;
+      }
+
+      &::before {
+        content: none;
+      }
+    }
+  }
 }

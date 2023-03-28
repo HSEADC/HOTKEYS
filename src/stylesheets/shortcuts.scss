@@ -15,7 +15,7 @@
   transform: scale(1.5);
 }
 
-.M_ResetFilters {
+.M_ResetFilter {
   @include resetButton;
   font-size: 1.35rem;
   font-weight: 400;
@@ -42,7 +42,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: rem(302);
+  height: rem(265);
   border-radius: 5px;
   border: 1.5px solid var(--grey);
   cursor: help;
@@ -69,28 +69,68 @@
   &.Render {
     opacity: 0;
   }
+
+  &.Selections {
+    height: rem(302);
+  }
+}
+
+.A_LoadingLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 1770px) {
   .M_ShortcutCard {
-    height: rem(235);
+    height: rem(200);
+
+    &.Selections {
+      height: rem(240);
+    }
   }
 }
 
 @media (max-width: 1024px) {
   .M_ShortcutCard {
-    height: rem(225);
+    height: rem(220);
   }
 }
 
 @media (max-width: 645px) {
+  .C_SelectBar,
   .S_Filters {
-    display: none;
+    gap: rem(0);
+  }
+
+  .S_Filters {
+    margin: rem(10) 0 rem(10) rem(-10);
+    .M_ResetFilter {
+      width: 0;
+      .A_ResetText {
+        display: none;
+      }
+
+      .A_ResetIcon {
+        margin-left: 0rem;
+        color: var(--grey);
+        transform: scale(0.75);
+      }
+    }
   }
 
   .M_ShortcutCard {
-    &.Selections {
-      height: rem(240);
+    height: rem(200);
+  }
+}
+
+@media (max-width: 355px) {
+  .S_Filters {
+    .M_ResetFilter {
+      .A_ResetIcon {
+        transform: scale(0.5);
+      }
     }
   }
 }
