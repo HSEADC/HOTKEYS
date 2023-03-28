@@ -240,7 +240,7 @@
     "target": "vs-code"
   },
   {
-    "link": "shortcuts/vscode-find-replace.html",
+    "link": "shortcuts/vscode-find-selected.html",
     "selected": "Поиск",
     "text": "выбранного фрагмента",
     "windows": "Ctrl+F",
@@ -252,7 +252,7 @@
     "target": "vs-code"
   },
   {
-    "link": "shortcuts/vscode-find-replace.html",
+    "link": "shortcuts/vscode-find-replace-selected.html",
     "selected": "Замена",
     "text": "выбранного фрагмента",
     "windows": "Ctrl+H",
@@ -422,18 +422,6 @@
   {
     "link": "shortcuts/figma-group-layers.html",
     "selected": "Сгрупировать",
-    "text": "выделенные элементы во фрейм",
-    "windows": "Ctrl+Alt+G",
-    "macos": "Cmd+Option+G",
-    "popular": false,
-    "useful": true,
-    "simple": false,
-    "complex": true,
-    "target": "figma"
-  },
-  {
-    "link": "shortcuts/figma-group-layers.html",
-    "selected": "Сгрупировать",
     "text": "выделенные элементы в группу",
     "windows": "Ctrl+G",
     "macos": "Cmd+G",
@@ -450,6 +438,18 @@
     "windows": "Ctrl+Shift+G",
     "macos": "Cmd+Shift+G",
     "popular": true,
+    "useful": true,
+    "simple": false,
+    "complex": true,
+    "target": "figma"
+  },
+  {
+    "link": "shortcuts/figma-group-layers.html",
+    "selected": "Сгрупировать",
+    "text": "выделенные элементы во фрейм",
+    "windows": "Ctrl+Alt+G",
+    "macos": "Cmd+Option+G",
+    "popular": false,
     "useful": true,
     "simple": false,
     "complex": true,
