@@ -36,11 +36,11 @@
 .W_AltTab {
   .O_Keyboard {
     .A_KeyboardSVG {
-      .alt-win {
+      .Q_AltWin {
         animation: shortcut-first 4s infinite ease-out;
       }
 
-      .tab-win {
+      .Q_TabWin {
         animation: shortcut-second 4s infinite ease-out;
       }
     }
@@ -50,11 +50,11 @@
 .W_CmdTab {
   .O_Keyboard {
     .A_KeyboardSVG {
-      .cmd-mac {
+      .Q_CmdMac {
         animation: shortcut-first 4s infinite ease-out;
       }
 
-      .tab-mac {
+      .Q_TabMac {
         animation: shortcut-second 4s infinite ease-out;
       }
     }
