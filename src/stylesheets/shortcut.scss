@@ -1,22 +1,13 @@
 .C_Shortcut {
   margin: 0 auto;
   width: 100%;
-}
 
-//*! код-черновик (будет заменен)
-.A_ShortcutTextDescribtion,
-.A_ShortcutTextFunctionality {
-  text-align: center;
-  font-size: clamp(1rem, 1vw + 0.5rem, 2.5rem);
-  width: 80%;
-  margin: 0 auto;
-
-  span {
-    font-size: inherit;
+  .Q_TextMainSelection {
+    font-style: normal;
   }
 }
 
-//*? код для функциональности страницы.
+//*? switch keyboards
 
 .A #S_Win,
 #S_Mac {
@@ -26,18 +17,21 @@
 #S_Win,
 #S_Mac {
   .O_Keyboard {
-    margin: 3vw auto 2vw;
+    margin: 4.5rem auto 3rem;
+  }
+
+  .A_TextMainXL {
+    max-width: 95%;
+    margin: 0 auto;
   }
 
   .A_TextMainL {
-    max-width: 40%;
-    margin: 0vw auto;
-
-    .Q_TextMainSelection {
-      font-size: inherit;
-    }
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
+
+//*? keyboard shortcuts animation
 
 .W_AltTab {
   .O_Keyboard {
