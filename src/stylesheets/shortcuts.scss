@@ -75,6 +75,13 @@
   }
 }
 
+.A_LoadingLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media (max-width: 1770px) {
   .M_ShortcutCard {
     height: rem(200);
