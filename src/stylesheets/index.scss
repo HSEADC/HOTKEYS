@@ -27,6 +27,10 @@
   opacity: 0;
   transform: translateX(-50%);
 
+  &.Palete {
+    transform: translateX(-300%);
+  }
+
   &._Show {
     opacity: 1;
     transition: all 1s, opacity 0.1s;
@@ -53,6 +57,18 @@
 
 .C_Footer {
   justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .A_TextUnique {
+    &.Palete {
+      transform: translateX(-150%);
+    }
+
+    &._Show {
+      transform: translateX(0%);
+    }
+  }
 }
 
 @media (max-width: 645px) {
