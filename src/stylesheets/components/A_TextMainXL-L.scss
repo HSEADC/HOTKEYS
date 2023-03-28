@@ -1,4 +1,4 @@
-.A_TextMainSmall {
+.A_TextMainL {
   color: var(--white);
   font-size: rem(22);
   line-height: 110%;
@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.A_TextMainBig {
+.A_TextMainXL {
   color: var(--white);
   font-size: rem(33);
   font-weight: 400;
@@ -22,11 +22,11 @@
 }
 
 @media (max-width: 1680px) {
-  .A_TextMainSmall {
+  .A_TextMainL {
     font-size: rem(16);
   }
 
-  .A_TextMainBig {
+  .A_TextMainXL {
     font-size: rem(24);
   }
 }

@@ -12,16 +12,16 @@
   &.Main,
   &.Research,
   &.Team {
-    .A_TextMainBig {
+    .A_TextMainXL {
       margin-bottom: 2rem;
     }
   }
   &.Often {
-    .A_TextMainSmall {
+    .A_TextMainL {
       margin: 2rem auto 3rem;
     }
 
-    .A_TextMainSmall {
+    .A_TextMainL {
       margin: 2rem 0 3rem;
     }
   }
@@ -46,7 +46,7 @@
 
 .M_BlockTeam {
   margin-bottom: 15rem;
-  .A_TextMainBig {
+  .A_TextMainXL {
     margin-bottom: 2rem;
   }
 }

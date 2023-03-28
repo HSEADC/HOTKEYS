@@ -3,7 +3,7 @@
     height: 40rem;
 
     &.Tone {
-      .A_TextMainBig {
+      .A_TextMainXL {
         margin-bottom: 2rem;
       }
     }
@@ -27,7 +27,7 @@
     }
 
     &.Design {
-      .A_TextMainBig {
+      .A_TextMainXL {
         .Q_TextMainSelection {
           font-style: italic;
         }
@@ -84,7 +84,7 @@
 
     .M_Mockup {
       &.Cap {
-        .A_TextMainSmall {
+        .A_TextMainL {
           margin-bottom: -2rem;
         }
         .A_CapIMG {
@@ -92,7 +92,7 @@
         }
       }
       &.Tshirt {
-        .A_TextMainSmall {
+        .A_TextMainL {
           margin-bottom: -2rem;
         }
         .A_TshirtIMG {
@@ -106,7 +106,7 @@
         }
       }
       &.Website {
-        .A_TextMainSmall {
+        .A_TextMainL {
           margin-bottom: 2rem;
         }
         margin-bottom: 3rem;
@@ -142,7 +142,7 @@
           }
         }
         &.Website {
-          .A_TextMainSmall {
+          .A_TextMainL {
             margin-bottom: 2rem;
           }
           margin-bottom: 3rem;
