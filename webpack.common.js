@@ -8,9 +8,9 @@ const webpack = require('webpack')
 const path = require('path')
 
 const pages = [
-  {name: 'index', chunks: ['index', 'on-scroll']},
+  {name: 'index', chunks: ['index', 'on_scroll']},
   {name: 'about', chunks: ['index']},
-  {name: 'styleguide', chunks: ['index', 'on-scroll']},
+  {name: 'styleguide', chunks: ['index', 'on_scroll']},
   {name: 'shortcuts', chunks: ['index', 'shortcuts']},
   {name: 'selections', chunks: ['index']},
   {name: 'shortcuts/switch-between-programs', chunks: ['index', 'switch']},
