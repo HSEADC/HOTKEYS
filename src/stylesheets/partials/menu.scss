@@ -78,28 +78,23 @@
   }
 }
 
-@media (max-width: 645px) {
+@media (max-width: 355px) {
   .O_Menu {
-    width: 13rem;
-
+    width: 14rem;
     .C_MenuItems {
       .M_MenuItem {
-        margin: 0 0rem;
-        height: 2.75rem;
-
+        padding: 0.4rem 0.2rem;
         &.Shortcuts {
           h3 {
             font-size: 0.9rem;
-            width: 6.35rem;
-            height: 2rem;
+            width: 6.25rem;
           }
         }
 
         &.Selections {
           & h3 {
             font-size: 0.9rem;
-            width: 6rem;
-            height: 2rem;
+            width: 6.75rem;
           }
         }
       }
