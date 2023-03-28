@@ -42,7 +42,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: rem(302);
+  height: rem(265);
   border-radius: 5px;
   border: 1.5px solid var(--grey);
   cursor: help;
@@ -69,17 +69,25 @@
   &.Render {
     opacity: 0;
   }
+
+  &.Selections {
+    height: rem(302);
+  }
 }
 
 @media (max-width: 1770px) {
   .M_ShortcutCard {
-    height: rem(235);
+    height: rem(200);
+
+    &.Selections {
+      height: rem(240);
+    }
   }
 }
 
 @media (max-width: 1024px) {
   .M_ShortcutCard {
-    height: rem(225);
+    height: rem(220);
   }
 }
 
@@ -106,9 +114,7 @@
   }
 
   .M_ShortcutCard {
-    &.Selections {
-      height: rem(240);
-    }
+    height: rem(200);
   }
 }
 

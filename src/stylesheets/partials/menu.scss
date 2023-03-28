@@ -78,12 +78,12 @@
   }
 }
 
-@media (max-width: 355px) {
+@media (max-width: 400px) {
   .O_Menu {
-    width: 14rem;
+    width: 13.8rem;
     .C_MenuItems {
       .M_MenuItem {
-        padding: 0.4rem 0.2rem;
+        padding: 0.4rem 0.1rem;
         &.Shortcuts {
           h3 {
             font-size: 0.9rem;
@@ -95,6 +95,32 @@
           & h3 {
             font-size: 0.9rem;
             width: 6.75rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 355px) {
+  .O_Menu {
+    width: 12.9rem;
+    .C_MenuItems {
+      .M_MenuItem {
+        padding: 0.35rem 0.1rem;
+        &.Shortcuts {
+          h3 {
+            font-size: 0.8rem;
+            width: 5.85rem;
+            height: 1.9rem;
+          }
+        }
+
+        &.Selections {
+          & h3 {
+            font-size: 0.8rem;
+            width: 6.35rem;
+            height: 1.9rem;
           }
         }
       }

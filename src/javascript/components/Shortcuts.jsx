@@ -109,7 +109,7 @@ export default class Shortcuts extends Component {
     return (
       <>
         <div className="S_Header Shortcuts">
-          <a className="W_LinkLogo O_HeaderShortcutsLogo" href="./">
+          <a className="W_LinkLogo O_HeaderShortcutsLogo Shortcuts" href="./">
             <div className="O_Logo">
               <svg className="M_LogoSVG" width="224" height="33" viewBox="0 0 224 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g className="A_VectorShift">

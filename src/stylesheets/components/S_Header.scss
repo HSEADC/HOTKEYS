@@ -5,7 +5,6 @@
   justify-content: space-between;
   align-items: center;
 
-  &.Shortcuts,
   &.Shortcuts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -61,19 +60,62 @@
 @media (max-width: 768px) {
   .S_Header {
     margin: rem(35) rem(31) rem(40);
-
-    &.Shortcuts {
-      grid-template-columns: repeat(2, 1fr);
-
-      .O_HeaderShortcutsSwitch {
-        display: none;
-      }
-    }
   }
 }
 
 @media (max-width: 656px) {
   .S_Header {
     margin: rem(25) rem(15) rem(25);
+
+    .O_Logo {
+      .M_LogoSVG {
+        display: none;
+      }
+
+      &::before {
+        content: '';
+        line-height: 100%;
+        width: rem(55);
+        height: rem(55);
+        display: flex;
+        align-self: center;
+        background-image: url(images/hotkeys-min.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &.Shortcuts {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: rem(24);
+      grid-template-areas:
+        'logo logo'
+        'switch menu';
+
+      .O_HeaderShortcutsLogo {
+        justify-self: center;
+        grid-area: logo;
+      }
+      .O_HeaderShortcutsSwitch {
+        justify-self: start;
+        grid-area: switch;
+      }
+      .O_HeaderShortcutsMenu {
+        justify-self: end;
+        grid-area: menu;
+      }
+
+      .O_Logo {
+        .M_LogoSVG {
+          display: block;
+        }
+
+        &::before {
+          content: none;
+        }
+      }
+    }
   }
 }
