@@ -2,19 +2,19 @@ import json
 import fileinput
 import shutil
 
-source_file = 'src/javascript/components/shortcuts.html'
+source_file = 'src/lib/tasks/templates/shortcuts.html'
 destination_file = 'src/shortcuts.html'
 
 shutil.copyfile(source_file, destination_file)
 
-with open('src/javascript/components/hotkeys.json') as f:
+with open('src/lib/data/hotkeys.json') as f:
     hotkeys = json.load(f)
 
 html = ''
 for d in hotkeys:
     html += f"""
         <div class="M_ShortcutCard Render">
-            <a href="{d['link']}">
+            <a href="shortcuts/{d['link']}.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">{d['selected']} </span> {d['text']}</h1>
                 <h2 class="A_CardKey">Windows: {d['windows']}, MacOS: {d['macos']}</h2>
             </a>

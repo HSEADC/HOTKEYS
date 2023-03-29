@@ -1,22 +1,13 @@
 .C_Shortcut {
   margin: 0 auto;
   width: 100%;
-}
 
-//*! код-черновик (будет заменен)
-.A_ShortcutTextDescribtion,
-.A_ShortcutTextFunctionality {
-  text-align: center;
-  font-size: clamp(1rem, 1vw + 0.5rem, 2.5rem);
-  width: 80%;
-  margin: 0 auto;
-
-  span {
-    font-size: inherit;
+  .Q_TextMainSelection {
+    font-style: normal;
   }
 }
 
-//*? код для функциональности страницы.
+//*? switch keyboards
 
 .A #S_Win,
 #S_Mac {
@@ -26,41 +17,1244 @@
 #S_Win,
 #S_Mac {
   .O_Keyboard {
-    margin: 3vw auto 2vw;
+    margin: 4.5rem auto 3rem;
+  }
+
+  .A_TextMainXL {
+    max-width: 95%;
+    margin: 0 auto;
   }
 
   .A_TextMainL {
-    max-width: 40%;
-    margin: 0vw auto;
-
-    .Q_TextMainSelection {
-      font-size: inherit;
-    }
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 
-.W_AltTab {
+//** system hotkeys
+
+.S_AltTab {
   .O_Keyboard {
     .A_KeyboardSVG {
-      .alt-win {
+      .Q_AltWin {
         animation: shortcut-first 4s infinite ease-out;
       }
 
-      .tab-win {
+      .Q_TabWin {
         animation: shortcut-second 4s infinite ease-out;
       }
     }
   }
 }
 
-.W_CmdTab {
+.S_CmdTab {
   .O_Keyboard {
     .A_KeyboardSVG {
-      .cmd-mac {
+      .Q_CmdMac {
         animation: shortcut-first 4s infinite ease-out;
       }
 
-      .tab-mac {
+      .Q_TabMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlW {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_WWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdH {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_HMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_WinV {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_WinWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_VWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdCtrlShiftV {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac,
+      .Q_CtrlMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_ShiftMac,
+      .Q_VMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlY {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_YWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdY {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_YMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlZ {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_ZWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdZ {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_ZMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlShiftZ {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin,
+      .Q_ShiftWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_ZWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdShiftZ {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac,
+      .Q_ShiftMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_ZMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlX {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_XWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdX {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_XMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlC {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_CWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdC {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_CMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlV {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_VWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdV {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_VMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_WinE {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_WinWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_EWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdShiftF {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac,
+      .Q_ShiftMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .F_VMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlA {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_AWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdA {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_AMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlS {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_SWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdS {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_SMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlP {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_PWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdP {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_PMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlN {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_NWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdN {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_NMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_WinI {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_WinWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_IWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdComma {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_AglBracketLeftMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_WinDown {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_WinWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_DownWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdM {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_MMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_WinUp {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_WinWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_UpWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdCtrlF {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac,
+      .Q_CtrlMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_MMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlW {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_WWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdW {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_WMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_AltF4 {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_AltWin,
+      .Q_FnLightWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_FourWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdQ {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_QMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+//** vs-code hotkeys
+
+.S_CtrlSlash {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_SlashWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdSlash {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_SlashMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlSlash {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_SlashWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdSlash {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_SlashMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlF {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_FWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdF {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_FMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlH {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_HWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdH {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_HMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlShiftF {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin,
+      .Q_ShiftWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_FWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdShiftF {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac,
+      .Q_ShiftMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_FMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlShiftH {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin,
+      .Q_ShiftWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_HWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdShiftH {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac,
+      .Q_ShiftMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_HMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlB {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_BWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdB {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_BMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlD {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_DWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdD {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_DMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlShiftP {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin,
+      .Q_ShiftWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_PWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdShiftP {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac,
+      .Q_ShiftMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_PMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+//** browser
+
+.S_CtrlN {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_NWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdN {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_NMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlShiftN {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin,
+      .Q_ShiftWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_NWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdShiftN {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac,
+      .Q_ShiftMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_NMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlT {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_TWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdT {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_TMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlShiftT {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin,
+      .Q_ShiftWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_TWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdShiftT {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac,
+      .Q_ShiftMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_TMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlTab {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_TabWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdOptionRight {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac,
+      .Q_OptionMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_RightMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_AltLeftRight {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_AltWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_LeftWin,
+      .Q_RightWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdLeftRight {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_LeftMac,
+      .Q_RightMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlR {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_RWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdR {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_RMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlH {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_HWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdY {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_YMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+//** figma
+
+.S_CtrlG {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_GWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdG {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_GMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlShiftG {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin,
+      .Q_ShiftWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_GWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdShiftG {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac,
+      .Q_ShiftMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_GMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlAltG {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin,
+      .Q_AltWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_GWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdOptionG {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac,
+      .Q_OptionMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_GMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlTrait {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_TraitWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdTrait {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_TraitMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlShiftTrait {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin,
+      .Q_ShiftWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_TraitWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdShiftTrait {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac,
+      .Q_ShiftMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_TraitMac {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_I {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_I {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_I {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_I {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CtrlSlash {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CtrlWin {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_SlashWin {
+        animation: shortcut-second 4s infinite ease-out;
+      }
+    }
+  }
+}
+
+.S_CmdSlash {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      .Q_CmdMac {
+        animation: shortcut-first 4s infinite ease-out;
+      }
+
+      .Q_SlashMac {
         animation: shortcut-second 4s infinite ease-out;
       }
     }

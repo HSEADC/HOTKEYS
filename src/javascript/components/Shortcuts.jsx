@@ -7,8 +7,7 @@ import {faSearch, faTimes} from '@fortawesome/free-solid-svg-icons'
 import TriangleDown from '../../images/triangle.svg'
 
 import {colorStyles, green, black, lightBlack} from './SelectStyle'
-import hotkeys from './hotkeys.json'
-
+import hotkeys from '../../lib/data/hotkeys.json'
 export default class Shortcuts extends Component {
   state = {
     system: Cookies.get('os') === 'macos' ? 'macos' : 'windows',
@@ -181,7 +180,7 @@ export default class Shortcuts extends Component {
             {filteredHotkeys
               .sort(() => Math.random() - 0.5)
               .map((hotkey, index) => (
-                <a href={hotkey.link} key={index}>
+                <a href={'shortcuts/' + hotkey.link + '.html'} key={index}>
                   <div className="M_ShortcutCard">
                     <h1 className="A_CardName">
                       <span className="Q_TextSelection">{hotkey.selected} </span>

@@ -5,7 +5,8 @@
   justify-content: space-between;
   align-items: center;
 
-  &.Shortcuts {
+  &.Shortcuts,
+  &.Shortcut {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
@@ -86,7 +87,8 @@
       }
     }
 
-    &.Shortcuts {
+    &.Shortcuts,
+    &.Shortcut {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       row-gap: rem(24);

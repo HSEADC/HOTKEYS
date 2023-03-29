@@ -1,6 +1,6 @@
 {
   "name": "hotkeys",
-  "version": "3.9.7",
+  "version": "3.10.4",
   "author": "HSE ADC",
   "license": "MIT",
   "repository": {
@@ -15,7 +15,8 @@
     "start": "webpack serve --open --config webpack.dev.js --port 2000",
     "watch": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "render": "node src/javascript/render-shortcuts.js"
+    "render": "node src/javascript/render-shortcuts.js",
+    "generate": "node src/javascript/generate-pages.js"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="icon" href="../images/favicons/favicon.svg" type="image/svg+xml" />
+    <title>{{ title }}</title>
+    <meta name="title" content="HOT KEYS" />
+    <meta name="description" content="{{ description }}" />
+    <meta name="keywords" content="{{ keywords }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hotkeys.adc.ac" />
+    <meta property="og:title" content="HOT KEYS" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:image" content="https://hotkeys.adc.ac/share/seo.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://hotkeys.adc.ac" />
+    <meta property="twitter:title" content="HOT KEYS" />
+    <meta property="twitter:description" content="{{ description }}" />
+    <meta property="twitter:image" content="https://hotkeys.adc.ac/share/seo.png" />
+  </head>
+  <body>
+    <div class="S_Header Shortcut">
+      <a class="W_LinkLogo O_HeaderShortcutsLogo" href="../index.html">
+        <hotkeys></hotkeys>
+      </a>
+      <div class="O_HeaderShortcutsSwitch">
+        <system-switch></system-switch>
+      </div>
+      <div class="O_HeaderShortcutsMenu">
+        <menu-shortcut></menu-shortcut>
+      </div>
+    </div>
+    <div class="C_Shortcut">
+      <h2 class="A_TextMainXL">
+        <span class="Q_TextMainSelection">{{ xl_span }}</span>
+        {{ xl }}
+      </h2>
+      <div id="S_Win">
+        <div class="{{ win_class }}">
+          <keyboard-win></keyboard-win>
+        </div>
+        <h1 class="A_TextMainL">
+          {{ l_start }}
+          <span class="Q_TextMainSelection">{{ l_win_first }}</span>
+          {{ l_center }}
+          <span class="Q_TextMainSelection">{{ l_win_second }}</span>
+          {{ l_end }}
+        </h1>
+      </div>
+      <div id="S_Mac">
+        <div class="{{ mac_class }}">
+          <keyboard-mac></keyboard-mac>
+        </div>
+        <h1 class="A_TextMainL">
+          {{ l_start }}
+          <span class="Q_TextMainSelection">{{ l_mac_first }}</span>
+          {{ l_center }}
+          <span class="Q_TextMainSelection">{{ l_mac_second }}</span>
+          {{ l_end }}
+        </h1>
+      </div>
+    </div>
+  </body>
+</html>
