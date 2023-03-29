@@ -15,3 +15,43 @@
     font-size: rem(18);
   }
 }
+
+//*? Selection pages
+
+.O_NavBar {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  gap: rem(10);
+}
+
+.M_ButtonSelectionsBack {
+  @include itemGrid;
+  width: rem(56);
+  height: rem(56);
+  border: 1.5px solid var(--grey);
+  border-radius: 5px;
+
+  &:hover {
+    .A_ButtonBackSVG {
+      .Q_ButtonIcon {
+        fill: var(--green);
+      }
+    }
+  }
+
+  .A_ButtonBackSVG {
+    width: rem(27);
+    height: rem(29);
+
+    .Q_ButtonIcon {
+      fill: var(--white);
+    }
+  }
+}
+
+.Q_ShortcutWindows,
+.Q_ShortcutMacos {
+  display: none;
+}
