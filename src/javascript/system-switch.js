@@ -3,10 +3,15 @@ import Cookies from 'js-cookie'
 document.addEventListener('DOMContentLoaded', () => {
   const isMac = navigator.userAgent.toLowerCase().includes('macintosh')
 
+  //*? shortcut pages
   const macEl = document.getElementById('S_Mac')
   const winEl = document.getElementById('S_Win')
   const macBtn = document.querySelector('#mac')
   const winBtn = document.querySelector('#win')
+
+  //*? selection pages
+  const macShortcut = document.querySelectorAll('.Q_ShortcutWindows')
+  const winShortcut = document.querySelectorAll('.Q_ShortcutMacos')
 
   if (isMac) {
     Cookies.set('os', 'macos')
@@ -16,37 +21,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const osCookie = Cookies.get('os')
 
-  if (osCookie === 'macos') {
-  } else {
+  const setActiveButton = (activeBtn, inactiveBtn) => {
+    activeBtn.classList.add('_Active')
+    inactiveBtn.classList.remove('_Active')
+  }
+
+  const showElement = (elementToShow, elementToHide) => {
+    if (elementToShow && elementToHide) {
+      elementToShow.style.display = 'block'
+      elementToHide.style.display = 'none'
+    }
   }
 
   if (osCookie === 'macos') {
-    if (macEl) macEl.style.display = 'block'
-    if (macBtn) {
-      macBtn.classList.add('_Active')
+    showElement(macEl, winEl)
+    setActiveButton(macBtn, winBtn)
+
+    if (winShortcut.length > 0 && macShortcut.length > 0) {
+      winShortcut.forEach((el) => (el.style.display = 'block'))
+      macShortcut.forEach((el) => (el.style.display = 'none'))
     }
   } else {
-    if (winEl) winEl.style.display = 'block'
-    if (winBtn) {
-      winBtn.classList.add('_Active')
+    showElement(winEl, macEl)
+    setActiveButton(winBtn, macBtn)
+
+    if (winShortcut.length > 0 && macShortcut.length > 0) {
+      winShortcut.forEach((el) => (el.style.display = 'none'))
+      macShortcut.forEach((el) => (el.style.display = 'block'))
     }
   }
 
   winBtn?.addEventListener('click', () => {
-    if (macEl && winEl) {
-      winEl.style.display = 'block'
-      macEl.style.display = 'none'
+    showElement(winEl, macEl)
+    setActiveButton(winBtn, macBtn)
+
+    if (winShortcut.length > 0 && macShortcut.length > 0) {
+      winShortcut.forEach((el) => (el.style.display = 'none'))
+      macShortcut.forEach((el) => (el.style.display = 'block'))
     }
-    winBtn.classList.toggle('_Active')
-    macBtn.classList.toggle('_Active')
   })
 
   macBtn?.addEventListener('click', () => {
-    if (macEl && winEl) {
-      macEl.style.display = 'block'
-      winEl.style.display = 'none'
+    showElement(macEl, winEl)
+    setActiveButton(macBtn, winBtn)
+
+    if (winShortcut.length > 0 && macShortcut.length > 0) {
+      winShortcut.forEach((el) => (el.style.display = 'block'))
+      macShortcut.forEach((el) => (el.style.display = 'none'))
     }
-    macBtn.classList.toggle('_Active')
-    winBtn.classList.toggle('_Active')
   })
 })

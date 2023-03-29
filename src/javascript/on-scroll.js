@@ -8,14 +8,16 @@ function onEntry(entry) {
   })
 }
 
-let options = {
-  threshold: [0.5],
-}
-let observer = new IntersectionObserver(onEntry, options)
-let elements = document.querySelectorAll('.A_TextUnique')
+function observeElementsOnScroll() {
+  const options = {
+    threshold: [0.5],
+  }
+  const observer = new IntersectionObserver(onEntry, options)
+  const elements = document.querySelectorAll('.A_TextUnique')
 
-for (let elm of elements) {
-  observer.observe(elm)
+  for (let elm of elements) {
+    observer.observe(elm)
+  }
 }
 
-console.warn('A_TextUnique')
+document.addEventListener('DOMContentLoaded', observeElementsOnScroll)
