@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: rem(240);
+    height: rem(270);
     border-radius: 5px;
     border: 1.5px solid var(--grey);
     cursor: help;
@@ -133,12 +133,19 @@
   }
 }
 
+@media (min-width: 2048px) {
+  .C_TeamItems {
+    width: 50%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 1770px) {
   .C_TeamItems {
     grid-template-columns: repeat(3, 1fr);
 
     .O_Item {
-      height: rem(200);
+      height: rem(240);
     }
   }
 }
