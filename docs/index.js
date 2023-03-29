@@ -140,24 +140,26 @@ var api = init(defaultConverter, { path: '/' });
 
 ;// CONCATENATED MODULE: ./src/javascript/modal.js
 
-var modal = document.getElementById('modal');
-var modalButton = document.getElementById('modalButton');
+document.addEventListener('DOMContentLoaded', function () {
+  var modal = document.getElementById('modal');
+  var modalButton = document.getElementById('modalButton');
 
-if (modal !== null && modal !== void 0 && modal.style && modalButton) {
-  if (!js_cookie.get('modal')) {
-    js_cookie.set('modal', true);
-    setTimeout(function () {
-      modal.style.display = 'flex';
-    }, 1500);
+  if (modal !== null && modal !== void 0 && modal.style && modalButton) {
+    var closeModal = function closeModal() {
+      modal.style.display = 'none';
+    };
+
+    if (!js_cookie.get('modal')) {
+      js_cookie.set('modal', true);
+      setTimeout(function () {
+        modal.style.display = 'flex';
+      }, 1500);
+    }
+
+    modalButton.addEventListener('click', closeModal);
+    modal.addEventListener('click', closeModal);
   }
-
-  modalButton.addEventListener('click', function () {
-    modal.style.display = 'none';
-  });
-  modal.addEventListener('click', function () {
-    modal.style.display = 'none';
-  });
-}
+});
 ;// CONCATENATED MODULE: ./src/index.js
 
 

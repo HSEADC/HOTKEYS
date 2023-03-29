@@ -16,26 +16,28 @@ function onEntry(entry) {
   });
 }
 
-var options = {
-  threshold: [0.5]
-};
-var observer = new IntersectionObserver(onEntry, options);
-var elements = document.querySelectorAll('.A_TextUnique');
+function observeElementsOnScroll() {
+  var options = {
+    threshold: [0.5]
+  };
+  var observer = new IntersectionObserver(onEntry, options);
+  var elements = document.querySelectorAll('.A_TextUnique');
 
-var _iterator = _createForOfIteratorHelper(elements),
-    _step;
+  var _iterator = _createForOfIteratorHelper(elements),
+      _step;
 
-try {
-  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-    var elm = _step.value;
-    observer.observe(elm);
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var elm = _step.value;
+      observer.observe(elm);
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
   }
-} catch (err) {
-  _iterator.e(err);
-} finally {
-  _iterator.f();
 }
 
-console.warn('A_TextUnique');
+document.addEventListener('DOMContentLoaded', observeElementsOnScroll);
 /******/ })()
 ;

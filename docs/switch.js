@@ -141,11 +141,15 @@ var api = init(defaultConverter, { path: '/' });
 ;// CONCATENATED MODULE: ./src/javascript/system-switch.js
 
 document.addEventListener('DOMContentLoaded', function () {
-  var isMac = navigator.userAgent.toLowerCase().includes('macintosh');
+  var isMac = navigator.userAgent.toLowerCase().includes('macintosh'); //*? shortcut pages
+
   var macEl = document.getElementById('S_Mac');
   var winEl = document.getElementById('S_Win');
   var macBtn = document.querySelector('#mac');
-  var winBtn = document.querySelector('#win');
+  var winBtn = document.querySelector('#win'); //*? selection pages
+
+  var macShortcut = document.querySelectorAll('.Q_ShortcutWindows');
+  var winShortcut = document.querySelectorAll('.Q_ShortcutMacos');
 
   if (isMac) {
     js_cookie.set('os', 'macos');
@@ -155,39 +159,69 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var osCookie = js_cookie.get('os');
 
-  if (osCookie === 'macos') {} else {}
+  var setActiveButton = function setActiveButton(activeBtn, inactiveBtn) {
+    activeBtn.classList.add('_Active');
+    inactiveBtn.classList.remove('_Active');
+  };
+
+  var showElement = function showElement(elementToShow, elementToHide) {
+    if (elementToShow && elementToHide) {
+      elementToShow.style.display = 'block';
+      elementToHide.style.display = 'none';
+    }
+  };
 
   if (osCookie === 'macos') {
-    if (macEl) macEl.style.display = 'block';
+    showElement(macEl, winEl);
+    setActiveButton(macBtn, winBtn);
 
-    if (macBtn) {
-      macBtn.classList.add('_Active');
+    if (winShortcut.length > 0 && macShortcut.length > 0) {
+      winShortcut.forEach(function (el) {
+        return el.style.display = 'block';
+      });
+      macShortcut.forEach(function (el) {
+        return el.style.display = 'none';
+      });
     }
   } else {
-    if (winEl) winEl.style.display = 'block';
+    showElement(winEl, macEl);
+    setActiveButton(winBtn, macBtn);
 
-    if (winBtn) {
-      winBtn.classList.add('_Active');
+    if (winShortcut.length > 0 && macShortcut.length > 0) {
+      winShortcut.forEach(function (el) {
+        return el.style.display = 'none';
+      });
+      macShortcut.forEach(function (el) {
+        return el.style.display = 'block';
+      });
     }
   }
 
   winBtn === null || winBtn === void 0 ? void 0 : winBtn.addEventListener('click', function () {
-    if (macEl && winEl) {
-      winEl.style.display = 'block';
-      macEl.style.display = 'none';
-    }
+    showElement(winEl, macEl);
+    setActiveButton(winBtn, macBtn);
 
-    winBtn.classList.toggle('_Active');
-    macBtn.classList.toggle('_Active');
+    if (winShortcut.length > 0 && macShortcut.length > 0) {
+      winShortcut.forEach(function (el) {
+        return el.style.display = 'none';
+      });
+      macShortcut.forEach(function (el) {
+        return el.style.display = 'block';
+      });
+    }
   });
   macBtn === null || macBtn === void 0 ? void 0 : macBtn.addEventListener('click', function () {
-    if (macEl && winEl) {
-      macEl.style.display = 'block';
-      winEl.style.display = 'none';
-    }
+    showElement(macEl, winEl);
+    setActiveButton(macBtn, winBtn);
 
-    macBtn.classList.toggle('_Active');
-    winBtn.classList.toggle('_Active');
+    if (winShortcut.length > 0 && macShortcut.length > 0) {
+      winShortcut.forEach(function (el) {
+        return el.style.display = 'block';
+      });
+      macShortcut.forEach(function (el) {
+        return el.style.display = 'none';
+      });
+    }
   });
 });
 /******/ })()
