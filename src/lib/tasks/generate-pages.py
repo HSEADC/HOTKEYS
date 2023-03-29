@@ -1,7 +1,7 @@
 import json
 from jinja2 import Environment, FileSystemLoader
 
-with open('src/lib/data/hotkeys.json', 'r') as f:
+with open('src/lib/data/hotkeys.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 env = Environment(loader=FileSystemLoader('src/lib/tasks/templates'))
@@ -11,8 +11,6 @@ template = env.get_template('shortcut.html')
 for shortcuts in data:
     context = {
         'title': f"{shortcuts['page_title']} - HOTKEYS",
-        'description': shortcuts['page_description'],
-        'keywords': shortcuts['page_keywords'],
         'win_class': shortcuts['page_win'],
         'mac_class': shortcuts['page_mac'],
         'xl_span': shortcuts['page_xl_span'],
@@ -27,6 +25,11 @@ for shortcuts in data:
     }
     output = template.render(context)
 
-    with open(f"src/shortcuts/{shortcuts['link']}.html", 'w') as f:
+    with open(f"src/shortcuts/{shortcuts['link']}.html", 'w', encoding='utf-8') as f:
         f.write(output)
+
+
+
+
+...
 

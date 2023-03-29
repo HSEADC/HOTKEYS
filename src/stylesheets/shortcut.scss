@@ -1,5 +1,5 @@
 .C_Shortcut {
-  margin: 0 auto;
+  margin-top: clamp(1rem, 2.5vw, 5rem);
   width: 100%;
 
   .Q_TextMainSelection {
@@ -17,7 +17,7 @@
 #S_Win,
 #S_Mac {
   .O_Keyboard {
-    margin: 4.5rem auto 3rem;
+    margin: 4.5rem 0 3rem;
   }
 
   .A_TextMainXL {
@@ -28,6 +28,31 @@
   .A_TextMainL {
     max-width: 90%;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 2560px) {
+  .C_Shortcut {
+    margin-top: clamp(10rem, 11vw, 12.5rem);
+  }
+}
+
+@media (max-width: 656px) {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      width: 95%;
+    }
+  }
+
+  .A_TextMainXL {
+    width: 85%;
+  }
+
+  #S_Win,
+  #S_Mac {
+    .O_Keyboard {
+      margin: clamp(10rem, 12.5vw, 14rem) 0;
+    }
   }
 }
 
