@@ -1,0 +1,29 @@
+[
+  {
+    "filename": "switch-between-programs.html",
+    "title": "title",
+    "xl-span": "text span xl",
+    "xl": "text xl",
+    "win": "shortcut winda",
+    "mac": "shortcut macos",
+    "l": "text l"
+  },
+  {
+    "filename": "hide-open-program.html",
+    "title": "title",
+    "xl-span": "text span xl",
+    "xl": "text xl",
+    "win": "shortcut winda",
+    "mac": "shortcut macos",
+    "l": "text l"
+  },
+  {
+    "filename": "open-clipboard.html",
+    "title": "title",
+    "xl-span": "text span xl",
+    "xl": "text xl",
+    "win": "shortcut winda",
+    "mac": "shortcut macos",
+    "l": "text l"
+  }
+]
