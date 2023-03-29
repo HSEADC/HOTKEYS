@@ -14,7 +14,7 @@ html = ''
 for d in hotkeys:
     html += f"""
         <div class="M_ShortcutCard Render">
-            <a href="{d['link']}">
+            <a href="shortcuts/{d['link']}.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">{d['selected']} </span> {d['text']}</h1>
                 <h2 class="A_CardKey">Windows: {d['windows']}, MacOS: {d['macos']}</h2>
             </a>

@@ -180,7 +180,7 @@ export default class Shortcuts extends Component {
             {filteredHotkeys
               .sort(() => Math.random() - 0.5)
               .map((hotkey, index) => (
-                <a href={hotkey.link} key={index}>
+                <a href={'shortcuts/' + hotkey.link + '.html'} key={index}>
                   <div className="M_ShortcutCard">
                     <h1 className="A_CardName">
                       <span className="Q_TextSelection">{hotkey.selected} </span>
