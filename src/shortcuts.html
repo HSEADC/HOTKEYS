@@ -35,7 +35,7 @@
     <div id="A_UpTarget"></div>
     <div id="reactShortcuts"></div>
     <div id="PYTHON_GENERATED">
-      <div id="loadingLogo" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">
+      <div id="loadingLogo" class="A_LoadingLogo">
         <hotkeys></hotkeys>
       </div>
       <div class="S_Shortcuts">
@@ -55,7 +55,7 @@
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/minimizing-all-open-windows.html">
+            <a href="shortcuts/open-clipboard.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Открытие </span> буфера обмена</h1>
                 <h2 class="A_CardKey">Windows: Win+V, MacOS: Cmd+Ctrl+Shift+V</h2>
             </a>
@@ -76,7 +76,7 @@
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/undo-last-action.html">
+            <a href="shortcuts/redo-undo-last-action.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Отмена </span> последнего отмененного действия</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+SHift+Z, MacOS: Cmd+Shift+Z</h2>
             </a>
@@ -181,28 +181,28 @@
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/vscode-find-replace.html">
+            <a href="shortcuts/vscode-find-selected.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Поиск </span> выбранного фрагмента</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+F, MacOS: Cmd+F</h2>
             </a>
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/vscode-find-replace.html">
+            <a href="shortcuts/vscode-find-replace-selected.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Замена </span> выбранного фрагмента</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+H, MacOS: Cmd+H</h2>
             </a>
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/vscode-find-replace.html">
+            <a href="shortcuts/vscode-find-all-project.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Поиск </span> выбранного фрагмента по всему проекту</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+Shift+F, MacOS: Cmd+Shift+F</h2>
             </a>
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/vscode-find-replace.html">
+            <a href="shortcuts/vscode-find-replace-all-project.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Замена </span> выбранного фрагмента  по всему проекту</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+Shift+H, MacOS: Cmd+Shift+H</h2>
             </a>
@@ -230,14 +230,14 @@
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/browser-open-new-tab.html">
+            <a href="shortcuts/browser-open-new-window.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Открыть </span> новое окно</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+N, MacOS: Cmd+N</h2>
             </a>
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/browser-open-new-tab.html">
+            <a href="shortcuts/browser-open-new-incognito-window.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Открыть </span> новое окно икогнито</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+Shift+N, MacOS: Cmd+Shift+N</h2>
             </a>
@@ -251,14 +251,14 @@
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/browser-reopen-closed-tab.html">
+            <a href="shortcuts/browser-undo-closed-tab.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Восстановить </span> закрытую вкладку</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+Shift+T, MacOS: Cmd+Shift+T</h2>
             </a>
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/browser-switch-tab.html">
+            <a href="shortcuts/browser-next-tab.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Переключение </span> между вкладками</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+Tab, MacOS: Cmd+Option+ →</h2>
             </a>
@@ -287,13 +287,6 @@
     
         <div class="M_ShortcutCard Render">
             <a href="shortcuts/figma-group-layers.html">
-                <h1 class="A_CardName"><span class="Q_TextSelection">Сгрупировать </span> выделенные элементы во фрейм</h1>
-                <h2 class="A_CardKey">Windows: Ctrl+Alt+G, MacOS: Cmd+Option+G</h2>
-            </a>
-        </div>
-    
-        <div class="M_ShortcutCard Render">
-            <a href="shortcuts/figma-group-layers.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Сгрупировать </span> выделенные элементы в группу</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+G, MacOS: Cmd+G</h2>
             </a>
@@ -307,35 +300,42 @@
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/duplicate-selection.html">
+            <a href="shortcuts/figma-frame-layers.html">
+                <h1 class="A_CardName"><span class="Q_TextSelection">Сгрупировать </span> выделенные элементы во фрейм</h1>
+                <h2 class="A_CardKey">Windows: Ctrl+Alt+G, MacOS: Cmd+Option+G</h2>
+            </a>
+        </div>
+    
+        <div class="M_ShortcutCard Render">
+            <a href="shortcuts/figma-duplicate-selection.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Дубликовать </span> выделенные элементы</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+D, MacOS: Cmd+D</h2>
             </a>
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/duplicate-selection.html">
+            <a href="shortcuts/figma-hide-ui.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Скрыть </span> пользовательский интерфейс</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+\, MacOS: Cmd+\</h2>
             </a>
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/duplicate-selection.html">
+            <a href="shortcuts/figma-hide-layers.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Скрыть </span> интерфейс панели слоев</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+Shift+/, MacOS: Cmd+Shift+/</h2>
             </a>
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/duplicate-selection.html">
+            <a href="shortcuts/figma-pick-color.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Получить </span> цвет у элемета из файла</h1>
                 <h2 class="A_CardKey">Windows: I, MacOS: I</h2>
             </a>
         </div>
     
         <div class="M_ShortcutCard Render">
-            <a href="shortcuts/duplicate-selection.html">
+            <a href="shortcuts/figma-command-palette.html">
                 <h1 class="A_CardName"><span class="Q_TextSelection">Открыть </span> панель быстрых действий</h1>
                 <h2 class="A_CardKey">Windows: Ctrl+/, MacOS: Cmd+/</h2>
             </a>

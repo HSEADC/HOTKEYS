@@ -24,7 +24,7 @@
     "target": "system"
   },
   {
-    "link": "shortcuts/minimizing-all-open-windows.html",
+    "link": "shortcuts/open-clipboard.html",
     "selected": "Открытие",
     "text": "буфера обмена",
     "windows": "Win+V",
@@ -60,7 +60,7 @@
     "target": "system"
   },
   {
-    "link": "shortcuts/undo-last-action.html",
+    "link": "shortcuts/redo-undo-last-action.html",
     "selected": "Отмена",
     "text": "последнего отмененного действия",
     "windows": "Ctrl+SHift+Z",
@@ -264,7 +264,7 @@
     "target": "vs-code"
   },
   {
-    "link": "shortcuts/vscode-find-replace.html",
+    "link": "shortcuts/vscode-find-all-project.html",
     "selected": "Поиск",
     "text": "выбранного фрагмента по всему проекту",
     "windows": "Ctrl+Shift+F",
@@ -276,7 +276,7 @@
     "target": "vs-code"
   },
   {
-    "link": "shortcuts/vscode-find-replace.html",
+    "link": "shortcuts/vscode-find-replace-all-project.html",
     "selected": "Замена",
     "text": "выбранного фрагмента  по всему проекту",
     "windows": "Ctrl+Shift+H",
@@ -324,7 +324,7 @@
     "target": "vs-code"
   },
   {
-    "link": "shortcuts/browser-open-new-tab.html",
+    "link": "shortcuts/browser-open-new-window.html",
     "selected": "Открыть",
     "text": "новое окно",
     "windows": "Ctrl+N",
@@ -336,7 +336,7 @@
     "target": "browser"
   },
   {
-    "link": "shortcuts/browser-open-new-tab.html",
+    "link": "shortcuts/browser-open-new-incognito-window.html",
     "selected": "Открыть",
     "text": "новое окно икогнито",
     "windows": "Ctrl+Shift+N",
@@ -360,7 +360,7 @@
     "target": "browser"
   },
   {
-    "link": "shortcuts/browser-reopen-closed-tab.html",
+    "link": "shortcuts/browser-undo-closed-tab.html",
     "selected": "Восстановить",
     "text": "закрытую вкладку",
     "windows": "Ctrl+Shift+T",
@@ -372,7 +372,7 @@
     "target": "browser"
   },
   {
-    "link": "shortcuts/browser-switch-tab.html",
+    "link": "shortcuts/browser-next-tab.html",
     "selected": "Переключение",
     "text": "между вкладками",
     "windows": "Ctrl+Tab",
@@ -444,7 +444,7 @@
     "target": "figma"
   },
   {
-    "link": "shortcuts/figma-group-layers.html",
+    "link": "shortcuts/figma-frame-layers.html",
     "selected": "Сгрупировать",
     "text": "выделенные элементы во фрейм",
     "windows": "Ctrl+Alt+G",
@@ -456,7 +456,7 @@
     "target": "figma"
   },
   {
-    "link": "shortcuts/duplicate-selection.html",
+    "link": "shortcuts/figma-duplicate-selection.html",
     "selected": "Дубликовать",
     "text": "выделенные элементы",
     "windows": "Ctrl+D",
@@ -468,7 +468,7 @@
     "target": "figma"
   },
   {
-    "link": "shortcuts/duplicate-selection.html",
+    "link": "shortcuts/figma-hide-ui.html",
     "selected": "Скрыть",
     "text": "пользовательский интерфейс",
     "windows": "Ctrl+\\",
@@ -480,7 +480,7 @@
     "target": "figma"
   },
   {
-    "link": "shortcuts/duplicate-selection.html",
+    "link": "shortcuts/figma-hide-layers.html",
     "selected": "Скрыть",
     "text": "интерфейс панели слоев",
     "windows": "Ctrl+Shift+/",
@@ -492,7 +492,7 @@
     "target": "figma"
   },
   {
-    "link": "shortcuts/duplicate-selection.html",
+    "link": "shortcuts/figma-pick-color.html",
     "selected": "Получить",
     "text": "цвет у элемета из файла",
     "windows": "I",
@@ -504,7 +504,7 @@
     "target": "figma"
   },
   {
-    "link": "shortcuts/duplicate-selection.html",
+    "link": "shortcuts/figma-command-palette.html",
     "selected": "Открыть",
     "text": "панель быстрых действий",
     "windows": "Ctrl+/",

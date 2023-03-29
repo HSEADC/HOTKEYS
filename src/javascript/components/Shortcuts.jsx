@@ -7,8 +7,7 @@ import {faSearch, faTimes} from '@fortawesome/free-solid-svg-icons'
 import TriangleDown from '../../images/triangle.svg'
 
 import {colorStyles, green, black, lightBlack} from './SelectStyle'
-import hotkeys from './hotkeys.json'
-
+import hotkeys from '../../lib/data/hotkeys.json'
 export default class Shortcuts extends Component {
   state = {
     system: Cookies.get('os') === 'macos' ? 'macos' : 'windows',

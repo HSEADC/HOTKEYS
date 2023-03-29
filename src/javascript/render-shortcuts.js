@@ -1,5 +1,5 @@
 const {spawn} = require('child_process')
-const pyFile = spawn('python', ['src/javascript/components/shortcuts.py'])
+const pyFile = spawn('python', ['src/lib/tasks/render-shortcuts.py'])
 
 pyFile.stdout.on('data', (data) => {
   console.log(`stdout: ${data}`)
