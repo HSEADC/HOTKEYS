@@ -4,6 +4,7 @@
 
   .A_KeyboardSVG {
     width: 77.5vw;
+    transform: skewX(-7deg);
   }
 }
 
@@ -11,7 +12,7 @@
   .O_Keyboard {
     .A_KeyboardSVG {
       overflow: visible;
-      width: 95vw;
+      width: 90vw;
     }
   }
 }
