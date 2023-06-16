@@ -1,11 +1,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
-var __webpack_exports__ = {};
+/******/ 	var __webpack_modules__ = ({
 
-;// CONCATENATED MODULE: ./node_modules/js-cookie/dist/js.cookie.mjs
+/***/ 955:
+/***/ (() => {
+
 /*! js-cookie v3.0.1 | MIT */
 /* eslint-disable no-var */
-function js_cookie_assign (target) {
+function assign (target) {
   for (var i = 1; i < arguments.length; i++) {
     var source = arguments[i];
     for (var key in source) {
@@ -41,7 +43,7 @@ function init (converter, defaultAttributes) {
       return
     }
 
-    attributes = js_cookie_assign({}, defaultAttributes, attributes);
+    attributes = assign({}, defaultAttributes, attributes);
 
     if (typeof attributes.expires === 'number') {
       attributes.expires = new Date(Date.now() + attributes.expires * 864e5);
@@ -114,16 +116,16 @@ function init (converter, defaultAttributes) {
         set(
           key,
           '',
-          js_cookie_assign({}, attributes, {
+          assign({}, attributes, {
             expires: -1
           })
         );
       },
       withAttributes: function (attributes) {
-        return init(this.converter, js_cookie_assign({}, this.attributes, attributes))
+        return init(this.converter, assign({}, this.attributes, attributes))
       },
       withConverter: function (converter) {
-        return init(js_cookie_assign({}, this.converter, converter), this.attributes)
+        return init(assign({}, this.converter, converter), this.attributes)
       }
     },
     {
@@ -136,11 +138,63 @@ function init (converter, defaultAttributes) {
 var api = init(defaultConverter, { path: '/' });
 /* eslint-enable no-var */
 
-/* harmony default export */ const js_cookie = (api);
+/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((/* unused pure expression or super */ null && (api)));
 
-;// CONCATENATED MODULE: ./src/javascript/system-switch.js
 
-document.addEventListener('DOMContentLoaded', function () {
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+/* unused harmony export systemSwitch */
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(955);
+
+function systemSwitch() {
   var isMac = navigator.userAgent.toLowerCase().includes('macintosh'); //*? shortcut pages
 
   var macEl = document.getElementById('S_Mac');
@@ -152,12 +206,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var winShortcut = document.querySelectorAll('.Q_ShortcutMacos');
 
   if (isMac) {
-    js_cookie.set('os', 'macos');
+    Cookies.set('os', 'macos');
   } else {
-    js_cookie.set('os', 'windows');
+    Cookies.set('os', 'windows');
   }
 
-  var osCookie = js_cookie.get('os');
+  var osCookie = Cookies.get('os');
 
   var setActiveButton = function setActiveButton(activeBtn, inactiveBtn) {
     activeBtn.classList.add('_Active');
@@ -223,6 +277,8 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   });
-});
+}
+})();
+
 /******/ })()
 ;
