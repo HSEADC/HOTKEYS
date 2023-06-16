@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie'
 
-document.addEventListener('DOMContentLoaded', () => {
+export function modal() {
   const modal = document.getElementById('modal')
   const modalButton = document.getElementById('modalButton')
 
@@ -20,4 +20,4 @@ document.addEventListener('DOMContentLoaded', () => {
     modalButton.addEventListener('click', closeModal)
     modal.addEventListener('click', closeModal)
   }
-})
+}

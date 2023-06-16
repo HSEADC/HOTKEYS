@@ -28,14 +28,8 @@ yarn start
 yarn build
 ```
 
-5. При изменении файла <kbd>hotkeys.json</kbd> запустите пре-рендер <kbd>shortcuts.html</kbd>
+5. При изменении файла <kbd>hotkeys.json</kbd> запустите пре-рендер и генерацию страниц шорткатов <kbd>shortcuts.html</kbd>
 
 ```bash
-yarn render
-```
-
-6. При изменении файла <kbd>hotkeys.json</kbd> запустите генерацию страниц шорткатов <kbd>shortcuts/..</kbd>
-
-```bash
-yarn generate
+yarn render && yarn generate
 ```

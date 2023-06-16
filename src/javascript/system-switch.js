@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie'
 
-document.addEventListener('DOMContentLoaded', () => {
+export function systemSwitch() {
   const isMac = navigator.userAgent.toLowerCase().includes('macintosh')
 
   //*? shortcut pages
@@ -70,4 +70,4 @@ document.addEventListener('DOMContentLoaded', () => {
       macShortcut.forEach((el) => (el.style.display = 'none'))
     }
   })
-})
+}

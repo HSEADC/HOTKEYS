@@ -8,7 +8,7 @@ function onEntry(entry) {
   })
 }
 
-function observeElementsOnScroll() {
+export function onScroll() {
   const options = {
     threshold: [0.5],
   }
@@ -19,5 +19,3 @@ function observeElementsOnScroll() {
     observer.observe(elm)
   }
 }
-
-document.addEventListener('DOMContentLoaded', observeElementsOnScroll)
