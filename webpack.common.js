@@ -8,9 +8,9 @@ const webpack = require('webpack')
 const path = require('path')
 
 const pages = [
-  {name: 'index', chunks: ['index', 'on_scroll']},
+  {name: 'index', chunks: ['index']},
   {name: 'about', chunks: ['index']},
-  {name: 'styleguide', chunks: ['index', 'on_scroll']},
+  {name: 'styleguide', chunks: ['index']},
   {name: 'selections', chunks: ['index']},
   {name: 'selections/top-5-documents-shortcuts', chunks: ['index', 'switch']},
   {name: 'selections/simple-browser-shortcuts', chunks: ['index', 'switch']},
@@ -79,7 +79,6 @@ const partials = [
 module.exports = {
   entry: {
     index: './src/index.js',
-    on_scroll: './src/javascript/on-scroll.js',
     shortcuts: './src/shortcuts.jsx',
     switch: './src/javascript/system-switch.js',
   },
