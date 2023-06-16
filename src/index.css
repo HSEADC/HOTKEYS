@@ -1,9 +1,8 @@
 /* basics files to reset and to upload */
 
-@import url('https://bozzhik.ru/css/reboot.css');
+@import 'stylesheets/global/reboot.scss';
 @import 'stylesheets/global/basics.scss';
 @import 'stylesheets/global/vars.scss';
-@import 'stylesheets/global/fonts.scss';
 
 /* page css styles */
 
