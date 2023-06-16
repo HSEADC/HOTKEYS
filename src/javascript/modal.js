@@ -5,14 +5,12 @@ const modalButton = document.getElementById('modalButton')
 
 const cookiesModal = Cookies.get('modal')
 
-if (modal && modalButton) {
-  if (!cookiesModal) {
-    Cookies.set('modal', true)
+if (modal && !cookiesModal) {
+  Cookies.set('modal', true)
 
-    setTimeout(() => {
-      modal.style.display = 'flex'
-    }, 1500)
-  }
+  setTimeout(() => {
+    modal.style.display = 'flex'
+  }, 1500)
 
   function closeModal() {
     modal.style.display = 'none'
