@@ -1,8 +1,8 @@
-export const green = '#cbfb45'
-export const black = '#0c0c0c'
-export const lightBlack = '#1a1a1a'
+const green = '#cbfb45'
+const black = '#0c0c0c'
+const lightBlack = '#1a1a1a'
 
-export const colorStyles = {
+export const selectStyles = {
   control: (styles, {isFocused}) => ({
     ...styles,
     backgroundColor: 'transparent',

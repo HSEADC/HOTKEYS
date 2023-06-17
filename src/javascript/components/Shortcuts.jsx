@@ -7,7 +7,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faSearch, faTimes} from '@fortawesome/free-solid-svg-icons'
 import TriangleDown from '../../images/triangle.svg'
 
-import {colorStyles, green, black, lightBlack} from './SelectStyle'
+import {selectStyles} from './selectStyles'
 import hotkeys from '../../lib/data/hotkeys.json'
 export default class Shortcuts extends Component {
   constructor(props) {
@@ -101,10 +101,8 @@ export default class Shortcuts extends Component {
       if (selectedProgramOption && hotkey.target !== selectedProgramOption.value) {
         return false
       }
-      if (selectedMainOption) {
-        if (hotkey[selectedMainOption.value] !== true) {
-          return false
-        }
+      if (selectedMainOption && !hotkey[selectedMainOption.value]) {
+        return false
       }
       return true
     })
@@ -155,8 +153,8 @@ export default class Shortcuts extends Component {
             </div>
             <div className="S_Filters">
               <div className="C_SelectBar">
-                <Select options={programOptions} value={selectedProgramOption} onChange={handleProgramChange} styles={colorStyles} components={{DropdownIndicator}} placeholder="Все шорткаты" />
-                <Select options={mainOptions} value={selectedMainOption} onChange={handleMainChange} styles={colorStyles} components={{DropdownIndicator}} placeholder="Сортировка" />
+                <Select options={programOptions} value={selectedProgramOption} onChange={handleProgramChange} styles={selectStyles} components={{DropdownIndicator}} placeholder="Все шорткаты" />
+                <Select options={mainOptions} value={selectedMainOption} onChange={handleMainChange} styles={selectStyles} components={{DropdownIndicator}} placeholder="Сортировка" />
               </div>
               <div className="M_ResetFilter" onClick={this.handleReset}>
                 <span className="A_ResetText">Сбросить</span>
