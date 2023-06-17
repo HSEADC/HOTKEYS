@@ -44,6 +44,7 @@ export default class Shortcuts extends Component {
       selectedProgramOption: null,
       selectedMainOption: null,
       system: Cookies.get('os') === 'macos' ? 'macos' : 'windows',
+      searchQuery: '',
     })
   }
 
@@ -153,7 +154,7 @@ export default class Shortcuts extends Component {
                 <Select options={programOptions} value={selectedProgramOption} onChange={handleProgramChange} styles={selectStyles} components={{DropdownIndicator}} placeholder="Все шорткаты" />
                 <Select options={mainOptions} value={selectedMainOption} onChange={handleMainChange} styles={selectStyles} components={{DropdownIndicator}} placeholder="Сортировка" />
               </div>
-              <div className="M_ResetFilter" onClick={this.handleReset}>
+              <div className="M_ResetFilter" onClick={this.handleReset} style={{display: searchQuery || selectedProgramOption || selectedMainOption ? 'block' : 'none'}}>
                 <span className="A_ResetText">Сбросить</span>
                 <FontAwesomeIcon icon={faTimes} className="A_ResetIcon" />
               </div>
