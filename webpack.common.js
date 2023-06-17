@@ -74,6 +74,7 @@ const partials = [
   'keyboard-mac',
   'modal',
   'footer',
+  'snack-bar'
 ]
 
 module.exports = {
