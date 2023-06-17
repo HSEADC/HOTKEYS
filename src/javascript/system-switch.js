@@ -34,24 +34,34 @@ const setSystemAndElements = (system) => {
   }
 }
 
+const setKeyboard = (elementToShow, elementToHide) => {
+  elementToShow.style.borderRadius = '21px'
+  elementToHide.style.borderRadius = '0px'
+}
+
+const handleButtonClick = (system) => {
+  setSystemAndElements(system)
+  if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+    const macKeyboard = macEl.querySelector('.O_Keyboard')
+    const winKeyboard = winEl.querySelector('.O_Keyboard')
+
+    setKeyboard(macKeyboard, winKeyboard)
+  }
+}
+
 if (!cookiesSystem) {
   const system = isMac ? 'macos' : 'windows'
   Cookies.set('system', system)
-  setSystemAndElements(system)
+
+  handleButtonClick(system)
 } else {
   setSystemAndElements(cookiesSystem)
 }
 
 winBtn?.addEventListener('click', () => {
-  showElement(winEl, macEl)
-  setActiveButton(winBtn, macBtn)
-  winShortcut.forEach((el) => (el.style.display = 'none'))
-  macShortcut.forEach((el) => (el.style.display = 'block'))
+  handleButtonClick('windows')
 })
 
 macBtn?.addEventListener('click', () => {
-  showElement(macEl, winEl)
-  setActiveButton(macBtn, winBtn)
-  winShortcut.forEach((el) => (el.style.display = 'block'))
-  macShortcut.forEach((el) => (el.style.display = 'none'))
+  handleButtonClick('macos')
 })

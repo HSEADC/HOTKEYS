@@ -8,7 +8,7 @@ const webpack = require('webpack')
 const path = require('path')
 
 const pages = [
-  {name: 'index', chunks: ['index']},
+  {name: 'index', chunks: ['index', 'switch']},
   {name: 'about', chunks: ['index']},
   {name: 'styleguide', chunks: ['index']},
   {name: 'selections', chunks: ['index']},
