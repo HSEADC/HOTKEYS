@@ -4,7 +4,7 @@ import Select, {components} from 'react-select'
 import Logo from './Logo.jsx'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faSearch, faTimes} from '@fortawesome/free-solid-svg-icons'
+import {faTimes} from '@fortawesome/free-solid-svg-icons'
 import TriangleDown from '../../images/triangle.svg'
 
 import {selectStyles} from './selectStyles'
@@ -144,12 +144,9 @@ export default class Shortcuts extends Component {
           </div>
         </div>
         <div className="C_Wrapper Shortcuts">
-          <form className="S_SearchForm Shortcuts">
+          <form className="S_SearchBar Shortcuts">
             <div className="C_SearchBar">
               <input className="M_SearchInput" type="text" placeholder="Ищите сочетания клавиш" value={searchQuery} onChange={(e) => this.setState({searchQuery: e.target.value})} />
-              <div className="M_SearchButton" type="submit">
-                <FontAwesomeIcon icon={faSearch} className="A_ButtonIcon" />
-              </div>
             </div>
             <div className="S_Filters">
               <div className="C_SelectBar">

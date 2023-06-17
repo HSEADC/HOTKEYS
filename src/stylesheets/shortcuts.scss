@@ -2,6 +2,7 @@
 .S_Filters {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: rem(7.5);
 }
 
@@ -21,6 +22,7 @@
   font-size: 1.35rem;
   font-weight: 400;
   color: var(--grey);
+  cursor: pointer;
 
   &:hover {
     color: var(--green);
@@ -101,11 +103,13 @@
   .C_SelectBar,
   .S_Filters {
     gap: rem(0);
+    justify-content: start;
   }
 
   .S_Filters {
     margin: rem(10) 0 rem(10) rem(-10);
     .M_ResetFilter {
+      margin-left: 0.5rem;
       width: 0;
       .A_ResetText {
         display: none;
@@ -114,22 +118,12 @@
       .A_ResetIcon {
         margin-left: 0rem;
         color: var(--grey);
-        transform: scale(0.75);
+        transform: scale(0.8);
       }
     }
   }
 
   .M_ShortcutCard {
     height: rem(200);
-  }
-}
-
-@media (max-width: 355px) {
-  .S_Filters {
-    .M_ResetFilter {
-      .A_ResetIcon {
-        transform: scale(0.5);
-      }
-    }
   }
 }

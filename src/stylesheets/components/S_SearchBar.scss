@@ -1,4 +1,4 @@
-.S_SearchForm {
+.S_SearchBar {
   width: 100%;
 
   &.Selections {
@@ -18,14 +18,6 @@
 
     &:hover {
       outline: 1.5px solid var(--green);
-
-      .M_SearchButton {
-        .A_ButtonSVG {
-          .Q_ButtonIcon {
-            fill: var(--green);
-          }
-        }
-      }
 
       .M_SearchInput::-webkit-input-placeholder {
         color: var(--green);
@@ -48,29 +40,28 @@
         color: var(--grey);
       }
     }
+  }
+}
 
-    .M_SearchButton {
-      @include resetButton;
-      visibility: collapse;
-      margin-left: 0.45rem;
+@media (max-width: 645px) {
+  .S_SearchBar {
+    &.Shortcuts {
+      margin: rem(10) 0 rem(45);
+    }
 
-      .A_ButtonIcon {
-        color: var(--grey);
+    .C_SearchBar {
+      .M_SearchInput {
+        &[placeholder] {
+          padding-left: 0.9rem;
+          font-size: 1rem;
+        }
       }
     }
   }
 }
 
-@media (max-width: 645px) {
-  .S_SearchForm {
-    &.Shortcuts {
-      margin: rem(10) 0 rem(45);
-    }
-  }
-}
-
 @media (max-width: 355px) {
-  .S_SearchForm {
+  .S_SearchBar {
     .C_SearchBar {
       height: 2.8rem;
     }
