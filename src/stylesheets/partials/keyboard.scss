@@ -1,39 +1,37 @@
 @media screen and (max-width: 768px) {
-  .O_Keyboard {
+  .C_Shortcut {
     width: 90%;
   }
 }
 
 .C_Shortcut {
+  width: 65%;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+
+  transform: matrix(1, 0, -0.19, 0.98, 0, 0);
+
   .O_Keyboard {
-    margin: 0 auto;
-    display: grid;
-    place-items: center;
-    width: 65%;
+    margin: 2rem auto;
     padding: 0.75rem;
-    transform: matrix(1, 0, -0.19, 0.98, 0, 0);
+    width: 100%;
+    background: #1a1a1a;
+    border: 3px solid #cbfb45;
+    box-shadow: 0px 4px 250px rgba(186, 255, 42, 0.2);
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      box-shadow: none;
+    }
 
     .A_KeyboardSVG {
       width: 100%;
     }
   }
 
-  &.Index {
-    margin-top: 7rem;
-
-    .O_Keyboard {
-      background: #1a1a1a;
-      border: 3px solid #cbfb45;
-      box-shadow: 0px 4px 250px rgba(186, 255, 42, 0.2);
-    }
-  }
-}
-
-@media (max-width: 656px) {
-  .C_Shortcut {
-    &.Index {
-      margin-top: 7rem;
-
+  @media (max-width: 656px) {
+    .C_Shortcut {
       .O_Keyboard {
         padding: 0.25rem;
         border: 1.5px solid #cbfb45;
