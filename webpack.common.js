@@ -8,7 +8,7 @@ const webpack = require('webpack')
 const path = require('path')
 
 const pages = [
-  {name: 'index', chunks: ['index', 'switch']},
+  {name: 'index', chunks: ['index', 'landing']},
   {name: 'about', chunks: ['index']},
   {name: 'styleguide', chunks: ['index']},
   {name: 'selections', chunks: ['index']},
@@ -80,6 +80,7 @@ const partials = [
 module.exports = {
   entry: {
     index: './src/index.js',
+    landing: './src/javascript/landing.js',
     shortcuts: './src/shortcuts.jsx',
     switch: './src/javascript/system-switch.js',
   },
