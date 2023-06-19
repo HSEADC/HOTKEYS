@@ -1,21 +1,23 @@
 import Cookies from 'js-cookie'
 
-const modal = document.getElementById('modal')
-const modalButton = document.getElementById('modalButton')
+window.addEventListener('DOMContentLoaded', function () {
+  const modal = document.getElementById('modal')
+  const modalButton = document.getElementById('modalButton')
 
-const cookiesModal = Cookies.get('modal')
+  const cookiesModal = Cookies.get('modal')
 
-if (modal && !cookiesModal) {
-  Cookies.set('modal', true)
+  if (modal && !cookiesModal) {
+    Cookies.set('modal', true)
 
-  setTimeout(() => {
-    modal.style.display = 'flex'
-  }, 1500)
+    setTimeout(() => {
+      modal.style.display = 'flex'
+    }, 5000)
 
-  function closeModal() {
-    modal.style.display = 'none'
+    function closeModal() {
+      modal.style.display = 'none'
+    }
+
+    modalButton.addEventListener('click', closeModal)
+    modal.addEventListener('click', closeModal)
   }
-
-  modalButton.addEventListener('click', closeModal)
-  modal.addEventListener('click', closeModal)
-}
+})
