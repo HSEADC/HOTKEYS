@@ -8,9 +8,13 @@
   --gray: #3a3a3a;
   --dark-grey: #272727;
   --green: #cbfb45;
-  --black2: #1a1a1a;
+  --black2: #111111;
 
   --bg-gradient: linear-gradient(180deg, #000000 0%, #232323 100%);
+}
+
+@mixin matrix {
+  transform: matrix(1, 0, -0.19, 0.98, 0, 0);
 }
 
 @mixin itemConfig($c, $bc, $b, $br, $fs, $fw) {

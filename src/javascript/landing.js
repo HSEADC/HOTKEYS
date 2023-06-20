@@ -3,8 +3,8 @@ import Cookies from 'js-cookie'
 import {snackBar} from './snack_bar.js'
 
 window.addEventListener('DOMContentLoaded', function () {
-  const macKeyboard = document.querySelector('.A_KeyboardMac')
-  const winKeyboard = document.querySelector('.A_KeyboardWin')
+  const macKeyboard = document.querySelector('#IMG_MAC')
+  const winKeyboard = document.querySelector('#IMG_WIN')
 
   const system = Cookies.get('os')
 

@@ -9,7 +9,7 @@
   margin: 0 auto;
   display: grid;
   place-items: center;
-  transform: matrix(1, 0, -0.19, 0.98, 0, 0);
+  @include matrix;
 
   .O_Keyboard {
     margin: 2rem auto;
