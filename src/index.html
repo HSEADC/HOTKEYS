@@ -33,59 +33,114 @@
     <meta property="twitter:image" content="https://hotkeys.adc.ac/share/seo.png" />
     <analytics></analytics>
   </head>
-  <body>
+  <body style="overflow-x: hidden">
     <modal></modal>
+    <snack-bar></snack-bar>
     <div id="A_UpTarget"></div>
     <div class="S_Header">
-      <a class="W_LinkLogo" href="./">
+      <a class="W_LinkLogo O_HeaderShortcutsLogo" href="../index.html">
         <hotkeys></hotkeys>
       </a>
-      <menu></menu>
+      <div class="O_HeaderShortcutsMenu">
+        <menu-shortcut></menu-shortcut>
+      </div>
     </div>
-    <div class="C_Wrapper">
-      <div class="M_Block">
-        <h1 class="A_TextMainL">Что это?</h1>
-        <h2 class="A_TextMainXL">
+    <div class="M_KeyboardContainer">
+      <img id="IMG_MAC" class="A_IndexImage" src="./images/index/index_mac.png" alt="" />
+      <img id="IMG_WIN" class="A_IndexImage" src="./images/index/index_win.png" alt="" />
+    </div>
+    <div class="C_Wrapper Index">
+      <div class="M_ContentContainer">
+        <h1 class="A_TextBig">
           <span class="Q_TextMainSelection">HOT KEYS</span>
-          &nbsp;&mdash; архив сочетаний
+          — самый удобный архив
           <br />
-          клавиш c&nbsp;удобной системой поиска
-          <br />
-          и&nbsp;навигацией
-        </h2>
+          сочетаний клавиш в мире
+        </h1>
+        <div class="C_ButtonsMainWrapper">
+          <a class="A_ContentButton Shortcuts" href="./shortcuts.html">Все шорткаты</a>
+          <div id="ADD_BOOKMARK" class="A_ContentButton Bookmark">Добавить в закладки</div>
+        </div>
       </div>
-      <div class="M_Block">
-        <h1 class="A_TextMainL">Наша миссия</h1>
-        <h2 class="A_TextMainXL">
-          Мы&nbsp;делаем вашу работу
+      <div class="M_WhyContainer">
+        <h2 class="A_TextIndexL">Наша миссия</h2>
+        <h1 class="A_TextIndexXL">
+          Сделать вашу работу
           <br />
-          за&nbsp;компьютером более
-          <span class="Q_TextMainSelection">БЫСТРОЙ</span>
-          ,
+          за компьютером более
+          <span class="Q_TextMainSelection">быстрой,</span>
           <br />
-          комфортной и&nbsp;эффективной
-        </h2>
+          комфортной и эффективной
+        </h1>
+        <div class="C_CardsWhyWrapper">
+          <div class="M_WhyCard Selections">
+            <div class="C_CardContent">
+              <h1 class="A_CardTitle">Тренируйте шорткаты</h1>
+              <h2 class="A_CardCaption">
+                Выбирайте из подборки
+                <br />
+                шорткаты для практики
+              </h2>
+              <a class="A_CardCaption Link" href="./selections.html">
+                Тренироваться
+                <span class="Q_CardCaptionArrow">→</span>
+              </a>
+            </div>
+            <img class="A_CardImg" src="./images/index/index_why_selections.png" alt="" />
+          </div>
+          <div class="M_WhyCard Catalog">
+            <div class="C_CardContent">
+              <h1 class="A_CardTitle">Много программ</h1>
+              <h2 class="A_CardCaption">
+                Шорткаты из более 100+ программ
+                <br />
+                удобно собраны в одном месте
+              </h2>
+              <a class="A_CardCaption Link" href="./shortcuts.html">
+                Все программы
+                <span class="Q_CardCaptionArrow">→</span>
+              </a>
+            </div>
+            <img class="A_CardImg" src="./images/index/index_why_catalog.png" alt="" />
+          </div>
+        </div>
       </div>
-      <div class="M_BlockUnique">
-        <h1 class="A_TextMainL">Почему именно мы?</h1>
-        <h2 class="A_TextUnique">Всё по полочкам</h2>
-        <h2 class="A_TextUnique">Удобный поиск</h2>
-        <h2 class="A_TextUnique">Единая система</h2>
-        <h2 class="A_TextUnique">Узкая специализация</h2>
-        <h2 class="A_TextUnique">Много программ</h2>
+      <div class="M_WhatContainer">
+        <div class="C_WhatContent">
+          <h2 class="A_TextIndexL">Все по полочкам</h2>
+          <h1 class="A_CardTitle">
+            Поиск поможет быстро
+            <br />
+            найти нужную комбинацию
+            <span class="Q_TextMainSelection">комбинацию горячих клавиш.</span>
+          </h1>
+          <p class="A_CardText">Просто введите название программы или конкретную функцию, и наша система мгновенно предоставит вам нужные результаты.</p>
+          <a class="A_ContentButton Shortcuts" href="./shortcuts.html">Все шорткаты</a>
+        </div>
+        <div class="W_WhatImage">
+          <img class="A_IndexImage" src="./images/index/index_what.png" alt="" />
+        </div>
       </div>
-      <div class="M_BlockWho">
-        <h4 class="A_TextMainL">Кому подойдёт этот сервис?</h4>
-        <h5 class="A_TextMainXL">
-          Всем тем, кто часто сталкиваются
-          <br />
-          с&nbsp;монотонной работой за&nbsp;компьютером
-          <br />
-          и&nbsp;хочет ее&nbsp;
-          <span class="Q_TextMainSelection">УСКОРИТЬ</span>
-        </h5>
-        <img class="A_ImgWho" src="images/about/who.svg" alt="main-artwork" />
+      <div class="M_GroupContainer">
+        <div class="C_WhatContent">
+          <h2 class="A_TextIndexL">Узкая специализация</h2>
+          <h1 class="A_CardTitle">
+            Сфокусируйтесь
+            <br />
+            на
+            <span class="Q_TextMainSelection">креативной</span>
+            части
+            <br />
+            своей работы
+          </h1>
+          <p class="A_CardText">Мы предоставляем доступ к горячим клавишам, сортируя их по программам, по операционной системе и по сложности.</p>
+          <a class="A_ContentButton Bookmark" href="./shortcuts.html">Найти шорткат</a>
+        </div>
+        <div class="W_WhatImage">
+          <img class="A_IndexImage" src="./images/index/index_group.png" alt="" />
+        </div>
       </div>
+
       <footer></footer>
     </div>
   </body>

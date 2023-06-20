@@ -1,14 +1,8 @@
 import './index.css'
+import './javascript/modal.js'
 
-import {modal} from './javascript/modal'
-import {onScroll} from './javascript/on-scroll'
-import {systemSwitch} from './javascript/system-switch'
+import Cookies from 'js-cookie'
 
-window.addEventListener('DOMContentLoaded', function () {
-  modal()
-  systemSwitch()
-
-  //   if (window.location.pathname === '/styleguide.html') {
-  onScroll()
-  //   }
-})
+const isMac = navigator.userAgent.toLowerCase().includes('mac')
+const osCookie = isMac ? 'macos' : 'windows'
+Cookies.set('os', osCookie)

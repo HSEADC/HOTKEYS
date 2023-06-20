@@ -1,6 +1,7 @@
 .C_Footer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin: rem(50) rem(70);
 
   .M_FooterUp {
@@ -43,7 +44,6 @@
   }
 
   .M_FooterVk,
-  .M_FooterDzen,
   .M_FooterTg {
     @include itemGrid;
     width: 2.9rem;
@@ -64,17 +64,6 @@
     }
 
     &:hover .A_IconVk {
-      fill: var(--green);
-    }
-  }
-
-  .M_FooterDzen {
-    .A_DzenSVG {
-      width: 1.62rem;
-      height: 1.62rem;
-    }
-
-    &:hover .A_IconDzen {
       fill: var(--green);
     }
   }
@@ -126,7 +115,6 @@
     }
 
     .M_FooterVk,
-    .M_FooterDzen,
     .M_FooterTg {
       @include itemGrid;
       width: 2.7rem;
@@ -140,17 +128,6 @@
       }
 
       &:hover .A_IconVk {
-        fill: var(--green);
-      }
-    }
-
-    .M_FooterDzen {
-      .A_DzenSVG {
-        width: 1.42rem;
-        height: 1.42rem;
-      }
-
-      &:hover .A_IconDzen {
         fill: var(--green);
       }
     }

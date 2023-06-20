@@ -1,17 +1,40 @@
-.O_Keyboard {
-  display: grid;
-  place-items: center;
-
-  .A_KeyboardSVG {
-    width: 77.5vw;
+@media screen and (max-width: 768px) {
+  .C_Shortcut {
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 768px) {
+.C_Shortcut {
+  width: 65%;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  @include matrix;
+
   .O_Keyboard {
+    margin: 2rem auto;
+    padding: 0.75rem;
+    width: 100%;
+    background: var(--black2);
+    border: 3px solid var(--green);
+    box-shadow: 0px 4px 250px rgba(186, 255, 42, 0.2);
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      box-shadow: none;
+    }
+
     .A_KeyboardSVG {
-      overflow: visible;
-      width: 95vw;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 656px) {
+    .C_Shortcut {
+      .O_Keyboard {
+        padding: 0.25rem;
+        border: 1.5px solid var(--green);
+      }
     }
   }
 }

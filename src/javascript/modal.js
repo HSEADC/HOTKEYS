@@ -1,17 +1,17 @@
 import Cookies from 'js-cookie'
 
-export function modal() {
+window.addEventListener('DOMContentLoaded', function () {
   const modal = document.getElementById('modal')
   const modalButton = document.getElementById('modalButton')
 
-  if (modal?.style && modalButton) {
-    if (!Cookies.get('modal')) {
-      Cookies.set('modal', true)
+  const cookiesModal = Cookies.get('modal')
 
-      setTimeout(() => {
-        modal.style.display = 'flex'
-      }, 1500)
-    }
+  if (modal && !cookiesModal) {
+    Cookies.set('modal', true)
+
+    setTimeout(() => {
+      modal.style.display = 'flex'
+    }, 5000)
 
     function closeModal() {
       modal.style.display = 'none'
@@ -20,4 +20,4 @@ export function modal() {
     modalButton.addEventListener('click', closeModal)
     modal.addEventListener('click', closeModal)
   }
-}
+})
