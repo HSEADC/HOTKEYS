@@ -1,5 +1,8 @@
 import './index.css'
 import './javascript/modal.js'
-import {snackBar} from './javascript/snack_bar.js'
 
-// snackBar('шортгады', 3000)
+import Cookies from 'js-cookie'
+
+const isMac = navigator.userAgent.toLowerCase().includes('mac')
+const osCookie = isMac ? 'macos' : 'windows'
+Cookies.set('os', osCookie)
