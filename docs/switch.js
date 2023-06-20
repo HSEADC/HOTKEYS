@@ -1,13 +1,11 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
+var __webpack_exports__ = {};
 
-/***/ 955:
-/***/ (() => {
-
+;// CONCATENATED MODULE: ./node_modules/js-cookie/dist/js.cookie.mjs
 /*! js-cookie v3.0.1 | MIT */
 /* eslint-disable no-var */
-function assign (target) {
+function js_cookie_assign (target) {
   for (var i = 1; i < arguments.length; i++) {
     var source = arguments[i];
     for (var key in source) {
@@ -43,7 +41,7 @@ function init (converter, defaultAttributes) {
       return
     }
 
-    attributes = assign({}, defaultAttributes, attributes);
+    attributes = js_cookie_assign({}, defaultAttributes, attributes);
 
     if (typeof attributes.expires === 'number') {
       attributes.expires = new Date(Date.now() + attributes.expires * 864e5);
@@ -116,16 +114,16 @@ function init (converter, defaultAttributes) {
         set(
           key,
           '',
-          assign({}, attributes, {
+          js_cookie_assign({}, attributes, {
             expires: -1
           })
         );
       },
       withAttributes: function (attributes) {
-        return init(this.converter, assign({}, this.attributes, attributes))
+        return init(this.converter, js_cookie_assign({}, this.attributes, attributes))
       },
       withConverter: function (converter) {
-        return init(assign({}, this.converter, converter), this.attributes)
+        return init(js_cookie_assign({}, this.converter, converter), this.attributes)
       }
     },
     {
@@ -138,96 +136,35 @@ function init (converter, defaultAttributes) {
 var api = init(defaultConverter, { path: '/' });
 /* eslint-enable no-var */
 
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((/* unused pure expression or super */ null && (api)));
+/* harmony default export */ const js_cookie = (api);
 
+;// CONCATENATED MODULE: ./src/javascript/system-switch.js
 
-/***/ })
-
-/******/ 	});
-/************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
-/* unused harmony export systemSwitch */
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(955);
-
-function systemSwitch() {
-  var isMac = navigator.userAgent.toLowerCase().includes('macintosh'); //*? shortcut pages
-
+document.addEventListener('DOMContentLoaded', function () {
   var macEl = document.getElementById('S_Mac');
   var winEl = document.getElementById('S_Win');
   var macBtn = document.querySelector('#mac');
-  var winBtn = document.querySelector('#win'); //*? selection pages
-
+  var winBtn = document.querySelector('#win');
   var macShortcut = document.querySelectorAll('.Q_ShortcutWindows');
   var winShortcut = document.querySelectorAll('.Q_ShortcutMacos');
+  var system = js_cookie.get('os');
 
-  if (isMac) {
-    Cookies.set('os', 'macos');
-  } else {
-    Cookies.set('os', 'windows');
-  }
-
-  var osCookie = Cookies.get('os');
-
-  var setActiveButton = function setActiveButton(activeBtn, inactiveBtn) {
-    activeBtn.classList.add('_Active');
-    inactiveBtn.classList.remove('_Active');
+  var toggleDisplay = function toggleDisplay(showElement, hideElement) {
+    showElement.style.display = 'block';
+    hideElement.style.display = 'none';
   };
 
-  var showElement = function showElement(elementToShow, elementToHide) {
-    if (elementToShow && elementToHide) {
-      elementToShow.style.display = 'block';
-      elementToHide.style.display = 'none';
+  var toggleActiveClass = function toggleActiveClass(activateBtn, deactivateBtn) {
+    activateBtn.classList.add('_Active');
+    deactivateBtn.classList.remove('_Active');
+  };
+
+  function toggleMac() {
+    if (macEl && winEl) {
+      toggleDisplay(macEl, winEl);
     }
-  };
 
-  if (osCookie === 'macos') {
-    showElement(macEl, winEl);
-    setActiveButton(macBtn, winBtn);
+    toggleActiveClass(macBtn, winBtn);
 
     if (winShortcut.length > 0 && macShortcut.length > 0) {
       winShortcut.forEach(function (el) {
@@ -235,25 +172,16 @@ function systemSwitch() {
       });
       macShortcut.forEach(function (el) {
         return el.style.display = 'none';
-      });
-    }
-  } else {
-    showElement(winEl, macEl);
-    setActiveButton(winBtn, macBtn);
-
-    if (winShortcut.length > 0 && macShortcut.length > 0) {
-      winShortcut.forEach(function (el) {
-        return el.style.display = 'none';
-      });
-      macShortcut.forEach(function (el) {
-        return el.style.display = 'block';
       });
     }
   }
 
-  winBtn === null || winBtn === void 0 ? void 0 : winBtn.addEventListener('click', function () {
-    showElement(winEl, macEl);
-    setActiveButton(winBtn, macBtn);
+  function toggleWin() {
+    if (macEl && winEl) {
+      toggleDisplay(winEl, macEl);
+    }
+
+    toggleActiveClass(winBtn, macBtn);
 
     if (winShortcut.length > 0 && macShortcut.length > 0) {
       winShortcut.forEach(function (el) {
@@ -263,22 +191,20 @@ function systemSwitch() {
         return el.style.display = 'block';
       });
     }
-  });
+  }
+
+  if (system == 'macos') {
+    toggleMac();
+  } else {
+    toggleWin();
+  }
+
   macBtn === null || macBtn === void 0 ? void 0 : macBtn.addEventListener('click', function () {
-    showElement(macEl, winEl);
-    setActiveButton(macBtn, winBtn);
-
-    if (winShortcut.length > 0 && macShortcut.length > 0) {
-      winShortcut.forEach(function (el) {
-        return el.style.display = 'block';
-      });
-      macShortcut.forEach(function (el) {
-        return el.style.display = 'none';
-      });
-    }
+    toggleMac();
   });
-}
-})();
-
+  winBtn === null || winBtn === void 0 ? void 0 : winBtn.addEventListener('click', function () {
+    toggleWin();
+  });
+});
 /******/ })()
 ;
