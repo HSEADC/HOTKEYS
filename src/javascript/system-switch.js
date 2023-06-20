@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     deactivateBtn.classList.remove('_Active')
   }
 
-  if (system == 'macos') {
+  function toggleMac() {
     if (macEl && winEl) {
       toggleDisplay(macEl, winEl)
     }
@@ -32,7 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
       winShortcut.forEach((el) => (el.style.display = 'block'))
       macShortcut.forEach((el) => (el.style.display = 'none'))
     }
-  } else {
+  }
+
+  function toggleWin() {
     if (macEl && winEl) {
       toggleDisplay(winEl, macEl)
     }
@@ -44,27 +46,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  macBtn?.addEventListener('click', () => {
-    if (macEl && winEl) {
-      toggleDisplay(macEl, winEl)
-    }
-    toggleActiveClass(macBtn, winBtn)
+  if (system == 'macos') {
+    toggleMac()
+  } else {
+    toggleWin()
+  }
 
-    if (winShortcut.length > 0 && macShortcut.length > 0) {
-      winShortcut.forEach((el) => (el.style.display = 'block'))
-      macShortcut.forEach((el) => (el.style.display = 'none'))
-    }
+  macBtn?.addEventListener('click', () => {
+    toggleMac()
   })
 
   winBtn?.addEventListener('click', () => {
-    if (macEl && winEl) {
-      toggleDisplay(winEl, macEl)
-    }
-    toggleActiveClass(winBtn, macBtn)
-
-    if (winShortcut.length > 0 && macShortcut.length > 0) {
-      winShortcut.forEach((el) => (el.style.display = 'none'))
-      macShortcut.forEach((el) => (el.style.display = 'block'))
-    }
+    toggleWin()
   })
 })
