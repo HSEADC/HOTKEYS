@@ -56,6 +56,8 @@
     .A_CardName,
     .A_CardKey {
       font-style: italic;
+      letter-spacing: 0.1;
+      font-weight: 500;
     }
 
     .A_CardKey {
@@ -77,10 +79,25 @@
 }
 
 .A_LoadingLogo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1770px) {
