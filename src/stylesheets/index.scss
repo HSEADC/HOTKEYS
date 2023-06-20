@@ -297,7 +297,8 @@
 @media (max-width: 768px) {
   .M_KeyboardContainer {
     margin-top: 0rem;
-    width: 133vw;
+    margin-left: 0vw;
+    width: 100vw;
     height: 13rem;
   }
 
@@ -360,7 +361,7 @@
   }
 
   .A_CardTitle {
-    font-size: rem(24);
+    font-size: 1.5rem;
   }
 
   .A_CardCaption {
@@ -371,15 +372,20 @@
   .M_GroupContainer {
     flex-direction: column;
     align-items: start;
+    gap: 2rem;
     padding: 2rem 0.5rem;
 
     .C_WhatContent {
       width: 100%;
-    }
 
-    .A_CardText {
-      font-size: rem(24);
-      line-height: 120%;
+      .A_TextIndexL {
+        font-size: rem(16);
+      }
+
+      .A_CardText {
+        font-size: rem(18);
+        line-height: 130%;
+      }
     }
 
     .W_WhatImage {
