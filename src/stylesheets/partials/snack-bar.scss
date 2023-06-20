@@ -1,0 +1,44 @@
+.O_SnackBar {
+  z-index: 99;
+  position: fixed;
+  visibility: hidden;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0.125rem;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: var(--green);
+  color: var(--black);
+  left: 50%;
+  bottom: 30px;
+}
+
+._Get {
+  visibility: visible;
+  animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

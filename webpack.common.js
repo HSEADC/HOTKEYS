@@ -8,16 +8,16 @@ const webpack = require('webpack')
 const path = require('path')
 
 const pages = [
-  {name: 'index', chunks: ['index', 'on_scroll']},
+  {name: 'index', chunks: ['index', 'landing']},
+  {name: 'shortcuts', chunks: ['index', 'switch', 'shortcuts']},
   {name: 'about', chunks: ['index']},
-  {name: 'styleguide', chunks: ['index', 'on_scroll']},
+  {name: 'styleguide', chunks: ['index']},
   {name: 'selections', chunks: ['index']},
   {name: 'selections/top-5-documents-shortcuts', chunks: ['index', 'switch']},
   {name: 'selections/simple-browser-shortcuts', chunks: ['index', 'switch']},
   {name: 'selections/top-5-users-shortcuts', chunks: ['index', 'switch']},
   {name: 'selections/useful-designer-shortcuts', chunks: ['index', 'switch']},
   {name: 'selections/useful-developer-shortcuts', chunks: ['index', 'switch']},
-  {name: 'shortcuts', chunks: ['index', 'shortcuts']},
   {name: 'shortcuts/switch-between-programs', chunks: ['index', 'switch']},
   {name: 'shortcuts/hide-open-program', chunks: ['index', 'switch']},
   {name: 'shortcuts/open-clipboard', chunks: ['index', 'switch']},
@@ -74,12 +74,13 @@ const partials = [
   'keyboard-mac',
   'modal',
   'footer',
+  'snack-bar'
 ]
 
 module.exports = {
   entry: {
     index: './src/index.js',
-    on_scroll: './src/javascript/on-scroll.js',
+    landing: './src/javascript/landing.js',
     shortcuts: './src/shortcuts.jsx',
     switch: './src/javascript/system-switch.js',
   },

@@ -1,0 +1,69 @@
+.S_SearchBar {
+  width: 100%;
+
+  &.Selections {
+    margin: rem(10) 0 rem(45);
+  }
+
+  .C_SearchBar {
+    display: flex;
+    flex-direction: row;
+    height: rem(56);
+    border-radius: 5px;
+    background-color: #0d0d0d;
+    border: 1.75px solid var(--grey);
+    color: var(--gray);
+    font-size: 1.25rem;
+    cursor: help;
+
+    &:hover {
+      outline: 1.5px solid var(--green);
+
+      .M_SearchInput::-webkit-input-placeholder {
+        color: var(--green);
+      }
+    }
+
+    .M_SearchInput {
+      @include resetButton;
+      width: 97%;
+      height: 100%;
+      color: var(--green);
+
+      &[placeholder] {
+        padding-left: 1.25rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+
+      &::-webkit-input-placeholder {
+        color: var(--grey);
+      }
+    }
+  }
+}
+
+@media (max-width: 645px) {
+  .S_SearchBar {
+    &.Shortcuts {
+      margin: rem(10) 0 rem(45);
+    }
+
+    .C_SearchBar {
+      .M_SearchInput {
+        &[placeholder] {
+          padding-left: 0.9rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 355px) {
+  .S_SearchBar {
+    .C_SearchBar {
+      height: 2.8rem;
+    }
+  }
+}

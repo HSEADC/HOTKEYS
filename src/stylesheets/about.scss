@@ -1,3 +1,15 @@
+.A_TextMainXL {
+  padding-top: rem(50);
+}
+
+.M_Block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: clamp(25rem, 36vw, 45rem);
+}
+
 .M_BlockAbout {
   &.Main {
     margin-top: clamp(7rem, 9vw, 20rem);

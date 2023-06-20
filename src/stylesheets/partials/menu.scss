@@ -1,6 +1,6 @@
 .O_Menu {
   width: 19rem;
-  border: 1.5px solid var(--grey);
+  border: 2px solid var(--gray);
   border-radius: 5px;
 
   .C_MenuItems {
@@ -45,8 +45,8 @@
       display: flex;
       align-self: center;
       height: 1.7rem;
-      border: 0.5px solid var(--grey);
-      background-color: var(--grey);
+      border: 0.5px solid var(--gray);
+      background-color: var(--gray);
       z-index: -99;
     }
   }

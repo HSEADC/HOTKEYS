@@ -1,9 +1,8 @@
 /* basics files to reset and to upload */
 
-@import url('https://bozzhik.ru/css/reboot.css');
+@import 'stylesheets/global/reboot.scss';
 @import 'stylesheets/global/basics.scss';
 @import 'stylesheets/global/vars.scss';
-@import 'stylesheets/global/fonts.scss';
 
 /* page css styles */
 
@@ -22,12 +21,13 @@
 @import 'stylesheets/partials/keyboard.scss';
 @import 'stylesheets/partials/footer.scss';
 @import 'stylesheets/partials/modal.scss';
+@import 'stylesheets/partials/snack-bar.scss';
 
 /* components css styles */
 
 @import 'stylesheets/components/C_Wrapper.scss';
 @import 'stylesheets/components/S_Header.scss';
-@import 'stylesheets/components/S_SearchForm.scss';
+@import 'stylesheets/components/S_SearchBar.scss';
 @import 'stylesheets/components/S_Shortcuts.scss';
 @import 'stylesheets/components/A_CardName&Key.scss';
 @import 'stylesheets/components/A_TextMainXL-L.scss';

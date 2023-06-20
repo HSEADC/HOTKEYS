@@ -865,7 +865,7 @@
   },
   {
     "link": "figma-ungroup-layers",
-    "selected": "Разгрубировать",
+    "selected": "Разгруппировать",
     "text": "выделенные элементы из группы",
     "windows": "Ctrl+Shift+G",
     "macos": "Cmd+Shift+G",
