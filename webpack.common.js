@@ -9,6 +9,7 @@ const path = require('path')
 
 const pages = [
   {name: 'index', chunks: ['index', 'landing']},
+  {name: 'shortcuts', chunks: ['index', 'switch', 'shortcuts']},
   {name: 'about', chunks: ['index']},
   {name: 'styleguide', chunks: ['index']},
   {name: 'selections', chunks: ['index']},
@@ -17,7 +18,6 @@ const pages = [
   {name: 'selections/top-5-users-shortcuts', chunks: ['index', 'switch']},
   {name: 'selections/useful-designer-shortcuts', chunks: ['index', 'switch']},
   {name: 'selections/useful-developer-shortcuts', chunks: ['index', 'switch']},
-  {name: 'shortcuts', chunks: ['index', 'shortcuts']},
   {name: 'shortcuts/switch-between-programs', chunks: ['index', 'switch']},
   {name: 'shortcuts/hide-open-program', chunks: ['index', 'switch']},
   {name: 'shortcuts/open-clipboard', chunks: ['index', 'switch']},

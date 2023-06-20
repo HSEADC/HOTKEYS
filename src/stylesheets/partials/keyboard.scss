@@ -9,15 +9,14 @@
   margin: 0 auto;
   display: grid;
   place-items: center;
-
   transform: matrix(1, 0, -0.19, 0.98, 0, 0);
 
   .O_Keyboard {
     margin: 2rem auto;
     padding: 0.75rem;
     width: 100%;
-    background: #1a1a1a;
-    border: 3px solid #cbfb45;
+    background: var(--black2);
+    border: 3px solid var(--green);
     box-shadow: 0px 4px 250px rgba(186, 255, 42, 0.2);
     transition: all 1s ease-in-out;
 
@@ -34,7 +33,7 @@
     .C_Shortcut {
       .O_Keyboard {
         padding: 0.25rem;
-        border: 1.5px solid #cbfb45;
+        border: 1.5px solid var(--green);
       }
     }
   }
