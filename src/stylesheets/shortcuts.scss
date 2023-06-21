@@ -25,9 +25,11 @@
   cursor: pointer;
 
   &:hover {
+    transition: all 0.25s ease-in-out;
     color: var(--green);
 
     .A_ResetIcon {
+      transition: all 0.25s ease-in-out;
       color: var(--green);
     }
   }

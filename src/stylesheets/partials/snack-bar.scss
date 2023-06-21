@@ -1,19 +1,28 @@
-.O_SnackBar {
+.W_SnackBarWrapper {
   z-index: 99;
   position: fixed;
   visibility: hidden;
-  padding: 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 0.125rem;
-  min-width: 250px;
-  margin-left: -125px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 1.875rem;
+}
+
+.M_SnackBar {
+  width: fit-content;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  font-size: rem(20);
+  line-height: rem(26);
+  font-weight: 500;
+  text-transform: uppercase;
   background-color: var(--green);
   color: var(--black);
-  left: 50%;
-  bottom: 30px;
+}
+
+.A_SnackBarKey {
+  font-weight: 900;
+  font-style: italic;
 }
 
 ._Get {
@@ -27,14 +36,14 @@
     opacity: 0;
   }
   to {
-    bottom: 30px;
+    bottom: 1.875rem;
     opacity: 1;
   }
 }
 
 @keyframes fadeOut {
   from {
-    bottom: 30px;
+    bottom: 1.875rem;
     opacity: 1;
   }
   to {

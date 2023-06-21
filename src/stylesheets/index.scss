@@ -7,6 +7,12 @@
   z-index: -10;
 }
 
+@media (min-width: 2048px) {
+  .M_KeyboardContainer {
+    height: 70rem;
+  }
+}
+
 .A_IndexImage {
   width: 100%;
   height: 100%;
@@ -37,31 +43,31 @@
 .A_ContentButton {
   margin-top: 2rem;
   width: fit-content;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   border-radius: 5px;
-  font-size: rem(22);
-  line-height: rem(29);
+  font-size: rem(20);
+  line-height: rem(26);
+  text-transform: uppercase;
+  font-weight: 500;
 
   &.Shortcuts {
     color: var(--black);
-    font-weight: 500;
     background-color: var(--green);
 
     &:hover {
-      transition: all 1s ease-in-out;
-      opacity: 0.9;
+      transition: all 0.15s ease-in-out;
+      opacity: 0.85;
     }
   }
 
   &.Bookmark {
-    font-weight: 500;
     cursor: pointer;
     color: var(--white);
-    background-color: var(--dark-grey);
+    background-color: #80808020;
 
     &:hover {
-      transition: all 1s ease-in-out;
-      opacity: 0.9;
+      transition: all 0.15s ease-in-out;
+      opacity: 0.85;
     }
   }
 }
@@ -218,6 +224,20 @@
   background: #1b1b1b;
 }
 
+@media (max-width: 1770px) {
+  .C_CardContent {
+    height: 95%;
+  }
+}
+
+@media (max-width: 1441px) {
+  .C_CardsWhyWrapper {
+    .M_WhyCard {
+      height: 40vw;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .M_KeyboardContainer {
     margin-left: -17vw;
@@ -241,8 +261,9 @@
   .A_ContentButton {
     margin-top: 3rem;
     padding: 1rem 2rem;
-    font-size: rem(28);
-    line-height: rem(36);
+    font-size: rem(16);
+    line-height: rem(18);
+    font-weight: 600;
   }
 
   .A_TextIndexL {
@@ -320,14 +341,15 @@
     gap: 0.75rem;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .A_ContentButton {
     text-align: center;
     width: 100%;
     margin-top: 0rem;
-    padding: 0.5rem 1rem;
-    font-size: rem(18);
+    padding: 1rem 1rem;
+    font-size: rem(16);
   }
 
   .A_TextIndexL {

@@ -26,7 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleDisplay(macEl, winEl)
     }
 
-    toggleActiveClass(macBtn, winBtn)
+    if (window.location.pathname !== '/shortcuts.html') {
+      toggleActiveClass(macBtn, winBtn)
+    }
 
     if (winShortcut.length > 0 && macShortcut.length > 0) {
       winShortcut.forEach((el) => (el.style.display = 'block'))
@@ -38,7 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (macEl && winEl) {
       toggleDisplay(winEl, macEl)
     }
-    toggleActiveClass(winBtn, macBtn)
+
+    if (window.location.pathname !== '/shortcuts.html') {
+      toggleActiveClass(winBtn, macBtn)
+    }
 
     if (winShortcut.length > 0 && macShortcut.length > 0) {
       winShortcut.forEach((el) => (el.style.display = 'none'))
