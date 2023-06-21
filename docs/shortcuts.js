@@ -555,7 +555,7 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!pl(c))throw Er
 
 /***/ }),
 
-/***/ 265:
+/***/ 745:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -871,7 +871,7 @@ var __webpack_exports__ = {};
 var react = __webpack_require__(294);
 var react_namespaceObject = /*#__PURE__*/__webpack_require__.t(react, 2);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
-var client = __webpack_require__(265);
+var client = __webpack_require__(745);
 ;// CONCATENATED MODULE: ./node_modules/js-cookie/dist/js.cookie.mjs
 /*! js-cookie v3.0.1 | MIT */
 /* eslint-disable no-var */

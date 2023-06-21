@@ -1,5 +1,45 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/************************************************************************/
 var __webpack_exports__ = {};
 
 ;// CONCATENATED MODULE: ./node_modules/js-cookie/dist/js.cookie.mjs
@@ -149,10 +189,40 @@ function snackBar(textSnackbar, timeout) {
     return snackBar.classList.remove('_Get');
   }, timeout);
 }
+;// CONCATENATED MODULE: ./src/javascript/_animateKeyboard.js
+function animateKeyboard(imgElement, image2, image3) {
+  var imageElement = document.querySelector(imgElement);
+  var image1 = imageElement.src;
+  var images = [image1, image2, image3];
+  var imageIndex = 0;
+
+  function changeImage() {
+    imageElement.src = images[imageIndex];
+    imageIndex = (imageIndex + 1) % images.length;
+  }
+
+  setTimeout(function () {
+    setInterval(changeImage, 1000);
+  }, 1000);
+}
+;// CONCATENATED MODULE: ./src/images/index/index_win2.png
+const index_win2_namespaceObject = __webpack_require__.p + "images/c74774ce72f4ed7a78e3.png";
+;// CONCATENATED MODULE: ./src/images/index/index_win3.png
+const index_win3_namespaceObject = __webpack_require__.p + "images/2975bb7828a3b553d655.png";
+;// CONCATENATED MODULE: ./src/images/index/index_mac2.png
+const index_mac2_namespaceObject = __webpack_require__.p + "images/04dd84bdf713d7dd1fe7.png";
+;// CONCATENATED MODULE: ./src/images/index/index_mac3.png
+const index_mac3_namespaceObject = __webpack_require__.p + "images/fd113cace76c76b18cda.png";
 ;// CONCATENATED MODULE: ./src/javascript/landing.js
 
 
+
+
+
+
+
 window.addEventListener('DOMContentLoaded', function () {
+  // system detection
   var macKeyboard = document.querySelector('#IMG_MAC');
   var winKeyboard = document.querySelector('#IMG_WIN');
   var system = js_cookie.get('os');
@@ -166,12 +236,21 @@ window.addEventListener('DOMContentLoaded', function () {
     showElement(macKeyboard, winKeyboard);
   } else {
     showElement(winKeyboard, macKeyboard);
-  }
+  } // bookmark call
 
-  var bookmarkBtn = document.querySelector('#ADD_BOOKMARK');
-  bookmarkBtn.addEventListener('click', function () {
-    snackBar("\u0427\u0442\u043E\u0431\u044B \u0434\u043E\u0431\u0430\u0432\u0438\u0442\u044C, \u043D\u0430\u0436\u043C\u0438 <span class=\"A_SnackBarKey\">".concat(system === 'macos' ? 'CMD+D' : 'CTRL+D', "</span>"), 3000);
-  });
+
+  var bookmarkBtn = document.querySelectorAll('.ADD_BOOKMARK');
+  bookmarkBtn.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      snackBar("\u0414\u043E\u0431\u0430\u0432\u044C \u0441\u0430\u0439\u0442 \u0432 \u0437\u0430\u043A\u043B\u0430\u0434\u043A\u0438, \u043D\u0430\u0436\u0430\u0432 <span class=\"A_SnackBarKey\">".concat(system === 'macos' ? 'CMD+D' : 'CTRL+D', "</span>"), 3000);
+    });
+  }); // keyboard animation
+
+  if (system == 'macos') {
+    animateKeyboard('#IMG_MAC', index_mac2_namespaceObject, index_mac3_namespaceObject);
+  } else {
+    animateKeyboard('#IMG_WIN', index_win2_namespaceObject, index_win3_namespaceObject);
+  }
 });
 /******/ })()
 ;
