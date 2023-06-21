@@ -150,7 +150,9 @@ window.addEventListener('DOMContentLoaded', function () {
       modal.style.display = 'none';
     };
 
-    js_cookie.set('modal', true);
+    js_cookie.set('modal', true, {
+      expires: 3
+    });
     setTimeout(function () {
       modal.style.display = 'flex';
     }, 5000);

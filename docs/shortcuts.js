@@ -20958,6 +20958,7 @@ var selectStyles = {
   control: function control(styles, _ref) {
     var isFocused = _ref.isFocused;
     return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, selectStyles_defineProperty({
+      cursor: 'pointer',
       backgroundColor: 'transparent',
       border: 'none',
       outline: 'none',
@@ -21262,7 +21263,7 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
         className: "Q_MenuSeparator"
       }), /*#__PURE__*/react.createElement("a", {
         className: "M_MenuItem Selections",
-        href: "selections.html"
+        href: "/selections.html"
       }, /*#__PURE__*/react.createElement("h3", {
         className: "Q_MenuText"
       }, "\u041F\u041E\u0414\u0411\u041E\u0420\u041A\u0418")))))), /*#__PURE__*/react.createElement("div", {
@@ -21293,6 +21294,7 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
         components: {
           DropdownIndicator: DropdownIndicator
         },
+        isSearchable: false,
         placeholder: "\u0412\u0441\u0435 \u0448\u043E\u0440\u0442\u043A\u0430\u0442\u044B"
       }), /*#__PURE__*/react.createElement(react_select_esm, {
         options: mainOptions,
@@ -21302,6 +21304,7 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
         components: {
           DropdownIndicator: DropdownIndicator
         },
+        isSearchable: false,
         placeholder: "\u0421\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u043A\u0430"
       })), /*#__PURE__*/react.createElement("div", {
         className: "M_ResetFilter",

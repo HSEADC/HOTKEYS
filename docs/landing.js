@@ -141,7 +141,8 @@ var api = init(defaultConverter, { path: '/' });
 ;// CONCATENATED MODULE: ./src/javascript/snack_bar.js
 function snackBar(textSnackbar, timeout) {
   var snackBar = document.getElementById('SNACKBAR');
-  snackBar.innerHTML = textSnackbar;
+  var snackBarElem = snackBar.querySelector('h1');
+  snackBarElem.innerHTML = textSnackbar;
   snackBar.classList.remove('_Get');
   snackBar.classList.add('_Get');
   setTimeout(function () {
@@ -169,7 +170,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   var bookmarkBtn = document.querySelector('#ADD_BOOKMARK');
   bookmarkBtn.addEventListener('click', function () {
-    snackBar('шортгады', 3000);
+    snackBar("\u0427\u0442\u043E\u0431\u044B \u0434\u043E\u0431\u0430\u0432\u0438\u0442\u044C, \u043D\u0430\u0436\u043C\u0438 <span class=\"A_SnackBarKey\">".concat(system === 'macos' ? 'CMD+D' : 'CTRL+D', "</span>"), 3000);
   });
 });
 /******/ })()

@@ -164,7 +164,9 @@ document.addEventListener('DOMContentLoaded', function () {
       toggleDisplay(macEl, winEl);
     }
 
-    toggleActiveClass(macBtn, winBtn);
+    if (window.location.pathname !== '/shortcuts.html') {
+      toggleActiveClass(macBtn, winBtn);
+    }
 
     if (winShortcut.length > 0 && macShortcut.length > 0) {
       winShortcut.forEach(function (el) {
@@ -181,7 +183,9 @@ document.addEventListener('DOMContentLoaded', function () {
       toggleDisplay(winEl, macEl);
     }
 
-    toggleActiveClass(winBtn, macBtn);
+    if (window.location.pathname !== '/shortcuts.html') {
+      toggleActiveClass(winBtn, macBtn);
+    }
 
     if (winShortcut.length > 0 && macShortcut.length > 0) {
       winShortcut.forEach(function (el) {
