@@ -191,6 +191,7 @@ function snackBar(textSnackbar, timeout) {
 }
 ;// CONCATENATED MODULE: ./src/javascript/_animateKeyboard.js
 function animateKeyboard(imgElement, image2, image3) {
+  var imageContainer = document.querySelector('.M_KeyboardContainer');
   var imageElement = document.querySelector(imgElement);
   var image1 = imageElement.src;
   var images = [image1, image2, image3];
@@ -201,9 +202,10 @@ function animateKeyboard(imgElement, image2, image3) {
     imageIndex = (imageIndex + 1) % images.length;
   }
 
+  imageContainer.style.opacity = '1';
   setTimeout(function () {
     setInterval(changeImage, 1000);
-  }, 1000);
+  }, 2500);
 }
 ;// CONCATENATED MODULE: ./src/images/index/index_win2.png
 const index_win2_namespaceObject = __webpack_require__.p + "images/c74774ce72f4ed7a78e3.png";
