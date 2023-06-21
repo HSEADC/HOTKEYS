@@ -14,6 +14,10 @@
   .M_KeyboardContainer {
     height: 70rem;
   }
+
+  .A_TextBig {
+    width: 50%;
+  }
 }
 
 .A_IndexImage {
@@ -43,6 +47,7 @@
   font-style: italic;
   text-transform: uppercase;
   text-align: center;
+  width: 65%;
 }
 
 .C_ButtonsMainWrapper {
@@ -281,6 +286,10 @@
   .C_CardContent {
     height: 95%;
   }
+
+  .A_TextBig {
+    width: 75%;
+  }
 }
 
 @media (max-width: 1441px) {
@@ -325,6 +334,8 @@
 
   .A_TextIndexXL {
     font-size: rem(36);
+    width: 80%;
+    margin-left: 10%;
   }
 
   .M_WhyContainer {
@@ -370,6 +381,67 @@
 }
 
 @media (max-width: 768px) {
+  .C_CardsWhyWrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .M_WhyCard {
+      padding: 0.5rem;
+      height: 45vh;
+      width: 100%;
+    }
+  }
+
+  .A_ContentButton {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .C_CardContent {
+    height: 90%;
+  }
+
+  .A_CardTitle {
+    font-size: 1.5rem;
+  }
+
+  .A_CardCaption {
+    font-size: rem(18);
+  }
+
+  .A_TextIndexXL {
+    font-size: rem(28);
+  }
+
+  .M_WhatContainer,
+  .M_GroupContainer,
+  .M_BookmarksContainer,
+  .M_CreativeContainer {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 2rem;
+    padding: 2rem 0.5rem;
+
+    .C_BlockContent {
+      width: 100%;
+
+      .A_TextIndexL {
+        font-size: rem(18);
+      }
+
+      .A_CardText {
+        font-size: rem(18);
+      }
+    }
+
+    .W_BlockImage {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 390px) {
   .M_KeyboardContainer {
     margin-top: 0rem;
     margin-left: 0vw;
@@ -383,10 +455,7 @@
 
   .A_TextBig {
     font-size: rem(24);
-
-    & br {
-      display: none;
-    }
+    width: 100%;
   }
 
   .C_ButtonsMainWrapper {
