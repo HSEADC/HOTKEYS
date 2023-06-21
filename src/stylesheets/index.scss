@@ -7,6 +7,12 @@
   z-index: -10;
 }
 
+@media (min-width: 2048px) {
+  .M_KeyboardContainer {
+    height: 70rem;
+  }
+}
+
 .A_IndexImage {
   width: 100%;
   height: 100%;
@@ -48,8 +54,8 @@
     background-color: var(--green);
 
     &:hover {
-      transition: all 1s ease-in-out;
-      opacity: 0.9;
+      transition: all 0.15s ease-in-out;
+      opacity: 0.85;
     }
   }
 
@@ -60,8 +66,8 @@
     background-color: var(--dark-grey);
 
     &:hover {
-      transition: all 1s ease-in-out;
-      opacity: 0.9;
+      transition: all 0.15s ease-in-out;
+      opacity: 0.85;
     }
   }
 }

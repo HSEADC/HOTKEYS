@@ -5,6 +5,7 @@ const lightBlack = '#1a1a1a'
 export const selectStyles = {
   control: (styles, {isFocused}) => ({
     ...styles,
+    cursor: 'pointer',
     backgroundColor: 'transparent',
     border: 'none',
     outline: 'none',

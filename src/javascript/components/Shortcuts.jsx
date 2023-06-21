@@ -151,8 +151,8 @@ export default class Shortcuts extends Component {
             </div>
             <div className="S_Filters">
               <div className="C_SelectBar">
-                <Select options={programOptions} value={selectedProgramOption} onChange={handleProgramChange} styles={selectStyles} components={{DropdownIndicator}} placeholder="Все шорткаты" />
-                <Select options={mainOptions} value={selectedMainOption} onChange={handleMainChange} styles={selectStyles} components={{DropdownIndicator}} placeholder="Сортировка" />
+                <Select options={programOptions} value={selectedProgramOption} onChange={handleProgramChange} styles={selectStyles} components={{DropdownIndicator}} isSearchable={false} placeholder="Все шорткаты" />
+                <Select options={mainOptions} value={selectedMainOption} onChange={handleMainChange} styles={selectStyles} components={{DropdownIndicator}} isSearchable={false} placeholder="Сортировка" />
               </div>
               <div className="M_ResetFilter" onClick={this.handleReset} style={{display: searchQuery || selectedProgramOption || selectedMainOption ? 'block' : 'none'}}>
                 <span className="A_ResetText">Сбросить</span>

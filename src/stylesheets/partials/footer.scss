@@ -24,15 +24,29 @@
 
   .M_FooterAbout {
     .A_AboutText {
+      // @include itemGrid;
+      // width: 7rem;
+      // height: 2.9rem;
+      // color: var(--white);
+      // background-color: transparent;
+      // border-top: 1.5px solid var(--grey);
+      // border-bottom: 1.5px solid var(--grey);
+      // border-right: 1.5px solid var(--grey);
+
+      // font-size: 1rem;
+      // font-weight: 400;
+      // border-radius: 0px 4px 4px 0px;
+
+      // &:hover {
+      //   @include itemOpenConfig(var(--green), transparent, 1.5px solid var(--grey), 500, italic);
+      // }
+
       @include itemGrid;
-      width: 7rem;
+      width: 6.6rem;
       height: 2.9rem;
       color: var(--white);
       background-color: transparent;
-      border-top: 1.5px solid var(--grey);
-      border-bottom: 1.5px solid var(--grey);
-      border-right: 1.5px solid var(--grey);
-
+      border: 1.5px solid var(--grey);
       font-size: 1rem;
       font-weight: 400;
       border-radius: 0px 4px 4px 0px;

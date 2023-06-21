@@ -17,7 +17,9 @@
     cursor: help;
 
     &:hover {
+      transition: all 0.35s ease-in-out;
       outline: 1.5px solid var(--green);
+      box-shadow: 0px 5px 95px rgba(203, 251, 69, 0.4);
 
       .M_SearchInput::-webkit-input-placeholder {
         color: var(--green);
