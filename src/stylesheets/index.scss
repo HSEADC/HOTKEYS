@@ -2,12 +2,12 @@
   margin-left: -16vw;
   margin-top: -10rem;
   width: 133vw;
-  height: 55rem;
+  height: 50rem;
   position: relative;
   z-index: -10;
 }
 
-@media (max-width: 2048px) {
+@media (min-width: 2048px) {
   .M_KeyboardContainer {
     height: 70rem;
   }

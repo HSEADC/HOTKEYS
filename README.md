@@ -10,13 +10,19 @@
 git clone https://github.com/HSEADC/HOTKEYS.git
 ```
 
-2. Установите зависимости
+2. Зайдите в папку проекта
+
+```bash
+cd HOTKEYS
+```
+
+3. Установите зависимости
 
 ```bash
 yarn
 ```
 
-3. Запустите сервер
+3. Запустите сервер для разработки
 
 ```bash
 yarn start

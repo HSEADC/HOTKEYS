@@ -1,6 +1,6 @@
 {
   "name": "hotkeys",
-  "version": "4.3.0",
+  "version": "4.5.0",
   "author": "HSE ADC",
   "license": "MIT",
   "repository": {
@@ -13,10 +13,12 @@
   "homepage": "https://github.com/HSEADC/HOTKEYS#readme",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js --port 2000",
-    "watch": "webpack --config webpack.dev.js",
-    "build": "yarn render && yarn generate && webpack --config webpack.prod.js",
     "render": "node src/lib/tasks/render-shortcuts.js",
-    "generate": "node src/lib/tasks/generate-pages.js"
+    "generate": "node src/lib/tasks/generate-pages.js",
+    "sitemap": "node src/lib/tasks/generate-sitemap.js",
+    "watch": "webpack --config webpack.dev.js",
+    "prod": "webpack --config webpack.prod.js",
+    "build": "yarn render && yarn generate && yarn sitemap && webpack --config webpack.prod.js"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
@@ -48,9 +50,10 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "js-cookie": "^3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "js-cookie": "^3.0.1",
-    "react-select": "^5.7.0"
+    "react-select": "^5.7.0",
+    "sitemap": "^7.1.1"
   }
 }
