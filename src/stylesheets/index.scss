@@ -53,29 +53,30 @@
   padding: 1rem 4rem;
   border-radius: 5px;
   font-size: rem(20);
-  line-height: rem(26);
+  line-height: 110%;
   text-transform: uppercase;
   font-weight: 500;
+
+  &:hover {
+    transition: all 0.15s ease-in-out;
+    opacity: 0.85;
+  }
 
   &.Shortcuts {
     color: var(--black);
     background-color: var(--green);
-
-    &:hover {
-      transition: all 0.15s ease-in-out;
-      opacity: 0.85;
-    }
   }
 
   &.Bookmark {
     cursor: pointer;
     color: var(--white);
     background-color: #80808020;
+  }
 
-    &:hover {
-      transition: all 0.15s ease-in-out;
-      opacity: 0.85;
-    }
+  &.Black {
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--black);
   }
 }
 
@@ -179,7 +180,9 @@
 }
 
 .M_WhatContainer,
-.M_GroupContainer {
+.M_GroupContainer,
+.M_BookmarksContainer,
+.M_CreativeContainer {
   margin-top: 2rem;
   display: flex;
   justify-content: space-around;
@@ -188,7 +191,7 @@
   padding: 3rem 7.5rem 6rem;
   border-radius: 5px;
 
-  .C_WhatContent {
+  .C_BlockContent {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -220,15 +223,55 @@
     }
   }
 
-  .W_WhatImage {
+  .W_BlockImage {
     width: 50%;
   }
 }
 
 .M_GroupContainer {
   flex-direction: row-reverse;
-  gap: 6rem;
+  justify-content: space-around;
+  gap: 15rem;
   background: #1b1b1b;
+}
+
+.M_BookmarksContainer {
+  gap: 0rem;
+  padding: 0;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background: var(--green);
+  color: var(--black);
+
+  .C_BlockContent {
+    gap: 1rem;
+    width: 35%;
+
+    .A_CardTitle {
+      font-weight: 400;
+
+      .Q_TextMainSelection {
+        font-weight: 600;
+        color: var(--black);
+      }
+    }
+
+    .A_CardText {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .W_BlockImage {
+    width: 65%;
+  }
+}
+
+.M_CrativeContainer {
+  .W_BlockImage {
+    .A_IndexImage {
+      width: 80%;
+    }
+  }
 }
 
 @media (max-width: 1770px) {
@@ -308,18 +351,18 @@
   .M_WhatContainer,
   .M_GroupContainer {
     padding: 6rem 2rem;
+  }
 
-    .A_CardText {
-      font-size: rem(24);
-      line-height: 120%;
-    }
+  .A_CardText {
+    font-size: rem(24);
+    line-height: 120%;
+  }
 
-    .A_ContentButton {
-      margin-top: 0rem;
-      padding: 0.75rem 1.5rem;
-      font-size: rem(20);
-      line-height: rem(28);
-    }
+  .A_ContentButton {
+    margin-top: 0rem;
+    padding: 0.75rem 1.5rem;
+    font-size: rem(20);
+    line-height: rem(28);
   }
 }
 
@@ -346,7 +389,7 @@
   .C_ButtonsMainWrapper {
     margin-top: 3rem;
     gap: 0.75rem;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     width: 100%;
   }
@@ -355,8 +398,10 @@
     text-align: center;
     width: 100%;
     margin-top: 0rem;
-    padding: 1rem 1rem;
+    padding: 0.5rem 1.25rem;
     font-size: rem(16);
+    font-weight: 400;
+    letter-spacing: -0.03rem;
   }
 
   .A_TextIndexL {
@@ -376,7 +421,7 @@
   }
 
   .C_CardsWhyWrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
 
     .M_WhyCard {
@@ -399,13 +444,15 @@
   }
 
   .M_WhatContainer,
-  .M_GroupContainer {
-    flex-direction: column;
+  .M_GroupContainer,
+  .M_BookmarksContainer,
+  .M_CreativeContainer {
+    flex-direction: column-reverse;
     align-items: start;
     gap: 2rem;
     padding: 2rem 0.5rem;
 
-    .C_WhatContent {
+    .C_BlockContent {
       width: 100%;
 
       .A_TextIndexL {
@@ -418,16 +465,8 @@
       }
     }
 
-    .W_WhatImage {
+    .W_BlockImage {
       width: 100%;
-    }
-
-    .A_ContentButton {
-      text-align: center;
-      width: 100%;
-      margin-top: 0rem;
-      padding: 0.5rem 1rem;
-      font-size: rem(18);
     }
   }
 }
