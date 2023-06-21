@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', function () {
   const cookiesModal = Cookies.get('modal')
 
   if (modal && !cookiesModal) {
-    Cookies.set('modal', true)
+    Cookies.set('modal', true, {expires: 3})
 
     setTimeout(() => {
       modal.style.display = 'flex'
