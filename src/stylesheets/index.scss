@@ -2,12 +2,12 @@
   margin-left: -16vw;
   margin-top: -10rem;
   width: 133vw;
-  height: 50rem;
+  height: 55rem;
   position: relative;
   z-index: -10;
 }
 
-@media (min-width: 2048px) {
+@media (max-width: 2048px) {
   .M_KeyboardContainer {
     height: 70rem;
   }
@@ -24,6 +24,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &.Error {
+    margin-top: 0rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 }
 
 .A_TextBig {

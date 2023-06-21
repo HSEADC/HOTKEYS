@@ -13,6 +13,7 @@ const pages = [
   {name: 'about', chunks: ['index']},
   {name: 'styleguide', chunks: ['index']},
   {name: 'selections', chunks: ['index']},
+  {name: '404', chunks: ['index']},
   {name: 'selections/top-5-documents-shortcuts', chunks: ['index', 'switch']},
   {name: 'selections/simple-browser-shortcuts', chunks: ['index', 'switch']},
   {name: 'selections/top-5-users-shortcuts', chunks: ['index', 'switch']},
