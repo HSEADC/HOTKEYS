@@ -1,4 +1,7 @@
 .M_KeyboardContainer {
+  opacity: 0;
+  transition: opacity 2s ease-in-out 2s;
+
   margin-left: -16vw;
   margin-top: -10rem;
   width: 133vw;
