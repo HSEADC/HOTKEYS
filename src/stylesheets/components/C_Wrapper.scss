@@ -8,7 +8,7 @@
   }
 }
 
-@media (min-width: 2560px) {
+@media (max-width: 2560px) {
   .C_Wrapper {
     width: 69.53%;
 
@@ -20,20 +20,18 @@
 
 @media (max-width: 2048px) {
   .C_Wrapper {
-    width: 86.91%;
+    width: 100%;
 
-    &.About {
-      width: 100%;
+    &.Shortcuts {
+      width: 86.91%;
     }
   }
 }
 
 @media (max-width: 1770px) {
   .C_Wrapper {
-    width: 70.24%;
-
-    &.About {
-      width: 100%;
+    &.Shortcuts {
+      width: 70.24%;
     }
   }
 }
@@ -42,9 +40,8 @@
   .C_Wrapper {
     width: 81.94%;
 
-    &.About,
-    &.Index {
-      width: 100%;
+    &.Shortcuts {
+      width: 81.94%;
     }
   }
 }
