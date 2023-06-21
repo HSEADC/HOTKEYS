@@ -8,9 +8,17 @@
   bottom: 1.875rem;
 }
 
+@media (max-width: 768px) {
+  .W_SnackBarWrapper {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
 .M_SnackBar {
+  text-align: center;
   width: fit-content;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   border-radius: 5px;
   font-size: rem(20);
   line-height: rem(26);

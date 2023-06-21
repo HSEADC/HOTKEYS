@@ -21,6 +21,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
   const bookmarkBtn = document.querySelector('#ADD_BOOKMARK')
   bookmarkBtn.addEventListener('click', function () {
-    snackBar(`Чтобы добавить, нажми <span class="A_SnackBarKey">${system === 'macos' ? 'CMD+D' : 'CTRL+D'}</span>`, 3000)
+    snackBar(`Добавь сайт в закладки, нажав <span class="A_SnackBarKey">${system === 'macos' ? 'CMD+D' : 'CTRL+D'}</span>`, 3000)
   })
 })

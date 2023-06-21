@@ -10,10 +10,10 @@
 
 @media (max-width: 2560px) {
   .C_Wrapper {
-    width: 69.53%;
+    width: 100%;
 
-    &.About {
-      width: 100%;
+    &.Shortcuts {
+      width: 69.53%;
     }
   }
 }
@@ -30,6 +30,8 @@
 
 @media (max-width: 1770px) {
   .C_Wrapper {
+    width: 100%;
+
     &.Shortcuts {
       width: 70.24%;
     }
@@ -38,8 +40,6 @@
 
 @media (max-width: 1440px) {
   .C_Wrapper {
-    width: 81.94%;
-
     &.Shortcuts {
       width: 81.94%;
     }
@@ -50,12 +50,14 @@
   .C_Wrapper {
     padding: 0 rem(31);
     width: 100%;
+    &.Shortcuts {
+      width: 100%;
+    }
   }
 }
 
 @media (max-width: 656px) {
   .C_Wrapper {
     padding: 0 rem(15);
-    width: 100%;
   }
 }
