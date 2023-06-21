@@ -137,7 +137,7 @@ export default class Shortcuts extends Component {
                   <h3 className="Q_MenuText">ШОРТКАТЫ</h3>
                 </a>
                 <div className="Q_MenuSeparator" />
-                <a className="M_MenuItem Selections" href="selections.html">
+                <a className="M_MenuItem Selections" href="/selections.html">
                   <h3 className="Q_MenuText">ПОДБОРКИ</h3>
                 </a>
               </div>
