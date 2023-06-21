@@ -28,9 +28,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // bookmark call
 
-  const bookmarkBtn = document.querySelector('#ADD_BOOKMARK')
-  bookmarkBtn.addEventListener('click', function () {
-    snackBar(`Добавь сайт в закладки, нажав <span class="A_SnackBarKey">${system === 'macos' ? 'CMD+D' : 'CTRL+D'}</span>`, 3000)
+  const bookmarkBtn = document.querySelectorAll('.ADD_BOOKMARK')
+  bookmarkBtn.forEach((btn) => {
+    btn.addEventListener('click', function () {
+      snackBar(`Добавь сайт в закладки, нажав <span class="A_SnackBarKey">${system === 'macos' ? 'CMD+D' : 'CTRL+D'}</span>`, 3000)
+    })
   })
 
   // keyboard animation
