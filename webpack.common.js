@@ -15,8 +15,6 @@ const pages = [
   {name: 'selections', chunks: ['index']},
   {name: '404', chunks: ['index']},
   {name: 'selections/top-5-documents-shortcuts', chunks: ['index', 'switch', 'selections']},
-  {name: 'selections/simple-browser-shortcuts', chunks: ['index', 'switch', 'selections']},
-  {name: 'selections/top-5-users-shortcuts', chunks: ['index', 'switch', 'selections']},
   {name: 'selections/useful-designer-shortcuts', chunks: ['index', 'switch', 'selections']},
   {name: 'selections/useful-developer-shortcuts', chunks: ['index', 'switch', 'selections']},
   {name: 'shortcuts/switch-between-programs', chunks: ['index', 'switch']},
