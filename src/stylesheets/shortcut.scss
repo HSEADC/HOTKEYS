@@ -1,5 +1,5 @@
 .C_Shortcut {
-  margin-top: clamp(2rem, 2.5vw, 5rem);
+  margin-top: clamp(4rem, 4.5vw, 5rem);
   width: 100%;
 
   .Q_TextMainSelection {
@@ -37,7 +37,17 @@
   }
 }
 
+@media (max-width: 1600px) {
+  .C_Shortcut {
+    margin-top: -2rem;
+  }
+}
+
 @media (max-width: 656px) {
+  .C_Shortcut {
+    margin-top: clamp(1rem, 4.5vw, 5rem);
+  }
+
   .O_Keyboard {
     .A_KeyboardSVG {
       width: 95%;
@@ -46,6 +56,7 @@
 
   .A_TextMainXL {
     width: 85%;
+    margin: 8%;
   }
 
   #S_Win,
