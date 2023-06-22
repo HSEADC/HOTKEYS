@@ -14,9 +14,9 @@ const pages = [
   {name: 'styleguide', chunks: ['index']},
   {name: 'selections', chunks: ['index']},
   {name: '404', chunks: ['index']},
-  {name: 'selections/top-5-documents-shortcuts', chunks: ['index', 'switch', 'selections']},
-  {name: 'selections/useful-designer-shortcuts', chunks: ['index', 'switch', 'selections']},
-  {name: 'selections/useful-developer-shortcuts', chunks: ['index', 'switch', 'selections']},
+  {name: 'selections/top-5-documents-shortcuts', chunks: ['index', 'switch']},
+  {name: 'selections/useful-designer-shortcuts', chunks: ['index', 'switch']},
+  {name: 'selections/useful-developer-shortcuts', chunks: ['index', 'switch']},
   {name: 'shortcuts/switch-between-programs', chunks: ['index', 'switch']},
   {name: 'shortcuts/hide-open-program', chunks: ['index', 'switch']},
   {name: 'shortcuts/open-clipboard', chunks: ['index', 'switch']},
@@ -74,8 +74,6 @@ const partials = [
   'modal',
   'footer',
   'snack-bar',
-  'training',
-  'training-block'
 ]
 
 module.exports = {
@@ -84,7 +82,6 @@ module.exports = {
     landing: './src/javascript/landing.js',
     shortcuts: './src/shortcuts.jsx',
     switch: './src/javascript/system-switch.js',
-    selections: './src/javascript/training-selections.js',
   },
   output: {
     filename: '[name].js',
