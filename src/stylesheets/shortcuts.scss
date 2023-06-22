@@ -58,7 +58,6 @@
     .A_CardName,
     .A_CardKey {
       font-style: italic;
-      letter-spacing: 0.1;
       font-weight: 500;
     }
 
@@ -77,6 +76,34 @@
 
   &.Selections {
     height: rem(302);
+  }
+
+  &.Training {
+    background-color: var(--green);
+    border: 1.5px solid var(--grey);
+    cursor: help;
+
+    .A_CardName {
+      color: var(--black);
+    }
+
+    .A_ContentButton {
+      width: 100%;
+      text-align: center;
+    }
+
+    &:hover {
+      box-shadow: 0px 1px 50px rgba(203, 251, 69, 0.2);
+
+      .A_CardName {
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      .A_CardKey {
+        color: var(--green);
+      }
+    }
   }
 }
 
