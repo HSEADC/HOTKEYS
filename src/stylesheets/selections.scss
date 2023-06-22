@@ -57,5 +57,29 @@
 }
 
 .O_Training {
+}
+
+.O_Training {
   display: none;
+  place-items: center;
+  height: 50vh;
+
+  .W_TrainingCard {
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    height: 15rem;
+    width: 35%;
+    border-radius: 5px;
+    border: 1.5px solid var(--grey);
+    text-align: center;
+
+    .A_TextBig {
+      width: fit-content;
+    }
+  }
 }

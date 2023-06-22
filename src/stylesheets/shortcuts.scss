@@ -107,6 +107,14 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .M_ShortcutCard {
+    &.Training {
+      display: none;
+    }
+  }
+}
+
 .A_LoadingLogo {
   display: grid;
   place-items: center;

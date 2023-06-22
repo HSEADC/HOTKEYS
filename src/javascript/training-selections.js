@@ -22,7 +22,7 @@ trainingButton.addEventListener('click', trainingSelections)
 
 function trainingSelections() {
   shortcutsContainer.style.display = 'none'
-  trainingContainer.style.display = 'flex'
+  trainingContainer.style.display = 'grid'
 
   const system = Cookies.get('os')
   const shortcutTextArray = Array.from(system === 'macos' ? macosShortcuts : windowsShortcuts).map((shortcut) => shortcut.textContent)
@@ -63,8 +63,8 @@ function playLevel(shortcutTextArray) {
 }
 
 function finishTraining() {
-  shortcutText.textContent = ''
-  shortcutResult.textContent = 'Finish training!'
+  shortcutText.textContent = 'Finish training!'
+  shortcutText.style.color = '#cbfb45;'
 
   setTimeout(() => {
     location.reload()
