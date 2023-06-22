@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,34 +33,36 @@
         <menu-shortcut></menu-shortcut>
       </div>
     </div>
-    <div class="C_Shortcut">
-      <h2 class="A_TextMainXL">
-        <span class="Q_TextMainSelection">{{ xl_span }}</span>
-        {{ xl }}
-      </h2>
-      <div id="S_Win">
-        <div class="{{ win_class }}">
-          <keyboard-win></keyboard-win>
+    <div>
+      <div class="C_Shortcut">
+        <h2 class="A_TextIndexXL">
+          <span class="Q_TextMainSelection">{{ xl_span }}</span>
+          {{ xl }}
+        </h2>
+        <div id="S_Win">
+          <div class="{{ win_class }}">
+            <keyboard-win></keyboard-win>
+          </div>
+          <h1 class="A_CardCaption">
+            {{ l_start }}
+            <span class="Q_TextMainSelection">{{ l_win_first }}</span>
+            {{ l_center }}
+            <span class="Q_TextMainSelection">{{ l_win_second }}</span>
+            {{ l_end }}
+          </h1>
         </div>
-        <h1 class="A_TextMainL">
-          {{ l_start }}
-          <span class="Q_TextMainSelection">{{ l_win_first }}</span>
-          {{ l_center }}
-          <span class="Q_TextMainSelection">{{ l_win_second }}</span>
-          {{ l_end }}
-        </h1>
-      </div>
-      <div id="S_Mac">
-        <div class="{{ mac_class }}">
-          <keyboard-mac></keyboard-mac>
+        <div id="S_Mac">
+          <div class="{{ mac_class }}">
+            <keyboard-mac></keyboard-mac>
+          </div>
+          <h1 class="A_CardCaption">
+            {{ l_start }}
+            <span class="Q_TextMainSelection">{{ l_mac_first }}</span>
+            {{ l_center }}
+            <span class="Q_TextMainSelection">{{ l_mac_second }}</span>
+            {{ l_end }}
+          </h1>
         </div>
-        <h1 class="A_TextMainL">
-          {{ l_start }}
-          <span class="Q_TextMainSelection">{{ l_mac_first }}</span>
-          {{ l_center }}
-          <span class="Q_TextMainSelection">{{ l_mac_second }}</span>
-          {{ l_end }}
-        </h1>
       </div>
     </div>
   </body>
