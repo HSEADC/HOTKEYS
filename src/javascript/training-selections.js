@@ -1,48 +1,66 @@
 import Cookies from 'js-cookie'
 import hotkeys from 'hotkeys-js'
 
-const trainingButton = document.getElementById('TRAINING_BTN')
-const trainingSelection = document.getElementById('TRAINING_SELECTION')
+const trainingButton = document.querySelector('#TRAINING_BTN')
+const shortcutsContainer = document.querySelector('.S_Shortcuts')
+const trainingContainer = document.querySelector('.O_Training')
 
-trainingButton.addEventListener('click', hideElements)
+const macosShortcuts = document.querySelectorAll('.Q_ShortcutMacos')
+const windowsShortcuts = document.querySelectorAll('.Q_ShortcutWindows')
+const shortcutText = document.querySelector('#SHORTCUT_TEXT')
+const shortcutResult = document.querySelector('#SHORTCUT_RESULT')
 
-function hideElements() {
-  const shortcutCards = document.getElementsByClassName('M_ShortcutCard')
-  Array.from(shortcutCards).forEach((card) => {
-    card.style.display = 'none'
-  })
+let currentShortcutIndex = 0
 
-  trainingSelection.style.display = 'none'
+trainingButton.addEventListener('click', trainingSelections)
+
+function trainingSelections() {
+  shortcutsContainer.style.display = 'none'
+  trainingContainer.style.display = 'flex'
 
   const system = Cookies.get('os')
-  let shortcutTextArray
+  const shortcutTextArray = Array.from(system === 'macos' ? macosShortcuts : windowsShortcuts).map((shortcut) => shortcut.textContent)
 
-  if (system === 'macos') {
-    const macosShortcuts = document.getElementsByClassName('Q_ShortcutMacos')
-    shortcutTextArray = Array.from(macosShortcuts).map((shortcut) => shortcut.textContent)
-    console.log(shortcutTextArray)
-  } else {
-    const windowsShortcuts = document.getElementsByClassName('Q_ShortcutWindows')
-    shortcutTextArray = Array.from(windowsShortcuts).map((shortcut) => shortcut.textContent)
-    console.log(shortcutTextArray)
-  }
+  console.log(shortcutTextArray)
 
-  shortcutTextArray.forEach((shortcutText) => {
-    hotkeys(shortcutText, () => {
-      console.log('Shortcut Pressed:', shortcutText)
-      goToNextShortcut(shortcutTextArray.length)
-    })
-  })
+  playLevel(shortcutTextArray)
 }
 
-function goToNextShortcut(totalShortcuts) {
-  currentShortcutIndex++
-  if (currentShortcutIndex < totalShortcuts) {
-    console.log('Next Shortcut:', currentShortcutIndex + 1)
-  } else {
-    console.log('Training completed')
-    hotkeys.unbind() // Unbind all shortcuts
+function playLevel(shortcutTextArray) {
+  const requiredShortcut = shortcutTextArray[currentShortcutIndex]
+  shortcutText.textContent = requiredShortcut
+
+  hotkeys(requiredShortcut.toLowerCase(), handleShortcutPress)
+
+  function handleShortcutPress(event, handler) {
+    const pressedShortcut = handler.key.toLowerCase()
+
+    if (pressedShortcut === requiredShortcut.toLowerCase()) {
+      shortcutResult.textContent = 'Correct shortcut!'
+      setTimeout(() => {
+        shortcutResult.textContent = ''
+      }, 1500)
+      currentShortcutIndex++
+      hotkeys.unbind(requiredShortcut.toLowerCase(), handleShortcutPress)
+
+      if (currentShortcutIndex === shortcutTextArray.length) {
+        finishTraining()
+      } else {
+        setTimeout(() => {
+          playLevel(shortcutTextArray)
+        }, 500)
+      }
+    } else {
+      shortcutResult.textContent = 'Incorrect shortcut!'
+    }
   }
 }
 
-let currentShortcutIndex = -1 // Keeps track of the current shortcut index
+function finishTraining() {
+  shortcutText.textContent = ''
+  shortcutResult.textContent = 'Finish training!'
+
+  setTimeout(() => {
+    location.reload()
+  }, 2000)
+}

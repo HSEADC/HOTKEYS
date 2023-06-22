@@ -76,7 +76,8 @@ const partials = [
   'modal',
   'footer',
   'snack-bar',
-  'training'
+  'training',
+  'training-block'
 ]
 
 module.exports = {
