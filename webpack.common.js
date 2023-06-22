@@ -15,8 +15,6 @@ const pages = [
   {name: 'selections', chunks: ['index']},
   {name: '404', chunks: ['index']},
   {name: 'selections/top-5-documents-shortcuts', chunks: ['index', 'switch']},
-  {name: 'selections/simple-browser-shortcuts', chunks: ['index', 'switch']},
-  {name: 'selections/top-5-users-shortcuts', chunks: ['index', 'switch']},
   {name: 'selections/useful-designer-shortcuts', chunks: ['index', 'switch']},
   {name: 'selections/useful-developer-shortcuts', chunks: ['index', 'switch']},
   {name: 'shortcuts/switch-between-programs', chunks: ['index', 'switch']},
@@ -75,7 +73,7 @@ const partials = [
   'keyboard-mac',
   'modal',
   'footer',
-  'snack-bar'
+  'snack-bar',
 ]
 
 module.exports = {

@@ -1,28 +1,33 @@
 .C_Shortcut {
-  margin-top: clamp(1rem, 2.5vw, 5rem);
+  margin-top: clamp(2rem, 2.5vw, 5rem);
   width: 100%;
 
   .Q_TextMainSelection {
     font-style: normal;
   }
 }
-
-#S_Win,
+//*? switch keyboards
+.A #S_Win,
 #S_Mac {
   display: none;
-  width: 100%;
 }
-
 #S_Win,
 #S_Mac {
+  .O_Keyboard {
+    margin: 4.5rem 0 3rem;
+  }
+
   .A_TextMainXL {
     max-width: 95%;
     margin: 0 auto;
   }
-
   .A_TextMainL {
     max-width: 90%;
     margin: 0 auto;
+  }
+
+  .A_CardCaption {
+    text-align: center;
   }
 }
 
@@ -33,16 +38,22 @@
 }
 
 @media (max-width: 656px) {
+  .O_Keyboard {
+    .A_KeyboardSVG {
+      width: 95%;
+    }
+  }
+
   .A_TextMainXL {
     width: 85%;
   }
 
-  // #S_Win,
-  // #S_Mac {
-  //   .O_Keyboard {
-  //     margin: clamp(10rem, 12.5vw, 14rem) 0;
-  //   }
-  // }
+  #S_Win,
+  #S_Mac {
+    .O_Keyboard {
+      margin: clamp(10rem, 12.5vw, 14rem) 0;
+    }
+  }
 }
 
 //** system hotkeys
