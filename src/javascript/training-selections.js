@@ -12,6 +12,12 @@ const shortcutResult = document.querySelector('#SHORTCUT_RESULT')
 
 let currentShortcutIndex = 0
 
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey || event.altKey || event.shiftKey) {
+    event.preventDefault()
+  }
+})
+
 trainingButton.addEventListener('click', trainingSelections)
 
 function trainingSelections() {
