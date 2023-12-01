@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   fetchData('http://localhost:1000/api/v1/masters.json', ['name', 'nickname'], 'result')
 
   // Fetch data from the second API
-  fetchData('http://localhost:1000/api/v1/tattoos.json', ['title', 'description'], 'tattoosResult')
+  fetchData('http://localhost:1000/api/v1/tattoos.json', ['title', 'specialization'], 'tattoosResult')
 
   function fetchData(apiEndpoint, propertiesToDisplay, resultDivId) {
     const resultDiv = document.getElementById(resultDivId)
