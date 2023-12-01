@@ -14,6 +14,7 @@ const pages = [
   {name: 'styleguide', chunks: ['index']},
   {name: 'selections', chunks: ['index']},
   {name: '404', chunks: ['index']},
+  {name: 'tatu', chunks: ['index', 'tatu']},
   {name: 'selections/top-5-documents-shortcuts', chunks: ['index', 'switch']},
   {name: 'selections/simple-browser-shortcuts', chunks: ['index', 'switch', 'selections']},
   {name: 'selections/top-5-users-shortcuts', chunks: ['index', 'switch', 'selections']},
@@ -84,6 +85,7 @@ module.exports = {
     landing: './src/javascript/landing.js',
     shortcuts: './src/shortcuts.jsx',
     switch: './src/javascript/system-switch.js',
+    tatu: './src/javascript/tatu.js',
   },
   output: {
     filename: '[name].js',

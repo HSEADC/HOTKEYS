@@ -12,7 +12,7 @@
   },
   "homepage": "https://github.com/HSEADC/HOTKEYS#readme",
   "scripts": {
-    "start": "webpack serve --open --config webpack.dev.js --port 2000",
+    "start": "webpack serve --open --config webpack.dev.js --port 1000",
     "render": "node src/lib/tasks/render-shortcuts.js",
     "generate": "node src/lib/tasks/generate-pages.js",
     "sitemap": "node src/lib/tasks/generate-sitemap.js",
