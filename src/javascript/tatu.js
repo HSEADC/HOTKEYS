@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
       const card = document.createElement('div')
       card.className = 'p-4 rounded border border-purple-500 w-[47%]'
 
-      if (item.tattoo_image && item.tattoo_image.url) {
+      if (item.tattoo_image) {
         const imageElement = document.createElement('img')
-        imageElement.src = url + item.tattoo_image.url
+        imageElement.src = item.tattoo_image
         imageElement.alt = 'Tattoo Image'
         imageElement.className = 'w-full object-cover h-auto mb-2'
         card.appendChild(imageElement)
