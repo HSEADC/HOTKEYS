@@ -22404,7 +22404,7 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
           className: "A_CardName"
         }, /*#__PURE__*/react.createElement("span", {
           className: "Q_TextSelection"
-        }, hotkey.selected), hotkey.text), /*#__PURE__*/react.createElement("h2", {
+        }, hotkey.selected, " "), hotkey.text), /*#__PURE__*/react.createElement("h2", {
           className: "A_CardKey"
         }, hotkey[system])));
       }))));
