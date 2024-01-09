@@ -18,7 +18,7 @@
     "sitemap": "node src/lib/tasks/generate-sitemap.js",
     "watch": "webpack --config webpack.dev.js",
     "prod": "webpack --config webpack.prod.js",
-    "build": "yarn render && yarn generate && yarn sitemap && webpack --config webpack.prod.js"
+    "build": "pnpm render && pnpm generate && pnpm sitemap && webpack --config webpack.prod.js"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
