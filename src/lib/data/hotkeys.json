@@ -123,7 +123,7 @@
     "link": "redo-undo-last-action",
     "selected": "Отмена",
     "text": "последнего отмененного действия",
-    "windows": "Ctrl+SHift+Z",
+    "windows": "Ctrl+Shift+Z",
     "macos": "Cmd+Shift+Z",
     "popular": true,
     "useful": true,
