@@ -1,5 +1,5 @@
 import './index.css'
-import './javascript/modal.js'
+// import './javascript/modal.js'
 
 import Cookies from 'js-cookie'
 

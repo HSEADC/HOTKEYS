@@ -19,23 +19,71 @@ cd HOTKEYS
 3. Установите зависимости
 
 ```bash
-yarn
+pnpm i
 ```
 
 3. Запустите сервер для разработки
 
 ```bash
-yarn start
+pnpm start
 ```
 
 4. Сделайте билд
 
 ```bash
-yarn build
+pnpm build
 ```
 
 5. При изменении файла <kbd>hotkeys.json</kbd> запустите пре-рендер и генерацию страниц шорткатов <kbd>shortcuts.html</kbd>
 
 ```bash
-yarn render && yarn generate
+pnpm render && pnpm generate
 ```
+
+</br>
+
+## Добавление шорткатов
+
+### Описание
+
+Файл <kbd>hotkeys.json</kbd> содержит данные о шорткатах для проекта. Каждый шорткат представлен в формате JSON и содержит информацию о его свойствах и использовании.
+
+### Расположение файла
+
+Файл hotkeys.json находится в папке <kbd>/src/lib/data/</kbd> в корневой директории проекта.
+
+### Добавление новых шорткатов
+Чтобы добавить новые шорткаты в файл <kbd>hotkeys.json</kbd>, выполните следующие шаги:
+
+1. Откройте файл <kbd>hotkeys.json</kbd>, расположенный в папке <kbd>/src/lib/data/</kbd> проекта.
+2. Создайте новый ключ для <kbd>JSON</kbd> объекта, используя приведенную выше структуру шортката.
+ 
+```json
+{
+  "link": "new-shortcut",
+  "selected": "Новая категория",
+  "text": "Описание нового шортката",
+  "windows": "Ctrl+N",
+  "macos": "Cmd+N",
+  "popular": true,
+  "useful": true,
+  "simple": true,
+  "complex": false,
+  "target": "application",
+  "page_title": "Название нового шортката",
+  "page_win": "Описание для Windows на странице",
+  "page_mac": "Описание для macOS на странице",
+  "page_xl_span": "Крупный текст",
+  "page_xl": "Описание крупного текста на странице",
+  "page_l_start": "Начало описания длинного текста",
+  "page_l_center": "Середина описания длинного текста",
+  "page_l_end": "Окончание описания длинного текста",
+  "page_l_win_first": "Ctrl",
+  "page_l_win_second": "N",
+  "page_l_mac_first": "Cmd",
+  "page_l_mac_second": "N"
+}
+
+```
+
+

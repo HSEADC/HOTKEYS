@@ -1,14 +1,16 @@
 import React, {Component} from 'react'
-import Cookies from 'js-cookie'
 import Select, {components} from 'react-select'
+
+import Cookies from 'js-cookie'
+
 import Logo from './Logo.jsx'
+import {selectStyles} from './selectStyles'
+import TriangleDown from '../../images/triangle.svg'
+
+import hotkeys from '../../lib/data/hotkeys.json'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faTimes} from '@fortawesome/free-solid-svg-icons'
-import TriangleDown from '../../images/triangle.svg'
-
-import {selectStyles} from './selectStyles'
-import hotkeys from '../../lib/data/hotkeys.json'
 export default class Shortcuts extends Component {
   constructor(props) {
     super(props)
@@ -167,7 +169,7 @@ export default class Shortcuts extends Component {
                 <a href={'shortcuts/' + hotkey.link + '.html'} key={index}>
                   <div className="M_ShortcutCard">
                     <h1 className="A_CardName">
-                      <span className="Q_TextSelection">{hotkey.selected} </span>
+                      <span className="Q_TextSelection">{hotkey.selected}</span>
                       {hotkey.text}
                     </h1>
                     <h2 className="A_CardKey">{hotkey[system]}</h2>
