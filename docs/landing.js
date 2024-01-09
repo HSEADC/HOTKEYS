@@ -42,8 +42,8 @@
 /************************************************************************/
 var __webpack_exports__ = {};
 
-;// CONCATENATED MODULE: ./node_modules/js-cookie/dist/js.cookie.mjs
-/*! js-cookie v3.0.1 | MIT */
+;// CONCATENATED MODULE: ./node_modules/.pnpm/js-cookie@3.0.5/node_modules/js-cookie/dist/js.cookie.mjs
+/*! js-cookie v3.0.5 | MIT */
 /* eslint-disable no-var */
 function js_cookie_assign (target) {
   for (var i = 1; i < arguments.length; i++) {
@@ -76,7 +76,7 @@ var defaultConverter = {
 /* eslint-disable no-var */
 
 function init (converter, defaultAttributes) {
-  function set (key, value, attributes) {
+  function set (name, value, attributes) {
     if (typeof document === 'undefined') {
       return
     }
@@ -90,7 +90,7 @@ function init (converter, defaultAttributes) {
       attributes.expires = attributes.expires.toUTCString();
     }
 
-    key = encodeURIComponent(key)
+    name = encodeURIComponent(name)
       .replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent)
       .replace(/[()]/g, escape);
 
@@ -117,11 +117,11 @@ function init (converter, defaultAttributes) {
     }
 
     return (document.cookie =
-      key + '=' + converter.write(value, key) + stringifiedAttributes)
+      name + '=' + converter.write(value, name) + stringifiedAttributes)
   }
 
-  function get (key) {
-    if (typeof document === 'undefined' || (arguments.length && !key)) {
+  function get (name) {
+    if (typeof document === 'undefined' || (arguments.length && !name)) {
       return
     }
 
@@ -134,25 +134,25 @@ function init (converter, defaultAttributes) {
       var value = parts.slice(1).join('=');
 
       try {
-        var foundKey = decodeURIComponent(parts[0]);
-        jar[foundKey] = converter.read(value, foundKey);
+        var found = decodeURIComponent(parts[0]);
+        jar[found] = converter.read(value, found);
 
-        if (key === foundKey) {
+        if (name === found) {
           break
         }
       } catch (e) {}
     }
 
-    return key ? jar[key] : jar
+    return name ? jar[name] : jar
   }
 
   return Object.create(
     {
-      set: set,
-      get: get,
-      remove: function (key, attributes) {
+      set,
+      get,
+      remove: function (name, attributes) {
         set(
-          key,
+          name,
           '',
           js_cookie_assign({}, attributes, {
             expires: -1
@@ -176,7 +176,7 @@ function init (converter, defaultAttributes) {
 var api = init(defaultConverter, { path: '/' });
 /* eslint-enable no-var */
 
-/* harmony default export */ const js_cookie = (api);
+
 
 ;// CONCATENATED MODULE: ./src/javascript/snack_bar.js
 function snackBar(textSnackbar, timeout) {
@@ -196,12 +196,10 @@ function animateKeyboard(imgElement, image2, image3) {
   var image1 = imageElement.src;
   var images = [image1, image2, image3];
   var imageIndex = 0;
-
   function changeImage() {
     imageElement.src = images[imageIndex];
     imageIndex = (imageIndex + 1) % images.length;
   }
-
   imageContainer.style.opacity = '1';
   setTimeout(function () {
     setInterval(changeImage, 1000);
@@ -227,26 +225,27 @@ window.addEventListener('DOMContentLoaded', function () {
   // system detection
   var macKeyboard = document.querySelector('#IMG_MAC');
   var winKeyboard = document.querySelector('#IMG_WIN');
-  var system = js_cookie.get('os');
-
+  var system = api.get('os');
   var showElement = function showElement(elementToShow, elementToHide) {
     elementToShow.style.display = 'block';
     elementToHide.style.display = 'none';
   };
-
   if (system == 'macos') {
     showElement(macKeyboard, winKeyboard);
   } else {
     showElement(winKeyboard, macKeyboard);
-  } // bookmark call
+  }
 
+  // bookmark call
 
   var bookmarkBtn = document.querySelectorAll('.ADD_BOOKMARK');
   bookmarkBtn.forEach(function (btn) {
     btn.addEventListener('click', function () {
       snackBar("\u0414\u043E\u0431\u0430\u0432\u044C \u0441\u0430\u0439\u0442 \u0432 \u0437\u0430\u043A\u043B\u0430\u0434\u043A\u0438, \u043D\u0430\u0436\u0430\u0432 <span class=\"A_SnackBarKey\">".concat(system === 'macos' ? 'CMD+D' : 'CTRL+D', "</span>"), 3000);
     });
-  }); // keyboard animation
+  });
+
+  // keyboard animation
 
   if (system == 'macos') {
     animateKeyboard('#IMG_MAC', index_mac2_namespaceObject, index_mac3_namespaceObject);

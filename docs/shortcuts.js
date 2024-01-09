@@ -1,13 +1,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 679:
+/***/ 535:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
 
-var reactIs = __webpack_require__(864);
+var reactIs = __webpack_require__(114);
 
 /**
  * Copyright 2015, Yahoo! Inc.
@@ -112,7 +112,7 @@ module.exports = hoistNonReactStatics;
 
 /***/ }),
 
-/***/ 703:
+/***/ 49:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -125,7 +125,7 @@ module.exports = hoistNonReactStatics;
 
 
 
-var ReactPropTypesSecret = __webpack_require__(414);
+var ReactPropTypesSecret = __webpack_require__(444);
 
 function emptyFunction() {}
 function emptyFunctionWithReset() {}
@@ -185,7 +185,7 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ 697:
+/***/ 507:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /**
@@ -198,13 +198,13 @@ module.exports = function() {
 if (false) { var throwOnDirectAccess, ReactIs; } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(703)();
+  module.exports = __webpack_require__(49)();
 }
 
 
 /***/ }),
 
-/***/ 414:
+/***/ 444:
 /***/ ((module) => {
 
 "use strict";
@@ -224,7 +224,7 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 
-/***/ 448:
+/***/ 746:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -240,7 +240,7 @@ module.exports = ReactPropTypesSecret;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(294),ca=__webpack_require__(840);function p(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}var da=new Set,ea={};function fa(a,b){ha(a,b);ha(a+"Capture",b)}
+var aa=__webpack_require__(959),ca=__webpack_require__(962);function p(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}var da=new Set,ea={};function fa(a,b){ha(a,b);ha(a+"Capture",b)}
 function ha(a,b){ea[a]=b;for(a=0;a<b.length;a++)da.add(b[a])}
 var ia=!("undefined"===typeof window||"undefined"===typeof window.document||"undefined"===typeof window.document.createElement),ja=Object.prototype.hasOwnProperty,ka=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,la=
 {},ma={};function oa(a){if(ja.call(ma,a))return!0;if(ja.call(la,a))return!1;if(ka.test(a))return ma[a]=!0;la[a]=!0;return!1}function pa(a,b,c,d){if(null!==c&&0===c.type)return!1;switch(typeof b){case "function":case "symbol":return!0;case "boolean":if(d)return!1;if(null!==c)return!c.acceptsBooleans;a=a.toLowerCase().slice(0,5);return"data-"!==a&&"aria-"!==a;default:return!1}}
@@ -555,14 +555,14 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!pl(c))throw Er
 
 /***/ }),
 
-/***/ 745:
+/***/ 478:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 var __webpack_unused_export__;
 
 
-var m = __webpack_require__(935);
+var m = __webpack_require__(422);
 if (true) {
   exports.s = m.createRoot;
   __webpack_unused_export__ = m.hydrateRoot;
@@ -571,7 +571,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 935:
+/***/ 422:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -600,13 +600,13 @@ if (true) {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(448);
+  module.exports = __webpack_require__(746);
 } else {}
 
 
 /***/ }),
 
-/***/ 921:
+/***/ 198:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -629,20 +629,20 @@ exports.isValidElementType=function(a){return"string"===typeof a||"function"===t
 
 /***/ }),
 
-/***/ 864:
+/***/ 114:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
 
 if (true) {
-  module.exports = __webpack_require__(921);
+  module.exports = __webpack_require__(198);
 } else {}
 
 
 /***/ }),
 
-/***/ 408:
+/***/ 257:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -676,20 +676,20 @@ exports.useTransition=function(){return U.current.useTransition()};exports.versi
 
 /***/ }),
 
-/***/ 294:
+/***/ 959:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
 
 if (true) {
-  module.exports = __webpack_require__(408);
+  module.exports = __webpack_require__(257);
 } else {}
 
 
 /***/ }),
 
-/***/ 53:
+/***/ 568:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -716,14 +716,14 @@ exports.unstable_shouldYield=M;exports.unstable_wrapCallback=function(a){var b=y
 
 /***/ }),
 
-/***/ 840:
+/***/ 962:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
 
 if (true) {
-  module.exports = __webpack_require__(53);
+  module.exports = __webpack_require__(568);
 } else {}
 
 
@@ -867,180 +867,44 @@ var __webpack_exports__ = {};
 (() => {
 "use strict";
 
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(294);
+// EXTERNAL MODULE: ./node_modules/.pnpm/react@18.2.0/node_modules/react/index.js
+var react = __webpack_require__(959);
 var react_namespaceObject = /*#__PURE__*/__webpack_require__.t(react, 2);
-// EXTERNAL MODULE: ./node_modules/react-dom/client.js
-var client = __webpack_require__(745);
-;// CONCATENATED MODULE: ./node_modules/js-cookie/dist/js.cookie.mjs
-/*! js-cookie v3.0.1 | MIT */
-/* eslint-disable no-var */
-function js_cookie_assign (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-    for (var key in source) {
-      target[key] = source[key];
-    }
-  }
-  return target
-}
-/* eslint-enable no-var */
-
-/* eslint-disable no-var */
-var defaultConverter = {
-  read: function (value) {
-    if (value[0] === '"') {
-      value = value.slice(1, -1);
-    }
-    return value.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent)
-  },
-  write: function (value) {
-    return encodeURIComponent(value).replace(
-      /%(2[346BF]|3[AC-F]|40|5[BDE]|60|7[BCD])/g,
-      decodeURIComponent
-    )
-  }
-};
-/* eslint-enable no-var */
-
-/* eslint-disable no-var */
-
-function init (converter, defaultAttributes) {
-  function set (key, value, attributes) {
-    if (typeof document === 'undefined') {
-      return
-    }
-
-    attributes = js_cookie_assign({}, defaultAttributes, attributes);
-
-    if (typeof attributes.expires === 'number') {
-      attributes.expires = new Date(Date.now() + attributes.expires * 864e5);
-    }
-    if (attributes.expires) {
-      attributes.expires = attributes.expires.toUTCString();
-    }
-
-    key = encodeURIComponent(key)
-      .replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent)
-      .replace(/[()]/g, escape);
-
-    var stringifiedAttributes = '';
-    for (var attributeName in attributes) {
-      if (!attributes[attributeName]) {
-        continue
-      }
-
-      stringifiedAttributes += '; ' + attributeName;
-
-      if (attributes[attributeName] === true) {
-        continue
-      }
-
-      // Considers RFC 6265 section 5.2:
-      // ...
-      // 3.  If the remaining unparsed-attributes contains a %x3B (";")
-      //     character:
-      // Consume the characters of the unparsed-attributes up to,
-      // not including, the first %x3B (";") character.
-      // ...
-      stringifiedAttributes += '=' + attributes[attributeName].split(';')[0];
-    }
-
-    return (document.cookie =
-      key + '=' + converter.write(value, key) + stringifiedAttributes)
-  }
-
-  function get (key) {
-    if (typeof document === 'undefined' || (arguments.length && !key)) {
-      return
-    }
-
-    // To prevent the for loop in the first place assign an empty array
-    // in case there are no cookies at all.
-    var cookies = document.cookie ? document.cookie.split('; ') : [];
-    var jar = {};
-    for (var i = 0; i < cookies.length; i++) {
-      var parts = cookies[i].split('=');
-      var value = parts.slice(1).join('=');
-
-      try {
-        var foundKey = decodeURIComponent(parts[0]);
-        jar[foundKey] = converter.read(value, foundKey);
-
-        if (key === foundKey) {
-          break
-        }
-      } catch (e) {}
-    }
-
-    return key ? jar[key] : jar
-  }
-
-  return Object.create(
-    {
-      set: set,
-      get: get,
-      remove: function (key, attributes) {
-        set(
-          key,
-          '',
-          js_cookie_assign({}, attributes, {
-            expires: -1
-          })
-        );
-      },
-      withAttributes: function (attributes) {
-        return init(this.converter, js_cookie_assign({}, this.attributes, attributes))
-      },
-      withConverter: function (converter) {
-        return init(js_cookie_assign({}, this.converter, converter), this.attributes)
-      }
-    },
-    {
-      attributes: { value: Object.freeze(defaultAttributes) },
-      converter: { value: Object.freeze(converter) }
-    }
-  )
-}
-
-var api = init(defaultConverter, { path: '/' });
-/* eslint-enable no-var */
-
-/* harmony default export */ const js_cookie = (api);
-
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/typeof.js
-function _typeof(obj) {
+// EXTERNAL MODULE: ./node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/client.js
+var client = __webpack_require__(478);
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/typeof.js
+function _typeof(o) {
   "@babel/helpers - typeof";
 
-  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-  }, _typeof(obj);
+  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
+    return typeof o;
+  } : function (o) {
+    return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+  }, _typeof(o);
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/toPrimitive.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/toPrimitive.js
 
-function _toPrimitive(input, hint) {
-  if (_typeof(input) !== "object" || input === null) return input;
-  var prim = input[Symbol.toPrimitive];
-  if (prim !== undefined) {
-    var res = prim.call(input, hint || "default");
-    if (_typeof(res) !== "object") return res;
+function toPrimitive(t, r) {
+  if ("object" != _typeof(t) || !t) return t;
+  var e = t[Symbol.toPrimitive];
+  if (void 0 !== e) {
+    var i = e.call(t, r || "default");
+    if ("object" != _typeof(i)) return i;
     throw new TypeError("@@toPrimitive must return a primitive value.");
   }
-  return (hint === "string" ? String : Number)(input);
+  return ("string" === r ? String : Number)(t);
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/toPropertyKey.js
 
 
-function _toPropertyKey(arg) {
-  var key = _toPrimitive(arg, "string");
-  return _typeof(key) === "symbol" ? key : String(key);
+function toPropertyKey(t) {
+  var i = toPrimitive(t, "string");
+  return "symbol" == _typeof(i) ? i : String(i);
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 
 function _defineProperty(obj, key, value) {
-  key = _toPropertyKey(key);
+  key = toPropertyKey(key);
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -1053,30 +917,30 @@ function _defineProperty(obj, key, value) {
   }
   return obj;
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/objectSpread2.js
 
-function ownKeys(object, enumerableOnly) {
-  var keys = Object.keys(object);
+function ownKeys(e, r) {
+  var t = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
-    var symbols = Object.getOwnPropertySymbols(object);
-    enumerableOnly && (symbols = symbols.filter(function (sym) {
-      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-    })), keys.push.apply(keys, symbols);
+    var o = Object.getOwnPropertySymbols(e);
+    r && (o = o.filter(function (r) {
+      return Object.getOwnPropertyDescriptor(e, r).enumerable;
+    })), t.push.apply(t, o);
   }
-  return keys;
+  return t;
 }
-function objectSpread2_objectSpread2(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = null != arguments[i] ? arguments[i] : {};
-    i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
-      _defineProperty(target, key, source[key]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
-      Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+function objectSpread2_objectSpread2(e) {
+  for (var r = 1; r < arguments.length; r++) {
+    var t = null != arguments[r] ? arguments[r] : {};
+    r % 2 ? ownKeys(Object(t), !0).forEach(function (r) {
+      _defineProperty(e, r, t[r]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) {
+      Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
     });
   }
-  return target;
+  return e;
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/extends.js
 function extends_extends() {
   extends_extends = Object.assign ? Object.assign.bind() : function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -1091,7 +955,7 @@ function extends_extends() {
   };
   return extends_extends.apply(this, arguments);
 }
-;// CONCATENATED MODULE: ./node_modules/@emotion/sheet/dist/emotion-sheet.browser.esm.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@emotion+sheet@1.2.2/node_modules/@emotion/sheet/dist/emotion-sheet.browser.esm.js
 /*
 
 Based off glamor's StyleSheet, thanks Sunil ❤️
@@ -1233,7 +1097,7 @@ var StyleSheet = /*#__PURE__*/function () {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/stylis/src/Utility.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/stylis@4.2.0/node_modules/stylis/src/Utility.js
 /**
  * @param {number}
  * @return {number}
@@ -1350,7 +1214,7 @@ function Utility_combine (array, callback) {
 	return array.map(callback).join('')
 }
 
-;// CONCATENATED MODULE: ./node_modules/stylis/src/Tokenizer.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/stylis@4.2.0/node_modules/stylis/src/Tokenizer.js
 
 
 var line = 1
@@ -1598,7 +1462,7 @@ function identifier (index) {
 	return slice(index, position)
 }
 
-;// CONCATENATED MODULE: ./node_modules/stylis/src/Enum.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/stylis@4.2.0/node_modules/stylis/src/Enum.js
 var Enum_MS = '-ms-'
 var Enum_MOZ = '-moz-'
 var Enum_WEBKIT = '-webkit-'
@@ -1619,8 +1483,9 @@ var Enum_KEYFRAMES = '@keyframes'
 var FONT_FACE = '@font-face'
 var COUNTER_STYLE = '@counter-style'
 var FONT_FEATURE_VALUES = '@font-feature-values'
+var LAYER = '@layer'
 
-;// CONCATENATED MODULE: ./node_modules/stylis/src/Serializer.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/stylis@4.2.0/node_modules/stylis/src/Serializer.js
 
 
 
@@ -1648,6 +1513,7 @@ function Serializer_serialize (children, callback) {
  */
 function stringify (element, index, children, callback) {
 	switch (element.type) {
+		case LAYER: if (element.children.length) break
 		case IMPORT: case Enum_DECLARATION: return element.return = element.return || element.value
 		case COMMENT: return ''
 		case Enum_KEYFRAMES: return element.return = element.value + '{' + Serializer_serialize(element.children, callback) + '}'
@@ -1657,7 +1523,7 @@ function stringify (element, index, children, callback) {
 	return Utility_strlen(children = Serializer_serialize(element.children, callback)) ? element.return = element.value + '{' + children + '}' : ''
 }
 
-;// CONCATENATED MODULE: ./node_modules/stylis/src/Middleware.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/stylis@4.2.0/node_modules/stylis/src/Middleware.js
 
 
 
@@ -1767,7 +1633,7 @@ function namespace (element) {
 	}
 }
 
-;// CONCATENATED MODULE: ./node_modules/stylis/src/Parser.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/stylis@4.2.0/node_modules/stylis/src/Parser.js
 
 
 
@@ -1849,7 +1715,7 @@ function parse (value, root, parent, rule, rules, rulesets, pseudo, points, decl
 					// \0 }
 					case 0: case 125: scanning = 0
 					// ;
-					case 59 + offset:
+					case 59 + offset: if (ampersand == -1) characters = Utility_replace(characters, /\f/g, '')
 						if (property > 0 && (Utility_strlen(characters) - length))
 							Utility_append(property > 32 ? declaration(characters + ';', rule, parent, length - 1) : declaration(Utility_replace(characters, ' ', '') + ';', rule, parent, length - 2), declarations)
 						break
@@ -1864,8 +1730,8 @@ function parse (value, root, parent, rule, rules, rulesets, pseudo, points, decl
 								parse(characters, root, reference, reference, props, rulesets, length, points, children)
 							else
 								switch (atrule === 99 && Utility_charat(characters, 3) === 110 ? 100 : atrule) {
-									// d m s
-									case 100: case 109: case 115:
+									// d l m s
+									case 100: case 108: case 109: case 115:
 										parse(value, reference, reference, rule && Utility_append(ruleset(value, reference, reference, 0, 0, rules, points, type, rules, props = [], length), children), rules, children, length, points, rule ? props : children)
 										break
 									default:
@@ -1960,7 +1826,7 @@ function declaration (value, root, parent, length) {
 	return node(value, root, parent, Enum_DECLARATION, Utility_substr(value, 0, length), Utility_substr(value, length + 1, -1), length)
 }
 
-;// CONCATENATED MODULE: ./node_modules/@emotion/cache/dist/emotion-cache.browser.esm.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@emotion+cache@11.11.0/node_modules/@emotion/cache/dist/emotion-cache.browser.esm.js
 
 
 
@@ -2102,7 +1968,7 @@ var createUnsafeSelectorsAlarm = function createUnsafeSelectorsAlarm(cache) {
     var unsafePseudoClasses = element.value.match(/(:first|:nth|:nth-last)-child/g);
 
     if (unsafePseudoClasses) {
-      var isNested = element.parent === children[0]; // in nested rules comments become children of the "auto-inserted" rule
+      var isNested = !!element.parent; // in nested rules comments become children of the "auto-inserted" rule and that's always the `element.parent`
       //
       // considering this input:
       // .a {
@@ -2118,7 +1984,7 @@ var createUnsafeSelectorsAlarm = function createUnsafeSelectorsAlarm(cache) {
       //   .b {}
       // }
 
-      var commentContainer = isNested ? children[0].children : // global rule at the root level
+      var commentContainer = isNested ? element.parent.children : // global rule at the root level
       children;
 
       for (var i = commentContainer.length - 1; i >= 0; i--) {
@@ -2418,7 +2284,7 @@ var emotion_cache_browser_esm_createCache = function createCache(options) {
 
   if (false) {}
 
-  if ( key === 'css') {
+  if (key === 'css') {
     var ssrStyles = document.querySelectorAll("style[data-emotion]:not([data-s])"); // get SSRed styles out of the way of React's hydration
     // document.head is a safe place to move them to(though note document.head is not necessarily the last place they will be)
     // note this very very intentionally targets all style elements regardless of the key to ensure
@@ -2513,9 +2379,9 @@ var emotion_cache_browser_esm_createCache = function createCache(options) {
   return cache;
 };
 
-/* harmony default export */ const emotion_cache_browser_esm = (emotion_cache_browser_esm_createCache);
 
-;// CONCATENATED MODULE: ./node_modules/@emotion/utils/dist/emotion-utils.browser.esm.js
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@emotion+utils@1.2.1/node_modules/@emotion/utils/dist/emotion-utils.browser.esm.js
 var isBrowser = "object" !== 'undefined';
 function emotion_utils_browser_esm_getRegisteredStyles(registered, registeredStyles, classNames) {
   var rawClassName = '';
@@ -2552,7 +2418,7 @@ var emotion_utils_browser_esm_insertStyles = function insertStyles(cache, serial
     var current = serialized;
 
     do {
-      var maybeStyles = cache.insert(serialized === current ? "." + className : '', current, cache.sheet, true);
+      cache.insert(serialized === current ? "." + className : '', current, cache.sheet, true);
 
       current = current.next;
     } while (current !== undefined);
@@ -2561,7 +2427,7 @@ var emotion_utils_browser_esm_insertStyles = function insertStyles(cache, serial
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@emotion/hash/dist/emotion-hash.esm.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@emotion+hash@0.9.1/node_modules/@emotion/hash/dist/emotion-hash.esm.js
 /* eslint-disable */
 // Inspired by https://github.com/garycourt/murmurhash-js
 // Ported from https://github.com/aappleby/smhasher/blob/61a0530f28277f2e850bfc39600ce61d02b518de/src/MurmurHash2.cpp#L37-L86
@@ -2616,11 +2482,12 @@ function murmur2(str) {
   return ((h ^ h >>> 15) >>> 0).toString(36);
 }
 
-/* harmony default export */ const emotion_hash_esm = (murmur2);
 
-;// CONCATENATED MODULE: ./node_modules/@emotion/unitless/dist/emotion-unitless.esm.js
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@emotion+unitless@0.8.1/node_modules/@emotion/unitless/dist/emotion-unitless.esm.js
 var unitlessKeys = {
   animationIterationCount: 1,
+  aspectRatio: 1,
   borderImageOutset: 1,
   borderImageSlice: 1,
   borderImageWidth: 1,
@@ -2668,9 +2535,9 @@ var unitlessKeys = {
   strokeWidth: 1
 };
 
-/* harmony default export */ const emotion_unitless_esm = (unitlessKeys);
 
-;// CONCATENATED MODULE: ./node_modules/@emotion/memoize/dist/emotion-memoize.esm.js
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@emotion+memoize@0.8.1/node_modules/@emotion/memoize/dist/emotion-memoize.esm.js
 function memoize(fn) {
   var cache = Object.create(null);
   return function (arg) {
@@ -2679,9 +2546,9 @@ function memoize(fn) {
   };
 }
 
-/* harmony default export */ const emotion_memoize_esm = (memoize);
 
-;// CONCATENATED MODULE: ./node_modules/@emotion/serialize/dist/emotion-serialize.browser.esm.js
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@emotion+serialize@1.1.3/node_modules/@emotion/serialize/dist/emotion-serialize.browser.esm.js
 
 
 
@@ -2699,7 +2566,7 @@ var isProcessableValue = function isProcessableValue(value) {
   return value != null && typeof value !== 'boolean';
 };
 
-var processStyleName = /* #__PURE__ */emotion_memoize_esm(function (styleName) {
+var processStyleName = /* #__PURE__ */memoize(function (styleName) {
   return isCustomProperty(styleName) ? styleName : styleName.replace(hyphenateRegex, '-$&').toLowerCase();
 });
 
@@ -2721,7 +2588,7 @@ var processStyleValue = function processStyleValue(key, value) {
       }
   }
 
-  if (emotion_unitless_esm[key] !== 1 && !isCustomProperty(key) && typeof value === 'number' && value !== 0) {
+  if (unitlessKeys[key] !== 1 && !isCustomProperty(key) && typeof value === 'number' && value !== 0) {
     return value + 'px';
   }
 
@@ -2917,7 +2784,7 @@ var emotion_serialize_browser_esm_serializeStyles = function serializeStyles(arg
     match[1];
   }
 
-  var name = emotion_hash_esm(styles) + identifierName;
+  var name = murmur2(styles) + identifierName;
 
   if (false) {}
 
@@ -2930,8 +2797,7 @@ var emotion_serialize_browser_esm_serializeStyles = function serializeStyles(arg
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@emotion/use-insertion-effect-with-fallbacks/dist/emotion-use-insertion-effect-with-fallbacks.browser.esm.js
-
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@emotion+use-insertion-effect-with-fallbacks@1.0.1_react@18.2.0/node_modules/@emotion/use-insertion-effect-with-fallbacks/dist/emotion-use-insertion-effect-with-fallbacks.browser.esm.js
 
 
 var syncFallback = function syncFallback(create) {
@@ -2939,41 +2805,43 @@ var syncFallback = function syncFallback(create) {
 };
 
 var useInsertionEffect = react_namespaceObject['useInsertion' + 'Effect'] ? react_namespaceObject['useInsertion' + 'Effect'] : false;
-var emotion_use_insertion_effect_with_fallbacks_browser_esm_useInsertionEffectAlwaysWithSyncFallback =  useInsertionEffect || syncFallback;
-var emotion_use_insertion_effect_with_fallbacks_browser_esm_useInsertionEffectWithLayoutFallback = (/* unused pure expression or super */ null && (useInsertionEffect || useLayoutEffect));
+var emotion_use_insertion_effect_with_fallbacks_browser_esm_useInsertionEffectAlwaysWithSyncFallback = useInsertionEffect || syncFallback;
+var emotion_use_insertion_effect_with_fallbacks_browser_esm_useInsertionEffectWithLayoutFallback = useInsertionEffect || react.useLayoutEffect;
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@emotion/react/dist/emotion-element-6a883da9.browser.esm.js
-
-
-
-
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@emotion+react@11.11.3_react@18.2.0/node_modules/@emotion/react/dist/emotion-element-c39617d8.browser.esm.js
 
 
 
 
 
-var emotion_element_6a883da9_browser_esm_hasOwnProperty = {}.hasOwnProperty;
 
-var EmotionCacheContext = /* #__PURE__ */(0,react.createContext)( // we're doing this to avoid preconstruct's dead code elimination in this one case
+
+
+
+
+var emotion_element_c39617d8_browser_esm_isBrowser = "object" !== 'undefined';
+var emotion_element_c39617d8_browser_esm_hasOwnProperty = {}.hasOwnProperty;
+
+var EmotionCacheContext = /* #__PURE__ */react.createContext( // we're doing this to avoid preconstruct's dead code elimination in this one case
 // because this module is primarily intended for the browser and node
 // but it's also required in react native and similar environments sometimes
 // and we could have a special build just for that
 // but this is much easier and the native packages
 // might use a different theme context in the future anyway
-typeof HTMLElement !== 'undefined' ? /* #__PURE__ */emotion_cache_browser_esm({
+typeof HTMLElement !== 'undefined' ? /* #__PURE__ */emotion_cache_browser_esm_createCache({
   key: 'css'
 }) : null);
 
 if (false) {}
 
-var emotion_element_6a883da9_browser_esm_CacheProvider = EmotionCacheContext.Provider;
+var emotion_element_c39617d8_browser_esm_CacheProvider = EmotionCacheContext.Provider;
 var __unsafe_useEmotionCache = function useEmotionCache() {
   return useContext(EmotionCacheContext);
 };
 
-var emotion_element_6a883da9_browser_esm_withEmotionCache = function withEmotionCache(func) {
+var emotion_element_c39617d8_browser_esm_withEmotionCache = function withEmotionCache(func) {
   // $FlowFixMe
   return /*#__PURE__*/(0,react.forwardRef)(function (props, ref) {
     // the cache will never be null in the browser
@@ -2982,12 +2850,36 @@ var emotion_element_6a883da9_browser_esm_withEmotionCache = function withEmotion
   });
 };
 
-var emotion_element_6a883da9_browser_esm_ThemeContext = /* #__PURE__ */(0,react.createContext)({});
+if (!emotion_element_c39617d8_browser_esm_isBrowser) {
+  emotion_element_c39617d8_browser_esm_withEmotionCache = function withEmotionCache(func) {
+    return function (props) {
+      var cache = (0,react.useContext)(EmotionCacheContext);
+
+      if (cache === null) {
+        // yes, we're potentially creating this on every render
+        // it doesn't actually matter though since it's only on the server
+        // so there will only every be a single render
+        // that could change in the future because of suspense and etc. but for now,
+        // this works and i don't want to optimise for a future thing that we aren't sure about
+        cache = emotion_cache_browser_esm_createCache({
+          key: 'css'
+        });
+        return /*#__PURE__*/react.createElement(EmotionCacheContext.Provider, {
+          value: cache
+        }, func(props, cache));
+      } else {
+        return func(props, cache);
+      }
+    };
+  };
+}
+
+var emotion_element_c39617d8_browser_esm_ThemeContext = /* #__PURE__ */react.createContext({});
 
 if (false) {}
 
 var useTheme = function useTheme() {
-  return useContext(emotion_element_6a883da9_browser_esm_ThemeContext);
+  return React.useContext(emotion_element_c39617d8_browser_esm_ThemeContext);
 };
 
 var getTheme = function getTheme(outerTheme, theme) {
@@ -3010,13 +2902,13 @@ var createCacheWithTheme = /* #__PURE__ */(/* unused pure expression or super */
   });
 })));
 var ThemeProvider = function ThemeProvider(props) {
-  var theme = useContext(emotion_element_6a883da9_browser_esm_ThemeContext);
+  var theme = React.useContext(emotion_element_c39617d8_browser_esm_ThemeContext);
 
   if (props.theme !== theme) {
     theme = createCacheWithTheme(theme)(props.theme);
   }
 
-  return /*#__PURE__*/createElement(emotion_element_6a883da9_browser_esm_ThemeContext.Provider, {
+  return /*#__PURE__*/React.createElement(emotion_element_c39617d8_browser_esm_ThemeContext.Provider, {
     value: theme
   }, props.children);
 };
@@ -3024,15 +2916,15 @@ function withTheme(Component) {
   var componentName = Component.displayName || Component.name || 'Component';
 
   var render = function render(props, ref) {
-    var theme = useContext(emotion_element_6a883da9_browser_esm_ThemeContext);
-    return /*#__PURE__*/createElement(Component, _extends({
+    var theme = React.useContext(emotion_element_c39617d8_browser_esm_ThemeContext);
+    return /*#__PURE__*/React.createElement(Component, _extends({
       theme: theme,
       ref: ref
     }, props));
   }; // $FlowFixMe
 
 
-  var WithTheme = /*#__PURE__*/forwardRef(render);
+  var WithTheme = /*#__PURE__*/React.forwardRef(render);
   WithTheme.displayName = "WithTheme(" + componentName + ")";
   return hoistNonReactStatics(WithTheme, Component);
 }
@@ -3088,7 +2980,7 @@ var createEmotionProps = function createEmotionProps(type, props) {
   var newProps = {};
 
   for (var key in props) {
-    if (emotion_element_6a883da9_browser_esm_hasOwnProperty.call(props, key)) {
+    if (emotion_element_c39617d8_browser_esm_hasOwnProperty.call(props, key)) {
       newProps[key] = props[key];
     }
   }
@@ -3106,14 +2998,14 @@ var Insertion = function Insertion(_ref) {
       serialized = _ref.serialized,
       isStringTag = _ref.isStringTag;
   emotion_utils_browser_esm_registerStyles(cache, serialized, isStringTag);
-  var rules = emotion_use_insertion_effect_with_fallbacks_browser_esm_useInsertionEffectAlwaysWithSyncFallback(function () {
+  emotion_use_insertion_effect_with_fallbacks_browser_esm_useInsertionEffectAlwaysWithSyncFallback(function () {
     return emotion_utils_browser_esm_insertStyles(cache, serialized, isStringTag);
   });
 
   return null;
 };
 
-var Emotion = /* #__PURE__ */emotion_element_6a883da9_browser_esm_withEmotionCache(function (props, cache, ref) {
+var Emotion = /* #__PURE__ */emotion_element_c39617d8_browser_esm_withEmotionCache(function (props, cache, ref) {
   var cssProp = props.css; // so that using `css` from `emotion` and passing the result to the css prop works
   // not passing the registered cache to serializeStyles because it would
   // make certain babel optimisations not possible
@@ -3132,7 +3024,7 @@ var Emotion = /* #__PURE__ */emotion_element_6a883da9_browser_esm_withEmotionCac
     className = props.className + " ";
   }
 
-  var serialized = emotion_serialize_browser_esm_serializeStyles(registeredStyles, undefined, (0,react.useContext)(emotion_element_6a883da9_browser_esm_ThemeContext));
+  var serialized = emotion_serialize_browser_esm_serializeStyles(registeredStyles, undefined, react.useContext(emotion_element_c39617d8_browser_esm_ThemeContext));
 
   if (false) { var labelFromStack; }
 
@@ -3140,27 +3032,29 @@ var Emotion = /* #__PURE__ */emotion_element_6a883da9_browser_esm_withEmotionCac
   var newProps = {};
 
   for (var key in props) {
-    if (emotion_element_6a883da9_browser_esm_hasOwnProperty.call(props, key) && key !== 'css' && key !== typePropName && ( true || 0)) {
+    if (emotion_element_c39617d8_browser_esm_hasOwnProperty.call(props, key) && key !== 'css' && key !== typePropName && ( true || 0)) {
       newProps[key] = props[key];
     }
   }
 
   newProps.ref = ref;
   newProps.className = className;
-  return /*#__PURE__*/(0,react.createElement)(react.Fragment, null, /*#__PURE__*/(0,react.createElement)(Insertion, {
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(Insertion, {
     cache: cache,
     serialized: serialized,
     isStringTag: typeof WrappedComponent === 'string'
-  }), /*#__PURE__*/(0,react.createElement)(WrappedComponent, newProps));
+  }), /*#__PURE__*/react.createElement(WrappedComponent, newProps));
 });
 
 if (false) {}
 
+var Emotion$1 = Emotion;
 
 
-// EXTERNAL MODULE: ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js
-var hoist_non_react_statics_cjs = __webpack_require__(679);
-;// CONCATENATED MODULE: ./node_modules/@emotion/react/dist/emotion-react.browser.esm.js
+
+// EXTERNAL MODULE: ./node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js
+var hoist_non_react_statics_cjs = __webpack_require__(535);
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@emotion+react@11.11.3_react@18.2.0/node_modules/@emotion/react/dist/emotion-react.browser.esm.js
 
 
 
@@ -3175,7 +3069,7 @@ var hoist_non_react_statics_cjs = __webpack_require__(679);
 
 var pkg = {
 	name: "@emotion/react",
-	version: "11.10.6",
+	version: "11.11.3",
 	main: "dist/emotion-react.cjs.js",
 	module: "dist/emotion-react.esm.js",
 	browser: {
@@ -3188,6 +3082,7 @@ var pkg = {
 				browser: "./dist/emotion-react.browser.esm.js",
 				"default": "./dist/emotion-react.esm.js"
 			},
+			"import": "./dist/emotion-react.cjs.mjs",
 			"default": "./dist/emotion-react.cjs.js"
 		},
 		"./jsx-runtime": {
@@ -3196,6 +3091,7 @@ var pkg = {
 				browser: "./jsx-runtime/dist/emotion-react-jsx-runtime.browser.esm.js",
 				"default": "./jsx-runtime/dist/emotion-react-jsx-runtime.esm.js"
 			},
+			"import": "./jsx-runtime/dist/emotion-react-jsx-runtime.cjs.mjs",
 			"default": "./jsx-runtime/dist/emotion-react-jsx-runtime.cjs.js"
 		},
 		"./_isolated-hnrs": {
@@ -3204,6 +3100,7 @@ var pkg = {
 				browser: "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.browser.esm.js",
 				"default": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.esm.js"
 			},
+			"import": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.cjs.mjs",
 			"default": "./_isolated-hnrs/dist/emotion-react-_isolated-hnrs.cjs.js"
 		},
 		"./jsx-dev-runtime": {
@@ -3212,11 +3109,18 @@ var pkg = {
 				browser: "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.browser.esm.js",
 				"default": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.esm.js"
 			},
+			"import": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.cjs.mjs",
 			"default": "./jsx-dev-runtime/dist/emotion-react-jsx-dev-runtime.cjs.js"
 		},
 		"./package.json": "./package.json",
 		"./types/css-prop": "./types/css-prop.d.ts",
-		"./macro": "./macro.js"
+		"./macro": {
+			types: {
+				"import": "./macro.d.mts",
+				"default": "./macro.d.ts"
+			},
+			"default": "./macro.js"
+		}
 	},
 	types: "types/index.d.ts",
 	files: [
@@ -3226,9 +3130,7 @@ var pkg = {
 		"jsx-dev-runtime",
 		"_isolated-hnrs",
 		"types/*.d.ts",
-		"macro.js",
-		"macro.d.ts",
-		"macro.js.flow"
+		"macro.*"
 	],
 	sideEffects: false,
 	author: "Emotion Contributors",
@@ -3238,12 +3140,12 @@ var pkg = {
 	},
 	dependencies: {
 		"@babel/runtime": "^7.18.3",
-		"@emotion/babel-plugin": "^11.10.6",
-		"@emotion/cache": "^11.10.5",
-		"@emotion/serialize": "^1.1.1",
-		"@emotion/use-insertion-effect-with-fallbacks": "^1.0.0",
-		"@emotion/utils": "^1.2.0",
-		"@emotion/weak-memoize": "^0.3.0",
+		"@emotion/babel-plugin": "^11.11.0",
+		"@emotion/cache": "^11.11.0",
+		"@emotion/serialize": "^1.1.3",
+		"@emotion/use-insertion-effect-with-fallbacks": "^1.0.1",
+		"@emotion/utils": "^1.2.1",
+		"@emotion/weak-memoize": "^0.3.1",
 		"hoist-non-react-statics": "^3.3.1"
 	},
 	peerDependencies: {
@@ -3256,10 +3158,10 @@ var pkg = {
 	},
 	devDependencies: {
 		"@definitelytyped/dtslint": "0.0.112",
-		"@emotion/css": "11.10.6",
-		"@emotion/css-prettifier": "1.1.1",
-		"@emotion/server": "11.10.0",
-		"@emotion/styled": "11.10.6",
+		"@emotion/css": "11.11.2",
+		"@emotion/css-prettifier": "1.1.3",
+		"@emotion/server": "11.11.0",
+		"@emotion/styled": "11.11.0",
 		"html-tag-names": "^1.1.2",
 		react: "16.14.0",
 		"svg-tag-names": "^1.1.1",
@@ -3285,7 +3187,13 @@ var pkg = {
 			],
 			extra: {
 				"./types/css-prop": "./types/css-prop.d.ts",
-				"./macro": "./macro.js"
+				"./macro": {
+					types: {
+						"import": "./macro.d.mts",
+						"default": "./macro.d.ts"
+					},
+					"default": "./macro.js"
+				}
 			}
 		}
 	}
@@ -3294,14 +3202,14 @@ var pkg = {
 var jsx = function jsx(type, props) {
   var args = arguments;
 
-  if (props == null || !emotion_element_6a883da9_browser_esm_hasOwnProperty.call(props, 'css')) {
+  if (props == null || !emotion_element_c39617d8_browser_esm_hasOwnProperty.call(props, 'css')) {
     // $FlowFixMe
     return react.createElement.apply(undefined, args);
   }
 
   var argsLength = args.length;
   var createElementArgArray = new Array(argsLength);
-  createElementArgArray[0] = Emotion;
+  createElementArgArray[0] = Emotion$1;
   createElementArgArray[1] = createEmotionProps(type, props);
 
   for (var i = 2; i < argsLength; i++) {
@@ -3320,13 +3228,41 @@ var Global = /* #__PURE__ */(/* unused pure expression or super */ null && (with
   if (false) {}
 
   var styles = props.styles;
-  var serialized = serializeStyles([styles], undefined, useContext(ThemeContext));
+  var serialized = serializeStyles([styles], undefined, React.useContext(ThemeContext));
+
+  if (!isBrowser$1) {
+    var _ref;
+
+    var serializedNames = serialized.name;
+    var serializedStyles = serialized.styles;
+    var next = serialized.next;
+
+    while (next !== undefined) {
+      serializedNames += ' ' + next.name;
+      serializedStyles += next.styles;
+      next = next.next;
+    }
+
+    var shouldCache = cache.compat === true;
+    var rules = cache.insert("", {
+      name: serializedNames,
+      styles: serializedStyles
+    }, cache.sheet, shouldCache);
+
+    if (shouldCache) {
+      return null;
+    }
+
+    return /*#__PURE__*/React.createElement("style", (_ref = {}, _ref["data-emotion"] = cache.key + "-global " + serializedNames, _ref.dangerouslySetInnerHTML = {
+      __html: rules
+    }, _ref.nonce = cache.sheet.nonce, _ref));
+  } // yes, i know these hooks are used conditionally
   // but it is based on a constant that will never change at runtime
   // it's effectively like having two implementations and switching them out
   // so it's not actually breaking anything
 
 
-  var sheetRef = useRef();
+  var sheetRef = React.useRef();
   useInsertionEffectWithLayoutFallback(function () {
     var key = cache.key + "-global"; // use case of https://github.com/emotion-js/emotion/issues/2675
 
@@ -3470,10 +3406,10 @@ function merge(registered, css, className) {
 var emotion_react_browser_esm_Insertion = function Insertion(_ref) {
   var cache = _ref.cache,
       serializedArr = _ref.serializedArr;
-  var rules = useInsertionEffectAlwaysWithSyncFallback(function () {
+  useInsertionEffectAlwaysWithSyncFallback(function () {
 
     for (var i = 0; i < serializedArr.length; i++) {
-      var res = insertStyles(cache, serializedArr[i], false);
+      insertStyles(cache, serializedArr[i], false);
     }
   });
 
@@ -3511,11 +3447,11 @@ var ClassNames = /* #__PURE__ */(/* unused pure expression or super */ null && (
   var content = {
     css: css,
     cx: cx,
-    theme: useContext(ThemeContext)
+    theme: React.useContext(ThemeContext)
   };
   var ele = props.children(content);
   hasRendered = true;
-  return /*#__PURE__*/createElement(Fragment, null, /*#__PURE__*/createElement(emotion_react_browser_esm_Insertion, {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(emotion_react_browser_esm_Insertion, {
     cache: cache,
     serializedArr: serializedArr
   }), ele);
@@ -3527,45 +3463,45 @@ if (false) { var globalKey, globalContext, isTestEnv, emotion_react_browser_esm_
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
 function _arrayWithHoles(arr) {
   if (Array.isArray(arr)) return arr;
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js
-function _iterableToArrayLimit(arr, i) {
-  var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"];
-  if (null != _i) {
-    var _s,
-      _e,
-      _x,
-      _r,
-      _arr = [],
-      _n = !0,
-      _d = !1;
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js
+function _iterableToArrayLimit(r, l) {
+  var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+  if (null != t) {
+    var e,
+      n,
+      i,
+      u,
+      a = [],
+      f = !0,
+      o = !1;
     try {
-      if (_x = (_i = _i.call(arr)).next, 0 === i) {
-        if (Object(_i) !== _i) return;
-        _n = !1;
-      } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0);
-    } catch (err) {
-      _d = !0, _e = err;
+      if (i = (t = t.call(r)).next, 0 === l) {
+        if (Object(t) !== t) return;
+        f = !1;
+      } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0);
+    } catch (r) {
+      o = !0, n = r;
     } finally {
       try {
-        if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return;
+        if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return;
       } finally {
-        if (_d) throw _e;
+        if (o) throw n;
       }
     }
-    return _arr;
+    return a;
   }
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js
 function _arrayLikeToArray(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
   for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
   return arr2;
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
 
 function _unsupportedIterableToArray(o, minLen) {
   if (!o) return;
@@ -3575,11 +3511,11 @@ function _unsupportedIterableToArray(o, minLen) {
   if (n === "Map" || n === "Set") return Array.from(o);
   if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
 function _nonIterableRest() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/slicedToArray.js
 
 
 
@@ -3587,7 +3523,7 @@ function _nonIterableRest() {
 function _slicedToArray(arr, i) {
   return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
 function _objectWithoutPropertiesLoose(source, excluded) {
   if (source == null) return {};
   var target = {};
@@ -3600,7 +3536,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   }
   return target;
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
 
 function _objectWithoutProperties(source, excluded) {
   if (source == null) return {};
@@ -3617,7 +3553,7 @@ function _objectWithoutProperties(source, excluded) {
   }
   return target;
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js
 function _taggedTemplateLiteral(strings, raw) {
   if (!raw) {
     raw = strings.slice(0);
@@ -3628,22 +3564,942 @@ function _taggedTemplateLiteral(strings, raw) {
     }
   }));
 }
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(935);
-;// CONCATENATED MODULE: ./node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs
-function t(t){return t.split("-")[1]}function floating_ui_core_browser_min_e(t){return"y"===t?"height":"width"}function n(t){return t.split("-")[0]}function o(t){return["top","bottom"].includes(n(t))?"x":"y"}function i(i,r,a){let{reference:l,floating:s}=i;const c=l.x+l.width/2-s.width/2,f=l.y+l.height/2-s.height/2,u=o(r),m=floating_ui_core_browser_min_e(u),g=l[m]/2-s[m]/2,d="x"===u;let p;switch(n(r)){case"top":p={x:c,y:l.y-s.height};break;case"bottom":p={x:c,y:l.y+l.height};break;case"right":p={x:l.x+l.width,y:f};break;case"left":p={x:l.x-s.width,y:f};break;default:p={x:l.x,y:l.y}}switch(t(r)){case"start":p[u]-=g*(a&&d?-1:1);break;case"end":p[u]+=g*(a&&d?-1:1)}return p}const r=async(t,e,n)=>{const{placement:o="bottom",strategy:r="absolute",middleware:a=[],platform:l}=n,s=a.filter(Boolean),c=await(null==l.isRTL?void 0:l.isRTL(e));let f=await l.getElementRects({reference:t,floating:e,strategy:r}),{x:u,y:m}=i(f,o,c),g=o,d={},p=0;for(let n=0;n<s.length;n++){const{name:a,fn:h}=s[n],{x:y,y:x,data:w,reset:v}=await h({x:u,y:m,initialPlacement:o,placement:g,strategy:r,middlewareData:d,rects:f,platform:l,elements:{reference:t,floating:e}});u=null!=y?y:u,m=null!=x?x:m,d={...d,[a]:{...d[a],...w}},v&&p<=50&&(p++,"object"==typeof v&&(v.placement&&(g=v.placement),v.rects&&(f=!0===v.rects?await l.getElementRects({reference:t,floating:e,strategy:r}):v.rects),({x:u,y:m}=i(f,g,c))),n=-1)}return{x:u,y:m,placement:g,strategy:r,middlewareData:d}};function a(t){return"number"!=typeof t?function(t){return{top:0,right:0,bottom:0,left:0,...t}}(t):{top:t,right:t,bottom:t,left:t}}function floating_ui_core_browser_min_l(t){return{...t,top:t.y,left:t.x,right:t.x+t.width,bottom:t.y+t.height}}async function s(t,e){var n;void 0===e&&(e={});const{x:o,y:i,platform:r,rects:s,elements:c,strategy:f}=t,{boundary:u="clippingAncestors",rootBoundary:m="viewport",elementContext:g="floating",altBoundary:d=!1,padding:p=0}=e,h=a(p),y=c[d?"floating"===g?"reference":"floating":g],x=floating_ui_core_browser_min_l(await r.getClippingRect({element:null==(n=await(null==r.isElement?void 0:r.isElement(y)))||n?y:y.contextElement||await(null==r.getDocumentElement?void 0:r.getDocumentElement(c.floating)),boundary:u,rootBoundary:m,strategy:f})),w="floating"===g?{...s.floating,x:o,y:i}:s.reference,v=await(null==r.getOffsetParent?void 0:r.getOffsetParent(c.floating)),b=await(null==r.isElement?void 0:r.isElement(v))&&await(null==r.getScale?void 0:r.getScale(v))||{x:1,y:1},R=floating_ui_core_browser_min_l(r.convertOffsetParentRelativeRectToViewportRelativeRect?await r.convertOffsetParentRelativeRectToViewportRelativeRect({rect:w,offsetParent:v,strategy:f}):w);return{top:(x.top-R.top+h.top)/b.y,bottom:(R.bottom-x.bottom+h.bottom)/b.y,left:(x.left-R.left+h.left)/b.x,right:(R.right-x.right+h.right)/b.x}}const c=Math.min,f=Math.max;function u(t,e,n){return f(t,c(e,n))}const m=n=>({name:"arrow",options:n,async fn(i){const{element:r,padding:l=0}=n||{},{x:s,y:c,placement:f,rects:m,platform:g,elements:d}=i;if(null==r)return{};const p=a(l),h={x:s,y:c},y=o(f),x=floating_ui_core_browser_min_e(y),w=await g.getDimensions(r),v="y"===y,b=v?"top":"left",R=v?"bottom":"right",A=v?"clientHeight":"clientWidth",P=m.reference[x]+m.reference[y]-h[y]-m.floating[x],T=h[y]-m.reference[y],E=await(null==g.getOffsetParent?void 0:g.getOffsetParent(r));let O=E?E[A]:0;O&&await(null==g.isElement?void 0:g.isElement(E))||(O=d.floating[A]||m.floating[x]);const D=P/2-T/2,L=p[b],k=O-w[x]-p[R],B=O/2-w[x]/2+D,C=u(L,B,k),H=null!=t(f)&&B!=C&&m.reference[x]/2-(B<L?p[b]:p[R])-w[x]/2<0;return{[y]:h[y]-(H?B<L?L-B:k-B:0),data:{[y]:C,centerOffset:B-C}}}}),g=["top","right","bottom","left"],d=g.reduce(((t,e)=>t.concat(e,e+"-start",e+"-end")),[]),p={left:"right",right:"left",bottom:"top",top:"bottom"};function h(t){return t.replace(/left|right|bottom|top/g,(t=>p[t]))}function y(n,i,r){void 0===r&&(r=!1);const a=t(n),l=o(n),s=floating_ui_core_browser_min_e(l);let c="x"===l?a===(r?"end":"start")?"right":"left":"start"===a?"bottom":"top";return i.reference[s]>i.floating[s]&&(c=h(c)),{main:c,cross:h(c)}}const x={start:"end",end:"start"};function w(t){return t.replace(/start|end/g,(t=>x[t]))}const v=function(e){return void 0===e&&(e={}),{name:"autoPlacement",options:e,async fn(o){var i,r,a;const{rects:l,middlewareData:c,placement:f,platform:u,elements:m}=o,{crossAxis:g=!1,alignment:p,allowedPlacements:h=d,autoAlignment:x=!0,...v}=e,b=void 0!==p||h===d?function(e,o,i){return(e?[...i.filter((n=>t(n)===e)),...i.filter((n=>t(n)!==e))]:i.filter((t=>n(t)===t))).filter((n=>!e||t(n)===e||!!o&&w(n)!==n))}(p||null,x,h):h,R=await s(o,v),A=(null==(i=c.autoPlacement)?void 0:i.index)||0,P=b[A];if(null==P)return{};const{main:T,cross:E}=y(P,l,await(null==u.isRTL?void 0:u.isRTL(m.floating)));if(f!==P)return{reset:{placement:b[0]}};const O=[R[n(P)],R[T],R[E]],D=[...(null==(r=c.autoPlacement)?void 0:r.overflows)||[],{placement:P,overflows:O}],L=b[A+1];if(L)return{data:{index:A+1,overflows:D},reset:{placement:L}};const k=D.map((e=>{const n=t(e.placement);return[e.placement,n&&g?e.overflows.slice(0,2).reduce(((t,e)=>t+e),0):e.overflows[0],e.overflows]})).sort(((t,e)=>t[1]-e[1])),B=(null==(a=k.filter((e=>e[2].slice(0,t(e[0])?2:3).every((t=>t<=0))))[0])?void 0:a[0])||k[0][0];return B!==f?{data:{index:A+1,overflows:D},reset:{placement:B}}:{}}}};const b=function(e){return void 0===e&&(e={}),{name:"flip",options:e,async fn(o){var i;const{placement:r,middlewareData:a,rects:l,initialPlacement:c,platform:f,elements:u}=o,{mainAxis:m=!0,crossAxis:g=!0,fallbackPlacements:d,fallbackStrategy:p="bestFit",fallbackAxisSideDirection:x="none",flipAlignment:v=!0,...b}=e,R=n(r),A=n(c)===c,P=await(null==f.isRTL?void 0:f.isRTL(u.floating)),T=d||(A||!v?[h(c)]:function(t){const e=h(t);return[w(t),e,w(e)]}(c));d||"none"===x||T.push(...function(e,o,i,r){const a=t(e);let l=function(t,e,n){const o=["left","right"],i=["right","left"],r=["top","bottom"],a=["bottom","top"];switch(t){case"top":case"bottom":return n?e?i:o:e?o:i;case"left":case"right":return e?r:a;default:return[]}}(n(e),"start"===i,r);return a&&(l=l.map((t=>t+"-"+a)),o&&(l=l.concat(l.map(w)))),l}(c,v,x,P));const E=[c,...T],O=await s(o,b),D=[];let L=(null==(i=a.flip)?void 0:i.overflows)||[];if(m&&D.push(O[R]),g){const{main:t,cross:e}=y(r,l,P);D.push(O[t],O[e])}if(L=[...L,{placement:r,overflows:D}],!D.every((t=>t<=0))){var k,B;const t=((null==(k=a.flip)?void 0:k.index)||0)+1,e=E[t];if(e)return{data:{index:t,overflows:L},reset:{placement:e}};let n=null==(B=L.filter((t=>t.overflows[0]<=0)).sort(((t,e)=>t.overflows[1]-e.overflows[1]))[0])?void 0:B.placement;if(!n)switch(p){case"bestFit":{var C;const t=null==(C=L.map((t=>[t.placement,t.overflows.filter((t=>t>0)).reduce(((t,e)=>t+e),0)])).sort(((t,e)=>t[1]-e[1]))[0])?void 0:C[0];t&&(n=t);break}case"initialPlacement":n=c}if(r!==n)return{reset:{placement:n}}}return{}}}};function R(t,e){return{top:t.top-e.height,right:t.right-e.width,bottom:t.bottom-e.height,left:t.left-e.width}}function A(t){return g.some((e=>t[e]>=0))}const P=function(t){return void 0===t&&(t={}),{name:"hide",options:t,async fn(e){const{strategy:n="referenceHidden",...o}=t,{rects:i}=e;switch(n){case"referenceHidden":{const t=R(await s(e,{...o,elementContext:"reference"}),i.reference);return{data:{referenceHiddenOffsets:t,referenceHidden:A(t)}}}case"escaped":{const t=R(await s(e,{...o,altBoundary:!0}),i.floating);return{data:{escapedOffsets:t,escaped:A(t)}}}default:return{}}}}};const T=function(t){return void 0===t&&(t={}),{name:"inline",options:t,async fn(e){const{placement:i,elements:r,rects:s,platform:u,strategy:m}=e,{padding:g=2,x:d,y:p}=t,h=floating_ui_core_browser_min_l(u.convertOffsetParentRelativeRectToViewportRelativeRect?await u.convertOffsetParentRelativeRectToViewportRelativeRect({rect:s.reference,offsetParent:await(null==u.getOffsetParent?void 0:u.getOffsetParent(r.floating)),strategy:m}):s.reference),y=function(t){const e=[],n=new Map;return t.forEach((t=>{const{x:o,y:i,width:r,height:a}=t,l=n.get(i);null!=l?n.set(i,l+r):(n.set(i,r),e.push({x:o,y:i,width:r,height:a}))})),e.map((t=>{const e=n.get(t.y);return null!=e&&(t.width=e),floating_ui_core_browser_min_l(t)}))}(await(null==u.getClientRects?void 0:u.getClientRects(r.reference))||[]),x=a(g);const w=await u.getElementRects({reference:{getBoundingClientRect:function(){if(2===y.length&&y[0].left>y[1].right&&null!=d&&null!=p)return y.find((t=>d>t.left-x.left&&d<t.right+x.right&&p>t.top-x.top&&p<t.bottom+x.bottom))||h;if(y.length>=2){if("x"===o(i)){const t=y[0],e=y[y.length-1],o="top"===n(i),r=t.top,a=e.bottom,l=o?t.left:e.left,s=o?t.right:e.right;return{top:r,bottom:a,left:l,right:s,width:s-l,height:a-r,x:l,y:r}}const t="left"===n(i),e=f(...y.map((t=>t.right))),r=c(...y.map((t=>t.left))),a=y.filter((n=>t?n.left===r:n.right===e)),l=a[0].top,s=a[a.length-1].bottom;return{top:l,bottom:s,left:r,right:e,width:e-r,height:s-l,x:r,y:l}}return h}},floating:r.floating,strategy:m});return s.reference.x!==w.reference.x||s.reference.y!==w.reference.y||s.reference.width!==w.reference.width||s.reference.height!==w.reference.height?{reset:{rects:w}}:{}}}};const E=function(e){return void 0===e&&(e=0),{name:"offset",options:e,async fn(i){const{x:r,y:a}=i,l=await async function(e,i){const{placement:r,platform:a,elements:l}=e,s=await(null==a.isRTL?void 0:a.isRTL(l.floating)),c=n(r),f=t(r),u="x"===o(r),m=["left","top"].includes(c)?-1:1,g=s&&u?-1:1,d="function"==typeof i?i(e):i;let{mainAxis:p,crossAxis:h,alignmentAxis:y}="number"==typeof d?{mainAxis:d,crossAxis:0,alignmentAxis:null}:{mainAxis:0,crossAxis:0,alignmentAxis:null,...d};return f&&"number"==typeof y&&(h="end"===f?-1*y:y),u?{x:h*g,y:p*m}:{x:p*m,y:h*g}}(i,e);return{x:r+l.x,y:a+l.y,data:l}}}};function O(t){return"x"===t?"y":"x"}const D=function(t){return void 0===t&&(t={}),{name:"shift",options:t,async fn(e){const{x:i,y:r,placement:a}=e,{mainAxis:l=!0,crossAxis:c=!1,limiter:f={fn:t=>{let{x:e,y:n}=t;return{x:e,y:n}}},...m}=t,g={x:i,y:r},d=await s(e,m),p=o(n(a)),h=O(p);let y=g[p],x=g[h];if(l){const t="y"===p?"bottom":"right";y=u(y+d["y"===p?"top":"left"],y,y-d[t])}if(c){const t="y"===h?"bottom":"right";x=u(x+d["y"===h?"top":"left"],x,x-d[t])}const w=f.fn({...e,[p]:y,[h]:x});return{...w,data:{x:w.x-i,y:w.y-r}}}}},L=function(t){return void 0===t&&(t={}),{options:t,fn(e){const{x:i,y:r,placement:a,rects:l,middlewareData:s}=e,{offset:c=0,mainAxis:f=!0,crossAxis:u=!0}=t,m={x:i,y:r},g=o(a),d=O(g);let p=m[g],h=m[d];const y="function"==typeof c?c(e):c,x="number"==typeof y?{mainAxis:y,crossAxis:0}:{mainAxis:0,crossAxis:0,...y};if(f){const t="y"===g?"height":"width",e=l.reference[g]-l.floating[t]+x.mainAxis,n=l.reference[g]+l.reference[t]-x.mainAxis;p<e?p=e:p>n&&(p=n)}if(u){var w,v;const t="y"===g?"width":"height",e=["top","left"].includes(n(a)),o=l.reference[d]-l.floating[t]+(e&&(null==(w=s.offset)?void 0:w[d])||0)+(e?0:x.crossAxis),i=l.reference[d]+l.reference[t]+(e?0:(null==(v=s.offset)?void 0:v[d])||0)-(e?x.crossAxis:0);h<o?h=o:h>i&&(h=i)}return{[g]:p,[d]:h}}}},k=function(e){return void 0===e&&(e={}),{name:"size",options:e,async fn(i){const{placement:r,rects:a,platform:l,elements:u}=i,{apply:m=(()=>{}),...g}=e,d=await s(i,g),p=n(r),h=t(r),y="x"===o(r),{width:x,height:w}=a.floating;let v,b;"top"===p||"bottom"===p?(v=p,b=h===(await(null==l.isRTL?void 0:l.isRTL(u.floating))?"start":"end")?"left":"right"):(b=p,v="end"===h?"top":"bottom");const R=w-d[v],A=x-d[b];let P=R,T=A;if(y?T=c(x-d.right-d.left,A):P=c(w-d.bottom-d.top,R),!i.middlewareData.shift&&!h){const t=f(d.left,0),e=f(d.right,0),n=f(d.top,0),o=f(d.bottom,0);y?T=x-2*(0!==t||0!==e?t+e:f(d.left,d.right)):P=w-2*(0!==n||0!==o?n+o:f(d.top,d.bottom))}await m({...i,availableWidth:T,availableHeight:P});const E=await l.getDimensions(u.floating);return x!==E.width||w!==E.height?{reset:{rects:!0}}:{}}}};
+// EXTERNAL MODULE: ./node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.js
+var react_dom = __webpack_require__(422);
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@floating-ui+utils@0.2.1/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs
+/**
+ * Custom positioning reference element.
+ * @see https://floating-ui.com/docs/virtual-elements
+ */
 
-;// CONCATENATED MODULE: ./node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs
-function floating_ui_dom_browser_min_n(t){var e;return(null==(e=t.ownerDocument)?void 0:e.defaultView)||window}function floating_ui_dom_browser_min_o(t){return floating_ui_dom_browser_min_n(t).getComputedStyle(t)}function floating_ui_dom_browser_min_i(t){return t instanceof floating_ui_dom_browser_min_n(t).Node}function floating_ui_dom_browser_min_r(t){return floating_ui_dom_browser_min_i(t)?(t.nodeName||"").toLowerCase():""}let l;function floating_ui_dom_browser_min_c(){if(l)return l;const t=navigator.userAgentData;return t&&Array.isArray(t.brands)?(l=t.brands.map((t=>t.brand+"/"+t.version)).join(" "),l):navigator.userAgent}function floating_ui_dom_browser_min_s(t){return t instanceof floating_ui_dom_browser_min_n(t).HTMLElement}function floating_ui_dom_browser_min_f(t){return t instanceof floating_ui_dom_browser_min_n(t).Element}function floating_ui_dom_browser_min_u(t){if("undefined"==typeof ShadowRoot)return!1;return t instanceof floating_ui_dom_browser_min_n(t).ShadowRoot||t instanceof ShadowRoot}function floating_ui_dom_browser_min_a(t){const{overflow:e,overflowX:n,overflowY:i,display:r}=floating_ui_dom_browser_min_o(t);return/auto|scroll|overlay|hidden|clip/.test(e+i+n)&&!["inline","contents"].includes(r)}function floating_ui_dom_browser_min_d(t){return["table","td","th"].includes(floating_ui_dom_browser_min_r(t))}function floating_ui_dom_browser_min_h(t){const e=/firefox/i.test(floating_ui_dom_browser_min_c()),n=floating_ui_dom_browser_min_o(t),i=n.backdropFilter||n.WebkitBackdropFilter;return"none"!==n.transform||"none"!==n.perspective||!!i&&"none"!==i||e&&"filter"===n.willChange||e&&!!n.filter&&"none"!==n.filter||["transform","perspective"].some((t=>n.willChange.includes(t)))||["paint","layout","strict","content"].some((t=>{const e=n.contain;return null!=e&&e.includes(t)}))}function floating_ui_dom_browser_min_p(){return/^((?!chrome|android).)*safari/i.test(floating_ui_dom_browser_min_c())}function floating_ui_dom_browser_min_g(t){return["html","body","#document"].includes(floating_ui_dom_browser_min_r(t))}const floating_ui_dom_browser_min_m=Math.min,floating_ui_dom_browser_min_y=Math.max,floating_ui_dom_browser_min_x=Math.round;function floating_ui_dom_browser_min_w(t){const e=floating_ui_dom_browser_min_o(t);let n=parseFloat(e.width),i=parseFloat(e.height);const r=floating_ui_dom_browser_min_s(t),l=r?t.offsetWidth:n,c=r?t.offsetHeight:i,f=floating_ui_dom_browser_min_x(n)!==l||floating_ui_dom_browser_min_x(i)!==c;return f&&(n=l,i=c),{width:n,height:i,fallback:f}}function floating_ui_dom_browser_min_v(t){return floating_ui_dom_browser_min_f(t)?t:t.contextElement}const floating_ui_dom_browser_min_b={x:1,y:1};function floating_ui_dom_browser_min_L(t){const e=floating_ui_dom_browser_min_v(t);if(!floating_ui_dom_browser_min_s(e))return floating_ui_dom_browser_min_b;const n=e.getBoundingClientRect(),{width:o,height:i,fallback:r}=floating_ui_dom_browser_min_w(e);let l=(r?floating_ui_dom_browser_min_x(n.width):n.width)/o,c=(r?floating_ui_dom_browser_min_x(n.height):n.height)/i;return l&&Number.isFinite(l)||(l=1),c&&Number.isFinite(c)||(c=1),{x:l,y:c}}function floating_ui_dom_browser_min_E(e,o,i,r){var l,c;void 0===o&&(o=!1),void 0===i&&(i=!1);const s=e.getBoundingClientRect(),u=floating_ui_dom_browser_min_v(e);let a=floating_ui_dom_browser_min_b;o&&(r?floating_ui_dom_browser_min_f(r)&&(a=floating_ui_dom_browser_min_L(r)):a=floating_ui_dom_browser_min_L(e));const d=u?floating_ui_dom_browser_min_n(u):window,h=floating_ui_dom_browser_min_p()&&i;let g=(s.left+(h&&(null==(l=d.visualViewport)?void 0:l.offsetLeft)||0))/a.x,m=(s.top+(h&&(null==(c=d.visualViewport)?void 0:c.offsetTop)||0))/a.y,y=s.width/a.x,x=s.height/a.y;if(u){const t=floating_ui_dom_browser_min_n(u),e=r&&floating_ui_dom_browser_min_f(r)?floating_ui_dom_browser_min_n(r):r;let o=t.frameElement;for(;o&&r&&e!==t;){const t=floating_ui_dom_browser_min_L(o),e=o.getBoundingClientRect(),i=getComputedStyle(o);e.x+=(o.clientLeft+parseFloat(i.paddingLeft))*t.x,e.y+=(o.clientTop+parseFloat(i.paddingTop))*t.y,g*=t.x,m*=t.y,y*=t.x,x*=t.y,g+=e.x,m+=e.y,o=floating_ui_dom_browser_min_n(o).frameElement}}return floating_ui_core_browser_min_l({width:y,height:x,x:g,y:m})}function floating_ui_dom_browser_min_T(t){return((floating_ui_dom_browser_min_i(t)?t.ownerDocument:t.document)||window.document).documentElement}function floating_ui_dom_browser_min_R(t){return floating_ui_dom_browser_min_f(t)?{scrollLeft:t.scrollLeft,scrollTop:t.scrollTop}:{scrollLeft:t.pageXOffset,scrollTop:t.pageYOffset}}function C(t){return floating_ui_dom_browser_min_E(floating_ui_dom_browser_min_T(t)).left+floating_ui_dom_browser_min_R(t).scrollLeft}function F(t){if("html"===floating_ui_dom_browser_min_r(t))return t;const e=t.assignedSlot||t.parentNode||floating_ui_dom_browser_min_u(t)&&t.host||floating_ui_dom_browser_min_T(t);return floating_ui_dom_browser_min_u(e)?e.host:e}function W(t){const e=F(t);return floating_ui_dom_browser_min_g(e)?e.ownerDocument.body:floating_ui_dom_browser_min_s(e)&&floating_ui_dom_browser_min_a(e)?e:W(e)}function floating_ui_dom_browser_min_D(t,e){var o;void 0===e&&(e=[]);const i=W(t),r=i===(null==(o=t.ownerDocument)?void 0:o.body),l=floating_ui_dom_browser_min_n(i);return r?e.concat(l,l.visualViewport||[],floating_ui_dom_browser_min_a(i)?i:[]):e.concat(i,floating_ui_dom_browser_min_D(i))}function S(e,i,r){let l;if("viewport"===i)l=function(t,e){const o=floating_ui_dom_browser_min_n(t),i=floating_ui_dom_browser_min_T(t),r=o.visualViewport;let l=i.clientWidth,c=i.clientHeight,s=0,f=0;if(r){l=r.width,c=r.height;const t=floating_ui_dom_browser_min_p();(!t||t&&"fixed"===e)&&(s=r.offsetLeft,f=r.offsetTop)}return{width:l,height:c,x:s,y:f}}(e,r);else if("document"===i)l=function(t){const e=floating_ui_dom_browser_min_T(t),n=floating_ui_dom_browser_min_R(t),i=t.ownerDocument.body,r=floating_ui_dom_browser_min_y(e.scrollWidth,e.clientWidth,i.scrollWidth,i.clientWidth),l=floating_ui_dom_browser_min_y(e.scrollHeight,e.clientHeight,i.scrollHeight,i.clientHeight);let c=-n.scrollLeft+C(t);const s=-n.scrollTop;return"rtl"===floating_ui_dom_browser_min_o(i).direction&&(c+=floating_ui_dom_browser_min_y(e.clientWidth,i.clientWidth)-r),{width:r,height:l,x:c,y:s}}(floating_ui_dom_browser_min_T(e));else if(floating_ui_dom_browser_min_f(i))l=function(t,e){const n=floating_ui_dom_browser_min_E(t,!0,"fixed"===e),o=n.top+t.clientTop,i=n.left+t.clientLeft,r=floating_ui_dom_browser_min_s(t)?floating_ui_dom_browser_min_L(t):{x:1,y:1};return{width:t.clientWidth*r.x,height:t.clientHeight*r.y,x:i*r.x,y:o*r.y}}(i,r);else{const t={...i};if(floating_ui_dom_browser_min_p()){var c,u;const o=floating_ui_dom_browser_min_n(e);t.x-=(null==(c=o.visualViewport)?void 0:c.offsetLeft)||0,t.y-=(null==(u=o.visualViewport)?void 0:u.offsetTop)||0}l=t}return floating_ui_core_browser_min_l(l)}function floating_ui_dom_browser_min_A(t,e){return floating_ui_dom_browser_min_s(t)&&"fixed"!==floating_ui_dom_browser_min_o(t).position?e?e(t):t.offsetParent:null}function H(t,e){const i=floating_ui_dom_browser_min_n(t);if(!floating_ui_dom_browser_min_s(t))return i;let l=floating_ui_dom_browser_min_A(t,e);for(;l&&floating_ui_dom_browser_min_d(l)&&"static"===floating_ui_dom_browser_min_o(l).position;)l=floating_ui_dom_browser_min_A(l,e);return l&&("html"===floating_ui_dom_browser_min_r(l)||"body"===floating_ui_dom_browser_min_r(l)&&"static"===floating_ui_dom_browser_min_o(l).position&&!floating_ui_dom_browser_min_h(l))?i:l||function(t){let e=F(t);for(;floating_ui_dom_browser_min_s(e)&&!floating_ui_dom_browser_min_g(e);){if(floating_ui_dom_browser_min_h(e))return e;e=F(e)}return null}(t)||i}function V(t,e,n){const o=floating_ui_dom_browser_min_s(e),i=floating_ui_dom_browser_min_T(e),l=floating_ui_dom_browser_min_E(t,!0,"fixed"===n,e);let c={scrollLeft:0,scrollTop:0};const f={x:0,y:0};if(o||!o&&"fixed"!==n)if(("body"!==floating_ui_dom_browser_min_r(e)||floating_ui_dom_browser_min_a(i))&&(c=floating_ui_dom_browser_min_R(e)),floating_ui_dom_browser_min_s(e)){const t=floating_ui_dom_browser_min_E(e,!0);f.x=t.x+e.clientLeft,f.y=t.y+e.clientTop}else i&&(f.x=C(i));return{x:l.left+c.scrollLeft-f.x,y:l.top+c.scrollTop-f.y,width:l.width,height:l.height}}const floating_ui_dom_browser_min_O={getClippingRect:function(t){let{element:e,boundary:n,rootBoundary:i,strategy:l}=t;const c="clippingAncestors"===n?function(t,e){const n=e.get(t);if(n)return n;let i=floating_ui_dom_browser_min_D(t).filter((t=>floating_ui_dom_browser_min_f(t)&&"body"!==floating_ui_dom_browser_min_r(t))),l=null;const c="fixed"===floating_ui_dom_browser_min_o(t).position;let s=c?F(t):t;for(;floating_ui_dom_browser_min_f(s)&&!floating_ui_dom_browser_min_g(s);){const t=floating_ui_dom_browser_min_o(s),e=floating_ui_dom_browser_min_h(s);"fixed"===t.position?l=null:(c?e||l:e||"static"!==t.position||!l||!["absolute","fixed"].includes(l.position))?l=t:i=i.filter((t=>t!==s)),s=F(s)}return e.set(t,i),i}(e,this._c):[].concat(n),s=[...c,i],u=s[0],a=s.reduce(((t,n)=>{const o=S(e,n,l);return t.top=floating_ui_dom_browser_min_y(o.top,t.top),t.right=floating_ui_dom_browser_min_m(o.right,t.right),t.bottom=floating_ui_dom_browser_min_m(o.bottom,t.bottom),t.left=floating_ui_dom_browser_min_y(o.left,t.left),t}),S(e,u,l));return{width:a.right-a.left,height:a.bottom-a.top,x:a.left,y:a.top}},convertOffsetParentRelativeRectToViewportRelativeRect:function(t){let{rect:e,offsetParent:n,strategy:o}=t;const i=floating_ui_dom_browser_min_s(n),l=floating_ui_dom_browser_min_T(n);if(n===l)return e;let c={scrollLeft:0,scrollTop:0},f={x:1,y:1};const u={x:0,y:0};if((i||!i&&"fixed"!==o)&&(("body"!==floating_ui_dom_browser_min_r(n)||floating_ui_dom_browser_min_a(l))&&(c=floating_ui_dom_browser_min_R(n)),floating_ui_dom_browser_min_s(n))){const t=floating_ui_dom_browser_min_E(n);f=floating_ui_dom_browser_min_L(n),u.x=t.x+n.clientLeft,u.y=t.y+n.clientTop}return{width:e.width*f.x,height:e.height*f.y,x:e.x*f.x-c.scrollLeft*f.x+u.x,y:e.y*f.y-c.scrollTop*f.y+u.y}},isElement:floating_ui_dom_browser_min_f,getDimensions:function(t){return floating_ui_dom_browser_min_w(t)},getOffsetParent:H,getDocumentElement:floating_ui_dom_browser_min_T,getScale:floating_ui_dom_browser_min_L,async getElementRects(t){let{reference:e,floating:n,strategy:o}=t;const i=this.getOffsetParent||H,r=this.getDimensions;return{reference:V(e,await i(n),o),floating:{x:0,y:0,...await r(n)}}},getClientRects:t=>Array.from(t.getClientRects()),isRTL:t=>"rtl"===floating_ui_dom_browser_min_o(t).direction};function floating_ui_dom_browser_min_P(t,e,n,o){void 0===o&&(o={});const{ancestorScroll:i=!0,ancestorResize:r=!0,elementResize:l=!0,animationFrame:c=!1}=o,s=i&&!c,u=s||r?[...floating_ui_dom_browser_min_f(t)?floating_ui_dom_browser_min_D(t):t.contextElement?floating_ui_dom_browser_min_D(t.contextElement):[],...floating_ui_dom_browser_min_D(e)]:[];u.forEach((t=>{s&&t.addEventListener("scroll",n,{passive:!0}),r&&t.addEventListener("resize",n)}));let a,d=null;if(l){let o=!0;d=new ResizeObserver((()=>{o||n(),o=!1})),floating_ui_dom_browser_min_f(t)&&!c&&d.observe(t),floating_ui_dom_browser_min_f(t)||!t.contextElement||c||d.observe(t.contextElement),d.observe(e)}let h=c?floating_ui_dom_browser_min_E(t):null;return c&&function e(){const o=floating_ui_dom_browser_min_E(t);!h||o.x===h.x&&o.y===h.y&&o.width===h.width&&o.height===h.height||n();h=o,a=requestAnimationFrame(e)}(),n(),()=>{var t;u.forEach((t=>{s&&t.removeEventListener("scroll",n),r&&t.removeEventListener("resize",n)})),null==(t=d)||t.disconnect(),d=null,c&&cancelAnimationFrame(a)}}const z=(t,n,o)=>{const i=new Map,r={platform:floating_ui_dom_browser_min_O,...o},l={...r.platform,_c:i};return e(t,n,{...r,platform:l})};
+const sides = (/* unused pure expression or super */ null && (['top', 'right', 'bottom', 'left']));
+const alignments = (/* unused pure expression or super */ null && (['start', 'end']));
+const placements = /*#__PURE__*/(/* unused pure expression or super */ null && (sides.reduce((acc, side) => acc.concat(side, side + "-" + alignments[0], side + "-" + alignments[1]), [])));
+const min = Math.min;
+const max = Math.max;
+const round = Math.round;
+const floor = Math.floor;
+const createCoords = v => ({
+  x: v,
+  y: v
+});
+const oppositeSideMap = {
+  left: 'right',
+  right: 'left',
+  bottom: 'top',
+  top: 'bottom'
+};
+const oppositeAlignmentMap = {
+  start: 'end',
+  end: 'start'
+};
+function clamp(start, value, end) {
+  return max(start, min(value, end));
+}
+function evaluate(value, param) {
+  return typeof value === 'function' ? value(param) : value;
+}
+function getSide(placement) {
+  return placement.split('-')[0];
+}
+function getAlignment(placement) {
+  return placement.split('-')[1];
+}
+function getOppositeAxis(axis) {
+  return axis === 'x' ? 'y' : 'x';
+}
+function getAxisLength(axis) {
+  return axis === 'y' ? 'height' : 'width';
+}
+function getSideAxis(placement) {
+  return ['top', 'bottom'].includes(getSide(placement)) ? 'y' : 'x';
+}
+function getAlignmentAxis(placement) {
+  return getOppositeAxis(getSideAxis(placement));
+}
+function getAlignmentSides(placement, rects, rtl) {
+  if (rtl === void 0) {
+    rtl = false;
+  }
+  const alignment = getAlignment(placement);
+  const alignmentAxis = getAlignmentAxis(placement);
+  const length = getAxisLength(alignmentAxis);
+  let mainAlignmentSide = alignmentAxis === 'x' ? alignment === (rtl ? 'end' : 'start') ? 'right' : 'left' : alignment === 'start' ? 'bottom' : 'top';
+  if (rects.reference[length] > rects.floating[length]) {
+    mainAlignmentSide = getOppositePlacement(mainAlignmentSide);
+  }
+  return [mainAlignmentSide, getOppositePlacement(mainAlignmentSide)];
+}
+function getExpandedPlacements(placement) {
+  const oppositePlacement = getOppositePlacement(placement);
+  return [getOppositeAlignmentPlacement(placement), oppositePlacement, getOppositeAlignmentPlacement(oppositePlacement)];
+}
+function getOppositeAlignmentPlacement(placement) {
+  return placement.replace(/start|end/g, alignment => oppositeAlignmentMap[alignment]);
+}
+function getSideList(side, isStart, rtl) {
+  const lr = ['left', 'right'];
+  const rl = ['right', 'left'];
+  const tb = ['top', 'bottom'];
+  const bt = ['bottom', 'top'];
+  switch (side) {
+    case 'top':
+    case 'bottom':
+      if (rtl) return isStart ? rl : lr;
+      return isStart ? lr : rl;
+    case 'left':
+    case 'right':
+      return isStart ? tb : bt;
+    default:
+      return [];
+  }
+}
+function getOppositeAxisPlacements(placement, flipAlignment, direction, rtl) {
+  const alignment = getAlignment(placement);
+  let list = getSideList(getSide(placement), direction === 'start', rtl);
+  if (alignment) {
+    list = list.map(side => side + "-" + alignment);
+    if (flipAlignment) {
+      list = list.concat(list.map(getOppositeAlignmentPlacement));
+    }
+  }
+  return list;
+}
+function getOppositePlacement(placement) {
+  return placement.replace(/left|right|bottom|top/g, side => oppositeSideMap[side]);
+}
+function expandPaddingObject(padding) {
+  return {
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    ...padding
+  };
+}
+function getPaddingObject(padding) {
+  return typeof padding !== 'number' ? expandPaddingObject(padding) : {
+    top: padding,
+    right: padding,
+    bottom: padding,
+    left: padding
+  };
+}
+function rectToClientRect(rect) {
+  return {
+    ...rect,
+    top: rect.y,
+    left: rect.x,
+    right: rect.x + rect.width,
+    bottom: rect.y + rect.height
+  };
+}
 
-;// CONCATENATED MODULE: ./node_modules/use-isomorphic-layout-effect/dist/use-isomorphic-layout-effect.browser.esm.js
+
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@floating-ui+utils@0.2.1/node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs
+function getNodeName(node) {
+  if (isNode(node)) {
+    return (node.nodeName || '').toLowerCase();
+  }
+  // Mocked nodes in testing environments may not be instances of Node. By
+  // returning `#document` an infinite loop won't occur.
+  // https://github.com/floating-ui/floating-ui/issues/2317
+  return '#document';
+}
+function getWindow(node) {
+  var _node$ownerDocument;
+  return (node == null || (_node$ownerDocument = node.ownerDocument) == null ? void 0 : _node$ownerDocument.defaultView) || window;
+}
+function getDocumentElement(node) {
+  var _ref;
+  return (_ref = (isNode(node) ? node.ownerDocument : node.document) || window.document) == null ? void 0 : _ref.documentElement;
+}
+function isNode(value) {
+  return value instanceof Node || value instanceof getWindow(value).Node;
+}
+function isElement(value) {
+  return value instanceof Element || value instanceof getWindow(value).Element;
+}
+function isHTMLElement(value) {
+  return value instanceof HTMLElement || value instanceof getWindow(value).HTMLElement;
+}
+function isShadowRoot(value) {
+  // Browsers without `ShadowRoot` support.
+  if (typeof ShadowRoot === 'undefined') {
+    return false;
+  }
+  return value instanceof ShadowRoot || value instanceof getWindow(value).ShadowRoot;
+}
+function isOverflowElement(element) {
+  const {
+    overflow,
+    overflowX,
+    overflowY,
+    display
+  } = floating_ui_utils_dom_getComputedStyle(element);
+  return /auto|scroll|overlay|hidden|clip/.test(overflow + overflowY + overflowX) && !['inline', 'contents'].includes(display);
+}
+function isTableElement(element) {
+  return ['table', 'td', 'th'].includes(getNodeName(element));
+}
+function isContainingBlock(element) {
+  const webkit = isWebKit();
+  const css = floating_ui_utils_dom_getComputedStyle(element);
+
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block
+  return css.transform !== 'none' || css.perspective !== 'none' || (css.containerType ? css.containerType !== 'normal' : false) || !webkit && (css.backdropFilter ? css.backdropFilter !== 'none' : false) || !webkit && (css.filter ? css.filter !== 'none' : false) || ['transform', 'perspective', 'filter'].some(value => (css.willChange || '').includes(value)) || ['paint', 'layout', 'strict', 'content'].some(value => (css.contain || '').includes(value));
+}
+function getContainingBlock(element) {
+  let currentNode = getParentNode(element);
+  while (isHTMLElement(currentNode) && !isLastTraversableNode(currentNode)) {
+    if (isContainingBlock(currentNode)) {
+      return currentNode;
+    } else {
+      currentNode = getParentNode(currentNode);
+    }
+  }
+  return null;
+}
+function isWebKit() {
+  if (typeof CSS === 'undefined' || !CSS.supports) return false;
+  return CSS.supports('-webkit-backdrop-filter', 'none');
+}
+function isLastTraversableNode(node) {
+  return ['html', 'body', '#document'].includes(getNodeName(node));
+}
+function floating_ui_utils_dom_getComputedStyle(element) {
+  return getWindow(element).getComputedStyle(element);
+}
+function getNodeScroll(element) {
+  if (isElement(element)) {
+    return {
+      scrollLeft: element.scrollLeft,
+      scrollTop: element.scrollTop
+    };
+  }
+  return {
+    scrollLeft: element.pageXOffset,
+    scrollTop: element.pageYOffset
+  };
+}
+function getParentNode(node) {
+  if (getNodeName(node) === 'html') {
+    return node;
+  }
+  const result =
+  // Step into the shadow DOM of the parent of a slotted node.
+  node.assignedSlot ||
+  // DOM Element detected.
+  node.parentNode ||
+  // ShadowRoot detected.
+  isShadowRoot(node) && node.host ||
+  // Fallback.
+  getDocumentElement(node);
+  return isShadowRoot(result) ? result.host : result;
+}
+function getNearestOverflowAncestor(node) {
+  const parentNode = getParentNode(node);
+  if (isLastTraversableNode(parentNode)) {
+    return node.ownerDocument ? node.ownerDocument.body : node.body;
+  }
+  if (isHTMLElement(parentNode) && isOverflowElement(parentNode)) {
+    return parentNode;
+  }
+  return getNearestOverflowAncestor(parentNode);
+}
+function getOverflowAncestors(node, list, traverseIframes) {
+  var _node$ownerDocument2;
+  if (list === void 0) {
+    list = [];
+  }
+  if (traverseIframes === void 0) {
+    traverseIframes = true;
+  }
+  const scrollableAncestor = getNearestOverflowAncestor(node);
+  const isBody = scrollableAncestor === ((_node$ownerDocument2 = node.ownerDocument) == null ? void 0 : _node$ownerDocument2.body);
+  const win = getWindow(scrollableAncestor);
+  if (isBody) {
+    return list.concat(win, win.visualViewport || [], isOverflowElement(scrollableAncestor) ? scrollableAncestor : [], win.frameElement && traverseIframes ? getOverflowAncestors(win.frameElement) : []);
+  }
+  return list.concat(scrollableAncestor, getOverflowAncestors(scrollableAncestor, [], traverseIframes));
+}
+
+
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@floating-ui+dom@1.5.4/node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs
+
+
+
+
+
+
+function getCssDimensions(element) {
+  const css = floating_ui_utils_dom_getComputedStyle(element);
+  // In testing environments, the `width` and `height` properties are empty
+  // strings for SVG elements, returning NaN. Fallback to `0` in this case.
+  let width = parseFloat(css.width) || 0;
+  let height = parseFloat(css.height) || 0;
+  const hasOffset = isHTMLElement(element);
+  const offsetWidth = hasOffset ? element.offsetWidth : width;
+  const offsetHeight = hasOffset ? element.offsetHeight : height;
+  const shouldFallback = round(width) !== offsetWidth || round(height) !== offsetHeight;
+  if (shouldFallback) {
+    width = offsetWidth;
+    height = offsetHeight;
+  }
+  return {
+    width,
+    height,
+    $: shouldFallback
+  };
+}
+
+function unwrapElement(element) {
+  return !isElement(element) ? element.contextElement : element;
+}
+
+function getScale(element) {
+  const domElement = unwrapElement(element);
+  if (!isHTMLElement(domElement)) {
+    return createCoords(1);
+  }
+  const rect = domElement.getBoundingClientRect();
+  const {
+    width,
+    height,
+    $
+  } = getCssDimensions(domElement);
+  let x = ($ ? round(rect.width) : rect.width) / width;
+  let y = ($ ? round(rect.height) : rect.height) / height;
+
+  // 0, NaN, or Infinity should always fallback to 1.
+
+  if (!x || !Number.isFinite(x)) {
+    x = 1;
+  }
+  if (!y || !Number.isFinite(y)) {
+    y = 1;
+  }
+  return {
+    x,
+    y
+  };
+}
+
+const noOffsets = /*#__PURE__*/createCoords(0);
+function getVisualOffsets(element) {
+  const win = getWindow(element);
+  if (!isWebKit() || !win.visualViewport) {
+    return noOffsets;
+  }
+  return {
+    x: win.visualViewport.offsetLeft,
+    y: win.visualViewport.offsetTop
+  };
+}
+function shouldAddVisualOffsets(element, isFixed, floatingOffsetParent) {
+  if (isFixed === void 0) {
+    isFixed = false;
+  }
+  if (!floatingOffsetParent || isFixed && floatingOffsetParent !== getWindow(element)) {
+    return false;
+  }
+  return isFixed;
+}
+
+function getBoundingClientRect(element, includeScale, isFixedStrategy, offsetParent) {
+  if (includeScale === void 0) {
+    includeScale = false;
+  }
+  if (isFixedStrategy === void 0) {
+    isFixedStrategy = false;
+  }
+  const clientRect = element.getBoundingClientRect();
+  const domElement = unwrapElement(element);
+  let scale = createCoords(1);
+  if (includeScale) {
+    if (offsetParent) {
+      if (isElement(offsetParent)) {
+        scale = getScale(offsetParent);
+      }
+    } else {
+      scale = getScale(element);
+    }
+  }
+  const visualOffsets = shouldAddVisualOffsets(domElement, isFixedStrategy, offsetParent) ? getVisualOffsets(domElement) : createCoords(0);
+  let x = (clientRect.left + visualOffsets.x) / scale.x;
+  let y = (clientRect.top + visualOffsets.y) / scale.y;
+  let width = clientRect.width / scale.x;
+  let height = clientRect.height / scale.y;
+  if (domElement) {
+    const win = getWindow(domElement);
+    const offsetWin = offsetParent && isElement(offsetParent) ? getWindow(offsetParent) : offsetParent;
+    let currentIFrame = win.frameElement;
+    while (currentIFrame && offsetParent && offsetWin !== win) {
+      const iframeScale = getScale(currentIFrame);
+      const iframeRect = currentIFrame.getBoundingClientRect();
+      const css = floating_ui_utils_dom_getComputedStyle(currentIFrame);
+      const left = iframeRect.left + (currentIFrame.clientLeft + parseFloat(css.paddingLeft)) * iframeScale.x;
+      const top = iframeRect.top + (currentIFrame.clientTop + parseFloat(css.paddingTop)) * iframeScale.y;
+      x *= iframeScale.x;
+      y *= iframeScale.y;
+      width *= iframeScale.x;
+      height *= iframeScale.y;
+      x += left;
+      y += top;
+      currentIFrame = getWindow(currentIFrame).frameElement;
+    }
+  }
+  return rectToClientRect({
+    width,
+    height,
+    x,
+    y
+  });
+}
+
+function convertOffsetParentRelativeRectToViewportRelativeRect(_ref) {
+  let {
+    rect,
+    offsetParent,
+    strategy
+  } = _ref;
+  const isOffsetParentAnElement = isHTMLElement(offsetParent);
+  const documentElement = getDocumentElement(offsetParent);
+  if (offsetParent === documentElement) {
+    return rect;
+  }
+  let scroll = {
+    scrollLeft: 0,
+    scrollTop: 0
+  };
+  let scale = createCoords(1);
+  const offsets = createCoords(0);
+  if (isOffsetParentAnElement || !isOffsetParentAnElement && strategy !== 'fixed') {
+    if (getNodeName(offsetParent) !== 'body' || isOverflowElement(documentElement)) {
+      scroll = getNodeScroll(offsetParent);
+    }
+    if (isHTMLElement(offsetParent)) {
+      const offsetRect = getBoundingClientRect(offsetParent);
+      scale = getScale(offsetParent);
+      offsets.x = offsetRect.x + offsetParent.clientLeft;
+      offsets.y = offsetRect.y + offsetParent.clientTop;
+    }
+  }
+  return {
+    width: rect.width * scale.x,
+    height: rect.height * scale.y,
+    x: rect.x * scale.x - scroll.scrollLeft * scale.x + offsets.x,
+    y: rect.y * scale.y - scroll.scrollTop * scale.y + offsets.y
+  };
+}
+
+function getClientRects(element) {
+  return Array.from(element.getClientRects());
+}
+
+function getWindowScrollBarX(element) {
+  // If <html> has a CSS width greater than the viewport, then this will be
+  // incorrect for RTL.
+  return getBoundingClientRect(getDocumentElement(element)).left + getNodeScroll(element).scrollLeft;
+}
+
+// Gets the entire size of the scrollable document area, even extending outside
+// of the `<html>` and `<body>` rect bounds if horizontally scrollable.
+function getDocumentRect(element) {
+  const html = getDocumentElement(element);
+  const scroll = getNodeScroll(element);
+  const body = element.ownerDocument.body;
+  const width = max(html.scrollWidth, html.clientWidth, body.scrollWidth, body.clientWidth);
+  const height = max(html.scrollHeight, html.clientHeight, body.scrollHeight, body.clientHeight);
+  let x = -scroll.scrollLeft + getWindowScrollBarX(element);
+  const y = -scroll.scrollTop;
+  if (floating_ui_utils_dom_getComputedStyle(body).direction === 'rtl') {
+    x += max(html.clientWidth, body.clientWidth) - width;
+  }
+  return {
+    width,
+    height,
+    x,
+    y
+  };
+}
+
+function getViewportRect(element, strategy) {
+  const win = getWindow(element);
+  const html = getDocumentElement(element);
+  const visualViewport = win.visualViewport;
+  let width = html.clientWidth;
+  let height = html.clientHeight;
+  let x = 0;
+  let y = 0;
+  if (visualViewport) {
+    width = visualViewport.width;
+    height = visualViewport.height;
+    const visualViewportBased = isWebKit();
+    if (!visualViewportBased || visualViewportBased && strategy === 'fixed') {
+      x = visualViewport.offsetLeft;
+      y = visualViewport.offsetTop;
+    }
+  }
+  return {
+    width,
+    height,
+    x,
+    y
+  };
+}
+
+// Returns the inner client rect, subtracting scrollbars if present.
+function getInnerBoundingClientRect(element, strategy) {
+  const clientRect = getBoundingClientRect(element, true, strategy === 'fixed');
+  const top = clientRect.top + element.clientTop;
+  const left = clientRect.left + element.clientLeft;
+  const scale = isHTMLElement(element) ? getScale(element) : createCoords(1);
+  const width = element.clientWidth * scale.x;
+  const height = element.clientHeight * scale.y;
+  const x = left * scale.x;
+  const y = top * scale.y;
+  return {
+    width,
+    height,
+    x,
+    y
+  };
+}
+function getClientRectFromClippingAncestor(element, clippingAncestor, strategy) {
+  let rect;
+  if (clippingAncestor === 'viewport') {
+    rect = getViewportRect(element, strategy);
+  } else if (clippingAncestor === 'document') {
+    rect = getDocumentRect(getDocumentElement(element));
+  } else if (isElement(clippingAncestor)) {
+    rect = getInnerBoundingClientRect(clippingAncestor, strategy);
+  } else {
+    const visualOffsets = getVisualOffsets(element);
+    rect = {
+      ...clippingAncestor,
+      x: clippingAncestor.x - visualOffsets.x,
+      y: clippingAncestor.y - visualOffsets.y
+    };
+  }
+  return rectToClientRect(rect);
+}
+function hasFixedPositionAncestor(element, stopNode) {
+  const parentNode = getParentNode(element);
+  if (parentNode === stopNode || !isElement(parentNode) || isLastTraversableNode(parentNode)) {
+    return false;
+  }
+  return floating_ui_utils_dom_getComputedStyle(parentNode).position === 'fixed' || hasFixedPositionAncestor(parentNode, stopNode);
+}
+
+// A "clipping ancestor" is an `overflow` element with the characteristic of
+// clipping (or hiding) child elements. This returns all clipping ancestors
+// of the given element up the tree.
+function getClippingElementAncestors(element, cache) {
+  const cachedResult = cache.get(element);
+  if (cachedResult) {
+    return cachedResult;
+  }
+  let result = getOverflowAncestors(element, [], false).filter(el => isElement(el) && getNodeName(el) !== 'body');
+  let currentContainingBlockComputedStyle = null;
+  const elementIsFixed = floating_ui_utils_dom_getComputedStyle(element).position === 'fixed';
+  let currentNode = elementIsFixed ? getParentNode(element) : element;
+
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block
+  while (isElement(currentNode) && !isLastTraversableNode(currentNode)) {
+    const computedStyle = floating_ui_utils_dom_getComputedStyle(currentNode);
+    const currentNodeIsContaining = isContainingBlock(currentNode);
+    if (!currentNodeIsContaining && computedStyle.position === 'fixed') {
+      currentContainingBlockComputedStyle = null;
+    }
+    const shouldDropCurrentNode = elementIsFixed ? !currentNodeIsContaining && !currentContainingBlockComputedStyle : !currentNodeIsContaining && computedStyle.position === 'static' && !!currentContainingBlockComputedStyle && ['absolute', 'fixed'].includes(currentContainingBlockComputedStyle.position) || isOverflowElement(currentNode) && !currentNodeIsContaining && hasFixedPositionAncestor(element, currentNode);
+    if (shouldDropCurrentNode) {
+      // Drop non-containing blocks.
+      result = result.filter(ancestor => ancestor !== currentNode);
+    } else {
+      // Record last containing block for next iteration.
+      currentContainingBlockComputedStyle = computedStyle;
+    }
+    currentNode = getParentNode(currentNode);
+  }
+  cache.set(element, result);
+  return result;
+}
+
+// Gets the maximum area that the element is visible in due to any number of
+// clipping ancestors.
+function getClippingRect(_ref) {
+  let {
+    element,
+    boundary,
+    rootBoundary,
+    strategy
+  } = _ref;
+  const elementClippingAncestors = boundary === 'clippingAncestors' ? getClippingElementAncestors(element, this._c) : [].concat(boundary);
+  const clippingAncestors = [...elementClippingAncestors, rootBoundary];
+  const firstClippingAncestor = clippingAncestors[0];
+  const clippingRect = clippingAncestors.reduce((accRect, clippingAncestor) => {
+    const rect = getClientRectFromClippingAncestor(element, clippingAncestor, strategy);
+    accRect.top = max(rect.top, accRect.top);
+    accRect.right = min(rect.right, accRect.right);
+    accRect.bottom = min(rect.bottom, accRect.bottom);
+    accRect.left = max(rect.left, accRect.left);
+    return accRect;
+  }, getClientRectFromClippingAncestor(element, firstClippingAncestor, strategy));
+  return {
+    width: clippingRect.right - clippingRect.left,
+    height: clippingRect.bottom - clippingRect.top,
+    x: clippingRect.left,
+    y: clippingRect.top
+  };
+}
+
+function getDimensions(element) {
+  const {
+    width,
+    height
+  } = getCssDimensions(element);
+  return {
+    width,
+    height
+  };
+}
+
+function getRectRelativeToOffsetParent(element, offsetParent, strategy) {
+  const isOffsetParentAnElement = isHTMLElement(offsetParent);
+  const documentElement = getDocumentElement(offsetParent);
+  const isFixed = strategy === 'fixed';
+  const rect = getBoundingClientRect(element, true, isFixed, offsetParent);
+  let scroll = {
+    scrollLeft: 0,
+    scrollTop: 0
+  };
+  const offsets = createCoords(0);
+  if (isOffsetParentAnElement || !isOffsetParentAnElement && !isFixed) {
+    if (getNodeName(offsetParent) !== 'body' || isOverflowElement(documentElement)) {
+      scroll = getNodeScroll(offsetParent);
+    }
+    if (isOffsetParentAnElement) {
+      const offsetRect = getBoundingClientRect(offsetParent, true, isFixed, offsetParent);
+      offsets.x = offsetRect.x + offsetParent.clientLeft;
+      offsets.y = offsetRect.y + offsetParent.clientTop;
+    } else if (documentElement) {
+      offsets.x = getWindowScrollBarX(documentElement);
+    }
+  }
+  return {
+    x: rect.left + scroll.scrollLeft - offsets.x,
+    y: rect.top + scroll.scrollTop - offsets.y,
+    width: rect.width,
+    height: rect.height
+  };
+}
+
+function getTrueOffsetParent(element, polyfill) {
+  if (!isHTMLElement(element) || floating_ui_utils_dom_getComputedStyle(element).position === 'fixed') {
+    return null;
+  }
+  if (polyfill) {
+    return polyfill(element);
+  }
+  return element.offsetParent;
+}
+
+// Gets the closest ancestor positioned element. Handles some edge cases,
+// such as table ancestors and cross browser bugs.
+function getOffsetParent(element, polyfill) {
+  const window = getWindow(element);
+  if (!isHTMLElement(element)) {
+    return window;
+  }
+  let offsetParent = getTrueOffsetParent(element, polyfill);
+  while (offsetParent && isTableElement(offsetParent) && floating_ui_utils_dom_getComputedStyle(offsetParent).position === 'static') {
+    offsetParent = getTrueOffsetParent(offsetParent, polyfill);
+  }
+  if (offsetParent && (getNodeName(offsetParent) === 'html' || getNodeName(offsetParent) === 'body' && floating_ui_utils_dom_getComputedStyle(offsetParent).position === 'static' && !isContainingBlock(offsetParent))) {
+    return window;
+  }
+  return offsetParent || getContainingBlock(element) || window;
+}
+
+const getElementRects = async function (_ref) {
+  let {
+    reference,
+    floating,
+    strategy
+  } = _ref;
+  const getOffsetParentFn = this.getOffsetParent || getOffsetParent;
+  const getDimensionsFn = this.getDimensions;
+  return {
+    reference: getRectRelativeToOffsetParent(reference, await getOffsetParentFn(floating), strategy),
+    floating: {
+      x: 0,
+      y: 0,
+      ...(await getDimensionsFn(floating))
+    }
+  };
+};
+
+function isRTL(element) {
+  return floating_ui_utils_dom_getComputedStyle(element).direction === 'rtl';
+}
+
+const platform = {
+  convertOffsetParentRelativeRectToViewportRelativeRect,
+  getDocumentElement: getDocumentElement,
+  getClippingRect,
+  getOffsetParent,
+  getElementRects,
+  getClientRects,
+  getDimensions,
+  getScale,
+  isElement: isElement,
+  isRTL
+};
+
+// https://samthor.au/2021/observing-dom/
+function observeMove(element, onMove) {
+  let io = null;
+  let timeoutId;
+  const root = getDocumentElement(element);
+  function cleanup() {
+    clearTimeout(timeoutId);
+    io && io.disconnect();
+    io = null;
+  }
+  function refresh(skip, threshold) {
+    if (skip === void 0) {
+      skip = false;
+    }
+    if (threshold === void 0) {
+      threshold = 1;
+    }
+    cleanup();
+    const {
+      left,
+      top,
+      width,
+      height
+    } = element.getBoundingClientRect();
+    if (!skip) {
+      onMove();
+    }
+    if (!width || !height) {
+      return;
+    }
+    const insetTop = floor(top);
+    const insetRight = floor(root.clientWidth - (left + width));
+    const insetBottom = floor(root.clientHeight - (top + height));
+    const insetLeft = floor(left);
+    const rootMargin = -insetTop + "px " + -insetRight + "px " + -insetBottom + "px " + -insetLeft + "px";
+    const options = {
+      rootMargin,
+      threshold: max(0, min(1, threshold)) || 1
+    };
+    let isFirstUpdate = true;
+    function handleObserve(entries) {
+      const ratio = entries[0].intersectionRatio;
+      if (ratio !== threshold) {
+        if (!isFirstUpdate) {
+          return refresh();
+        }
+        if (!ratio) {
+          timeoutId = setTimeout(() => {
+            refresh(false, 1e-7);
+          }, 100);
+        } else {
+          refresh(false, ratio);
+        }
+      }
+      isFirstUpdate = false;
+    }
+
+    // Older browsers don't support a `document` as the root and will throw an
+    // error.
+    try {
+      io = new IntersectionObserver(handleObserve, {
+        ...options,
+        // Handle <iframe>s
+        root: root.ownerDocument
+      });
+    } catch (e) {
+      io = new IntersectionObserver(handleObserve, options);
+    }
+    io.observe(element);
+  }
+  refresh(true);
+  return cleanup;
+}
+
+/**
+ * Automatically updates the position of the floating element when necessary.
+ * Should only be called when the floating element is mounted on the DOM or
+ * visible on the screen.
+ * @returns cleanup function that should be invoked when the floating element is
+ * removed from the DOM or hidden from the screen.
+ * @see https://floating-ui.com/docs/autoUpdate
+ */
+function autoUpdate(reference, floating, update, options) {
+  if (options === void 0) {
+    options = {};
+  }
+  const {
+    ancestorScroll = true,
+    ancestorResize = true,
+    elementResize = typeof ResizeObserver === 'function',
+    layoutShift = typeof IntersectionObserver === 'function',
+    animationFrame = false
+  } = options;
+  const referenceEl = unwrapElement(reference);
+  const ancestors = ancestorScroll || ancestorResize ? [...(referenceEl ? getOverflowAncestors(referenceEl) : []), ...getOverflowAncestors(floating)] : [];
+  ancestors.forEach(ancestor => {
+    ancestorScroll && ancestor.addEventListener('scroll', update, {
+      passive: true
+    });
+    ancestorResize && ancestor.addEventListener('resize', update);
+  });
+  const cleanupIo = referenceEl && layoutShift ? observeMove(referenceEl, update) : null;
+  let reobserveFrame = -1;
+  let resizeObserver = null;
+  if (elementResize) {
+    resizeObserver = new ResizeObserver(_ref => {
+      let [firstEntry] = _ref;
+      if (firstEntry && firstEntry.target === referenceEl && resizeObserver) {
+        // Prevent update loops when using the `size` middleware.
+        // https://github.com/floating-ui/floating-ui/issues/1740
+        resizeObserver.unobserve(floating);
+        cancelAnimationFrame(reobserveFrame);
+        reobserveFrame = requestAnimationFrame(() => {
+          resizeObserver && resizeObserver.observe(floating);
+        });
+      }
+      update();
+    });
+    if (referenceEl && !animationFrame) {
+      resizeObserver.observe(referenceEl);
+    }
+    resizeObserver.observe(floating);
+  }
+  let frameId;
+  let prevRefRect = animationFrame ? getBoundingClientRect(reference) : null;
+  if (animationFrame) {
+    frameLoop();
+  }
+  function frameLoop() {
+    const nextRefRect = getBoundingClientRect(reference);
+    if (prevRefRect && (nextRefRect.x !== prevRefRect.x || nextRefRect.y !== prevRefRect.y || nextRefRect.width !== prevRefRect.width || nextRefRect.height !== prevRefRect.height)) {
+      update();
+    }
+    prevRefRect = nextRefRect;
+    frameId = requestAnimationFrame(frameLoop);
+  }
+  update();
+  return () => {
+    ancestors.forEach(ancestor => {
+      ancestorScroll && ancestor.removeEventListener('scroll', update);
+      ancestorResize && ancestor.removeEventListener('resize', update);
+    });
+    cleanupIo && cleanupIo();
+    resizeObserver && resizeObserver.disconnect();
+    resizeObserver = null;
+    if (animationFrame) {
+      cancelAnimationFrame(frameId);
+    }
+  };
+}
+
+/**
+ * Optimizes the visibility of the floating element by choosing the placement
+ * that has the most space available automatically, without needing to specify a
+ * preferred placement. Alternative to `flip`.
+ * @see https://floating-ui.com/docs/autoPlacement
+ */
+const autoPlacement = (/* unused pure expression or super */ null && (autoPlacement$1));
+
+/**
+ * Optimizes the visibility of the floating element by shifting it in order to
+ * keep it in view when it will overflow the clipping boundary.
+ * @see https://floating-ui.com/docs/shift
+ */
+const shift = (/* unused pure expression or super */ null && (shift$1));
+
+/**
+ * Optimizes the visibility of the floating element by flipping the `placement`
+ * in order to keep it in view when the preferred placement(s) will overflow the
+ * clipping boundary. Alternative to `autoPlacement`.
+ * @see https://floating-ui.com/docs/flip
+ */
+const flip = (/* unused pure expression or super */ null && (flip$1));
+
+/**
+ * Provides data that allows you to change the size of the floating element —
+ * for instance, prevent it from overflowing the clipping boundary or match the
+ * width of the reference element.
+ * @see https://floating-ui.com/docs/size
+ */
+const size = (/* unused pure expression or super */ null && (size$1));
+
+/**
+ * Provides data to hide the floating element in applicable situations, such as
+ * when it is not in the same clipping context as the reference element.
+ * @see https://floating-ui.com/docs/hide
+ */
+const hide = (/* unused pure expression or super */ null && (hide$1));
+
+/**
+ * Provides data to position an inner element of the floating element so that it
+ * appears centered to the reference element.
+ * @see https://floating-ui.com/docs/arrow
+ */
+const arrow = (/* unused pure expression or super */ null && (arrow$1));
+
+/**
+ * Provides improved positioning for inline reference elements that can span
+ * over multiple lines, such as hyperlinks or range selections.
+ * @see https://floating-ui.com/docs/inline
+ */
+const inline = (/* unused pure expression or super */ null && (inline$1));
+
+/**
+ * Built-in `limiter` that will stop `shift()` at a certain point.
+ */
+const limitShift = (/* unused pure expression or super */ null && (limitShift$1));
+
+/**
+ * Computes the `x` and `y` coordinates that will place the floating element
+ * next to a given reference element.
+ */
+const computePosition = (reference, floating, options) => {
+  // This caches the expensive `getClippingElementAncestors` function so that
+  // multiple lifecycle resets re-use the same result. It only lives for a
+  // single call. If other functions become expensive, we can add them as well.
+  const cache = new Map();
+  const mergedOptions = {
+    platform,
+    ...options
+  };
+  const platformWithCache = {
+    ...mergedOptions.platform,
+    _c: cache
+  };
+  return computePosition$1(reference, floating, {
+    ...mergedOptions,
+    platform: platformWithCache
+  });
+};
+
+
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/use-isomorphic-layout-effect@1.1.2_react@18.2.0/node_modules/use-isomorphic-layout-effect/dist/use-isomorphic-layout-effect.browser.esm.js
 
 
 var index =  react.useLayoutEffect ;
 
 /* harmony default export */ const use_isomorphic_layout_effect_browser_esm = (index);
 
-;// CONCATENATED MODULE: ./node_modules/react-select/dist/index-a86253bb.esm.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/react-select@5.8.0_react-dom@18.2.0_react@18.2.0/node_modules/react-select/dist/index-a301f526.esm.js
 
 
 
@@ -3657,7 +4513,7 @@ var index =  react.useLayoutEffect ;
 
 
 
-var _excluded$3 = ["className", "clearValue", "cx", "getStyles", "getClassNames", "getValue", "hasValue", "isMulti", "isRtl", "options", "selectOption", "selectProps", "setValue", "theme"];
+var _excluded$4 = ["className", "clearValue", "cx", "getStyles", "getClassNames", "getValue", "hasValue", "isMulti", "isRtl", "options", "selectOption", "selectProps", "setValue", "theme"];
 // ==============================
 // NO OP
 // ==============================
@@ -3734,7 +4590,7 @@ var cleanCommonProps = function cleanCommonProps(props) {
     props.selectProps;
     props.setValue;
     props.theme;
-    var innerProps = _objectWithoutProperties(props, _excluded$3);
+    var innerProps = _objectWithoutProperties(props, _excluded$4);
   return objectSpread2_objectSpread2({}, innerProps);
 };
 
@@ -3921,10 +4777,10 @@ var options = {
   }
 };
 // check for SSR
-var index_a86253bb_esm_w = typeof window !== 'undefined' ? window : {};
-if (index_a86253bb_esm_w.addEventListener && index_a86253bb_esm_w.removeEventListener) {
-  index_a86253bb_esm_w.addEventListener('p', noop, options);
-  index_a86253bb_esm_w.removeEventListener('p', noop, false);
+var w = typeof window !== 'undefined' ? window : {};
+if (w.addEventListener && w.removeEventListener) {
+  w.addEventListener('p', noop, options);
+  w.removeEventListener('p', noop, false);
 }
 var supportsPassiveEvents = passiveOptionAccessed;
 function notNullish(item) {
@@ -3960,6 +4816,8 @@ var removeProps = function removeProps(propsObj) {
   }, {});
 };
 
+var _excluded$3 = ["children", "innerProps"],
+  _excluded2$1 = ["children", "innerProps"];
 function getMenuPlacement(_ref) {
   var preferredMaxHeight = _ref.maxHeight,
     menuEl = _ref.menuEl,
@@ -4204,6 +5062,7 @@ var Menu = function Menu(props) {
     ref: innerRef
   }, innerProps), children);
 };
+var Menu$1 = Menu;
 
 // ==============================
 // Menu List
@@ -4253,37 +5112,41 @@ var noticeCSS = function noticeCSS(_ref5, unstyled) {
 };
 var noOptionsMessageCSS = noticeCSS;
 var loadingMessageCSS = noticeCSS;
-var NoOptionsMessage = function NoOptionsMessage(props) {
-  var children = props.children,
-    innerProps = props.innerProps;
-  return jsx("div", extends_extends({}, getStyleProps(props, 'noOptionsMessage', {
+var NoOptionsMessage = function NoOptionsMessage(_ref6) {
+  var _ref6$children = _ref6.children,
+    children = _ref6$children === void 0 ? 'No options' : _ref6$children,
+    innerProps = _ref6.innerProps,
+    restProps = _objectWithoutProperties(_ref6, _excluded$3);
+  return jsx("div", extends_extends({}, getStyleProps(objectSpread2_objectSpread2(objectSpread2_objectSpread2({}, restProps), {}, {
+    children: children,
+    innerProps: innerProps
+  }), 'noOptionsMessage', {
     'menu-notice': true,
     'menu-notice--no-options': true
   }), innerProps), children);
 };
-NoOptionsMessage.defaultProps = {
-  children: 'No options'
-};
-var LoadingMessage = function LoadingMessage(props) {
-  var children = props.children,
-    innerProps = props.innerProps;
-  return jsx("div", extends_extends({}, getStyleProps(props, 'loadingMessage', {
+var LoadingMessage = function LoadingMessage(_ref7) {
+  var _ref7$children = _ref7.children,
+    children = _ref7$children === void 0 ? 'Loading...' : _ref7$children,
+    innerProps = _ref7.innerProps,
+    restProps = _objectWithoutProperties(_ref7, _excluded2$1);
+  return jsx("div", extends_extends({}, getStyleProps(objectSpread2_objectSpread2(objectSpread2_objectSpread2({}, restProps), {}, {
+    children: children,
+    innerProps: innerProps
+  }), 'loadingMessage', {
     'menu-notice': true,
     'menu-notice--loading': true
   }), innerProps), children);
-};
-LoadingMessage.defaultProps = {
-  children: 'Loading...'
 };
 
 // ==============================
 // Menu Portal
 // ==============================
 
-var menuPortalCSS = function menuPortalCSS(_ref6) {
-  var rect = _ref6.rect,
-    offset = _ref6.offset,
-    position = _ref6.position;
+var menuPortalCSS = function menuPortalCSS(_ref8) {
+  var rect = _ref8.rect,
+    offset = _ref8.offset,
+    position = _ref8.position;
   return {
     left: rect.left,
     position: position,
@@ -4335,7 +5198,7 @@ var MenuPortal = function MenuPortal(props) {
       cleanupRef.current = null;
     }
     if (controlElement && menuPortalRef.current) {
-      cleanupRef.current = floating_ui_dom_browser_min_P(controlElement, menuPortalRef.current, updateComputedPosition, {
+      cleanupRef.current = autoUpdate(controlElement, menuPortalRef.current, updateComputedPosition, {
         elementResize: 'ResizeObserver' in window
       });
     }
@@ -4446,7 +5309,8 @@ var IndicatorsContainer = function IndicatorsContainer(props) {
 };
 
 var _templateObject;
-var _excluded$2 = ["size"];
+var _excluded$2 = ["size"],
+  _excluded2 = ["innerProps", "isRtl", "size"];
 function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 // ==============================
@@ -4591,10 +5455,17 @@ var LoadingDot = function LoadingDot(_ref6) {
     },  true ? "" : 0,  true ? "" : 0)
   });
 };
-var LoadingIndicator = function LoadingIndicator(props) {
-  var innerProps = props.innerProps,
-    isRtl = props.isRtl;
-  return jsx("div", extends_extends({}, getStyleProps(props, 'loadingIndicator', {
+var LoadingIndicator = function LoadingIndicator(_ref7) {
+  var innerProps = _ref7.innerProps,
+    isRtl = _ref7.isRtl,
+    _ref7$size = _ref7.size,
+    size = _ref7$size === void 0 ? 4 : _ref7$size,
+    restProps = _objectWithoutProperties(_ref7, _excluded2);
+  return jsx("div", extends_extends({}, getStyleProps(objectSpread2_objectSpread2(objectSpread2_objectSpread2({}, restProps), {}, {
+    innerProps: innerProps,
+    isRtl: isRtl,
+    size: size
+  }), 'loadingIndicator', {
     indicator: true,
     'loading-indicator': true
   }), innerProps), jsx(LoadingDot, {
@@ -4607,9 +5478,6 @@ var LoadingIndicator = function LoadingIndicator(props) {
     delay: 320,
     offset: !isRtl
   }));
-};
-LoadingIndicator.defaultProps = {
-  size: 4
 };
 
 var css$1 = function css(_ref, unstyled) {
@@ -4656,8 +5524,11 @@ var Control = function Control(props) {
     'control--is-disabled': isDisabled,
     'control--is-focused': isFocused,
     'control--menu-is-open': menuIsOpen
-  }), innerProps), children);
+  }), innerProps, {
+    "aria-disabled": isDisabled || undefined
+  }), children);
 };
+var Control$1 = Control;
 
 var _excluded$1 = ["data"];
 var groupCSS = function groupCSS(_ref, unstyled) {
@@ -4714,6 +5585,7 @@ var GroupHeading = function GroupHeading(props) {
     'group-heading': true
   }), innerProps));
 };
+var Group$1 = Group;
 
 var _excluded = ["innerRef", "isDisabled", "isHidden", "inputClassName"];
 var inputCSS = function inputCSS(_ref, unstyled) {
@@ -4785,6 +5657,7 @@ var Input = function Input(props) {
     disabled: isDisabled
   }, innerProps)));
 };
+var Input$1 = Input;
 
 var multiValueCSS = function multiValueCSS(_ref, unstyled) {
   var _ref$theme = _ref.theme,
@@ -4888,6 +5761,7 @@ var MultiValue = function MultiValue(props) {
     selectProps: selectProps
   }));
 };
+var MultiValue$1 = MultiValue;
 
 var optionCSS = function optionCSS(_ref, unstyled) {
   var isDisabled = _ref.isDisabled,
@@ -4931,6 +5805,7 @@ var Option = function Option(props) {
     "aria-disabled": isDisabled
   }, innerProps), children);
 };
+var Option$1 = Option;
 
 var placeholderCSS = function placeholderCSS(_ref, unstyled) {
   var _ref$theme = _ref.theme,
@@ -4952,8 +5827,9 @@ var Placeholder = function Placeholder(props) {
     placeholder: true
   }), innerProps), children);
 };
+var Placeholder$1 = Placeholder;
 
-var index_a86253bb_esm_css = function css(_ref, unstyled) {
+var index_a301f526_esm_css = function css(_ref, unstyled) {
   var isDisabled = _ref.isDisabled,
     _ref$theme = _ref.theme,
     spacing = _ref$theme.spacing,
@@ -4980,32 +5856,33 @@ var SingleValue = function SingleValue(props) {
     'single-value--is-disabled': isDisabled
   }), innerProps), children);
 };
+var SingleValue$1 = SingleValue;
 
 var components = {
   ClearIndicator: ClearIndicator,
-  Control: Control,
+  Control: Control$1,
   DropdownIndicator: DropdownIndicator,
   DownChevron: DownChevron,
   CrossIcon: CrossIcon,
-  Group: Group,
+  Group: Group$1,
   GroupHeading: GroupHeading,
   IndicatorsContainer: IndicatorsContainer,
   IndicatorSeparator: IndicatorSeparator,
-  Input: Input,
+  Input: Input$1,
   LoadingIndicator: LoadingIndicator,
-  Menu: Menu,
+  Menu: Menu$1,
   MenuList: MenuList,
   MenuPortal: MenuPortal,
   LoadingMessage: LoadingMessage,
   NoOptionsMessage: NoOptionsMessage,
-  MultiValue: MultiValue,
+  MultiValue: MultiValue$1,
   MultiValueContainer: MultiValueContainer,
   MultiValueLabel: MultiValueLabel,
   MultiValueRemove: MultiValueRemove,
-  Option: Option,
-  Placeholder: Placeholder,
+  Option: Option$1,
+  Placeholder: Placeholder$1,
   SelectContainer: SelectContainer,
-  SingleValue: SingleValue,
+  SingleValue: SingleValue$1,
   ValueContainer: ValueContainer
 };
 var defaultComponents = function defaultComponents(props) {
@@ -5014,7 +5891,7 @@ var defaultComponents = function defaultComponents(props) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/react-select/dist/useStateManager-7e1e8489.esm.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/react-select@5.8.0_react-dom@18.2.0_react@18.2.0/node_modules/react-select/dist/useStateManager-7e1e8489.esm.js
 
 
 
@@ -5089,13 +5966,13 @@ function useStateManager(_ref) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/classCallCheck.js
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
   }
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/createClass.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/createClass.js
 
 function _defineProperties(target, props) {
   for (var i = 0; i < props.length; i++) {
@@ -5103,7 +5980,7 @@ function _defineProperties(target, props) {
     descriptor.enumerable = descriptor.enumerable || false;
     descriptor.configurable = true;
     if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor);
+    Object.defineProperty(target, toPropertyKey(descriptor.key), descriptor);
   }
 }
 function _createClass(Constructor, protoProps, staticProps) {
@@ -5114,7 +5991,7 @@ function _createClass(Constructor, protoProps, staticProps) {
   });
   return Constructor;
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
 function _setPrototypeOf(o, p) {
   _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
     o.__proto__ = p;
@@ -5122,7 +5999,7 @@ function _setPrototypeOf(o, p) {
   };
   return _setPrototypeOf(o, p);
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/inherits.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/inherits.js
 
 function _inherits(subClass, superClass) {
   if (typeof superClass !== "function" && superClass !== null) {
@@ -5140,33 +6017,30 @@ function _inherits(subClass, superClass) {
   });
   if (superClass) _setPrototypeOf(subClass, superClass);
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js
 function _getPrototypeOf(o) {
   _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) {
     return o.__proto__ || Object.getPrototypeOf(o);
   };
   return _getPrototypeOf(o);
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js
 function _isNativeReflectConstruct() {
-  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
-  if (Reflect.construct.sham) return false;
-  if (typeof Proxy === "function") return true;
   try {
-    Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
-    return true;
-  } catch (e) {
-    return false;
-  }
+    var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
+  } catch (t) {}
+  return (_isNativeReflectConstruct = function _isNativeReflectConstruct() {
+    return !!t;
+  })();
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js
 function _assertThisInitialized(self) {
   if (self === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
   }
   return self;
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js
 
 
 function _possibleConstructorReturn(self, call) {
@@ -5177,7 +6051,7 @@ function _possibleConstructorReturn(self, call) {
   }
   return _assertThisInitialized(self);
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/createSuper.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/createSuper.js
 
 
 
@@ -5195,20 +6069,20 @@ function _createSuper(Derived) {
     return _possibleConstructorReturn(this, result);
   };
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js
 
 function _arrayWithoutHoles(arr) {
   if (Array.isArray(arr)) return _arrayLikeToArray(arr);
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/iterableToArray.js
 function _iterableToArray(iter) {
   if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js
 function _nonIterableSpread() {
   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@babel+runtime@7.23.8/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js
 
 
 
@@ -5216,7 +6090,7 @@ function _nonIterableSpread() {
 function _toConsumableArray(arr) {
   return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
 }
-;// CONCATENATED MODULE: ./node_modules/memoize-one/dist/memoize-one.esm.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/memoize-one@6.0.0/node_modules/memoize-one/dist/memoize-one.esm.js
 var safeIsNaN = Number.isNaN ||
     function ponyfill(value) {
         return typeof value === 'number' && value !== value;
@@ -5269,7 +6143,7 @@ function memoizeOne(resultFn, isEqual) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/react-select/dist/Select-40119e12.esm.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/react-select@5.8.0_react-dom@18.2.0_react@18.2.0/node_modules/react-select/dist/Select-49a62830.esm.js
 
 
 
@@ -5296,19 +6170,20 @@ var A11yText = function A11yText(props) {
     css: _ref
   }, props));
 };
+var A11yText$1 = A11yText;
 
 var defaultAriaLiveMessages = {
   guidance: function guidance(props) {
     var isSearchable = props.isSearchable,
       isMulti = props.isMulti,
-      isDisabled = props.isDisabled,
       tabSelectsValue = props.tabSelectsValue,
-      context = props.context;
+      context = props.context,
+      isInitialFocus = props.isInitialFocus;
     switch (context) {
       case 'menu':
-        return "Use Up and Down to choose options".concat(isDisabled ? '' : ', press Enter to select the currently focused option', ", press Escape to exit the menu").concat(tabSelectsValue ? ', press Tab to select the option and exit the menu' : '', ".");
+        return "Use Up and Down to choose options, press Enter to select the currently focused option, press Escape to exit the menu".concat(tabSelectsValue ? ', press Tab to select the option and exit the menu' : '', ".");
       case 'input':
-        return "".concat(props['aria-label'] || 'Select', " is focused ").concat(isSearchable ? ',type to refine list' : '', ", press Down to open the menu, ").concat(isMulti ? ' press left to focus selected values' : '');
+        return isInitialFocus ? "".concat(props['aria-label'] || 'Select', " is focused ").concat(isSearchable ? ',type to refine list' : '', ", press Down to open the menu, ").concat(isMulti ? ' press left to focus selected values' : '') : '';
       case 'value':
         return 'Use left and right to toggle between focused values, press Backspace to remove the currently focused value';
       default:
@@ -5344,17 +6219,18 @@ var defaultAriaLiveMessages = {
       label = _props$label2 === void 0 ? '' : _props$label2,
       selectValue = props.selectValue,
       isDisabled = props.isDisabled,
-      isSelected = props.isSelected;
+      isSelected = props.isSelected,
+      isAppleDevice = props.isAppleDevice;
     var getArrayIndex = function getArrayIndex(arr, item) {
       return arr && arr.length ? "".concat(arr.indexOf(item) + 1, " of ").concat(arr.length) : '';
     };
     if (context === 'value' && selectValue) {
       return "value ".concat(label, " focused, ").concat(getArrayIndex(selectValue, focused), ".");
     }
-    if (context === 'menu') {
+    if (context === 'menu' && isAppleDevice) {
       var disabled = isDisabled ? ' disabled' : '';
-      var status = "".concat(isSelected ? 'selected' : 'focused').concat(disabled);
-      return "option ".concat(label, " ").concat(status, ", ").concat(getArrayIndex(options, focused), ".");
+      var status = "".concat(isSelected ? ' selected' : '').concat(disabled);
+      return "".concat(label).concat(status, ", ").concat(getArrayIndex(options, focused), ".");
     }
     return '';
   },
@@ -5373,7 +6249,8 @@ var LiveRegion = function LiveRegion(props) {
     isFocused = props.isFocused,
     selectValue = props.selectValue,
     selectProps = props.selectProps,
-    id = props.id;
+    id = props.id,
+    isAppleDevice = props.isAppleDevice;
   var ariaLiveMessages = selectProps.ariaLiveMessages,
     getOptionLabel = selectProps.getOptionLabel,
     inputValue = selectProps.inputValue,
@@ -5383,7 +6260,8 @@ var LiveRegion = function LiveRegion(props) {
     menuIsOpen = selectProps.menuIsOpen,
     options = selectProps.options,
     screenReaderStatus = selectProps.screenReaderStatus,
-    tabSelectsValue = selectProps.tabSelectsValue;
+    tabSelectsValue = selectProps.tabSelectsValue,
+    isLoading = selectProps.isLoading;
   var ariaLabel = selectProps['aria-label'];
   var ariaLive = selectProps['aria-live'];
 
@@ -5436,15 +6314,16 @@ var LiveRegion = function LiveRegion(props) {
         isSelected: isSelected,
         options: focusableOptions,
         context: focused === focusedOption ? 'menu' : 'value',
-        selectValue: selectValue
+        selectValue: selectValue,
+        isAppleDevice: isAppleDevice
       };
       focusMsg = messages.onFocus(onFocusProps);
     }
     return focusMsg;
-  }, [focusedOption, focusedValue, getOptionLabel, isOptionDisabled, messages, focusableOptions, selectValue]);
+  }, [focusedOption, focusedValue, getOptionLabel, isOptionDisabled, messages, focusableOptions, selectValue, isAppleDevice]);
   var ariaResults = (0,react.useMemo)(function () {
     var resultsMsg = '';
-    if (menuIsOpen && options.length && messages.onFilter) {
+    if (menuIsOpen && options.length && !isLoading && messages.onFilter) {
       var resultsMessage = screenReaderStatus({
         count: focusableOptions.length
       });
@@ -5454,7 +6333,8 @@ var LiveRegion = function LiveRegion(props) {
       });
     }
     return resultsMsg;
-  }, [focusableOptions, inputValue, menuIsOpen, messages, options, screenReaderStatus]);
+  }, [focusableOptions, inputValue, menuIsOpen, messages, options, screenReaderStatus, isLoading]);
+  var isInitialFocus = (ariaSelection === null || ariaSelection === void 0 ? void 0 : ariaSelection.action) === 'initial-input-focus';
   var ariaGuidance = (0,react.useMemo)(function () {
     var guidanceMsg = '';
     if (messages.guidance) {
@@ -5465,26 +6345,31 @@ var LiveRegion = function LiveRegion(props) {
         isDisabled: focusedOption && isOptionDisabled(focusedOption, selectValue),
         isMulti: isMulti,
         isSearchable: isSearchable,
-        tabSelectsValue: tabSelectsValue
+        tabSelectsValue: tabSelectsValue,
+        isInitialFocus: isInitialFocus
       });
     }
     return guidanceMsg;
-  }, [ariaLabel, focusedOption, focusedValue, isMulti, isOptionDisabled, isSearchable, menuIsOpen, messages, selectValue, tabSelectsValue]);
-  var ariaContext = "".concat(ariaFocused, " ").concat(ariaResults, " ").concat(ariaGuidance);
+  }, [ariaLabel, focusedOption, focusedValue, isMulti, isOptionDisabled, isSearchable, menuIsOpen, messages, selectValue, tabSelectsValue, isInitialFocus]);
   var ScreenReaderText = jsx(react.Fragment, null, jsx("span", {
     id: "aria-selection"
   }, ariaSelected), jsx("span", {
-    id: "aria-context"
-  }, ariaContext));
-  var isInitialFocus = (ariaSelection === null || ariaSelection === void 0 ? void 0 : ariaSelection.action) === 'initial-input-focus';
-  return jsx(react.Fragment, null, jsx(A11yText, {
+    id: "aria-focused"
+  }, ariaFocused), jsx("span", {
+    id: "aria-results"
+  }, ariaResults), jsx("span", {
+    id: "aria-guidance"
+  }, ariaGuidance));
+  return jsx(react.Fragment, null, jsx(A11yText$1, {
     id: id
-  }, isInitialFocus && ScreenReaderText), jsx(A11yText, {
+  }, isInitialFocus && ScreenReaderText), jsx(A11yText$1, {
     "aria-live": ariaLive,
     "aria-atomic": "false",
-    "aria-relevant": "additions text"
+    "aria-relevant": "additions text",
+    role: "log"
   }, isFocused && !isInitialFocus && ScreenReaderText));
 };
+var LiveRegion$1 = LiveRegion;
 
 var diacritics = [{
   base: 'A',
@@ -5743,8 +6628,8 @@ var anyDiacritic = new RegExp('[' + diacritics.map(function (d) {
   return d.letters;
 }).join('') + ']', 'g');
 var diacriticToBase = {};
-for (var Select_40119e12_esm_i = 0; Select_40119e12_esm_i < diacritics.length; Select_40119e12_esm_i++) {
-  var diacritic = diacritics[Select_40119e12_esm_i];
+for (var i = 0; i < diacritics.length; i++) {
+  var diacritic = diacritics[i];
   for (var j = 0; j < diacritic.letters.length; j++) {
     diacriticToBase[diacritic.letters[j]] = diacritic.base;
   }
@@ -5792,10 +6677,10 @@ var createFilter = function createFilter(config) {
   };
 };
 
-var Select_40119e12_esm_excluded = ["innerRef"];
+var Select_49a62830_esm_excluded = ["innerRef"];
 function DummyInput(_ref) {
   var innerRef = _ref.innerRef,
-    props = _objectWithoutProperties(_ref, Select_40119e12_esm_excluded);
+    props = _objectWithoutProperties(_ref, Select_49a62830_esm_excluded);
   // Remove animation props not meant for HTML elements
   var filteredProps = removeProps(props, 'onExited', 'in', 'enter', 'exit', 'appear');
   return jsx("input", extends_extends({
@@ -5826,7 +6711,7 @@ function DummyInput(_ref) {
 }
 
 var cancelScroll = function cancelScroll(event) {
-  event.preventDefault();
+  if (event.cancelable) event.preventDefault();
   event.stopPropagation();
 };
 function useScrollCapture(_ref) {
@@ -6051,8 +6936,9 @@ function useScrollLock(_ref) {
 }
 
 function _EMOTION_STRINGIFIED_CSS_ERROR__$1() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
-var blurSelectInput = function blurSelectInput() {
-  return document.activeElement && document.activeElement.blur();
+var blurSelectInput = function blurSelectInput(event) {
+  var element = event.target;
+  return element.ownerDocument.activeElement && element.ownerDocument.activeElement.blur();
 };
 var _ref2$1 =  true ? {
   name: "1kfdb0e",
@@ -6087,8 +6973,8 @@ function ScrollManager(_ref) {
   }), children(targetRef));
 }
 
-function Select_40119e12_esm_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
-var Select_40119e12_esm_ref2 =  true ? {
+function Select_49a62830_esm_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
+var Select_49a62830_esm_ref2 =  true ? {
   name: "1a0ro4n-requiredInput",
   styles: "label:requiredInput;opacity:0;pointer-events:none;position:absolute;bottom:0;left:0;right:0;width:100%"
 } : 0;
@@ -6099,14 +6985,40 @@ var RequiredInput = function RequiredInput(_ref) {
     required: true,
     name: name,
     tabIndex: -1,
+    "aria-hidden": "true",
     onFocus: onFocus,
-    css: Select_40119e12_esm_ref2
+    css: Select_49a62830_esm_ref2
     // Prevent `Switching from uncontrolled to controlled` error
     ,
     value: "",
     onChange: function onChange() {}
   });
 };
+var RequiredInput$1 = RequiredInput;
+
+/// <reference types="user-agent-data-types" />
+
+function testPlatform(re) {
+  var _window$navigator$use;
+  return typeof window !== 'undefined' && window.navigator != null ? re.test(((_window$navigator$use = window.navigator['userAgentData']) === null || _window$navigator$use === void 0 ? void 0 : _window$navigator$use.platform) || window.navigator.platform) : false;
+}
+function isIPhone() {
+  return testPlatform(/^iPhone/i);
+}
+function isMac() {
+  return testPlatform(/^Mac/i);
+}
+function isIPad() {
+  return testPlatform(/^iPad/i) ||
+  // iPadOS 13 lies and says it's a Mac, but we can distinguish by detecting touch support.
+  isMac() && navigator.maxTouchPoints > 1;
+}
+function isIOS() {
+  return isIPhone() || isIPad();
+}
+function isAppleDevice() {
+  return isMac() || isIOS();
+}
 
 var formatGroupLabel = function formatGroupLabel(group) {
   return group.label;
@@ -6142,7 +7054,7 @@ var defaultStyles = {
   noOptionsMessage: noOptionsMessageCSS,
   option: optionCSS,
   placeholder: placeholderCSS,
-  singleValue: index_a86253bb_esm_css,
+  singleValue: index_a301f526_esm_css,
   valueContainer: valueContainerCSS
 };
 // Merge Utility
@@ -6298,6 +7210,24 @@ function buildFocusableOptionsFromCategorizedOptions(categorizedOptions) {
     return optionsAccumulator;
   }, []);
 }
+function buildFocusableOptionsWithIds(categorizedOptions, optionId) {
+  return categorizedOptions.reduce(function (optionsAccumulator, categorizedOption) {
+    if (categorizedOption.type === 'group') {
+      optionsAccumulator.push.apply(optionsAccumulator, _toConsumableArray(categorizedOption.options.map(function (option) {
+        return {
+          data: option.data,
+          id: "".concat(optionId, "-").concat(categorizedOption.index, "-").concat(option.index)
+        };
+      })));
+    } else {
+      optionsAccumulator.push({
+        data: categorizedOption.data,
+        id: "".concat(optionId, "-").concat(categorizedOption.index)
+      });
+    }
+    return optionsAccumulator;
+  }, []);
+}
 function buildFocusableOptions(props, selectValue) {
   return buildFocusableOptionsFromCategorizedOptions(buildCategorizedOptions(props, selectValue));
 }
@@ -6335,6 +7265,13 @@ function getNextFocusedOption(state, options) {
   var lastFocusedOption = state.focusedOption;
   return lastFocusedOption && options.indexOf(lastFocusedOption) > -1 ? lastFocusedOption : options[0];
 }
+var getFocusedOptionId = function getFocusedOptionId(focusableOptionsWithIds, focusedOption) {
+  var _focusableOptionsWith;
+  var focusedOptionId = (_focusableOptionsWith = focusableOptionsWithIds.find(function (option) {
+    return option.data === focusedOption;
+  })) === null || _focusableOptionsWith === void 0 ? void 0 : _focusableOptionsWith.id;
+  return focusedOptionId || null;
+};
 var getOptionLabel = function getOptionLabel(props, data) {
   return props.getOptionLabel(data);
 };
@@ -6385,6 +7322,8 @@ var Select = /*#__PURE__*/function (_Component) {
     _this.state = {
       ariaSelection: null,
       focusedOption: null,
+      focusedOptionId: null,
+      focusableOptionsWithIds: [],
       focusedValue: null,
       inputIsHidden: false,
       isFocused: false,
@@ -6392,17 +7331,18 @@ var Select = /*#__PURE__*/function (_Component) {
       clearFocusValueOnUpdate: false,
       prevWasFocused: false,
       inputIsHiddenAfterUpdate: undefined,
-      prevProps: undefined
+      prevProps: undefined,
+      instancePrefix: ''
     };
     _this.blockOptionHover = false;
     _this.isComposing = false;
     _this.commonProps = void 0;
     _this.initialTouchX = 0;
     _this.initialTouchY = 0;
-    _this.instancePrefix = '';
     _this.openAfterFocus = false;
     _this.scrollToFocusedOptionOnUpdate = false;
     _this.userIsDragging = void 0;
+    _this.isAppleDevice = isAppleDevice();
     _this.controlRef = null;
     _this.getControlRef = function (ref) {
       _this.controlRef = ref;
@@ -6517,6 +7457,12 @@ var Select = /*#__PURE__*/function (_Component) {
         removedValue: lastSelectedValue
       });
     };
+    _this.getFocusedOptionId = function (focusedOption) {
+      return getFocusedOptionId(_this.state.focusableOptionsWithIds, focusedOption);
+    };
+    _this.getFocusableOptionsWithIds = function () {
+      return buildFocusableOptionsWithIds(buildCategorizedOptions(_this.props, _this.state.selectValue), _this.getElementId('option'));
+    };
     _this.getValue = function () {
       return _this.state.selectValue;
     };
@@ -6544,7 +7490,7 @@ var Select = /*#__PURE__*/function (_Component) {
       return (_this$props$className = (_this$props$className2 = _this.props.classNames)[key]) === null || _this$props$className === void 0 ? void 0 : _this$props$className.call(_this$props$className2, props);
     };
     _this.getElementId = function (element) {
-      return "".concat(_this.instancePrefix, "-").concat(element);
+      return "".concat(_this.state.instancePrefix, "-").concat(element);
     };
     _this.getComponents = function () {
       return defaultComponents(_this.props);
@@ -6753,8 +7699,11 @@ var Select = /*#__PURE__*/function (_Component) {
       if (_this.blockOptionHover || _this.state.focusedOption === focusedOption) {
         return;
       }
+      var options = _this.getFocusableOptions();
+      var focusedOptionIndex = options.indexOf(focusedOption);
       _this.setState({
-        focusedOption: focusedOption
+        focusedOption: focusedOption,
+        focusedOptionId: focusedOptionIndex > -1 ? _this.getFocusedOptionId(focusedOption) : null
       });
     };
     _this.shouldHideSelectedOptions = function () {
@@ -6898,14 +7847,16 @@ var Select = /*#__PURE__*/function (_Component) {
       }
       event.preventDefault();
     };
-    _this.instancePrefix = 'react-select-' + (_this.props.instanceId || ++instanceId);
+    _this.state.instancePrefix = 'react-select-' + (_this.props.instanceId || ++instanceId);
     _this.state.selectValue = cleanValue(_props.value);
-
     // Set focusedOption if menuIsOpen is set on init (e.g. defaultMenuIsOpen)
     if (_props.menuIsOpen && _this.state.selectValue.length) {
+      var focusableOptionsWithIds = _this.getFocusableOptionsWithIds();
       var focusableOptions = _this.buildFocusableOptions();
       var optionIndex = focusableOptions.indexOf(_this.state.selectValue[0]);
+      _this.state.focusableOptionsWithIds = focusableOptionsWithIds;
       _this.state.focusedOption = focusableOptions[optionIndex];
+      _this.state.focusedOptionId = getFocusedOptionId(focusableOptionsWithIds, focusableOptions[optionIndex]);
     }
     return _this;
   }
@@ -7030,7 +7981,8 @@ var Select = /*#__PURE__*/function (_Component) {
       this.setState({
         inputIsHiddenAfterUpdate: false,
         focusedValue: null,
-        focusedOption: focusableOptions[openAtIndex]
+        focusedOption: focusableOptions[openAtIndex],
+        focusedOptionId: this.getFocusedOptionId(focusableOptions[openAtIndex])
       }, function () {
         return _this2.onMenuOpen();
       });
@@ -7106,7 +8058,8 @@ var Select = /*#__PURE__*/function (_Component) {
       this.scrollToFocusedOptionOnUpdate = true;
       this.setState({
         focusedOption: options[nextFocus],
-        focusedValue: null
+        focusedValue: null,
+        focusedOptionId: this.getFocusedOptionId(options[nextFocus])
       });
     }
   }, {
@@ -7302,10 +8255,10 @@ var Select = /*#__PURE__*/function (_Component) {
         'aria-label': this.props['aria-label'],
         'aria-labelledby': this.props['aria-labelledby'],
         'aria-required': required,
-        role: 'combobox'
+        role: 'combobox',
+        'aria-activedescendant': this.isAppleDevice ? undefined : this.state.focusedOptionId || ''
       }, menuIsOpen && {
-        'aria-controls': this.getElementId('listbox'),
-        'aria-owns': this.getElementId('listbox')
+        'aria-controls': this.getElementId('listbox')
       }), !isSearchable && {
         'aria-readonly': true
       }), this.hasValue() ? (ariaSelection === null || ariaSelection === void 0 ? void 0 : ariaSelection.action) === 'initial-input-focus' && {
@@ -7550,8 +8503,11 @@ var Select = /*#__PURE__*/function (_Component) {
           onClick: onSelect,
           onMouseMove: onHover,
           onMouseOver: onHover,
-          tabIndex: -1
+          tabIndex: -1,
+          role: 'option',
+          'aria-selected': _this4.isAppleDevice ? undefined : isSelected // is not supported on Apple devices
         };
+
         return /*#__PURE__*/react.createElement(Option, extends_extends({}, commonProps, {
           innerProps: innerProps,
           data: data,
@@ -7620,8 +8576,7 @@ var Select = /*#__PURE__*/function (_Component) {
           innerRef: ref,
           innerProps: {
             onMouseDown: _this4.onMenuMouseDown,
-            onMouseMove: _this4.onMenuMouseMove,
-            id: _this4.getElementId('listbox')
+            onMouseMove: _this4.onMenuMouseMove
           },
           isLoading: isLoading,
           placement: placement
@@ -7635,6 +8590,11 @@ var Select = /*#__PURE__*/function (_Component) {
             innerRef: function innerRef(instance) {
               _this4.getMenuListRef(instance);
               scrollTargetRef(instance);
+            },
+            innerProps: {
+              role: 'listbox',
+              'aria-multiselectable': commonProps.isMulti,
+              id: _this4.getElementId('listbox')
             },
             isLoading: isLoading,
             maxHeight: maxHeight,
@@ -7664,13 +8624,13 @@ var Select = /*#__PURE__*/function (_Component) {
         name = _this$props13.name,
         required = _this$props13.required;
       var selectValue = this.state.selectValue;
-      if (!name || isDisabled) return;
-      if (required && !this.hasValue()) {
-        return /*#__PURE__*/react.createElement(RequiredInput, {
+      if (required && !this.hasValue() && !isDisabled) {
+        return /*#__PURE__*/react.createElement(RequiredInput$1, {
           name: name,
           onFocus: this.onValueInputFocus
         });
       }
+      if (!name || isDisabled) return;
       if (isMulti) {
         if (delimiter) {
           var value = selectValue.map(function (opt) {
@@ -7716,14 +8676,15 @@ var Select = /*#__PURE__*/function (_Component) {
         isFocused = _this$state6.isFocused,
         selectValue = _this$state6.selectValue;
       var focusableOptions = this.getFocusableOptions();
-      return /*#__PURE__*/react.createElement(LiveRegion, extends_extends({}, commonProps, {
+      return /*#__PURE__*/react.createElement(LiveRegion$1, extends_extends({}, commonProps, {
         id: this.getElementId('live-region'),
         ariaSelection: ariaSelection,
         focusedOption: focusedOption,
         focusedValue: focusedValue,
         isFocused: isFocused,
         selectValue: selectValue,
-        focusableOptions: focusableOptions
+        focusableOptions: focusableOptions,
+        isAppleDevice: this.isAppleDevice
       }));
     }
   }, {
@@ -7772,7 +8733,8 @@ var Select = /*#__PURE__*/function (_Component) {
         inputIsHiddenAfterUpdate = state.inputIsHiddenAfterUpdate,
         ariaSelection = state.ariaSelection,
         isFocused = state.isFocused,
-        prevWasFocused = state.prevWasFocused;
+        prevWasFocused = state.prevWasFocused,
+        instancePrefix = state.instancePrefix;
       var options = props.options,
         value = props.value,
         menuIsOpen = props.menuIsOpen,
@@ -7782,11 +8744,15 @@ var Select = /*#__PURE__*/function (_Component) {
       var newMenuOptionsState = {};
       if (prevProps && (value !== prevProps.value || options !== prevProps.options || menuIsOpen !== prevProps.menuIsOpen || inputValue !== prevProps.inputValue)) {
         var focusableOptions = menuIsOpen ? buildFocusableOptions(props, selectValue) : [];
+        var focusableOptionsWithIds = menuIsOpen ? buildFocusableOptionsWithIds(buildCategorizedOptions(props, selectValue), "".concat(instancePrefix, "-option")) : [];
         var focusedValue = clearFocusValueOnUpdate ? getNextFocusedValue(state, selectValue) : null;
         var focusedOption = getNextFocusedOption(state, focusableOptions);
+        var focusedOptionId = getFocusedOptionId(focusableOptionsWithIds, focusedOption);
         newMenuOptionsState = {
           selectValue: selectValue,
           focusedOption: focusedOption,
+          focusedOptionId: focusedOptionId,
+          focusableOptionsWithIds: focusableOptionsWithIds,
           focusedValue: focusedValue,
           clearFocusValueOnUpdate: false
         };
@@ -7827,7 +8793,7 @@ Select.defaultProps = defaultProps;
 
 
 
-;// CONCATENATED MODULE: ./node_modules/react-select/dist/react-select.esm.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/react-select@5.8.0_react-dom@18.2.0_react@18.2.0/node_modules/react-select/dist/react-select.esm.js
 
 
 
@@ -7860,6 +8826,7 @@ var StateManagedSelect = /*#__PURE__*/(0,react.forwardRef)(function (props, ref)
     ref: ref
   }, baseSelectProps));
 });
+var StateManagedSelect$1 = StateManagedSelect;
 
 var NonceProvider = (function (_ref) {
   var nonce = _ref.nonce,
@@ -7876,45 +8843,165 @@ var NonceProvider = (function (_ref) {
   }, children);
 });
 
-/* harmony default export */ const react_select_esm = (StateManagedSelect);
+
+
+;// CONCATENATED MODULE: ./node_modules/.pnpm/js-cookie@3.0.5/node_modules/js-cookie/dist/js.cookie.mjs
+/*! js-cookie v3.0.5 | MIT */
+/* eslint-disable no-var */
+function js_cookie_assign (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+    for (var key in source) {
+      target[key] = source[key];
+    }
+  }
+  return target
+}
+/* eslint-enable no-var */
+
+/* eslint-disable no-var */
+var defaultConverter = {
+  read: function (value) {
+    if (value[0] === '"') {
+      value = value.slice(1, -1);
+    }
+    return value.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent)
+  },
+  write: function (value) {
+    return encodeURIComponent(value).replace(
+      /%(2[346BF]|3[AC-F]|40|5[BDE]|60|7[BCD])/g,
+      decodeURIComponent
+    )
+  }
+};
+/* eslint-enable no-var */
+
+/* eslint-disable no-var */
+
+function init (converter, defaultAttributes) {
+  function set (name, value, attributes) {
+    if (typeof document === 'undefined') {
+      return
+    }
+
+    attributes = js_cookie_assign({}, defaultAttributes, attributes);
+
+    if (typeof attributes.expires === 'number') {
+      attributes.expires = new Date(Date.now() + attributes.expires * 864e5);
+    }
+    if (attributes.expires) {
+      attributes.expires = attributes.expires.toUTCString();
+    }
+
+    name = encodeURIComponent(name)
+      .replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent)
+      .replace(/[()]/g, escape);
+
+    var stringifiedAttributes = '';
+    for (var attributeName in attributes) {
+      if (!attributes[attributeName]) {
+        continue
+      }
+
+      stringifiedAttributes += '; ' + attributeName;
+
+      if (attributes[attributeName] === true) {
+        continue
+      }
+
+      // Considers RFC 6265 section 5.2:
+      // ...
+      // 3.  If the remaining unparsed-attributes contains a %x3B (";")
+      //     character:
+      // Consume the characters of the unparsed-attributes up to,
+      // not including, the first %x3B (";") character.
+      // ...
+      stringifiedAttributes += '=' + attributes[attributeName].split(';')[0];
+    }
+
+    return (document.cookie =
+      name + '=' + converter.write(value, name) + stringifiedAttributes)
+  }
+
+  function get (name) {
+    if (typeof document === 'undefined' || (arguments.length && !name)) {
+      return
+    }
+
+    // To prevent the for loop in the first place assign an empty array
+    // in case there are no cookies at all.
+    var cookies = document.cookie ? document.cookie.split('; ') : [];
+    var jar = {};
+    for (var i = 0; i < cookies.length; i++) {
+      var parts = cookies[i].split('=');
+      var value = parts.slice(1).join('=');
+
+      try {
+        var found = decodeURIComponent(parts[0]);
+        jar[found] = converter.read(value, found);
+
+        if (name === found) {
+          break
+        }
+      } catch (e) {}
+    }
+
+    return name ? jar[name] : jar
+  }
+
+  return Object.create(
+    {
+      set,
+      get,
+      remove: function (name, attributes) {
+        set(
+          name,
+          '',
+          js_cookie_assign({}, attributes, {
+            expires: -1
+          })
+        );
+      },
+      withAttributes: function (attributes) {
+        return init(this.converter, js_cookie_assign({}, this.attributes, attributes))
+      },
+      withConverter: function (converter) {
+        return init(js_cookie_assign({}, this.converter, converter), this.attributes)
+      }
+    },
+    {
+      attributes: { value: Object.freeze(defaultAttributes) },
+      converter: { value: Object.freeze(converter) }
+    }
+  )
+}
+
+var api = init(defaultConverter, { path: '/' });
+/* eslint-enable no-var */
+
 
 
 ;// CONCATENATED MODULE: ./src/javascript/components/Logo.jsx
-function Logo_typeof(obj) { "@babel/helpers - typeof"; return Logo_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, Logo_typeof(obj); }
-
+function Logo_typeof(o) { "@babel/helpers - typeof"; return Logo_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Logo_typeof(o); }
 function Logo_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function Logo_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
+function Logo_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function Logo_createClass(Constructor, protoProps, staticProps) { if (protoProps) Logo_defineProperties(Constructor.prototype, protoProps); if (staticProps) Logo_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function Logo_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) Logo_setPrototypeOf(subClass, superClass); }
-
-function Logo_setPrototypeOf(o, p) { Logo_setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return Logo_setPrototypeOf(o, p); }
-
-function Logo_createSuper(Derived) { var hasNativeReflectConstruct = Logo_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Logo_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Logo_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Logo_possibleConstructorReturn(this, result); }; }
-
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == Logo_typeof(i) ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != Logo_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != Logo_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _callSuper(t, o, e) { return o = Logo_getPrototypeOf(o), Logo_possibleConstructorReturn(t, Logo_isNativeReflectConstruct() ? Reflect.construct(o, e || [], Logo_getPrototypeOf(t).constructor) : o.apply(t, e)); }
 function Logo_possibleConstructorReturn(self, call) { if (call && (Logo_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return Logo_assertThisInitialized(self); }
-
 function Logo_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function Logo_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
+function Logo_isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (Logo_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
 function Logo_getPrototypeOf(o) { Logo_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return Logo_getPrototypeOf(o); }
-
-
+function Logo_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) Logo_setPrototypeOf(subClass, superClass); }
+function Logo_setPrototypeOf(o, p) { Logo_setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return Logo_setPrototypeOf(o, p); }
 
 var Logo = /*#__PURE__*/function (_React$Component) {
   Logo_inherits(Logo, _React$Component);
-
-  var _super = Logo_createSuper(Logo);
-
   function Logo() {
     Logo_classCallCheck(this, Logo);
-
-    return _super.apply(this, arguments);
+    return _callSuper(this, Logo, arguments);
   }
-
   Logo_createClass(Logo, [{
     key: "render",
     value: function render() {
@@ -7961,12 +9048,92 @@ var Logo = /*#__PURE__*/function (_React$Component) {
       }))));
     }
   }]);
-
   return Logo;
 }(react.Component);
-
 /* harmony default export */ const components_Logo = (Logo);
-;// CONCATENATED MODULE: ./node_modules/@fortawesome/fontawesome-svg-core/index.mjs
+;// CONCATENATED MODULE: ./src/javascript/components/selectStyles.js
+function selectStyles_typeof(o) { "@babel/helpers - typeof"; return selectStyles_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, selectStyles_typeof(o); }
+function selectStyles_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function selectStyles_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? selectStyles_ownKeys(Object(t), !0).forEach(function (r) { selectStyles_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : selectStyles_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function selectStyles_defineProperty(obj, key, value) { key = selectStyles_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function selectStyles_toPropertyKey(t) { var i = selectStyles_toPrimitive(t, "string"); return "symbol" == selectStyles_typeof(i) ? i : String(i); }
+function selectStyles_toPrimitive(t, r) { if ("object" != selectStyles_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != selectStyles_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+var green = '#cbfb45';
+var black = '#0c0c0c';
+var lightBlack = '#1a1a1a';
+var selectStyles = {
+  control: function control(styles, _ref) {
+    var isFocused = _ref.isFocused;
+    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, selectStyles_defineProperty({
+      cursor: 'pointer',
+      backgroundColor: 'transparent',
+      border: 'none',
+      outline: 'none',
+      width: 'fit-content',
+      fontSize: window.innerWidth >= 645 ? '1.35rem' : window.innerWidth >= 355 ? '1.15rem' : '0.95rem',
+      fontWeight: '400'
+    }, "outline", "1px solid ".concat(isFocused ? green : 'transparent')));
+  },
+  option: function option(styles, _ref2) {
+    var isFocused = _ref2.isFocused,
+      isSelected = _ref2.isSelected;
+    var backgroundColor = black;
+    if (isFocused) {
+      backgroundColor = lightBlack;
+    }
+    if (isSelected) {
+      backgroundColor = lightBlack;
+    }
+    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
+      backgroundColor: backgroundColor,
+      color: "".concat(isSelected ? green : 'white'),
+      fontSize: '1.25rem',
+      ':active': selectStyles_objectSpread(selectStyles_objectSpread({}, styles[':active']), {}, {
+        backgroundColor: lightBlack,
+        color: green
+      })
+    });
+  },
+  indicatorSeparator: function indicatorSeparator(styles) {
+    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
+      display: 'none'
+    });
+  },
+  menu: function menu(styles) {
+    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
+      backgroundColor: 'transparent',
+      border: '1.5px solid #595959',
+      boxShadow: '0px 5px 95px rgba(0, 0, 0, 0.4)',
+      borderRadius: '5px'
+    });
+  },
+  menuList: function menuList(styles) {
+    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
+      margin: '0px',
+      padding: '0px'
+    });
+  },
+  placeholder: function placeholder(styles) {
+    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
+      color: 'white'
+    });
+  },
+  input: function input(styles) {
+    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
+      color: 'white'
+    });
+  },
+  singleValue: function singleValue(styles) {
+    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
+      color: 'white'
+    });
+  }
+};
+;// CONCATENATED MODULE: ./src/images/triangle.svg
+const triangle_namespaceObject = __webpack_require__.p + "images/b5db52da946bb33cffca.svg";
+;// CONCATENATED MODULE: ./src/lib/data/hotkeys.json
+const hotkeys_namespaceObject = JSON.parse('[{"link":"switch-between-programs","selected":"Переключение","text":"запущенных приложений","windows":"Alt+Tab","macos":"Cmd+Tab","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Переключение между программами","page_win":"S_AltTab","page_mac":"S_CmdTab","page_xl_span":"Переключение","page_xl":"между окнами открытых программ","page_l_start":"Удерживайте кнопку","page_l_center":"и нажимайте на","page_l_end":"до тех пор пока не выберете нужную программу","page_l_win_first":"ALT","page_l_win_second":"TAB","page_l_mac_first":"CMD","page_l_mac_second":"TAB"},{"link":"hide-open-program","selected":"Сворачивание","text":"всех открытых окон","windows":"Ctrl+W","macos":"Cmd+H","popular":false,"useful":false,"simple":true,"complex":false,"target":"system","page_title":"Сворачивание всех открытых окон","page_win":"S_CtrlW","page_mac":"S_CmdH","page_xl_span":"Cворачивание","page_xl":"всех открытых окон","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы свернуть все открытые окна","page_l_win_first":"CTRL","page_l_win_second":"W","page_l_mac_first":"CMD","page_l_mac_second":"H"},{"link":"open-clipboard","selected":"Открытие","text":"буфера обмена","windows":"Win+V","macos":"Cmd+Ctrl+Shift+V","popular":false,"useful":true,"simple":false,"complex":true,"target":"system","page_title":"Открытие буфера обмена","page_win":"S_WinV","page_mac":"S_CmdCtrlShiftV","page_xl_span":"Открытие","page_xl":"буфера обмена","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть (включить) буфер обмена","page_l_win_first":"CTRL","page_l_win_second":"V","page_l_mac_first":"CMD+CTRL+SHIFT","page_l_mac_second":"V"},{"link":"redo-last-action","selected":"Повтор","text":"последнего выполненного действия","windows":"Ctrl+Y","macos":"Cmd+Y","popular":false,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Повтор последнего выполненного действия","page_win":"S_CtrlY","page_mac":"S_CmdY","page_xl_span":"Повтор","page_xl":"последнего выполненного действия","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы повторить последнее выполненное действие","page_l_win_first":"CTRL","page_l_win_second":"Y","page_l_mac_first":"CMD","page_l_mac_second":"Y"},{"link":"undo-last-action","selected":"Отмена","text":"последнего выполненного действия","windows":"Ctrl+Z","macos":"Cmd+Z","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Отмена последнего выполненного действия","page_win":"S_CtrlZ","page_mac":"S_CmdZ","page_xl_span":"Отмена","page_xl":"последнего выполненного действия","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы отменить последнее выполненное действие","page_l_win_first":"CTRL","page_l_win_second":"Z","page_l_mac_first":"CMD","page_l_mac_second":"Z"},{"link":"redo-undo-last-action","selected":"Отмена","text":"последнего отмененного действия","windows":"Ctrl+Shift+Z","macos":"Cmd+Shift+Z","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Отмена последнего отмененного действия","page_win":"S_CtrlShiftZ","page_mac":"S_CmdShiftZ","page_xl_span":"Отмена","page_xl":"последнего отмененного действия","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы отменить последнее выполненное действие","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"Z","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"Z"},{"link":"cut-selected-text","selected":"Вырезать","text":"выделенный текст в буфер обмена","windows":"Ctrl+X","macos":"Cmd+X","popular":false,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Вырезать выделенный текст в буфер обмена","page_win":"S_CtrlX","page_mac":"S_CmdX","page_xl_span":"Вырезать","page_xl":"выделенный текст в буфер обмена","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы вырезать выделенный текст в буфер обмена","page_l_win_first":"CTRL","page_l_win_second":"X","page_l_mac_first":"CMD","page_l_mac_second":"X"},{"link":"copy-selected-text","selected":"Скопировать","text":"выделенный текст в буфер обмена","windows":"Ctrl+C","macos":"Cmd+C","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Скопировать выделенный текст в буфер обмена","page_win":"S_CtrlC","page_mac":"S_CmdC","page_xl_span":"Скопировать","page_xl":"выделенный текст в буфер обмена","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы скопировать выделенный текст в буфер обмена","page_l_win_first":"CTRL","page_l_win_second":"C","page_l_mac_first":"CMD","page_l_mac_second":"C"},{"link":"paste-selected-text","selected":"Вставить","text":"выделенный текст в буфер обмена","windows":"Ctrl+V","macos":"Cmd+V","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Вставить выделенный текст в буфер обмена","page_win":"S_CtrlV","page_mac":"S_CmdV","page_xl_span":"Вставить","page_xl":"выделенный текст в буфер обмена","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы вставить выделенный текст в буфер обмена","page_l_win_first":"CTRL","page_l_win_second":"V","page_l_mac_first":"CMD","page_l_mac_second":"V"},{"link":"open-file-explorer","selected":"Открытие","text":"проводника файлов","windows":"Win+E","macos":"Cmd+Shift+F","popular":false,"useful":false,"simple":false,"complex":true,"target":"system","page_title":"Открытие системного проводника файлов","page_win":"S_WinE","page_mac":"S_CmdShiftF","page_xl_span":"Открытие","page_xl":"системного проводника файлов","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть системного проводника файлов","page_l_win_first":"WIN","page_l_win_second":"E","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"F"},{"link":"select-all","selected":"Выделение","text":"всего на странице или в поле ввода","windows":"Ctrl+A","macos":"Cmd+A","popular":false,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Выделение всего контента на странице или в поле ввода","page_win":"S_CtrlA","page_mac":"S_CmdA","page_xl_span":"Выделение","page_xl":"всего контента","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы выделить весь контент на странице или в поле ввода","page_l_win_first":"CTRL","page_l_win_second":"A","page_l_mac_first":"CMD","page_l_mac_second":"A"},{"link":"save","selected":"Сохранение","text":"документа или файла","windows":"Ctrl+S","macos":"Cmd+S","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Сохранение документа или файла","page_win":"S_CtrlS","page_mac":"S_CmdS","page_xl_span":"Сохранение","page_xl":"документа или файла","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы сохранить изменения в документе или файле","page_l_win_first":"CTRL","page_l_win_second":"S","page_l_mac_first":"CMD","page_l_mac_second":"S"},{"link":"print","selected":"Печать","text":"документа или страницы","windows":"Ctrl+P","macos":"Cmd+P","popular":false,"useful":false,"simple":false,"complex":true,"target":"system","page_title":"Печать документа или страницы","page_win":"S_CtrlP","page_mac":"S_CmdP","page_xl_span":"Печать","page_xl":"документа или страницы","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы перейти к настройке печати","page_l_win_first":"CTRL","page_l_win_second":"P","page_l_mac_first":"CMD","page_l_mac_second":"P"},{"link":"new-window","selected":"Создание","text":"нового окна или файла","windows":"Ctrl+N","macos":"Cmd+N","popular":false,"useful":false,"simple":true,"complex":false,"target":"system","page_title":"Создание нового окна или файла","page_win":"S_CtrlN","page_mac":"S_CmdN","page_xl_span":"Создание","page_xl":"нового окна или файла","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы создать новое окно или файл","page_l_win_first":"CTRL","page_l_win_second":"N","page_l_mac_first":"CMD","page_l_mac_second":"N"},{"link":"open-settings","selected":"Открытие","text":"системные настройки","windows":"Win+I","macos":"Cmd+,","popular":false,"useful":false,"simple":true,"complex":false,"target":"system","page_title":"Открытие системные настройки","page_win":"S_WinI","page_mac":"S_CmdComma","page_xl_span":"Открытие","page_xl":"системные настройки","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть системные настройки","page_l_win_first":"WIN","page_l_win_second":"I","page_l_mac_first":"CMD","page_l_mac_second":","},{"link":"minimize-window","selected":"Открепить","text":"активное окно","windows":"Win+↓","macos":"Cmd+M","popular":false,"useful":false,"simple":true,"complex":false,"target":"system","page_title":"Открепить активное окно приложения","page_win":"S_WinDown","page_mac":"S_CmdM","page_xl_span":"Открепить","page_xl":"активное окно приложения","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открепить активное окно приложения","page_l_win_first":"WIN","page_l_win_second":"↓","page_l_mac_first":"CMD","page_l_mac_second":"M"},{"link":"maximize-window","selected":"Закрепить","text":"активное окно приложения","windows":"Win+↑","macos":"Cmd+Ctrl+F","popular":false,"useful":false,"simple":true,"complex":false,"target":"system","page_title":"Закрепить активное окно приложения","page_win":"S_WinUp","page_mac":"S_CmdCtrlF","page_xl_span":"Закрепить","page_xl":"активное окно приложения","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы закрепить активное окно приложения","page_l_win_first":"WIN","page_l_win_second":"↑","page_l_mac_first":"CMD+CTRL","page_l_mac_second":"M"},{"link":"close-window","selected":"Закрыть","text":"активное окно приложения","windows":"Ctrl+W","macos":"Cmd+W","popular":false,"useful":false,"simple":true,"complex":false,"target":"system","page_title":"Закрыть активное окно приложения","page_win":"S_CtrlW","page_mac":"S_CmdW","page_xl_span":"Закрыть","page_xl":"активное окно приложения","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы закрыть активное окно приложения","page_l_win_first":"CTRL","page_l_win_second":"W","page_l_mac_first":"CMD","page_l_mac_second":"W"},{"link":"close-program","selected":"Закрыть","text":"активную программу","windows":"Alt+F4","macos":"Cmd+Q","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Закрыть активную программу","page_win":"S_AltF4","page_mac":"S_CmdQ","page_xl_span":"Закрыть","page_xl":"активную программу","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы закрыть активную программу","page_l_win_first":"ALT","page_l_win_second":"F4","page_l_mac_first":"CMD","page_l_mac_second":"Q"},{"link":"vscode-comment","selected":"Комментирование","text":"кода для отключения","windows":"Ctrl+/","macos":"Cmd+/","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code","page_title":"Комментирование кода","page_win":"S_CtrlSlash","page_mac":"S_CmdSlash","page_xl_span":"Комментирование","page_xl":"кода","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы закомментировать код для его отключения","page_l_win_first":"CTRL","page_l_win_second":"/","page_l_mac_first":"CMD","page_l_mac_second":"/"},{"link":"vscode-find-selected","selected":"Поиск","text":"выделенного фрагмента","windows":"Ctrl+F","macos":"Cmd+F","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code","page_title":"Поиск выделенного фрагмента","page_win":"S_CtrlF","page_mac":"S_CmdF","page_xl_span":"Поиск","page_xl":"выделенного фрагмента","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы выполнить поиск по выделенному фрагменту","page_l_win_first":"CTRL","page_l_win_second":"F","page_l_mac_first":"CMD","page_l_mac_second":"F"},{"link":"vscode-find-replace-selected","selected":"Замена","text":"выделенного фрагмента","windows":"Ctrl+H","macos":"Cmd+H","popular":false,"useful":true,"simple":true,"complex":false,"target":"vs-code","page_title":"Замена выделенного фрагмента","page_win":"S_CtrlH","page_mac":"S_CmdH","page_xl_span":"Замена","page_xl":"выделенного фрагмента","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы выполнить замену выделенного фрагмента","page_l_win_first":"CTRL","page_l_win_second":"H","page_l_mac_first":"CMD","page_l_mac_second":"H"},{"link":"vscode-find-all-project","selected":"Поиск","text":"выделенного фрагмента по всему проекту","windows":"Ctrl+Shift+F","macos":"Cmd+Shift+F","popular":false,"useful":true,"simple":false,"complex":true,"target":"vs-code","page_title":"Поиск выделенного фрагмента по всему проекту","page_win":"S_CtrlShiftF","page_mac":"S_CmdShiftF","page_xl_span":"Поиск","page_xl":"выделенного фрагмента по всему проекту","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы выполнить поиск по выделенному фрагменту по всем файлам проекта","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"F","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"F"},{"link":"vscode-find-replace-all-project","selected":"Замена","text":"выделенного фрагмента по всему проекту","windows":"Ctrl+Shift+H","macos":"Cmd+Shift+H","popular":false,"useful":true,"simple":false,"complex":true,"target":"vs-code","page_title":"Замена выделенного фрагмента по всему проекту","page_win":"S_CtrlShiftH","page_mac":"S_CmdShiftH","page_xl_span":"Замена","page_xl":"выделенного фрагмента по всему проекту","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы выполнить замену выделенного фрагмента по всем файлам проекта","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"H","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"H"},{"link":"vscode-toggle-sidebar","selected":"Скрытие/Раскрытие","text":"боковой панели","windows":"Ctrl+B","macos":"Cmd+B","popular":false,"useful":false,"simple":true,"complex":false,"target":"vs-code","page_title":"Скрытие/Раскрытие боковой панели","page_win":"S_CtrlB","page_mac":"S_CmdB","page_xl_span":"Скрытие/Раскрытие","page_xl":"боковой панели","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы скрыть или раскрыть боковую панель","page_l_win_first":"CTRL","page_l_win_second":"B","page_l_mac_first":"CMD","page_l_mac_second":"B"},{"link":"vscode-select-next-occurrence","selected":"Выделение","text":"схожих фрагментов кода","windows":"Ctrl+D","macos":"Cmd+D","popular":false,"useful":true,"simple":true,"complex":false,"target":"vs-code","page_title":"Выделение схожих фрагментов кода","page_win":"S_CtrlD","page_mac":"S_CmdD","page_xl_span":"Выделение","page_xl":"схожих фрагментов кода","page_l_start":"Удерживайте кнопку","page_l_center":"и нажимайте на","page_l_end":"до тех пор пока не выберете все нужные схожие фрагменты кода","page_l_win_first":"CTRL","page_l_win_second":"D","page_l_mac_first":"CMD","page_l_mac_second":"D"},{"link":"vscode-command-palette","selected":"Открытие","text":"палитры команд","windows":"Ctrl+Shift+P / F2","macos":"Cmd+Shift+P","popular":true,"useful":true,"simple":false,"complex":true,"target":"vs-code","page_title":"Открытие палитры команд","page_win":"S_CtrlShiftP","page_mac":"S_CmdShiftP","page_xl_span":"Открытие","page_xl":"палитры команд","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть палитру команд","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"P","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"P"},{"link":"browser-open-new-window","selected":"Открыть","text":"новое окно","windows":"Ctrl+N","macos":"Cmd+N","popular":false,"useful":false,"simple":true,"complex":false,"target":"browser","page_title":"Открытие нового окна","page_win":"S_CtrlN","page_mac":"S_CmdN","page_xl_span":"Открытие","page_xl":"нового окна","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть новое окно","page_l_win_first":"CTRL","page_l_win_second":"N","page_l_mac_first":"CMD","page_l_mac_second":"N"},{"link":"browser-open-new-incognito-window","selected":"Открыть","text":"новое окно икогнито","windows":"Ctrl+Shift+N","macos":"Cmd+Shift+N","popular":false,"useful":false,"simple":false,"complex":true,"target":"browser","page_title":"Открытие нового окна в режиме инкогнито","page_win":"S_CtrlShiftN","page_mac":"S_CmdShiftN","page_xl_span":"Открытие","page_xl":"нового окна в режиме инкогнито","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть новое окно в режиме инкогнито","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"N","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"N"},{"link":"browser-open-new-tab","selected":"Открыть","text":"новую вкладку","windows":"Ctrl+T","macos":"Cmd+T","popular":false,"useful":false,"simple":true,"complex":false,"target":"browser","page_title":"Открытие новой вкладки","page_win":"S_CtrlT","page_mac":"S_CmdT","page_xl_span":"Открытие","page_xl":"новой вкладки","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть новую вкладку","page_l_win_first":"CTRL","page_l_win_second":"T","page_l_mac_first":"CMD","page_l_mac_second":"T"},{"link":"browser-undo-closed-tab","selected":"Восстановить","text":"закрытую вкладку","windows":"Ctrl+Shift+T","macos":"Cmd+Shift+T","popular":false,"useful":true,"simple":false,"complex":true,"target":"browser","page_title":"Восстановить закрытую вкладку","page_win":"S_CtrlShiftT","page_mac":"S_CmdShiftT","page_xl_span":"Восстановить","page_xl":"закрытую вкладку","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы восстановить закрытую вкладку","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"T","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"T"},{"link":"browser-next-tab","selected":"Переключение","text":"между вкладками","windows":"Ctrl+Tab","macos":"Cmd+Option+ →","popular":false,"useful":false,"simple":false,"complex":true,"target":"browser","page_title":"Переключение между вкладками","page_win":"S_CtrlTab","page_mac":"S_CmdOptionRight","page_xl_span":"Переключение","page_xl":"между вкладками","page_l_start":"Удерживайте кнопку","page_l_center":"и нажимайте на","page_l_end":"до тех пор пока не перейдете к нужной вкладке","page_l_win_first":"CTRL","page_l_win_second":"TAB","page_l_mac_first":"CMD+OPTION","page_l_mac_second":"→"},{"link":"browser-history-back-forward","selected":"Перемещение","text":"назад/вперед по истории браузера","windows":"Alt+ ← / Alt+ →","macos":"Cmd+ ← / Cmd+ →","popular":false,"useful":false,"simple":false,"complex":true,"target":"browser","page_title":"Перемещение назад и вперед по истории браузера","page_win":"S_AltLeftRight","page_mac":"S_CmdLeftRight","page_xl_span":"Перемещение","page_xl":"назад и вперед по истории браузера","page_l_start":"Удерживайте кнопку","page_l_center":"и нажимайте на","page_l_end":"до тех пор не перейдете к нужной вкладки по истории","page_l_win_first":"ALT","page_l_win_second":"← →","page_l_mac_first":"CMD","page_l_mac_second":"← →"},{"link":"browser-refresh-page","selected":"Обновить","text":"страницу","windows":"F5 / Ctrl+R","macos":"Cmd+R","popular":true,"useful":true,"simple":true,"complex":false,"target":"browser","page_title":"Обновление веб-страницы","page_win":"S_CtrlR","page_mac":"S_CmdR","page_xl_span":"Обновление","page_xl":"веб-страницы","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы обновить веб-страницу","page_l_win_first":"CTRL","page_l_win_second":"R","page_l_mac_first":"CMD","page_l_mac_second":"R"},{"link":"browser-open-history","selected":"Открыть","text":"историю","windows":"Ctrl+H","macos":"Cmd+Y","popular":true,"useful":true,"simple":true,"complex":false,"target":"browser","page_title":"Открытие истории браузера","page_win":"S_CtrlH","page_mac":"S_CmdY","page_xl_span":"Открытие","page_xl":"истории браузера","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть историю браузера","page_l_win_first":"CTRL","page_l_win_second":"H","page_l_mac_first":"CMD","page_l_mac_second":"Y"},{"link":"figma-group-layers","selected":"Сгрупировать","text":"выделенные элементы в группу","windows":"Ctrl+G","macos":"Cmd+G","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma","page_title":"Сгрупировать выделенные элементы в группу","page_win":"S_CtrlG","page_mac":"S_CmdG","page_xl_span":"Сгрупировать","page_xl":"выделенные элементы в группу","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы сформировать группу из выделенных элементов","page_l_win_first":"CTRL","page_l_win_second":"G","page_l_mac_first":"CMD","page_l_mac_second":"G"},{"link":"figma-ungroup-layers","selected":"Разгруппировать","text":"выделенные элементы из группы","windows":"Ctrl+Shift+G","macos":"Cmd+Shift+G","popular":true,"useful":true,"simple":false,"complex":true,"target":"figma","page_title":"Разгруппировать выделенные элементы из группы","page_win":"S_CtrlShiftG","page_mac":"S_CmdShiftG","page_xl_span":"Разгруппировать","page_xl":"выделенные элементы из группы","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы расформировать группу из выделенных элементов","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"G","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"G"},{"link":"figma-frame-layers","selected":"Сгрупировать","text":"выделенные элементы во фрейм","windows":"Ctrl+Alt+G","macos":"Cmd+Option+G","popular":false,"useful":true,"simple":false,"complex":true,"target":"figma","page_title":"Сгрупировать выделенные элементы во фрейм","page_win":"S_CtrlAltG","page_mac":"S_CmdOptionG","page_xl_span":"Сгрупировать","page_xl":"выделенные элементы во фрейм","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы сформировать фрейм из выделенных элементов","page_l_win_first":"CTRL+ALT","page_l_win_second":"G","page_l_mac_first":"CMD+OPTION","page_l_mac_second":"G"},{"link":"figma-duplicate-selection","selected":"Дублировать","text":"выделенные элементы","windows":"Ctrl+D","macos":"Cmd+D","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma","page_title":"Дублировать выделенные элементы","page_win":"S_CtrlD","page_mac":"S_CmdD","page_xl_span":"Дублировать","page_xl":"выделенные элементы","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы дублировать выделенные элементы","page_l_win_first":"CTRL","page_l_win_second":"D","page_l_mac_first":"CMD","page_l_mac_second":"D"},{"link":"figma-hide-ui","selected":"Скрыть","text":"пользовательский интерфейс","windows":"Ctrl+\\\\","macos":"Cmd+\\\\","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma","page_title":"Скрыть пользовательский интерфейс","page_win":"S_CtrlTrait","page_mac":"S_CmdTrait","page_xl_span":"Скрыть","page_xl":"пользовательский интерфейс","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы скрыть пользовательский интерфейс","page_l_win_first":"CTRL","page_l_win_second":"\\\\","page_l_mac_first":"CMD","page_l_mac_second":"\\\\"},{"link":"figma-hide-layers","selected":"Скрыть","text":"интерфейс панели слоев","windows":"Ctrl+Shift+/","macos":"Cmd+Shift+/","popular":false,"useful":false,"simple":false,"complex":true,"target":"figma","page_title":"Скрыть интерфейс панели слоев","page_win":"S_CtrlShiftTrait","page_mac":"S_CmdShiftTrait","page_xl_span":"Скрыть","page_xl":"интерфейс панели слоев","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы скрыть интерфейс панели слоев","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"\\\\","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"\\\\"},{"link":"figma-pick-color","selected":"Получить","text":"цвет элемента по нажатию","windows":"I","macos":"I","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma","page_title":"Получить цвет элемента по нажатию","page_win":"S_I","page_mac":"S_I","page_xl_span":"Получить","page_xl":"цвет элемента по нажатию","page_l_start":"","page_l_center":"Нажмите на","page_l_end":"чтобы скрыть цвет элемента по нажатию","page_l_win_first":"","page_l_win_second":"I","page_l_mac_first":"","page_l_mac_second":"I"},{"link":"figma-command-palette","selected":"Открыть","text":"панель быстрых действий","windows":"Ctrl+/","macos":"Cmd+/","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma","page_title":"Открыть панель быстрых действий","page_win":"S_CtrlSlash","page_mac":"S_CmdSlash","page_xl_span":"Открыть","page_xl":"панель быстрых действий","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть панель быстрых действий","page_l_win_first":"CTRL","page_l_win_second":"/","page_l_mac_first":"CMD","page_l_mac_second":"/"}]');
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@fortawesome+fontawesome-svg-core@6.5.1/node_modules/@fortawesome/fontawesome-svg-core/index.mjs
 function fontawesome_svg_core_ownKeys(object, enumerableOnly) {
   var keys = Object.keys(object);
 
@@ -8269,37 +9436,47 @@ var PREFIX_TO_STYLE = familyProxy((_familyProxy = {}, fontawesome_svg_core_defin
   'fab': 'brands',
   'fa-brands': 'brands',
   'fak': 'kit',
-  'fa-kit': 'kit'
+  'fakd': 'kit',
+  'fa-kit': 'kit',
+  'fa-kit-duotone': 'kit'
 }), fontawesome_svg_core_defineProperty(_familyProxy, FAMILY_SHARP, {
   'fa': 'solid',
   'fass': 'solid',
   'fa-solid': 'solid',
   'fasr': 'regular',
-  'fa-regular': 'regular'
+  'fa-regular': 'regular',
+  'fasl': 'light',
+  'fa-light': 'light',
+  'fast': 'thin',
+  'fa-thin': 'thin'
 }), _familyProxy));
 var STYLE_TO_PREFIX = familyProxy((_familyProxy2 = {}, fontawesome_svg_core_defineProperty(_familyProxy2, FAMILY_CLASSIC, {
-  'solid': 'fas',
-  'regular': 'far',
-  'light': 'fal',
-  'thin': 'fat',
-  'duotone': 'fad',
-  'brands': 'fab',
-  'kit': 'fak'
+  solid: 'fas',
+  regular: 'far',
+  light: 'fal',
+  thin: 'fat',
+  duotone: 'fad',
+  brands: 'fab',
+  kit: 'fak'
 }), fontawesome_svg_core_defineProperty(_familyProxy2, FAMILY_SHARP, {
-  'solid': 'fass',
-  'regular': 'fasr'
+  solid: 'fass',
+  regular: 'fasr',
+  light: 'fasl',
+  thin: 'fast'
 }), _familyProxy2));
 var PREFIX_TO_LONG_STYLE = familyProxy((_familyProxy3 = {}, fontawesome_svg_core_defineProperty(_familyProxy3, FAMILY_CLASSIC, {
-  'fab': 'fa-brands',
-  'fad': 'fa-duotone',
-  'fak': 'fa-kit',
-  'fal': 'fa-light',
-  'far': 'fa-regular',
-  'fas': 'fa-solid',
-  'fat': 'fa-thin'
+  fab: 'fa-brands',
+  fad: 'fa-duotone',
+  fak: 'fa-kit',
+  fal: 'fa-light',
+  far: 'fa-regular',
+  fas: 'fa-solid',
+  fat: 'fa-thin'
 }), fontawesome_svg_core_defineProperty(_familyProxy3, FAMILY_SHARP, {
-  'fass': 'fa-solid',
-  'fasr': 'fa-regular'
+  fass: 'fa-solid',
+  fasr: 'fa-regular',
+  fasl: 'fa-light',
+  fast: 'fa-thin'
 }), _familyProxy3));
 var LONG_STYLE_TO_PREFIX = familyProxy((_familyProxy4 = {}, fontawesome_svg_core_defineProperty(_familyProxy4, FAMILY_CLASSIC, {
   'fa-brands': 'fab',
@@ -8311,21 +9488,25 @@ var LONG_STYLE_TO_PREFIX = familyProxy((_familyProxy4 = {}, fontawesome_svg_core
   'fa-thin': 'fat'
 }), fontawesome_svg_core_defineProperty(_familyProxy4, FAMILY_SHARP, {
   'fa-solid': 'fass',
-  'fa-regular': 'fasr'
+  'fa-regular': 'fasr',
+  'fa-light': 'fasl',
+  'fa-thin': 'fast'
 }), _familyProxy4));
-var ICON_SELECTION_SYNTAX_PATTERN = /fa(s|r|l|t|d|b|k|ss|sr)?[\-\ ]/; // eslint-disable-line no-useless-escape
+var ICON_SELECTION_SYNTAX_PATTERN = /fa(s|r|l|t|d|b|k|ss|sr|sl|st)?[\-\ ]/; // eslint-disable-line no-useless-escape
 
 var LAYERS_TEXT_CLASSNAME = 'fa-layers-text';
 var FONT_FAMILY_PATTERN = /Font ?Awesome ?([56 ]*)(Solid|Regular|Light|Thin|Duotone|Brands|Free|Pro|Sharp|Kit)?.*/i;
 var FONT_WEIGHT_TO_PREFIX = familyProxy((_familyProxy5 = {}, fontawesome_svg_core_defineProperty(_familyProxy5, FAMILY_CLASSIC, {
-  '900': 'fas',
-  '400': 'far',
-  'normal': 'far',
-  '300': 'fal',
-  '100': 'fat'
+  900: 'fas',
+  400: 'far',
+  normal: 'far',
+  300: 'fal',
+  100: 'fat'
 }), fontawesome_svg_core_defineProperty(_familyProxy5, FAMILY_SHARP, {
-  '900': 'fass',
-  '400': 'fasr'
+  900: 'fass',
+  400: 'fasr',
+  300: 'fasl',
+  100: 'fast'
 }), _familyProxy5));
 var oneToTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var oneToTwenty = oneToTen.concat([11, 12, 13, 14, 15, 16, 17, 18, 19, 20]);
@@ -8442,7 +9623,7 @@ function onChange(cb) {
   };
 }
 
-var fontawesome_svg_core_d = UNITS_IN_GRID;
+var d = UNITS_IN_GRID;
 var meaninglessTransform = {
   size: 16,
   x: 0,
@@ -8552,19 +9733,19 @@ function transformForCss(_ref2) {
   var val = '';
 
   if (startCentered && IS_IE) {
-    val += "translate(".concat(transform.x / fontawesome_svg_core_d - width / 2, "em, ").concat(transform.y / fontawesome_svg_core_d - height / 2, "em) ");
+    val += "translate(".concat(transform.x / d - width / 2, "em, ").concat(transform.y / d - height / 2, "em) ");
   } else if (startCentered) {
-    val += "translate(calc(-50% + ".concat(transform.x / fontawesome_svg_core_d, "em), calc(-50% + ").concat(transform.y / fontawesome_svg_core_d, "em)) ");
+    val += "translate(calc(-50% + ".concat(transform.x / d, "em), calc(-50% + ").concat(transform.y / d, "em)) ");
   } else {
-    val += "translate(".concat(transform.x / fontawesome_svg_core_d, "em, ").concat(transform.y / fontawesome_svg_core_d, "em) ");
+    val += "translate(".concat(transform.x / d, "em, ").concat(transform.y / d, "em) ");
   }
 
-  val += "scale(".concat(transform.size / fontawesome_svg_core_d * (transform.flipX ? -1 : 1), ", ").concat(transform.size / fontawesome_svg_core_d * (transform.flipY ? -1 : 1), ") ");
+  val += "scale(".concat(transform.size / d * (transform.flipX ? -1 : 1), ", ").concat(transform.size / d * (transform.flipY ? -1 : 1), ") ");
   val += "rotate(".concat(transform.rotate, "deg) ");
   return val;
 }
 
-var baseStyles = ":root, :host {\n  --fa-font-solid: normal 900 1em/1 \"Font Awesome 6 Solid\";\n  --fa-font-regular: normal 400 1em/1 \"Font Awesome 6 Regular\";\n  --fa-font-light: normal 300 1em/1 \"Font Awesome 6 Light\";\n  --fa-font-thin: normal 100 1em/1 \"Font Awesome 6 Thin\";\n  --fa-font-duotone: normal 900 1em/1 \"Font Awesome 6 Duotone\";\n  --fa-font-sharp-solid: normal 900 1em/1 \"Font Awesome 6 Sharp\";\n  --fa-font-sharp-regular: normal 400 1em/1 \"Font Awesome 6 Sharp\";\n  --fa-font-brands: normal 400 1em/1 \"Font Awesome 6 Brands\";\n}\n\nsvg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {\n  overflow: visible;\n  box-sizing: content-box;\n}\n\n.svg-inline--fa {\n  display: var(--fa-display, inline-block);\n  height: 1em;\n  overflow: visible;\n  vertical-align: -0.125em;\n}\n.svg-inline--fa.fa-2xs {\n  vertical-align: 0.1em;\n}\n.svg-inline--fa.fa-xs {\n  vertical-align: 0em;\n}\n.svg-inline--fa.fa-sm {\n  vertical-align: -0.0714285705em;\n}\n.svg-inline--fa.fa-lg {\n  vertical-align: -0.2em;\n}\n.svg-inline--fa.fa-xl {\n  vertical-align: -0.25em;\n}\n.svg-inline--fa.fa-2xl {\n  vertical-align: -0.3125em;\n}\n.svg-inline--fa.fa-pull-left {\n  margin-right: var(--fa-pull-margin, 0.3em);\n  width: auto;\n}\n.svg-inline--fa.fa-pull-right {\n  margin-left: var(--fa-pull-margin, 0.3em);\n  width: auto;\n}\n.svg-inline--fa.fa-li {\n  width: var(--fa-li-width, 2em);\n  top: 0.25em;\n}\n.svg-inline--fa.fa-fw {\n  width: var(--fa-fw-width, 1.25em);\n}\n\n.fa-layers svg.svg-inline--fa {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n\n.fa-layers-counter, .fa-layers-text {\n  display: inline-block;\n  position: absolute;\n  text-align: center;\n}\n\n.fa-layers {\n  display: inline-block;\n  height: 1em;\n  position: relative;\n  text-align: center;\n  vertical-align: -0.125em;\n  width: 1em;\n}\n.fa-layers svg.svg-inline--fa {\n  -webkit-transform-origin: center center;\n          transform-origin: center center;\n}\n\n.fa-layers-text {\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -webkit-transform-origin: center center;\n          transform-origin: center center;\n}\n\n.fa-layers-counter {\n  background-color: var(--fa-counter-background-color, #ff253a);\n  border-radius: var(--fa-counter-border-radius, 1em);\n  box-sizing: border-box;\n  color: var(--fa-inverse, #fff);\n  line-height: var(--fa-counter-line-height, 1);\n  max-width: var(--fa-counter-max-width, 5em);\n  min-width: var(--fa-counter-min-width, 1.5em);\n  overflow: hidden;\n  padding: var(--fa-counter-padding, 0.25em 0.5em);\n  right: var(--fa-right, 0);\n  text-overflow: ellipsis;\n  top: var(--fa-top, 0);\n  -webkit-transform: scale(var(--fa-counter-scale, 0.25));\n          transform: scale(var(--fa-counter-scale, 0.25));\n  -webkit-transform-origin: top right;\n          transform-origin: top right;\n}\n\n.fa-layers-bottom-right {\n  bottom: var(--fa-bottom, 0);\n  right: var(--fa-right, 0);\n  top: auto;\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: bottom right;\n          transform-origin: bottom right;\n}\n\n.fa-layers-bottom-left {\n  bottom: var(--fa-bottom, 0);\n  left: var(--fa-left, 0);\n  right: auto;\n  top: auto;\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: bottom left;\n          transform-origin: bottom left;\n}\n\n.fa-layers-top-right {\n  top: var(--fa-top, 0);\n  right: var(--fa-right, 0);\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: top right;\n          transform-origin: top right;\n}\n\n.fa-layers-top-left {\n  left: var(--fa-left, 0);\n  right: auto;\n  top: var(--fa-top, 0);\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: top left;\n          transform-origin: top left;\n}\n\n.fa-1x {\n  font-size: 1em;\n}\n\n.fa-2x {\n  font-size: 2em;\n}\n\n.fa-3x {\n  font-size: 3em;\n}\n\n.fa-4x {\n  font-size: 4em;\n}\n\n.fa-5x {\n  font-size: 5em;\n}\n\n.fa-6x {\n  font-size: 6em;\n}\n\n.fa-7x {\n  font-size: 7em;\n}\n\n.fa-8x {\n  font-size: 8em;\n}\n\n.fa-9x {\n  font-size: 9em;\n}\n\n.fa-10x {\n  font-size: 10em;\n}\n\n.fa-2xs {\n  font-size: 0.625em;\n  line-height: 0.1em;\n  vertical-align: 0.225em;\n}\n\n.fa-xs {\n  font-size: 0.75em;\n  line-height: 0.0833333337em;\n  vertical-align: 0.125em;\n}\n\n.fa-sm {\n  font-size: 0.875em;\n  line-height: 0.0714285718em;\n  vertical-align: 0.0535714295em;\n}\n\n.fa-lg {\n  font-size: 1.25em;\n  line-height: 0.05em;\n  vertical-align: -0.075em;\n}\n\n.fa-xl {\n  font-size: 1.5em;\n  line-height: 0.0416666682em;\n  vertical-align: -0.125em;\n}\n\n.fa-2xl {\n  font-size: 2em;\n  line-height: 0.03125em;\n  vertical-align: -0.1875em;\n}\n\n.fa-fw {\n  text-align: center;\n  width: 1.25em;\n}\n\n.fa-ul {\n  list-style-type: none;\n  margin-left: var(--fa-li-margin, 2.5em);\n  padding-left: 0;\n}\n.fa-ul > li {\n  position: relative;\n}\n\n.fa-li {\n  left: calc(var(--fa-li-width, 2em) * -1);\n  position: absolute;\n  text-align: center;\n  width: var(--fa-li-width, 2em);\n  line-height: inherit;\n}\n\n.fa-border {\n  border-color: var(--fa-border-color, #eee);\n  border-radius: var(--fa-border-radius, 0.1em);\n  border-style: var(--fa-border-style, solid);\n  border-width: var(--fa-border-width, 0.08em);\n  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);\n}\n\n.fa-pull-left {\n  float: left;\n  margin-right: var(--fa-pull-margin, 0.3em);\n}\n\n.fa-pull-right {\n  float: right;\n  margin-left: var(--fa-pull-margin, 0.3em);\n}\n\n.fa-beat {\n  -webkit-animation-name: fa-beat;\n          animation-name: fa-beat;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);\n          animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-bounce {\n  -webkit-animation-name: fa-bounce;\n          animation-name: fa-bounce;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));\n          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));\n}\n\n.fa-fade {\n  -webkit-animation-name: fa-fade;\n          animation-name: fa-fade;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n}\n\n.fa-beat-fade {\n  -webkit-animation-name: fa-beat-fade;\n          animation-name: fa-beat-fade;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n}\n\n.fa-flip {\n  -webkit-animation-name: fa-flip;\n          animation-name: fa-flip;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);\n          animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-shake {\n  -webkit-animation-name: fa-shake;\n          animation-name: fa-shake;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, linear);\n          animation-timing-function: var(--fa-animation-timing, linear);\n}\n\n.fa-spin {\n  -webkit-animation-name: fa-spin;\n          animation-name: fa-spin;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 2s);\n          animation-duration: var(--fa-animation-duration, 2s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, linear);\n          animation-timing-function: var(--fa-animation-timing, linear);\n}\n\n.fa-spin-reverse {\n  --fa-animation-direction: reverse;\n}\n\n.fa-pulse,\n.fa-spin-pulse {\n  -webkit-animation-name: fa-spin;\n          animation-name: fa-spin;\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));\n          animation-timing-function: var(--fa-animation-timing, steps(8));\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .fa-beat,\n.fa-bounce,\n.fa-fade,\n.fa-beat-fade,\n.fa-flip,\n.fa-pulse,\n.fa-shake,\n.fa-spin,\n.fa-spin-pulse {\n    -webkit-animation-delay: -1ms;\n            animation-delay: -1ms;\n    -webkit-animation-duration: 1ms;\n            animation-duration: 1ms;\n    -webkit-animation-iteration-count: 1;\n            animation-iteration-count: 1;\n    -webkit-transition-delay: 0s;\n            transition-delay: 0s;\n    -webkit-transition-duration: 0s;\n            transition-duration: 0s;\n  }\n}\n@-webkit-keyframes fa-beat {\n  0%, 90% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  45% {\n    -webkit-transform: scale(var(--fa-beat-scale, 1.25));\n            transform: scale(var(--fa-beat-scale, 1.25));\n  }\n}\n@keyframes fa-beat {\n  0%, 90% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  45% {\n    -webkit-transform: scale(var(--fa-beat-scale, 1.25));\n            transform: scale(var(--fa-beat-scale, 1.25));\n  }\n}\n@-webkit-keyframes fa-bounce {\n  0% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  10% {\n    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n  }\n  30% {\n    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n  }\n  50% {\n    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n  }\n  57% {\n    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n  }\n  64% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  100% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n}\n@keyframes fa-bounce {\n  0% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  10% {\n    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n  }\n  30% {\n    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n  }\n  50% {\n    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n  }\n  57% {\n    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n  }\n  64% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  100% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n}\n@-webkit-keyframes fa-fade {\n  50% {\n    opacity: var(--fa-fade-opacity, 0.4);\n  }\n}\n@keyframes fa-fade {\n  50% {\n    opacity: var(--fa-fade-opacity, 0.4);\n  }\n}\n@-webkit-keyframes fa-beat-fade {\n  0%, 100% {\n    opacity: var(--fa-beat-fade-opacity, 0.4);\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  50% {\n    opacity: 1;\n    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));\n            transform: scale(var(--fa-beat-fade-scale, 1.125));\n  }\n}\n@keyframes fa-beat-fade {\n  0%, 100% {\n    opacity: var(--fa-beat-fade-opacity, 0.4);\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  50% {\n    opacity: 1;\n    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));\n            transform: scale(var(--fa-beat-fade-scale, 1.125));\n  }\n}\n@-webkit-keyframes fa-flip {\n  50% {\n    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n  }\n}\n@keyframes fa-flip {\n  50% {\n    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n  }\n}\n@-webkit-keyframes fa-shake {\n  0% {\n    -webkit-transform: rotate(-15deg);\n            transform: rotate(-15deg);\n  }\n  4% {\n    -webkit-transform: rotate(15deg);\n            transform: rotate(15deg);\n  }\n  8%, 24% {\n    -webkit-transform: rotate(-18deg);\n            transform: rotate(-18deg);\n  }\n  12%, 28% {\n    -webkit-transform: rotate(18deg);\n            transform: rotate(18deg);\n  }\n  16% {\n    -webkit-transform: rotate(-22deg);\n            transform: rotate(-22deg);\n  }\n  20% {\n    -webkit-transform: rotate(22deg);\n            transform: rotate(22deg);\n  }\n  32% {\n    -webkit-transform: rotate(-12deg);\n            transform: rotate(-12deg);\n  }\n  36% {\n    -webkit-transform: rotate(12deg);\n            transform: rotate(12deg);\n  }\n  40%, 100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n}\n@keyframes fa-shake {\n  0% {\n    -webkit-transform: rotate(-15deg);\n            transform: rotate(-15deg);\n  }\n  4% {\n    -webkit-transform: rotate(15deg);\n            transform: rotate(15deg);\n  }\n  8%, 24% {\n    -webkit-transform: rotate(-18deg);\n            transform: rotate(-18deg);\n  }\n  12%, 28% {\n    -webkit-transform: rotate(18deg);\n            transform: rotate(18deg);\n  }\n  16% {\n    -webkit-transform: rotate(-22deg);\n            transform: rotate(-22deg);\n  }\n  20% {\n    -webkit-transform: rotate(22deg);\n            transform: rotate(22deg);\n  }\n  32% {\n    -webkit-transform: rotate(-12deg);\n            transform: rotate(-12deg);\n  }\n  36% {\n    -webkit-transform: rotate(12deg);\n            transform: rotate(12deg);\n  }\n  40%, 100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n}\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n.fa-rotate-90 {\n  -webkit-transform: rotate(90deg);\n          transform: rotate(90deg);\n}\n\n.fa-rotate-180 {\n  -webkit-transform: rotate(180deg);\n          transform: rotate(180deg);\n}\n\n.fa-rotate-270 {\n  -webkit-transform: rotate(270deg);\n          transform: rotate(270deg);\n}\n\n.fa-flip-horizontal {\n  -webkit-transform: scale(-1, 1);\n          transform: scale(-1, 1);\n}\n\n.fa-flip-vertical {\n  -webkit-transform: scale(1, -1);\n          transform: scale(1, -1);\n}\n\n.fa-flip-both,\n.fa-flip-horizontal.fa-flip-vertical {\n  -webkit-transform: scale(-1, -1);\n          transform: scale(-1, -1);\n}\n\n.fa-rotate-by {\n  -webkit-transform: rotate(var(--fa-rotate-angle, none));\n          transform: rotate(var(--fa-rotate-angle, none));\n}\n\n.fa-stack {\n  display: inline-block;\n  vertical-align: middle;\n  height: 2em;\n  position: relative;\n  width: 2.5em;\n}\n\n.fa-stack-1x,\n.fa-stack-2x {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n  z-index: var(--fa-stack-z-index, auto);\n}\n\n.svg-inline--fa.fa-stack-1x {\n  height: 1em;\n  width: 1.25em;\n}\n.svg-inline--fa.fa-stack-2x {\n  height: 2em;\n  width: 2.5em;\n}\n\n.fa-inverse {\n  color: var(--fa-inverse, #fff);\n}\n\n.sr-only,\n.fa-sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n\n.sr-only-focusable:not(:focus),\n.fa-sr-only-focusable:not(:focus) {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n\n.svg-inline--fa .fa-primary {\n  fill: var(--fa-primary-color, currentColor);\n  opacity: var(--fa-primary-opacity, 1);\n}\n\n.svg-inline--fa .fa-secondary {\n  fill: var(--fa-secondary-color, currentColor);\n  opacity: var(--fa-secondary-opacity, 0.4);\n}\n\n.svg-inline--fa.fa-swap-opacity .fa-primary {\n  opacity: var(--fa-secondary-opacity, 0.4);\n}\n\n.svg-inline--fa.fa-swap-opacity .fa-secondary {\n  opacity: var(--fa-primary-opacity, 1);\n}\n\n.svg-inline--fa mask .fa-primary,\n.svg-inline--fa mask .fa-secondary {\n  fill: black;\n}\n\n.fad.fa-inverse,\n.fa-duotone.fa-inverse {\n  color: var(--fa-inverse, #fff);\n}";
+var baseStyles = ":root, :host {\n  --fa-font-solid: normal 900 1em/1 \"Font Awesome 6 Solid\";\n  --fa-font-regular: normal 400 1em/1 \"Font Awesome 6 Regular\";\n  --fa-font-light: normal 300 1em/1 \"Font Awesome 6 Light\";\n  --fa-font-thin: normal 100 1em/1 \"Font Awesome 6 Thin\";\n  --fa-font-duotone: normal 900 1em/1 \"Font Awesome 6 Duotone\";\n  --fa-font-sharp-solid: normal 900 1em/1 \"Font Awesome 6 Sharp\";\n  --fa-font-sharp-regular: normal 400 1em/1 \"Font Awesome 6 Sharp\";\n  --fa-font-sharp-light: normal 300 1em/1 \"Font Awesome 6 Sharp\";\n  --fa-font-sharp-thin: normal 100 1em/1 \"Font Awesome 6 Sharp\";\n  --fa-font-brands: normal 400 1em/1 \"Font Awesome 6 Brands\";\n}\n\nsvg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {\n  overflow: visible;\n  box-sizing: content-box;\n}\n\n.svg-inline--fa {\n  display: var(--fa-display, inline-block);\n  height: 1em;\n  overflow: visible;\n  vertical-align: -0.125em;\n}\n.svg-inline--fa.fa-2xs {\n  vertical-align: 0.1em;\n}\n.svg-inline--fa.fa-xs {\n  vertical-align: 0em;\n}\n.svg-inline--fa.fa-sm {\n  vertical-align: -0.0714285705em;\n}\n.svg-inline--fa.fa-lg {\n  vertical-align: -0.2em;\n}\n.svg-inline--fa.fa-xl {\n  vertical-align: -0.25em;\n}\n.svg-inline--fa.fa-2xl {\n  vertical-align: -0.3125em;\n}\n.svg-inline--fa.fa-pull-left {\n  margin-right: var(--fa-pull-margin, 0.3em);\n  width: auto;\n}\n.svg-inline--fa.fa-pull-right {\n  margin-left: var(--fa-pull-margin, 0.3em);\n  width: auto;\n}\n.svg-inline--fa.fa-li {\n  width: var(--fa-li-width, 2em);\n  top: 0.25em;\n}\n.svg-inline--fa.fa-fw {\n  width: var(--fa-fw-width, 1.25em);\n}\n\n.fa-layers svg.svg-inline--fa {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n\n.fa-layers-counter, .fa-layers-text {\n  display: inline-block;\n  position: absolute;\n  text-align: center;\n}\n\n.fa-layers {\n  display: inline-block;\n  height: 1em;\n  position: relative;\n  text-align: center;\n  vertical-align: -0.125em;\n  width: 1em;\n}\n.fa-layers svg.svg-inline--fa {\n  -webkit-transform-origin: center center;\n          transform-origin: center center;\n}\n\n.fa-layers-text {\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -webkit-transform-origin: center center;\n          transform-origin: center center;\n}\n\n.fa-layers-counter {\n  background-color: var(--fa-counter-background-color, #ff253a);\n  border-radius: var(--fa-counter-border-radius, 1em);\n  box-sizing: border-box;\n  color: var(--fa-inverse, #fff);\n  line-height: var(--fa-counter-line-height, 1);\n  max-width: var(--fa-counter-max-width, 5em);\n  min-width: var(--fa-counter-min-width, 1.5em);\n  overflow: hidden;\n  padding: var(--fa-counter-padding, 0.25em 0.5em);\n  right: var(--fa-right, 0);\n  text-overflow: ellipsis;\n  top: var(--fa-top, 0);\n  -webkit-transform: scale(var(--fa-counter-scale, 0.25));\n          transform: scale(var(--fa-counter-scale, 0.25));\n  -webkit-transform-origin: top right;\n          transform-origin: top right;\n}\n\n.fa-layers-bottom-right {\n  bottom: var(--fa-bottom, 0);\n  right: var(--fa-right, 0);\n  top: auto;\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: bottom right;\n          transform-origin: bottom right;\n}\n\n.fa-layers-bottom-left {\n  bottom: var(--fa-bottom, 0);\n  left: var(--fa-left, 0);\n  right: auto;\n  top: auto;\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: bottom left;\n          transform-origin: bottom left;\n}\n\n.fa-layers-top-right {\n  top: var(--fa-top, 0);\n  right: var(--fa-right, 0);\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: top right;\n          transform-origin: top right;\n}\n\n.fa-layers-top-left {\n  left: var(--fa-left, 0);\n  right: auto;\n  top: var(--fa-top, 0);\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: top left;\n          transform-origin: top left;\n}\n\n.fa-1x {\n  font-size: 1em;\n}\n\n.fa-2x {\n  font-size: 2em;\n}\n\n.fa-3x {\n  font-size: 3em;\n}\n\n.fa-4x {\n  font-size: 4em;\n}\n\n.fa-5x {\n  font-size: 5em;\n}\n\n.fa-6x {\n  font-size: 6em;\n}\n\n.fa-7x {\n  font-size: 7em;\n}\n\n.fa-8x {\n  font-size: 8em;\n}\n\n.fa-9x {\n  font-size: 9em;\n}\n\n.fa-10x {\n  font-size: 10em;\n}\n\n.fa-2xs {\n  font-size: 0.625em;\n  line-height: 0.1em;\n  vertical-align: 0.225em;\n}\n\n.fa-xs {\n  font-size: 0.75em;\n  line-height: 0.0833333337em;\n  vertical-align: 0.125em;\n}\n\n.fa-sm {\n  font-size: 0.875em;\n  line-height: 0.0714285718em;\n  vertical-align: 0.0535714295em;\n}\n\n.fa-lg {\n  font-size: 1.25em;\n  line-height: 0.05em;\n  vertical-align: -0.075em;\n}\n\n.fa-xl {\n  font-size: 1.5em;\n  line-height: 0.0416666682em;\n  vertical-align: -0.125em;\n}\n\n.fa-2xl {\n  font-size: 2em;\n  line-height: 0.03125em;\n  vertical-align: -0.1875em;\n}\n\n.fa-fw {\n  text-align: center;\n  width: 1.25em;\n}\n\n.fa-ul {\n  list-style-type: none;\n  margin-left: var(--fa-li-margin, 2.5em);\n  padding-left: 0;\n}\n.fa-ul > li {\n  position: relative;\n}\n\n.fa-li {\n  left: calc(var(--fa-li-width, 2em) * -1);\n  position: absolute;\n  text-align: center;\n  width: var(--fa-li-width, 2em);\n  line-height: inherit;\n}\n\n.fa-border {\n  border-color: var(--fa-border-color, #eee);\n  border-radius: var(--fa-border-radius, 0.1em);\n  border-style: var(--fa-border-style, solid);\n  border-width: var(--fa-border-width, 0.08em);\n  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);\n}\n\n.fa-pull-left {\n  float: left;\n  margin-right: var(--fa-pull-margin, 0.3em);\n}\n\n.fa-pull-right {\n  float: right;\n  margin-left: var(--fa-pull-margin, 0.3em);\n}\n\n.fa-beat {\n  -webkit-animation-name: fa-beat;\n          animation-name: fa-beat;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);\n          animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-bounce {\n  -webkit-animation-name: fa-bounce;\n          animation-name: fa-bounce;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));\n          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));\n}\n\n.fa-fade {\n  -webkit-animation-name: fa-fade;\n          animation-name: fa-fade;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n}\n\n.fa-beat-fade {\n  -webkit-animation-name: fa-beat-fade;\n          animation-name: fa-beat-fade;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n}\n\n.fa-flip {\n  -webkit-animation-name: fa-flip;\n          animation-name: fa-flip;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);\n          animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-shake {\n  -webkit-animation-name: fa-shake;\n          animation-name: fa-shake;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, linear);\n          animation-timing-function: var(--fa-animation-timing, linear);\n}\n\n.fa-spin {\n  -webkit-animation-name: fa-spin;\n          animation-name: fa-spin;\n  -webkit-animation-delay: var(--fa-animation-delay, 0s);\n          animation-delay: var(--fa-animation-delay, 0s);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 2s);\n          animation-duration: var(--fa-animation-duration, 2s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, linear);\n          animation-timing-function: var(--fa-animation-timing, linear);\n}\n\n.fa-spin-reverse {\n  --fa-animation-direction: reverse;\n}\n\n.fa-pulse,\n.fa-spin-pulse {\n  -webkit-animation-name: fa-spin;\n          animation-name: fa-spin;\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));\n          animation-timing-function: var(--fa-animation-timing, steps(8));\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .fa-beat,\n.fa-bounce,\n.fa-fade,\n.fa-beat-fade,\n.fa-flip,\n.fa-pulse,\n.fa-shake,\n.fa-spin,\n.fa-spin-pulse {\n    -webkit-animation-delay: -1ms;\n            animation-delay: -1ms;\n    -webkit-animation-duration: 1ms;\n            animation-duration: 1ms;\n    -webkit-animation-iteration-count: 1;\n            animation-iteration-count: 1;\n    -webkit-transition-delay: 0s;\n            transition-delay: 0s;\n    -webkit-transition-duration: 0s;\n            transition-duration: 0s;\n  }\n}\n@-webkit-keyframes fa-beat {\n  0%, 90% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  45% {\n    -webkit-transform: scale(var(--fa-beat-scale, 1.25));\n            transform: scale(var(--fa-beat-scale, 1.25));\n  }\n}\n@keyframes fa-beat {\n  0%, 90% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  45% {\n    -webkit-transform: scale(var(--fa-beat-scale, 1.25));\n            transform: scale(var(--fa-beat-scale, 1.25));\n  }\n}\n@-webkit-keyframes fa-bounce {\n  0% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  10% {\n    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n  }\n  30% {\n    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n  }\n  50% {\n    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n  }\n  57% {\n    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n  }\n  64% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  100% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n}\n@keyframes fa-bounce {\n  0% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  10% {\n    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n  }\n  30% {\n    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n  }\n  50% {\n    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n  }\n  57% {\n    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n  }\n  64% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  100% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n}\n@-webkit-keyframes fa-fade {\n  50% {\n    opacity: var(--fa-fade-opacity, 0.4);\n  }\n}\n@keyframes fa-fade {\n  50% {\n    opacity: var(--fa-fade-opacity, 0.4);\n  }\n}\n@-webkit-keyframes fa-beat-fade {\n  0%, 100% {\n    opacity: var(--fa-beat-fade-opacity, 0.4);\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  50% {\n    opacity: 1;\n    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));\n            transform: scale(var(--fa-beat-fade-scale, 1.125));\n  }\n}\n@keyframes fa-beat-fade {\n  0%, 100% {\n    opacity: var(--fa-beat-fade-opacity, 0.4);\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  50% {\n    opacity: 1;\n    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));\n            transform: scale(var(--fa-beat-fade-scale, 1.125));\n  }\n}\n@-webkit-keyframes fa-flip {\n  50% {\n    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n  }\n}\n@keyframes fa-flip {\n  50% {\n    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n  }\n}\n@-webkit-keyframes fa-shake {\n  0% {\n    -webkit-transform: rotate(-15deg);\n            transform: rotate(-15deg);\n  }\n  4% {\n    -webkit-transform: rotate(15deg);\n            transform: rotate(15deg);\n  }\n  8%, 24% {\n    -webkit-transform: rotate(-18deg);\n            transform: rotate(-18deg);\n  }\n  12%, 28% {\n    -webkit-transform: rotate(18deg);\n            transform: rotate(18deg);\n  }\n  16% {\n    -webkit-transform: rotate(-22deg);\n            transform: rotate(-22deg);\n  }\n  20% {\n    -webkit-transform: rotate(22deg);\n            transform: rotate(22deg);\n  }\n  32% {\n    -webkit-transform: rotate(-12deg);\n            transform: rotate(-12deg);\n  }\n  36% {\n    -webkit-transform: rotate(12deg);\n            transform: rotate(12deg);\n  }\n  40%, 100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n}\n@keyframes fa-shake {\n  0% {\n    -webkit-transform: rotate(-15deg);\n            transform: rotate(-15deg);\n  }\n  4% {\n    -webkit-transform: rotate(15deg);\n            transform: rotate(15deg);\n  }\n  8%, 24% {\n    -webkit-transform: rotate(-18deg);\n            transform: rotate(-18deg);\n  }\n  12%, 28% {\n    -webkit-transform: rotate(18deg);\n            transform: rotate(18deg);\n  }\n  16% {\n    -webkit-transform: rotate(-22deg);\n            transform: rotate(-22deg);\n  }\n  20% {\n    -webkit-transform: rotate(22deg);\n            transform: rotate(22deg);\n  }\n  32% {\n    -webkit-transform: rotate(-12deg);\n            transform: rotate(-12deg);\n  }\n  36% {\n    -webkit-transform: rotate(12deg);\n            transform: rotate(12deg);\n  }\n  40%, 100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n}\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n.fa-rotate-90 {\n  -webkit-transform: rotate(90deg);\n          transform: rotate(90deg);\n}\n\n.fa-rotate-180 {\n  -webkit-transform: rotate(180deg);\n          transform: rotate(180deg);\n}\n\n.fa-rotate-270 {\n  -webkit-transform: rotate(270deg);\n          transform: rotate(270deg);\n}\n\n.fa-flip-horizontal {\n  -webkit-transform: scale(-1, 1);\n          transform: scale(-1, 1);\n}\n\n.fa-flip-vertical {\n  -webkit-transform: scale(1, -1);\n          transform: scale(1, -1);\n}\n\n.fa-flip-both,\n.fa-flip-horizontal.fa-flip-vertical {\n  -webkit-transform: scale(-1, -1);\n          transform: scale(-1, -1);\n}\n\n.fa-rotate-by {\n  -webkit-transform: rotate(var(--fa-rotate-angle, none));\n          transform: rotate(var(--fa-rotate-angle, none));\n}\n\n.fa-stack {\n  display: inline-block;\n  vertical-align: middle;\n  height: 2em;\n  position: relative;\n  width: 2.5em;\n}\n\n.fa-stack-1x,\n.fa-stack-2x {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n  z-index: var(--fa-stack-z-index, auto);\n}\n\n.svg-inline--fa.fa-stack-1x {\n  height: 1em;\n  width: 1.25em;\n}\n.svg-inline--fa.fa-stack-2x {\n  height: 2em;\n  width: 2.5em;\n}\n\n.fa-inverse {\n  color: var(--fa-inverse, #fff);\n}\n\n.sr-only,\n.fa-sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n\n.sr-only-focusable:not(:focus),\n.fa-sr-only-focusable:not(:focus) {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n\n.svg-inline--fa .fa-primary {\n  fill: var(--fa-primary-color, currentColor);\n  opacity: var(--fa-primary-opacity, 1);\n}\n\n.svg-inline--fa .fa-secondary {\n  fill: var(--fa-secondary-color, currentColor);\n  opacity: var(--fa-secondary-opacity, 0.4);\n}\n\n.svg-inline--fa.fa-swap-opacity .fa-primary {\n  opacity: var(--fa-secondary-opacity, 0.4);\n}\n\n.svg-inline--fa.fa-swap-opacity .fa-secondary {\n  opacity: var(--fa-primary-opacity, 1);\n}\n\n.svg-inline--fa mask .fa-primary,\n.svg-inline--fa mask .fa-secondary {\n  fill: black;\n}\n\n.fad.fa-inverse,\n.fa-duotone.fa-inverse {\n  color: var(--fa-inverse, #fff);\n}";
 
 function fontawesome_svg_core_css() {
   var dcp = DEFAULT_CSS_PREFIX;
@@ -9675,22 +10856,22 @@ function findIcon(iconName, prefix) {
 
 var noop$1 = function noop() {};
 
-var fontawesome_svg_core_p = config.measurePerformance && PERFORMANCE && PERFORMANCE.mark && PERFORMANCE.measure ? PERFORMANCE : {
+var p = config.measurePerformance && PERFORMANCE && PERFORMANCE.mark && PERFORMANCE.measure ? PERFORMANCE : {
   mark: noop$1,
   measure: noop$1
 };
-var preamble = "FA \"6.3.0\"";
+var preamble = "FA \"6.5.1\"";
 
 var begin = function begin(name) {
-  fontawesome_svg_core_p.mark("".concat(preamble, " ").concat(name, " begins"));
+  p.mark("".concat(preamble, " ").concat(name, " begins"));
   return function () {
     return end(name);
   };
 };
 
 var end = function end(name) {
-  fontawesome_svg_core_p.mark("".concat(preamble, " ").concat(name, " ends"));
-  fontawesome_svg_core_p.measure("".concat(preamble, " ").concat(name), "".concat(preamble, " ").concat(name, " begins"), "".concat(preamble, " ").concat(name, " ends"));
+  p.mark("".concat(preamble, " ").concat(name, " ends"));
+  p.measure("".concat(preamble, " ").concat(name), "".concat(preamble, " ").concat(name, " begins"), "".concat(preamble, " ").concat(name, " ends"));
 };
 
 var perf = {
@@ -9728,14 +10909,14 @@ function createElementNS(tag) {
   return fontawesome_svg_core_DOCUMENT.createElementNS('http://www.w3.org/2000/svg', tag);
 }
 
-function fontawesome_svg_core_createElement(tag) {
+function createElement(tag) {
   return fontawesome_svg_core_DOCUMENT.createElement(tag);
 }
 
 function convertSVG(abstractObj) {
   var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
   var _params$ceFn = params.ceFn,
-      ceFn = _params$ceFn === void 0 ? abstractObj.tag === 'svg' ? createElementNS : fontawesome_svg_core_createElement : _params$ceFn;
+      ceFn = _params$ceFn === void 0 ? abstractObj.tag === 'svg' ? createElementNS : createElement : _params$ceFn;
 
   if (typeof abstractObj === 'string') {
     return fontawesome_svg_core_DOCUMENT.createTextNode(abstractObj);
@@ -10556,7 +11737,7 @@ function replaceForPosition(node, position) {
             watchable: true
           }));
 
-          var element = fontawesome_svg_core_DOCUMENT.createElement('svg');
+          var element = fontawesome_svg_core_DOCUMENT.createElementNS('http://www.w3.org/2000/svg', 'svg');
 
           if (position === '::before') {
             node.insertBefore(element, node.firstChild);
@@ -11037,10 +12218,10 @@ var counter = fontawesome_svg_core_api.counter;
 
 
 
-// EXTERNAL MODULE: ./node_modules/prop-types/index.js
-var prop_types = __webpack_require__(697);
+// EXTERNAL MODULE: ./node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types/index.js
+var prop_types = __webpack_require__(507);
 var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
-;// CONCATENATED MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@fortawesome+react-fontawesome@0.2.0_@fortawesome+fontawesome-svg-core@6.5.1_react@18.2.0/node_modules/@fortawesome/react-fontawesome/index.es.js
 
 
 
@@ -11470,7 +12651,7 @@ var convertCurry = convert.bind(null, react.createElement);
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.mjs
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@fortawesome+free-solid-svg-icons@6.5.1/node_modules/@fortawesome/free-solid-svg-icons/index.mjs
 var free_solid_svg_icons_prefix = "fas";
 var fa0 = {
   prefix: 'fas',
@@ -11480,7 +12661,7 @@ var fa0 = {
 var fa1 = {
   prefix: 'fas',
   iconName: '1',
-  icon: [256, 512, [], "31", "M160 64c0-11.8-6.5-22.6-16.9-28.2s-23-5-32.9 1.6l-96 64C-.5 111.2-4.4 131 5.4 145.8s29.7 18.7 44.4 8.9L96 123.8V416H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H160V64z"]
+  icon: [256, 512, [], "31", "M160 64c0-11.8-6.5-22.6-16.9-28.2s-23-5-32.8 1.6l-96 64C-.5 111.2-4.4 131 5.4 145.8s29.7 18.7 44.4 8.9L96 123.8V416H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H160V64z"]
 };
 var fa2 = {
   prefix: 'fas',
@@ -11563,7 +12744,7 @@ var faUserTimes = faUserXmark;
 var faStethoscope = {
   prefix: 'fas',
   iconName: 'stethoscope',
-  icon: [576, 512, [129658], "f0f1", "M126.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L80 71.1V192c0 53 43 96 96 96s96-43 96-96V71.1l-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C318.4 19.1 336 43.5 336 71.1V192c0 77.2-54.6 141.6-127.3 156.7C215 404.6 262.4 448 320 448c61.9 0 112-50.1 112-112V265.3c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V336c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C71.2 334.2 16 269.6 16 192V71.1c0-27.5 17.6-52 43.8-60.7L85.9 1.6c16.8-5.6 34.9 3.5 40.5 20.2zM464 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"]
+  icon: [576, 512, [129658], "f0f1", "M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1V192c0 53 43 96 96 96s96-43 96-96V71.1l-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1V192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112V265.3c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V336c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192V71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"]
 };
 var faMessage = {
   prefix: 'fas',
@@ -11612,7 +12793,7 @@ var faBuildingUn = {
 var faDiceThree = {
   prefix: 'fas',
   iconName: 'dice-three',
-  icon: [448, 512, [9858], "f527", "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm64 160c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32zm128 64c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32zm64 128c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"]
+  icon: [448, 512, [9858], "f527", "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm64 96a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm128 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
 };
 var faCalendarDays = {
   prefix: 'fas',
@@ -11650,7 +12831,7 @@ var faSortDesc = faSortDown;
 var faCircleMinus = {
   prefix: 'fas',
   iconName: 'circle-minus',
-  icon: [512, 512, ["minus-circle"], "f056", "M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"]
+  icon: [512, 512, ["minus-circle"], "f056", "M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z"]
 };
 var faMinusCircle = faCircleMinus;
 var faDoorOpen = {
@@ -11667,7 +12848,7 @@ var faSignOutAlt = faRightFromBracket;
 var faAtom = {
   prefix: 'fas',
   iconName: 'atom',
-  icon: [448, 512, [9883], "f5d2", "M224 398.8c-11.8 5.1-23.4 9.7-34.9 13.5c16.7 33.8 31 35.7 34.9 35.7s18.1-1.9 34.9-35.7c-11.4-3.9-23.1-8.4-34.9-13.5zM414 256c33 45.2 44.3 90.9 23.6 128c-20.2 36.3-62.5 49.3-115.2 43.2c-22 52.1-55.7 84.8-98.4 84.8s-76.4-32.7-98.4-84.8c-52.7 6.1-95-6.8-115.2-43.2C-10.3 346.9 1 301.2 34 256C1 210.8-10.3 165.1 10.4 128C30.6 91.7 72.9 78.7 125.6 84.8C147.6 32.7 181.2 0 224 0s76.4 32.7 98.4 84.8c52.7-6.1 95 6.8 115.2 43.2c20.7 37.1 9.4 82.8-23.6 128zm-65.8 67.4c-1.7 14.2-3.9 28-6.7 41.2c31.8 1.4 38.6-8.7 40.2-11.7c2.3-4.2 7-17.9-11.9-48.1c-6.8 6.3-14 12.5-21.6 18.6zm-6.7-175.9c2.8 13.1 5 26.9 6.7 41.2c7.6 6.1 14.8 12.3 21.6 18.6c18.9-30.2 14.2-44 11.9-48.1c-1.6-2.9-8.4-13-40.2-11.7zM258.9 99.7C242.1 65.9 227.9 64 224 64s-18.1 1.9-34.9 35.7c11.4 3.9 23.1 8.4 34.9 13.5c11.8-5.1 23.4-9.7 34.9-13.5zm-159 88.9c1.7-14.3 3.9-28 6.7-41.2c-31.8-1.4-38.6 8.7-40.2 11.7c-2.3 4.2-7 17.9 11.9 48.1c6.8-6.3 14-12.5 21.6-18.6zM78.2 304.8C59.4 335 64 348.7 66.3 352.9c1.6 2.9 8.4 13 40.2 11.7c-2.8-13.1-5-26.9-6.7-41.2c-7.6-6.1-14.8-12.3-21.6-18.6zM304 256a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zm-80-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
+  icon: [512, 512, [9883], "f5d2", "M256 398.8c-11.8 5.1-23.4 9.7-34.9 13.5c16.7 33.8 31 35.7 34.9 35.7s18.1-1.9 34.9-35.7c-11.4-3.9-23.1-8.4-34.9-13.5zM446 256c33 45.2 44.3 90.9 23.6 128c-20.2 36.3-62.5 49.3-115.2 43.2c-22 52.1-55.6 84.8-98.4 84.8s-76.4-32.7-98.4-84.8c-52.7 6.1-95-6.8-115.2-43.2C21.7 346.9 33 301.2 66 256c-33-45.2-44.3-90.9-23.6-128c20.2-36.3 62.5-49.3 115.2-43.2C179.6 32.7 213.2 0 256 0s76.4 32.7 98.4 84.8c52.7-6.1 95 6.8 115.2 43.2c20.7 37.1 9.4 82.8-23.6 128zm-65.8 67.4c-1.7 14.2-3.9 28-6.7 41.2c31.8 1.4 38.6-8.7 40.2-11.7c2.3-4.2 7-17.9-11.9-48.1c-6.8 6.3-14 12.5-21.6 18.6zm-6.7-175.9c2.8 13.1 5 26.9 6.7 41.2c7.6 6.1 14.8 12.3 21.6 18.6c18.9-30.2 14.2-44 11.9-48.1c-1.6-2.9-8.4-13-40.2-11.7zM290.9 99.7C274.1 65.9 259.9 64 256 64s-18.1 1.9-34.9 35.7c11.4 3.9 23.1 8.4 34.9 13.5c11.8-5.1 23.4-9.7 34.9-13.5zm-159 88.9c1.7-14.3 3.9-28 6.7-41.2c-31.8-1.4-38.6 8.7-40.2 11.7c-2.3 4.2-7 17.9 11.9 48.1c6.8-6.3 14-12.5 21.6-18.6zM110.2 304.8C91.4 335 96 348.7 98.3 352.9c1.6 2.9 8.4 13 40.2 11.7c-2.8-13.1-5-26.9-6.7-41.2c-7.6-6.1-14.8-12.3-21.6-18.6zM336 256a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zm-80-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
 };
 var faSoap = {
   prefix: 'fas',
@@ -11683,7 +12864,7 @@ var faHeartMusicCameraBolt = faIcons;
 var faMicrophoneLinesSlash = {
   prefix: 'fas',
   iconName: 'microphone-lines-slash',
-  icon: [640, 512, ["microphone-alt-slash"], "f539", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L472.1 344.7c15.2-26 23.9-56.3 23.9-88.7V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v24 16c0 21.2-5.1 41.1-14.2 58.7L416 300.8V256H358.9l-34.5-27c2.9-3.1 7-5 11.6-5h80V192H336c-8.8 0-16-7.2-16-16s7.2-16 16-16h80V128H336c-8.8 0-16-7.2-16-16s7.2-16 16-16h80c0-53-43-96-96-96s-96 43-96 96v54.3L38.8 5.1zm362.5 407l-43.1-33.9C346.1 382 333.3 384 320 384c-70.7 0-128-57.3-128-128v-8.7L144.7 210c-.5 1.9-.7 3.9-.7 6v40c0 89.1 66.2 162.7 152 174.4V464H248c-13.3 0-24 10.7-24 24s10.7 24 24 24h72 72c13.3 0 24-10.7 24-24s-10.7-24-24-24H344V430.4c20.4-2.8 39.7-9.1 57.3-18.2z"]
+  icon: [640, 512, ["microphone-alt-slash"], "f539", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L472.1 344.7c15.2-26 23.9-56.3 23.9-88.7V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v24 16c0 21.2-5.1 41.1-14.2 58.7L416 300.8V256H358.9l-34.5-27c2.9-3.1 7-5 11.6-5h80V192H336c-8.8 0-16-7.2-16-16s7.2-16 16-16h80V128H336c-8.8 0-16-7.2-16-16s7.2-16 16-16h80c0-53-43-96-96-96s-96 43-96 96v54.3L38.8 5.1zM358.2 378.2C346.1 382 333.3 384 320 384c-70.7 0-128-57.3-128-128v-8.7L144.7 210c-.5 1.9-.7 3.9-.7 6v40c0 89.1 66.2 162.7 152 174.4V464H248c-13.3 0-24 10.7-24 24s10.7 24 24 24h72 72c13.3 0 24-10.7 24-24s-10.7-24-24-24H344V430.4c20.4-2.8 39.7-9.1 57.3-18.2l-43.1-33.9z"]
 };
 var faMicrophoneAltSlash = faMicrophoneLinesSlash;
 var faBridgeCircleCheck = {
@@ -11694,17 +12875,17 @@ var faBridgeCircleCheck = {
 var faPumpMedical = {
   prefix: 'fas',
   iconName: 'pump-medical',
-  icon: [384, 512, [], "e06a", "M96 32v96H224V96h60.1c4.2 0 8.3 1.7 11.3 4.7l33.9 33.9c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L340.7 55.4c-15-15-35.4-23.4-56.6-23.4H224c0-17.7-14.3-32-32-32H128C110.3 0 96 14.3 96 32zM85.4 160c-33.3 0-61 25.5-63.8 58.7L3 442.7C-.1 480 29.3 512 66.8 512H253.2c37.4 0 66.9-32 63.8-69.3l-18.7-224c-2.8-33.2-30.5-58.7-63.8-58.7H85.4zM184 280v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H184v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V360H104c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V280c0-13.3 10.7-24 24-24s24 10.7 24 24z"]
+  icon: [448, 512, [], "e06a", "M128 32v96H256V96h60.1c4.2 0 8.3 1.7 11.3 4.7l33.9 33.9c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L372.7 55.4c-15-15-35.4-23.4-56.6-23.4H256c0-17.7-14.3-32-32-32H160c-17.7 0-32 14.3-32 32zM117.4 160c-33.3 0-61 25.5-63.8 58.7L35 442.7C31.9 480 61.3 512 98.8 512H285.2c37.4 0 66.9-32 63.8-69.3l-18.7-224c-2.8-33.2-30.5-58.7-63.8-58.7H117.4zM216 280v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V360H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V280c0-13.3 10.7-24 24-24s24 10.7 24 24z"]
 };
 var faFingerprint = {
   prefix: 'fas',
   iconName: 'fingerprint',
-  icon: [576, 512, [], "f577", "M454.4 93c7.3 8.8 6.1 21.6-2 29.7c-10.6 10.6-28.2 8.6-38-2.7C376.2 75.9 319.9 48 257 48C142.1 48 49 141.1 49 256v24.9c0 6.1-.2 12.2-.6 18.3C47.7 311.2 37.6 320 25.6 320C11.1 320 .1 307 .7 292.5c.2-3.9 .3-7.7 .3-11.6V256C1 114.6 115.6 0 257 0c79.4 0 150.4 36.2 197.4 93zm19.3 89.6c13.1-6.5 29-.2 32.4 14.1c4.5 19.1 6.9 39 6.9 59.4v24.9c0 5.4-.1 10.9-.2 16.3C512.6 310 502 320 489.2 320c-13.7 0-24.6-11.5-24.4-25.3c.1-4.6 .1-9.2 .1-13.8V256c0-15.1-1.6-29.8-4.6-43.9c-2.5-11.8 2.5-24.2 13.3-29.6zM257 80c97.2 0 176 78.8 176 176v24.9c0 27.7-1.7 55.3-5 82.7c-1.4 11.7-11.5 20.3-23.3 20.3c-14.7 0-25.9-13.2-24.2-27.8c3-24.9 4.4-50.1 4.4-75.3V256c0-70.7-57.3-128-128-128c-11.6 0-22.8 1.5-33.4 4.4c-10.6 2.9-22.3 .4-29.4-7.9c-10.4-12.1-6.9-30.9 8.3-35.9C219.6 83 238 80 257 80zM151.7 148.7c8.2 9.6 7.5 23.8 .2 34.2C137.5 203.6 129 228.8 129 256v24.9c0 28.9-3.3 57.7-9.7 85.8C116.9 377 107.6 384 97.1 384c-15.9 0-27.3-15.6-23.9-31.1c5.2-23.6 7.8-47.7 7.8-71.9V256c0-40.6 13.7-78 36.8-107.7c8.5-11 24.8-10.2 33.9 .4zM257 160c53 0 96 43 96 96v24.9c0 39.7-3.9 79.3-11.6 118.1c-2 10-10.8 17-21 17c-14.2 0-24.5-13.3-21.8-27.2c6.9-35.5 10.4-71.6 10.4-107.9V256c0-28.7-23.3-52-52-52s-52 23.3-52 52v24.9c0 40.5-5.3 80.7-15.9 119.7c-2.5 9.2-10.9 15.4-20.4 15.4c-14.8 0-25.3-14.6-21.5-29c9.1-34.6 13.8-70.2 13.8-106.1V256c0-53 43-96 96-96zm24 96v24.9c0 65.8-12.1 131-35.7 192.4l-5.9 15.3c-4.8 12.4-18.6 18.5-31 13.8s-18.5-18.6-13.8-31l5.9-15.3C222 400.2 233 340.8 233 280.9V256c0-13.3 10.7-24 24-24s24 10.7 24 24z"]
+  icon: [512, 512, [], "f577", "M48 256C48 141.1 141.1 48 256 48c63.1 0 119.6 28.1 157.8 72.5c8.6 10.1 23.8 11.2 33.8 2.6s11.2-23.8 2.6-33.8C403.3 34.6 333.7 0 256 0C114.6 0 0 114.6 0 256v40c0 13.3 10.7 24 24 24s24-10.7 24-24V256zm458.5-52.9c-2.7-13-15.5-21.3-28.4-18.5s-21.3 15.5-18.5 28.4c2.9 13.9 4.5 28.3 4.5 43.1v40c0 13.3 10.7 24 24 24s24-10.7 24-24V256c0-18.1-1.9-35.8-5.5-52.9zM256 80c-19 0-37.4 3-54.5 8.6c-15.2 5-18.7 23.7-8.3 35.9c7.1 8.3 18.8 10.8 29.4 7.9c10.6-2.9 21.8-4.4 33.4-4.4c70.7 0 128 57.3 128 128v24.9c0 25.2-1.5 50.3-4.4 75.3c-1.7 14.6 9.4 27.8 24.2 27.8c11.8 0 21.9-8.6 23.3-20.3c3.3-27.4 5-55 5-82.7V256c0-97.2-78.8-176-176-176zM150.7 148.7c-9.1-10.6-25.3-11.4-33.9-.4C93.7 178 80 215.4 80 256v24.9c0 24.2-2.6 48.4-7.8 71.9C68.8 368.4 80.1 384 96.1 384c10.5 0 19.9-7 22.2-17.3c6.4-28.1 9.7-56.8 9.7-85.8V256c0-27.2 8.5-52.4 22.9-73.1c7.2-10.4 8-24.6-.2-34.2zM256 160c-53 0-96 43-96 96v24.9c0 35.9-4.6 71.5-13.8 106.1c-3.8 14.3 6.7 29 21.5 29c9.5 0 17.9-6.2 20.4-15.4c10.5-39 15.9-79.2 15.9-119.7V256c0-28.7 23.3-52 52-52s52 23.3 52 52v24.9c0 36.3-3.5 72.4-10.4 107.9c-2.7 13.9 7.7 27.2 21.8 27.2c10.2 0 19-7 21-17c7.7-38.8 11.6-78.3 11.6-118.1V256c0-53-43-96-96-96zm24 96c0-13.3-10.7-24-24-24s-24 10.7-24 24v24.9c0 59.9-11 119.3-32.5 175.2l-5.9 15.3c-4.8 12.4 1.4 26.3 13.8 31s26.3-1.4 31-13.8l5.9-15.3C267.9 411.9 280 346.7 280 280.9V256z"]
 };
 var faHandPointRight = {
   prefix: 'fas',
   iconName: 'hand-point-right',
-  icon: [512, 512, [], "f0a4", "M480 96c17.7 0 32 14.3 32 32s-14.3 32-32 32l-208 0 0-64 208 0zM320 288c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32h64zm64-64c0 17.7-14.3 32-32 32H304c-17.7 0-32-14.3-32-32s14.3-32 32-32h48c17.7 0 32 14.3 32 32zM288 384c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32s14.3-32 32-32h64zm-88-96l.6 0c-5.4 9.4-8.6 20.3-8.6 32c0 13.2 4 25.4 10.8 35.6C177.9 364.3 160 388.1 160 416c0 11.7 3.1 22.6 8.6 32H160C71.6 448 0 376.4 0 288l0-61.7c0-42.4 16.9-83.1 46.9-113.1l11.6-11.6C82.5 77.5 115.1 64 149 64l27 0c35.3 0 64 28.7 64 64v88c0 22.1-17.9 40-40 40s-40-17.9-40-40V160c0-8.8-7.2-16-16-16s-16 7.2-16 16v56c0 39.8 32.2 72 72 72z"]
+  icon: [512, 512, [], "f0a4", "M480 96c17.7 0 32 14.3 32 32s-14.3 32-32 32l-208 0 0-64 208 0zM320 288c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0zm64-64c0 17.7-14.3 32-32 32l-48 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l48 0c17.7 0 32 14.3 32 32zM288 384c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0zm-88-96l.6 0c-5.4 9.4-8.6 20.3-8.6 32c0 13.2 4 25.4 10.8 35.6C177.9 364.3 160 388.1 160 416c0 11.7 3.1 22.6 8.6 32l-8.6 0C71.6 448 0 376.4 0 288l0-61.7c0-42.4 16.9-83.1 46.9-113.1l11.6-11.6C82.5 77.5 115.1 64 149 64l27 0c35.3 0 64 28.7 64 64l0 88c0 22.1-17.9 40-40 40s-40-17.9-40-40l0-56c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 56c0 39.8 32.2 72 72 72z"]
 };
 var faMagnifyingGlassLocation = {
   prefix: 'fas',
@@ -11727,7 +12908,7 @@ var faSmileBeam = faFaceSmileBeam;
 var faFlagCheckered = {
   prefix: 'fas',
   iconName: 'flag-checkered',
-  icon: [448, 512, [127937], "f11e", "M32 0C49.7 0 64 14.3 64 32V48l69-17.2c38.1-9.5 78.3-5.1 113.5 12.5c46.3 23.2 100.8 23.2 147.1 0l9.6-4.8C423.8 28.1 448 43.1 448 66.1V345.8c0 13.3-8.3 25.3-20.8 30l-34.7 13c-46.2 17.3-97.6 14.6-141.7-7.4c-37.9-19-81.4-23.7-122.5-13.4L64 384v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V400 334 64 32C0 14.3 14.3 0 32 0zM64 187.1l64-13.9v65.5L64 252.6V318l48.8-12.2c5.1-1.3 10.1-2.4 15.2-3.3V238.7l38.9-8.4c8.3-1.8 16.7-2.5 25.1-2.1l0-64c13.6 .4 27.2 2.6 40.4 6.4l23.6 6.9v66.7l-41.7-12.3c-7.3-2.1-14.8-3.4-22.3-3.8v71.4c21.8 1.9 43.3 6.7 64 14.4V244.2l22.7 6.7c13.5 4 27.3 6.4 41.3 7.4V194c-7.8-.8-15.6-2.3-23.2-4.5l-40.8-12v-62c-13-3.8-25.8-8.8-38.2-15c-8.2-4.1-16.9-7-25.8-8.8v72.4c-13-.4-26 .8-38.7 3.6L128 173.2V98L64 114v73.1zM320 335.7c16.8 1.5 33.9-.7 50-6.8l14-5.2V251.9l-7.9 1.8c-18.4 4.3-37.3 5.7-56.1 4.5v77.4zm64-149.4V115.4c-20.9 6.1-42.4 9.1-64 9.1V194c13.9 1.4 28 .5 41.7-2.6l22.3-5.2z"]
+  icon: [448, 512, [127937], "f11e", "M32 0C49.7 0 64 14.3 64 32V48l69-17.2c38.1-9.5 78.3-5.1 113.5 12.5c46.3 23.2 100.8 23.2 147.1 0l9.6-4.8C423.8 28.1 448 43.1 448 66.1V345.8c0 13.3-8.3 25.3-20.8 30l-34.7 13c-46.2 17.3-97.6 14.6-141.7-7.4c-37.9-19-81.3-23.7-122.5-13.4L64 384v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V400 334 64 32C0 14.3 14.3 0 32 0zM64 187.1l64-13.9v65.5L64 252.6V318l48.8-12.2c5.1-1.3 10.1-2.4 15.2-3.3V238.7l38.9-8.4c8.3-1.8 16.7-2.5 25.1-2.1l0-64c13.6 .4 27.2 2.6 40.4 6.4l23.6 6.9v66.7l-41.7-12.3c-7.3-2.1-14.8-3.4-22.3-3.8v71.4c21.8 1.9 43.3 6.7 64 14.4V244.2l22.7 6.7c13.5 4 27.3 6.4 41.3 7.4V194c-7.8-.8-15.6-2.3-23.2-4.5l-40.8-12v-62c-13-3.8-25.8-8.8-38.2-15c-8.2-4.1-16.9-7-25.8-8.8v72.4c-13-.4-26 .8-38.7 3.6L128 173.2V98L64 114v73.1zM320 335.7c16.8 1.5 33.9-.7 50-6.8l14-5.2V251.9l-7.9 1.8c-18.4 4.3-37.3 5.7-56.1 4.5v77.4zm64-149.4V115.4c-20.9 6.1-42.4 9.1-64 9.1V194c13.9 1.4 28 .5 41.7-2.6l22.3-5.2z"]
 };
 var faFootball = {
   prefix: 'fas',
@@ -11748,7 +12929,7 @@ var faCrop = {
 var faAnglesDown = {
   prefix: 'fas',
   iconName: 'angles-down',
-  icon: [384, 512, ["angle-double-down"], "f103", "M214.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 402.7 329.4 265.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 210.7 329.4 73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z"]
+  icon: [448, 512, ["angle-double-down"], "f103", "M246.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 402.7 361.4 265.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 210.7 361.4 73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z"]
 };
 var faAngleDoubleDown = faAnglesDown;
 var faUsersRectangle = {
@@ -11780,7 +12961,7 @@ var faDiagramPredecessor = {
 var faArrowUpLong = {
   prefix: 'fas',
   iconName: 'arrow-up-long',
-  icon: [320, 512, ["long-arrow-up"], "f176", "M182.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L128 109.3V480c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128z"]
+  icon: [384, 512, ["long-arrow-up"], "f176", "M214.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3V480c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128z"]
 };
 var faLongArrowUp = faArrowUpLong;
 var faFireFlameSimple = {
@@ -11803,7 +12984,7 @@ var faLaptop = {
 var faFileCsv = {
   prefix: 'fas',
   iconName: 'file-csv',
-  icon: [384, 512, [], "f6dd", "M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM80 224H96c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8H80c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8H96c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40H80c-22.1 0-40-17.9-40-40V264c0-22.1 17.9-40 40-40zm72 46.4c0-25.6 20.8-46.4 46.4-46.4H216c8.8 0 16 7.2 16 16s-7.2 16-16 16H198.4c-7.9 0-14.4 6.4-14.4 14.4c0 5.2 2.8 9.9 7.2 12.5l25.4 14.5c14.4 8.3 23.4 23.6 23.4 40.3c0 25.6-20.8 46.4-46.4 46.4H168c-8.8 0-16-7.2-16-16s7.2-16 16-16h25.6c7.9 0 14.4-6.4 14.4-14.4c0-5.2-2.8-9.9-7.2-12.5l-25.4-14.5C160.9 302.4 152 287 152 270.4zM280 240v31.6c0 23 5.5 45.6 16 66c10.5-20.3 16-42.9 16-66V240c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V240c0-8.8 7.2-16 16-16s16 7.2 16 16z"]
+  icon: [512, 512, [], "f6dd", "M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H176c-35.3 0-64 28.7-64 64V512H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8H200c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40H200c-22.1 0-40-17.9-40-40V392c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H333.1c-7.2 0-13.1 5.9-13.1 13.1c0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2c0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1c0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2c0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66c10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"]
 };
 var faMenorah = {
   prefix: 'fas',
@@ -11856,7 +13037,7 @@ var faJarWheat = {
 var faEnvelopesBulk = {
   prefix: 'fas',
   iconName: 'envelopes-bulk',
-  icon: [576, 512, ["mail-bulk"], "f674", "M96 0C78.3 0 64 14.3 64 32V224h96V192c0-35.3 28.7-64 64-64H448V32c0-17.7-14.3-32-32-32H96zM224 160c-17.7 0-32 14.3-32 32v32h96c35.3 0 64 28.7 64 64V416H544c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32H224zm240 64h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H464c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zM32 256c-17.7 0-32 14.3-32 32v13L155.1 415.9c1.4 1 3.1 1.6 4.9 1.6s3.5-.6 4.9-1.6L320 301V288c0-17.7-14.3-32-32-32H32zm288 84.8L184 441.6c-6.9 5.1-15.3 7.9-24 7.9s-17-2.8-24-7.9L0 340.8V480c0 17.7 14.3 32 32 32H288c17.7 0 32-14.3 32-32V340.8z"]
+  icon: [640, 512, ["mail-bulk"], "f674", "M128 0C110.3 0 96 14.3 96 32V224h96V192c0-35.3 28.7-64 64-64H480V32c0-17.7-14.3-32-32-32H128zM256 160c-17.7 0-32 14.3-32 32v32h96c35.3 0 64 28.7 64 64V416H576c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32H256zm240 64h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H496c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zM64 256c-17.7 0-32 14.3-32 32v13L187.1 415.9c1.4 1 3.1 1.6 4.9 1.6s3.5-.6 4.9-1.6L352 301V288c0-17.7-14.3-32-32-32H64zm288 84.8L216 441.6c-6.9 5.1-15.3 7.9-24 7.9s-17-2.8-24-7.9L32 340.8V480c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V340.8z"]
 };
 var faMailBulk = faEnvelopesBulk;
 var faFileCircleExclamation = {
@@ -11920,13 +13101,13 @@ var faComments = {
 var faPaste = {
   prefix: 'fas',
   iconName: 'paste',
-  icon: [512, 512, ["file-clipboard"], "f0ea", "M160 0c-23.7 0-44.4 12.9-55.4 32H48C21.5 32 0 53.5 0 80V400c0 26.5 21.5 48 48 48H192V176c0-44.2 35.8-80 80-80h48V80c0-26.5-21.5-48-48-48H215.4C204.4 12.9 183.7 0 160 0zM272 128c-26.5 0-48 21.5-48 48V448v16c0 26.5 21.5 48 48 48H464c26.5 0 48-21.5 48-48V256H416c-17.7 0-32-14.3-32-32V128H320 272zM160 40a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm256 88v96h96l-96-96z"]
+  icon: [512, 512, ["file-clipboard"], "f0ea", "M160 0c-23.7 0-44.4 12.9-55.4 32H48C21.5 32 0 53.5 0 80V400c0 26.5 21.5 48 48 48H192V176c0-44.2 35.8-80 80-80h48V80c0-26.5-21.5-48-48-48H215.4C204.4 12.9 183.7 0 160 0zM272 128c-26.5 0-48 21.5-48 48V448v16c0 26.5 21.5 48 48 48H464c26.5 0 48-21.5 48-48V243.9c0-12.7-5.1-24.9-14.1-33.9l-67.9-67.9c-9-9-21.2-14.1-33.9-14.1H320 272zM160 40a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"]
 };
 var faFileClipboard = faPaste;
 var faCodePullRequest = {
   prefix: 'fas',
   iconName: 'code-pull-request',
-  icon: [512, 512, [], "e13c", "M305.8 2.1C314.4 5.9 320 14.5 320 24V64h16c70.7 0 128 57.3 128 128V358.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V192c0-35.3-28.7-64-64-64H320v40c0 9.5-5.6 18.1-14.2 21.9s-18.8 2.3-25.8-4.1l-80-72c-5.1-4.6-7.9-11-7.9-17.8s2.9-13.3 7.9-17.8l80-72c7-6.3 17.2-7.9 25.8-4.1zM104 80c0-13.3-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24s24-10.7 24-24zm8 73.3V358.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80c0 32.8-19.7 61-48 73.3zM104 432c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24zm328 24c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24z"]
+  icon: [512, 512, [], "e13c", "M305.8 2.1C314.4 5.9 320 14.5 320 24V64h16c70.7 0 128 57.3 128 128V358.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V192c0-35.3-28.7-64-64-64H320v40c0 9.5-5.6 18.1-14.2 21.9s-18.8 2.3-25.8-4.1l-80-72c-5.1-4.6-7.9-11-7.9-17.8s2.9-13.3 7.9-17.8l80-72c7-6.3 17.2-7.9 25.8-4.1zM104 80A24 24 0 1 0 56 80a24 24 0 1 0 48 0zm8 73.3V358.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80c0 32.8-19.7 61-48 73.3zM104 432a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zm328 24a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"]
 };
 var faClipboardList = {
   prefix: 'fas',
@@ -11996,12 +13177,12 @@ var faArchive = faBoxArchive;
 var faPersonDrowning = {
   prefix: 'fas',
   iconName: 'person-drowning',
-  icon: [576, 512, [], "e545", "M192 64c0-17.7-14.3-32-32-32s-32 14.3-32 32V96.2c0 54.1 23.5 104 62.2 138.3l-21 146.7c7.8 2.1 15.5 3.3 22.8 3.3c21.1 0 42-8.5 59.2-20.3c22.1-15.5 51.6-15.5 73.7 0c12.4 8.5 26.1 14.8 39.7 18l17.7-97.6c10.7-1.2 21.3-3.1 31.9-5.5l105-23.9c17.2-3.9 28-21.1 24.1-38.3s-21.1-28-38.3-24.1L400 216.6c-41 9.3-83.7 7.5-123.7-5.2c-50.2-16-84.3-62.6-84.3-115.3V64zM320 192a64 64 0 1 0 0-128 64 64 0 1 0 0 128zM306.5 389.9c-11.1-7.9-25.9-7.9-37 0C247 405.4 219.5 416 192 416c-26.9 0-55.3-10.8-77.4-26.1l0 0c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25C126.5 469.7 159 480 192 480c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.6 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.4-27.3-10.1-39.2-1.7l0 0C439.4 405.2 410.9 416 384 416c-27.5 0-55-10.6-77.5-26.1z"]
+  icon: [576, 512, [], "e545", "M192 64c0-17.7-14.3-32-32-32s-32 14.3-32 32V96.2c0 54.1 23.5 104 62.2 138.3l-21 146.7c7.8 2.1 15.5 3.3 22.8 3.3c21.1 0 42-8.5 59.2-20.3c22.1-15.5 51.6-15.5 73.7 0c12.4 8.5 26.1 14.8 39.7 18l17.7-97.6c10.7-1.2 21.3-3.1 31.9-5.5l105-23.9c17.2-3.9 28-21.1 24.1-38.3s-21.1-28-38.3-24.1L400 216.6c-41 9.3-83.7 7.5-123.7-5.2c-50.2-16-84.3-62.6-84.3-115.3V64zM320 192a64 64 0 1 0 0-128 64 64 0 1 0 0 128zM306.5 389.9c-11.1-7.9-25.9-7.9-37 0C247 405.4 219.5 416 192 416c-26.9 0-55.3-10.8-77.4-26.1l0 0c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25C126.5 469.7 159 480 192 480c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.5 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.4-27.3-10.1-39.2-1.7l0 0C439.4 405.2 410.9 416 384 416c-27.5 0-55-10.6-77.5-26.1z"]
 };
 var faArrowDown91 = {
   prefix: 'fas',
   iconName: 'arrow-down-9-1',
-  icon: [512, 512, ["sort-numeric-desc", "sort-numeric-down-alt"], "f886", "M120 480c9 0 17.5-3.8 23.6-10.4l88-96c11.9-13 11.1-33.3-2-45.2s-33.3-11.1-45.2 2L152 365.7V64c0-17.7-14.3-32-32-32s-32 14.3-32 32V365.7L55.6 330.4c-11.9-13-32.2-13.9-45.2-2s-13.9 32.2-2 45.2l88 96C102.5 476.2 111 480 120 480zM410.7 294c-8.3-6-19.1-7.7-28.8-4.4l-48 16c-16.8 5.6-25.8 23.7-20.2 40.5s23.7 25.8 40.5 20.2l5.9-2V416H344c-17.7 0-32 14.3-32 32s14.3 32 32 32h48 48c17.7 0 32-14.3 32-32s-14.3-32-32-32H424V320c0-10.3-4.9-19.9-13.3-26zM378.3 91a32 32 0 1 1 27.4 57.9A32 32 0 1 1 378.3 91zM365.1 203.8l-6.8 9.2c-10.5 14.2-7.5 34.2 6.7 44.8s34.2 7.5 44.8-6.7l48.8-65.8c14-18.9 21.5-41.7 21.5-65.2c0-48.6-39.4-88-88-88s-88 39.4-88 88c0 39.2 25.6 72.4 61.1 83.8z"]
+  icon: [576, 512, ["sort-numeric-desc", "sort-numeric-down-alt"], "f886", "M160 480c9 0 17.5-3.8 23.6-10.4l88-96c11.9-13 11.1-33.3-2-45.2s-33.3-11.1-45.2 2L192 365.7V64c0-17.7-14.3-32-32-32s-32 14.3-32 32V365.7L95.6 330.4c-11.9-13-32.2-13.9-45.2-2s-13.9 32.2-2 45.2l88 96C142.5 476.2 151 480 160 480zM450.7 294c-8.3-6-19.1-7.7-28.8-4.4l-48 16c-16.8 5.6-25.8 23.7-20.2 40.5s23.7 25.8 40.5 20.2l5.9-2V416H384c-17.7 0-32 14.3-32 32s14.3 32 32 32h48 48c17.7 0 32-14.3 32-32s-14.3-32-32-32H464V320c0-10.3-4.9-19.9-13.3-26zM418.3 91a32 32 0 1 1 27.4 57.9A32 32 0 1 1 418.3 91zM405.1 203.8l-6.8 9.2c-10.5 14.2-7.5 34.2 6.7 44.8s34.2 7.5 44.8-6.7l48.8-65.8c14-18.9 21.5-41.7 21.5-65.2c0-48.6-39.4-88-88-88s-88 39.4-88 88c0 39.2 25.6 72.4 61.1 83.8z"]
 };
 var faSortNumericDesc = faArrowDown91;
 var faSortNumericDownAlt = faArrowDown91;
@@ -12029,7 +13210,7 @@ var faW = {
 var faEarthAfrica = {
   prefix: 'fas',
   iconName: 'earth-africa',
-  icon: [512, 512, [127757, "globe-africa"], "f57c", "M177.8 63.2l10 17.4c2.8 4.8 4.2 10.3 4.2 15.9v41.4c0 3.9 1.6 7.7 4.3 10.4c6.2 6.2 16.5 5.7 22-1.2l13.6-17c4.7-5.9 12.9-7.7 19.6-4.3l15.2 7.6c3.4 1.7 7.2 2.6 11 2.6c6.5 0 12.8-2.6 17.4-7.2l3.9-3.9c2.9-2.9 7.3-3.6 11-1.8l29.2 14.6c7.8 3.9 12.6 11.8 12.6 20.5c0 10.5-7.1 19.6-17.3 22.2l-35.4 8.8c-7.4 1.8-15.1 1.5-22.3-.9l-32-10.7c-3.3-1.1-6.7-1.7-10.2-1.7c-7 0-13.8 2.3-19.4 6.5L176 212c-10.1 7.6-16 19.4-16 32v28c0 26.5 21.5 48 48 48h32c8.8 0 16 7.2 16 16v48c0 17.7 14.3 32 32 32c10.1 0 19.6-4.7 25.6-12.8l25.6-34.1c8.3-11.1 12.8-24.6 12.8-38.4V318.6c0-3.9 2.6-7.3 6.4-8.2l5.3-1.3c11.9-3 20.3-13.7 20.3-26c0-7.1-2.8-13.9-7.8-18.9l-33.5-33.5c-3.7-3.7-3.7-9.7 0-13.4c5.7-5.7 14.1-7.7 21.8-5.1l14.1 4.7c12.3 4.1 25.7-1.5 31.5-13c3.5-7 11.2-10.8 18.9-9.2l27.4 5.5C432 112.4 351.5 48 256 48c-27.7 0-54 5.4-78.2 15.2zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"]
+  icon: [512, 512, [127757, "globe-africa"], "f57c", "M177.8 63.2l10 17.4c2.8 4.8 4.2 10.3 4.2 15.9v41.4c0 3.9 1.6 7.7 4.3 10.4c6.2 6.2 16.5 5.7 22-1.2l13.6-17c4.7-5.9 12.9-7.7 19.6-4.3l15.2 7.6c3.4 1.7 7.2 2.6 11 2.6c6.5 0 12.8-2.6 17.4-7.2l3.9-3.9c2.9-2.9 7.3-3.6 11-1.8l29.2 14.6c7.8 3.9 12.6 11.8 12.6 20.5c0 10.5-7.1 19.6-17.3 22.2l-35.4 8.8c-7.4 1.8-15.1 1.5-22.4-.9l-32-10.7c-3.3-1.1-6.7-1.7-10.2-1.7c-7 0-13.8 2.3-19.4 6.5L176 212c-10.1 7.6-16 19.4-16 32v28c0 26.5 21.5 48 48 48h32c8.8 0 16 7.2 16 16v48c0 17.7 14.3 32 32 32c10.1 0 19.6-4.7 25.6-12.8l25.6-34.1c8.3-11.1 12.8-24.6 12.8-38.4V318.6c0-3.9 2.6-7.3 6.4-8.2l5.3-1.3c11.9-3 20.3-13.7 20.3-26c0-7.1-2.8-13.9-7.8-18.9l-33.5-33.5c-3.7-3.7-3.7-9.7 0-13.4c5.7-5.7 14.1-7.7 21.8-5.1l14.1 4.7c12.3 4.1 25.7-1.5 31.5-13c3.5-7 11.2-10.8 18.9-9.2l27.4 5.5C432 112.4 351.5 48 256 48c-27.7 0-54 5.4-78.2 15.2zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"]
 };
 var faGlobeAfrica = faEarthAfrica;
 var faRainbow = {
@@ -12077,7 +13258,7 @@ var faHospitalUser = {
 var faTentArrowLeftRight = {
   prefix: 'fas',
   iconName: 'tent-arrow-left-right',
-  icon: [576, 512, [], "e57f", "M488.1 6.2c-9.9-8.9-25-8.1-33.9 1.8s-8.1 25 1.8 33.9L489.5 72 86.5 72l33.5-30.2c9.9-8.9 10.7-24 1.8-33.9S97.8-2.7 87.9 6.2l-80 72C2.9 82.7 0 89.2 0 96s2.9 13.3 7.9 17.8l80 72c9.9 8.9 25 8.1 33.9-1.8s8.1-25-1.8-33.9L86.5 120l402.9 0-33.5 30.2c-9.9 8.9-10.7 24-1.8 33.9s24 10.7 33.9 1.8l80-72c5.1-4.6 7.9-11 7.9-17.8s-2.9-13.3-7.9-17.8l-80-72zM307.4 166.5c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S86.7 512 96 512H288V352l96 160h96c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"]
+  icon: [576, 512, [], "e57f", "M488.1 6.2c-9.9-8.9-25-8.1-33.9 1.8s-8.1 25 1.8 33.9L489.5 72 86.5 72l33.5-30.2c9.9-8.9 10.7-24 1.8-33.9S97.8-2.7 87.9 6.2l-80 72C2.9 82.7 0 89.2 0 96s2.9 13.3 7.9 17.8l80 72c9.9 8.9 25 8.1 33.9-1.8s8.1-25-1.8-33.9L86.5 120l402.9 0-33.5 30.2c-9.9 8.9-10.7 24-1.8 33.9s24 10.7 33.9 1.8l80-72c5.1-4.6 7.9-11 7.9-17.8s-2.9-13.3-7.9-17.8l-80-72zM307.4 166.5c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S86.7 512 96 512H240h16c17.7 0 32-14.3 32-32V361.9c0-5.5 4.4-9.9 9.9-9.9c3.7 0 7.2 2.1 8.8 5.5l68.4 136.8c5.4 10.8 16.5 17.7 28.6 17.7H464h16c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"]
 };
 var faGavel = {
   prefix: 'fas',
@@ -12093,7 +13274,7 @@ var faBinoculars = {
 var faMicrophoneSlash = {
   prefix: 'fas',
   iconName: 'microphone-slash',
-  icon: [640, 512, [], "f131", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L472.1 344.7c15.2-26 23.9-56.3 23.9-88.7V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 21.2-5.1 41.1-14.2 58.7L416 300.8V96c0-53-43-96-96-96s-96 43-96 96v54.3L38.8 5.1zM344 430.4c20.4-2.8 39.7-9.1 57.3-18.2l-43.1-33.9C346.1 382 333.3 384 320 384c-70.7 0-128-57.3-128-128v-8.7L144.7 210c-.5 1.9-.7 3.9-.7 6v40c0 89.1 66.2 162.7 152 174.4V464H248c-13.3 0-24 10.7-24 24s10.7 24 24 24h72 72c13.3 0 24-10.7 24-24s-10.7-24-24-24H344V430.4z"]
+  icon: [640, 512, [], "f131", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L472.1 344.7c15.2-26 23.9-56.3 23.9-88.7V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 21.2-5.1 41.1-14.2 58.7L416 300.8V96c0-53-43-96-96-96s-96 43-96 96v54.3L38.8 5.1zm362.5 407l-43.1-33.9C346.1 382 333.3 384 320 384c-70.7 0-128-57.3-128-128v-8.7L144.7 210c-.5 1.9-.7 3.9-.7 6v40c0 89.1 66.2 162.7 152 174.4V464H248c-13.3 0-24 10.7-24 24s10.7 24 24 24h72 72c13.3 0 24-10.7 24-24s-10.7-24-24-24H344V430.4c20.4-2.8 39.7-9.1 57.3-18.2z"]
 };
 var faBoxTissue = {
   prefix: 'fas',
@@ -12120,13 +13301,13 @@ var faPencilRuler = faPenRuler;
 var faPeopleArrows = {
   prefix: 'fas',
   iconName: 'people-arrows',
-  icon: [640, 512, ["people-arrows-left-right"], "e068", "M43 64a64 64 0 1 1 128 0A64 64 0 1 1 43 64zM4.9 233.4C8.3 191.9 43 160 84.6 160h44.8c27 0 51 13.4 65.5 34.1c-2.7 1.9-5.2 4-7.5 6.3l-64 64c-21.9 21.9-21.9 57.3 0 79.2L171 391.2V464c0 26.5-21.5 48-48 48H91c-26.5 0-48-21.5-48-48V348.3C16.5 338.8-1.7 312.4 .8 282.7l4.1-49.3zM427 64a64 64 0 1 1 128 0A64 64 0 1 1 427 64zM410.6 200.4c-2.3-2.3-4.9-4.4-7.5-6.3c14.5-20.7 38.6-34.1 65.5-34.1h44.8c41.6 0 76.3 31.9 79.7 73.4l4.1 49.3c2.5 29.8-15.7 56.1-42.2 65.6V464c0 26.5-21.5 48-48 48H475c-26.5 0-48-21.5-48-48V391.2l47.6-47.6c21.9-21.9 21.9-57.3 0-79.2l-64-64zM251 240v32h96V240c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l64 64c9.4 9.4 9.4 24.6 0 33.9l-64 64c-6.9 6.9-17.2 8.9-26.2 5.2s-14.8-12.5-14.8-22.2V336H251v32c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-64-64c-9.4-9.4-9.4-24.6 0-33.9l64-64c6.9-6.9 17.2-8.9 26.2-5.2s14.8 12.5 14.8 22.2z"]
+  icon: [640, 512, ["people-arrows-left-right"], "e068", "M64 64a64 64 0 1 1 128 0A64 64 0 1 1 64 64zM25.9 233.4C29.3 191.9 64 160 105.6 160h44.8c27 0 51 13.4 65.5 34.1c-2.7 1.9-5.2 4-7.5 6.3l-64 64c-21.9 21.9-21.9 57.3 0 79.2L192 391.2V464c0 26.5-21.5 48-48 48H112c-26.5 0-48-21.5-48-48V348.3c-26.5-9.5-44.7-35.8-42.2-65.6l4.1-49.3zM448 64a64 64 0 1 1 128 0A64 64 0 1 1 448 64zM431.6 200.4c-2.3-2.3-4.9-4.4-7.5-6.3c14.5-20.7 38.6-34.1 65.5-34.1h44.8c41.6 0 76.3 31.9 79.7 73.4l4.1 49.3c2.5 29.8-15.7 56.1-42.2 65.6V464c0 26.5-21.5 48-48 48H496c-26.5 0-48-21.5-48-48V391.2l47.6-47.6c21.9-21.9 21.9-57.3 0-79.2l-64-64zM272 240v32h96V240c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l64 64c9.4 9.4 9.4 24.6 0 33.9l-64 64c-6.9 6.9-17.2 8.9-26.2 5.2s-14.8-12.5-14.8-22.2V336H272v32c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-64-64c-9.4-9.4-9.4-24.6 0-33.9l64-64c6.9-6.9 17.2-8.9 26.2-5.2s14.8 12.5 14.8 22.2z"]
 };
 var faPeopleArrowsLeftRight = faPeopleArrows;
 var faMarsAndVenusBurst = {
   prefix: 'fas',
   iconName: 'mars-and-venus-burst',
-  icon: [640, 512, [], "e523", "M504 0c-9.7 0-18.5 5.8-22.2 14.8s-1.7 19.3 5.2 26.2l39 39-22.2 22.2C475.9 78.4 439.6 64 400 64c-88.4 0-160 71.6-160 160c0 80.2 59.1 146.7 136.1 158.2c0 .6-.1 1.2-.1 1.8v.4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .3 .4 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3H352c-13.3 0-24 10.7-24 24s10.7 24 24 24h24v.2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0l24 0H376c0 13.3 10.7 24 24 24s24-10.7 24-24H400l24 0v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1V486 486v-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1V485 485v-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1V484v-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1V483v-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1V481v-.1-.1-.1-.1-.1-.1-.1-.1V480v-.1-.1-.1-.1-.1-.1-.1V479v-.1-.1-.1-.1-.1-.1-.1V478v-.1-.1-.1-.1-.1-.1V477v-.1-.1-.1-.1-.1-.1V476v-.1-.1-.1-.1-.1-.1V475v-.1-.2-.2-.2-.2-.2V474v-.2-.2-.2-.2-.2V473v-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2V470v-.2-.2-.2-.2-.2V469v-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2V467v-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2V463v-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2V459v-.2-.2-.2-.2-.2-.2-.2-.2V457v-.2-.2-.2-.2V456h24c13.3 0 24-10.7 24-24s-10.7-24-24-24H424v-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3V403v-.3-.3V402v-.3-.3V401v-.3-.3V400v-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.4-.3-.4-.4-.4-.4V393v-.4-.4-.4-.4-.4-.4-.4-.4-.4-.4-.4-.4-.4V388v-.4-.4-.4-.4-.4-.4-.4-.4-.4-.4V384c0-.6 0-1.2-.1-1.8c77-11.6 136.1-78 136.1-158.2c0-31.4-9-60.7-24.7-85.4L560 113.9l39 39c6.9 6.9 17.2 8.9 26.2 5.2s14.8-12.5 14.8-22.2V24c0-13.3-10.7-24-24-24H504zM400 128a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM190.9 18.1C188.4 12 182.6 8 176 8s-12.4 4-14.9 10.1l-29.4 74L55.6 68.9c-6.3-1.9-13.1 .2-17.2 5.3s-4.6 12.2-1.4 17.9l39.5 69.1L10.9 206.4c-5.4 3.7-8 10.3-6.5 16.7s6.7 11.2 13.1 12.2l78.7 12.2L90.6 327c-.5 6.5 3.1 12.7 9 15.5s12.9 1.8 17.8-2.6L176 286.1l58.6 53.9c4.1 3.8 9.9 5.1 15.2 3.6C223.6 310.8 208 269.2 208 224c0-60.8 28.3-115 72.4-150.2L220.3 92.1l-29.4-74z"]
+  icon: [640, 512, [], "e523", "M504 0c-9.7 0-18.5 5.8-22.2 14.8s-1.7 19.3 5.2 26.2l39 39-22.2 22.2C475.9 78.4 439.6 64 400 64c-88.4 0-160 71.6-160 160c0 80.2 59 146.6 136 158.2V408H352c-13.3 0-24 10.7-24 24s10.7 24 24 24h24v32c0 13.3 10.7 24 24 24s24-10.7 24-24V456h24c13.3 0 24-10.7 24-24s-10.7-24-24-24H424V382.2c77-11.6 136-78 136-158.2c0-31.4-9-60.7-24.7-85.4L560 113.9l39 39c6.9 6.9 17.2 8.9 26.2 5.2s14.8-12.5 14.8-22.2V24c0-13.3-10.7-24-24-24H504zM400 128a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM190.9 18.1C188.4 12 182.6 8 176 8s-12.4 4-14.9 10.1l-29.4 74L55.6 68.9c-6.3-1.9-13.1 .2-17.2 5.3s-4.6 12.2-1.4 17.9l39.5 69.1L10.9 206.4c-5.4 3.7-8 10.3-6.5 16.7s6.7 11.2 13.1 12.2l78.7 12.2L90.6 327c-.5 6.5 3.1 12.7 9 15.5s12.9 1.8 17.8-2.6L176 286.1l58.6 53.9c4.1 3.8 9.9 5.1 15.2 3.6C223.6 310.8 208 269.2 208 224c0-60.8 28.3-115 72.4-150.2L220.3 92.1l-29.4-74z"]
 };
 var faSquareCaretRight = {
   prefix: 'fas',
@@ -12179,7 +13360,7 @@ var faUsersSlash = {
 var faClover = {
   prefix: 'fas',
   iconName: 'clover',
-  icon: [448, 512, [], "e139", "M173.3 32C139.4 32 112 59.4 112 93.3v4.9c0 12 3.3 23.7 9.4 34l18.8 31.3c1.1 1.8 1.2 3.1 1 4.2c-.2 1.2-.8 2.5-2 3.6s-2.4 1.8-3.6 2c-1 .2-2.4 .1-4.2-1l-31.3-18.8c-10.3-6.2-22-9.4-34-9.4H61.3C27.4 144 0 171.4 0 205.3c0 16.2 6.5 31.8 17.9 43.3l1.2 1.2c3.4 3.4 3.4 9 0 12.4l-1.2 1.2C6.5 274.9 0 290.5 0 306.7C0 340.6 27.4 368 61.3 368h4.9c12 0 23.7-3.3 34-9.4l31.3-18.8c1.8-1.1 3.1-1.2 4.2-1c1.2 .2 2.5 .8 3.6 2s1.8 2.4 2 3.6c.2 1 .1 2.4-1 4.2l-18.8 31.3c-6.2 10.3-9.4 22-9.4 34v4.9c0 33.8 27.4 61.3 61.3 61.3c16.2 0 31.8-6.5 43.3-17.9l1.2-1.2c3.4-3.4 9-3.4 12.4 0l1.2 1.2c11.5 11.5 27.1 17.9 43.3 17.9c33.8 0 61.3-27.4 61.3-61.3v-4.9c0-12-3.3-23.7-9.4-34l-18.8-31.3c-1.1-1.8-1.2-3.1-1-4.2c.2-1.2 .8-2.5 2-3.6s2.4-1.8 3.6-2c1-.2 2.4-.1 4.2 1l31.3 18.8c10.3 6.2 22 9.4 34 9.4h4.9c33.8 0 61.3-27.4 61.3-61.3c0-16.2-6.5-31.8-17.9-43.3l-1.2-1.2c-3.4-3.4-3.4-9 0-12.4l1.2-1.2c11.5-11.5 17.9-27.1 17.9-43.3c0-33.8-27.4-61.3-61.3-61.3h-4.9c-12 0-23.7 3.3-34 9.4l-31.3 18.8c-1.8 1.1-3.1 1.2-4.2 1c-1.2-.2-2.5-.8-3.6-2s-1.8-2.4-2-3.6c-.2-1-.1-2.4 1-4.2l18.8-31.3c6.2-10.3 9.4-22 9.4-34V93.3C336 59.4 308.6 32 274.7 32c-16.2 0-31.8 6.5-43.3 17.9l-1.2 1.2c-3.4 3.4-9 3.4-12.4 0l-1.2-1.2C205.1 38.5 189.5 32 173.3 32z"]
+  icon: [448, 512, [], "e139", "M216.6 49.9C205.1 38.5 189.5 32 173.3 32C139.4 32 112 59.4 112 93.3v4.9c0 12 3.3 23.7 9.4 34l18.8 31.3c1.1 1.8 1.2 3.1 1 4.2c-.2 1.2-.8 2.5-2 3.6s-2.4 1.8-3.6 2c-1 .2-2.4 .1-4.2-1l-31.3-18.8c-10.3-6.2-22-9.4-34-9.4H61.3C27.4 144 0 171.4 0 205.3c0 16.2 6.5 31.8 17.9 43.3l1.2 1.2c3.4 3.4 3.4 9 0 12.4l-1.2 1.2C6.5 274.9 0 290.5 0 306.7C0 340.6 27.4 368 61.3 368h4.9c12 0 23.7-3.3 34-9.4l31.3-18.8c1.8-1.1 3.1-1.2 4.2-1c1.2 .2 2.5 .8 3.6 2s1.8 2.4 2 3.6c.2 1 .1 2.4-1 4.2l-18.8 31.3c-6.2 10.3-9.4 22-9.4 34v4.9c0 33.8 27.4 61.3 61.3 61.3c16.2 0 31.8-6.5 43.3-17.9l1.2-1.2c3.4-3.4 9-3.4 12.4 0l1.2 1.2c11.5 11.5 27.1 17.9 43.3 17.9c33.8 0 61.3-27.4 61.3-61.3v-4.9c0-12-3.3-23.7-9.4-34l-18.8-31.3c-1.1-1.8-1.2-3.1-1-4.2c.2-1.2 .8-2.5 2-3.6s2.4-1.8 3.6-2c1-.2 2.4-.1 4.2 1l31.3 18.8c10.3 6.2 22 9.4 34 9.4h4.9c33.8 0 61.3-27.4 61.3-61.3c0-16.2-6.5-31.8-17.9-43.3l-1.2-1.2c-3.4-3.4-3.4-9 0-12.4l1.2-1.2c11.5-11.5 17.9-27.1 17.9-43.3c0-33.8-27.4-61.3-61.3-61.3h-4.9c-12 0-23.7 3.3-34 9.4l-31.3 18.8c-1.8 1.1-3.1 1.2-4.2 1c-1.2-.2-2.5-.8-3.6-2s-1.8-2.4-2-3.6c-.2-1-.1-2.4 1-4.2l18.8-31.3c6.2-10.3 9.4-22 9.4-34V93.3C336 59.4 308.6 32 274.7 32c-16.2 0-31.8 6.5-43.3 17.9l-1.2 1.2c-3.4 3.4-9 3.4-12.4 0l-1.2-1.2z"]
 };
 var faReply = {
   prefix: 'fas',
@@ -12195,7 +13376,7 @@ var faStarAndCrescent = {
 var faHouseFire = {
   prefix: 'fas',
   iconName: 'house-fire',
-  icon: [640, 512, [], "e50c", "M288 350.1l0 1.9H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L447.3 128.1c-12.3-1-25 3-34.8 11.7c-35.4 31.6-65.6 67.7-87.3 102.8C304.3 276.5 288 314.9 288 350.1zM453.5 163.8c19.7 17.8 38.2 37 55.5 57.7c7.9-9.9 16.8-20.7 26.5-29.5c5.6-5.1 14.4-5.1 20 0c24.7 22.7 45.6 52.7 60.4 81.1c14.5 28 24.2 58.8 24.2 79C640 440 568.7 512 480 512c-89.7 0-160-72.1-160-159.8c0-26.4 12.7-60.7 32.4-92.6c20-32.4 48.1-66.1 81.4-95.8c2.8-2.5 6.4-3.8 10-3.7c3.5 0 7 1.3 9.8 3.8zM530 433c30-21 38-63 20-96c-2-4-4-8-7-12l-36 42s-58-74-62-79c-30 37-45 58-45 82c0 49 36 78 81 78c18 0 34-5 49-15z"]
+  icon: [640, 512, [], "e50c", "M288 350.1l0 1.9H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L447.3 128.1c-12.3-1-25 3-34.8 11.7c-35.4 31.6-65.6 67.7-87.3 102.8C304.3 276.5 288 314.9 288 350.1zM480 512c-88.4 0-160-71.6-160-160c0-76.7 62.5-144.7 107.2-179.4c5-3.9 10.9-5.8 16.8-5.8c7.9-.1 16 3.1 22 9.2l46 46 11.3-11.3c11.7-11.7 30.6-12.7 42.3-1C624.5 268 640 320.2 640 352c0 88.4-71.6 160-160 160zm64-111.8c0-36.5-37-73-54.8-88.4c-5.4-4.7-13.1-4.7-18.5 0C453 327.1 416 363.6 416 400.2c0 35.3 28.7 64 64 64s64-28.7 64-64z"]
 };
 var faSquareMinus = {
   prefix: 'fas',
@@ -12287,12 +13468,12 @@ var faRulerHorizontal = {
 var faPeopleRobbery = {
   prefix: 'fas',
   iconName: 'people-robbery',
-  icon: [576, 512, [], "e536", "M480.2 59.1C470.1 99.6 433.7 128 392 128s-78.1-28.4-88.2-68.9L295 24.2C290.8 7.1 273.4-3.3 256.2 1S228.7 22.6 233 39.8l8.7 34.9c11 44 40.2 79.6 78.3 99.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V174.3c38.1-20 67.3-55.6 78.3-99.6L551 39.8c4.3-17.1-6.1-34.5-23.3-38.8S493.2 7.1 489 24.2l-8.7 34.9zM392 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM72 96A48 48 0 1 0 72 0a48 48 0 1 0 0 96zm-8 32c-35.3 0-64 28.7-64 64v96l0 .6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352H80V480c0 17.7 14.3 32 32 32s32-14.3 32-32V252.7l13 20.5c5.9 9.2 16.1 14.9 27 14.9h48c17.7 0 32-14.3 32-32s-14.3-32-32-32H201.6l-37.4-58.9C149.6 142 124.1 128 96.7 128H64z"]
+  icon: [576, 512, [], "e536", "M488.2 59.1C478.1 99.6 441.7 128 400 128s-78.1-28.4-88.2-68.9L303 24.2C298.8 7.1 281.4-3.3 264.2 1S236.7 22.6 241 39.8l8.7 34.9c11 44 40.2 79.6 78.3 99.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V174.3c38.1-20 67.3-55.6 78.3-99.6L559 39.8c4.3-17.1-6.1-34.5-23.3-38.8S501.2 7.1 497 24.2l-8.7 34.9zM400 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM80 96A48 48 0 1 0 80 0a48 48 0 1 0 0 96zm-8 32c-35.3 0-64 28.7-64 64v96l0 .6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352H88V480c0 17.7 14.3 32 32 32s32-14.3 32-32V252.7l13 20.5c5.9 9.2 16.1 14.9 27 14.9h48c17.7 0 32-14.3 32-32s-14.3-32-32-32H209.6l-37.4-58.9C157.6 142 132.1 128 104.7 128H72z"]
 };
 var faLightbulb = {
   prefix: 'fas',
   iconName: 'lightbulb',
-  icon: [384, 512, [128161], "f0eb", "M256 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C352 78.8 273.2 0 176 0S0 78.8 0 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0C66.5 324.9 86.4 352.1 96 384H256zM176 512c44.2 0 80-35.8 80-80V416H96v16c0 44.2 35.8 80 80 80zM96 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"]
+  icon: [384, 512, [128161], "f0eb", "M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"]
 };
 var faCaretLeft = {
   prefix: 'fas',
@@ -12347,7 +13528,7 @@ var faSitemap = {
 var faCircleDollarToSlot = {
   prefix: 'fas',
   iconName: 'circle-dollar-to-slot',
-  icon: [512, 512, ["donate"], "f4b9", "M326.7 403.7c-22.1 8-45.9 12.3-70.7 12.3s-48.7-4.4-70.7-12.3c-.3-.1-.5-.2-.8-.3c-30-11-56.8-28.7-78.6-51.4C70 314.6 48 263.9 48 208C48 93.1 141.1 0 256 0S464 93.1 464 208c0 55.9-22 106.6-57.9 144c-1 1-2 2.1-3 3.1c-21.4 21.4-47.4 38.1-76.3 48.6zM256 91.9c-11.1 0-20.1 9-20.1 20.1v6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.8 4c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9l0 0 0 0 0 0c-2.2-.7-4.3-1.5-6.4-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1V304c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1v-5.5c5.4-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4V112c0-11.1-9-20.1-20.1-20.1zM48 352H64c19.5 25.9 44 47.7 72.2 64H64v32H256 448V416H375.8c28.2-16.3 52.8-38.1 72.2-64h16c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V400c0-26.5 21.5-48 48-48z"]
+  icon: [512, 512, ["donate"], "f4b9", "M326.7 403.7c-22.1 8-45.9 12.3-70.7 12.3s-48.7-4.4-70.7-12.3c-.3-.1-.5-.2-.8-.3c-30-11-56.8-28.7-78.6-51.4C70 314.6 48 263.9 48 208C48 93.1 141.1 0 256 0S464 93.1 464 208c0 55.9-22 106.6-57.9 144c-1 1-2 2.1-3 3.1c-21.4 21.4-47.4 38.1-76.3 48.6zM256 84c-11 0-20 9-20 20v14c-7.6 1.7-15.2 4.4-22.2 8.5c-13.9 8.3-25.9 22.8-25.8 43.9c.1 20.3 12 33.1 24.7 40.7c11 6.6 24.7 10.8 35.6 14l1.7 .5c12.6 3.8 21.8 6.8 28 10.7c5.1 3.2 5.8 5.4 5.9 8.2c.1 5-1.8 8-5.9 10.5c-5 3.1-12.9 5-21.4 4.7c-11.1-.4-21.5-3.9-35.1-8.5c-2.3-.8-4.7-1.6-7.2-2.4c-10.5-3.5-21.8 2.2-25.3 12.6s2.2 21.8 12.6 25.3c1.9 .6 4 1.3 6.1 2.1l0 0 0 0c8.3 2.9 17.9 6.2 28.2 8.4V312c0 11 9 20 20 20s20-9 20-20V298.2c8-1.7 16-4.5 23.2-9c14.3-8.9 25.1-24.1 24.8-45c-.3-20.3-11.7-33.4-24.6-41.6c-11.5-7.2-25.9-11.6-37.1-15l-.7-.2c-12.8-3.9-21.9-6.7-28.3-10.5c-5.2-3.1-5.3-4.9-5.3-6.7c0-3.7 1.4-6.5 6.2-9.3c5.4-3.2 13.6-5.1 21.5-5c9.6 .1 20.2 2.2 31.2 5.2c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-6.5-1.7-13.7-3.4-21.1-4.7V104c0-11-9-20-20-20zM48 352H64c19.5 25.9 44 47.7 72.2 64H64v32H256 448V416H375.8c28.2-16.3 52.8-38.1 72.2-64h16c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V400c0-26.5 21.5-48 48-48z"]
 };
 var faDonate = faCircleDollarToSlot;
 var faMemory = {
@@ -12363,7 +13544,7 @@ var faRoadSpikes = {
 var faFireBurner = {
   prefix: 'fas',
   iconName: 'fire-burner',
-  icon: [640, 512, [], "e4f1", "M293.5 3.8c19.7 17.8 38.2 37 55.5 57.7c7.9-9.9 16.8-20.7 26.5-29.5c5.6-5.1 14.4-5.1 20 0c24.7 22.7 45.6 52.7 60.4 81.1c14.5 28 24.2 58.8 24.2 79C480 280 408.7 352 320 352c-89.7 0-160-72.1-160-159.8c0-26.4 12.7-60.7 32.4-92.6c20-32.4 48.1-66.1 81.4-95.8c2.8-2.5 6.4-3.8 10-3.7c3.5 0 7 1.3 9.8 3.8zM370 273c30-21 38-63 20-96c-2-4-4-8-7-12l-36 42s-58-74-62-79c-30 37-45 58-45 82c0 49 36 78 81 78c18 0 34-5 49-15zM32 288c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32s-14.3 32-32 32v64H544V320c-17.7 0-32-14.3-32-32s14.3-32 32-32h32c17.7 0 32 14.3 32 32v96c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32V288zM320 480a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm160-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM192 480a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"]
+  icon: [640, 512, [], "e4f1", "M320 352c-88.4 0-160-71.6-160-160c0-76.7 62.5-144.7 107.2-179.4c5-3.9 10.9-5.8 16.8-5.8c7.9-.1 16 3.1 22 9.2l46 46 11.3-11.3c11.7-11.7 30.6-12.7 42.3-1C464.5 108 480 160.2 480 192c0 88.4-71.6 160-160 160zm64-111.8c0-36.5-37-73-54.8-88.4c-5.4-4.7-13.1-4.7-18.5 0C293 167.1 256 203.6 256 240.2c0 35.3 28.7 64 64 64s64-28.7 64-64zM32 288c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32s-14.3 32-32 32v64H544V320c-17.7 0-32-14.3-32-32s14.3-32 32-32h32c17.7 0 32 14.3 32 32v96c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32V288zM320 480a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm160-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM192 480a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"]
 };
 var faFlag = {
   prefix: 'fas',
@@ -12389,12 +13570,12 @@ var faVolumeDown = faVolumeLow;
 var faCommentSlash = {
   prefix: 'fas',
   iconName: 'comment-slash',
-  icon: [640, 512, [], "f4b3", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L512.9 376.7C552.2 340.2 576 292.3 576 240C576 125.1 461.4 32 320 32c-67.7 0-129.3 21.4-175.1 56.3L38.8 5.1zM64 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9c-5.5 9.2-11.1 16.6-15.2 21.6c-2.1 2.5-3.7 4.4-4.9 5.7c-.6 .6-1 1.1-1.3 1.4l-.3 .3 0 0 0 0 0 0 0 0c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c28.7 0 57.6-8.9 81.6-19.3c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9c37 0 72.3-6.4 104-17.9L82.9 161.3C70.7 185.6 64 212.2 64 240z"]
+  icon: [640, 512, [], "f4b3", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L512.9 376.7C552.2 340.2 576 292.3 576 240C576 125.1 461.4 32 320 32c-67.7 0-129.3 21.4-175.1 56.3L38.8 5.1zm385.2 425L82.9 161.3C70.7 185.6 64 212.2 64 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9c-5.5 9.2-11.1 16.6-15.2 21.6c-2.1 2.5-3.7 4.4-4.9 5.7c-.6 .6-1 1.1-1.3 1.4l-.3 .3 0 0 0 0 0 0 0 0c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c28.7 0 57.6-8.9 81.6-19.3c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9c37 0 72.3-6.4 104.1-17.9z"]
 };
 var faCloudSunRain = {
   prefix: 'fas',
   iconName: 'cloud-sun-rain',
-  icon: [640, 512, [127782], "f743", "M294.2 1.2c5.1 2.1 8.7 6.7 9.6 12.1l10.4 62.4c-23.3 10.8-42.9 28.4-56 50.3c-14.6-9-31.8-14.1-50.2-14.1c-53 0-96 43-96 96c0 35.5 19.3 66.6 48 83.2c.8 31.8 13.2 60.7 33.1 82.7l-56 39.2c-4.5 3.1-10.3 3.8-15.4 1.6s-8.7-6.7-9.6-12.1L98.1 317.9 13.4 303.8c-5.4-.9-10-4.5-12.1-9.6s-1.5-10.9 1.6-15.4L52.5 208 2.9 137.2c-3.2-4.5-3.8-10.3-1.6-15.4s6.7-8.7 12.1-9.6L98.1 98.1l14.1-84.7c.9-5.4 4.5-10 9.6-12.1s10.9-1.5 15.4 1.6L208 52.5 278.8 2.9c4.5-3.2 10.3-3.8 15.4-1.6zM208 144c13.8 0 26.7 4.4 37.1 11.9c-1.2 4.1-2.2 8.3-3 12.6c-37.9 14.6-67.2 46.6-77.8 86.4C151.8 243.1 144 226.5 144 208c0-35.3 28.7-64 64-64zm69.4 276c11 7.4 14 22.3 6.7 33.3l-32 48c-7.4 11-22.3 14-33.3 6.7s-14-22.3-6.7-33.3l32-48c7.4-11 22.3-14 33.3-6.7zm96 0c11 7.4 14 22.3 6.7 33.3l-32 48c-7.4 11-22.3 14-33.3 6.7s-14-22.3-6.7-33.3l32-48c7.4-11 22.3-14 33.3-6.7zm96 0c11 7.4 14 22.3 6.7 33.3l-32 48c-7.4 11-22.3 14-33.3 6.7s-14-22.3-6.7-33.3l32-48c7.4-11 22.3-14 33.3-6.7zm96 0c11 7.4 14 22.3 6.7 33.3l-32 48c-7.4 11-22.3 14-33.3 6.7s-14-22.3-6.7-33.3l32-48c7.4-11 22.3-14 33.3-6.7zm74.5-116.1c0 44.2-35.8 80-80 80H288c-53 0-96-43-96-96c0-47.6 34.6-87 80-94.6l0-1.3c0-53 43-96 96-96c34.9 0 65.4 18.6 82.2 46.4c13-9.1 28.8-14.4 45.8-14.4c44.2 0 80 35.8 80 80c0 5.9-.6 11.7-1.9 17.2c37.4 6.7 65.8 39.4 65.8 78.7z"]
+  icon: [640, 512, [127782], "f743", "M294.2 1.2c5.1 2.1 8.7 6.7 9.6 12.1l10.4 62.4c-23.3 10.8-42.9 28.4-56 50.3c-14.6-9-31.8-14.1-50.2-14.1c-53 0-96 43-96 96c0 35.5 19.3 66.6 48 83.2c.8 31.8 13.2 60.7 33.1 82.7l-56 39.2c-4.5 3.2-10.3 3.8-15.4 1.6s-8.7-6.7-9.6-12.1L98.1 317.9 13.4 303.8c-5.4-.9-10-4.5-12.1-9.6s-1.5-10.9 1.6-15.4L52.5 208 2.9 137.2c-3.2-4.5-3.8-10.3-1.6-15.4s6.7-8.7 12.1-9.6L98.1 98.1l14.1-84.7c.9-5.4 4.5-10 9.6-12.1s10.9-1.5 15.4 1.6L208 52.5 278.8 2.9c4.5-3.2 10.3-3.8 15.4-1.6zM208 144c13.8 0 26.7 4.4 37.1 11.9c-1.2 4.1-2.2 8.3-3 12.6c-37.9 14.6-67.2 46.6-77.8 86.4C151.8 243.1 144 226.5 144 208c0-35.3 28.7-64 64-64zm69.4 276c11 7.4 14 22.3 6.7 33.3l-32 48c-7.4 11-22.3 14-33.3 6.7s-14-22.3-6.7-33.3l32-48c7.4-11 22.3-14 33.3-6.7zm96 0c11 7.4 14 22.3 6.7 33.3l-32 48c-7.4 11-22.3 14-33.3 6.7s-14-22.3-6.7-33.3l32-48c7.4-11 22.3-14 33.3-6.7zm96 0c11 7.4 14 22.3 6.7 33.3l-32 48c-7.4 11-22.3 14-33.3 6.7s-14-22.3-6.7-33.3l32-48c7.4-11 22.3-14 33.3-6.7zm96 0c11 7.4 14 22.3 6.7 33.3l-32 48c-7.4 11-22.3 14-33.3 6.7s-14-22.3-6.7-33.3l32-48c7.4-11 22.3-14 33.3-6.7zm74.5-116.1c0 44.2-35.8 80-80 80H288c-53 0-96-43-96-96c0-47.6 34.6-87 80-94.6l0-1.3c0-53 43-96 96-96c34.9 0 65.4 18.6 82.2 46.4c13-9.1 28.8-14.4 45.8-14.4c44.2 0 80 35.8 80 80c0 5.9-.6 11.7-1.9 17.2c37.4 6.7 65.8 39.4 65.8 78.7z"]
 };
 var faCompress = {
   prefix: 'fas',
@@ -12464,12 +13645,12 @@ var faCartPlus = {
 var faGamepad = {
   prefix: 'fas',
   iconName: 'gamepad',
-  icon: [640, 512, [], "f11b", "M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 248c-22.1 0-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40s-17.9 40-40 40zm-24 56c0 22.1-17.9 40-40 40s-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"]
+  icon: [640, 512, [], "f11b", "M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"]
 };
 var faCircleDot = {
   prefix: 'fas',
   iconName: 'circle-dot',
-  icon: [512, 512, [128280, "dot-circle"], "f192", "M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm0-160c-53 0-96-43-96-96s43-96 96-96s96 43 96 96s-43 96-96 96z"]
+  icon: [512, 512, [128280, "dot-circle"], "f192", "M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-352a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"]
 };
 var faDotCircle = faCircleDot;
 var faFaceDizzy = {
@@ -12501,7 +13682,7 @@ var faFolderPlus = {
 var faFutbol = {
   prefix: 'fas',
   iconName: 'futbol',
-  icon: [512, 512, [9917, "futbol-ball", "soccer-ball"], "f1e3", "M417.3 360.1l-71.6-4.8c-5.2-.3-10.3 1.1-14.5 4.2s-7.2 7.4-8.4 12.5l-17.6 69.6C289.5 445.8 273 448 256 448s-33.5-2.2-49.2-6.4L189.2 372c-1.3-5-4.3-9.4-8.4-12.5s-9.3-4.5-14.5-4.2l-71.6 4.8c-17.6-27.2-28.5-59.2-30.4-93.6L125 228.3c4.4-2.8 7.6-7 9.2-11.9s1.4-10.2-.5-15l-26.7-66.6C128 109.2 155.3 89 186.7 76.9l55.2 46c4 3.3 9 5.1 14.1 5.1s10.2-1.8 14.1-5.1l55.2-46c31.3 12.1 58.7 32.3 79.6 57.9l-26.7 66.6c-1.9 4.8-2.1 10.1-.5 15s4.9 9.1 9.2 11.9l60.7 38.2c-1.9 34.4-12.8 66.4-30.4 93.6zM256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm14.1-325.7c-8.4-6.1-19.8-6.1-28.2 0L194 221c-8.4 6.1-11.9 16.9-8.7 26.8l18.3 56.3c3.2 9.9 12.4 16.6 22.8 16.6h59.2c10.4 0 19.6-6.7 22.8-16.6l18.3-56.3c3.2-9.9-.3-20.7-8.7-26.8l-47.9-34.8z"]
+  icon: [512, 512, [9917, "futbol-ball", "soccer-ball"], "f1e3", "M417.3 360.1l-71.6-4.8c-5.2-.3-10.3 1.1-14.5 4.2s-7.2 7.4-8.4 12.5l-17.6 69.6C289.5 445.8 273 448 256 448s-33.5-2.2-49.2-6.4L189.2 372c-1.3-5-4.3-9.4-8.4-12.5s-9.3-4.5-14.5-4.2l-71.6 4.8c-17.6-27.2-28.5-59.2-30.4-93.6L125 228.3c4.4-2.8 7.6-7 9.2-11.9s1.4-10.2-.5-15l-26.7-66.6C128 109.2 155.3 89 186.7 76.9l55.2 46c4 3.3 9 5.1 14.1 5.1s10.2-1.8 14.1-5.1l55.2-46c31.3 12.1 58.7 32.3 79.6 57.9l-26.7 66.6c-1.9 4.8-2.1 10.1-.5 15s4.9 9.1 9.2 11.9l60.7 38.2c-1.9 34.4-12.8 66.4-30.4 93.6zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm14.1-325.7c-8.4-6.1-19.8-6.1-28.2 0L194 221c-8.4 6.1-11.9 16.9-8.7 26.8l18.3 56.3c3.2 9.9 12.4 16.6 22.8 16.6h59.2c10.4 0 19.6-6.7 22.8-16.6l18.3-56.3c3.2-9.9-.3-20.7-8.7-26.8l-47.9-34.8z"]
 };
 var faFutbolBall = faFutbol;
 var faSoccerBall = faFutbol;
@@ -12536,7 +13717,7 @@ var faMapMarked = faMapLocation;
 var faHouseFloodWater = {
   prefix: 'fas',
   iconName: 'house-flood-water',
-  icon: [576, 512, [], "e50e", "M306.8 6.1C295.6-2 280.4-2 269.2 6.1l-176 128c-11.2 8.2-15.9 22.6-11.6 35.8S98.1 192 112 192h16v73c1.7 1 3.3 2 4.9 3.1c18 12.4 40.1 20.3 59.2 20.3c21.1 0 42-8.5 59.2-20.3c22.1-15.5 51.6-15.5 73.7 0c18.4 12.7 39.6 20.3 59.2 20.3c19 0 41.2-7.9 59.2-20.3c1.5-1 3-2 4.5-2.9l-.3-73.2H464c13.9 0 26.1-8.9 30.4-22.1s-.4-27.6-11.6-35.8l-176-128zM269.5 309.9C247 325.4 219.5 336 192 336c-26.9 0-55.3-10.8-77.4-26.1l0 0c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25C126.5 389.7 159 400 192 400c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.6 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.5-27.3-10.1-39.2-1.7l0 0C439.4 325.2 410.9 336 384 336c-27.5 0-55-10.6-77.5-26.1c-11.1-7.9-25.9-7.9-37 0zM384 448c-27.5 0-55-10.6-77.5-26.1c-11.1-7.9-25.9-7.9-37 0C247 437.4 219.5 448 192 448c-26.9 0-55.3-10.8-77.4-26.1l0 0c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25C126.5 501.7 159 512 192 512c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.6 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.4-27.3-10.1-39.2-1.7l0 0C439.4 437.2 410.9 448 384 448z"]
+  icon: [576, 512, [], "e50e", "M306.8 6.1C295.6-2 280.4-2 269.2 6.1l-176 128c-11.2 8.2-15.9 22.6-11.6 35.8S98.1 192 112 192h16v73c1.7 1 3.3 2 4.9 3.1c18 12.4 40.1 20.3 59.2 20.3c21.1 0 42-8.5 59.2-20.3c22.1-15.5 51.6-15.5 73.7 0c18.4 12.7 39.6 20.3 59.2 20.3c19 0 41.2-7.9 59.2-20.3c1.5-1 3-2 4.5-2.9l-.3-73.2H464c13.9 0 26.1-8.9 30.4-22.1s-.4-27.6-11.6-35.8l-176-128zM269.5 309.9C247 325.4 219.5 336 192 336c-26.9 0-55.3-10.8-77.4-26.1l0 0c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25C126.5 389.7 159 400 192 400c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.5 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.5-27.3-10.1-39.2-1.7l0 0C439.4 325.2 410.9 336 384 336c-27.5 0-55-10.6-77.5-26.1c-11.1-7.9-25.9-7.9-37 0zM384 448c-27.5 0-55-10.6-77.5-26.1c-11.1-7.9-25.9-7.9-37 0C247 437.4 219.5 448 192 448c-26.9 0-55.3-10.8-77.4-26.1l0 0c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25C126.5 501.7 159 512 192 512c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.5 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.4-27.3-10.1-39.2-1.7l0 0C439.4 437.2 410.9 448 384 448z"]
 };
 var faTree = {
   prefix: 'fas',
@@ -12556,7 +13737,7 @@ var faSackDollar = {
 var faPenToSquare = {
   prefix: 'fas',
   iconName: 'pen-to-square',
-  icon: [512, 512, ["edit"], "f044", "M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.8 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"]
+  icon: [512, 512, ["edit"], "f044", "M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"]
 };
 var faEdit = faPenToSquare;
 var faCarSide = {
@@ -12573,12 +13754,12 @@ var faShareAlt = faShareNodes;
 var faHeartCircleMinus = {
   prefix: 'fas',
   iconName: 'heart-circle-minus',
-  icon: [576, 512, [], "e4ff", "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5zM576 368c0-79.5-64.5-144-144-144s-144 64.5-144 144s64.5 144 144 144s144-64.5 144-144zm-64 0c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16H496c8.8 0 16 7.2 16 16z"]
+  icon: [576, 512, [], "e4ff", "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5zM576 368a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zm-64 0c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16H496c8.8 0 16 7.2 16 16z"]
 };
 var faHourglassHalf = {
   prefix: 'fas',
   iconName: 'hourglass-half',
-  icon: [384, 512, ["hourglass-2"], "f252", "M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM96 75V64H288V75c0 19-5.6 37.4-16 53H112c-10.3-15.6-16-34-16-53zm16 309c3.5-5.3 7.6-10.3 12.1-14.9L192 301.3l67.9 67.9c4.6 4.6 8.6 9.6 12.2 14.9H112z"]
+  icon: [384, 512, ["hourglass-2"], "f252", "M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64V75c0 42.4 16.9 83.1 46.9 113.1L146.7 256 78.9 323.9C48.9 353.9 32 394.6 32 437v11c-17.7 0-32 14.3-32 32s14.3 32 32 32H64 320h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V437c0-42.4-16.9-83.1-46.9-113.1L237.3 256l67.9-67.9c30-30 46.9-70.7 46.9-113.1V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320 64 32zM96 75V64H288V75c0 19-5.6 37.4-16 53H112c-10.3-15.6-16-34-16-53zm16 309c3.5-5.3 7.6-10.3 12.1-14.9L192 301.3l67.9 67.9c4.6 4.6 8.6 9.6 12.1 14.9H112z"]
 };
 var faHourglass2 = faHourglassHalf;
 var faMicroscope = {
@@ -12600,7 +13781,7 @@ var faShoppingBag = faBagShopping;
 var faArrowDownZA = {
   prefix: 'fas',
   iconName: 'arrow-down-z-a',
-  icon: [512, 512, ["sort-alpha-desc", "sort-alpha-down-alt"], "f881", "M143.6 469.6C137.5 476.2 129 480 120 480s-17.5-3.8-23.6-10.4l-88-96c-11.9-13-11.1-33.3 2-45.2s33.3-11.1 45.2 2L88 365.7V64c0-17.7 14.3-32 32-32s32 14.3 32 32V365.7l32.4-35.4c11.9-13 32.2-13.9 45.2-2s13.9 32.2 2 45.2l-88 96zM280 64c0-17.7 14.3-32 32-32H440c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9L389.3 160H440c17.7 0 32 14.3 32 32s-14.3 32-32 32H312c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9L362.7 96H312c-17.7 0-32-14.3-32-32zm96 192c12.1 0 23.2 6.8 28.6 17.7l64 128 16 32c7.9 15.8 1.5 35-14.3 42.9s-35 1.5-42.9-14.3L420.2 448H331.8l-7.2 14.3c-7.9 15.8-27.1 22.2-42.9 14.3s-22.2-27.1-14.3-42.9l16-32 64-128c5.4-10.8 16.5-17.7 28.6-17.7zM355.8 400h40.4L376 359.6 355.8 400z"]
+  icon: [576, 512, ["sort-alpha-desc", "sort-alpha-down-alt"], "f881", "M183.6 469.6C177.5 476.2 169 480 160 480s-17.5-3.8-23.6-10.4l-88-96c-11.9-13-11.1-33.3 2-45.2s33.3-11.1 45.2 2L128 365.7V64c0-17.7 14.3-32 32-32s32 14.3 32 32V365.7l32.4-35.4c11.9-13 32.2-13.9 45.2-2s13.9 32.2 2 45.2l-88 96zM320 64c0-17.7 14.3-32 32-32H480c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9L429.3 160H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H352c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9L402.7 96H352c-17.7 0-32-14.3-32-32zm96 192c12.1 0 23.2 6.8 28.6 17.7l64 128 16 32c7.9 15.8 1.5 35-14.3 42.9s-35 1.5-42.9-14.3L460.2 448H371.8l-7.2 14.3c-7.9 15.8-27.1 22.2-42.9 14.3s-22.2-27.1-14.3-42.9l16-32 64-128c5.4-10.8 16.5-17.7 28.6-17.7zM395.8 400h40.4L416 359.6 395.8 400z"]
 };
 var faSortAlphaDesc = faArrowDownZA;
 var faSortAlphaDownAlt = faArrowDownZA;
@@ -12638,12 +13819,12 @@ var faHandPaper = faHand;
 var faOm = {
   prefix: 'fas',
   iconName: 'om',
-  icon: [512, 512, [128329], "f679", "M379.3 4.7c-6.2-6.2-16.4-6.2-22.6 0l-16 16c-6.2 6.2-6.2 16.4 0 22.6l16 16c6.2 6.2 16.4 6.2 22.6 0l16-16c6.2-6.2 6.2-16.4 0-22.6l-16-16zM115.2 169.6c8-6 17.9-9.6 28.8-9.6c26.5 0 48 21.5 48 48s-21.5 48-48 48H109.8c-7.6 0-13.8 6.2-13.8 13.8c0 1.5 .2 2.9 .7 4.4l8 24c4.4 13.1 16.6 21.9 30.4 21.9H144h16c35.3 0 64 28.7 64 64s-28.7 64-64 64c-50.8 0-82.7-21.5-102.2-42.8c-9.9-10.8-16.6-21.6-20.9-29.7c-2.1-4-3.6-7.3-4.5-9.6c-.5-1.1-.8-2-1-2.5l-.2-.5 0-.1c-2.6-7.8-10.7-12.3-18.7-10.5C4.4 354.2-.9 361.8 .1 370L16 368C.1 370 .1 370 .1 370l0 0 0 0 0 .1 .1 .4c0 .3 .1 .8 .2 1.3c.2 1.1 .4 2.7 .8 4.6c.8 3.9 2 9.4 3.9 15.9c3.8 13 10.3 30.4 21.3 48C48.7 476.2 89.4 512 160 512c70.7 0 128-57.3 128-128c0-23.3-6.2-45.2-17.1-64h22.6c25.5 0 49.9-10.1 67.9-28.1l26.5-26.5c6-6 14.1-9.4 22.6-9.4H416c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32c-25.7 0-41.4-12.5-51.2-25.6c-5-6.7-8.4-13.4-10.5-18.6c-1.1-2.5-1.8-4.6-2.2-6c-.2-.7-.4-1.2-.5-1.5l-.1-.3 0 0c0 0 0 0 0 0c-1.9-7.3-8.6-12.4-16.2-12.1c-7.6 .3-13.9 5.9-15.1 13.4L336 368c-15.8-2.6-15.8-2.6-15.8-2.6l0 0 0 0 0 .1-.1 .3c0 .3-.1 .6-.2 1.1c-.1 .9-.3 2.1-.4 3.6c-.3 3-.6 7.3-.6 12.4c0 10.1 1.1 23.9 5.8 38.1c4.8 14.3 13.4 29.3 28.6 40.7C368.7 473.3 389.3 480 416 480c53 0 96-43 96-96V288c0-53-43-96-96-96h-5.5c-25.5 0-49.9 10.1-67.9 28.1l-26.5 26.5c-6 6-14.1 9.4-22.6 9.4H245.2c6.9-14.5 10.8-30.8 10.8-48c0-61.9-50.1-112-112-112c-25.2 0-48.5 8.3-67.2 22.4c-14.1 10.6-17 30.7-6.4 44.8s30.7 17 44.8 6.4zM280.9 66.7c-6-4-14-3.5-19.5 1.3s-7 12.7-3.7 19.2L272 80c-14.3 7.2-14.3 7.2-14.3 7.2l0 0 0 0 0 .1 .1 .2 .4 .7c.3 .6 .8 1.4 1.4 2.4c1.2 2 2.9 4.8 5.1 8.2c4.4 6.7 11.1 15.5 20 24.4C302.4 141.1 330.3 160 368 160c31.2 0 56.6-10.4 73.9-20.2c8.7-5 15.6-9.9 20.4-13.8c2.4-1.9 4.3-3.6 5.7-4.9c.7-.6 1.3-1.2 1.7-1.6l.6-.5 .2-.2 .1-.1 0 0 0 0c0 0 0 0-22.6-22.6l22.6 22.6c12.5-12.5 12.5-32.8 0-45.3c-12.4-12.4-32.6-12.5-45.1-.2c-.1 .1-.2 .2-.5 .4c-.5 .5-1.5 1.3-2.8 2.4c-2.7 2.2-6.8 5.2-12.1 8.2C399.4 90.4 384.8 96 368 96c-20.8 0-42.4-7-59.5-14.6c-8.4-3.7-15.4-7.5-20.3-10.3c-2.4-1.4-4.3-2.5-5.6-3.3c-.6-.4-1.1-.7-1.4-.9l-.3-.2 0 0 0 0 0 0z"]
+  icon: [512, 512, [128329], "f679", "M379.3 4.7c-6.2-6.2-16.4-6.2-22.6 0l-16 16c-6.2 6.2-6.2 16.4 0 22.6l16 16c6.2 6.2 16.4 6.2 22.6 0l16-16c6.2-6.2 6.2-16.4 0-22.6l-16-16zM281 66.7c-2.2-1.5-4.9-2.5-7.7-2.7c-.6 0-1.3-.1-1.9 0c-3.9 .2-7.4 1.7-10.1 4.2c-.9 .8-1.6 1.7-2.3 2.6c-1.7 2.4-2.7 5.3-2.9 8.5c0 .7 0 1.4 0 2.1c.2 2.2 .9 4.3 1.9 6.2l.3 .6c.3 .6 .8 1.4 1.4 2.4c1.2 2 2.9 4.8 5.1 8.2c4.4 6.7 11.1 15.5 20 24.4C302.4 141.1 330.3 160 368 160c31.2 0 56.6-10.4 73.9-20.2c8.7-5 15.6-9.9 20.4-13.8c2.4-1.9 4.3-3.6 5.7-4.9c.7-.6 1.3-1.2 1.7-1.6l.6-.5 .1-.1 .1-.1 0 0 0 0c5.9-5.8 9.5-13.9 9.5-22.8c0-17.7-14.3-32-32-32c-8.7 0-16.7 3.5-22.4 9.2c-.1 .1-.2 .2-.5 .4c-.5 .5-1.5 1.3-2.8 2.4c-2.7 2.2-6.8 5.2-12.1 8.2C399.4 90.4 384.8 96 368 96c-20.8 0-42.4-7-59.5-14.6c-8.4-3.7-15.4-7.5-20.3-10.3c-2.4-1.4-4.3-2.5-5.6-3.3c-.6-.4-1.1-.7-1.4-.9l-.3-.2zM115.2 169.6c8-6 17.9-9.6 28.8-9.6c26.5 0 48 21.5 48 48s-21.5 48-48 48H109.8c-7.6 0-13.8 6.2-13.8 13.8c0 1.5 .2 2.9 .7 4.4l8 24c4.4 13.1 16.6 21.9 30.4 21.9H144h16c35.3 0 64 28.7 64 64s-28.7 64-64 64c-50.8 0-82.7-21.5-102.2-42.8c-9.9-10.8-16.6-21.6-20.9-29.7c-2.1-4-3.6-7.3-4.5-9.6c-.5-1.1-.8-2-1-2.5l-.2-.5c-.3-.9-.7-1.8-1.1-2.6c-1.2-2.2-2.8-4-4.7-5.4c-1.9-1.4-4.1-2.3-6.5-2.8c-1.4-.3-2.9-.3-4.4-.2c-2.5 .2-4.8 1-6.8 2.3c-1.1 .7-2.2 1.5-3.1 2.5c-2.4 2.5-4.1 5.8-4.5 9.5c-.1 .6-.1 1.1-.1 1.7c0 0 0 0 0 0c0 .8 .1 1.7 .2 2.5l0 .1c0 .3 .1 .8 .2 1.3c.2 1.1 .4 2.7 .8 4.6c.8 3.9 2 9.4 3.9 15.9c3.8 13 10.3 30.4 21.3 48C48.7 476.2 89.4 512 160 512c70.7 0 128-57.3 128-128c0-23.3-6.2-45.2-17.1-64h22.6c25.5 0 49.9-10.1 67.9-28.1l26.5-26.5c6-6 14.1-9.4 22.6-9.4H416c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32c-25.7 0-41.4-12.5-51.2-25.6c-5-6.7-8.4-13.4-10.5-18.6c-1.1-2.5-1.8-4.6-2.2-6c-.2-.7-.4-1.2-.5-1.5l-.1-.2c-.3-1.3-.8-2.6-1.5-3.8c-1.1-2-2.6-3.8-4.4-5.1c-2.7-2-6-3.2-9.6-3.2l-.2 0c-8 .1-14.6 6.1-15.6 13.9l0 0c0 .3-.1 .6-.2 1.1c-.1 .9-.3 2.1-.4 3.6c-.3 3-.6 7.3-.6 12.4c0 10.1 1.1 23.9 5.8 38.1c4.8 14.3 13.4 29.3 28.6 40.7C368.7 473.3 389.3 480 416 480c53 0 96-43 96-96V288c0-53-43-96-96-96h-5.5c-25.5 0-49.9 10.1-67.9 28.1l-26.5 26.5c-6 6-14.1 9.4-22.6 9.4H245.2c6.9-14.5 10.8-30.8 10.8-48c0-61.9-50.1-112-112-112c-25.2 0-48.5 8.3-67.2 22.4c-14.1 10.6-17 30.7-6.4 44.8s30.7 17 44.8 6.4z"]
 };
 var faWorm = {
   prefix: 'fas',
   iconName: 'worm',
-  icon: [448, 512, [], "e599", "M224 96c0-53 43-96 96-96h38.4C407.9 0 448 40.1 448 89.6V176v16V376c0 75.1-60.9 136-136 136s-136-60.9-136-136V296c0-22.1-17.9-40-40-40s-40 17.9-40 40V464c0 26.5-21.5 48-48 48s-48-21.5-48-48V296c0-75.1 60.9-136 136-136s136 60.9 136 136v80c0 22.1 17.9 40 40 40s40-17.9 40-40V192H320c-53 0-96-43-96-96zm144-8a24 24 0 1 0 -48 0 24 24 0 1 0 48 0z"]
+  icon: [512, 512, [], "e599", "M256 96c0-53 43-96 96-96h38.4C439.9 0 480 40.1 480 89.6V176v16V376c0 75.1-60.9 136-136 136s-136-60.9-136-136V296c0-22.1-17.9-40-40-40s-40 17.9-40 40V464c0 26.5-21.5 48-48 48s-48-21.5-48-48V296c0-75.1 60.9-136 136-136s136 60.9 136 136v80c0 22.1 17.9 40 40 40s40-17.9 40-40V192H352c-53 0-96-43-96-96zm144-8a24 24 0 1 0 -48 0 24 24 0 1 0 48 0z"]
 };
 var faHouseCircleXmark = {
   prefix: 'fas',
@@ -12658,17 +13839,17 @@ var faPlug = {
 var faChevronUp = {
   prefix: 'fas',
   iconName: 'chevron-up',
-  icon: [448, 512, [], "f077", "M201.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 173.3 54.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"]
+  icon: [512, 512, [], "f077", "M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"]
 };
 var faHandSpock = {
   prefix: 'fas',
   iconName: 'hand-spock',
-  icon: [512, 512, [128406], "f259", "M214.9 23.7C210.3 6.6 192.8-3.5 175.7 1.1s-27.2 22.1-22.6 39.2L206 237.8c2.5 9.2-4.5 18.2-14 18.2c-6.4 0-12-4.2-13.9-10.3L134.6 102.7c-5.1-16.9-23-26.4-39.9-21.3s-26.4 23-21.3 39.9l62.8 206.4c2.4 7.9-7.2 13.8-13.2 8.1L67.6 283c-16-15.2-41.3-14.6-56.6 1.4s-14.6 41.3 1.4 56.6L124.8 448c43.1 41.1 100.4 64 160 64h10.9 8.2c.1 0 .1-.1 .1-.1s.1-.1 .1-.1c58.3-3.5 108.6-43.2 125.3-99.7l81.2-275c5-16.9-4.7-34.7-21.6-39.8s-34.7 4.7-39.8 21.6L411.5 247.1c-1.6 5.3-6.4 8.9-12 8.9c-7.9 0-13.8-7.3-12.2-15.1l36-170.3c3.7-17.3-7.4-34.3-24.7-37.9s-34.3 7.4-37.9 24.7L323.1 235.1c-2.6 12.2-13.3 20.9-25.8 20.9c-11.9 0-22.4-8-25.4-19.5l-57-212.8z"]
+  icon: [576, 512, [128406], "f259", "M246.9 23.7C242.3 6.6 224.8-3.5 207.7 1.1s-27.2 22.1-22.6 39.2L238 237.8c2.5 9.2-4.5 18.2-14 18.2c-6.4 0-12-4.2-13.9-10.3L166.6 102.7c-5.1-16.9-23-26.4-39.9-21.3s-26.4 23-21.3 39.9l62.8 206.4c2.4 7.9-7.2 13.8-13.2 8.1L99.6 283c-16-15.2-41.3-14.6-56.6 1.4s-14.6 41.3 1.4 56.6L156.8 448c43.1 41.1 100.4 64 160 64h10.9 8.2c.1 0 .1-.1 .1-.1s.1-.1 .1-.1c58.3-3.5 108.6-43.2 125.3-99.7l81.2-275c5-16.9-4.7-34.7-21.6-39.8s-34.7 4.7-39.8 21.6L443.5 247.1c-1.6 5.3-6.4 8.9-12 8.9c-7.9 0-13.8-7.3-12.2-15.1l36-170.3c3.7-17.3-7.4-34.3-24.7-37.9s-34.3 7.4-37.9 24.7L355.1 235.1c-2.6 12.2-13.3 20.9-25.8 20.9c-11.9 0-22.4-8-25.4-19.5l-57-212.8z"]
 };
 var faStopwatch = {
   prefix: 'fas',
   iconName: 'stopwatch',
-  icon: [448, 512, [9201], "f2f2", "M160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h16V98.4C76.3 113.8 0 200 0 304C0 418.9 93.1 512 208 512s208-93.1 208-208c0-41.8-12.3-80.7-33.5-113.2l24.1-24.1c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L339.7 143c-28.1-23-62.2-38.8-99.7-44.6V64h16c17.7 0 32-14.3 32-32s-14.3-32-32-32H208 160zm72 192V320c0 13.3-10.7 24-24 24s-24-10.7-24-24V192c0-13.3 10.7-24 24-24s24 10.7 24 24z"]
+  icon: [448, 512, [9201], "f2f2", "M176 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h16V98.4C92.3 113.8 16 200 16 304c0 114.9 93.1 208 208 208s208-93.1 208-208c0-41.8-12.3-80.7-33.5-113.2l24.1-24.1c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L355.7 143c-28.1-23-62.2-38.8-99.7-44.6V64h16c17.7 0 32-14.3 32-32s-14.3-32-32-32H224 176zm72 192V320c0 13.3-10.7 24-24 24s-24-10.7-24-24V192c0-13.3 10.7-24 24-24s24 10.7 24 24z"]
 };
 var faFaceKiss = {
   prefix: 'fas',
@@ -12714,7 +13895,7 @@ var faRoadCircleCheck = {
 var faDiceFive = {
   prefix: 'fas',
   iconName: 'dice-five',
-  icon: [448, 512, [9860], "f523", "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm64 160c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32zm32 160c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32zm64-64c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32zM352 160c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32zM320 384c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"]
+  icon: [448, 512, [9860], "f523", "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm64 96a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM96 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM224 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64-64a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
 };
 var faSquareRss = {
   prefix: 'fas',
@@ -12725,7 +13906,7 @@ var faRssSquare = faSquareRss;
 var faLandMineOn = {
   prefix: 'fas',
   iconName: 'land-mine-on',
-  icon: [576, 512, [], "e51b", "M312 24V168c0 13.3-10.7 24-24 24s-24-10.7-24-24V24c0-13.3 10.7-24 24-24s24 10.7 24 24zM160 320c0-17.7 14.3-32 32-32H384c17.7 0 32 14.3 32 32v32H160V320zM82.7 410.5c8.1-16.3 24.8-26.5 42.9-26.5H450.3c18.2 0 34.8 10.3 42.9 26.5l27.6 55.2C531.5 487 516 512 492.2 512H83.8c-23.8 0-39.3-25-28.6-46.3l27.6-55.2zM4.3 138.3c7.5-10.9 22.5-13.6 33.4-6.1l104 72c10.9 7.5 13.6 22.5 6.1 33.4s-22.5 13.6-33.4 6.1l-104-72c-10.9-7.5-13.6-22.5-6.1-33.4zm534.1-6.1c10.9-7.5 25.8-4.8 33.4 6.1s4.8 25.8-6.1 33.4l-104 72c-10.9 7.5-25.8 4.8-33.4-6.1s-4.8-25.8 6.1-33.4l104-72z"]
+  icon: [640, 512, [], "e51b", "M344 24V168c0 13.3-10.7 24-24 24s-24-10.7-24-24V24c0-13.3 10.7-24 24-24s24 10.7 24 24zM192 320c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32v32H192V320zm-77.3 90.5c8.1-16.3 24.8-26.5 42.9-26.5H482.3c18.2 0 34.8 10.3 42.9 26.5l27.6 55.2C563.5 487 548 512 524.2 512H115.8c-23.8 0-39.3-25-28.6-46.3l27.6-55.2zM36.3 138.3c7.5-10.9 22.5-13.6 33.4-6.1l104 72c10.9 7.5 13.6 22.5 6.1 33.4s-22.5 13.6-33.4 6.1l-104-72c-10.9-7.5-13.6-22.5-6.1-33.4zm534.1-6.1c10.9-7.5 25.8-4.8 33.4 6.1s4.8 25.8-6.1 33.4l-104 72c-10.9 7.5-25.8 4.8-33.4-6.1s-4.8-25.8 6.1-33.4l104-72z"]
 };
 var faICursor = {
   prefix: 'fas',
@@ -12767,7 +13948,7 @@ var faGrinAlt = faFaceGrinWide;
 var faTooth = {
   prefix: 'fas',
   iconName: 'tooth',
-  icon: [384, 512, [129463], "f5c9", "M154.1 52.1C137.3 39.1 116.7 32 95.5 32C42.7 32 0 74.7 0 127.5v6.2c0 15.8 3.7 31.3 10.7 45.5l23.5 47.1c4.5 8.9 7.6 18.4 9.4 28.2L80.4 460.2c2 11.2 11.6 19.4 22.9 19.8s21.4-7.4 24-18.4l28.9-121.3C160.2 323.7 175 312 192 312s31.8 11.7 35.8 28.3l28.9 121.3c2.6 11.1 12.7 18.8 24 18.4s20.9-8.6 22.9-19.8l36.7-205.8c1.8-9.8 4.9-19.3 9.4-28.2l23.5-47.1c7.1-14.1 10.7-29.7 10.7-45.5v-2.1c0-55-44.6-99.6-99.6-99.6c-24.1 0-47.4 8.8-65.6 24.6l-3.2 2.8 19.5 15.2c7 5.4 8.2 15.5 2.8 22.5s-15.5 8.2-22.5 2.8l-24.4-19-37-28.8z"]
+  icon: [448, 512, [129463], "f5c9", "M186.1 52.1C169.3 39.1 148.7 32 127.5 32C74.7 32 32 74.7 32 127.5v6.2c0 15.8 3.7 31.3 10.7 45.5l23.5 47.1c4.5 8.9 7.6 18.4 9.4 28.2l36.7 205.8c2 11.2 11.6 19.4 22.9 19.8s21.4-7.4 24-18.4l28.9-121.3C192.2 323.7 207 312 224 312s31.8 11.7 35.8 28.3l28.9 121.3c2.6 11.1 12.7 18.8 24 18.4s20.9-8.6 22.9-19.8l36.7-205.8c1.8-9.8 4.9-19.3 9.4-28.2l23.5-47.1c7.1-14.1 10.7-29.7 10.7-45.5v-2.1c0-55-44.6-99.6-99.6-99.6c-24.1 0-47.4 8.8-65.6 24.6l-3.2 2.8 19.5 15.2c7 5.4 8.2 15.5 2.8 22.5s-15.5 8.2-22.5 2.8l-24.4-19-37-28.8z"]
 };
 var faV = {
   prefix: 'fas',
@@ -12787,7 +13968,7 @@ var faBicycle = {
 var faStaffSnake = {
   prefix: 'fas',
   iconName: 'staff-snake',
-  icon: [384, 512, ["rod-asclepius", "rod-snake", "staff-aesculapius"], "e579", "M222.6 43.2l-.2 4.8H288c53 0 96 43 96 96s-43 96-96 96H248V160h40c8.8 0 16-7.2 16-16s-7.2-16-16-16H248 220l-4.5 144H256c53 0 96 43 96 96s-43 96-96 96H240V384h16c8.8 0 16-7.2 16-16s-7.2-16-16-16H213l-3.1 99.5L208.5 495l0 1c-.3 8.9-7.6 16-16.5 16s-16.2-7.1-16.5-16l0-1-1-31H136c-22.1 0-40-17.9-40-40s17.9-40 40-40h36l-1-32H152c-53 0-96-43-96-96c0-47.6 34.6-87.1 80-94.7V256c0 8.8 7.2 16 16 16h16.5L164 128H136 122.6c-9 18.9-28.3 32-50.6 32H56c-30.9 0-56-25.1-56-56S25.1 48 56 48h8 8 89.5l-.1-4.8L161 32c0-.7 0-1.3 0-1.9c.5-16.6 14.1-30 31-30s30.5 13.4 31 30c0 .6 0 1.3 0 1.9l-.4 11.2zM64 112a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"]
+  icon: [384, 512, ["rod-asclepius", "rod-snake", "staff-aesculapius"], "e579", "M222.6 43.2l-.1 4.8H288c53 0 96 43 96 96s-43 96-96 96H248V160h40c8.8 0 16-7.2 16-16s-7.2-16-16-16H248 220l-4.5 144H256c53 0 96 43 96 96s-43 96-96 96H240V384h16c8.8 0 16-7.2 16-16s-7.2-16-16-16H213l-3.1 99.5L208.5 495l0 1c-.3 8.9-7.6 16-16.5 16s-16.2-7.1-16.5-16l0-1-1-31H136c-22.1 0-40-17.9-40-40s17.9-40 40-40h36l-1-32H152c-53 0-96-43-96-96c0-47.6 34.6-87.1 80-94.7V256c0 8.8 7.2 16 16 16h16.5L164 128H136 122.6c-9 18.9-28.3 32-50.6 32H56c-30.9 0-56-25.1-56-56S25.1 48 56 48h8 8 89.5l-.1-4.8L161 32c0-.7 0-1.3 0-1.9c.5-16.6 14.1-30 31-30s30.5 13.4 31 30c0 .6 0 1.3 0 1.9l-.4 11.2zM64 112a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"]
 };
 var faRodAsclepius = faStaffSnake;
 var faRodSnake = faStaffSnake;
@@ -12795,7 +13976,7 @@ var faStaffAesculapius = faStaffSnake;
 var faHeadSideCoughSlash = {
   prefix: 'fas',
   iconName: 'head-side-cough-slash',
-  icon: [640, 512, [], "e062", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L440.3 319.8c22.3-2.1 39.7-20.8 39.7-43.7c0-10-3.4-19.6-9.6-27.4l-42-52.6c-8.3-10.3-12.8-23-15-36.1C398.2 69.3 319.2 0 224 0H201.7C157 0 115.7 14.5 82.2 39.2L38.8 5.1zM0 201.7c0 44.8 18.3 91.5 46.5 127.7C56.9 342.8 64 358.8 64 375.8V480c0 17.7 14.3 32 32 32H256c17.7 0 32-14.3 32-32h64c32.8 0 59.9-24.7 63.6-56.6l-9.4-7.4H352c-17.7 0-32-14.3-32-32c0-10.5 5.1-19.9 12.9-25.7L20.8 112.4C7.5 139.3 0 169.6 0 201.7zM632 288a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zm-88 72a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm64 48a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"]
+  icon: [640, 512, [], "e062", "M448 325.8l44 34.5c8.1 1.4 14.8 6.8 18 14.1L552.9 408c10.6 .4 19.5 7.6 22.2 17.4l39.1 30.6c.6 0 1.2-.1 1.8-.1c11.1 0 20.4 7.5 23.2 17.8h-3.9c6.2 8.5 6.4 20.4-.4 29c-8.2 10.4-23.3 12.3-33.7 4.1L9.2 42.9C-1.2 34.7-3.1 19.6 5.1 9.2S28.4-3.1 38.8 5.1L89.6 44.9C127 16.7 173.5 0 224 0h24c95.2 0 181.2 69.3 197.3 160.2c2.3 13 6.8 25.7 15.1 36l42 52.6c6.2 7.8 9.6 17.4 9.6 27.4c0 24.2-19.6 43.8-43.8 43.8H448v0 5.8zM0 224.2c0-38.7 9.8-75.1 27.1-106.9L341.8 365.3l-2.5 .3c-11 1.4-19.2 10.7-19.2 21.8c0 11.6 9 21.2 20.6 21.9l62 3.9 43 33.9C439.3 466.2 421.2 480 400 480H320v8c0 13.3-10.7 24-24 24H256v0H96c-17.7 0-32-14.3-32-32V407.3c0-16.7-6.9-32.5-17.1-45.8C16.6 322.4 0 274.1 0 224.2zM616 360a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm-64-48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm40-24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"]
 };
 var faTruckMedical = {
   prefix: 'fas',
@@ -12826,7 +14007,7 @@ var faRoadBarrier = {
 var faSchool = {
   prefix: 'fas',
   iconName: 'school',
-  icon: [640, 512, [127979], "f549", "M337.8 5.4C327-1.8 313-1.8 302.2 5.4L166.3 96H48C21.5 96 0 117.5 0 144V464c0 26.5 21.5 48 48 48H592c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7L337.8 5.4zM256 416c0-35.3 28.7-64 64-64s64 28.7 64 64v96H256V416zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V208c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V208zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V336zM232 176a88 88 0 1 1 176 0 88 88 0 1 1 -176 0zm88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H336V144c0-8.8-7.2-16-16-16z"]
+  icon: [640, 512, [127979], "f549", "M337.8 5.4C327-1.8 313-1.8 302.2 5.4L166.3 96H48C21.5 96 0 117.5 0 144V464c0 26.5 21.5 48 48 48H256V416c0-35.3 28.7-64 64-64s64 28.7 64 64v96H592c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7L337.8 5.4zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V208c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V208zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V336zM232 176a88 88 0 1 1 176 0 88 88 0 1 1 -176 0zm88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H336V144c0-8.8-7.2-16-16-16z"]
 };
 var faIgloo = {
   prefix: 'fas',
@@ -12841,7 +14022,7 @@ var faJoint = {
 var faAngleRight = {
   prefix: 'fas',
   iconName: 'angle-right',
-  icon: [256, 512, [8250], "f105", "M246.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L178.7 256 41.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"]
+  icon: [320, 512, [8250], "f105", "M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"]
 };
 var faHorse = {
   prefix: 'fas',
@@ -12866,7 +14047,7 @@ var faNotesMedical = {
 var faTemperatureHalf = {
   prefix: 'fas',
   iconName: 'temperature-half',
-  icon: [320, 512, [127777, "temperature-2", "thermometer-2", "thermometer-half"], "f2c9", "M144 64c-26.5 0-48 21.5-48 48V276.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112V276.5c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6V112zM192 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V208c0-8.8 7.2-16 16-16s16 7.2 16 16V322.7c18.6 6.6 32 24.4 32 45.3z"]
+  icon: [320, 512, [127777, "temperature-2", "thermometer-2", "thermometer-half"], "f2c9", "M160 64c-26.5 0-48 21.5-48 48V276.5c0 17.3-7.1 31.9-15.3 42.5C86.2 332.6 80 349.5 80 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM48 112C48 50.2 98.1 0 160 0s112 50.1 112 112V276.5c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S16 447.5 16 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6V112zM208 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V208c0-8.8 7.2-16 16-16s16 7.2 16 16V322.7c18.6 6.6 32 24.4 32 45.3z"]
 };
 var faTemperature2 = faTemperatureHalf;
 var faThermometer2 = faTemperatureHalf;
@@ -12884,7 +14065,7 @@ var faCapsules = {
 var faPooStorm = {
   prefix: 'fas',
   iconName: 'poo-storm',
-  icon: [448, 512, ["poo-bolt"], "f75a", "M236.9 .2c-5.5-.7-11 1.4-14.5 5.7s-4.6 10.1-2.8 15.3c2.8 8.2 4.3 16.9 4.3 26.1c0 21.7-8.5 37.2-21.9 47.6c-13.8 10.8-34 17-57.8 17H128c-35.3 0-64 28.7-64 64c0 12.2 3.4 23.5 9.3 33.2C31.7 216.2 0 252.4 0 296c0 41 28 75.4 65.8 85.2c-5.3-18.5 1-38.5 16.2-50.7l160-128c17.6-14.1 42.6-14 60.2 .2s22.8 38.6 12.8 58.8L285.7 320H304c20.4 0 38.5 12.9 45.3 32.1c3.7 10.6 3.5 21.8 0 31.9H360c48.6 0 88-39.4 88-88c0-43.6-31.7-79.8-73.3-86.8c5.9-9.7 9.3-21.1 9.3-33.2c0-35.3-28.7-64-64-64h-1.4c.9-5.4 1.4-10.9 1.4-16.6c0-48.7-36.1-88.9-83.1-95.2zm45.1 227.4c-5.8-4.7-14.2-4.7-20.1-.1l-160 128c-5.3 4.2-7.4 11.4-5.1 17.8s8.3 10.7 15.1 10.7h70.1L129.7 488.8c-3.4 6.7-1.6 14.9 4.3 19.6s14.2 4.7 20.1 .1l160-128c5.3-4.2 7.4-11.4 5.1-17.8s-8.3-10.7-15.1-10.7H233.9l52.4-104.8c3.4-6.7 1.6-14.9-4.2-19.6z"]
+  icon: [448, 512, ["poo-bolt"], "f75a", "M236.9 .2c-5.5-.7-11 1.4-14.5 5.7s-4.6 10.1-2.8 15.3c2.8 8.2 4.3 16.9 4.3 26.1c0 21.7-8.5 37.2-21.9 47.6c-13.8 10.8-34 17-57.8 17H128c-35.3 0-64 28.7-64 64c0 12.2 3.4 23.5 9.3 33.2C31.7 216.2 0 252.4 0 296c0 40.9 28 75.4 65.8 85.2c-5.3-18.5 1-38.5 16.2-50.7l160-128c17.6-14.1 42.6-14 60.2 .2s22.8 38.6 12.8 58.8L285.7 320H304c20.4 0 38.5 12.9 45.3 32.1c3.7 10.6 3.5 21.8 0 31.9H360c48.6 0 88-39.4 88-88c0-43.6-31.7-79.8-73.3-86.8c5.9-9.7 9.3-21.1 9.3-33.2c0-35.3-28.7-64-64-64h-1.4c.9-5.4 1.4-10.9 1.4-16.6c0-48.7-36.1-88.9-83.1-95.2zm45.1 227.4c-5.8-4.7-14.2-4.7-20.1-.1l-160 128c-5.3 4.2-7.4 11.4-5.1 17.8s8.3 10.7 15.1 10.7h70.1L129.7 488.8c-3.4 6.7-1.6 14.9 4.3 19.6s14.2 4.7 20.1 .1l160-128c5.3-4.2 7.4-11.4 5.1-17.8s-8.3-10.7-15.1-10.7H233.9l52.4-104.8c3.4-6.7 1.6-14.9-4.3-19.6z"]
 };
 var faPooBolt = faPooStorm;
 var faFaceFrownOpen = {
@@ -12952,13 +14133,13 @@ var faFolderBlank = faFolder;
 var faFileWaveform = {
   prefix: 'fas',
   iconName: 'file-waveform',
-  icon: [384, 512, ["file-medical-alt"], "f478", "M64 0C28.7 0 0 28.7 0 64V288H112c6.1 0 11.6 3.4 14.3 8.8L144 332.2l49.7-99.4c2.7-5.4 8.2-8.8 14.3-8.8s11.6 3.4 14.3 8.8L249.9 288H320c8.8 0 16 7.2 16 16s-7.2 16-16 16H240c-6.1 0-11.6-3.4-14.3-8.8L208 275.8l-49.7 99.4c-2.7 5.4-8.3 8.8-14.3 8.8s-11.6-3.4-14.3-8.8L102.1 320H0V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0z"]
+  icon: [448, 512, ["file-medical-alt"], "f478", "M96 0C60.7 0 32 28.7 32 64V288H144c6.1 0 11.6 3.4 14.3 8.8L176 332.2l49.7-99.4c2.7-5.4 8.3-8.8 14.3-8.8s11.6 3.4 14.3 8.8L281.9 288H352c8.8 0 16 7.2 16 16s-7.2 16-16 16H272c-6.1 0-11.6-3.4-14.3-8.8L240 275.8l-49.7 99.4c-2.7 5.4-8.3 8.8-14.3 8.8s-11.6-3.4-14.3-8.8L134.1 320H32V448c0 35.3 28.7 64 64 64H352c35.3 0 64-28.7 64-64V160H288c-17.7 0-32-14.3-32-32V0H96zM288 0V128H416L288 0z"]
 };
 var faFileMedicalAlt = faFileWaveform;
 var faRadiation = {
   prefix: 'fas',
   iconName: 'radiation',
-  icon: [512, 512, [], "f7b9", "M215 186.7c-23.9 13.8-40 39.7-40 69.3L31 256c-17.7 0-32.2-14.4-30-31.9C9.7 154 46.8 92.7 100.3 52c14.1-10.7 33.8-5.3 42.7 10l72 124.7zM255 336c14.6 0 28.2-3.9 40-10.7l72 124.8c8.8 15.3 3.7 35.1-12.6 41.9c-30.6 12.9-64.2 20-99.4 20s-68.9-7.1-99.4-20c-16.3-6.9-21.4-26.6-12.6-41.9l72-124.8c11.8 6.8 25.4 10.7 40 10.7zm224-80l-144 0c0-29.6-16.1-55.5-40-69.3L367 62c8.8-15.3 28.6-20.7 42.7-10c53.6 40.7 90.6 102 99.4 172.1c2.2 17.5-12.4 31.9-30 31.9zM257 208a48 48 0 1 1 -2 96 48 48 0 1 1 2-96z"]
+  icon: [512, 512, [], "f7b9", "M216 186.7c-23.9 13.8-40 39.7-40 69.3L32 256C14.3 256-.2 241.6 2 224.1C10.7 154 47.8 92.7 101.3 52c14.1-10.7 33.8-5.3 42.7 10l72 124.7zM256 336c14.6 0 28.2-3.9 40-10.7l72 124.8c8.8 15.3 3.7 35.1-12.6 41.9c-30.6 12.9-64.2 20-99.4 20s-68.9-7.1-99.4-20c-16.3-6.9-21.4-26.6-12.6-41.9l72-124.8c11.8 6.8 25.4 10.7 40 10.7zm224-80l-144 0c0-29.6-16.1-55.5-40-69.3L368 62c8.8-15.3 28.6-20.7 42.7-10c53.6 40.7 90.6 102 99.4 172.1c2.2 17.5-12.4 31.9-30 31.9zM256 208a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"]
 };
 var faChartSimple = {
   prefix: 'fas',
@@ -13055,7 +14236,7 @@ var faBullhorn = {
 var faGlobe = {
   prefix: 'fas',
   iconName: 'globe',
-  icon: [512, 512, [127760], "f0ac", "M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 21 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"]
+  icon: [512, 512, [127760], "f0ac", "M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"]
 };
 var faSynagogue = {
   prefix: 'fas',
@@ -13075,7 +14256,7 @@ var faRoadBridge = {
 var faLocationArrow = {
   prefix: 'fas',
   iconName: 'location-arrow',
-  icon: [448, 512, [], "f124", "M413.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144C5.7 200.2-2.3 215.2 .6 230.2s16.1 25.8 31.4 25.8H208V432c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z"]
+  icon: [448, 512, [], "f124", "M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8H224V432c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z"]
 };
 var faC = {
   prefix: 'fas',
@@ -13127,7 +14308,7 @@ var faCancel = faBan;
 var faCameraRotate = {
   prefix: 'fas',
   iconName: 'camera-rotate',
-  icon: [512, 512, [], "e0d8", "M149.1 64.8L138.7 96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H373.3L362.9 64.8C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM384 256c0 8.8-7.2 16-16 16H291.3c-6.2 0-11.3-5.1-11.3-11.3c0-3 1.2-5.9 3.3-8L307 229c-13.6-13.4-31.9-21-51-21c-19.2 0-37.7 7.6-51.3 21.3L185 249c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l19.7-19.7C193.4 172.7 224 160 256 160c31.8 0 62.4 12.6 85 35l23.7-23.7c2.1-2.1 5-3.3 8-3.3c6.2 0 11.3 5.1 11.3 11.3V256zM128 320c0-8.8 7.2-16 16-16h76.7c6.2 0 11.3 5.1 11.3 11.3c0 3-1.2 5.9-3.3 8L205 347c13.6 13.4 31.9 21 51 21c19.2 0 37.7-7.6 51.3-21.3L327 327c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-19.7 19.7C318.6 403.3 288 416 256 416c-31.8 0-62.4-12.6-85-35l-23.7 23.7c-2.1 2.1-5 3.3-8 3.3c-6.2 0-11.3-5.1-11.3-11.3V320z"]
+  icon: [640, 512, [], "e0d8", "M213.1 64.8L202.7 96H128c-35.3 0-64 28.7-64 64V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H437.3L426.9 64.8C420.4 45.2 402.1 32 381.4 32H258.6c-20.7 0-39 13.2-45.5 32.8zM448 256c0 8.8-7.2 16-16 16H355.3c-6.2 0-11.3-5.1-11.3-11.3c0-3 1.2-5.9 3.3-8L371 229c-13.6-13.4-31.9-21-51-21c-19.2 0-37.7 7.6-51.3 21.3L249 249c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l19.7-19.7C257.4 172.7 288 160 320 160c31.8 0 62.4 12.6 85 35l23.7-23.7c2.1-2.1 5-3.3 8-3.3c6.2 0 11.3 5.1 11.3 11.3V256zM192 320c0-8.8 7.2-16 16-16h76.7c6.2 0 11.3 5.1 11.3 11.3c0 3-1.2 5.9-3.3 8L269 347c13.6 13.4 31.9 21 51 21c19.2 0 37.7-7.6 51.3-21.3L391 327c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-19.7 19.7C382.6 403.3 352 416 320 416c-31.8 0-62.4-12.6-85-35l-23.7 23.7c-2.1 2.1-5 3.3-8 3.3c-6.2 0-11.3-5.1-11.3-11.3V320z"]
 };
 var faSprayCanSparkles = {
   prefix: 'fas',
@@ -13169,7 +14350,7 @@ var faMousePointer = faArrowPointer;
 var faMaximize = {
   prefix: 'fas',
   iconName: 'maximize',
-  icon: [448, 512, ["expand-arrows-alt"], "f31e", "M168 32H24C10.7 32 0 42.7 0 56V200c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l40-40 79 79L81 335 41 295c-6.9-6.9-17.2-8.9-26.2-5.2S0 302.3 0 312V456c0 13.3 10.7 24 24 24H168c9.7 0 18.5-5.8 22.2-14.8s1.7-19.3-5.2-26.2l-40-40 79-79 79 79-40 40c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H424c13.3 0 24-10.7 24-24V312c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2l-40 40-79-79 79-79 40 40c6.9 6.9 17.2 8.9 26.2 5.2s14.8-12.5 14.8-22.2V56c0-13.3-10.7-24-24-24H280c-9.7 0-18.5 5.8-22.2 14.8s-1.7 19.3 5.2 26.2l40 40-79 79-79-79 40-40c6.9-6.9 8.9-17.2 5.2-26.2S177.7 32 168 32z"]
+  icon: [512, 512, ["expand-arrows-alt"], "f31e", "M200 32H56C42.7 32 32 42.7 32 56V200c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l40-40 79 79-79 79L73 295c-6.9-6.9-17.2-8.9-26.2-5.2S32 302.3 32 312V456c0 13.3 10.7 24 24 24H200c9.7 0 18.5-5.8 22.2-14.8s1.7-19.3-5.2-26.2l-40-40 79-79 79 79-40 40c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H456c13.3 0 24-10.7 24-24V312c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2l-40 40-79-79 79-79 40 40c6.9 6.9 17.2 8.9 26.2 5.2s14.8-12.5 14.8-22.2V56c0-13.3-10.7-24-24-24H312c-9.7 0-18.5 5.8-22.2 14.8s-1.7 19.3 5.2 26.2l40 40-79 79-79-79 40-40c6.9-6.9 8.9-17.2 5.2-26.2S209.7 32 200 32z"]
 };
 var faExpandArrowsAlt = faMaximize;
 var faChargingStation = {
@@ -13213,12 +14394,12 @@ var faSpider = {
 var faHandsBound = {
   prefix: 'fas',
   iconName: 'hands-bound',
-  icon: [576, 512, [], "e4f9", "M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32V96v59.1 .7V192v21.9c0 14.2 5.1 27.9 14.3 38.7L99.6 352H96c-13.3 0-24 10.7-24 24s10.7 24 24 24h32H256h64H448h32c13.3 0 24-10.7 24-24s-10.7-24-24-24h-3.6l85.3-99.5c9.2-10.8 14.3-24.5 14.3-38.7V192 155.8v-.7V96 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V96v48.8l-69.3 92.4c-5.7 7.6-16.1 9.6-24.2 4.8c-9.7-5.7-12.1-18.7-5.1-27.5L441 180c10.8-13.5 8.9-33.3-4.4-44.5s-33-9.8-44.5 3.2l-46.7 52.5C329 209.7 320 233.4 320 258.1V320v32H256V320 258.1c0-24.6-9-48.4-25.4-66.8l-46.7-52.5c-11.5-13-31.3-14.4-44.5-3.2s-15.2 30.9-4.4 44.5l27.6 34.5c7 8.8 4.7 21.8-5.1 27.5c-8.1 4.8-18.6 2.7-24.2-4.8L64 144.8V96 32zm64 448v32H256V480h64v32H448V480h32c13.3 0 24-10.7 24-24s-10.7-24-24-24H448 320 256 128 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h32z"]
+  icon: [640, 512, [], "e4f9", "M96 32C96 14.3 81.7 0 64 0S32 14.3 32 32V96v59.1 .7V192v21.9c0 14.2 5.1 27.9 14.3 38.7L131.6 352H128c-13.3 0-24 10.7-24 24s10.7 24 24 24h32H288h64H480h32c13.3 0 24-10.7 24-24s-10.7-24-24-24h-3.6l85.3-99.5c9.2-10.8 14.3-24.5 14.3-38.7V192 155.8v-.7V96 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V96v48.8l-69.3 92.4c-5.7 7.6-16.1 9.6-24.2 4.8c-9.7-5.7-12.1-18.7-5.1-27.5L473 180c10.8-13.5 8.9-33.3-4.4-44.5s-33-9.8-44.5 3.2l-46.7 52.5C361 209.7 352 233.4 352 258.1V320v32H288V320 258.1c0-24.6-9-48.4-25.4-66.8l-46.7-52.5c-11.5-13-31.3-14.4-44.5-3.2s-15.2 30.9-4.4 44.5l27.6 34.5c7 8.8 4.7 21.8-5.1 27.5c-8.1 4.8-18.6 2.7-24.2-4.8L96 144.8V96 32zm64 448v32H288V480h64v32H480V480h32c13.3 0 24-10.7 24-24s-10.7-24-24-24H480 352 288 160 128c-13.3 0-24 10.7-24 24s10.7 24 24 24h32z"]
 };
 var faFileInvoiceDollar = {
   prefix: 'fas',
   iconName: 'file-invoice-dollar',
-  icon: [384, 512, [], "f571", "M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM64 80c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16zm128 72c8.8 0 16 7.2 16 16v17.3c8.5 1.2 16.7 3.1 24.1 5.1c8.5 2.3 13.6 11 11.3 19.6s-11 13.6-19.6 11.3c-11.1-3-22-5.2-32.1-5.3c-8.4-.1-17.4 1.8-23.6 5.5c-5.7 3.4-8.1 7.3-8.1 12.8c0 3.7 1.3 6.5 7.3 10.1c6.9 4.1 16.6 7.1 29.2 10.9l.5 .1 0 0 0 0c11.3 3.4 25.3 7.6 36.3 14.6c12.1 7.6 22.4 19.7 22.7 38.2c.3 19.3-9.6 33.3-22.9 41.6c-7.7 4.8-16.4 7.6-25.1 9.1V440c0 8.8-7.2 16-16 16s-16-7.2-16-16V422.2c-11.2-2.1-21.7-5.7-30.9-8.9l0 0c-2.1-.7-4.2-1.4-6.2-2.1c-8.4-2.8-12.9-11.9-10.1-20.2s11.9-12.9 20.2-10.1c2.5 .8 4.8 1.6 7.1 2.4l0 0 0 0 0 0c13.6 4.6 24.6 8.4 36.3 8.7c9.1 .3 17.9-1.7 23.7-5.3c5.1-3.2 7.9-7.3 7.8-14c-.1-4.6-1.8-7.8-7.7-11.6c-6.8-4.3-16.5-7.4-29-11.2l-1.6-.5 0 0c-11-3.3-24.3-7.3-34.8-13.7c-12-7.2-22.6-18.9-22.7-37.3c-.1-19.4 10.8-32.8 23.8-40.5c7.5-4.4 15.8-7.2 24.1-8.7V232c0-8.8 7.2-16 16-16z"]
+  icon: [384, 512, [], "f571", "M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM64 80c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16zm128 72c8.8 0 16 7.2 16 16v17.3c8.5 1.2 16.7 3.1 24.1 5.1c8.5 2.3 13.6 11 11.3 19.6s-11 13.6-19.6 11.3c-11.1-3-22-5.2-32.1-5.3c-8.4-.1-17.4 1.8-23.6 5.5c-5.7 3.4-8.1 7.3-8.1 12.8c0 3.7 1.3 6.5 7.3 10.1c6.9 4.1 16.6 7.1 29.2 10.9l.5 .1 0 0 0 0c11.3 3.4 25.3 7.6 36.3 14.6c12.1 7.6 22.4 19.7 22.7 38.2c.3 19.3-9.6 33.3-22.9 41.6c-7.7 4.8-16.4 7.6-25.1 9.1V440c0 8.8-7.2 16-16 16s-16-7.2-16-16V422.2c-11.2-2.1-21.7-5.7-30.9-8.9l0 0 0 0c-2.1-.7-4.2-1.4-6.2-2.1c-8.4-2.8-12.9-11.9-10.1-20.2s11.9-12.9 20.2-10.1c2.5 .8 4.8 1.6 7.1 2.4l0 0 0 0 0 0c13.6 4.6 24.6 8.4 36.3 8.7c9.1 .3 17.9-1.7 23.7-5.3c5.1-3.2 7.9-7.3 7.8-14c-.1-4.6-1.8-7.8-7.7-11.6c-6.8-4.3-16.5-7.4-29-11.2l-1.6-.5 0 0c-11-3.3-24.3-7.3-34.8-13.7c-12-7.2-22.6-18.9-22.7-37.3c-.1-19.4 10.8-32.8 23.8-40.5c7.5-4.4 15.8-7.2 24.1-8.7V232c0-8.8 7.2-16 16-16z"]
 };
 var faPlaneCircleExclamation = {
   prefix: 'fas',
@@ -13255,7 +14436,7 @@ var faSignIn = faArrowRightToBracket;
 var faShopSlash = {
   prefix: 'fas',
   iconName: 'shop-slash',
-  icon: [640, 512, ["store-alt-slash"], "e070", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-54.8-43V224H512V376L384 275.7V224H320v1.5L277.2 192H603.2c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0H121.7c-16 0-31 8-39.9 21.4L74.1 32.8 38.8 5.1zM36.8 192h85L21 112.5 6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM320 384H128V224H64V384v80c0 26.5 21.5 48 48 48H336c26.5 0 48-21.5 48-48V398.5l-64-50.4V384z"]
+  icon: [640, 512, ["store-alt-slash"], "e070", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-54.8-43V224H512V376L384 275.7V224H320v1.5L277.2 192H603.2c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0H121.7c-16 0-31 8-39.9 21.4L74.1 32.8 38.8 5.1zM36.8 192h85L21 112.5 6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM320 384H128V224H64V384v80c0 26.5 21.5 48 48 48H336c26.5 0 48-21.5 48-48V398.5l-64-50.4V384zM544 512l-.3 0h.6l-.3 0z"]
 };
 var faStoreAltSlash = faShopSlash;
 var faServer = {
@@ -13266,7 +14447,7 @@ var faServer = {
 var faVirusCovidSlash = {
   prefix: 'fas',
   iconName: 'virus-covid-slash',
-  icon: [640, 512, [], "e4a9", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L472.1 344.7c11.4-19.5 19.1-41.4 22.3-64.7H528v16c0 13.3 10.7 24 24 24s24-10.7 24-24V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H494.4c-4.2-30.7-16.3-58.8-34.1-82.3L484 125.9l11.3 11.3c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9L472.7 46.7c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L450.1 92l-23.8 23.8C402.8 97.9 374.7 85.8 344 81.6V48h16c13.3 0 24-10.7 24-24s-10.7-24-24-24H280c-13.3 0-24 10.7-24 24s10.7 24 24 24h16V81.6c-30.7 4.2-58.8 16.3-82.3 34.1L189.9 92l11.3-11.3c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L134.1 79.8 38.8 5.1zM149.2 213.5c-1.5 6-2.7 12.2-3.5 18.5H112V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v80c0 13.3 10.7 24 24 24s24-10.7 24-24V280h33.6c4.2 30.7 16.3 58.8 34.1 82.3L156 386.1l-11.3-11.3c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l56.6 56.6c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9L189.9 420l23.8-23.8c23.5 17.9 51.7 29.9 82.3 34.1V464H280c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H344V430.4c20.4-2.8 39.7-9.1 57.3-18.2L149.2 213.5z"]
+  icon: [640, 512, [], "e4a9", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L472.1 344.7c11.4-19.5 19.1-41.4 22.3-64.7H528v16c0 13.3 10.7 24 24 24s24-10.7 24-24V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H494.4c-4.2-30.7-16.3-58.8-34.1-82.3L484 125.9l11.3 11.3c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9L472.7 46.7c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L450.1 92l-23.8 23.8C402.8 97.9 374.7 85.8 344 81.6V48h16c13.3 0 24-10.7 24-24s-10.7-24-24-24H280c-13.3 0-24 10.7-24 24s10.7 24 24 24h16V81.6c-30.7 4.2-58.8 16.3-82.3 34.1L189.9 92l11.3-11.3c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L134.1 79.8 38.8 5.1zm362.5 407L149.2 213.5c-1.5 6-2.7 12.2-3.5 18.5H112V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v80c0 13.3 10.7 24 24 24s24-10.7 24-24V280h33.6c4.2 30.7 16.3 58.8 34.1 82.3L156 386.1l-11.3-11.3c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l56.6 56.6c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9L189.9 420l23.8-23.8c23.5 17.9 51.7 29.9 82.3 34.1V464H280c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H344V430.4c20.4-2.8 39.7-9.1 57.3-18.2z"]
 };
 var faShopLock = {
   prefix: 'fas',
@@ -13292,7 +14473,7 @@ var faBuildingWheat = {
 var faPersonBreastfeeding = {
   prefix: 'fas',
   iconName: 'person-breastfeeding',
-  icon: [448, 512, [], "e53a", "M224 0a80 80 0 1 1 0 160A80 80 0 1 1 224 0zM436.8 382.8L373.5 462c-16.6 20.7-46.8 24.1-67.5 7.5c-17.6-14.1-22.7-38.1-13.5-57.7l-.7-.1c-38.9-5.6-74.3-25.1-99.7-54.8V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v48c0 .8 0 1.6 .1 2.4l101.4 50.7c23.7 11.9 33.3 40.7 21.5 64.4s-40.7 33.3-64.4 21.5L27.2 427.3c-1.1-.5-2.2-1.1-3.3-1.7c-4.9-2.8-9.2-6.4-12.6-10.6c-4.6-5.4-7.8-11.7-9.6-18.4c-3.3-12-1.9-25.2 4.8-36.6c.6-1.1 1.3-2.2 2-3.2L75.6 256.1c26.7-40.1 71.7-64.1 119.8-64.1h75.2c46.5 0 90.1 22.5 117.2 60.3l50.7 70.9c2.2 3 4 6.1 5.5 9.4c2.9 6.7 4.3 13.8 4 20.8c-.3 10.6-4.2 21-11.2 29.4zM320 332a44 44 0 1 0 -88 0 44 44 0 1 0 88 0z"]
+  icon: [448, 512, [], "e53a", "M224 0a80 80 0 1 1 0 160A80 80 0 1 1 224 0zM436.8 382.8L373.5 462c-16.6 20.7-46.8 24.1-67.5 7.5c-17.6-14.1-22.7-38.1-13.5-57.7l-.8-.1c-38.9-5.6-74.3-25.1-99.7-54.8V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v48c0 .8 0 1.6 .1 2.4l101.4 50.7c23.7 11.9 33.3 40.7 21.5 64.4s-40.7 33.3-64.4 21.5L27.2 427.3c-1.1-.5-2.2-1.1-3.3-1.7c-4.9-2.8-9.2-6.4-12.6-10.6c-4.6-5.4-7.8-11.7-9.6-18.4c-3.3-12-1.9-25.2 4.8-36.6c.6-1.1 1.3-2.2 2-3.2L75.6 256.1c26.7-40.1 71.7-64.1 119.8-64.1h75.2c46.5 0 90.1 22.5 117.2 60.3l50.7 70.9c2.2 3 4 6.1 5.5 9.4c2.9 6.7 4.3 13.8 4 20.8c-.3 10.6-4.2 21-11.2 29.4zM320 332a44 44 0 1 0 -88 0 44 44 0 1 0 88 0z"]
 };
 var faRightToBracket = {
   prefix: 'fas',
@@ -13303,7 +14484,7 @@ var faSignInAlt = faRightToBracket;
 var faVenus = {
   prefix: 'fas',
   iconName: 'venus',
-  icon: [384, 512, [9792], "f221", "M64 176a112 112 0 1 1 224 0A112 112 0 1 1 64 176zM208 349.1c81.9-15 144-86.8 144-173.1C352 78.8 273.2 0 176 0S0 78.8 0 176c0 86.3 62.1 158.1 144 173.1V384H112c-17.7 0-32 14.3-32 32s14.3 32 32 32h32v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448h32c17.7 0 32-14.3 32-32s-14.3-32-32-32H208V349.1z"]
+  icon: [384, 512, [9792], "f221", "M80 176a112 112 0 1 1 224 0A112 112 0 1 1 80 176zM224 349.1c81.9-15 144-86.8 144-173.1C368 78.8 289.2 0 192 0S16 78.8 16 176c0 86.3 62.1 158.1 144 173.1V384H128c-17.7 0-32 14.3-32 32s14.3 32 32 32h32v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448h32c17.7 0 32-14.3 32-32s-14.3-32-32-32H224V349.1z"]
 };
 var faPassport = {
   prefix: 'fas',
@@ -13325,7 +14506,7 @@ var faPeopleCarry = faPeopleCarryBox;
 var faTemperatureHigh = {
   prefix: 'fas',
   iconName: 'temperature-high',
-  icon: [512, 512, [], "f769", "M416 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0 128A96 96 0 1 0 416 0a96 96 0 1 0 0 192zM96 112c0-26.5 21.5-48 48-48s48 21.5 48 48V276.5c0 17.3 7.1 31.9 15.3 42.5C217.8 332.6 224 349.5 224 368c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-18.5 6.2-35.4 16.7-48.9C88.9 308.4 96 293.8 96 276.5V112zM144 0C82.1 0 32 50.2 32 112V276.5c0 .1-.1 .3-.2 .6c-.2 .6-.8 1.6-1.7 2.8C11.2 304.2 0 334.8 0 368c0 79.5 64.5 144 144 144s144-64.5 144-144c0-33.2-11.3-63.8-30.1-88.1c-.9-1.2-1.5-2.2-1.7-2.8c-.1-.3-.2-.5-.2-.6V112C256 50.2 205.9 0 144 0zm0 416c26.5 0 48-21.5 48-48c0-20.9-13.4-38.7-32-45.3V112c0-8.8-7.2-16-16-16s-16 7.2-16 16V322.7c-18.6 6.6-32 24.4-32 45.3c0 26.5 21.5 48 48 48z"]
+  icon: [512, 512, [], "f769", "M416 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0 128A96 96 0 1 0 416 0a96 96 0 1 0 0 192zM96 112c0-26.5 21.5-48 48-48s48 21.5 48 48V276.5c0 17.3 7.1 31.9 15.3 42.5C217.8 332.6 224 349.5 224 368c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-18.5 6.2-35.4 16.7-48.9C88.9 308.4 96 293.8 96 276.5V112zM144 0C82.1 0 32 50.2 32 112V276.5c0 .1-.1 .3-.2 .6c-.2 .6-.8 1.6-1.7 2.8C11.2 304.2 0 334.8 0 368c0 79.5 64.5 144 144 144s144-64.5 144-144c0-33.2-11.2-63.8-30.1-88.1c-.9-1.2-1.5-2.2-1.7-2.8c-.1-.3-.2-.5-.2-.6V112C256 50.2 205.9 0 144 0zm0 416c26.5 0 48-21.5 48-48c0-20.9-13.4-38.7-32-45.3V112c0-8.8-7.2-16-16-16s-16 7.2-16 16V322.7c-18.6 6.6-32 24.4-32 45.3c0 26.5 21.5 48 48 48z"]
 };
 var faMicrochip = {
   prefix: 'fas',
@@ -13367,13 +14548,13 @@ var faUserFriends = faUserGroup;
 var faArrowUpAZ = {
   prefix: 'fas',
   iconName: 'arrow-up-a-z',
-  icon: [512, 512, ["sort-alpha-up"], "f15e", "M143.6 42.4C137.5 35.8 129 32 120 32s-17.5 3.8-23.6 10.4l-88 96c-11.9 13-11.1 33.3 2 45.2s33.3 11.1 45.2-2L88 146.3V448c0 17.7 14.3 32 32 32s32-14.3 32-32V146.3l32.4 35.4c11.9 13 32.2 13.9 45.2 2s13.9-32.2 2-45.2l-88-96zM280 320c0 17.7 14.3 32 32 32h50.7l-73.4 73.4c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H440c17.7 0 32-14.3 32-32s-14.3-32-32-32H389.3l73.4-73.4c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8H312c-17.7 0-32 14.3-32 32zM376 32c-12.1 0-23.2 6.8-28.6 17.7l-64 128-16 32c-7.9 15.8-1.5 35 14.3 42.9s35 1.5 42.9-14.3l7.2-14.3h88.4l7.2 14.3c7.9 15.8 27.1 22.2 42.9 14.3s22.2-27.1 14.3-42.9l-16-32-64-128C399.2 38.8 388.1 32 376 32zM355.8 176L376 135.6 396.2 176H355.8z"]
+  icon: [576, 512, ["sort-alpha-up"], "f15e", "M183.6 42.4C177.5 35.8 169 32 160 32s-17.5 3.8-23.6 10.4l-88 96c-11.9 13-11.1 33.3 2 45.2s33.3 11.1 45.2-2L128 146.3V448c0 17.7 14.3 32 32 32s32-14.3 32-32V146.3l32.4 35.4c11.9 13 32.2 13.9 45.2 2s13.9-32.2 2-45.2l-88-96zM320 320c0 17.7 14.3 32 32 32h50.7l-73.4 73.4c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H429.3l73.4-73.4c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8H352c-17.7 0-32 14.3-32 32zM416 32c-12.1 0-23.2 6.8-28.6 17.7l-64 128-16 32c-7.9 15.8-1.5 35 14.3 42.9s35 1.5 42.9-14.3l7.2-14.3h88.4l7.2 14.3c7.9 15.8 27.1 22.2 42.9 14.3s22.2-27.1 14.3-42.9l-16-32-64-128C439.2 38.8 428.1 32 416 32zM395.8 176L416 135.6 436.2 176H395.8z"]
 };
 var faSortAlphaUp = faArrowUpAZ;
 var faChessKnight = {
   prefix: 'fas',
   iconName: 'chess-knight',
-  icon: [448, 512, [9822], "f441", "M80 48L66.7 61.3C54.7 73.3 48 89.5 48 106.5V238.9c0 10.7 5.3 20.7 14.2 26.6l10.6 7c14.3 9.6 32.7 10.7 48.1 3l3.2-1.6c2.6-1.3 5-2.8 7.3-4.5l49.4-37c6.6-5 15.7-5 22.3 0c10.2 7.7 9.9 23.1-.7 30.3L74.4 350C57.9 361.3 48 380 48 400H368l28.9-159c2.1-11.3 3.1-22.8 3.1-34.3V192C400 86 314 0 208 0H67.8C56.9 0 48 8.9 48 19.8c0 7.5 4.2 14.3 10.9 17.7L80 48zm24 68a20 20 0 1 1 40 0 20 20 0 1 1 -40 0zM6.6 473.4c-4.2 4.2-6.6 10-6.6 16C0 501.9 10.1 512 22.6 512H393.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L368 432H48L6.6 473.4z"]
+  icon: [448, 512, [9822], "f441", "M96 48L82.7 61.3C70.7 73.3 64 89.5 64 106.5V238.9c0 10.7 5.3 20.7 14.2 26.6l10.6 7c14.3 9.6 32.7 10.7 48.1 3l3.2-1.6c2.6-1.3 5-2.8 7.3-4.5l49.4-37c6.6-5 15.7-5 22.3 0c10.2 7.7 9.9 23.1-.7 30.3L90.4 350C73.9 361.3 64 380 64 400H384l28.9-159c2.1-11.3 3.1-22.8 3.1-34.3V192C416 86 330 0 224 0H83.8C72.9 0 64 8.9 64 19.8c0 7.5 4.2 14.3 10.9 17.7L96 48zm24 68a20 20 0 1 1 40 0 20 20 0 1 1 -40 0zM22.6 473.4c-4.2 4.2-6.6 10-6.6 16C16 501.9 26.1 512 38.6 512H409.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L384 432H64L22.6 473.4z"]
 };
 var faFaceLaughSquint = {
   prefix: 'fas',
@@ -13439,12 +14620,12 @@ var faFolderOpen = {
 var faHeartCirclePlus = {
   prefix: 'fas',
   iconName: 'heart-circle-plus',
-  icon: [576, 512, [], "e500", "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5zM432 512c79.5 0 144-64.5 144-144s-64.5-144-144-144s-144 64.5-144 144s64.5 144 144 144zm16-208v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V384H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"]
+  icon: [576, 512, [], "e500", "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5zM432 512a144 144 0 1 0 0-288 144 144 0 1 0 0 288zm16-208v48h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V384H368c-8.8 0-16-7.2-16-16s7.2-16 16-16h48V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"]
 };
 var faCodeFork = {
   prefix: 'fas',
   iconName: 'code-fork',
-  icon: [448, 512, [], "e13b", "M80 104c13.3 0 24-10.7 24-24s-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24zm80-24c0 32.8-19.7 61-48 73.3V192c0 17.7 14.3 32 32 32H304c17.7 0 32-14.3 32-32V153.3C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V192c0 53-43 96-96 96H256v70.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V288H144c-53 0-96-43-96-96V153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm208 24c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24zM248 432c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24z"]
+  icon: [448, 512, [], "e13b", "M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3V192c0 17.7 14.3 32 32 32H304c17.7 0 32-14.3 32-32V153.3C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V192c0 53-43 96-96 96H256v70.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V288H144c-53 0-96-43-96-96V153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm208 24a24 24 0 1 0 0-48 24 24 0 1 0 0 48zM248 432a24 24 0 1 0 -48 0 24 24 0 1 0 48 0z"]
 };
 var faCity = {
   prefix: 'fas',
@@ -13454,7 +14635,7 @@ var faCity = {
 var faMicrophoneLines = {
   prefix: 'fas',
   iconName: 'microphone-lines',
-  icon: [384, 512, [127897, "microphone-alt"], "f3c9", "M80 96V256c0 53 43 96 96 96s96-43 96-96H192c-8.8 0-16-7.2-16-16s7.2-16 16-16h80V192H192c-8.8 0-16-7.2-16-16s7.2-16 16-16h80V128H192c-8.8 0-16-7.2-16-16s7.2-16 16-16h80c0-53-43-96-96-96S80 43 80 96zM304 240v16c0 70.7-57.3 128-128 128s-128-57.3-128-128V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 89.1 66.2 162.7 152 174.4V464H104c-13.3 0-24 10.7-24 24s10.7 24 24 24h72 72c13.3 0 24-10.7 24-24s-10.7-24-24-24H200V430.4c85.8-11.7 152-85.3 152-174.4V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v24z"]
+  icon: [384, 512, [127897, "microphone-alt"], "f3c9", "M96 96V256c0 53 43 96 96 96s96-43 96-96H208c-8.8 0-16-7.2-16-16s7.2-16 16-16h80V192H208c-8.8 0-16-7.2-16-16s7.2-16 16-16h80V128H208c-8.8 0-16-7.2-16-16s7.2-16 16-16h80c0-53-43-96-96-96S96 43 96 96zM320 240v16c0 70.7-57.3 128-128 128s-128-57.3-128-128V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 89.1 66.2 162.7 152 174.4V464H120c-13.3 0-24 10.7-24 24s10.7 24 24 24h72 72c13.3 0 24-10.7 24-24s-10.7-24-24-24H216V430.4c85.8-11.7 152-85.3 152-174.4V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v24z"]
 };
 var faMicrophoneAlt = faMicrophoneLines;
 var faPepperHot = {
@@ -13470,7 +14651,7 @@ var faUnlock = {
 var faColonSign = {
   prefix: 'fas',
   iconName: 'colon-sign',
-  icon: [320, 512, [], "e140", "M223 39.8c4.3-17.1-6.1-34.5-23.3-38.8S165.2 7.1 161 24.2L149.9 68.6C64.1 87.8 0 164.4 0 256c0 58.1 25.8 110.2 66.7 145.4L49 472.2c-4.3 17.1 6.1 34.5 23.3 38.8s34.5-6.1 38.8-23.3l13-52.1c9 3.4 18.4 6.2 28 8.2L145 472.2c-4.3 17.1 6.1 34.5 23.3 38.8s34.5-6.1 38.8-23.3l10.4-41.4c33.4-4.4 64.1-17.4 89.8-36.7c14.1-10.6 17-30.7 6.4-44.8s-30.7-17-44.8-6.4c-10.2 7.7-21.7 13.9-34 18.3L289 160c9.4-.3 18.5-4.7 24.6-12.8c10.6-14.1 7.8-34.2-6.4-44.8c-1.1-.8-2.2-1.6-3.3-2.4L319 39.8c4.3-17.1-6.1-34.5-23.3-38.8S261.2 7.1 257 24.2L245.1 71.5c-9.3-2.7-18.8-4.6-28.6-5.9L223 39.8zM131.2 143.3L85.3 326.8C71.9 306.5 64 282.2 64 256c0-48.7 27.2-91 67.2-112.7zm8.6 229.5l61.1-244.6c9.9 .7 19.5 2.5 28.7 5.3l-62 248.1c-9.7-1.9-19-4.8-27.8-8.8z"]
+  icon: [384, 512, [], "e140", "M255 39.8c4.3-17.1-6.1-34.5-23.3-38.8S197.2 7.1 193 24.2L181.9 68.6C96.1 87.8 32 164.4 32 256c0 58.1 25.8 110.2 66.7 145.4L81 472.2c-4.3 17.1 6.1 34.5 23.3 38.8s34.5-6.1 38.8-23.3l13-52.1c9 3.4 18.4 6.2 28 8.2L177 472.2c-4.3 17.1 6.1 34.5 23.3 38.8s34.5-6.1 38.8-23.3l10.4-41.4c33.4-4.4 64.1-17.4 89.8-36.7c14.1-10.6 17-30.7 6.4-44.8s-30.7-17-44.8-6.4c-10.2 7.7-21.7 13.9-34 18.3L321 160c9.4-.3 18.5-4.7 24.6-12.8c10.6-14.1 7.8-34.2-6.4-44.8c-1.1-.8-2.2-1.6-3.3-2.4L351 39.8c4.3-17.1-6.1-34.5-23.3-38.8S293.2 7.1 289 24.2L277.2 71.5c-9.3-2.7-18.8-4.6-28.6-5.9L255 39.8zM163.2 143.3L117.3 326.8C103.9 306.5 96 282.2 96 256c0-48.7 27.2-91 67.2-112.7zm8.6 229.5l61.1-244.6c9.9 .7 19.5 2.5 28.7 5.3l-62 248.1c-9.7-1.9-19-4.8-27.8-8.8z"]
 };
 var faHeadset = {
   prefix: 'fas',
@@ -13480,7 +14661,7 @@ var faHeadset = {
 var faStoreSlash = {
   prefix: 'fas',
   iconName: 'store-slash',
-  icon: [640, 512, [], "e071", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-86.8-68V384 252.6c-4 1-8 1.8-12.3 2.3l-.1 0c-5.3 .7-10.7 1.1-16.2 1.1c-12.4 0-24.3-1.9-35.4-5.3V350.9L301.2 210.7c7-4.4 13.3-9.7 18.8-15.7c15.9 17.6 39.1 29 65.2 29c26.2 0 49.3-11.4 65.2-29c16 17.6 39.1 29 65.2 29c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4L522.3 13.1C517.2 5 508.1 0 498.4 0H141.6c-9.7 0-18.8 5-23.9 13.1l-22.7 36L38.8 5.1zm73.4 218.1c4 .5 8.1 .8 12.1 .8c11 0 21.4-2 31-5.6L48.9 134.5c-6.1 40.6 19.5 82.8 63.3 88.7zM160 384V250.6c-11.2 3.5-23.2 5.4-35.6 5.4c-5.5 0-11-.4-16.3-1.1l-.1 0c-4.1-.6-8.1-1.3-12-2.3V384v64c0 35.3 28.7 64 64 64H480c12.9 0 24.8-3.8 34.9-10.3L365.5 384H160z"]
+  icon: [640, 512, [], "e071", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-86.8-68V384 252.6c-4 1-8 1.8-12.3 2.3l-.1 0c-5.3 .7-10.7 1.1-16.2 1.1c-12.4 0-24.3-1.9-35.4-5.3V350.9L301.2 210.7c7-4.4 13.3-9.7 18.8-15.7c15.9 17.6 39.1 29 65.2 29c26.2 0 49.3-11.4 65.2-29c16 17.6 39.1 29 65.2 29c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4L522.3 13.1C517.2 5 508.1 0 498.4 0H141.6c-9.7 0-18.8 5-23.9 13.1l-22.7 36L38.8 5.1zM514.9 501.7L365.5 384H160V250.6c-11.2 3.5-23.2 5.4-35.6 5.4c-5.5 0-11-.4-16.3-1.1l-.1 0c-4.1-.6-8.1-1.3-12-2.3V384v64c0 35.3 28.7 64 64 64H480c12.9 0 24.8-3.8 34.9-10.3zM155.3 218.4L48.9 134.5c-6.1 40.6 19.5 82.8 63.3 88.7c4 .5 8.1 .8 12.1 .8c11 0 21.4-2 31-5.6z"]
 };
 var faRoadCircleXmark = {
   prefix: 'fas',
@@ -13530,7 +14711,7 @@ var faWifiStrong = faWifi;
 var faBath = {
   prefix: 'fas',
   iconName: 'bath',
-  icon: [512, 512, [128705, "bathtub"], "f2cd", "M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.8-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"]
+  icon: [512, 512, [128705, "bathtub"], "f2cd", "M96 77.3c0-7.3 5.9-13.3 13.3-13.3c3.5 0 6.9 1.4 9.4 3.9l14.9 14.9C130 91.8 128 101.7 128 112c0 19.9 7.2 38 19.2 52c-5.3 9.2-4 21.1 3.8 29c9.4 9.4 24.6 9.4 33.9 0L289 89c9.4-9.4 9.4-24.6 0-33.9c-7.9-7.9-19.8-9.1-29-3.8C246 39.2 227.9 32 208 32c-10.3 0-20.2 2-29.2 5.5L163.9 22.6C149.4 8.1 129.7 0 109.3 0C66.6 0 32 34.6 32 77.3V256c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H96V77.3zM32 352v16c0 28.4 12.4 54 32 71.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V464H384v16c0 17.7 14.3 32 32 32s32-14.3 32-32V439.6c19.6-17.6 32-43.1 32-71.6V352H32z"]
 };
 var faBathtub = faBath;
 var faUnderline = {
@@ -13577,7 +14758,7 @@ var faManatSign = {
 var faNotEqual = {
   prefix: 'fas',
   iconName: 'not-equal',
-  icon: [448, 512, [], "f53e", "M353.8 37.4c14.7 9.8 18.7 29.7 8.9 44.4L321.1 144H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H278.5l-64 96H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H171.8l-65.2 97.7c-9.8 14.7-29.7 18.7-44.4 8.9s-18.7-29.7-8.9-44.4L94.9 368H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H137.5l64-96H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H244.2l65.2-97.7c9.8-14.7 29.7-18.7 44.4-8.9z"]
+  icon: [448, 512, [], "f53e", "M369.8 37.4c14.7 9.8 18.7 29.7 8.9 44.4L337.1 144H400c17.7 0 32 14.3 32 32s-14.3 32-32 32H294.5l-64 96H400c17.7 0 32 14.3 32 32s-14.3 32-32 32H187.8l-65.2 97.7c-9.8 14.7-29.7 18.7-44.4 8.9s-18.7-29.7-8.9-44.4L110.9 368H48c-17.7 0-32-14.3-32-32s14.3-32 32-32H153.5l64-96H48c-17.7 0-32-14.3-32-32s14.3-32 32-32H260.2l65.2-97.7c9.8-14.7 29.7-18.7 44.4-8.9z"]
 };
 var faBorderTopLeft = {
   prefix: 'fas',
@@ -13594,7 +14775,7 @@ var faMapMarkedAlt = faMapLocationDot;
 var faJedi = {
   prefix: 'fas',
   iconName: 'jedi',
-  icon: [576, 512, [], "f669", "M230 315.7l-21.2-31.9c-2.1-3.2-1.7-7.4 1-10.1s6.9-3.1 10.1-1l29.5 19.7c2.1 1.4 4.9 0 5-2.6L263.7 8c.1-4.5 3.8-8 8.3-8s8.1 3.5 8.3 8l9.4 281.9c.1 2.5 2.9 3.9 5 2.6l29.5-19.7c3.2-2.1 7.4-1.7 10.1 1s3.1 6.9 1 10.1L314 315.7c-1.3 1.9-.2 4.5 2 4.9l37.6 7.5c3.7 .7 6.4 4 6.4 7.8s-2.7 7.1-6.4 7.8L316 351.4c-2.2 .4-3.3 3-2 4.9l21.2 31.9c2.1 3.2 1.7 7.4-1 10.1s-6.9 3.1-10.1 1l-26.3-17.6c-2.2-1.4-5.1 .2-5 2.8l2.1 61.5C354.6 435.2 400 382.9 400 320c0-37-15.7-70.4-40.8-93.7c-7-6.5-6.5-18.6 1-24.4C394.1 175.5 416 134.3 416 88c0-16.8-2.9-33-8.2-48c-4.6-13 10.2-30 21.4-22c53.5 38 92.7 94.8 107.8 160.7c.5 2.1-.2 4.3-1.7 5.9l-28.4 28.4c-4 4-1.2 10.9 4.5 10.9h26c3.4 0 6.2 2.6 6.3 6c.1 3.3 .2 6.6 .2 10c0 17.5-1.7 34.7-4.8 51.3c-.2 1.2-.9 2.4-1.7 3.3l-46.5 46.5c-4 4-1.2 10.9 4.5 10.9H510c4.6 0 7.7 4.8 5.7 9C471.2 450.5 378.8 512 272 512S72.8 450.5 28.3 361c-2.1-4.2 1-9 5.7-9H48.5c5.7 0 8.6-6.9 4.5-10.9L6.6 294.6c-.9-.9-1.5-2-1.7-3.3C1.7 274.7 0 257.5 0 240c0-3.3 .1-6.7 .2-10c.1-3.4 2.9-6 6.3-6h26c5.7 0 8.6-6.9 4.5-10.9L8.6 184.6c-1.5-1.5-2.2-3.8-1.7-5.9C22.1 112.8 61.3 56 114.8 18c11.3-8 26 8.9 21.4 22c-5.3 15-8.2 31.2-8.2 48c0 46.3 21.9 87.5 55.8 113.9c7.5 5.8 8 17.9 1 24.4C159.7 249.6 144 283 144 320c0 62.9 45.4 115.2 105.1 126l2.1-61.5c.1-2.6-2.8-4.2-5-2.8l-26.3 17.6c-3.2 2.1-7.4 1.7-10.1-1s-3.1-6.9-1-10.1L230 356.3c1.3-1.9 .2-4.5-2-4.9l-37.6-7.5c-3.7-.7-6.4-4-6.4-7.8s2.7-7.1 6.4-7.8l37.6-7.5c2.2-.4 3.3-3 2-4.9z"]
+  icon: [576, 512, [], "f669", "M246 315.7l-21.2-31.9c-2.1-3.2-1.7-7.4 1-10.1s6.9-3.1 10.1-1l29.5 19.7c2.1 1.4 4.9 0 5-2.6L279.7 8c.1-4.5 3.8-8 8.3-8s8.1 3.5 8.3 8l9.4 281.9c.1 2.5 2.9 3.9 5 2.6l29.5-19.7c3.2-2.1 7.4-1.7 10.1 1s3.1 6.9 1 10.1L330 315.7c-1.3 1.9-.2 4.5 2 4.9l37.6 7.5c3.7 .7 6.4 4 6.4 7.8s-2.7 7.1-6.4 7.8L332 351.4c-2.2 .4-3.3 3-2 4.9l21.2 31.9c2.1 3.2 1.7 7.4-1 10.1s-6.9 3.1-10.1 1l-26.3-17.6c-2.2-1.4-5.1 .2-5 2.8l2.1 61.5C370.6 435.2 416 382.9 416 320c0-37-15.7-70.4-40.8-93.7c-7-6.5-6.5-18.6 1-24.4C410.1 175.5 432 134.3 432 88c0-16.8-2.9-33-8.2-48c-4.6-13 10.2-30 21.4-22c53.5 38 92.7 94.8 107.8 160.7c.5 2.1-.2 4.3-1.7 5.9l-28.4 28.4c-4 4-1.2 10.9 4.5 10.9h26c3.4 0 6.2 2.6 6.3 6c.1 3.3 .2 6.6 .2 10c0 17.5-1.7 34.7-4.8 51.3c-.2 1.2-.9 2.4-1.7 3.3l-46.5 46.5c-4 4-1.2 10.9 4.5 10.9H526c4.6 0 7.7 4.8 5.7 9C487.2 450.5 394.8 512 288 512S88.8 450.5 44.3 361c-2.1-4.2 1-9 5.7-9H64.5c5.7 0 8.6-6.9 4.5-10.9L22.6 294.6c-.9-.9-1.5-2-1.7-3.3C17.7 274.7 16 257.5 16 240c0-3.3 .1-6.7 .2-10c.1-3.4 2.9-6 6.3-6h26c5.7 0 8.6-6.9 4.5-10.9L24.6 184.6c-1.5-1.5-2.2-3.8-1.7-5.9C38.1 112.8 77.3 56 130.8 18c11.3-8 26 8.9 21.4 22c-5.3 15-8.2 31.2-8.2 48c0 46.3 21.9 87.5 55.8 113.9c7.5 5.8 8 17.9 1 24.4C175.7 249.6 160 283 160 320c0 62.9 45.4 115.2 105.1 126l2.1-61.5c.1-2.6-2.8-4.2-5-2.8l-26.3 17.6c-3.2 2.1-7.4 1.7-10.1-1s-3.1-6.9-1-10.1L246 356.3c1.3-1.9 .2-4.5-2-4.9l-37.6-7.5c-3.7-.7-6.4-4-6.4-7.8s2.7-7.1 6.4-7.8l37.6-7.5c2.2-.4 3.3-3 2-4.9z"]
 };
 var faSquarePollVertical = {
   prefix: 'fas',
@@ -13621,12 +14802,12 @@ var faGift = {
 var faDiceTwo = {
   prefix: 'fas',
   iconName: 'dice-two',
-  icon: [448, 512, [9857], "f528", "M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM352 352c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM128 192c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32z"]
+  icon: [448, 512, [9857], "f528", "M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM352 352a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM128 192a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"]
 };
 var faChessQueen = {
   prefix: 'fas',
   iconName: 'chess-queen',
-  icon: [512, 512, [9819], "f445", "M255 0a56 56 0 1 1 0 112A56 56 0 1 1 255 0zM133.1 143.8c3.3-13 15-23.8 30.2-23.8c12.3 0 22.6 7.2 27.7 17c12 23.2 36.2 39 64 39s52-15.8 64-39c5.1-9.8 15.4-17 27.7-17c15.3 0 27 10.8 30.2 23.8c7 27.8 32.2 48.3 62.1 48.3c10.8 0 21-2.7 29.8-7.4c8.4-4.4 18.9-4.5 27.6 .9c13 8 17.1 25 9.2 38L398.7 400H383 342.6 167.4 127 111.3L4.4 223.6c-7.9-13-3.8-30 9.2-38c8.7-5.3 19.2-5.3 27.6-.9c8.9 4.7 19 7.4 29.8 7.4c29.9 0 55.1-20.5 62.1-48.3zM255 224l0 0 0 0h0zM111 432H399l41.4 41.4c4.2 4.2 6.6 10 6.6 16c0 12.5-10.1 22.6-22.6 22.6H85.6C73.1 512 63 501.9 63 489.4c0-6 2.4-11.8 6.6-16L111 432z"]
+  icon: [512, 512, [9819], "f445", "M256 0a56 56 0 1 1 0 112A56 56 0 1 1 256 0zM134.1 143.8c3.3-13 15-23.8 30.2-23.8c12.3 0 22.6 7.2 27.7 17c12 23.2 36.2 39 64 39s52-15.8 64-39c5.1-9.8 15.4-17 27.7-17c15.3 0 27 10.8 30.2 23.8c7 27.8 32.2 48.3 62.1 48.3c10.8 0 21-2.7 29.8-7.4c8.4-4.4 18.9-4.5 27.6 .9c13 8 17.1 25 9.2 38L399.7 400H384 343.6 168.4 128 112.3L5.4 223.6c-7.9-13-3.8-30 9.2-38c8.7-5.3 19.2-5.3 27.6-.9c8.9 4.7 19 7.4 29.8 7.4c29.9 0 55.1-20.5 62.1-48.3zM256 224l0 0 0 0h0zM112 432H400l41.4 41.4c4.2 4.2 6.6 10 6.6 16c0 12.5-10.1 22.6-22.6 22.6H86.6C74.1 512 64 501.9 64 489.4c0-6 2.4-11.8 6.6-16L112 432z"]
 };
 var faGlasses = {
   prefix: 'fas',
@@ -13651,13 +14832,13 @@ var faPersonChalkboard = {
 var faMarsStrokeRight = {
   prefix: 'fas',
   iconName: 'mars-stroke-right',
-  icon: [640, 512, [9897, "mars-stroke-h"], "f22b", "M192 368a112 112 0 1 0 0-224 112 112 0 1 0 0 224zm174.4-88C354.7 365.8 281.1 432 192 432C94.8 432 16 353.2 16 256S94.8 80 192 80c89.1 0 162.7 66.2 174.4 152H400V176c0-13.3 10.7-24 24-24s24 10.7 24 24v56h32V176c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l80 80c9.4 9.4 9.4 24.6 0 33.9l-80 80c-6.9 6.9-17.2 8.9-26.2 5.2s-14.8-12.5-14.8-22.2V280H448v56c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H366.4z"]
+  icon: [640, 512, [9897, "mars-stroke-h"], "f22b", "M208 368a112 112 0 1 0 0-224 112 112 0 1 0 0 224zm174.4-88C370.7 365.8 297.1 432 208 432c-97.2 0-176-78.8-176-176s78.8-176 176-176c89.1 0 162.7 66.2 174.4 152H416V176c0-13.3 10.7-24 24-24s24 10.7 24 24v56h32V176c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l80 80c9.4 9.4 9.4 24.6 0 33.9l-80 80c-6.9 6.9-17.2 8.9-26.2 5.2s-14.8-12.5-14.8-22.2V280H464v56c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H382.4z"]
 };
 var faMarsStrokeH = faMarsStrokeRight;
 var faHandBackFist = {
   prefix: 'fas',
   iconName: 'hand-back-fist',
-  icon: [448, 512, ["hand-rock"], "f255", "M128 0C101.5 0 80 21.5 80 48V96v28.5V176c0 8.8-7.2 16-16 16s-16-7.2-16-16V149.3l-9 7.5C24.4 169 16 187 16 206V244c0 38 16.9 74 46.1 98.3L112 384v96c0 17.7 14.3 32 32 32H304c17.7 0 32-14.3 32-32V374.7c46.9-19 80-65 80-118.7V176 160 144c0-26.5-21.5-48-48-48c-12.4 0-23.6 4.7-32.1 12.3C334 83.5 313.3 64 288 64c-12.4 0-23.6 4.7-32.1 12.3C254 51.5 233.3 32 208 32c-12.4 0-23.6 4.7-32.1 12.3C174 19.5 153.3 0 128 0z"]
+  icon: [448, 512, ["hand-rock"], "f255", "M144 0C117.5 0 96 21.5 96 48V96v28.5V176c0 8.8-7.2 16-16 16s-16-7.2-16-16V149.3l-9 7.5C40.4 169 32 187 32 206V244c0 38 16.9 74 46.1 98.3L128 384v96c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V374.7c46.9-19 80-65 80-118.7V176 160 144c0-26.5-21.5-48-48-48c-12.4 0-23.6 4.7-32.1 12.3C350 83.5 329.3 64 304 64c-12.4 0-23.6 4.7-32.1 12.3C270 51.5 249.3 32 224 32c-12.4 0-23.6 4.7-32.1 12.3C190 19.5 169.3 0 144 0z"]
 };
 var faHandRock = faHandBackFist;
 var faSquareCaretUp = {
@@ -13680,7 +14861,7 @@ var faBarChart = faChartBar;
 var faHandsBubbles = {
   prefix: 'fas',
   iconName: 'hands-bubbles',
-  icon: [512, 512, ["hands-wash"], "e05e", "M384 64a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm96 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM128 464a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM0 160l.1 72.6c.1 52.2 24 101 64 133.1c-.1-1.9-.1-3.8-.1-5.7v-8c0-71.8 37-138.6 97.9-176.7l60.2-37.6c8.6-5.4 17.9-8.4 27.3-9.4l45.9-79.5c6.6-11.5 2.7-26.2-8.8-32.8s-26.2-2.7-32.8 8.8l-78 135.1c-3.3 5.7-10.7 7.7-16.4 4.4s-7.7-10.7-4.4-16.4l62-107.4c6.6-11.5 2.7-26.2-8.8-32.8S182 5 175.4 16.5l-68 117.8 0 0 0 0-43.3 75L64 160c0-17.7-14.4-32-32-32s-32 14.4-32 32zM300.1 88.5L275.5 131c13.9 4.5 26.4 13.7 34.7 27c.9 1.5 1.7 2.9 2.5 4.4l28.9-50c6.6-11.5 2.7-26.2-8.8-32.8s-26.2-2.7-32.8 8.8zm46.4 63.7l-26.8 46.4c-.6 6-2.1 11.8-4.3 17.4H320h13.3l0 0H365l23-39.8c6.6-11.5 2.7-26.2-8.8-32.8s-26.2-2.7-32.8 8.8zM283.1 175c-9.4-15-29.1-19.5-44.1-10.2l-60.2 37.6C127.3 234.7 96 291.2 96 352v8c0 8.9 .8 17.6 2.2 26.1c35.4 8.2 61.8 40 61.8 77.9c0 6.3-.7 12.5-2.1 18.4C183.1 501 214.3 512 248 512H424c13.3 0 24-10.7 24-24s-10.7-24-24-24H332c-6.6 0-12-5.4-12-12s5.4-12 12-12H456c13.3 0 24-10.7 24-24s-10.7-24-24-24H332c-6.6 0-12-5.4-12-12s5.4-12 12-12H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H332c-6.6 0-12-5.4-12-12s5.4-12 12-12H456c13.3 0 24-10.7 24-24s-10.7-24-24-24H320l0 0 0 0H226.8L273 219.1c15-9.4 19.5-29.1 10.2-44.1z"]
+  icon: [576, 512, ["hands-wash"], "e05e", "M416 64a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm96 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM160 464a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM32 160l.1 72.6c.1 52.2 24 101 64 133.1c-.1-1.9-.1-3.8-.1-5.7v-8c0-71.8 37-138.6 97.9-176.7l60.2-37.6c8.6-5.4 17.9-8.4 27.3-9.4l45.9-79.5c6.6-11.5 2.7-26.2-8.8-32.8s-26.2-2.7-32.8 8.8l-78 135.1c-3.3 5.7-10.7 7.7-16.4 4.4s-7.7-10.7-4.4-16.4l62-107.4c6.6-11.5 2.7-26.2-8.8-32.8S214 5 207.4 16.5l-68 117.8 0 0 0 0-43.3 75L96 160c0-17.7-14.4-32-32-32s-32 14.4-32 32zM332.1 88.5L307.5 131c13.9 4.5 26.4 13.7 34.7 27c.9 1.5 1.8 2.9 2.5 4.4l28.9-50c6.6-11.5 2.7-26.2-8.8-32.8s-26.2-2.7-32.8 8.8zm46.4 63.7l-26.8 46.4c-.6 6-2.1 11.8-4.3 17.4H352h13.3l0 0H397l23-39.8c6.6-11.5 2.7-26.2-8.8-32.8s-26.2-2.7-32.8 8.8zM315.1 175c-9.4-15-29.1-19.5-44.1-10.2l-60.2 37.6C159.3 234.7 128 291.2 128 352v8c0 8.9 .8 17.6 2.2 26.1c35.4 8.2 61.8 40 61.8 77.9c0 6.3-.7 12.5-2.1 18.4C215.1 501 246.3 512 280 512H456c13.3 0 24-10.7 24-24s-10.7-24-24-24H364c-6.6 0-12-5.4-12-12s5.4-12 12-12H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H364c-6.6 0-12-5.4-12-12s5.4-12 12-12H520c13.3 0 24-10.7 24-24s-10.7-24-24-24H364c-6.6 0-12-5.4-12-12s5.4-12 12-12H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H352l0 0 0 0H258.8L305 219.1c15-9.4 19.5-29.1 10.2-44.1z"]
 };
 var faHandsWash = faHandsBubbles;
 var faLessThanEqual = {
@@ -13696,7 +14877,7 @@ var faTrain = {
 var faEyeLowVision = {
   prefix: 'fas',
   iconName: 'eye-low-vision',
-  icon: [640, 512, ["low-vision"], "f2a8", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223 149.5c48.6-44.3 123-50.8 179.3-11.7c60.8 42.4 78.9 123.2 44.2 186.9L408 294.5c8.4-19.3 10.6-41.4 4.8-63.3c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3c0 10.2-2.4 19.8-6.6 28.3L223 149.5zm223.1 298L83.1 161.5c-11 14.4-20.5 28.7-28.4 42.2l339 265.7c18.7-5.5 36.2-13 52.6-21.8zM34.5 268.3c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c3.1 0 6.1-.1 9.2-.2L33.1 247.8c-1.8 6.8-1.3 14 1.4 20.5z"]
+  icon: [640, 512, ["low-vision"], "f2a8", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223 149.5c48.6-44.3 123-50.8 179.3-11.7c60.8 42.4 78.9 123.2 44.2 186.9L408 294.5c8.4-19.3 10.6-41.4 4.8-63.3c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3c0 10.2-2.4 19.8-6.6 28.3L223 149.5zm-139.9 12c-11 14.4-20.5 28.7-28.4 42.2l339 265.7c18.7-5.5 36.2-13 52.6-21.8L83.1 161.5zm-50 86.3c-1.8 6.8-1.3 14 1.4 20.5c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c3.1 0 6.1-.1 9.2-.2L33.1 247.8z"]
 };
 var faLowVision = faEyeLowVision;
 var faCrow = {
@@ -13707,7 +14888,7 @@ var faCrow = {
 var faSailboat = {
   prefix: 'fas',
   iconName: 'sailboat',
-  icon: [576, 512, [], "e445", "M251 16c0-7 4.5-13.2 11.2-15.3s13.9 .4 17.9 6.1l224 320c3.4 4.9 3.8 11.3 1.1 16.6s-8.2 8.6-14.2 8.6H267c-8.8 0-16-7.2-16-16V16zM207.1 96.5c7 1.9 11.9 8.2 11.9 15.5V336c0 8.8-7.2 16-16 16H75c-5.7 0-11-3-13.8-8s-2.9-11-.1-16l128-224c3.6-6.3 11-9.4 18-7.5zM.7 404.3C-2.2 394.1 5.5 384 16.1 384H549.9c10.6 0 18.3 10.1 15.4 20.3l-4 14.3C545.7 473.9 495.4 512 438 512H128C70.6 512 20.3 473.9 4.7 418.7l-4-14.3z"]
+  icon: [576, 512, [], "e445", "M256 16c0-7 4.5-13.2 11.2-15.3s13.9 .4 17.9 6.1l224 320c3.4 4.9 3.8 11.3 1.1 16.6s-8.2 8.6-14.2 8.6H272c-8.8 0-16-7.2-16-16V16zM212.1 96.5c7 1.9 11.9 8.2 11.9 15.5V336c0 8.8-7.2 16-16 16H80c-5.7 0-11-3-13.8-8s-2.9-11-.1-16l128-224c3.6-6.3 11-9.4 18-7.5zM5.7 404.3C2.8 394.1 10.5 384 21.1 384H554.9c10.6 0 18.3 10.1 15.4 20.3l-4 14.3C550.7 473.9 500.4 512 443 512H133C75.6 512 25.3 473.9 9.7 418.7l-4-14.3z"]
 };
 var faWindowRestore = {
   prefix: 'fas',
@@ -13743,7 +14924,7 @@ var faImage = {
 var faMicrophone = {
   prefix: 'fas',
   iconName: 'microphone',
-  icon: [384, 512, [], "f130", "M176 0C123 0 80 43 80 96V256c0 53 43 96 96 96s96-43 96-96V96c0-53-43-96-96-96zM48 216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 89.1 66.2 162.7 152 174.4V464H104c-13.3 0-24 10.7-24 24s10.7 24 24 24h72 72c13.3 0 24-10.7 24-24s-10.7-24-24-24H200V430.4c85.8-11.7 152-85.3 152-174.4V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 70.7-57.3 128-128 128s-128-57.3-128-128V216z"]
+  icon: [384, 512, [], "f130", "M192 0C139 0 96 43 96 96V256c0 53 43 96 96 96s96-43 96-96V96c0-53-43-96-96-96zM64 216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 89.1 66.2 162.7 152 174.4V464H120c-13.3 0-24 10.7-24 24s10.7 24 24 24h72 72c13.3 0 24-10.7 24-24s-10.7-24-24-24H216V430.4c85.8-11.7 152-85.3 152-174.4V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 70.7-57.3 128-128 128s-128-57.3-128-128V216z"]
 };
 var faCow = {
   prefix: 'fas',
@@ -13768,7 +14949,7 @@ var faFolderClosed = {
 var faHouseTsunami = {
   prefix: 'fas',
   iconName: 'house-tsunami',
-  icon: [576, 512, [], "e515", "M80.8 136.5C104.9 93.8 152.6 64 209 64c16.9 0 33.1 2.7 48.2 7.7c16.8 5.5 34.9-3.6 40.4-20.4s-3.6-34.9-20.4-40.4C255.8 3.8 232.8 0 209 0C95.2 0 0 88 0 200c0 91.6 53.5 172.1 142.2 194.1c13.4 3.8 27.5 5.9 42.2 5.9c.7 0 1.4 0 2.1-.1c1.8 0 3.7 .1 5.5 .1l0 0c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.6 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.5-27.3-10.1-39.2-1.7l0 0C439.4 325.2 410.9 336 384 336c-27.5 0-55-10.6-77.5-26.1c-11.1-7.9-25.9-7.9-37 0c-22.4 15.5-49.9 26.1-77.4 26.1c0 0-.1 0-.1 0c-12.4 0-24-1.5-34.9-4.3C121.6 320.2 96 287 96 248c0-48.5 39.5-88 88.4-88c13.5 0 26.1 3 37.5 8.3c16 7.5 35.1 .6 42.5-15.5s.6-35.1-15.5-42.5C229.3 101.1 207.4 96 184.4 96c-40 0-76.4 15.4-103.6 40.5zm252-18.1c-8.1 6-12.8 15.5-12.8 25.6V265c1.6 1 3.3 2 4.8 3.1c18.4 12.7 39.6 20.3 59.2 20.3c19 0 41.2-7.9 59.2-20.3c23.8-16.7 55.8-15.3 78.1 3.4c10.6 8.8 24.2 15.6 37.3 18.6c5.8 1.4 11.2 3.4 16.2 6.2c.7-2.7 1.1-5.5 1.1-8.4l-.4-144c0-10-4.7-19.4-12.7-25.5l-95.5-72c-11.4-8.6-27.1-8.6-38.5 0l-96 72zM384 448c-27.5 0-55-10.6-77.5-26.1c-11.1-7.9-25.9-7.9-37 0C247 437.4 219.5 448 192 448c-26.9 0-55.3-10.8-77.4-26.1l0 0c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25C126.5 501.7 159 512 192 512c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.6 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.4-27.3-10.1-39.2-1.7l0 0C439.4 437.2 410.9 448 384 448z"]
+  icon: [576, 512, [], "e515", "M80.8 136.5C104.9 93.8 152.6 64 209 64c16.9 0 33.1 2.7 48.2 7.7c16.8 5.5 34.9-3.6 40.4-20.4s-3.6-34.9-20.4-40.4C255.8 3.8 232.8 0 209 0C95.2 0 0 88 0 200c0 91.6 53.5 172.1 142.2 194.1c13.4 3.8 27.5 5.9 42.2 5.9c.7 0 1.4 0 2.1-.1c1.8 0 3.7 .1 5.5 .1l0 0c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.5 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.5-27.3-10.1-39.2-1.7l0 0C439.4 325.2 410.9 336 384 336c-27.5 0-55-10.6-77.5-26.1c-11.1-7.9-25.9-7.9-37 0c-22.4 15.5-49.9 26.1-77.4 26.1c0 0-.1 0-.1 0c-12.4 0-24-1.5-34.9-4.3C121.6 320.2 96 287 96 248c0-48.5 39.5-88 88.4-88c13.5 0 26.1 3 37.5 8.3c16 7.5 35.1 .6 42.5-15.5s.6-35.1-15.5-42.5C229.3 101.1 207.4 96 184.4 96c-40 0-76.4 15.4-103.6 40.5zm252-18.1c-8.1 6-12.8 15.5-12.8 25.6V265c1.6 1 3.3 2 4.8 3.1c18.4 12.7 39.6 20.3 59.2 20.3c19 0 41.2-7.9 59.2-20.3c23.8-16.7 55.8-15.3 78.1 3.4c10.6 8.8 24.2 15.6 37.3 18.6c5.8 1.4 11.2 3.4 16.2 6.2c.7-2.7 1.1-5.5 1.1-8.4l-.4-144c0-10-4.7-19.4-12.7-25.5l-95.5-72c-11.4-8.6-27.1-8.6-38.5 0l-96 72zM384 448c-27.5 0-55-10.6-77.5-26.1c-11.1-7.9-25.9-7.9-37 0C247 437.4 219.5 448 192 448c-26.9 0-55.3-10.8-77.4-26.1l0 0c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25C126.5 501.7 159 512 192 512c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.5 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.4-27.3-10.1-39.2-1.7l0 0C439.4 437.2 410.9 448 384 448z"]
 };
 var faSquareNfi = {
   prefix: 'fas',
@@ -13778,7 +14959,7 @@ var faSquareNfi = {
 var faArrowUpFromGroundWater = {
   prefix: 'fas',
   iconName: 'arrow-up-from-ground-water',
-  icon: [576, 512, [], "e4b5", "M288 352c17.7 0 32-14.3 32-32V109.3l25.4 25.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-80-80c-12.5-12.5-32.8-12.5-45.3 0l-80 80c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L256 109.3V320c0 17.7 14.3 32 32 32zm-18.5 69.9C247 437.4 219.5 448 192 448c-26.9 0-55.3-10.8-77.4-26.1l0 0c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25C126.5 501.7 159 512 192 512c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.6 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.4-27.3-10.1-39.2-1.7l0 0C439.4 437.2 410.9 448 384 448c-27.5 0-55-10.6-77.5-26.1c-11.1-7.9-25.9-7.9-37 0zM192 192H48c-26.5 0-48 21.5-48 48V425c5.3-3.1 11.2-5.4 17.5-6.9c13.1-3.1 26.7-9.8 37.3-18.6c22.2-18.7 54.3-20.1 78.1-3.4c18 12.4 40.1 20.3 59.1 20.3V192zm384 48c0-26.5-21.5-48-48-48H384V416.5h0c19 0 41.2-7.9 59.2-20.3c23.8-16.7 55.8-15.3 78.1 3.4c10.6 8.8 24.2 15.6 37.3 18.6c6.3 1.5 12.1 3.8 17.5 6.9V240z"]
+  icon: [576, 512, [], "e4b5", "M288 352c17.7 0 32-14.3 32-32V109.3l25.4 25.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-80-80c-12.5-12.5-32.8-12.5-45.3 0l-80 80c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L256 109.3V320c0 17.7 14.3 32 32 32zm-18.5 69.9C247 437.4 219.5 448 192 448c-26.9 0-55.3-10.8-77.4-26.1l0 0c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25C126.5 501.7 159 512 192 512c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.5 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.4-27.3-10.1-39.2-1.7l0 0C439.4 437.2 410.9 448 384 448c-27.5 0-55-10.6-77.5-26.1c-11.1-7.9-25.9-7.9-37 0zM192 192H48c-26.5 0-48 21.5-48 48V425c5.3-3.1 11.2-5.4 17.5-6.9c13.1-3.1 26.7-9.8 37.3-18.6c22.2-18.7 54.3-20.1 78.1-3.4c18 12.4 40.1 20.3 59.1 20.3V192zm384 48c0-26.5-21.5-48-48-48H384V416.5h0c19 0 41.2-7.9 59.2-20.3c23.8-16.7 55.8-15.3 78.1 3.4c10.6 8.8 24.2 15.6 37.3 18.6c6.3 1.5 12.1 3.8 17.5 6.9V240z"]
 };
 var faMartiniGlass = {
   prefix: 'fas',
@@ -13789,7 +14970,7 @@ var faGlassMartiniAlt = faMartiniGlass;
 var faRotateLeft = {
   prefix: 'fas',
   iconName: 'rotate-left',
-  icon: [512, 512, ["rotate-back", "rotate-backward", "undo-alt"], "f2ea", "M32.5 224H24c-13.3 0-24-10.7-24-24V72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L82.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L169 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8H32.5z"]
+  icon: [512, 512, ["rotate-back", "rotate-backward", "undo-alt"], "f2ea", "M48.5 224H40c-13.3 0-24-10.7-24-24V72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L98.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L185 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8H48.5z"]
 };
 var faRotateBack = faRotateLeft;
 var faRotateBackward = faRotateLeft;
@@ -13808,7 +14989,7 @@ var faLemon = {
 var faHeadSideMask = {
   prefix: 'fas',
   iconName: 'head-side-mask',
-  icon: [512, 512, [], "e063", "M0 224.2c0-22.2 3.2-43.6 9.2-63.9l227 165.1C228.5 337.8 224 352.4 224 368V512H96c-17.7 0-32-14.3-32-32V407.3c0-16.7-6.9-32.5-17.1-45.8C16.6 322.4 0 274.1 0 224.2zm258.6 77.9L21 129.3C56.7 53 134.2 0 224 0h32c95.2 0 174.2 69.3 189.4 160.1c2.2 13 6.7 25.7 15 36.1l42 52.6c6.2 7.8 9.6 17.4 9.6 27.4c0 4.1-.6 8.1-1.6 11.9H304c-16.9 0-32.5 5.2-45.4 14.1zM352 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM256 512V368c0-26.5 21.5-48 48-48H512l-16 48H336c-8.8 0-16 7.2-16 16s7.2 16 16 16H485.3l-10.7 32H336c-8.8 0-16 7.2-16 16s7.2 16 16 16H464l-1.4 4.2c-8.7 26.1-33.2 43.8-60.7 43.8H256z"]
+  icon: [576, 512, [], "e063", "M32 224.2c0-22.2 3.2-43.6 9.2-63.9L262.2 321c-4 9.5-6.2 20-6.2 31V512H128c-17.7 0-32-14.3-32-32V407.3c0-16.7-6.9-32.5-17.1-45.8C48.6 322.4 32 274.1 32 224.2zm248.3 70.4L53 129.3C88.7 53 166.2 0 256 0h24c95.2 0 181.2 69.3 197.3 160.2c2.3 13 6.8 25.7 15.1 36l42 52.6c5.4 6.7 8.6 14.8 9.4 23.2H336c-21.7 0-41.3 8.6-55.7 22.6zM336 304H534l0 0h10l-19.7 64H368c-8.8 0-16 7.2-16 16s7.2 16 16 16H514.5l-9.8 32H368c-8.8 0-16 7.2-16 16s7.2 16 16 16H494.8l-.9 2.8c-8.3 26.9-33.1 45.2-61.2 45.2H288V352c0-14 6-26.7 15.6-35.4c0 0 0 0 0 0c8.5-7.8 19.9-12.6 32.4-12.6zm48-80a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"]
 };
 var faHandshake = {
   prefix: 'fas',
@@ -13818,7 +14999,7 @@ var faHandshake = {
 var faGem = {
   prefix: 'fas',
   iconName: 'gem',
-  icon: [512, 512, [128142], "f3a5", "M116.7 33.8c4.5-6.1 11.7-9.8 19.3-9.8H376c7.6 0 14.8 3.6 19.3 9.8l112 152c6.8 9.2 6.1 21.9-1.5 30.4l-232 256c-4.6 5-11 7.9-17.8 7.9s-13.2-2.9-17.8-7.9l-232-256c-7.7-8.5-8.3-21.2-1.5-30.4l112-152zm38.5 39.8c-3.3 2.5-4.2 7-2.1 10.5l57.4 95.6L63.3 192c-4.1 .3-7.3 3.8-7.3 8s3.2 7.6 7.3 8l192 16c.4 0 .9 0 1.3 0l192-16c4.1-.3 7.3-3.8 7.3-8s-3.2-7.6-7.3-8L301.5 179.8l57.4-95.6c2.1-3.5 1.2-8.1-2.1-10.5s-7.9-2-10.7 1L256 172.2 165.9 74.6c-2.8-3-7.4-3.4-10.7-1z"]
+  icon: [512, 512, [128142], "f3a5", "M116.7 33.8c4.5-6.1 11.7-9.8 19.3-9.8H376c7.6 0 14.8 3.6 19.3 9.8l112 152c6.8 9.2 6.1 21.9-1.5 30.4l-232 256c-4.5 5-11 7.9-17.8 7.9s-13.2-2.9-17.8-7.9l-232-256c-7.7-8.5-8.3-21.2-1.5-30.4l112-152zm38.5 39.8c-3.3 2.5-4.2 7-2.1 10.5l57.4 95.6L63.3 192c-4.1 .3-7.3 3.8-7.3 8s3.2 7.6 7.3 8l192 16c.4 0 .9 0 1.3 0l192-16c4.1-.3 7.3-3.8 7.3-8s-3.2-7.6-7.3-8L301.5 179.8l57.4-95.6c2.1-3.5 1.2-8.1-2.1-10.5s-7.9-2-10.7 1L256 172.2 165.9 74.6c-2.8-3-7.4-3.4-10.7-1z"]
 };
 var faDolly = {
   prefix: 'fas',
@@ -13850,13 +15031,13 @@ var faSnowplow = {
 var faAnglesRight = {
   prefix: 'fas',
   iconName: 'angles-right',
-  icon: [448, 512, [187, "angle-double-right"], "f101", "M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L370.7 256 233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L178.7 256 41.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"]
+  icon: [512, 512, [187, "angle-double-right"], "f101", "M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"]
 };
 var faAngleDoubleRight = faAnglesRight;
 var faCannabis = {
   prefix: 'fas',
   iconName: 'cannabis',
-  icon: [512, 512, [], "f55f", "M240 0c5.3 0 10.3 2.7 13.3 7.1c15.8 23.5 36.7 63.7 49.2 109c7.2 26.4 11.8 55.2 10.4 84c11.5-8.8 23.7-16.7 35.8-23.6c41-23.3 84.4-36.9 112.2-42.5c5.2-1 10.7 .6 14.4 4.4s5.4 9.2 4.4 14.5c-5.6 27.7-19.3 70.9-42.7 111.7c-9.1 15.9-19.9 31.7-32.4 46.3c27.8 6.6 52.4 17.3 67.2 25.5c5.1 2.8 8.2 8.2 8.2 14s-3.2 11.2-8.2 14c-15.2 8.4-40.9 19.5-69.8 26.1c-20.2 4.6-42.9 7.2-65.2 4.6l8.3 33.1c1.5 6.1-.6 12.4-5.5 16.4s-11.6 4.6-17.2 1.9L264 417.2V488c0 13.3-10.7 24-24 24s-24-10.7-24-24V417.2l-58.5 29.1c-5.6 2.8-12.3 2.1-17.2-1.9s-7-10.3-5.5-16.4l8.3-33.1c-22.2 2.6-45 0-65.2-4.6c-28.9-6.6-54.6-17.6-69.8-26.1c-5.1-2.8-8.2-8.2-8.2-14s3.2-11.2 8.2-14c14.8-8.2 39.4-18.8 67.2-25.5C62.9 296.3 52.1 280.5 43 264.6C19.6 223.8 5.9 180.6 .3 152.9c-1.1-5.2 .6-10.7 4.4-14.5s9.2-5.4 14.4-4.4c27.9 5.5 71.2 19.2 112.2 42.5c12.1 6.9 24.3 14.7 35.8 23.6c-1.4-28.7 3.1-57.6 10.4-84c12.5-45.3 33.4-85.5 49.2-109c3-4.4 8-7.1 13.3-7.1z"]
+  icon: [512, 512, [], "f55f", "M256 0c5.3 0 10.3 2.7 13.3 7.1c15.8 23.5 36.7 63.7 49.2 109c7.2 26.4 11.8 55.2 10.4 84c11.5-8.8 23.7-16.7 35.8-23.6c41-23.3 84.4-36.9 112.2-42.5c5.2-1 10.7 .6 14.4 4.4s5.4 9.2 4.4 14.5c-5.6 27.7-19.3 70.9-42.7 111.7c-9.1 15.9-19.9 31.7-32.4 46.3c27.8 6.6 52.4 17.3 67.2 25.5c5.1 2.8 8.2 8.2 8.2 14s-3.2 11.2-8.2 14c-15.2 8.4-40.9 19.5-69.8 26.1c-20.2 4.6-42.9 7.2-65.2 4.6l8.3 33.1c1.5 6.1-.6 12.4-5.5 16.4s-11.6 4.6-17.2 1.9L280 417.2V488c0 13.3-10.7 24-24 24s-24-10.7-24-24V417.2l-58.5 29.1c-5.6 2.8-12.3 2.1-17.2-1.9s-7-10.3-5.5-16.4l8.3-33.1c-22.2 2.6-45 0-65.2-4.6c-28.9-6.6-54.6-17.6-69.8-26.1c-5.1-2.8-8.2-8.2-8.2-14s3.2-11.2 8.2-14c14.8-8.2 39.4-18.8 67.2-25.5C78.9 296.3 68.1 280.5 59 264.6c-23.4-40.8-37.1-84-42.7-111.7c-1.1-5.2 .6-10.7 4.4-14.5s9.2-5.4 14.4-4.4c27.9 5.5 71.2 19.2 112.2 42.5c12.1 6.9 24.3 14.7 35.8 23.6c-1.4-28.7 3.1-57.6 10.4-84c12.5-45.3 33.4-85.5 49.2-109c3-4.4 8-7.1 13.3-7.1z"]
 };
 var faCirclePlay = {
   prefix: 'fas',
@@ -13889,7 +15070,7 @@ var faChair = {
 var faCircleCheck = {
   prefix: 'fas',
   iconName: 'circle-check',
-  icon: [512, 512, [61533, "check-circle"], "f058", "M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"]
+  icon: [512, 512, [61533, "check-circle"], "f058", "M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"]
 };
 var faCheckCircle = faCircleCheck;
 var faCircleStop = {
@@ -13922,7 +15103,7 @@ var faPersonShelter = {
 var faNeuter = {
   prefix: 'fas',
   iconName: 'neuter',
-  icon: [384, 512, [9906], "f22c", "M64 176a112 112 0 1 1 224 0A112 112 0 1 1 64 176zM208 349.1c81.9-15 144-86.8 144-173.1C352 78.8 273.2 0 176 0S0 78.8 0 176c0 86.3 62.1 158.1 144 173.1V480c0 17.7 14.3 32 32 32s32-14.3 32-32V349.1z"]
+  icon: [384, 512, [9906], "f22c", "M80 176a112 112 0 1 1 224 0A112 112 0 1 1 80 176zM224 349.1c81.9-15 144-86.8 144-173.1C368 78.8 289.2 0 192 0S16 78.8 16 176c0 86.3 62.1 158.1 144 173.1V480c0 17.7 14.3 32 32 32s32-14.3 32-32V349.1z"]
 };
 var faIdBadge = {
   prefix: 'fas',
@@ -13943,7 +15124,7 @@ var faLaughBeam = faFaceLaughBeam;
 var faHelicopterSymbol = {
   prefix: 'fas',
   iconName: 'helicopter-symbol',
-  icon: [512, 512, [], "e502", "M443.3 224H508C493.6 108.2 401.8 16.4 286 2V66.7C366.4 80.1 429.9 143.6 443.3 224zM508 288H443.3C429.9 368.4 366.4 431.9 286 445.4V510c115.8-14.4 207.6-106.2 222-222zM0 288C14.4 403.8 106.2 495.6 222 510V445.4C141.6 431.9 78.1 368.4 64.7 288H0zm0-64H64.7C78.1 143.6 141.6 80.1 222 66.7V2C106.2 16.4 14.4 108.2 0 224zm206-64c0-17.7-14.3-32-32-32s-32 14.3-32 32V352c0 17.7 14.3 32 32 32s32-14.3 32-32V288h96v64c0 17.7 14.3 32 32 32s32-14.3 32-32V160c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H206V160z"]
+  icon: [512, 512, [], "e502", "M445.3 224H510C495.6 108.2 403.8 16.4 288 2V66.7C368.4 80.1 431.9 143.6 445.3 224zM510 288H445.3C431.9 368.4 368.4 431.9 288 445.4V510c115.8-14.4 207.6-106.2 222-222zM2 288C16.4 403.8 108.2 495.6 224 510V445.4C143.6 431.9 80.1 368.4 66.7 288H2zm0-64H66.7C80.1 143.6 143.6 80.1 224 66.7V2C108.2 16.4 16.4 108.2 2 224zm206-64c0-17.7-14.3-32-32-32s-32 14.3-32 32V352c0 17.7 14.3 32 32 32s32-14.3 32-32V288h96v64c0 17.7 14.3 32 32 32s32-14.3 32-32V160c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H208V160z"]
 };
 var faUniversalAccess = {
   prefix: 'fas',
@@ -13964,7 +15145,7 @@ var faLariSign = {
 var faVolcano = {
   prefix: 'fas',
   iconName: 'volcano',
-  icon: [512, 512, [127755], "f770", "M160 144c-35.3 0-64-28.7-64-64s28.7-64 64-64c15.7 0 30 5.6 41.2 15C212.4 12.4 232.7 0 256 0s43.6 12.4 54.8 31C322 21.6 336.3 16 352 16c35.3 0 64 28.7 64 64s-28.7 64-64 64c-14.7 0-28.3-5-39.1-13.3l-32 48C275.3 187 266 192 256 192s-19.3-5-24.9-13.3l-32-48C188.3 139 174.7 144 160 144zM144 352l48.4-24.2c10.2-5.1 21.6-7.8 33-7.8c19.6 0 38.4 7.8 52.2 21.6l32.5 32.5c6.3 6.3 14.9 9.9 23.8 9.9c11.3 0 21.8-5.6 28-15l9.7-14.6-59-66.3c-9.1-10.2-22.2-16.1-35.9-16.1H235.1c-13.7 0-26.8 5.9-35.9 16.1l-59.9 67.4L144 352zm19.4-95.8c18.2-20.5 44.3-32.2 71.8-32.2h41.8c27.4 0 53.5 11.7 71.8 32.2l150.2 169c8.5 9.5 13.2 21.9 13.2 34.7c0 28.8-23.4 52.2-52.2 52.2H52.2C23.4 512 0 488.6 0 459.8c0-12.8 4.7-25.1 13.2-34.7l150.2-169z"]
+  icon: [512, 512, [127755], "f770", "M160 144c-35.3 0-64-28.7-64-64s28.7-64 64-64c15.7 0 30 5.6 41.2 15C212.4 12.4 232.7 0 256 0s43.6 12.4 54.8 31C322 21.6 336.3 16 352 16c35.3 0 64 28.7 64 64s-28.7 64-64 64c-14.7 0-28.3-5-39.1-13.3l-32 48C275.3 187 266 192 256 192s-19.3-5-24.9-13.3l-32-48C188.3 139 174.7 144 160 144zM144 352l48.4-24.2c10.2-5.1 21.6-7.8 33-7.8c19.6 0 38.4 7.8 52.2 21.6l32.5 32.5c6.3 6.3 14.9 9.9 23.8 9.9c11.3 0 21.8-5.6 28-15l9.7-14.6-58.9-66.3c-9.1-10.2-22.2-16.1-35.9-16.1H235.1c-13.7 0-26.8 5.9-35.9 16.1l-59.9 67.4L144 352zm19.4-95.8c18.2-20.5 44.3-32.2 71.8-32.2h41.8c27.4 0 53.5 11.7 71.8 32.2l150.2 169c8.5 9.5 13.2 21.9 13.2 34.7c0 28.8-23.4 52.2-52.2 52.2H52.2C23.4 512 0 488.6 0 459.8c0-12.8 4.7-25.1 13.2-34.7l150.2-169z"]
 };
 var faPersonWalkingDashedLineArrowRight = {
   prefix: 'fas',
@@ -13991,23 +15172,23 @@ var faSquarePersonConfined = {
 var faUserTie = {
   prefix: 'fas',
   iconName: 'user-tie',
-  icon: [448, 512, [], "f508", "M224 256A128 128 0 1 1 224 0a128 128 0 1 1 0 256zM209.1 359.2l-18.6-31c-6.4-10.7 1.3-24.2 13.7-24.2H224h19.7c12.4 0 20.1 13.6 13.7 24.2l-18.6 31 33.4 123.9 36-146.9c2-8.1 9.8-13.4 17.9-11.3c70.1 17.6 121.9 81 121.9 156.4c0 17-13.8 30.7-30.7 30.7H285.5c-2.1 0-4-.4-5.8-1.1l.3 1.1H168l.3-1.1c-1.8 .7-3.8 1.1-5.8 1.1H30.7C13.8 512 0 498.2 0 481.3c0-75.5 51.9-138.9 121.9-156.4c8.1-2 15.9 3.3 17.9 11.3l36 146.9 33.4-123.9z"]
+  icon: [448, 512, [], "f508", "M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7H162.5c0 0 0 0 .1 0H168 280h5.5c0 0 0 0 .1 0H417.3c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2H224 204.3c-12.4 0-20.1 13.6-13.7 24.2z"]
 };
 var faArrowDownLong = {
   prefix: 'fas',
   iconName: 'arrow-down-long',
-  icon: [320, 512, ["long-arrow-down"], "f175", "M137.4 502.6c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 402.7 192 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 370.7L54.6 329.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128z"]
+  icon: [384, 512, ["long-arrow-down"], "f175", "M169.4 502.6c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7 224 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 370.7L86.6 329.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128z"]
 };
 var faLongArrowDown = faArrowDownLong;
 var faTentArrowDownToLine = {
   prefix: 'fas',
   iconName: 'tent-arrow-down-to-line',
-  icon: [640, 512, [], "e57e", "M241.8 111.9c8.9 9.9 8.1 25-1.8 33.9l-80 72c-9.1 8.2-23 8.2-32.1 0l-80-72c-9.9-8.9-10.7-24-1.8-33.9s24-10.7 33.9-1.8l39.9 36L120 24c0-13.3 10.7-24 24-24s24 10.7 24 24l0 122.1 39.9-36c9.9-8.9 25-8.1 33.9 1.8zm122.8 22.6c11.5-8.7 27.3-8.7 38.8 0l168 128c6.6 5 11 12.5 12.3 20.7l24 160 .7 4.7c17.5 .2 31.6 14.4 31.6 32c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H159.6l.7-4.7 24-160c1.2-8.2 5.6-15.7 12.3-20.7l168-128zM384 448h76.8L384 320V448z"]
+  icon: [640, 512, [], "e57e", "M241.8 111.9c8.9 9.9 8.1 25-1.8 33.9l-80 72c-9.1 8.2-23 8.2-32.1 0l-80-72c-9.9-8.9-10.7-24-1.8-33.9s24-10.7 33.9-1.8l39.9 36L120 24c0-13.3 10.7-24 24-24s24 10.7 24 24l0 122.1 39.9-36c9.9-8.9 25-8.1 33.9 1.8zm122.8 22.6c11.5-8.7 27.3-8.7 38.8 0l168 128c6.6 5 11 12.5 12.3 20.7l24 160 .7 4.7c17.5 .2 31.6 14.4 31.6 32c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H159.6l.7-4.7 24-160c1.2-8.2 5.6-15.7 12.3-20.7l168-128zM384 448h80L402.7 325.5c-1.7-3.4-5.1-5.5-8.8-5.5c-5.5 0-9.9 4.4-9.9 9.9V448z"]
 };
 var faCertificate = {
   prefix: 'fas',
   iconName: 'certificate',
-  icon: [512, 512, [], "f0a3", "M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"]
+  icon: [512, 512, [], "f0a3", "M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.4-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"]
 };
 var faReplyAll = {
   prefix: 'fas',
@@ -14029,7 +15210,7 @@ var faSkating = faPersonSkating;
 var faFilterCircleDollar = {
   prefix: 'fas',
   iconName: 'filter-circle-dollar',
-  icon: [576, 512, ["funnel-dollar"], "f662", "M3.9 22.9C10.5 8.9 24.5 0 40 0H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L396.4 195.6C316.2 212.1 256 283 256 368c0 27.4 6.3 53.4 17.5 76.5c-1.6-.8-3.2-1.8-4.7-2.9l-64-48c-8.1-6-12.8-15.5-12.8-25.6V288.9L9 65.3C-.7 53.4-2.8 36.8 3.9 22.9zM576 368c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM408.8 335.4c.6-.9 1.8-2.1 4.2-3.4c5.1-2.7 12.5-4.1 18.7-4c8.2 .1 17.1 1.8 26.4 4.1c8.6 2.1 17.3-3.1 19.4-11.7s-3.1-17.3-11.7-19.4c-5.6-1.4-11.6-2.7-17.9-3.7V288c0-8.8-7.2-16-16-16s-16 7.2-16 16v9.5c-6.1 1.2-12.3 3.2-18 6.3c-11.8 6.3-23 18.4-21.8 37.2c1 16 11.7 25.3 21.6 30.7c8.8 4.7 19.7 7.8 28.6 10.3l1.8 .5c10.3 2.9 17.9 5.2 23.2 8.3c4.5 2.7 4.7 4.2 4.7 5.6c.1 2.4-.5 3.7-1 4.5c-.6 1-1.8 2.2-4 3.3c-4.7 2.5-11.8 3.8-18.5 3.6c-9.5-.3-18.5-3.1-29.9-6.8c-1.9-.6-3.8-1.2-5.8-1.8c-8.4-2.6-17.4 2.1-20 10.5s2.1 17.4 10.5 20c1.6 .5 3.3 1 5 1.6l0 0 0 0c7 2.3 15.1 4.8 23.7 6.6v11.4c0 8.8 7.2 16 16 16s16-7.2 16-16V438.7c6.2-1.1 12.5-3.1 18.3-6.2c12.1-6.5 22.3-18.7 21.7-36.9c-.5-16.2-10.3-26.3-20.5-32.3c-9.4-5.6-21.2-8.9-30.5-11.5l-.2 0c-10.4-2.9-18.3-5.2-23.9-8.2c-4.8-2.6-4.8-4-4.8-4.5l0-.1c-.1-1.9 .3-2.9 .8-3.6z"]
+  icon: [576, 512, ["funnel-dollar"], "f662", "M3.9 22.9C10.5 8.9 24.5 0 40 0H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L396.4 195.6C316.2 212.1 256 283 256 368c0 27.4 6.3 53.4 17.5 76.5c-1.6-.8-3.2-1.8-4.7-2.9l-64-48c-8.1-6-12.8-15.5-12.8-25.6V288.9L9 65.3C-.7 53.4-2.8 36.8 3.9 22.9zM288 368a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm120.8-32.6c.6-.9 1.8-2.1 4.2-3.4c5.1-2.7 12.5-4.1 18.7-4c8.2 .1 17.1 1.8 26.4 4.1c8.6 2.1 17.3-3.1 19.4-11.7s-3.1-17.3-11.7-19.4c-5.6-1.4-11.6-2.7-17.9-3.7V288c0-8.8-7.2-16-16-16s-16 7.2-16 16v9.5c-6.1 1.2-12.3 3.2-18 6.3c-11.8 6.3-23 18.4-21.8 37.2c1 16 11.7 25.3 21.6 30.7c8.8 4.7 19.7 7.8 28.6 10.3l1.8 .5c10.3 2.9 17.9 5.2 23.2 8.3c4.5 2.7 4.7 4.2 4.7 5.6c.1 2.4-.5 3.7-1 4.5c-.6 1-1.8 2.2-4 3.3c-4.7 2.5-11.8 3.8-18.5 3.6c-9.5-.3-18.5-3.1-29.9-6.8c-1.9-.6-3.8-1.2-5.8-1.8c-8.4-2.6-17.4 2.1-20 10.5s2.1 17.4 10.5 20c1.6 .5 3.3 1 5 1.6l0 0 0 0c7 2.3 15.1 4.8 23.7 6.6v11.4c0 8.8 7.2 16 16 16s16-7.2 16-16V438.7c6.2-1.1 12.5-3.1 18.3-6.2c12.1-6.5 22.3-18.7 21.7-36.9c-.5-16.2-10.3-26.3-20.5-32.3c-9.4-5.6-21.2-8.9-30.5-11.5l-.2 0c-10.4-2.9-18.3-5.2-23.9-8.2c-4.8-2.6-4.8-4-4.8-4.5l0-.1c-.1-1.9 .3-2.9 .8-3.6z"]
 };
 var faFunnelDollar = faFilterCircleDollar;
 var faCameraRetro = {
@@ -14058,7 +15239,7 @@ var faExternalLinkSquare = faSquareArrowUpRight;
 var faBoxOpen = {
   prefix: 'fas',
   iconName: 'box-open',
-  icon: [640, 512, [], "f49e", "M45.9 42.1c3-6.1 9.6-9.6 16.3-8.7L307 64 551.8 33.4c6.7-.8 13.3 2.7 16.3 8.7l41.7 83.4c9 17.9-.6 39.6-19.8 45.1L426.6 217.3c-13.9 4-28.8-1.9-36.2-14.3L307 64 223.6 203c-7.4 12.4-22.3 18.3-36.2 14.3L24.1 170.6C4.8 165.1-4.7 143.4 4.2 125.5L45.9 42.1zM308.1 128l54.9 91.4c14.9 24.8 44.6 36.6 72.5 28.6L563 211.6v167c0 22-15 41.2-36.4 46.6l-204.1 51c-10.2 2.6-20.9 2.6-31 0l-204.1-51C66 419.7 51 400.5 51 378.5v-167L178.6 248c27.8 8 57.6-3.8 72.5-28.6L305.9 128h2.2z"]
+  icon: [640, 512, [], "f49e", "M58.9 42.1c3-6.1 9.6-9.6 16.3-8.7L320 64 564.8 33.4c6.7-.8 13.3 2.7 16.3 8.7l41.7 83.4c9 17.9-.6 39.6-19.8 45.1L439.6 217.3c-13.9 4-28.8-1.9-36.2-14.3L320 64 236.6 203c-7.4 12.4-22.3 18.3-36.2 14.3L37.1 170.6c-19.3-5.5-28.8-27.2-19.8-45.1L58.9 42.1zM321.1 128l54.9 91.4c14.9 24.8 44.6 36.6 72.5 28.6L576 211.6v167c0 22-15 41.2-36.4 46.6l-204.1 51c-10.2 2.6-20.9 2.6-31 0l-204.1-51C79 419.7 64 400.5 64 378.5v-167L191.6 248c27.8 8 57.6-3.8 72.5-28.6L318.9 128h2.2z"]
 };
 var faScroll = {
   prefix: 'fas',
@@ -14083,12 +15264,12 @@ var faPause = {
 var faHillAvalanche = {
   prefix: 'fas',
   iconName: 'hill-avalanche',
-  icon: [640, 512, [], "e507", "M440.7 401.9c34.2 23.1 81.1 19.5 111.4-10.8c34.4-34.4 34.4-90.1 0-124.4c-27.8-27.8-69.5-33.1-102.6-16c-11.8 6.1-16.4 20.6-10.3 32.3s20.6 16.4 32.3 10.3c15.1-7.8 34-5.3 46.6 7.3c15.6 15.6 15.6 40.9 0 56.6s-40.9 15.6-56.6 0l-81.7-81.7C402.2 261.3 417 236.4 417 208c0-33.9-21.1-62.9-50.9-74.5c1.9-6.8 2.9-14 2.9-21.5c0-44.2-35.8-80-80-80c-27.3 0-51.5 13.7-65.9 34.6C217.3 46.6 198.9 32 177 32c-26.5 0-48 21.5-48 48c0 4 .5 7.9 1.4 11.6L440.7 401.9zM481 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM69.3 87C44.1 61.8 1 79.7 1 115.3V432c0 44.2 35.8 80 80 80H397.7c35.6 0 53.5-43.1 28.3-68.3L69.3 87z"]
+  icon: [576, 512, [], "e507", "M439.7 401.9c34.2 23.1 81.1 19.5 111.4-10.8c34.4-34.4 34.4-90.1 0-124.4c-27.8-27.8-69.5-33.1-102.6-16c-11.8 6.1-16.4 20.6-10.3 32.3s20.6 16.4 32.3 10.3c15.1-7.8 34-5.3 46.6 7.3c15.6 15.6 15.6 40.9 0 56.6s-40.9 15.6-56.6 0l-81.7-81.7C401.2 261.3 416 236.4 416 208c0-33.9-21.1-62.9-50.9-74.5c1.9-6.8 2.9-14 2.9-21.5c0-44.2-35.8-80-80-80c-27.3 0-51.5 13.7-65.9 34.6C216.3 46.6 197.9 32 176 32c-26.5 0-48 21.5-48 48c0 4 .5 7.9 1.4 11.6L439.7 401.9zM480 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM68.3 87C43.1 61.8 0 79.7 0 115.3V432c0 44.2 35.8 80 80 80H396.7c35.6 0 53.5-43.1 28.3-68.3L68.3 87z"]
 };
 var faTemperatureEmpty = {
   prefix: 'fas',
   iconName: 'temperature-empty',
-  icon: [320, 512, ["temperature-0", "thermometer-0", "thermometer-empty"], "f2cb", "M96 112c0-26.5 21.5-48 48-48s48 21.5 48 48V276.5c0 17.3 7.1 31.9 15.3 42.5C217.8 332.6 224 349.5 224 368c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-18.5 6.2-35.4 16.7-48.9C88.9 308.4 96 293.8 96 276.5V112zM144 0C82.1 0 32 50.2 32 112V276.5c0 .1-.1 .3-.2 .6c-.2 .6-.8 1.6-1.7 2.8C11.2 304.2 0 334.8 0 368c0 79.5 64.5 144 144 144s144-64.5 144-144c0-33.2-11.3-63.8-30.1-88.1c-.9-1.2-1.5-2.2-1.7-2.8c-.1-.3-.2-.5-.2-.6V112C256 50.2 205.9 0 144 0zm0 416a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"]
+  icon: [320, 512, ["temperature-0", "thermometer-0", "thermometer-empty"], "f2cb", "M112 112c0-26.5 21.5-48 48-48s48 21.5 48 48V276.5c0 17.3 7.1 31.9 15.3 42.5C233.8 332.6 240 349.5 240 368c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-18.5 6.2-35.4 16.7-48.9c8.2-10.6 15.3-25.2 15.3-42.5V112zM160 0C98.1 0 48 50.2 48 112V276.5c0 .1-.1 .3-.2 .6c-.2 .6-.8 1.6-1.7 2.8C27.2 304.2 16 334.8 16 368c0 79.5 64.5 144 144 144s144-64.5 144-144c0-33.2-11.2-63.8-30.1-88.1c-.9-1.2-1.5-2.2-1.7-2.8c-.1-.3-.2-.5-.2-.6V112C272 50.2 221.9 0 160 0zm0 416a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"]
 };
 var faTemperature0 = faTemperatureEmpty;
 var faThermometer0 = faTemperatureEmpty;
@@ -14113,7 +15294,7 @@ var faVcard = faAddressCard;
 var faScaleUnbalancedFlip = {
   prefix: 'fas',
   iconName: 'scale-unbalanced-flip',
-  icon: [640, 512, ["balance-scale-right"], "f516", "M116.9 62.4c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l113 37.7C264 15.8 289.7 0 319 0c44.2 0 80 35.8 80 80c0 3-.2 5.9-.5 8.8l122.6 40.9c16.8 5.6 25.8 23.7 20.2 40.5s-23.7 25.8-40.5 20.2L365.4 145.2c-4.5 3.2-9.3 5.9-14.4 8.2V480c0 17.7-14.3 32-32 32H127c-17.7 0-32-14.3-32-32s14.3-32 32-32H287V153.3c-21-9.2-37.2-27-44.2-49l-125.9-42zM199.4 288L127 163.8 54.6 288H199.4zM127 384C64.1 384 11.8 350 1 305.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242.2 350 189.9 384 127 384zm382.8-92.2L437.4 416H582.3L509.8 291.8zm126 141.3C625 478 572.7 512 509.8 512s-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1z"]
+  icon: [640, 512, ["balance-scale-right"], "f516", "M117.9 62.4c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l113 37.7C265 15.8 290.7 0 320 0c44.2 0 80 35.8 80 80c0 3-.2 5.9-.5 8.8l122.6 40.9c16.8 5.6 25.8 23.7 20.2 40.5s-23.7 25.8-40.5 20.2L366.4 145.2c-4.5 3.2-9.3 5.9-14.4 8.2V480c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-21-9.2-37.2-27-44.2-49l-125.9-42zM200.4 288L128 163.8 55.6 288H200.4zM128 384C65.1 384 12.8 350 2 305.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C243.2 350 190.9 384 128 384zm382.8-92.2L438.4 416H583.3L510.8 291.8zm126 141.3C626 478 573.7 512 510.8 512s-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1z"]
 };
 var faBalanceScaleRight = faScaleUnbalancedFlip;
 var faSubscript = {
@@ -14196,7 +15377,7 @@ var faFerry = {
 var faArrowsDownToPeople = {
   prefix: 'fas',
   iconName: 'arrows-down-to-people',
-  icon: [640, 512, [], "e4b9", "M128 0c-13.3 0-24 10.7-24 24V142.1L81 119c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0l64-64c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-23 23V24c0-13.3-10.7-24-24-24zM344 200a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zM168 296a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm312 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM184 441.5l26.9 49.9c6.3 11.7 20.8 16 32.5 9.8s16-20.8 9.8-32.5l-36.3-67.5c1.7-1.7 3.2-3.6 4.3-5.8L248 345.5V400c0 17.7 14.3 32 32 32h48c17.7 0 32-14.3 32-32V345.5l26.9 49.9c1.2 2.2 2.6 4.1 4.3 5.8l-36.3 67.5c-6.3 11.7-1.9 26.2 9.8 32.5s26.2 1.9 32.5-9.8L424 441.5V480c0 17.7 14.3 32 32 32h48c17.7 0 32-14.3 32-32V441.5l26.9 49.9c6.3 11.7 20.8 16 32.5 9.8s16-20.8 9.8-32.5l-37.9-70.3c-15.3-28.5-45.1-46.3-77.5-46.3H470.2c-16.3 0-31.9 4.5-45.4 12.6l-33.6-62.3c-15.3-28.5-45.1-46.3-77.5-46.3H294.2c-32.4 0-62.1 17.8-77.5 46.3l-33.6 62.3c-13.5-8.1-29.1-12.6-45.4-12.6H118.2c-32.4 0-62.1 17.8-77.5 46.3L2.9 468.6c-6.3 11.7-1.9 26.2 9.8 32.5s26.2 1.9 32.5-9.8L72 441.5V480c0 17.7 14.3 32 32 32h48c17.7 0 32-14.3 32-32V441.5zM399 153l64 64c9.4 9.4 24.6 9.4 33.9 0l64-64c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-23 23V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V142.1l-23-23c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"]
+  icon: [640, 512, [], "e4b9", "M144 0c-13.3 0-24 10.7-24 24V142.1L97 119c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0l64-64c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-23 23V24c0-13.3-10.7-24-24-24zM360 200a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zM184 296a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm312 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM200 441.5l26.9 49.9c6.3 11.7 20.8 16 32.5 9.8s16-20.8 9.8-32.5l-36.3-67.5c1.7-1.7 3.2-3.6 4.3-5.8L264 345.5V400c0 17.7 14.3 32 32 32h48c17.7 0 32-14.3 32-32V345.5l26.9 49.9c1.2 2.2 2.6 4.1 4.3 5.8l-36.3 67.5c-6.3 11.7-1.9 26.2 9.8 32.5s26.2 1.9 32.5-9.8L440 441.5V480c0 17.7 14.3 32 32 32h48c17.7 0 32-14.3 32-32V441.5l26.9 49.9c6.3 11.7 20.8 16 32.5 9.8s16-20.8 9.8-32.5l-37.9-70.3c-15.3-28.5-45.1-46.3-77.5-46.3H486.2c-16.3 0-31.9 4.5-45.4 12.6l-33.6-62.3c-15.3-28.5-45.1-46.3-77.5-46.3H310.2c-32.4 0-62.1 17.8-77.5 46.3l-33.6 62.3c-13.5-8.1-29.1-12.6-45.4-12.6H134.2c-32.4 0-62.1 17.8-77.5 46.3L18.9 468.6c-6.3 11.7-1.9 26.2 9.8 32.5s26.2 1.9 32.5-9.8L88 441.5V480c0 17.7 14.3 32 32 32h48c17.7 0 32-14.3 32-32V441.5zM415 153l64 64c9.4 9.4 24.6 9.4 33.9 0l64-64c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-23 23V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V142.1l-23-23c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"]
 };
 var faSeedling = {
   prefix: 'fas',
@@ -14224,7 +15405,7 @@ var faArrowCircleLeft = faCircleArrowLeft;
 var faGroupArrowsRotate = {
   prefix: 'fas',
   iconName: 'group-arrows-rotate',
-  icon: [512, 512, [], "e4f6", "M192.1 71.9c16.9-5 26.6-22.9 21.5-39.8s-22.9-26.6-39.8-21.5c-21.5 6.4-41.8 15.5-60.6 27C105.3 34 96.4 32 87 32C51.7 32 23 60.7 23 96c0 9.4 2 18.3 5.6 26.3C17.2 141 8 161.4 1.6 182.9c-5 16.9 4.6 34.8 21.5 39.8s34.8-4.6 39.8-21.5c4.3-14.6 10.4-28.5 17.9-41.4c2 .2 4.1 .3 6.1 .3c35.3 0 64-28.7 64-64c0-2.1-.1-4.1-.3-6.1c12.9-7.5 26.8-13.6 41.4-17.9zm128-61.3c-16.9-5-34.8 4.6-39.8 21.5s4.6 34.8 21.5 39.8c14.6 4.3 28.5 10.4 41.4 17.9c-.2 2-.3 4.1-.3 6.1c0 35.3 28.7 64 64 64c2.1 0 4.1-.1 6.2-.3c7.5 12.9 13.6 26.8 17.9 41.4c5 16.9 22.9 26.6 39.8 21.5s26.6-22.9 21.5-39.8c-6.4-21.5-15.5-41.8-27-60.6c3.6-8 5.6-16.9 5.6-26.3c0-35.3-28.7-64-64-64c-9.4 0-18.3 2-26.3 5.6c-18.7-11.5-39-20.6-60.6-27zM62.9 310.9c-5-16.9-22.9-26.6-39.8-21.5s-26.6 22.9-21.5 39.8c6.4 21.5 15.5 41.8 27 60.6C25 397.7 23 406.6 23 416c0 35.3 28.7 64 64 64c9.4 0 18.3-2 26.3-5.6c18.7 11.5 39 20.6 60.6 27c16.9 5 34.8-4.6 39.8-21.5s-4.6-34.8-21.5-39.8c-14.6-4.3-28.5-10.4-41.4-17.9c.2-2 .3-4.1 .3-6.2c0-35.3-28.7-64-64-64c-2.1 0-4.1 .1-6.2 .3c-7.5-12.9-13.6-26.8-17.9-41.4zm429.4 18.3c5-16.9-4.6-34.8-21.5-39.8s-34.8 4.6-39.8 21.5c-4.3 14.6-10.4 28.5-17.9 41.4c-2-.2-4.1-.3-6.2-.3c-35.3 0-64 28.7-64 64c0 2.1 .1 4.1 .3 6.2c-12.9 7.5-26.8 13.6-41.4 17.9c-16.9 5-26.6 22.9-21.5 39.8s22.9 26.6 39.8 21.5c21.5-6.4 41.8-15.5 60.6-27c8 3.6 16.9 5.6 26.3 5.6c35.3 0 64-28.7 64-64c0-9.4-2-18.3-5.6-26.3c11.5-18.7 20.6-39 27-60.6zM183.8 256.8c0-15.6 5.6-29.9 14.9-41.1L214 231c6.6 6.6 17.8 1.9 17.8-7.4V163.2c0-5.7-4.7-10.4-10.4-10.4H160.9c-9.3 0-13.9 11.2-7.4 17.8l11.2 11.2c-17.9 19.8-28.9 46.2-28.9 75.1c0 43.6 24.9 81.3 61.1 99.8c11.8 6 26.3 1.4 32.3-10.4s1.4-26.3-10.4-32.3c-20.8-10.6-34.9-32.2-34.9-57zm93.1-58.6c20.8 10.6 34.9 32.2 34.9 57c0 15.6-5.6 29.9-14.9 41.1L281.6 281c-6.6-6.6-17.8-1.9-17.8 7.4v60.5c0 5.7 4.7 10.4 10.4 10.4h60.5c9.3 0 13.9-11.2 7.4-17.8l-11.2-11.2c17.9-19.8 28.9-46.2 28.9-75.1c0-43.6-24.9-81.3-61.1-99.8c-11.8-6-26.3-1.4-32.3 10.4s-1.4 26.3 10.4 32.3z"]
+  icon: [512, 512, [], "e4f6", "M201.1 71.9c16.9-5 26.6-22.9 21.5-39.8s-22.9-26.6-39.8-21.5c-21.5 6.4-41.8 15.5-60.6 27C114.3 34 105.4 32 96 32C60.7 32 32 60.7 32 96c0 9.4 2 18.3 5.6 26.3c-11.5 18.7-20.6 39-27 60.6c-5 16.9 4.6 34.8 21.5 39.8s34.8-4.6 39.8-21.5c4.3-14.6 10.4-28.5 17.9-41.4c2 .2 4.1 .3 6.1 .3c35.3 0 64-28.7 64-64c0-2.1-.1-4.1-.3-6.1c12.9-7.5 26.8-13.6 41.4-17.9zm128-61.3c-16.9-5-34.8 4.6-39.8 21.5s4.6 34.8 21.5 39.8c14.6 4.3 28.5 10.4 41.4 17.9c-.2 2-.3 4.1-.3 6.1c0 35.3 28.7 64 64 64c2.1 0 4.1-.1 6.2-.3c7.5 12.9 13.6 26.8 17.9 41.4c5 16.9 22.9 26.6 39.8 21.5s26.6-22.9 21.5-39.8c-6.4-21.5-15.5-41.8-27-60.6c3.6-8 5.6-16.9 5.6-26.3c0-35.3-28.7-64-64-64c-9.4 0-18.3 2-26.3 5.6c-18.7-11.5-39-20.6-60.6-27zM71.9 310.9c-5-16.9-22.9-26.6-39.8-21.5s-26.6 22.9-21.5 39.8c6.4 21.5 15.5 41.8 27 60.6C34 397.7 32 406.6 32 416c0 35.3 28.7 64 64 64c9.4 0 18.3-2 26.3-5.6c18.7 11.5 39 20.6 60.6 27c16.9 5 34.8-4.6 39.8-21.5s-4.6-34.8-21.5-39.8c-14.6-4.3-28.5-10.4-41.4-17.9c.2-2 .3-4.1 .3-6.2c0-35.3-28.7-64-64-64c-2.1 0-4.1 .1-6.2 .3c-7.5-12.9-13.6-26.8-17.9-41.4zm429.4 18.3c5-16.9-4.6-34.8-21.5-39.8s-34.8 4.6-39.8 21.5c-4.3 14.6-10.4 28.5-17.9 41.4c-2-.2-4.1-.3-6.2-.3c-35.3 0-64 28.7-64 64c0 2.1 .1 4.1 .3 6.2c-12.9 7.5-26.8 13.6-41.4 17.9c-16.9 5-26.6 22.9-21.5 39.8s22.9 26.6 39.8 21.5c21.5-6.4 41.8-15.5 60.6-27c8 3.6 16.9 5.6 26.3 5.6c35.3 0 64-28.7 64-64c0-9.4-2-18.3-5.6-26.3c11.5-18.7 20.6-39 27-60.6zM192.8 256.8c0-15.6 5.6-29.9 14.9-41.1L223 231c6.6 6.6 17.8 1.9 17.8-7.4V163.2c0-5.7-4.7-10.4-10.4-10.4H169.9c-9.3 0-13.9 11.2-7.4 17.8l11.2 11.2c-17.9 19.8-28.9 46.2-28.9 75.1c0 43.6 24.9 81.3 61.1 99.8c11.8 6 26.3 1.4 32.3-10.4s1.4-26.3-10.4-32.3c-20.8-10.6-34.9-32.2-34.9-57zm93.1-58.6c20.8 10.6 34.9 32.2 34.9 57c0 15.6-5.6 29.9-14.9 41.1L290.6 281c-6.6-6.6-17.8-1.9-17.8 7.4v60.5c0 5.7 4.7 10.4 10.4 10.4h60.5c9.3 0 13.9-11.2 7.4-17.8l-11.2-11.2c17.9-19.8 28.9-46.2 28.9-75.1c0-43.6-24.9-81.3-61.1-99.8c-11.8-6-26.3-1.4-32.3 10.4s-1.4 26.3 10.4 32.3z"]
 };
 var faBowlFood = {
   prefix: 'fas',
@@ -14252,7 +15433,7 @@ var faThunderstorm = faCloudBolt;
 var faTextSlash = {
   prefix: 'fas',
   iconName: 'text-slash',
-  icon: [640, 512, ["remove-format"], "f87d", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L355.7 253.5 400.2 96H503L497 120.2c-4.3 17.1 6.1 34.5 23.3 38.8s34.5-6.1 38.8-23.3l11-44.1C577.6 61.3 554.7 32 523.5 32H376.1h-.3H204.5c-22 0-41.2 15-46.6 36.4l-6.3 25.2L38.8 5.1zm168 131.7c.1-.3 .2-.7 .3-1L217 96H333.7L301.3 210.8l-94.5-74.1zM243.3 416H192c-17.7 0-32 14.3-32 32s14.3 32 32 32H352c17.7 0 32-14.3 32-32s-14.3-32-32-32H309.8l17.6-62.1L272.9 311 243.3 416z"]
+  icon: [640, 512, ["remove-format"], "f87d", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L355.7 253.5 400.2 96H503L497 120.2c-4.3 17.1 6.1 34.5 23.3 38.8s34.5-6.1 38.8-23.3l11-44.1C577.6 61.3 554.7 32 523.5 32H376.1h-.3H204.5c-22 0-41.2 15-46.6 36.4l-6.3 25.2L38.8 5.1zm168 131.7c.1-.3 .2-.7 .3-1L217 96H333.7L301.3 210.8l-94.5-74.1zM327.3 353.9L272.9 311 243.3 416H192c-17.7 0-32 14.3-32 32s14.3 32 32 32H352c17.7 0 32-14.3 32-32s-14.3-32-32-32H309.8l17.6-62.1z"]
 };
 var faRemoveFormat = faTextSlash;
 var faFaceSmileWink = {
@@ -14264,7 +15445,7 @@ var faSmileWink = faFaceSmileWink;
 var faFileWord = {
   prefix: 'fas',
   iconName: 'file-word',
-  icon: [384, 512, [], "f1c2", "M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM111 257.1l26.8 89.2 31.6-90.3c3.4-9.6 12.5-16.1 22.7-16.1s19.3 6.4 22.7 16.1l31.6 90.3L273 257.1c3.8-12.7 17.2-19.9 29.9-16.1s19.9 17.2 16.1 29.9l-48 160c-3 10-12.1 16.9-22.4 17.1s-19.8-6.2-23.2-16.1L192 336.6l-33.3 95.3c-3.4 9.8-12.8 16.3-23.2 16.1s-19.5-7.1-22.4-17.1l-48-160c-3.8-12.7 3.4-26.1 16.1-29.9s26.1 3.4 29.9 16.1z"]
+  icon: [384, 512, [], "f1c2", "M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM111 257.1l26.8 89.2 31.6-90.3c3.4-9.6 12.5-16.1 22.7-16.1s19.3 6.4 22.7 16.1l31.6 90.3L273 257.1c3.8-12.7 17.2-19.9 29.9-16.1s19.9 17.2 16.1 29.9l-48 160c-3 10-12 16.9-22.4 17.1s-19.8-6.2-23.2-16.1L192 336.6l-33.3 95.3c-3.4 9.8-12.8 16.3-23.2 16.1s-19.5-7.1-22.4-17.1l-48-160c-3.8-12.7 3.4-26.1 16.1-29.9s26.1 3.4 29.9 16.1z"]
 };
 var faFilePowerpoint = {
   prefix: 'fas',
@@ -14303,7 +15484,7 @@ var faBlackboard = faChalkboard;
 var faUserLargeSlash = {
   prefix: 'fas',
   iconName: 'user-large-slash',
-  icon: [640, 512, ["user-alt-slash"], "f4fa", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L381.9 274c48.5-23.2 82.1-72.7 82.1-130C464 64.5 399.5 0 320 0C250.4 0 192.4 49.3 178.9 114.9L38.8 5.1zM284.3 320h-59C136.2 320 64 392.2 64 481.3c0 17 13.8 30.7 30.7 30.7H528L284.3 320z"]
+  icon: [640, 512, ["user-alt-slash"], "f4fa", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L381.9 274c48.5-23.2 82.1-72.7 82.1-130C464 64.5 399.5 0 320 0C250.4 0 192.4 49.3 178.9 114.9L38.8 5.1zM545.5 512H528L284.3 320h-59C136.2 320 64 392.2 64 481.3c0 17 13.8 30.7 30.7 30.7H545.3l.3 0z"]
 };
 var faUserAltSlash = faUserLargeSlash;
 var faEnvelopeOpen = {
@@ -14314,7 +15495,7 @@ var faEnvelopeOpen = {
 var faHandshakeSimpleSlash = {
   prefix: 'fas',
   iconName: 'handshake-simple-slash',
-  icon: [640, 512, ["handshake-alt-slash"], "e05f", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-135-105.8c-1.1-11.4-6.3-22.3-15.3-30.7l-134.2-123-23.4 18.2-26-20.3 77.2-60.1c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L550.2 352H592c26.5 0 48-21.5 48-48V176c0-26.5-21.5-48-48-48H516h-4-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2l-89.7 72.6-25.8-20.3 81.8-66.2c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-35.5 23.7L38.8 5.1zM0 176V304c0 26.5 21.5 48 48 48H156.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c.8-.8 1.5-1.7 2.2-2.6L41.2 128.5C17.9 131.8 0 151.8 0 176z"]
+  icon: [640, 512, ["handshake-alt-slash"], "e05f", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-135-105.8c-1.1-11.3-6.3-22.3-15.3-30.7l-134.2-123-23.4 18.2-26-20.3 77.2-60.1c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L550.2 352H592c26.5 0 48-21.5 48-48V176c0-26.5-21.5-48-48-48H516h-4-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2l-89.7 72.6-25.8-20.3 81.8-66.2c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-35.5 23.7L38.8 5.1zM413.6 421.9L41.2 128.5C17.9 131.8 0 151.8 0 176V304c0 26.5 21.5 48 48 48H156.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c.8-.8 1.5-1.7 2.2-2.6z"]
 };
 var faHandshakeAltSlash = faHandshakeSimpleSlash;
 var faMattressPillow = {
@@ -14330,7 +15511,7 @@ var faGuaraniSign = {
 var faArrowsRotate = {
   prefix: 'fas',
   iconName: 'arrows-rotate',
-  icon: [512, 512, [128472, "refresh", "sync"], "f021", "M89.1 202.6c7.7-21.8 20.2-42.3 37.8-59.8c62.5-62.5 163.8-62.5 226.3 0L370.3 160H320c-17.7 0-32 14.3-32 32s14.3 32 32 32H447.5c0 0 0 0 0 0h.4c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L398.4 97.6c-87.5-87.5-229.3-87.5-316.8 0C57.2 122 39.6 150.7 28.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5zM23 289.3c-5 1.5-9.8 4.2-13.7 8.2c-4 4-6.7 8.8-8.1 14c-.3 1.2-.6 2.5-.8 3.8c-.3 1.7-.4 3.4-.4 5.1V448c0 17.7 14.3 32 32 32s32-14.3 32-32V396.9l17.6 17.5 0 0c87.5 87.4 229.3 87.4 316.7 0c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.5 62.5-163.8 62.5-226.3 0l-.1-.1L109.6 352H160c17.7 0 32-14.3 32-32s-14.3-32-32-32H32.4c-1.6 0-3.2 .1-4.8 .3s-3.1 .5-4.6 1z"]
+  icon: [512, 512, [128472, "refresh", "sync"], "f021", "M105.1 202.6c7.7-21.8 20.2-42.3 37.8-59.8c62.5-62.5 163.8-62.5 226.3 0L386.3 160H352c-17.7 0-32 14.3-32 32s14.3 32 32 32H463.5c0 0 0 0 0 0h.4c17.7 0 32-14.3 32-32V80c0-17.7-14.3-32-32-32s-32 14.3-32 32v35.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5zM39 289.3c-5 1.5-9.8 4.2-13.7 8.2c-4 4-6.7 8.8-8.1 14c-.3 1.2-.6 2.5-.8 3.8c-.3 1.7-.4 3.4-.4 5.1V432c0 17.7 14.3 32 32 32s32-14.3 32-32V396.9l17.6 17.5 0 0c87.5 87.4 229.3 87.4 316.7 0c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.5 62.5-163.8 62.5-226.3 0l-.1-.1L125.6 352H160c17.7 0 32-14.3 32-32s-14.3-32-32-32H48.4c-1.6 0-3.2 .1-4.8 .3s-3.1 .5-4.6 1z"]
 };
 var faRefresh = faArrowsRotate;
 var faSync = faArrowsRotate;
@@ -14342,7 +15523,7 @@ var faFireExtinguisher = {
 var faCruzeiroSign = {
   prefix: 'fas',
   iconName: 'cruzeiro-sign',
-  icon: [384, 512, [], "e152", "M64 256c0-88.4 71.6-160 160-160c41 0 78.3 15.4 106.7 40.7c13.2 11.8 33.4 10.7 45.2-2.5s10.7-33.4-2.5-45.2c-39.6-35.5-92-57-149.3-57C100.3 32 0 132.3 0 256S100.3 480 224 480c57.4 0 109.7-21.6 149.3-57c13.2-11.8 14.3-32 2.5-45.2s-32-14.3-45.2-2.5C302.3 400.6 265 416 224 416V320v-8.7c0-12.8 10.4-23.3 23.3-23.3c4.6 0 9.1 1.4 12.9 3.9l10.1 6.7c14.7 9.8 34.6 5.8 44.4-8.9s5.8-34.6-8.9-44.4l-10.1-6.7c-14.3-9.6-31.2-14.7-48.4-14.7c-12.4 0-24.2 2.6-34.9 7.3c-5.5-4.5-12.6-7.3-20.3-7.3c-17.7 0-32 14.3-32 32v55.3V320v82.7C103.5 378 64 321.6 64 256z"]
+  icon: [448, 512, [], "e152", "M96 256c0-88.4 71.6-160 160-160c41 0 78.3 15.4 106.7 40.7c13.2 11.8 33.4 10.7 45.2-2.5s10.7-33.4-2.5-45.2c-39.6-35.5-92-57-149.3-57C132.3 32 32 132.3 32 256s100.3 224 224 224c57.4 0 109.7-21.6 149.3-57c13.2-11.8 14.3-32 2.5-45.2s-32-14.3-45.2-2.5C334.3 400.6 297 416 256 416V320v-8.7c0-12.8 10.4-23.3 23.3-23.3c4.6 0 9.1 1.4 12.9 3.9l10.1 6.7c14.7 9.8 34.6 5.8 44.4-8.9s5.8-34.6-8.9-44.4l-10.1-6.7c-14.3-9.6-31.2-14.7-48.4-14.7c-12.4 0-24.2 2.6-34.9 7.3c-5.5-4.5-12.6-7.3-20.3-7.3c-17.7 0-32 14.3-32 32v55.3V320v82.7C135.5 378 96 321.6 96 256z"]
 };
 var faGreaterThanEqual = {
   prefix: 'fas',
@@ -14352,7 +15533,7 @@ var faGreaterThanEqual = {
 var faShieldHalved = {
   prefix: 'fas',
   iconName: 'shield-halved',
-  icon: [512, 512, ["shield-alt"], "f3ed", "M240 0c4.6 0 9.2 1 13.4 2.9L441.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.7 363.2c-16.7 8-36.1 8-52.8 0C41.3 420.7 .5 239.2 0 140c-.1-26.2 16.3-47.9 38.3-57.2L226.7 2.9C230.8 1 235.4 0 240 0zm0 66.8V444.8C378 378 415.1 230.1 416 141.4L240 66.8l0 0z"]
+  icon: [512, 512, ["shield-alt"], "f3ed", "M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0zm0 66.8V444.8C394 378 431.1 230.1 432 141.4L256 66.8l0 0z"]
 };
 var faShieldAlt = faShieldHalved;
 var faBookAtlas = {
@@ -14389,7 +15570,7 @@ var faArchway = {
 var faHeartCircleCheck = {
   prefix: 'fas',
   iconName: 'heart-circle-check',
-  icon: [576, 512, [], "e4fd", "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5zM576 368c0-79.5-64.5-144-144-144s-144 64.5-144 144s64.5 144 144 144s144-64.5 144-144zm-76.7-43.3c6.2 6.2 6.2 16.4 0 22.6l-72 72c-6.2 6.2-16.4 6.2-22.6 0l-40-40c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L416 385.4l60.7-60.7c6.2-6.2 16.4-6.2 22.6 0z"]
+  icon: [576, 512, [], "e4fd", "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5zM576 368a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zm-76.7-43.3c6.2 6.2 6.2 16.4 0 22.6l-72 72c-6.2 6.2-16.4 6.2-22.6 0l-40-40c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L416 385.4l60.7-60.7c6.2-6.2 16.4-6.2 22.6 0z"]
 };
 var faHouseChimneyCrack = {
   prefix: 'fas',
@@ -14422,7 +15603,7 @@ var faCouch = {
 var faCediSign = {
   prefix: 'fas',
   iconName: 'cedi-sign',
-  icon: [320, 512, [], "e0df", "M224 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V66.7C69.2 81.9 0 160.9 0 256s69.2 174.1 160 189.3V480c0 17.7 14.3 32 32 32s32-14.3 32-32V445.3c30.9-5.2 59.2-17.7 83.2-35.8c14.1-10.6 17-30.7 6.4-44.8s-30.7-17-44.8-6.4c-13.2 9.9-28.3 17.3-44.8 21.6V132c16.4 4.2 31.6 11.6 44.8 21.6c14.1 10.6 34.2 7.8 44.8-6.4s7.8-34.2-6.4-44.8c-24-18-52.4-30.6-83.2-35.8V32zM160 132V380c-55.2-14.2-96-64.3-96-124s40.8-109.8 96-124z"]
+  icon: [384, 512, [], "e0df", "M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V66.7C101.2 81.9 32 160.9 32 256s69.2 174.1 160 189.3V480c0 17.7 14.3 32 32 32s32-14.3 32-32V445.3c30.9-5.2 59.2-17.7 83.2-35.8c14.1-10.6 17-30.7 6.4-44.8s-30.7-17-44.8-6.4c-13.2 9.9-28.3 17.3-44.8 21.6V132c16.4 4.2 31.6 11.6 44.8 21.6c14.1 10.6 34.2 7.8 44.8-6.4s7.8-34.2-6.4-44.8c-24-18-52.4-30.6-83.2-35.8V32zM192 132V380c-55.2-14.2-96-64.3-96-124s40.8-109.8 96-124z"]
 };
 var faItalic = {
   prefix: 'fas',
@@ -14468,7 +15649,7 @@ var faA = {
 var faTemperatureArrowDown = {
   prefix: 'fas',
   iconName: 'temperature-arrow-down',
-  icon: [512, 512, ["temperature-down"], "e03f", "M96 112c0-26.5 21.5-48 48-48s48 21.5 48 48V276.5c0 17.3 7.1 31.9 15.3 42.5C217.8 332.6 224 349.5 224 368c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-18.5 6.2-35.4 16.7-48.9C88.9 308.4 96 293.8 96 276.5V112zM144 0C82.1 0 32 50.1 32 112V276.4c0 .1-.1 .3-.2 .6c-.2 .6-.8 1.6-1.7 2.8C11.2 304.2 0 334.8 0 368c0 79.5 64.5 144 144 144s144-64.5 144-144c0-33.2-11.3-63.8-30.1-88.1c-.9-1.2-1.5-2.2-1.7-2.8c-.1-.3-.2-.5-.2-.6V112C256 50.1 205.9 0 144 0zm0 416c26.5 0 48-21.5 48-48c0-20.9-13.4-38.7-32-45.3V272c0-8.8-7.2-16-16-16s-16 7.2-16 16v50.7c-18.6 6.6-32 24.4-32 45.3c0 26.5 21.5 48 48 48zm336-64H448V64c0-17.7-14.3-32-32-32s-32 14.3-32 32V352H352c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l64 64c6 6 14.1 9.4 22.6 9.4s16.6-3.4 22.6-9.4l64-64c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8z"]
+  icon: [576, 512, ["temperature-down"], "e03f", "M128 112c0-26.5 21.5-48 48-48s48 21.5 48 48V276.5c0 17.3 7.1 31.9 15.3 42.5C249.8 332.6 256 349.5 256 368c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-18.5 6.2-35.4 16.7-48.9c8.2-10.6 15.3-25.2 15.3-42.5V112zM176 0C114.1 0 64 50.1 64 112V276.4c0 .1-.1 .3-.2 .6c-.2 .6-.8 1.6-1.7 2.8C43.2 304.2 32 334.8 32 368c0 79.5 64.5 144 144 144s144-64.5 144-144c0-33.2-11.2-63.8-30.1-88.1c-.9-1.2-1.5-2.2-1.7-2.8c-.1-.3-.2-.5-.2-.6V112C288 50.1 237.9 0 176 0zm0 416c26.5 0 48-21.5 48-48c0-20.9-13.4-38.7-32-45.3V272c0-8.8-7.2-16-16-16s-16 7.2-16 16v50.7c-18.6 6.6-32 24.4-32 45.3c0 26.5 21.5 48 48 48zm336-64H480V64c0-17.7-14.3-32-32-32s-32 14.3-32 32V352H384c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l64 64c6 6 14.1 9.4 22.6 9.4s16.6-3.4 22.6-9.4l64-64c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8z"]
 };
 var faTemperatureDown = faTemperatureArrowDown;
 var faFeatherPointed = {
@@ -14490,7 +15671,7 @@ var faSnowflake = {
 var faNewspaper = {
   prefix: 'fas',
   iconName: 'newspaper',
-  icon: [512, 512, [128240], "f1ea", "M96 96c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H80c-44.2 0-80-35.8-80-80V128c0-17.7 14.3-32 32-32s32 14.3 32 32V400c0 8.8 7.2 16 16 16s16-7.2 16-16V96zm64 24v80c0 13.3 10.7 24 24 24H424c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24H184c-13.3 0-24 10.7-24 24zm0 184c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16zm160 0c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H336c-8.8 0-16 7.2-16 16zM160 400c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16zm160 0c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"]
+  icon: [512, 512, [128240], "f1ea", "M96 96c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H80c-44.2 0-80-35.8-80-80V128c0-17.7 14.3-32 32-32s32 14.3 32 32V400c0 8.8 7.2 16 16 16s16-7.2 16-16V96zm64 24v80c0 13.3 10.7 24 24 24H296c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24H184c-13.3 0-24 10.7-24 24zm208-8c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H384c-8.8 0-16 7.2-16 16zM160 304c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16z"]
 };
 var faRectangleAd = {
   prefix: 'fas',
@@ -14507,7 +15688,7 @@ var faArrowCircleRight = faCircleArrowRight;
 var faFilterCircleXmark = {
   prefix: 'fas',
   iconName: 'filter-circle-xmark',
-  icon: [576, 512, [], "e17b", "M3.9 22.9C10.5 8.9 24.5 0 40 0H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L396.4 195.6C316.2 212.1 256 283 256 368c0 27.4 6.3 53.4 17.5 76.5c-1.6-.8-3.2-1.8-4.7-2.9l-64-48c-8.1-6-12.8-15.5-12.8-25.6V288.9L9 65.3C-.7 53.4-2.8 36.8 3.9 22.9zM432 512c-79.5 0-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144s-64.5 144-144 144zm59.3-180.7c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0L432 345.4l-36.7-36.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6L409.4 368l-36.7 36.7c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0L432 390.6l36.7 36.7c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6L454.6 368l36.7-36.7z"]
+  icon: [576, 512, [], "e17b", "M3.9 22.9C10.5 8.9 24.5 0 40 0H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L396.4 195.6C316.2 212.1 256 283 256 368c0 27.4 6.3 53.4 17.5 76.5c-1.6-.8-3.2-1.8-4.7-2.9l-64-48c-8.1-6-12.8-15.5-12.8-25.6V288.9L9 65.3C-.7 53.4-2.8 36.8 3.9 22.9zM432 224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm59.3 107.3c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0L432 345.4l-36.7-36.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6L409.4 368l-36.7 36.7c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0L432 390.6l36.7 36.7c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6L454.6 368l36.7-36.7z"]
 };
 var faLocust = {
   prefix: 'fas',
@@ -14567,7 +15748,7 @@ var faFilter = {
 var faQuestion = {
   prefix: 'fas',
   iconName: 'question',
-  icon: [320, 512, [10067, 10068, 61736], "3f", "M64 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H128C57.3 32 0 89.3 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"]
+  icon: [320, 512, [10067, 10068, 61736], "3f", "M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"]
 };
 var faFileSignature = {
   prefix: 'fas',
@@ -14588,7 +15769,7 @@ var faHouseChimneyUser = {
 var faHandHoldingHeart = {
   prefix: 'fas',
   iconName: 'hand-holding-heart',
-  icon: [576, 512, [], "f4be", "M148 76.6C148 34.3 182.3 0 224.6 0c20.3 0 39.8 8.1 54.1 22.4l9.3 9.3 9.3-9.3C311.6 8.1 331.1 0 351.4 0C393.7 0 428 34.3 428 76.6c0 20.3-8.1 39.8-22.4 54.1L302.1 234.1c-7.8 7.8-20.5 7.8-28.3 0L170.4 130.7C156.1 116.4 148 96.9 148 76.6zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z"]
+  icon: [576, 512, [], "f4be", "M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z"]
 };
 var faPuzzlePiece = {
   prefix: 'fas',
@@ -14684,7 +15865,7 @@ var faPersonCirclePlus = {
 var faChartPie = {
   prefix: 'fas',
   iconName: 'chart-pie',
-  icon: [576, 512, ["pie-chart"], "f200", "M302 240V16.6c0-9 7-16.6 16-16.6C441.7 0 542 100.3 542 224c0 9-7.6 16-16.6 16H302zM30 272C30 150.7 120.1 50.3 237 34.3c9.2-1.3 17 6.1 17 15.4V288L410.5 444.5c6.7 6.7 6.2 17.7-1.5 23.1C369.8 495.6 321.8 512 270 512C137.5 512 30 404.6 30 272zm526.4 16c9.3 0 16.6 7.8 15.4 17c-7.7 55.9-34.6 105.6-73.9 142.3c-6 5.6-15.4 5.2-21.2-.7L318 288H556.4z"]
+  icon: [576, 512, ["pie-chart"], "f200", "M304 240V16.6c0-9 7-16.6 16-16.6C443.7 0 544 100.3 544 224c0 9-7.6 16-16.6 16H304zM32 272C32 150.7 122.1 50.3 239 34.3c9.2-1.3 17 6.1 17 15.4V288L412.5 444.5c6.7 6.7 6.2 17.7-1.5 23.1C371.8 495.6 323.8 512 272 512C139.5 512 32 404.6 32 272zm526.4 16c9.3 0 16.6 7.8 15.4 17c-7.7 55.9-34.6 105.6-73.9 142.3c-6 5.6-15.4 5.2-21.2-.7L320 288H558.4z"]
 };
 var faPieChart = faChartPie;
 var faBoltLightning = {
@@ -14710,7 +15891,7 @@ var faFileContract = {
 var faFishFins = {
   prefix: 'fas',
   iconName: 'fish-fins',
-  icon: [576, 512, [], "e4f2", "M275.2 38.4c-10.6-8-25-8.5-36.3-1.5S222 57.3 224.6 70.3l9.7 48.6c-19.4 9-36.9 19.9-52.4 31.5c-15.3 11.5-29 23.9-40.7 36.3L48.1 132.4c-12.5-7.3-28.4-5.3-38.7 4.9S-3 163.3 4.2 175.9L50 256 4.2 336.1c-7.2 12.6-5 28.4 5.3 38.6s26.1 12.2 38.7 4.9l93.1-54.3c11.8 12.3 25.4 24.8 40.7 36.3c15.5 11.6 33 22.5 52.4 31.5l-9.7 48.6c-2.6 13 3.1 26.3 14.3 33.3s25.6 6.5 36.3-1.5l77.6-58.2c54.9-4 101.5-27 137.2-53.8c39.2-29.4 67.2-64.7 81.6-89.5c5.8-9.9 5.8-22.2 0-32.1c-14.4-24.8-42.5-60.1-81.6-89.5c-35.8-26.8-82.3-49.8-137.2-53.8L275.2 38.4zM384 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"]
+  icon: [576, 512, [], "e4f2", "M275.2 38.4c-10.6-8-25-8.5-36.3-1.5S222 57.3 224.6 70.3l9.7 48.6c-19.4 9-36.9 19.9-52.4 31.5c-15.3 11.5-29 23.9-40.7 36.3L48.1 132.4c-12.5-7.3-28.4-5.3-38.6 4.9S-3 163.3 4.2 175.9L50 256 4.2 336.1c-7.2 12.6-5 28.4 5.3 38.6s26.1 12.2 38.6 4.9l93.1-54.3c11.8 12.3 25.4 24.8 40.7 36.3c15.5 11.6 33 22.5 52.4 31.5l-9.7 48.6c-2.6 13 3.1 26.3 14.3 33.3s25.6 6.5 36.3-1.5l77.6-58.2c54.9-4 101.5-27 137.2-53.8c39.2-29.4 67.2-64.7 81.6-89.5c5.8-9.9 5.8-22.2 0-32.1c-14.4-24.8-42.5-60.1-81.6-89.5c-35.8-26.8-82.3-49.8-137.2-53.8L275.2 38.4zM384 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"]
 };
 var faBuildingFlag = {
   prefix: 'fas',
@@ -14747,7 +15928,7 @@ var faKaaba = {
 var faToiletPaper = {
   prefix: 'fas',
   iconName: 'toilet-paper',
-  icon: [640, 512, [129531], "f71e", "M428.2 0C381.2 49.6 368 126.5 368 192c0 158.8-27.3 247-42.7 283.9c-10 24-33.2 36.1-55.4 36.1H32c-11.5 0-22.2-6.2-27.8-16.2s-5.6-22.3 .4-32.2c9.8-17.7 15.4-38.2 20.5-57.7C36.3 362.8 48 293.5 48 192C48 86 91 0 144 0H428.2zM496 384c-53 0-96-86-96-192S443 0 496 0s96 86 96 192s-43 192-96 192zm0-128c17.7 0 32-28.7 32-64s-14.3-64-32-64s-32 28.7-32 64s14.3 64 32 64zM128 208a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm64 0a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zm80-16a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"]
+  icon: [640, 512, [129531], "f71e", "M444.2 0C397.2 49.6 384 126.5 384 192c0 158.8-27.3 247-42.7 283.9c-10 24-33.2 36.1-55.4 36.1H48c-11.5 0-22.2-6.2-27.8-16.2s-5.6-22.3 .4-32.2c9.8-17.7 15.4-38.2 20.5-57.7C52.3 362.8 64 293.5 64 192C64 86 107 0 160 0H444.2zM512 384c-53 0-96-86-96-192S459 0 512 0s96 86 96 192s-43 192-96 192zm0-128c17.7 0 32-28.7 32-64s-14.3-64-32-64s-32 28.7-32 64s14.3 64 32 64zM144 208a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm64 0a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zm80-16a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"]
 };
 var faHelmetSafety = {
   prefix: 'fas',
@@ -14802,7 +15983,7 @@ var faArrowRight = {
 var faSignsPost = {
   prefix: 'fas',
   iconName: 'signs-post',
-  icon: [512, 512, ["map-signs"], "f277", "M218 32H58C40.3 32 26 46.3 26 64v64c0 17.7 14.3 32 32 32H435.4c4.2 0 8.3-1.7 11.3-4.7l48-48c6.2-6.2 6.2-16.4 0-22.6l-48-48c-3-3-7.1-4.7-11.3-4.7H282c0-17.7-14.3-32-32-32s-32 14.3-32 32zM474 256c0-17.7-14.3-32-32-32H282V192H218v32H64.6c-4.2 0-8.3 1.7-11.3 4.7l-48 48c-6.2 6.2-6.2 16.4 0 22.6l48 48c3 3 7.1 4.7 11.3 4.7H442c17.7 0 32-14.3 32-32V256zM282 480V384H218v96c0 17.7 14.3 32 32 32s32-14.3 32-32z"]
+  icon: [512, 512, ["map-signs"], "f277", "M224 32H64C46.3 32 32 46.3 32 64v64c0 17.7 14.3 32 32 32H441.4c4.2 0 8.3-1.7 11.3-4.7l48-48c6.2-6.2 6.2-16.4 0-22.6l-48-48c-3-3-7.1-4.7-11.3-4.7H288c0-17.7-14.3-32-32-32s-32 14.3-32 32zM480 256c0-17.7-14.3-32-32-32H288V192H224v32H70.6c-4.2 0-8.3 1.7-11.3 4.7l-48 48c-6.2 6.2-6.2 16.4 0 22.6l48 48c3 3 7.1 4.7 11.3 4.7H448c17.7 0 32-14.3 32-32V256zM288 480V384H224v96c0 17.7 14.3 32 32 32s32-14.3 32-32z"]
 };
 var faMapSigns = faSignsPost;
 var faCashRegister = {
@@ -14834,7 +16015,7 @@ var faTools = faScrewdriverWrench;
 var faArrowsToEye = {
   prefix: 'fas',
   iconName: 'arrows-to-eye',
-  icon: [640, 512, [], "e4bf", "M7 15C16.4 5.7 31.6 5.7 41 15l63 63V40c0-13.3 10.7-24 24-24s24 10.7 24 24v96c0 13.3-10.7 24-24 24H32c-13.3 0-24-10.7-24-24s10.7-24 24-24H70.1L7 49C-2.3 39.6-2.3 24.4 7 15zM125.5 243.9C150.6 193.6 214.7 112 312 112s161.4 81.6 186.5 131.9c3.8 7.6 3.8 16.5 0 24.2C473.4 318.4 409.3 400 312 400s-161.4-81.6-186.5-131.9c-3.8-7.6-3.8-16.5 0-24.2zM312 320a64 64 0 1 0 0-128 64 64 0 1 0 0 128zM583 15c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-63 63H592c13.3 0 24 10.7 24 24s-10.7 24-24 24H496c-13.3 0-24-10.7-24-24V40c0-13.3 10.7-24 24-24s24 10.7 24 24V78.1l63-63zM7 497c-9.4-9.4-9.4-24.6 0-33.9l63-63H32c-13.3 0-24-10.7-24-24s10.7-24 24-24h96c13.3 0 24 10.7 24 24v96c0 13.3-10.7 24-24 24s-24-10.7-24-24V433.9L41 497c-9.4 9.4-24.6 9.4-33.9 0zm576 0l-63-63V472c0 13.3-10.7 24-24 24s-24-10.7-24-24V376c0-13.3 10.7-24 24-24h96c13.3 0 24 10.7 24 24s-10.7 24-24 24H553.9l63 63c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0z"]
+  icon: [640, 512, [], "e4bf", "M15 15C24.4 5.7 39.6 5.7 49 15l63 63V40c0-13.3 10.7-24 24-24s24 10.7 24 24v96c0 13.3-10.7 24-24 24H40c-13.3 0-24-10.7-24-24s10.7-24 24-24H78.1L15 49C5.7 39.6 5.7 24.4 15 15zM133.5 243.9C158.6 193.6 222.7 112 320 112s161.4 81.6 186.5 131.9c3.8 7.6 3.8 16.5 0 24.2C481.4 318.4 417.3 400 320 400s-161.4-81.6-186.5-131.9c-3.8-7.6-3.8-16.5 0-24.2zM320 320a64 64 0 1 0 0-128 64 64 0 1 0 0 128zM591 15c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-63 63H600c13.3 0 24 10.7 24 24s-10.7 24-24 24H504c-13.3 0-24-10.7-24-24V40c0-13.3 10.7-24 24-24s24 10.7 24 24V78.1l63-63zM15 497c-9.4-9.4-9.4-24.6 0-33.9l63-63H40c-13.3 0-24-10.7-24-24s10.7-24 24-24h96c13.3 0 24 10.7 24 24v96c0 13.3-10.7 24-24 24s-24-10.7-24-24V433.9L49 497c-9.4 9.4-24.6 9.4-33.9 0zm576 0l-63-63V472c0 13.3-10.7 24-24 24s-24-10.7-24-24V376c0-13.3 10.7-24 24-24h96c13.3 0 24 10.7 24 24s-10.7 24-24 24H561.9l63 63c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0z"]
 };
 var faPlugCircleBolt = {
   prefix: 'fas',
@@ -14849,7 +16030,7 @@ var faHeart = {
 var faMarsAndVenus = {
   prefix: 'fas',
   iconName: 'mars-and-venus',
-  icon: [512, 512, [9893], "f224", "M321.8 14.8C325.5 5.8 334.3 0 344 0H456c13.3 0 24 10.7 24 24V136c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-39-39-24.7 24.7C391 163.3 400 192.6 400 224c0 80.2-59.1 146.7-136.1 158.2c0 .6 .1 1.2 .1 1.8v.4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .4 .3 .4 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3 .3h24c13.3 0 24 10.7 24 24s-10.7 24-24 24H264v.2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 .1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0l-24 0-24 0v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1V486 486v-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1V485 485v-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1V484v-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1V483v-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1-.1V481v-.1-.1-.1-.1-.1-.1-.1-.1V480v-.1-.1-.1-.1-.1-.1-.1V479v-.1-.1-.1-.1-.1-.1-.1V478v-.1-.1-.1-.1-.1-.1V477v-.1-.1-.1-.1-.1-.1V476v-.1-.1-.1-.1-.1-.1V475v-.1-.2-.2-.2-.2-.2V474v-.2-.2-.2-.2-.2V473v-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2V470v-.2-.2-.2-.2-.2V469v-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2V467v-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2V463v-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2V459v-.2-.2-.2-.2-.2-.2-.2-.2V457v-.2-.2-.2-.2V456H192c-13.3 0-24-10.7-24-24s10.7-24 24-24h24v-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3V403v-.3-.3V402v-.3-.3V401v-.3-.3V400v-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.3-.4-.3-.4-.4-.4-.4V393v-.4-.4-.4-.4-.4-.4-.4-.4-.4-.4-.4-.4-.4V388v-.4-.4-.4-.4-.4-.4-.4-.4-.4-.4V384c0-.6 0-1.2 .1-1.8C139.1 370.7 80 304.2 80 224c0-88.4 71.6-160 160-160c39.6 0 75.9 14.4 103.8 38.2L366.1 80 327 41c-6.9-6.9-8.9-17.2-5.2-26.2zM432 48l0 0h0v0zM240 488h24c0 13.3-10.7 24-24 24s-24-10.7-24-24h24zm96-264a96 96 0 1 0 -192 0 96 96 0 1 0 192 0z"]
+  icon: [512, 512, [9893], "f224", "M337.8 14.8C341.5 5.8 350.3 0 360 0H472c13.3 0 24 10.7 24 24V136c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-39-39-24.7 24.7C407 163.3 416 192.6 416 224c0 80.2-59 146.6-136 158.2V408h24c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V456H208c-13.3 0-24-10.7-24-24s10.7-24 24-24h24V382.2C155 370.6 96 304.2 96 224c0-88.4 71.6-160 160-160c39.6 0 75.9 14.4 103.8 38.2L382.1 80 343 41c-6.9-6.9-8.9-17.2-5.2-26.2zM448 48l0 0h0v0zM352 224a96 96 0 1 0 -192 0 96 96 0 1 0 192 0z"]
 };
 var faHouseUser = {
   prefix: 'fas',
@@ -14860,7 +16041,7 @@ var faHomeUser = faHouseUser;
 var faDumpsterFire = {
   prefix: 'fas',
   iconName: 'dumpster-fire',
-  icon: [640, 512, [], "f794", "M49.7 32c-10.5 0-19.8 6.9-22.9 16.9L.9 133c-.6 2-.9 4.1-.9 6.1C0 150.7 9.3 160 20.9 160h94L140.5 32H49.7zM272 160V32H173.1L147.5 160H272zm32 0h58c15.1-18.1 32.1-35.7 50.5-52.1c1.5-1.4 3.2-2.6 4.8-3.8L402.9 32H304V160zm209.9-23.7c17.4-15.8 43.9-16.2 61.7-1.2c-.1-.7-.3-1.4-.5-2.1L549.2 48.9C546.1 38.9 536.8 32 526.3 32H435.5l12.8 64.2c9.6 1 19 4.9 26.6 11.8c11.7 10.6 23 21.6 33.9 33.1c1.6-1.6 3.3-3.2 5-4.8zM325.2 210.7c3.8-6.2 7.9-12.5 12.3-18.7H32l4 32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H44L64 448c0 17.7 14.3 32 32 32s32-14.3 32-32H337.6c-31-34.7-49.6-80.6-49.6-129.9c0-35.2 16.3-73.6 37.2-107.4zm128.4-78.9c-2.8-2.5-6.3-3.7-9.8-3.8c-3.6 0-7.2 1.2-10 3.7c-33.2 29.7-61.4 63.4-81.4 95.8c-19.7 31.9-32.4 66.2-32.4 92.6C320 407.9 390.3 480 480 480c88.7 0 160-72 160-159.8c0-20.2-9.6-50.9-24.2-79c-14.8-28.5-35.7-58.5-60.4-81.1c-5.6-5.1-14.4-5.2-20 0c-9.6 8.8-18.6 19.6-26.5 29.5c-17.3-20.7-35.8-39.9-55.5-57.7zM530 401c-15 10-31 15-49 15c-45 0-81-29-81-78c0-24 15-45 45-82c4 5 62 79 62 79l36-42c3 4 5 8 7 12c18 33 10 75-20 96z"]
+  icon: [640, 512, [], "f794", "M49.7 32c-10.5 0-19.8 6.9-22.9 16.9L.9 133c-.6 2-.9 4.1-.9 6.1C0 150.7 9.3 160 20.9 160h94L140.5 32H49.7zM272 160V32H173.1L147.5 160H272zm32 0h58c15.1-18.1 32.1-35.7 50.5-52.1c1.5-1.4 3.2-2.6 4.8-3.8L402.9 32H304V160zm209.9-23.7c17.4-15.8 43.9-16.2 61.7-1.2c-.1-.7-.3-1.4-.5-2.1L549.2 48.9C546.1 38.9 536.8 32 526.3 32H435.5l12.8 64.2c9.6 1 19 4.9 26.6 11.8c11.7 10.6 23 21.6 33.9 33.1c1.7-1.6 3.3-3.2 5-4.8zM325.2 210.7c3.8-6.2 7.9-12.5 12.3-18.7H32l4 32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H44L64 448c0 17.7 14.3 32 32 32s32-14.3 32-32H337.6c-31-34.7-49.6-80.6-49.6-129.9c0-35.2 16.3-73.6 37.2-107.4zM480 480c88.4 0 160-71.6 160-160c0-31.8-15.5-84-74.4-142.4c-11.8-11.7-30.6-10.7-42.3 1L512 189.9l-46-46c-6-6.1-14.1-9.3-22-9.2c-5.9 .1-11.8 1.9-16.8 5.8C382.5 175.3 320 243.3 320 320c0 88.4 71.6 160 160 160zm64-111.8c0 35.3-28.7 64-64 64s-64-28.7-64-64c0-36.5 37-73 54.8-88.4c5.4-4.7 13.1-4.7 18.5 0C507 295.1 544 331.6 544 368.2z"]
 };
 var faHouseCrack = {
   prefix: 'fas',
@@ -14882,7 +16063,7 @@ var faSurprise = faFaceSurprise;
 var faBottleWater = {
   prefix: 'fas',
   iconName: 'bottle-water',
-  icon: [256, 512, [], "e4c5", "M88 0h80c13.3 0 24 10.7 24 24V64H64V24C64 10.7 74.7 0 88 0zM0 151.7c0-15.6 9-29.8 23.2-36.5l24.4-11.4c11-5.1 23-7.8 35.1-7.8h90.6c12.1 0 24.1 2.7 35.1 7.8l24.4 11.4c14.2 6.6 23.2 20.8 23.2 36.5c0 14.4-7.5 27-18.9 34.1c11.5 8.8 18.9 22.6 18.9 38.2c0 16.7-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40s-8.5 31.4-21.5 40c12.9 8.6 21.5 23.3 21.5 40c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48c0-16.7 8.5-31.4 21.5-40C8.5 415.4 0 400.7 0 384s8.5-31.4 21.5-40C8.5 335.4 0 320.7 0 304s8.5-31.4 21.5-40C8.5 255.4 0 240.7 0 224c0-15.6 7.4-29.4 18.9-38.2C7.5 178.7 0 166.1 0 151.7zM64 240c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zM80 352c-8.8 0-16 7.2-16 16s7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H80z"]
+  icon: [320, 512, [], "e4c5", "M120 0h80c13.3 0 24 10.7 24 24V64H96V24c0-13.3 10.7-24 24-24zM32 167.5c0-19.5 10-37.6 26.6-47.9l15.8-9.9C88.7 100.7 105.2 96 122.1 96h75.8c16.9 0 33.4 4.7 47.7 13.7l15.8 9.9C278 129.9 288 148 288 167.5c0 17-7.5 32.3-19.4 42.6C280.6 221.7 288 238 288 256c0 19.1-8.4 36.3-21.7 48c13.3 11.7 21.7 28.9 21.7 48s-8.4 36.3-21.7 48c13.3 11.7 21.7 28.9 21.7 48c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64c0-19.1 8.4-36.3 21.7-48C40.4 388.3 32 371.1 32 352s8.4-36.3 21.7-48C40.4 292.3 32 275.1 32 256c0-18 7.4-34.3 19.4-45.9C39.5 199.7 32 184.5 32 167.5zM96 240c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112c-8.8 0-16 7.2-16 16zm16 112c-8.8 0-16 7.2-16 16s7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H112z"]
 };
 var faCirclePause = {
   prefix: 'fas',
@@ -14893,7 +16074,7 @@ var faPauseCircle = faCirclePause;
 var faToiletPaperSlash = {
   prefix: 'fas',
   iconName: 'toilet-paper-slash',
-  icon: [640, 512, [], "e072", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-109.7-86C569.9 374 608 291.9 608 192C608 86 565 0 512 0s-96 86-96 192c0 49.1 9.2 93.9 24.4 127.9l-59-46.2c1.6-24.8 2.6-52 2.6-81.6c0-65.5 13.2-142.4 60.2-192H160c-24.8 0-47.4 18.8-64.4 49.6L38.8 5.1zM66.5 148.4C64.9 162.4 64 177 64 192c0 101.5-11.7 170.8-23 213.9c-5.1 19.4-10.7 39.9-20.5 57.7c-5.9 9.9-6.1 22.1-.4 32.2S36.5 512 48 512H285.9c22.3 0 45.4-12.1 55.4-36.1c7.4-17.7 17.5-47.2 26-90.6L66.5 148.4zM544 192c0 35.3-14.3 64-32 64s-32-28.7-32-64s14.3-64 32-64s32 28.7 32 64z"]
+  icon: [640, 512, [], "e072", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-109.7-86C569.9 374 608 291.9 608 192C608 86 565 0 512 0s-96 86-96 192c0 49.1 9.2 93.9 24.4 127.9l-59-46.2c1.6-24.8 2.6-52 2.6-81.6c0-65.5 13.2-142.4 60.2-192H160c-24.8 0-47.4 18.8-64.4 49.6L38.8 5.1zM367.3 385.4L66.5 148.4C64.9 162.4 64 177 64 192c0 101.5-11.7 170.8-23 213.9c-5.1 19.4-10.7 39.9-20.5 57.7c-5.9 9.9-6.1 22.1-.4 32.2S36.5 512 48 512H285.9c22.3 0 45.4-12.1 55.4-36.1c7.4-17.7 17.5-47.2 26-90.6zM544 192c0 35.3-14.3 64-32 64s-32-28.7-32-64s14.3-64 32-64s32 28.7 32 64z"]
 };
 var faAppleWhole = {
   prefix: 'fas',
@@ -14914,7 +16095,7 @@ var faR = {
 var faTemperatureQuarter = {
   prefix: 'fas',
   iconName: 'temperature-quarter',
-  icon: [320, 512, ["temperature-1", "thermometer-1", "thermometer-quarter"], "f2ca", "M144 64c-26.5 0-48 21.5-48 48V276.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112V276.5c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6V112zM192 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V272c0-8.8 7.2-16 16-16s16 7.2 16 16v50.7c18.6 6.6 32 24.4 32 45.3z"]
+  icon: [320, 512, ["temperature-1", "thermometer-1", "thermometer-quarter"], "f2ca", "M160 64c-26.5 0-48 21.5-48 48V276.5c0 17.3-7.1 31.9-15.3 42.5C86.2 332.6 80 349.5 80 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM48 112C48 50.2 98.1 0 160 0s112 50.1 112 112V276.5c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S16 447.5 16 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6V112zM208 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V272c0-8.8 7.2-16 16-16s16 7.2 16 16v50.7c18.6 6.6 32 24.4 32 45.3z"]
 };
 var faTemperature1 = faTemperatureQuarter;
 var faThermometer1 = faTemperatureQuarter;
@@ -14932,12 +16113,12 @@ var faBitcoinSign = {
 var faShieldDog = {
   prefix: 'fas',
   iconName: 'shield-dog',
-  icon: [512, 512, [], "e573", "M253.4 2.9C249.2 1 244.7 0 240 0s-9.2 1-13.4 2.9L38.3 82.8C16.3 92.1-.1 113.8 0 140c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C438.7 420.7 479.5 239.2 480 140c.1-26.2-16.3-47.9-38.3-57.2L253.4 2.9zM144.9 286.2c4.8 1.2 9.9 1.8 15.1 1.8c35.3 0 64-28.7 64-64V160h44.2c12.1 0 23.2 6.8 28.6 17.7L304 192h64c8.8 0 16 7.2 16 16v32c0 44.2-35.8 80-80 80H256v50.7c0 7.3-5.9 13.3-13.3 13.3c-1.8 0-3.6-.4-5.2-1.1l-98.7-42.3c-6.6-2.8-10.8-9.3-10.8-16.4c0-2.8 .6-5.5 1.9-8l15-30zM144 160h40 8v32 32c0 17.7-14.3 32-32 32s-32-14.3-32-32V176c0-8.8 7.2-16 16-16zm128 48a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"]
+  icon: [512, 512, [], "e573", "M269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L269.4 2.9zM160.9 286.2c4.8 1.2 9.9 1.8 15.1 1.8c35.3 0 64-28.7 64-64V160h44.2c12.1 0 23.2 6.8 28.6 17.7L320 192h64c8.8 0 16 7.2 16 16v32c0 44.2-35.8 80-80 80H272v50.7c0 7.3-5.9 13.3-13.3 13.3c-1.8 0-3.6-.4-5.2-1.1l-98.7-42.3c-6.6-2.8-10.8-9.3-10.8-16.4c0-2.8 .6-5.5 1.9-8l15-30zM160 160h40 8v32 32c0 17.7-14.3 32-32 32s-32-14.3-32-32V176c0-8.8 7.2-16 16-16zm128 48a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"]
 };
 var faSolarPanel = {
   prefix: 'fas',
   iconName: 'solar-panel',
-  icon: [640, 512, [], "f5ba", "M115.2 0C84.7 0 58.5 21.5 52.5 51.4L1.3 307.4C-6.6 347 23.6 384 64 384H281v64H217c-17.7 0-32 14.3-32 32s14.3 32 32 32H409c17.7 0 32-14.3 32-32s-14.3-32-32-32H345V384H562c40.4 0 70.7-36.9 62.8-76.6l-51.2-256C567.5 21.5 541.3 0 510.8 0H115.2zM253.9 64H372.1l10.4 104h-139L253.9 64zM195.3 168H94.4L115.2 64h90.4L195.3 168zM84.8 216H190.5L180.1 320H64L84.8 216zm153.9 0H387.3l10.4 104-169.4 0 10.4-104zm196.8 0H541.2L562 320h-116L435.5 216zm96-48H430.7L420.3 64h90.4l31.4-6.3L510.8 64l20.8 104z"]
+  icon: [640, 512, [], "f5ba", "M122.2 0C91.7 0 65.5 21.5 59.5 51.4L8.3 307.4C.4 347 30.6 384 71 384H288v64H224c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V384H569c40.4 0 70.7-36.9 62.8-76.6l-51.2-256C574.5 21.5 548.3 0 517.8 0H122.2zM260.9 64H379.1l10.4 104h-139L260.9 64zM202.3 168H101.4L122.2 64h90.4L202.3 168zM91.8 216H197.5L187.1 320H71L91.8 216zm153.9 0H394.3l10.4 104-169.4 0 10.4-104zm196.8 0H548.2L569 320h-116L442.5 216zm96-48H437.7L427.3 64h90.4l31.4-6.3L517.8 64l20.8 104z"]
 };
 var faLockOpen = {
   prefix: 'fas',
@@ -14973,7 +16154,7 @@ var faPollH = faSquarePollHorizontal;
 var faCircle = {
   prefix: 'fas',
   iconName: 'circle',
-  icon: [512, 512, [128308, 128309, 128992, 128993, 128994, 128995, 128996, 9679, 9898, 9899, 11044, 61708, 61915], "f111", "M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"]
+  icon: [512, 512, [128308, 128309, 128992, 128993, 128994, 128995, 128996, 9679, 9898, 9899, 11044, 61708, 61915], "f111", "M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"]
 };
 var faBackwardFast = {
   prefix: 'fas',
@@ -14994,7 +16175,7 @@ var faUserAstronaut = {
 var faPlaneSlash = {
   prefix: 'fas',
   iconName: 'plane-slash',
-  icon: [640, 512, [], "e069", "M514.3 192c34.2 0 93.7 29 93.7 64c0 36-59.5 64-93.7 64H440.6L630.8 469.1c10.4 8.2 12.3 23.3 4.1 33.7s-23.3 12.3-33.7 4.1L9.2 42.9C-1.2 34.7-3.1 19.6 5.1 9.2S28.4-3.1 38.8 5.1L238.1 161.3 197.8 20.4C194.9 10.2 202.6 0 213.2 0h56.2c11.5 0 22.1 6.2 27.8 16.1L397.7 192l116.6 0zM41.5 128.7l321 252.9L297.2 495.9c-5.7 10-16.3 16.1-27.8 16.1l-56.2 0c-10.6 0-18.3-10.2-15.4-20.4l49-171.6H144l-43.2 57.6c-3 4-7.8 6.4-12.8 6.4H46c-7.8 0-14-6.3-14-14c0-1.3 .2-2.6 .5-3.9L64 256 32.5 145.9c-.4-1.3-.5-2.6-.5-3.9c0-6.2 4-11.4 9.5-13.3z"]
+  icon: [640, 512, [], "e069", "M440.6 320h73.8c34.2 0 93.7-28 93.7-64c0-35-59.5-64-93.7-64l-116.6 0L297.2 16.1C291.5 6.2 280.9 0 269.4 0H213.2c-10.6 0-18.3 10.2-15.4 20.4l40.3 140.9L38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L440.6 320zm-78.1 61.6L41.5 128.7C36 130.6 32 135.9 32 142c0 1.3 .2 2.6 .5 3.9L64 256 32.5 366.1c-.4 1.3-.5 2.6-.5 3.9c0 7.8 6.3 14 14 14H88c5 0 9.8-2.4 12.8-6.4L144 320H246.9l-49 171.6c-2.9 10.2 4.8 20.4 15.4 20.4l56.2 0c11.5 0 22.1-6.2 27.8-16.1l65.3-114.3z"]
 };
 var faTrademark = {
   prefix: 'fas',
@@ -15004,7 +16185,7 @@ var faTrademark = {
 var faBasketball = {
   prefix: 'fas',
   iconName: 'basketball',
-  icon: [512, 512, [127936, "basketball-ball"], "f434", "M86.6 64C119 35.5 158.6 15 202.3 5.6C206 19.1 208 33.3 208 48c0 38.4-13.5 73.7-36.1 101.3L86.6 64zM64 86.6l85.2 85.2C121.7 194.5 86.4 208 48 208c-14.7 0-28.9-2-42.4-5.7C15 158.6 35.5 119 64 86.6zM256 0c64.9 0 124.2 24.2 169.4 64L256 233.4 194.6 172C222.9 138.5 240 95.3 240 48c0-16.2-2-32-5.8-47.1C241.4 .3 248.7 0 256 0zM48 240c47.3 0 90.5-17.1 124-45.4L233.4 256 64 425.4C24.2 380.2 0 320.9 0 256c0-7.3 .3-14.6 .9-21.8C16 238 31.8 240 48 240zm463.1 37.8C496 274 480.2 272 464 272c-47.3 0-90.5 17.1-124 45.4L278.6 256 448 86.6c39.8 45.1 64 104.4 64 169.4c0 7.3-.3 14.6-.9 21.8zm-4.7 31.9C497 353.4 476.5 393 448 425.4l-85.2-85.2C390.3 317.5 425.6 304 464 304c14.7 0 28.9 2 42.4 5.7zM340.1 362.7L425.4 448C393 476.5 353.4 497 309.7 506.4C306 492.9 304 478.7 304 464c0-38.4 13.5-73.7 36.1-101.3zM317.4 340C289.1 373.5 272 416.7 272 464c0 16.2 2 32 5.8 47.1c-7.2 .6-14.5 .9-21.8 .9c-64.9 0-124.2-24.2-169.4-64L256 278.6 317.4 340z"]
+  icon: [512, 512, [127936, "basketball-ball"], "f434", "M86.6 64l85.2 85.2C194.5 121.7 208 86.4 208 48c0-14.7-2-28.9-5.7-42.4C158.6 15 119 35.5 86.6 64zM64 86.6C35.5 119 15 158.6 5.6 202.3C19.1 206 33.3 208 48 208c38.4 0 73.7-13.5 101.3-36.1L64 86.6zM256 0c-7.3 0-14.6 .3-21.8 .9C238 16 240 31.8 240 48c0 47.3-17.1 90.5-45.4 124L256 233.4 425.4 64C380.2 24.2 320.9 0 256 0zM48 240c-16.2 0-32-2-47.1-5.8C.3 241.4 0 248.7 0 256c0 64.9 24.2 124.2 64 169.4L233.4 256 172 194.6C138.5 222.9 95.3 240 48 240zm463.1 37.8c.6-7.2 .9-14.5 .9-21.8c0-64.9-24.2-124.2-64-169.4L278.6 256 340 317.4c33.4-28.3 76.7-45.4 124-45.4c16.2 0 32 2 47.1 5.8zm-4.7 31.9C492.9 306 478.7 304 464 304c-38.4 0-73.7 13.5-101.3 36.1L448 425.4c28.5-32.3 49.1-71.9 58.4-115.7zM340.1 362.7C317.5 390.3 304 425.6 304 464c0 14.7 2 28.9 5.7 42.4C353.4 497 393 476.5 425.4 448l-85.2-85.2zM317.4 340L256 278.6 86.6 448c45.1 39.8 104.4 64 169.4 64c7.3 0 14.6-.3 21.8-.9C274 496 272 480.2 272 464c0-47.3 17.1-90.5 45.4-124z"]
 };
 var faBasketballBall = faBasketball;
 var faSatelliteDish = {
@@ -15021,13 +16202,13 @@ var faArrowAltCircleUp = faCircleUp;
 var faMobileScreenButton = {
   prefix: 'fas',
   iconName: 'mobile-screen-button',
-  icon: [384, 512, ["mobile-alt"], "f3cd", "M0 64C0 28.7 28.7 0 64 0H288c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zM208 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM288 64H64V384H288V64z"]
+  icon: [384, 512, ["mobile-alt"], "f3cd", "M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64H80V384H304V64z"]
 };
 var faMobileAlt = faMobileScreenButton;
 var faVolumeHigh = {
   prefix: 'fas',
   iconName: 'volume-high',
-  icon: [640, 512, [128266, "volume-up"], "f028", "M533.6 32.5C598.5 85.3 640 165.8 640 256s-41.5 170.8-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zm-60.5 74.5C434.1 199.1 448 225.9 448 256s-13.9 56.9-35.4 74.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C393.1 284.4 400 271 400 256s-6.9-28.4-17.7-37.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z"]
+  icon: [640, 512, [128266, "volume-up"], "f028", "M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zm-60.5 74.5C434.1 199.1 448 225.9 448 256s-13.9 56.9-35.4 74.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C393.1 284.4 400 271 400 256s-6.9-28.4-17.7-37.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z"]
 };
 var faVolumeUp = faVolumeHigh;
 var faUsersRays = {
@@ -15053,7 +16234,7 @@ var faFileAudio = {
 var faBurger = {
   prefix: 'fas',
   iconName: 'burger',
-  icon: [512, 512, ["hamburger"], "f805", "M45.1 224C29 224 16 211 16 194.9c0-1.9 .2-3.7 .6-5.6C21.9 168.3 62.8 32 240 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H45.1zM128 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM256 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM0 304c0-26.5 21.5-48 48-48H432c26.5 0 48 21.5 48 48s-21.5 48-48 48H48c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H448c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V400z"]
+  icon: [512, 512, ["hamburger"], "f805", "M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H61.1zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48H448c26.5 0 48 21.5 48 48s-21.5 48-48 48H64c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H464c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V400z"]
 };
 var faHamburger = faBurger;
 var faWrench = {
@@ -15069,7 +16250,7 @@ var faBugs = {
 var faRupeeSign = {
   prefix: 'fas',
   iconName: 'rupee-sign',
-  icon: [448, 512, [8360, "rupee"], "f156", "M0 64C0 46.3 14.3 32 32 32h80c79.5 0 144 64.5 144 144c0 58.8-35.2 109.3-85.7 131.7l51.4 128.4c6.6 16.4-1.4 35-17.8 41.6s-35-1.4-41.6-17.8L106.3 320H64V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V288 64zM64 256h48c44.2 0 80-35.8 80-80s-35.8-80-80-80H64V256zm256.5 16.4c-.9 6 0 8.7 .4 9.8c.4 1.1 1.4 2.6 4.2 4.9c7.2 5.7 18.7 10 37.9 16.8l1.3 .5c16 5.6 38.7 13.6 55.7 28.1c9.5 8.1 17.9 18.6 23.1 32.3c5.1 13.7 6.1 28.5 3.8 44c-4.2 28.1-20.5 49.3-43.8 60.9c-22.1 11-48.1 12.5-73.2 8l-.2 0 0 0c-9.3-1.8-20.5-5.7-29.3-9c-6-2.3-12.6-4.9-17.7-6.9l0 0c-2.5-1-4.6-1.8-6.3-2.5c-16.5-6.4-24.6-25-18.2-41.4s25-24.6 41.4-18.2c2.6 1 5.2 2 7.9 3.1l0 0c4.8 1.9 9.8 3.9 15.4 6c8.8 3.3 15.3 5.4 18.7 6c15.7 2.8 26.7 .8 32.9-2.3c5-2.5 8-6 9.1-13c1-6.9 .2-10.5-.5-12.3c-.6-1.7-1.8-3.6-4.5-5.9c-6.9-5.8-18.2-10.4-36.9-17l-3-1.1c-15.5-5.4-37-13-53.3-25.9c-9.5-7.5-18.3-17.6-23.7-31c-5.4-13.4-6.6-28-4.4-43.2c8.5-57.1 67-78 116.9-68.9c6.9 1.3 27.3 5.8 35.4 8.4c16.9 5.2 26.3 23.2 21.1 40.1s-23.2 26.3-40.1 21.1c-4.7-1.4-22.3-5.5-27.9-6.5c-14.6-2.7-25.8-.4-32.6 3.2c-6.3 3.3-8.9 7.6-9.5 12z"]
+  icon: [448, 512, [8360, "rupee"], "f156", "M0 64C0 46.3 14.3 32 32 32h80c79.5 0 144 64.5 144 144c0 58.8-35.2 109.3-85.7 131.7l51.4 128.4c6.6 16.4-1.4 35-17.8 41.6s-35-1.4-41.6-17.8L106.3 320H64V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V288 64zM64 256h48c44.2 0 80-35.8 80-80s-35.8-80-80-80H64V256zm256.5 16.4c-.9 6 0 8.7 .4 9.8c.4 1.1 1.4 2.6 4.2 4.9c7.2 5.7 18.7 10 37.9 16.8l1.3 .5c16 5.6 38.7 13.6 55.7 28.1c9.5 8.1 17.9 18.6 23.1 32.3c5.1 13.7 6.1 28.5 3.8 44c-4.2 28.1-20.5 49.3-43.8 60.9c-22.1 11-48.1 12.5-73.2 8l-.2 0 0 0c-9.3-1.8-20.5-5.7-29.3-9c-6-2.3-12.6-4.9-17.7-6.9l0 0c-2.5-1-4.6-1.8-6.3-2.5c-16.5-6.4-24.6-25-18.2-41.4s24.9-24.6 41.4-18.2c2.6 1 5.2 2 7.9 3.1l0 0c4.8 1.9 9.8 3.9 15.4 6c8.8 3.3 15.3 5.4 18.7 6c15.7 2.8 26.7 .8 32.9-2.3c5-2.5 8-6 9.1-13c1-6.9 .2-10.5-.5-12.3c-.6-1.7-1.8-3.6-4.5-5.9c-6.9-5.8-18.2-10.4-36.9-17l-3-1.1c-15.5-5.4-37-13-53.3-25.9c-9.5-7.5-18.3-17.6-23.7-31c-5.5-13.4-6.6-28-4.4-43.2c8.4-57.1 67-78 116.9-68.9c6.9 1.3 27.3 5.8 35.4 8.4c16.9 5.2 26.3 23.2 21.1 40.1s-23.2 26.3-40.1 21.1c-4.7-1.4-22.3-5.5-27.9-6.5c-14.6-2.7-25.8-.4-32.6 3.2c-6.3 3.3-8.9 7.6-9.5 12z"]
 };
 var faRupee = faRupeeSign;
 var faFileImage = {
@@ -15091,7 +16272,7 @@ var faPlaneDeparture = {
 var faHandshakeSlash = {
   prefix: 'fas',
   iconName: 'handshake-slash',
-  icon: [640, 512, [], "e060", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-135-105.8c-1.1-11.4-6.3-22.3-15.3-30.7l-134.2-123-23.4 18.2-26-20.3 77.2-60.1c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8V128h-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2l-89.7 72.6-25.8-20.3 81.8-66.2c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-35.5 23.7L38.8 5.1zM96 171.6L40.6 128H0V352c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V171.6zM413.6 421.9L128 196.9V352h28.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c.8-.8 1.5-1.7 2.2-2.6zM48 320a16 16 0 1 1 0 32 16 16 0 1 1 0-32zM544 128V352c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V128H544zm32 208a16 16 0 1 1 32 0 16 16 0 1 1 -32 0z"]
+  icon: [640, 512, [], "e060", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-135-105.8c-1.1-11.3-6.3-22.3-15.3-30.7l-134.2-123-23.4 18.2-26-20.3 77.2-60.1c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8V128h-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2l-89.7 72.6-25.8-20.3 81.8-66.2c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-35.5 23.7L38.8 5.1zM413.6 421.9L128 196.8V352h28.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c.8-.8 1.5-1.7 2.2-2.6zM96 171.6L40.6 128H16c-8.8 0-16 7.2-16 16V352c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V171.6zM48 320a16 16 0 1 1 0 32 16 16 0 1 1 0-32zM544 128V352c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V144c0-8.8-7.2-16-16-16H544zm32 208a16 16 0 1 1 32 0 16 16 0 1 1 -32 0z"]
 };
 var faBookBookmark = {
   prefix: 'fas',
@@ -15101,7 +16282,7 @@ var faBookBookmark = {
 var faCodeBranch = {
   prefix: 'fas',
   iconName: 'code-branch',
-  icon: [448, 512, [], "f126", "M80 104c13.3 0 24-10.7 24-24s-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24zm80-24c0 32.8-19.7 61-48 73.3v87.8c18.8-10.9 40.7-17.1 64-17.1h96c35.3 0 64-28.7 64-64v-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V160c0 70.7-57.3 128-128 128H176c-35.3 0-64 28.7-64 64v6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V352 153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24zM80 456c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24z"]
+  icon: [448, 512, [], "f126", "M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3v87.8c18.8-10.9 40.7-17.1 64-17.1h96c35.3 0 64-28.7 64-64v-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V160c0 70.7-57.3 128-128 128H176c-35.3 0-64 28.7-64 64v6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V352 153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"]
 };
 var faHatCowboy = {
   prefix: 'fas',
@@ -15127,7 +16308,7 @@ var faTruckFront = {
 var faCat = {
   prefix: 'fas',
   iconName: 'cat',
-  icon: [512, 512, [128008], "f6be", "M288 192h17.1c22.1 38.3 63.5 64 110.9 64c11 0 21.8-1.4 32-4v4 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V339.2L248 448h56c17.7 0 32 14.3 32 32s-14.3 32-32 32H160c-53 0-96-43-96-96V192.5c0-16.1-12-29.8-28-31.8l-7.9-1C10.5 157.6-1.9 141.6 .2 124s18.2-30 35.7-27.8l7.9 1c48 6 84.1 46.8 84.1 95.3v85.3c34.4-51.7 93.2-85.8 160-85.8zm160 26.5v0c-10 3.5-20.8 5.5-32 5.5c-28.4 0-54-12.4-71.6-32h0c-3.7-4.1-7-8.5-9.9-13.2C325.3 164 320 146.6 320 128v0V32 12 10.7C320 4.8 324.7 .1 330.6 0h.2c3.3 0 6.4 1.6 8.4 4.2l0 .1L352 21.3l27.2 36.3L384 64h64l4.8-6.4L480 21.3 492.8 4.3l0-.1c2-2.6 5.1-4.2 8.4-4.2h.2C507.3 .1 512 4.8 512 10.7V12 32v96c0 17.3-4.6 33.6-12.6 47.6c-11.3 19.8-29.6 35.2-51.4 42.9zM400 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"]
+  icon: [576, 512, [128008], "f6be", "M320 192h17.1c22.1 38.3 63.5 64 110.9 64c11 0 21.8-1.4 32-4v4 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V339.2L280 448h56c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-53 0-96-43-96-96V192.5c0-16.1-12-29.8-28-31.8l-7.9-1c-17.5-2.2-30-18.2-27.8-35.7s18.2-30 35.7-27.8l7.9 1c48 6 84.1 46.8 84.1 95.3v85.3c34.4-51.7 93.2-85.8 160-85.8zm160 26.5v0c-10 3.5-20.8 5.5-32 5.5c-28.4 0-54-12.4-71.6-32h0c-3.7-4.1-7-8.5-9.9-13.2C357.3 164 352 146.6 352 128v0V32 12 10.7C352 4.8 356.7 .1 362.6 0h.2c3.3 0 6.4 1.6 8.4 4.2l0 .1L384 21.3l27.2 36.3L416 64h64l4.8-6.4L512 21.3 524.8 4.3l0-.1c2-2.6 5.1-4.2 8.4-4.2h.2C539.3 .1 544 4.8 544 10.7V12 32v96c0 17.3-4.6 33.6-12.6 47.6c-11.3 19.8-29.6 35.2-51.4 42.9zM432 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"]
 };
 var faAnchorCircleExclamation = {
   prefix: 'fas',
@@ -15177,7 +16358,7 @@ var faTags = {
 var faWineGlass = {
   prefix: 'fas',
   iconName: 'wine-glass',
-  icon: [320, 512, [127863], "f4e3", "M47 0C30.4 0 16.5 12.8 15.1 29.3L1.1 197.8c-6 72 42.5 135.2 109.9 150.6V448H63c-17.7 0-32 14.3-32 32s14.3 32 32 32h80 80c17.7 0 32-14.3 32-32s-14.3-32-32-32H175V348.4c67.4-15.4 115.9-78.6 109.9-150.6l-14-168.4C269.5 12.8 255.6 0 239 0H47zM71.1 128l5.3-64H209.6l5.3 64H71.1z"]
+  icon: [320, 512, [127863], "f4e3", "M32.1 29.3C33.5 12.8 47.4 0 64 0H256c16.6 0 30.5 12.8 31.9 29.3l14 168.4c6 72-42.5 135.2-109.9 150.6V448h48c17.7 0 32 14.3 32 32s-14.3 32-32 32H160 80c-17.7 0-32-14.3-32-32s14.3-32 32-32h48V348.4C60.6 333 12.1 269.8 18.1 197.8l14-168.4zm56 98.7H231.9l-5.3-64H93.4l-5.3 64z"]
 };
 var faForwardFast = {
   prefix: 'fas',
@@ -15228,12 +16409,12 @@ var faSmokingBan = faBanSmoking;
 var faTerminal = {
   prefix: 'fas',
   iconName: 'terminal',
-  icon: [640, 512, [], "f120", "M41.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 41.4 86.6zM288 416H576c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32s14.3-32 32-32z"]
+  icon: [576, 512, [], "f120", "M9.4 86.6C-3.1 74.1-3.1 53.9 9.4 41.4s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L178.7 256 9.4 86.6zM256 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32z"]
 };
 var faMobileButton = {
   prefix: 'fas',
   iconName: 'mobile-button',
-  icon: [384, 512, [], "f10b", "M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM176 400a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
+  icon: [384, 512, [], "f10b", "M80 0C44.7 0 16 28.7 16 64V448c0 35.3 28.7 64 64 64H304c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H80zM192 400a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
 };
 var faHouseMedicalFlag = {
   prefix: 'fas',
@@ -15276,7 +16457,7 @@ var faAudioDescription = {
 var faPersonMilitaryToPerson = {
   prefix: 'fas',
   iconName: 'person-military-to-person',
-  icon: [576, 512, [], "e54c", "M67.1 11.7c-8 .9-14.1 7.7-14.1 15.8c0 8.7 7 15.8 15.8 15.9H173.5c8.3-.1 14.9-6.8 14.9-15.1V15.1c0-9-7.8-16-16.7-15L67.1 11.7zM178.6 73.5H62.9c-1.5 5.3-2.4 11-2.4 16.8c0 33.3 27 60.2 60.2 60.2s60.2-27 60.2-60.2c0-5.8-.8-11.5-2.4-16.8zM30.4 240.9v30.1c0 16.6 13.5 30.1 30.1 30.1H180.9c1.7 0 3.3-.1 4.9-.4L50.1 196.4c-12.1 11-19.7 26.9-19.7 44.6zm179.1 40c1.1-3.1 1.6-6.4 1.6-9.9V240.9c0-33.3-27-60.2-60.2-60.2H90.6c-3.5 0-7 .3-10.3 .9l129.1 99.3zM361.6 150.6a60.2 60.2 0 1 0 0-120.5 60.2 60.2 0 1 0 0 120.5zm-30.1 30.1c-33.3 0-60.2 27-60.2 60.2v30.1c0 16.6 13.5 30.1 30.1 30.1H421.9c16.6 0 30.1-13.5 30.1-30.1V240.9c0-33.3-27-60.2-60.2-60.2H331.5zM203.3 423.6c4.9-4.3 7.7-10.5 7.7-17s-2.8-12.7-7.7-17l-60.2-52.7c-6.7-5.8-16.1-7.2-24.2-3.6s-13.3 11.7-13.3 20.6V384l-82.8 0C10.3 384 .2 394.1 .2 406.6s10.1 22.6 22.6 22.6l82.8 0v30.1c0 8.9 5.2 16.9 13.3 20.6s17.5 2.3 24.2-3.6l60.2-52.7zm67.9-17c0 6.5 2.8 12.7 7.7 17l60.2 53.1c6.7 5.9 16.1 7.3 24.2 3.6s13.3-11.7 13.3-20.6l0-30.5 82.8 0c12.5 0 22.6-10.1 22.6-22.6s-10.1-22.6-22.6-22.6l-82.8 0 0-30.1c0-8.9-5.2-16.9-13.3-20.6s-17.5-2.3-24.2 3.6L279 389.6c-4.9 4.3-7.7 10.5-7.7 17z"]
+  icon: [512, 512, [], "e54c", "M71 12.5c-8.6 1-15 8.2-15 16.8c0 9.3 7.5 16.8 16.7 16.9H184.1c8.8-.1 15.9-7.2 15.9-16V16c0-9.5-8.3-17-17.8-15.9L71 12.5zM189.5 78.1H66.5C64.9 83.8 64 89.8 64 96c0 35.3 28.7 64 64 64s64-28.7 64-64c0-6.2-.9-12.2-2.5-17.9zM32 256v32c0 17.7 14.3 32 32 32H192c1.8 0 3.5-.1 5.2-.4L53 208.6C40.1 220.3 32 237.2 32 256zm190.2 42.5c1.1-3.3 1.8-6.8 1.8-10.5V256c0-35.3-28.7-64-64-64H96c-3.7 0-7.4 .3-10.9 .9L222.2 298.5zM384 160a64 64 0 1 0 0-128 64 64 0 1 0 0 128zm-32 32c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H352zM215.8 450.1c5.2-4.6 8.2-11.1 8.2-18.1s-3-13.5-8.2-18.1l-64-56c-7.1-6.2-17.1-7.7-25.7-3.8S112 366.6 112 376v32l-88 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l88 0v32c0 9.4 5.5 18 14.1 21.9s18.6 2.4 25.7-3.8l64-56zM288 431.9c0 6.9 2.9 13.5 8.1 18.1l64 56.4c7.1 6.2 17.1 7.8 25.7 3.9s14.1-12.4 14.1-21.9l0-32.4 88 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-88 0 0-32c0-9.4-5.5-18-14.1-21.9s-18.6-2.4-25.7 3.8l-64 56c-5.2 4.5-8.2 11.1-8.2 18z"]
 };
 var faFileShield = {
   prefix: 'fas',
@@ -15306,19 +16487,19 @@ var faFileCode = {
 var faSignal = {
   prefix: 'fas',
   iconName: 'signal',
-  icon: [576, 512, [128246, "signal-5", "signal-perfect"], "f012", "M544 0c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V32c0-17.7 14.3-32 32-32zM416 96c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V128c0-17.7 14.3-32 32-32zM320 224V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V224c0-17.7 14.3-32 32-32s32 14.3 32 32zM160 288c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320c0-17.7 14.3-32 32-32zM64 416v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V416c0-17.7 14.3-32 32-32s32 14.3 32 32z"]
+  icon: [640, 512, [128246, "signal-5", "signal-perfect"], "f012", "M576 0c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V32c0-17.7 14.3-32 32-32zM448 96c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V128c0-17.7 14.3-32 32-32zM352 224V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V224c0-17.7 14.3-32 32-32s32 14.3 32 32zM192 288c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320c0-17.7 14.3-32 32-32zM96 416v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V416c0-17.7 14.3-32 32-32s32 14.3 32 32z"]
 };
 var faSignal5 = faSignal;
 var faSignalPerfect = faSignal;
 var faBus = {
   prefix: 'fas',
   iconName: 'bus',
-  icon: [512, 512, [128653], "f207", "M256 0C390.4 0 480 35.2 480 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H384c-17.7 0-32-14.3-32-32V448H160v32c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C32 35.2 121.6 0 256 0zM96 160v96c0 17.7 14.3 32 32 32H240V128H128c-17.7 0-32 14.3-32 32zM272 288H384c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H272V288zM112 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM352 80c0-8.8-7.2-16-16-16H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H336c8.8 0 16-7.2 16-16z"]
+  icon: [576, 512, [128653], "f207", "M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"]
 };
 var faHeartCircleXmark = {
   prefix: 'fas',
   iconName: 'heart-circle-xmark',
-  icon: [576, 512, [], "e501", "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5zM432 512c79.5 0 144-64.5 144-144s-64.5-144-144-144s-144 64.5-144 144s64.5 144 144 144zm59.3-180.7L454.6 368l36.7 36.7c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0L432 390.6l-36.7 36.7c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6L409.4 368l-36.7-36.7c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L432 345.4l36.7-36.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"]
+  icon: [576, 512, [], "e501", "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5zM432 512a144 144 0 1 0 0-288 144 144 0 1 0 0 288zm59.3-180.7L454.6 368l36.7 36.7c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0L432 390.6l-36.7 36.7c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6L409.4 368l-36.7-36.7c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L432 345.4l36.7-36.7c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"]
 };
 var faHouseChimney = {
   prefix: 'fas',
@@ -15362,7 +16543,7 @@ var faVihara = {
 var faScaleUnbalanced = {
   prefix: 'fas',
   iconName: 'scale-unbalanced',
-  icon: [640, 512, ["balance-scale-left"], "f515", "M521.1 62.4c16.8-5.6 25.8-23.7 20.2-40.5S517.6-3.9 500.9 1.6l-113 37.7C374 15.8 348.3 0 319 0c-44.2 0-80 35.8-80 80c0 3 .2 5.9 .5 8.8L116.9 129.6c-16.8 5.6-25.8 23.7-20.2 40.5s23.7 25.8 40.5 20.2l135.5-45.2c4.5 3.2 9.3 5.9 14.4 8.2V480c0 17.7 14.3 32 32 32H511c17.7 0 32-14.3 32-32s-14.3-32-32-32H351V153.3c21-9.2 37.2-27 44.2-49l125.9-42zM438.6 288L511 163.8 583.4 288H438.6zM511 384c62.9 0 115.2-34 126-78.9c2.6-11-1-22.3-6.7-32.1L535.1 109.8c-5-8.6-14.2-13.8-24.1-13.8s-19.1 5.3-24.1 13.8L391.7 273.1c-5.7 9.8-9.3 21.1-6.7 32.1C395.8 350 448.1 384 511 384zM128.2 291.8L200.6 416H55.7l72.4-124.2zM2.2 433.1C13 478 65.3 512 128.2 512s115.2-34 126-78.9c2.6-11-1-22.3-6.7-32.1L152.2 237.8c-5-8.6-14.2-13.8-24.1-13.8s-19.1 5.3-24.1 13.8L8.9 401.1c-5.7 9.8-9.3 21.1-6.7 32.1z"]
+  icon: [640, 512, ["balance-scale-left"], "f515", "M522.1 62.4c16.8-5.6 25.8-23.7 20.2-40.5S518.6-3.9 501.9 1.6l-113 37.7C375 15.8 349.3 0 320 0c-44.2 0-80 35.8-80 80c0 3 .2 5.9 .5 8.8L117.9 129.6c-16.8 5.6-25.8 23.7-20.2 40.5s23.7 25.8 40.5 20.2l135.5-45.2c4.5 3.2 9.3 5.9 14.4 8.2V480c0 17.7 14.3 32 32 32H512c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V153.3c21-9.2 37.2-27 44.2-49l125.9-42zM439.6 288L512 163.8 584.4 288H439.6zM512 384c62.9 0 115.2-34 126-78.9c2.6-11-1-22.3-6.7-32.1L536.1 109.8c-5-8.6-14.2-13.8-24.1-13.8s-19.1 5.3-24.1 13.8L392.7 273.1c-5.7 9.8-9.3 21.1-6.7 32.1C396.8 350 449.1 384 512 384zM129.2 291.8L201.6 416H56.7l72.4-124.2zM3.2 433.1C14 478 66.3 512 129.2 512s115.2-34 126-78.9c2.6-11-1-22.3-6.7-32.1L153.2 237.8c-5-8.6-14.2-13.8-24.1-13.8s-19.1 5.3-24.1 13.8L9.9 401.1c-5.7 9.8-9.3 21.1-6.7 32.1z"]
 };
 var faBalanceScaleLeft = faScaleUnbalanced;
 var faSortUp = {
@@ -15396,7 +16577,7 @@ var faGrinSquint = faFaceGrinSquint;
 var faHandHoldingDollar = {
   prefix: 'fas',
   iconName: 'hand-holding-dollar',
-  icon: [576, 512, ["hand-holding-usd"], "f4c0", "M312 24V34.5c6.4 1.2 12.6 2.7 18.2 4.2c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17c-10.9-2.9-21.1-4.9-30.2-5c-7.3-.1-14.7 1.7-19.4 4.4c-2.1 1.3-3.1 2.4-3.5 3c-.3 .5-.7 1.2-.7 2.8c0 .3 0 .5 0 .6c.2 .2 .9 1.2 3.3 2.6c5.8 3.5 14.4 6.2 27.4 10.1l.9 .3 0 0c11.1 3.3 25.9 7.8 37.9 15.3c13.7 8.6 26.1 22.9 26.4 44.9c.3 22.5-11.4 38.9-26.7 48.5c-6.7 4.1-13.9 7-21.3 8.8V232c0 13.3-10.7 24-24 24s-24-10.7-24-24V220.6c-9.5-2.3-18.2-5.3-25.6-7.8c-2.1-.7-4.1-1.4-6-2c-12.6-4.2-19.4-17.8-15.2-30.4s17.8-19.4 30.4-15.2c2.6 .9 5 1.7 7.3 2.5c13.6 4.6 23.4 7.9 33.9 8.3c8 .3 15.1-1.6 19.2-4.1c1.9-1.2 2.8-2.2 3.2-2.9c.4-.6 .9-1.8 .8-4.1l0-.2c0-1 0-2.1-4-4.6c-5.7-3.6-14.3-6.4-27.1-10.3l-1.9-.6c-10.8-3.2-25-7.5-36.4-14.4c-13.5-8.1-26.5-22-26.6-44.1c-.1-22.9 12.9-38.6 27.7-47.4c6.4-3.8 13.3-6.4 20.2-8.2V24c0-13.3 10.7-24 24-24s24 10.7 24 24zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z"]
+  icon: [576, 512, ["hand-holding-usd"], "f4c0", "M312 24V34.5c6.4 1.2 12.6 2.7 18.2 4.2c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17c-10.9-2.9-21.1-4.9-30.2-5c-7.3-.1-14.7 1.7-19.4 4.4c-2.1 1.3-3.1 2.4-3.5 3c-.3 .5-.7 1.2-.7 2.8c0 .3 0 .5 0 .6c.2 .2 .9 1.2 3.3 2.6c5.8 3.5 14.4 6.2 27.4 10.1l.9 .3c11.1 3.3 25.9 7.8 37.9 15.3c13.7 8.6 26.1 22.9 26.4 44.9c.3 22.5-11.4 38.9-26.7 48.5c-6.7 4.1-13.9 7-21.3 8.8V232c0 13.3-10.7 24-24 24s-24-10.7-24-24V220.6c-9.5-2.3-18.2-5.3-25.6-7.8c-2.1-.7-4.1-1.4-6-2c-12.6-4.2-19.4-17.8-15.2-30.4s17.8-19.4 30.4-15.2c2.6 .9 5 1.7 7.3 2.5c13.6 4.6 23.4 7.9 33.9 8.3c8 .3 15.1-1.6 19.2-4.1c1.9-1.2 2.8-2.2 3.2-2.9c.4-.6 .9-1.8 .8-4.1l0-.2c0-1 0-2.1-4-4.6c-5.7-3.6-14.3-6.4-27.1-10.3l-1.9-.6c-10.8-3.2-25-7.5-36.4-14.4c-13.5-8.1-26.5-22-26.6-44.1c-.1-22.9 12.9-38.6 27.7-47.4c6.4-3.8 13.3-6.4 20.2-8.2V24c0-13.3 10.7-24 24-24s24 10.7 24 24zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z"]
 };
 var faHandHoldingUsd = faHandHoldingDollar;
 var faBacterium = {
@@ -15407,7 +16588,7 @@ var faBacterium = {
 var faHandPointer = {
   prefix: 'fas',
   iconName: 'hand-pointer',
-  icon: [448, 512, [], "f25a", "M128 40c0-22.1 17.9-40 40-40s40 17.9 40 40V188.2c8.5-7.6 19.7-12.2 32-12.2c25.3 0 46 19.5 47.9 44.3c8.5-7.7 19.8-12.3 32.1-12.3c25.3 0 46 19.5 47.9 44.3c8.5-7.7 19.8-12.3 32.1-12.3c26.5 0 48 21.5 48 48v32 64c0 70.7-57.3 128-128 128l-16 0H240l-.1 0h-5.2c-5 0-9.9-.3-14.7-1c-55.3-5.6-106.2-34-140-79L8 336c-13.3-17.7-9.7-42.7 8-56s42.7-9.7 56 8l56 74.7V40zM240 304c0-8.8-7.2-16-16-16s-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304zm48-16c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304c0-8.8-7.2-16-16-16zm80 16c0-8.8-7.2-16-16-16s-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304z"]
+  icon: [448, 512, [], "f25a", "M128 40c0-22.1 17.9-40 40-40s40 17.9 40 40V188.2c8.5-7.6 19.7-12.2 32-12.2c20.6 0 38.2 13 45 31.2c8.8-9.3 21.2-15.2 35-15.2c25.3 0 46 19.5 47.9 44.3c8.5-7.7 19.8-12.3 32.1-12.3c26.5 0 48 21.5 48 48v48 16 48c0 70.7-57.3 128-128 128l-16 0H240l-.1 0h-5.2c-5 0-9.9-.3-14.7-1c-55.3-5.6-106.2-34-140-79L8 336c-13.3-17.7-9.7-42.7 8-56s42.7-9.7 56 8l56 74.7V40zM240 304c0-8.8-7.2-16-16-16s-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304zm48-16c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304c0-8.8-7.2-16-16-16zm80 16c0-8.8-7.2-16-16-16s-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304z"]
 };
 var faDrumSteelpan = {
   prefix: 'fas',
@@ -15422,13 +16603,13 @@ var faHandScissors = {
 var faHandsPraying = {
   prefix: 'fas',
   iconName: 'hands-praying',
-  icon: [640, 512, ["praying-hands"], "f684", "M351.2 4.8c3.2-2 6.6-3.3 10-4.1c4.7-1 9.6-.9 14.1 .1c7.7 1.8 14.8 6.5 19.4 13.6L514.6 194.2c8.8 13.1 13.4 28.6 13.4 44.4v73.5c0 6.9 4.4 13 10.9 15.2l79.2 26.4C631.2 358 640 370.2 640 384v96c0 9.9-4.6 19.3-12.5 25.4s-18.1 8.1-27.7 5.5L431 465.9c-56-14.9-95-65.7-95-123.7V224c0-17.7 14.3-32 32-32s32 14.3 32 32v80c0 8.8 7.2 16 16 16s16-7.2 16-16V219.1c0-7-1.8-13.8-5.3-19.8L340.3 48.1c-1.7-3-2.9-6.1-3.6-9.3c-1-4.7-1-9.6 .1-14.1c1.9-8 6.8-15.2 14.3-19.9zm-62.4 0c7.5 4.6 12.4 11.9 14.3 19.9c1.1 4.6 1.2 9.4 .1 14.1c-.7 3.2-1.9 6.3-3.6 9.3L213.3 199.3c-3.5 6-5.3 12.9-5.3 19.8V304c0 8.8 7.2 16 16 16s16-7.2 16-16V224c0-17.7 14.3-32 32-32s32 14.3 32 32V342.2c0 58-39 108.7-95 123.7l-168.7 45c-9.6 2.6-19.9 .5-27.7-5.5S0 489.9 0 480V384c0-13.8 8.8-26 21.9-30.4l79.2-26.4c6.5-2.2 10.9-8.3 10.9-15.2V238.5c0-15.8 4.7-31.2 13.4-44.4L245.2 14.5c4.6-7.1 11.7-11.8 19.4-13.6c4.6-1.1 9.4-1.2 14.1-.1c3.5 .8 6.9 2.1 10 4.1z"]
+  icon: [640, 512, ["praying-hands"], "f684", "M351.2 4.8c3.2-2 6.6-3.3 10-4.1c4.7-1 9.6-.9 14.1 .1c7.7 1.8 14.8 6.5 19.4 13.6L514.6 194.2c8.8 13.1 13.4 28.6 13.4 44.4v73.5c0 6.9 4.4 13 10.9 15.2l79.2 26.4C631.2 358 640 370.2 640 384v96c0 9.9-4.6 19.3-12.5 25.4s-18.1 8.1-27.7 5.5L431 465.9c-56-14.9-95-65.7-95-123.7V224c0-17.7 14.3-32 32-32s32 14.3 32 32v80c0 8.8 7.2 16 16 16s16-7.2 16-16V219.1c0-7-1.8-13.8-5.3-19.8L340.3 48.1c-1.7-3-2.9-6.1-3.6-9.3c-1-4.7-1-9.6 .1-14.1c1.9-8 6.8-15.2 14.3-19.9zm-62.4 0c7.5 4.6 12.4 11.9 14.3 19.9c1.1 4.6 1.2 9.4 .1 14.1c-.7 3.2-1.9 6.3-3.6 9.3L213.3 199.3c-3.5 6-5.3 12.9-5.3 19.8V304c0 8.8 7.2 16 16 16s16-7.2 16-16V224c0-17.7 14.3-32 32-32s32 14.3 32 32V342.3c0 58-39 108.7-95 123.7l-168.7 45c-9.6 2.6-19.9 .5-27.7-5.5S0 490 0 480V384c0-13.8 8.8-26 21.9-30.4l79.2-26.4c6.5-2.2 10.9-8.3 10.9-15.2V238.5c0-15.8 4.7-31.2 13.4-44.4L245.2 14.5c4.6-7.1 11.7-11.8 19.4-13.6c4.6-1.1 9.4-1.2 14.1-.1c3.5 .8 6.9 2.1 10 4.1z"]
 };
 var faPrayingHands = faHandsPraying;
 var faArrowRotateRight = {
   prefix: 'fas',
   iconName: 'arrow-rotate-right',
-  icon: [512, 512, [8635, "arrow-right-rotate", "arrow-rotate-forward", "redo"], "f01e", "M370.3 160H320c-17.7 0-32 14.3-32 32s14.3 32 32 32H448c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L398.4 97.6c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0L370.3 160z"]
+  icon: [512, 512, [8635, "arrow-right-rotate", "arrow-rotate-forward", "redo"], "f01e", "M386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H464c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0L386.3 160z"]
 };
 var faArrowRightRotate = faArrowRotateRight;
 var faArrowRotateForward = faArrowRotateRight;
@@ -15436,7 +16617,7 @@ var faRedo = faArrowRotateRight;
 var faBiohazard = {
   prefix: 'fas',
   iconName: 'biohazard',
-  icon: [640, 512, [9763], "f780", "M163.2 0c-1.7 0-3.3 .7-4.5 1.9c-28.2 28.6-45.6 67.8-45.6 111.1c0 24.6 5.6 47.9 15.7 68.7c-20.7 2.2-41.2 8.5-60.4 19.3C35.8 219.1 12.7 247 .5 278.6c-.6 1.6-.4 3.4 .4 4.9c2.1 3.5 7 4 10 1.3C60.6 239.3 148.8 230.6 193 305s-7.6 144.1-73 163c-4 1.1-5.9 5.6-3.9 9c.9 1.5 2.4 2.6 4.2 2.8c34.3 5.6 70.8 .1 103.3-18.1c19.2-10.8 35.2-24.9 47.6-41.3c12.4 16.3 28.3 30.5 47.6 41.3c32.5 18.2 69 23.7 103.3 18.1c1.8-.3 3.3-1.3 4.2-2.8c2.1-3.5 .1-7.9-3.9-9c-65.4-19-117.3-88.7-73-163s132.5-65.6 182.1-20.2c3 2.7 7.9 2.2 10-1.3c.9-1.5 1.1-3.3 .4-4.9c-12.2-31.6-35.3-59.5-67.8-77.7c-19.2-10.7-39.7-17.1-60.4-19.3c10-20.8 15.7-44.1 15.7-68.7c0-43.3-17.4-82.5-45.6-111.1C382.5 .7 380.9 0 379.2 0c-4.7 0-7.9 4.9-6.3 9.4c24.1 66.4-9.9 156.3-101.8 156.3s-125.8-89.9-101.8-156.3C171 4.9 167.9 0 163.2 0zM226 256a45.2 45.2 0 1 1 90.4 0A45.2 45.2 0 1 1 226 256zM171.1 393c5.9-11.1 9.2-23.7 8.1-37.5c-18.3-17-32-39-38.8-63.8c-11.8-7.6-24.7-11.1-37.7-11.7c-8.4-.4-17.1 .5-25.5 2.6c7.3 53.7 36.4 100.5 78.1 131.2c6.4-6.3 11.8-13.3 15.8-20.8zM271.2 60.2c-27.1 0-53 5.5-76.4 15.5c1.9 7.8 4.7 15.3 8.5 22.1c6.4 11.6 15.7 21.7 28.3 28.5c12.6-3.8 25.9-5.9 39.7-5.9s27.1 2.1 39.7 5.9c12.6-6.8 21.9-16.9 28.3-28.5c3.8-6.8 6.6-14.3 8.5-22.1c-23.5-10-49.3-15.5-76.4-15.5zM401.9 291.7c-6.8 24.8-20.4 46.8-38.8 63.8c-1.2 13.8 2.1 26.4 8.1 37.5c4 7.5 9.4 14.5 15.8 20.8c41.7-30.7 70.8-77.4 78.1-131.2c-8.5-2-17.1-2.9-25.5-2.6c-13 .6-25.9 4.1-37.7 11.7z"]
+  icon: [576, 512, [9763], "f780", "M173.2 0c-1.8 0-3.5 .7-4.8 2C138.5 32.3 120 74 120 120c0 26.2 6 50.9 16.6 73c-22 2.4-43.8 9.1-64.2 20.5C37.9 232.8 13.3 262.4 .4 296c-.7 1.7-.5 3.7 .5 5.2c2.2 3.7 7.4 4.3 10.6 1.3C64.2 254.3 158 245.1 205 324s-8.1 153.1-77.6 173.2c-4.2 1.2-6.3 5.9-4.1 9.6c1 1.6 2.6 2.7 4.5 3c36.5 5.9 75.2 .1 109.7-19.2c20.4-11.4 37.4-26.5 50.5-43.8c13.1 17.3 30.1 32.4 50.5 43.8c34.5 19.3 73.3 25.2 109.7 19.2c1.9-.3 3.5-1.4 4.5-3c2.2-3.7 .1-8.4-4.1-9.6C379.1 477.1 324 403 371 324s140.7-69.8 193.5-21.4c3.2 2.9 8.4 2.3 10.6-1.3c1-1.6 1.1-3.5 .5-5.2c-12.9-33.6-37.5-63.2-72.1-82.5c-20.4-11.4-42.2-18.1-64.2-20.5C450 170.9 456 146.2 456 120c0-46-18.5-87.7-48.4-118c-1.3-1.3-3-2-4.8-2c-5 0-8.4 5.2-6.7 9.9C421.7 80.5 385.6 176 288 176S154.3 80.5 179.9 9.9c1.7-4.7-1.6-9.9-6.7-9.9zM240 272a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM181.7 417.6c6.3-11.8 9.8-25.1 8.6-39.8c-19.5-18-34-41.4-41.2-67.8c-12.5-8.1-26.2-11.8-40-12.4c-9-.4-18.1 .6-27.1 2.7c7.8 57.1 38.7 106.8 82.9 139.4c6.8-6.7 12.6-14.1 16.8-22.1zM288 64c-28.8 0-56.3 5.9-81.2 16.5c2 8.3 5 16.2 9 23.5c6.8 12.4 16.7 23.1 30.1 30.3c13.3-4.1 27.5-6.3 42.2-6.3s28.8 2.2 42.2 6.3c13.4-7.2 23.3-17.9 30.1-30.3c4-7.3 7-15.2 9-23.5C344.3 69.9 316.8 64 288 64zM426.9 310c-7.2 26.4-21.7 49.7-41.2 67.8c-1.2 14.7 2.2 28.1 8.6 39.8c4.3 8 10 15.4 16.8 22.1c44.3-32.6 75.2-82.3 82.9-139.4c-9-2.2-18.1-3.1-27.1-2.7c-13.8 .6-27.5 4.4-40 12.4z"]
 };
 var faLocationCrosshairs = {
   prefix: 'fas',
@@ -15467,7 +16648,7 @@ var faLungsVirus = {
 var faFaceGrinTears = {
   prefix: 'fas',
   iconName: 'face-grin-tears',
-  icon: [640, 512, [128514, "grin-tears"], "f588", "M548.6 371.4C506.4 454.8 419.9 512 320 512s-186.4-57.2-228.6-140.6c4.5-2.9 8.7-6.3 12.7-10.3c8.1-8.1 13.2-18.6 16.5-26.6c3.6-8.8 6.5-18.4 8.8-27.5c4.6-18.2 7.7-37 9.3-48.2c3.9-26.5-18.8-49.2-45.2-45.4c-6.8 .9-16.2 2.4-26.6 4.4C85.3 94.5 191.6 0 320 0S554.7 94.5 573.2 217.7c-10.3-2-19.8-3.5-26.6-4.4c-26.5-3.9-49.2 18.8-45.2 45.4c1.6 11.3 4.6 30 9.3 48.2c2.3 9.1 5.2 18.8 8.8 27.5c3.3 8.1 8.4 18.5 16.5 26.6c3.9 3.9 8.2 7.4 12.7 10.3zM107 254.1c-3.1 21.5-11.4 70.2-25.5 84.4c-.9 1-1.9 1.8-2.9 2.7C60 356.7 32 355.5 14.3 337.7c-18.7-18.7-19.1-48.8-.7-67.2c8.6-8.6 30.1-15.1 50.5-19.6c13-2.8 25.5-4.8 33.9-6c5.4-.8 9.9 3.7 9 9zm454.5 87.1c-.8-.6-1.5-1.3-2.3-2c-.2-.2-.5-.4-.7-.7c-14.1-14.1-22.5-62.9-25.5-84.4c-.8-5.4 3.7-9.9 9-9c1 .1 2.2 .3 3.3 .5c8.2 1.2 19.2 3 30.6 5.5c20.4 4.4 41.9 10.9 50.5 19.6c18.4 18.4 18 48.5-.7 67.2c-17.7 17.7-45.7 19-64.2 3.4zm-90.1-9.7c5-11.8-7-22.5-19.3-18.7c-39.7 12.2-84.4 19-131.8 19s-92.1-6.8-131.8-19c-12.3-3.8-24.3 6.9-19.3 18.7c25 59.1 83.2 100.5 151.1 100.5s126.2-41.4 151.1-100.5zM281.6 228.8l0 0 0 0 0 0c2.1 2.8 5.7 3.9 8.9 2.8s5.5-4.1 5.5-7.6c0-17.9-6.7-35.6-16.6-48.8c-9.8-13-23.9-23.2-39.4-23.2s-29.6 10.2-39.4 23.2C190.7 188.4 184 206.1 184 224c0 3.4 2.2 6.5 5.5 7.6s6.9 0 8.9-2.8l0 0 0 0 0 0 .2-.2c.2-.2 .4-.5 .7-.9c.6-.8 1.6-2 2.8-3.4c2.5-2.8 6-6.6 10.2-10.3c8.8-7.8 18.8-14 27.7-14s18.9 6.2 27.7 14c4.2 3.7 7.7 7.5 10.2 10.3c1.2 1.4 2.2 2.6 2.8 3.4c.3 .4 .6 .7 .7 .9l.2 .2 0 0zm160 0l0 0 0 0c2.1 2.8 5.7 3.9 8.9 2.8s5.5-4.1 5.5-7.6c0-17.9-6.7-35.6-16.6-48.8c-9.8-13-23.9-23.2-39.4-23.2s-29.6 10.2-39.4 23.2C350.7 188.4 344 206.1 344 224c0 3.4 2.2 6.5 5.5 7.6s6.9 0 8.9-2.8l0 0 0 0 0 0 .2-.2c.2-.2 .4-.5 .7-.9c.6-.8 1.6-2 2.8-3.4c2.5-2.8 6-6.6 10.2-10.3c8.8-7.8 18.8-14 27.7-14s18.9 6.2 27.7 14c4.2 3.7 7.7 7.5 10.2 10.3c1.2 1.4 2.2 2.6 2.8 3.4c.3 .4 .6 .7 .7 .9l.2 .2 0 0 0 0z"]
+  icon: [640, 512, [128514, "grin-tears"], "f588", "M548.6 371.4C506.4 454.8 419.9 512 320 512s-186.4-57.2-228.6-140.6c4.5-2.9 8.7-6.3 12.7-10.3c8.1-8.1 13.2-18.6 16.5-26.6c3.6-8.8 6.5-18.4 8.8-27.5c4.6-18.2 7.7-37 9.3-48.2c3.9-26.5-18.8-49.2-45.2-45.4c-6.8 .9-16.2 2.4-26.6 4.4C85.3 94.5 191.6 0 320 0S554.7 94.5 573.2 217.7c-10.3-2-19.8-3.5-26.6-4.4c-26.5-3.9-49.2 18.8-45.2 45.4c1.6 11.3 4.6 30 9.3 48.2c2.3 9.1 5.2 18.8 8.8 27.5c3.3 8.1 8.4 18.5 16.5 26.6c3.9 3.9 8.2 7.4 12.7 10.3zM107 254.1c-3.1 21.5-11.4 70.2-25.5 84.4c-.9 1-1.9 1.8-2.9 2.7C60 356.7 32 355.5 14.3 337.7c-18.7-18.7-19.1-48.8-.7-67.2c8.6-8.6 30.1-15.1 50.5-19.6c13-2.8 25.5-4.8 33.9-6c5.4-.8 9.9 3.7 9 9zm454.5 87.1c-.8-.6-1.5-1.3-2.3-2c-.2-.2-.5-.4-.7-.7c-14.1-14.1-22.5-62.9-25.5-84.4c-.8-5.4 3.7-9.9 9-9c1 .1 2.2 .3 3.3 .5c8.2 1.2 19.2 3 30.6 5.5c20.4 4.4 41.9 10.9 50.5 19.6c18.4 18.4 18 48.5-.7 67.2c-17.7 17.7-45.7 19-64.2 3.4zm-90.1-9.7c5-11.8-7-22.5-19.3-18.7c-39.7 12.2-84.5 19-131.8 19s-92.1-6.8-131.8-19c-12.3-3.8-24.3 6.9-19.3 18.7c25 59.1 83.2 100.5 151.1 100.5s126.2-41.4 151.1-100.5zM281.6 228.8l0 0 0 0 0 0c2.1 2.8 5.7 3.9 8.9 2.8s5.5-4.1 5.5-7.6c0-17.9-6.7-35.6-16.6-48.8c-9.8-13-23.9-23.2-39.4-23.2s-29.6 10.2-39.4 23.2C190.7 188.4 184 206.1 184 224c0 3.4 2.2 6.5 5.5 7.6s6.9 0 8.9-2.8l0 0 0 0 0 0 .2-.2c.2-.2 .4-.5 .7-.9c.6-.8 1.6-2 2.8-3.4c2.5-2.8 6-6.6 10.2-10.3c8.8-7.8 18.8-14 27.7-14s18.9 6.2 27.7 14c4.2 3.7 7.7 7.5 10.2 10.3c1.2 1.4 2.2 2.6 2.8 3.4c.3 .4 .6 .7 .7 .9l.2 .2 0 0zm160 0l0 0 0 0c2.1 2.8 5.7 3.9 8.9 2.8s5.5-4.1 5.5-7.6c0-17.9-6.7-35.6-16.6-48.8c-9.8-13-23.9-23.2-39.4-23.2s-29.6 10.2-39.4 23.2C350.7 188.4 344 206.1 344 224c0 3.4 2.2 6.5 5.5 7.6s6.9 0 8.9-2.8l0 0 0 0 0 0 .2-.2c.2-.2 .4-.5 .7-.9c.6-.8 1.6-2 2.8-3.4c2.5-2.8 6-6.6 10.2-10.3c8.8-7.8 18.8-14 27.7-14s18.9 6.2 27.7 14c4.2 3.7 7.7 7.5 10.2 10.3c1.2 1.4 2.2 2.6 2.8 3.4c.3 .4 .6 .7 .7 .9l.2 .2 0 0 0 0z"]
 };
 var faGrinTears = faFaceGrinTears;
 var faPhone = {
@@ -15484,23 +16665,23 @@ var faCalendarTimes = faCalendarXmark;
 var faChildReaching = {
   prefix: 'fas',
   iconName: 'child-reaching',
-  icon: [384, 512, [], "e59d", "M240 64A64 64 0 1 0 112 64a64 64 0 1 0 128 0zM136.9 169.3c-23.7-8.4-44.5-24.3-58.8-45.8L58.6 94.2C48.8 79.5 29 75.6 14.2 85.4S-4.4 115 5.4 129.8L24.9 159c18.1 27.1 42.8 48.4 71.1 62.4V480c0 17.7 14.3 32 32 32s32-14.3 32-32V384h32v96c0 17.7 14.3 32 32 32s32-14.3 32-32V221.6c29.1-14.2 54.4-36.2 72.7-64.2l18.2-27.9c9.6-14.8 5.4-34.6-9.4-44.3s-34.6-5.5-44.3 9.4L275 122.4c-21.8 33.4-58.9 53.6-98.8 53.6c-12.6 0-24.9-2-36.6-5.8c-.9-.3-1.8-.7-2.7-.9z"]
+  icon: [384, 512, [], "e59d", "M256 64A64 64 0 1 0 128 64a64 64 0 1 0 128 0zM152.9 169.3c-23.7-8.4-44.5-24.3-58.8-45.8L74.6 94.2C64.8 79.5 45 75.6 30.2 85.4s-18.7 29.7-8.9 44.4L40.9 159c18.1 27.1 42.8 48.4 71.1 62.4V480c0 17.7 14.3 32 32 32s32-14.3 32-32V384h32v96c0 17.7 14.3 32 32 32s32-14.3 32-32V221.6c29.1-14.2 54.4-36.2 72.7-64.2l18.2-27.9c9.6-14.8 5.4-34.6-9.4-44.3s-34.6-5.5-44.3 9.4L291 122.4c-21.8 33.4-58.9 53.6-98.8 53.6c-12.6 0-24.9-2-36.6-5.8c-.9-.3-1.8-.7-2.7-.9z"]
 };
 var faHeadSideVirus = {
   prefix: 'fas',
   iconName: 'head-side-virus',
-  icon: [512, 512, [], "e064", "M0 224.2C0 100.6 100.2 0 224 0h32c95.2 0 174.2 69.3 189.4 160.1c2.2 13 6.7 25.7 15 36.1l42 52.6c6.2 7.8 9.6 17.4 9.6 27.4c0 24.2-19.6 43.8-43.8 43.8H448v64c0 35.3-28.7 64-64 64H320v32c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V407.3c0-16.7-6.9-32.5-17.1-45.8C16.6 322.4 0 274.1 0 224.2zM240 80c-8.8 0-16 7.2-16 16c0 33-39.9 49.5-63.2 26.2c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6C161.5 168.1 145 208 112 208c-8.8 0-16 7.2-16 16s7.2 16 16 16c33 0 49.5 39.9 26.2 63.2c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0C184.1 302.5 224 319 224 352c0 8.8 7.2 16 16 16s16-7.2 16-16c0-33 39.9-49.5 63.2-26.2c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6C318.5 279.9 335 240 368 240c8.8 0 16-7.2 16-16s-7.2-16-16-16c-33 0-49.5-39.9-26.2-63.2c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0C295.9 145.5 256 129 256 96c0-8.8-7.2-16-16-16zm-24 96a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm40 80a16 16 0 1 1 32 0 16 16 0 1 1 -32 0z"]
+  icon: [512, 512, [], "e064", "M0 224.2C0 100.6 100.2 0 224 0h24c95.2 0 181.2 69.3 197.3 160.2c2.3 13 6.8 25.7 15.1 36l42 52.6c6.2 7.8 9.6 17.4 9.6 27.4c0 24.2-19.6 43.8-43.8 43.8H448v64c0 35.3-28.7 64-64 64H320v32c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V407.3c0-16.7-6.9-32.5-17.1-45.8C16.6 322.4 0 274.1 0 224.2zM224 64c-8.8 0-16 7.2-16 16c0 33-39.9 49.5-63.2 26.2c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6C145.5 152.1 129 192 96 192c-8.8 0-16 7.2-16 16s7.2 16 16 16c33 0 49.5 39.9 26.2 63.2c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0C168.1 286.5 208 303 208 336c0 8.8 7.2 16 16 16s16-7.2 16-16c0-33 39.9-49.5 63.2-26.2c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6C302.5 263.9 319 224 352 224c8.8 0 16-7.2 16-16s-7.2-16-16-16c-33 0-49.5-39.9-26.2-63.2c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0C279.9 129.5 240 113 240 80c0-8.8-7.2-16-16-16zm-24 96a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm40 80a16 16 0 1 1 32 0 16 16 0 1 1 -32 0z"]
 };
 var faUserGear = {
   prefix: 'fas',
   iconName: 'user-gear',
-  icon: [640, 512, ["user-cog"], "f4fe", "M224 0a128 128 0 1 1 0 256A128 128 0 1 1 224 0zM178.3 304h91.4c11.8 0 23.4 1.2 34.5 3.3c-2.1 18.5 7.4 35.6 21.8 44.8c-16.6 10.6-26.7 31.6-20 53.3c4 12.9 9.4 25.5 16.4 37.6s15.2 23.1 24.4 33c15.7 16.9 39.6 18.4 57.2 8.7v.9c0 9.2 2.7 18.5 7.9 26.3H29.7C13.3 512 0 498.7 0 482.3C0 383.8 79.8 304 178.3 304zM436 218.2c0-7 4.5-13.3 11.3-14.8c10.5-2.4 21.5-3.7 32.7-3.7s22.2 1.3 32.7 3.7c6.8 1.5 11.3 7.8 11.3 14.8v30.6c7.9 3.4 15.4 7.7 22.3 12.8l24.9-14.3c6.1-3.5 13.7-2.7 18.5 2.4c7.6 8.1 14.3 17.2 20.1 27.2s10.3 20.4 13.5 31c2.1 6.7-1.1 13.7-7.2 17.2l-25 14.4c.4 4 .7 8.1 .7 12.3s-.2 8.2-.7 12.3l25 14.4c6.1 3.5 9.2 10.5 7.2 17.2c-3.3 10.6-7.8 21-13.5 31s-12.5 19.1-20.1 27.2c-4.8 5.1-12.5 5.9-18.5 2.4l-24.9-14.3c-6.9 5.1-14.3 9.4-22.3 12.8l0 30.6c0 7-4.5 13.3-11.3 14.8c-10.5 2.4-21.5 3.7-32.7 3.7s-22.2-1.3-32.7-3.7c-6.8-1.5-11.3-7.8-11.3-14.8V454.8c-8-3.4-15.6-7.7-22.5-12.9l-24.7 14.3c-6.1 3.5-13.7 2.7-18.5-2.4c-7.6-8.1-14.3-17.2-20.1-27.2s-10.3-20.4-13.5-31c-2.1-6.7 1.1-13.7 7.2-17.2l24.8-14.3c-.4-4.1-.7-8.2-.7-12.4s.2-8.3 .7-12.4L343.8 325c-6.1-3.5-9.2-10.5-7.2-17.2c3.3-10.6 7.7-21 13.5-31s12.5-19.1 20.1-27.2c4.8-5.1 12.4-5.9 18.5-2.4l24.8 14.3c6.9-5.1 14.5-9.4 22.5-12.9V218.2zm92.1 133.5a48.1 48.1 0 1 0 -96.1 0 48.1 48.1 0 1 0 96.1 0z"]
+  icon: [640, 512, ["user-cog"], "f4fe", "M224 0a128 128 0 1 1 0 256A128 128 0 1 1 224 0zM178.3 304h91.4c11.8 0 23.4 1.2 34.5 3.3c-2.1 18.5 7.4 35.6 21.8 44.8c-16.6 10.6-26.7 31.6-20 53.3c4 12.9 9.4 25.5 16.4 37.6s15.2 23.1 24.4 33c15.7 16.9 39.6 18.4 57.2 8.7v.9c0 9.2 2.7 18.5 7.9 26.3H29.7C13.3 512 0 498.7 0 482.3C0 383.8 79.8 304 178.3 304zM436 218.2c0-7 4.5-13.3 11.3-14.8c10.5-2.4 21.5-3.7 32.7-3.7s22.2 1.3 32.7 3.7c6.8 1.5 11.3 7.8 11.3 14.8v17.7c0 7.8 4.8 14.8 11.6 18.7c6.8 3.9 15.1 4.5 21.8 .6l13.8-7.9c6.1-3.5 13.7-2.7 18.5 2.4c7.6 8.1 14.3 17.2 20.1 27.2s10.3 20.4 13.5 31c2.1 6.7-1.1 13.7-7.2 17.2l-14.4 8.3c-6.5 3.7-10 10.9-10 18.4s3.5 14.7 10 18.4l14.4 8.3c6.1 3.5 9.2 10.5 7.2 17.2c-3.3 10.6-7.8 21-13.5 31s-12.5 19.1-20.1 27.2c-4.8 5.1-12.5 5.9-18.5 2.4l-13.8-7.9c-6.7-3.9-15.1-3.3-21.8 .6c-6.8 3.9-11.6 10.9-11.6 18.7v17.7c0 7-4.5 13.3-11.3 14.8c-10.5 2.4-21.5 3.7-32.7 3.7s-22.2-1.3-32.7-3.7c-6.8-1.5-11.3-7.8-11.3-14.8V467.8c0-7.9-4.9-14.9-11.7-18.9c-6.8-3.9-15.2-4.5-22-.6l-13.5 7.8c-6.1 3.5-13.7 2.7-18.5-2.4c-7.6-8.1-14.3-17.2-20.1-27.2s-10.3-20.4-13.5-31c-2.1-6.7 1.1-13.7 7.2-17.2l14-8.1c6.5-3.8 10.1-11.1 10.1-18.6s-3.5-14.8-10.1-18.6l-14-8.1c-6.1-3.5-9.2-10.5-7.2-17.2c3.3-10.6 7.7-21 13.5-31s12.5-19.1 20.1-27.2c4.8-5.1 12.4-5.9 18.5-2.4l13.6 7.8c6.8 3.9 15.2 3.3 22-.6c6.9-3.9 11.7-11 11.7-18.9V218.2zm92.1 133.5a48.1 48.1 0 1 0 -96.1 0 48.1 48.1 0 1 0 96.1 0z"]
 };
 var faUserCog = faUserGear;
 var faArrowUp19 = {
   prefix: 'fas',
   iconName: 'arrow-up-1-9',
-  icon: [512, 512, ["sort-numeric-up"], "f163", "M410.7 38c8.3 6 13.3 15.7 13.3 26v96h16c17.7 0 32 14.3 32 32s-14.3 32-32 32H392 344c-17.7 0-32-14.3-32-32s14.3-32 32-32h16V108.4l-5.9 2c-16.8 5.6-34.9-3.5-40.5-20.2s3.5-34.9 20.2-40.5l48-16c9.8-3.3 20.5-1.6 28.8 4.4zM120 32c9 0 17.5 3.8 23.6 10.4l88 96c11.9 13 11.1 33.3-2 45.2s-33.3 11.1-45.2-2L152 146.3V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V146.3L55.6 181.6c-11.9 13-32.2 13.9-45.2 2s-13.9-32.2-2-45.2l88-96C102.5 35.8 111 32 120 32zM405.7 364.9A32 32 0 1 0 378.3 307a32 32 0 1 0 27.4 57.9zm-40.7 54.9C329.6 408.4 304 375.2 304 336c0-48.6 39.4-88 88-88s88 39.4 88 88c0 23.5-7.5 46.3-21.5 65.2L409.7 467c-10.5 14.2-30.6 17.2-44.8 6.7s-17.2-30.6-6.7-44.8l6.8-9.2z"]
+  icon: [576, 512, ["sort-numeric-up"], "f163", "M450.7 38c8.3 6 13.3 15.7 13.3 26v96h16c17.7 0 32 14.3 32 32s-14.3 32-32 32H432 384c-17.7 0-32-14.3-32-32s14.3-32 32-32h16V108.4l-5.9 2c-16.8 5.6-34.9-3.5-40.5-20.2s3.5-34.9 20.2-40.5l48-16c9.8-3.3 20.5-1.6 28.8 4.4zM160 32c9 0 17.5 3.8 23.6 10.4l88 96c11.9 13 11.1 33.3-2 45.2s-33.3 11.1-45.2-2L192 146.3V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V146.3L95.6 181.6c-11.9 13-32.2 13.9-45.2 2s-13.9-32.2-2-45.2l88-96C142.5 35.8 151 32 160 32zM445.7 364.9A32 32 0 1 0 418.3 307a32 32 0 1 0 27.4 57.9zm-40.7 54.9C369.6 408.4 344 375.2 344 336c0-48.6 39.4-88 88-88s88 39.4 88 88c0 23.5-7.5 46.3-21.5 65.2L449.7 467c-10.5 14.2-30.6 17.2-44.8 6.7s-17.2-30.6-6.7-44.8l6.8-9.2z"]
 };
 var faSortNumericUp = faArrowUp19;
 var faDoorClosed = {
@@ -15511,12 +16692,12 @@ var faDoorClosed = {
 var faShieldVirus = {
   prefix: 'fas',
   iconName: 'shield-virus',
-  icon: [512, 512, [], "e06c", "M253.4 2.9C249.2 1 244.7 0 240 0s-9.2 1-13.4 2.9L38.3 82.8C16.3 92.1-.1 113.8 0 140c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C438.7 420.7 479.5 239.2 480 140c.1-26.2-16.3-47.9-38.3-57.2L253.4 2.9zM240 112c8.8 0 16 7.2 16 16c0 33 39.9 49.5 63.2 26.2c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6C318.5 200.1 335 240 368 240c8.8 0 16 7.2 16 16s-7.2 16-16 16c-33 0-49.5 39.9-26.2 63.2c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0C295.9 334.5 256 351 256 384c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-33-39.9-49.5-63.2-26.2c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6C161.5 311.9 145 272 112 272c-8.8 0-16-7.2-16-16s7.2-16 16-16c33 0 49.5-39.9 26.2-63.2c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0C184.1 177.5 224 161 224 128c0-8.8 7.2-16 16-16zM216 256a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm72 32a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"]
+  icon: [512, 512, [], "e06c", "M269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L269.4 2.9zM256 112c8.8 0 16 7.2 16 16c0 33 39.9 49.5 63.2 26.2c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6C334.5 200.1 351 240 384 240c8.8 0 16 7.2 16 16s-7.2 16-16 16c-33 0-49.5 39.9-26.2 63.2c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0C311.9 334.5 272 351 272 384c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-33-39.9-49.5-63.2-26.2c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6C177.5 311.9 161 272 128 272c-8.8 0-16-7.2-16-16s7.2-16 16-16c33 0 49.5-39.9 26.2-63.2c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0C200.1 177.5 240 161 240 128c0-8.8 7.2-16 16-16zM232 256a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm72 32a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"]
 };
 var faDiceSix = {
   prefix: 'fas',
   iconName: 'dice-six',
-  icon: [448, 512, [9861], "f526", "M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm160 64c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM128 288c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32zm32 64c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM320 192c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32zm32 64c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM320 384c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32z"]
+  icon: [448, 512, [9861], "f526", "M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm160 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM128 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm32 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM320 192a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm32 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM320 384a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"]
 };
 var faMosquitoNet = {
   prefix: 'fas',
@@ -15592,12 +16773,12 @@ var faTshirt = faShirt;
 var faCubes = {
   prefix: 'fas',
   iconName: 'cubes',
-  icon: [640, 512, [], "f1b3", "M273.8 45.8l73.7 28L271.2 103 194.8 73.7l73.7-28c1.7-.7 3.6-.7 5.3 0zM128.1 87.1V192.6c-1.2 .4-2.4 .8-3.6 1.2L34.1 228.1c-20.5 7.8-34 27.4-34 49.3V389.5c0 20.9 12.4 39.8 31.5 48.3L122 477.5c13.5 5.9 28.9 5.9 42.4 0l106.8-46.9L378 477.5c13.5 5.9 28.9 5.9 42.4 0l90.4-39.7c19.1-8.4 31.5-27.3 31.5-48.3V277.4c0-21.9-13.5-41.5-34-49.3l-90.4-34.3c-1.2-.5-2.4-.9-3.6-1.2V87.1c0-21.9-13.5-41.5-34-49.3L289.9 3.5c-12-4.6-25.3-4.6-37.4 0L162.1 37.8c-20.5 7.8-34 27.4-34 49.3zM369.1 198.2l-77.5 29.4v-84l77.5-29.7v84.3zM145.8 236.1l73.7 28-76.4 29.3L66.8 264.1l73.7-28c1.7-.7 3.6-.7 5.3 0zm17.7 192.4V333.9l77.5-29.7v90.2l-77.5 34.1zm233-192.4c1.7-.7 3.6-.7 5.3 0l73.7 28-76.4 29.3-76.4-29.3 73.7-28zm96.1 160.3l-73 32.1V333.9l77.5-29.7v85.3c0 3-1.8 5.7-4.5 6.9z"]
+  icon: [576, 512, [], "f1b3", "M290.8 48.6l78.4 29.7L288 109.5 206.8 78.3l78.4-29.7c1.8-.7 3.8-.7 5.7 0zM136 92.5V204.7c-1.3 .4-2.6 .8-3.9 1.3l-96 36.4C14.4 250.6 0 271.5 0 294.7V413.9c0 22.2 13.1 42.3 33.5 51.3l96 42.2c14.4 6.3 30.7 6.3 45.1 0L288 457.5l113.5 49.9c14.4 6.3 30.7 6.3 45.1 0l96-42.2c20.3-8.9 33.5-29.1 33.5-51.3V294.7c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-1.3-.5-2.6-.9-3.9-1.3V92.5c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-12.8-4.8-26.9-4.8-39.7 0l-96 36.4C150.4 48.4 136 69.3 136 92.5zM392 210.6l-82.4 31.2V152.6L392 121v89.6zM154.8 250.9l78.4 29.7L152 311.7 70.8 280.6l78.4-29.7c1.8-.7 3.8-.7 5.7 0zm18.8 204.4V354.8L256 323.2v95.9l-82.4 36.2zM421.2 250.9c1.8-.7 3.8-.7 5.7 0l78.4 29.7L424 311.7l-81.2-31.1 78.4-29.7zM523.2 421.2l-77.6 34.1V354.8L528 323.2v90.7c0 3.2-1.9 6-4.8 7.3z"]
 };
 var faDivide = {
   prefix: 'fas',
   iconName: 'divide',
-  icon: [448, 512, [10135, 247], "f529", "M256 96a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 320a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM384 288c17.7 0 32-14.3 32-32s-14.3-32-32-32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H384z"]
+  icon: [448, 512, [10135, 247], "f529", "M272 96a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 320a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM400 288c17.7 0 32-14.3 32-32s-14.3-32-32-32H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H400z"]
 };
 var faTengeSign = {
   prefix: 'fas',
@@ -15638,7 +16819,7 @@ var faPersonCircleXmark = {
 var faRuler = {
   prefix: 'fas',
   iconName: 'ruler',
-  icon: [512, 512, [128207], "f545", "M174.9 494.1c-18.7 18.7-49.1 18.7-67.9 0L14.9 401.9c-18.7-18.7-18.7-49.1 0-67.9l50.7-50.7 48 48c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-48-48 41.4-41.4 48 48c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-48-48 41.4-41.4 48 48c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-48-48 41.4-41.4 48 48c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-48-48 50.7-50.7c18.7-18.7 49.1-18.7 67.9 0l92.1 92.1c18.7 18.7 18.7 49.1 0 67.9L174.9 494.1z"]
+  icon: [512, 512, [128207], "f545", "M177.9 494.1c-18.7 18.7-49.1 18.7-67.9 0L17.9 401.9c-18.7-18.7-18.7-49.1 0-67.9l50.7-50.7 48 48c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-48-48 41.4-41.4 48 48c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-48-48 41.4-41.4 48 48c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-48-48 41.4-41.4 48 48c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-48-48 50.7-50.7c18.7-18.7 49.1-18.7 67.9 0l92.1 92.1c18.7 18.7 18.7 49.1 0 67.9L177.9 494.1z"]
 };
 var faAlignLeft = {
   prefix: 'fas',
@@ -15648,7 +16829,7 @@ var faAlignLeft = {
 var faDiceD6 = {
   prefix: 'fas',
   iconName: 'dice-d6',
-  icon: [448, 512, [], "f6d1", "M216.3 2c4.8-2.6 10.5-2.6 15.3 0L422.3 106c5.1 2.8 8.3 8.2 8.3 14s-3.2 11.2-8.3 14L231.7 238c-4.8 2.6-10.5 2.6-15.3 0L25.7 134c-5.1-2.8-8.3-8.2-8.3-14s3.2-11.2 8.3-14L216.3 2zM23.7 170l176 96c5.1 2.8 8.3 8.2 8.3 14V496c0 5.6-3 10.9-7.8 13.8s-10.9 3-15.8 .3L8.3 414C3.2 411.2 0 405.9 0 400V184c0-5.6 3-10.9 7.8-13.8s10.9-3 15.8-.3zm400.7 0c5-2.7 11-2.6 15.8 .3s7.8 8.1 7.8 13.8V400c0 5.9-3.2 11.2-8.3 14l-176 96c-5 2.7-11 2.6-15.8-.3s-7.8-8.1-7.8-13.8V280c0-5.9 3.2-11.2 8.3-14l176-96z"]
+  icon: [448, 512, [], "f6d1", "M201 10.3c14.3-7.8 31.6-7.8 46 0L422.3 106c5.1 2.8 8.3 8.2 8.3 14s-3.2 11.2-8.3 14L231.7 238c-4.8 2.6-10.5 2.6-15.3 0L25.7 134c-5.1-2.8-8.3-8.2-8.3-14s3.2-11.2 8.3-14L201 10.3zM23.7 170l176 96c5.1 2.8 8.3 8.2 8.3 14V496c0 5.6-3 10.9-7.8 13.8s-10.9 3-15.8 .3L25 423.1C9.6 414.7 0 398.6 0 381V184c0-5.6 3-10.9 7.8-13.8s10.9-3 15.8-.3zm400.7 0c5-2.7 11-2.6 15.8 .3s7.8 8.1 7.8 13.8V381c0 17.6-9.6 33.7-25 42.1L263.7 510c-5 2.7-11 2.6-15.8-.3s-7.8-8.1-7.8-13.8V280c0-5.9 3.2-11.2 8.3-14l176-96z"]
 };
 var faRestroom = {
   prefix: 'fas',
@@ -15685,7 +16866,7 @@ var faTh = faTableCells;
 var faFilePdf = {
   prefix: 'fas',
   iconName: 'file-pdf',
-  icon: [448, 512, [], "f1c1", "M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H296 272 184 160c-35.3 0-64 28.7-64 64v80 48 16H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM160 352h24c30.9 0 56 25.1 56 56s-25.1 56-56 56h-8v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8v48h8zm88-80h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H272c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm24 128c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16h-8v96h8zm72-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368z"]
+  icon: [512, 512, [], "f1c1", "M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"]
 };
 var faBookBible = {
   prefix: 'fas',
@@ -15707,7 +16888,7 @@ var faMedkit = faSuitcaseMedical;
 var faUserSecret = {
   prefix: 'fas',
   iconName: 'user-secret',
-  icon: [448, 512, [128373], "f21b", "M224 16c-6.7 0-10.8-2.8-15.5-6.1C201.9 5.4 194 0 176 0c-30.5 0-52 43.7-66 89.4C62.7 98.1 32 112.2 32 128c0 14.3 25 27.1 64.6 35.9c-.4 4-.6 8-.6 12.1c0 17 3.3 33.2 9.3 48H45.4C38 224 32 230 32 237.4c0 1.7 .3 3.4 1 5l38.8 96.9C28.2 371.8 0 423.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7c0-58.5-28.2-110.4-71.7-143L415 242.4c.6-1.6 1-3.3 1-5c0-7.4-6-13.4-13.4-13.4H342.7c6-14.8 9.3-31 9.3-48c0-4.1-.2-8.1-.6-12.1C391 155.1 416 142.3 416 128c0-15.8-30.7-29.9-78-38.6C324 43.7 302.5 0 272 0c-18 0-25.9 5.4-32.5 9.9c-4.7 3.3-8.8 6.1-15.5 6.1zm56 208H267.6c-16.5 0-31.1-10.6-36.3-26.2c-2.3-7-12.2-7-14.5 0c-5.2 15.6-19.9 26.2-36.3 26.2H168c-22.1 0-40-17.9-40-40V169.6c28.2 4.1 61 6.4 96 6.4s67.8-2.3 96-6.4V184c0 22.1-17.9 40-40 40zm-88 96l16 32L176 480 128 288l64 32zm128-32L272 480 240 352l16-32 64-32z"]
+  icon: [448, 512, [128373], "f21b", "M224 16c-6.7 0-10.8-2.8-15.5-6.1C201.9 5.4 194 0 176 0c-30.5 0-52 43.7-66 89.4C62.7 98.1 32 112.2 32 128c0 14.3 25 27.1 64.6 35.9c-.4 4-.6 8-.6 12.1c0 17 3.3 33.2 9.3 48H45.4C38 224 32 230 32 237.4c0 1.7 .3 3.4 1 5l38.8 96.9C28.2 371.8 0 423.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7c0-58.5-28.2-110.4-71.7-143L415 242.4c.6-1.6 1-3.3 1-5c0-7.4-6-13.4-13.4-13.4H342.7c6-14.8 9.3-31 9.3-48c0-4.1-.2-8.1-.6-12.1C391 155.1 416 142.3 416 128c0-15.8-30.7-29.9-78-38.6C324 43.7 302.5 0 272 0c-18 0-25.9 5.4-32.5 9.9c-4.8 3.3-8.8 6.1-15.5 6.1zm56 208H267.6c-16.5 0-31.1-10.6-36.3-26.2c-2.3-7-12.2-7-14.5 0c-5.2 15.6-19.9 26.2-36.3 26.2H168c-22.1 0-40-17.9-40-40V169.6c28.2 4.1 61 6.4 96 6.4s67.8-2.3 96-6.4V184c0 22.1-17.9 40-40 40zm-88 96l16 32L176 480 128 288l64 32zm128-32L272 480 240 352l16-32 64-32z"]
 };
 var faOtter = {
   prefix: 'fas',
@@ -15804,13 +16985,13 @@ var faEnvelope = {
 var faAnglesUp = {
   prefix: 'fas',
   iconName: 'angles-up',
-  icon: [384, 512, ["angle-double-up"], "f102", "M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3 329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 329.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"]
+  icon: [448, 512, ["angle-double-up"], "f102", "M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"]
 };
 var faAngleDoubleUp = faAnglesUp;
 var faPaperclip = {
   prefix: 'fas',
   iconName: 'paperclip',
-  icon: [448, 512, [128206], "f0c6", "M360.2 83.8c-24.4-24.4-64-24.4-88.4 0l-184 184c-42.1 42.1-42.1 110.3 0 152.4s110.3 42.1 152.4 0l152-152c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-152 152c-64 64-167.6 64-231.6 0s-64-167.6 0-231.6l184-184c46.3-46.3 121.3-46.3 167.6 0s46.3 121.3 0 167.6l-176 176c-28.6 28.6-75 28.6-103.6 0s-28.6-75 0-103.6l144-144c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-144 144c-6.7 6.7-6.7 17.7 0 24.4s17.7 6.7 24.4 0l176-176c24.4-24.4 24.4-64 0-88.4z"]
+  icon: [448, 512, [128206], "f0c6", "M364.2 83.8c-24.4-24.4-64-24.4-88.4 0l-184 184c-42.1 42.1-42.1 110.3 0 152.4s110.3 42.1 152.4 0l152-152c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-152 152c-64 64-167.6 64-231.6 0s-64-167.6 0-231.6l184-184c46.3-46.3 121.3-46.3 167.6 0s46.3 121.3 0 167.6l-176 176c-28.6 28.6-75 28.6-103.6 0s-28.6-75 0-103.6l144-144c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-144 144c-6.7 6.7-6.7 17.7 0 24.4s17.7 6.7 24.4 0l176-176c24.4-24.4 24.4-64 0-88.4z"]
 };
 var faArrowRightToCity = {
   prefix: 'fas',
@@ -15820,7 +17001,7 @@ var faArrowRightToCity = {
 var faRibbon = {
   prefix: 'fas',
   iconName: 'ribbon',
-  icon: [448, 512, [127895], "f4d6", "M315.2 322.8l0 0-133.9-146 0 0L128 118.6c7.8-5.1 37-22.6 78-22.6s70.2 17.4 78 22.6L227.7 180l85.6 93.4 27.4-29.8c16.3-17.7 25.3-40.9 25.3-65V149.1c0-19-5.6-37.5-16.1-53.3L309.8 35.6C294.9 13.4 269.9 0 243.2 0h-76c-25.8 0-50.1 12.5-65.1 33.5L63.9 87C52.3 103.2 46 122.8 46 142.8V164c0 23.2 8.4 45.6 23.6 63.1l56 64.2 0 0 83.3 95.6 0 0 91.8 105.3c10 11.5 26.8 14.3 40 6.8l54.5-31.1c17.8-10.2 21.6-34.3 7.7-49.4l-87.7-95.7zM187.2 410.6l-83.3-95.6L9.1 418.5C-4.8 433.6-1 457.7 16.8 467.9l55.1 31.5c13 7.4 29.3 4.9 39.4-6.1l75.9-82.6z"]
+  icon: [448, 512, [127895], "f4d6", "M333.2 322.8l0 0-133.9-146 0 0L146 118.6c7.8-5.1 37-22.6 78-22.6s70.2 17.4 78 22.6L245.7 180l85.6 93.4 27.4-29.8c16.3-17.7 25.3-40.9 25.3-65V149.1c0-19-5.6-37.5-16.1-53.3L327.8 35.6C312.9 13.4 287.9 0 261.2 0h-76c-25.8 0-50.1 12.5-65.1 33.5L81.9 87C70.3 103.2 64 122.8 64 142.8V164c0 23.2 8.4 45.6 23.6 63.1l56 64.2 0 0 83.3 95.6 0 0 91.8 105.3c10 11.5 26.8 14.3 40 6.8l54.5-31.1c17.8-10.2 21.6-34.3 7.7-49.4l-87.7-95.7zM205.2 410.6l-83.3-95.6L27.1 418.5c-13.9 15.1-10.1 39.2 7.7 49.4l55.1 31.5c13 7.4 29.3 4.9 39.4-6.1l75.9-82.6z"]
 };
 var faLungs = {
   prefix: 'fas',
@@ -15830,7 +17011,7 @@ var faLungs = {
 var faArrowUp91 = {
   prefix: 'fas',
   iconName: 'arrow-up-9-1',
-  icon: [512, 512, ["sort-numeric-up-alt"], "f887", "M120 32c9 0 17.5 3.8 23.6 10.4l88 96c11.9 13 11.1 33.3-2 45.2s-33.3 11.1-45.2-2L152 146.3V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V146.3L55.6 181.6c-11.9 13-32.2 13.9-45.2 2s-13.9-32.2-2-45.2l88-96C102.5 35.8 111 32 120 32zM410.7 294c8.3 6 13.3 15.7 13.3 26v96h16c17.7 0 32 14.3 32 32s-14.3 32-32 32H392 344c-17.7 0-32-14.3-32-32s14.3-32 32-32h16V364.4l-5.9 2c-16.8 5.6-34.9-3.5-40.5-20.2s3.5-34.9 20.2-40.5l48-16c9.8-3.3 20.5-1.6 28.8 4.4zm-5-145.1A32 32 0 1 0 378.3 91a32 32 0 1 0 27.4 57.9zm-40.7 54.9C329.6 192.4 304 159.2 304 120c0-48.6 39.4-88 88-88s88 39.4 88 88c0 23.5-7.5 46.3-21.5 65.2L409.7 251c-10.5 14.2-30.6 17.2-44.8 6.7s-17.2-30.6-6.7-44.8l6.8-9.2z"]
+  icon: [576, 512, ["sort-numeric-up-alt"], "f887", "M160 32c9 0 17.5 3.8 23.6 10.4l88 96c11.9 13 11.1 33.3-2 45.2s-33.3 11.1-45.2-2L192 146.3V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V146.3L95.6 181.6c-11.9 13-32.2 13.9-45.2 2s-13.9-32.2-2-45.2l88-96C142.5 35.8 151 32 160 32zM450.7 294c8.3 6 13.3 15.7 13.3 26v96h16c17.7 0 32 14.3 32 32s-14.3 32-32 32H432 384c-17.7 0-32-14.3-32-32s14.3-32 32-32h16V364.4l-5.9 2c-16.8 5.6-34.9-3.5-40.5-20.2s3.5-34.9 20.2-40.5l48-16c9.8-3.3 20.5-1.6 28.8 4.4zm-5-145.1A32 32 0 1 0 418.3 91a32 32 0 1 0 27.4 57.9zm-40.7 54.9C369.6 192.4 344 159.2 344 120c0-48.6 39.4-88 88-88s88 39.4 88 88c0 23.5-7.5 46.3-21.5 65.2L449.7 251c-10.5 14.2-30.6 17.2-44.8 6.7s-17.2-30.6-6.7-44.8l6.8-9.2z"]
 };
 var faSortNumericUpAlt = faArrowUp91;
 var faLitecoinSign = {
@@ -15841,7 +17022,7 @@ var faLitecoinSign = {
 var faBorderNone = {
   prefix: 'fas',
   iconName: 'border-none',
-  icon: [448, 512, [], "f850", "M32 416a32 32 0 1 0 0 64 32 32 0 1 0 0-64zm96 64a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm0-384a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm0 128a32 32 0 1 0 0 64 32 32 0 1 0 0-64zM320 480a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm0-448a32 32 0 1 0 0 64 32 32 0 1 0 0-64zm0 256a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM224 416a32 32 0 1 0 0 64 32 32 0 1 0 0-64zm0-320a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm0 128a32 32 0 1 0 0 64 32 32 0 1 0 0-64zM416 480a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm0-384a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM32 32a32 32 0 1 0 0 64 32 32 0 1 0 0-64zM416 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM32 224a32 32 0 1 0 0 64 32 32 0 1 0 0-64zM224 384a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm192-64a32 32 0 1 0 0 64 32 32 0 1 0 0-64zM32 384a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM416 128a32 32 0 1 0 0 64 32 32 0 1 0 0-64zM32 192a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm192-64a32 32 0 1 0 0 64 32 32 0 1 0 0-64z"]
+  icon: [448, 512, [], "f850", "M32 480a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm96-64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0-384a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM320 416a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0-320a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm0 128a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM224 480a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm0-448a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM416 416a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0-384a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM32 96a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM416 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM32 288a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm192 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm192 64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM32 320a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM416 192a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM32 128a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm192 64a32 32 0 1 1 0-64 32 32 0 1 1 0 64z"]
 };
 var faCircleNodes = {
   prefix: 'fas',
@@ -15851,7 +17032,7 @@ var faCircleNodes = {
 var faParachuteBox = {
   prefix: 'fas',
   iconName: 'parachute-box',
-  icon: [512, 512, [], "f4cd", "M380.5 192c.3-5.3 .5-10.6 .5-16c0-51-15.9-96-40.2-127.6C316.5 16.9 285.2 0 253 0s-63.5 16.9-87.8 48.4C140.9 80 125 125 125 176c0 5.4 .2 10.7 .5 16H237V320H205c-7 0-13.7 1.5-19.7 4.2L65.2 192H93.5c-.3-5.3-.5-10.6-.5-16c0-64 22.2-121.2 57.1-159.3C59 49.3 15.6 122.6 1.2 173.6C-1.5 183.1 6 192 15.9 192h6L162.2 346.3c-3.3 6.5-5.2 13.9-5.2 21.7v96c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48V368c0-7.8-1.9-15.2-5.2-21.7L484.1 192h6c9.9 0 17.4-8.9 14.7-18.4C490.4 122.6 447 49.3 355.9 16.7C390.8 54.8 413 112.1 413 176c0 5.4-.2 10.7-.5 16h28.3L320.7 324.2c-6-2.7-12.7-4.2-19.7-4.2H269V192H380.5z"]
+  icon: [512, 512, [], "f4cd", "M383.5 192c.3-5.3 .5-10.6 .5-16c0-51-15.9-96-40.2-127.6C319.5 16.9 288.2 0 256 0s-63.5 16.9-87.8 48.4C143.9 80 128 125 128 176c0 5.4 .2 10.7 .5 16H240V320H208c-7 0-13.7 1.5-19.7 4.2L68.2 192H96.5c-.3-5.3-.5-10.6-.5-16c0-64 22.2-121.2 57.1-159.3C62 49.3 18.6 122.6 4.2 173.6C1.5 183.1 9 192 18.9 192h6L165.2 346.3c-3.3 6.5-5.2 13.9-5.2 21.7v96c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48V368c0-7.8-1.9-15.2-5.2-21.7L487.1 192h6c9.9 0 17.4-8.9 14.7-18.4C493.4 122.6 450 49.3 358.9 16.7C393.8 54.8 416 112.1 416 176c0 5.4-.2 10.7-.5 16h28.3L323.7 324.2c-6-2.7-12.7-4.2-19.7-4.2H272V192H383.5z"]
 };
 var faIndent = {
   prefix: 'fas',
@@ -15872,7 +17053,7 @@ var faHourglassEmpty = faHourglass;
 var faMountain = {
   prefix: 'fas',
   iconName: 'mountain',
-  icon: [512, 512, [127956], "f6fc", "M256 32c12.5 0 24.1 6.4 30.7 17L503.4 394.4c5.6 8.9 8.6 19.2 8.6 29.7c0 30.9-25 55.9-55.9 55.9H55.9C25 480 0 455 0 424.1c0-10.5 3-20.8 8.6-29.7L225.2 49c6.6-10.6 18.3-17 30.8-17zm65 192L256 120.4 176.9 246.5l18.3 24.4c6.4 8.5 19.2 8.5 25.6 0l25.6-34.1c6-8.1 15.5-12.8 25.6-12.8h49z"]
+  icon: [512, 512, [127956], "f6fc", "M256 32c12.5 0 24.1 6.4 30.8 17L503.4 394.4c5.6 8.9 8.6 19.2 8.6 29.7c0 30.9-25 55.9-55.9 55.9H55.9C25 480 0 455 0 424.1c0-10.5 3-20.8 8.6-29.7L225.2 49c6.6-10.6 18.3-17 30.8-17zm65 192L256 120.4 176.9 246.5l18.3 24.4c6.4 8.5 19.2 8.5 25.6 0l25.6-34.1c6-8.1 15.5-12.8 25.6-12.8h49z"]
 };
 var faUserDoctor = {
   prefix: 'fas',
@@ -15910,7 +17091,7 @@ var faMeteor = {
 var faCarOn = {
   prefix: 'fas',
   iconName: 'car-on',
-  icon: [448, 512, [], "e4dd", "M248 24c0-13.3-10.7-24-24-24s-24 10.7-24 24v80c0 13.3 10.7 24 24 24s24-10.7 24-24V24zM153.8 224H294.2c6.8 0 12.8 4.3 15.1 10.6L328.3 288H119.7l19.1-53.4c2.3-6.4 8.3-10.6 15.1-10.6zM78.5 213.1L50.2 292.4C30.1 300.9 16 320.8 16 344v40 64 32c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V448H352v32c0 17.7 14.3 32 32 32h16c17.7 0 32-14.3 32-32V448 384 344c0-23.2-14.1-43.1-34.2-51.6l-28.3-79.3C358.1 181.3 328 160 294.2 160H153.8c-33.8 0-64 21.3-75.3 53.1zM96 344a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm232 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM7 39C-2.3 48.4-2.3 63.6 7 73l48 48c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9L41 39C31.6 29.7 16.4 29.7 7 39zm400 0L359 87c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l48-48c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0z"]
+  icon: [512, 512, [], "e4dd", "M280 24c0-13.3-10.7-24-24-24s-24 10.7-24 24v80c0 13.3 10.7 24 24 24s24-10.7 24-24V24zM185.8 224H326.2c6.8 0 12.8 4.3 15.1 10.6L360.3 288H151.7l19.1-53.4c2.3-6.4 8.3-10.6 15.1-10.6zm-75.3-10.9L82.2 292.4C62.1 300.9 48 320.8 48 344v40 64 32c0 17.7 14.3 32 32 32H96c17.7 0 32-14.3 32-32V448H384v32c0 17.7 14.3 32 32 32h16c17.7 0 32-14.3 32-32V448 384 344c0-23.2-14.1-43.1-34.2-51.6l-28.3-79.3C390.1 181.3 360 160 326.2 160H185.8c-33.8 0-64 21.3-75.3 53.1zM128 344a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm232 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM39 39c-9.4 9.4-9.4 24.6 0 33.9l48 48c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9L73 39c-9.4-9.4-24.6-9.4-33.9 0zm400 0L391 87c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l48-48c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0z"]
 };
 var faSleigh = {
   prefix: 'fas',
@@ -15920,7 +17101,7 @@ var faSleigh = {
 var faArrowDown19 = {
   prefix: 'fas',
   iconName: 'arrow-down-1-9',
-  icon: [512, 512, ["sort-numeric-asc", "sort-numeric-down"], "f162", "M410.7 38c-8.3-6-19.1-7.7-28.8-4.4l-48 16c-16.8 5.6-25.8 23.7-20.2 40.5s23.7 25.8 40.5 20.2l5.9-2V160H344c-17.7 0-32 14.3-32 32s14.3 32 32 32h48 48c17.7 0 32-14.3 32-32s-14.3-32-32-32H424V64c0-10.3-4.9-19.9-13.3-26zM120 480c9 0 17.5-3.8 23.6-10.4l88-96c11.9-13 11.1-33.3-2-45.2s-33.3-11.1-45.2 2L152 365.7V64c0-17.7-14.3-32-32-32s-32 14.3-32 32V365.7L55.6 330.4c-11.9-13-32.2-13.9-45.2-2s-13.9 32.2-2 45.2l88 96C102.5 476.2 111 480 120 480zM378.3 307a32 32 0 1 1 27.4 57.9A32 32 0 1 1 378.3 307zM365.1 419.8l-6.8 9.2c-10.5 14.2-7.5 34.2 6.7 44.8s34.2 7.5 44.8-6.7l48.8-65.8c14-18.9 21.5-41.7 21.5-65.2c0-48.6-39.4-88-88-88s-88 39.4-88 88c0 39.2 25.6 72.4 61.1 83.8z"]
+  icon: [576, 512, ["sort-numeric-asc", "sort-numeric-down"], "f162", "M450.7 38c-8.3-6-19.1-7.7-28.8-4.4l-48 16c-16.8 5.6-25.8 23.7-20.2 40.5s23.7 25.8 40.5 20.2l5.9-2V160H384c-17.7 0-32 14.3-32 32s14.3 32 32 32h48 48c17.7 0 32-14.3 32-32s-14.3-32-32-32H464V64c0-10.3-4.9-19.9-13.3-26zM160 480c9 0 17.5-3.8 23.6-10.4l88-96c11.9-13 11.1-33.3-2-45.2s-33.3-11.1-45.2 2L192 365.7V64c0-17.7-14.3-32-32-32s-32 14.3-32 32V365.7L95.6 330.4c-11.9-13-32.2-13.9-45.2-2s-13.9 32.2-2 45.2l88 96C142.5 476.2 151 480 160 480zM418.3 307a32 32 0 1 1 27.4 57.9A32 32 0 1 1 418.3 307zM405.1 419.8l-6.8 9.2c-10.5 14.2-7.5 34.2 6.7 44.8s34.2 7.5 44.8-6.7l48.8-65.8c14-18.9 21.5-41.7 21.5-65.2c0-48.6-39.4-88-88-88s-88 39.4-88 88c0 39.2 25.6 72.4 61.1 83.8z"]
 };
 var faSortNumericAsc = faArrowDown19;
 var faSortNumericDown = faArrowDown19;
@@ -15943,7 +17124,7 @@ var faCalendarCheck = {
 var faBraille = {
   prefix: 'fas',
   iconName: 'braille',
-  icon: [640, 512, [], "f2a1", "M128 96c0 35.3-28.7 64-64 64S0 131.3 0 96S28.7 32 64 32s64 28.7 64 64zm96 176c8.8 0 16-7.2 16-16s-7.2-16-16-16s-16 7.2-16 16s7.2 16 16 16zm0 48c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64zM80 416c0-8.8-7.2-16-16-16s-16 7.2-16 16s7.2 16 16 16s16-7.2 16-16zm48 0c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zm112 0c0-8.8-7.2-16-16-16s-16 7.2-16 16s7.2 16 16 16s16-7.2 16-16zm48 0c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zM64 320c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64zM224 160c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64zM480 96c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zm112 0c0-8.8-7.2-16-16-16s-16 7.2-16 16s7.2 16 16 16s16-7.2 16-16zm48 0c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zM576 272c8.8 0 16-7.2 16-16s-7.2-16-16-16s-16 7.2-16 16s7.2 16 16 16zm0 48c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64zm16 96c0-8.8-7.2-16-16-16s-16 7.2-16 16s7.2 16 16 16s16-7.2 16-16zm48 0c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zM416 272c8.8 0 16-7.2 16-16s-7.2-16-16-16s-16 7.2-16 16s7.2 16 16 16zm0 48c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64zm16 96c0-8.8-7.2-16-16-16s-16 7.2-16 16s7.2 16 16 16s16-7.2 16-16zm48 0c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64z"]
+  icon: [640, 512, [], "f2a1", "M0 96a64 64 0 1 1 128 0A64 64 0 1 1 0 96zM224 272a16 16 0 1 0 0-32 16 16 0 1 0 0 32zm0-80a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM80 416a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM0 416a64 64 0 1 1 128 0A64 64 0 1 1 0 416zm240 0a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm-80 0a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM64 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM224 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM352 96a64 64 0 1 1 128 0A64 64 0 1 1 352 96zm240 0a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm-80 0a64 64 0 1 1 128 0A64 64 0 1 1 512 96zm64 176a16 16 0 1 0 0-32 16 16 0 1 0 0 32zm0-80a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm16 224a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm-80 0a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM416 272a16 16 0 1 0 0-32 16 16 0 1 0 0 32zm0-80a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm16 224a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm-80 0a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z"]
 };
 var faPrescriptionBottleMedical = {
   prefix: 'fas',
@@ -15969,12 +17150,12 @@ var faCrosshairs = {
 var faPersonCane = {
   prefix: 'fas',
   iconName: 'person-cane',
-  icon: [384, 512, [], "e53c", "M240 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm-8 187.3l47.4 57.1c11.3 13.6 31.5 15.5 45.1 4.2s15.5-31.5 4.2-45.1l-73.7-88.9c-18.2-22-45.3-34.7-73.9-34.7H145.1c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9L88 256.9V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V235.3zM320 376c0-4.4 3.6-8 8-8s8 3.6 8 8V488c0 13.3 10.7 24 24 24s24-10.7 24-24V376c0-30.9-25.1-56-56-56s-56 25.1-56 56v8c0 13.3 10.7 24 24 24s24-10.7 24-24v-8z"]
+  icon: [448, 512, [], "e53c", "M272 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm-8 187.3l47.4 57.1c11.3 13.6 31.5 15.5 45.1 4.2s15.5-31.5 4.2-45.1l-73.7-88.9c-18.2-22-45.3-34.7-73.9-34.7H177.1c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9L120 256.9V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V235.3zM352 376c0-4.4 3.6-8 8-8s8 3.6 8 8V488c0 13.3 10.7 24 24 24s24-10.7 24-24V376c0-30.9-25.1-56-56-56s-56 25.1-56 56v8c0 13.3 10.7 24 24 24s24-10.7 24-24v-8z"]
 };
 var faTent = {
   prefix: 'fas',
   iconName: 'tent',
-  icon: [576, 512, [], "e57d", "M269.4 6C280.5-2 295.5-2 306.6 6l224 160c7.4 5.3 12.2 13.5 13.2 22.5l32 288c1 9-1.9 18.1-8 24.9s-14.7 10.7-23.8 10.7H416L288 288V512H32c-9.1 0-17.8-3.9-23.8-10.7s-9-15.8-8-24.9l32-288c1-9 5.8-17.2 13.2-22.5L269.4 6z"]
+  icon: [576, 512, [], "e57d", "M269.4 6C280.5-2 295.5-2 306.6 6l224 160c7.4 5.3 12.2 13.5 13.2 22.5l32 288c1 9-1.9 18.1-8 24.9s-14.7 10.7-23.8 10.7H464 435.8c-12.1 0-23.2-6.8-28.6-17.7L306.7 293.5c-1.7-3.4-5.1-5.5-8.8-5.5c-5.5 0-9.9 4.4-9.9 9.9V480c0 17.7-14.3 32-32 32H240 32c-9.1 0-17.8-3.9-23.8-10.7s-9-15.8-8-24.9l32-288c1-9 5.8-17.2 13.2-22.5L269.4 6z"]
 };
 var faVestPatches = {
   prefix: 'fas',
@@ -15984,12 +17165,12 @@ var faVestPatches = {
 var faCheckDouble = {
   prefix: 'fas',
   iconName: 'check-double',
-  icon: [512, 512, [], "f560", "M374.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 178.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l80 80c12.5 12.5 32.8 12.5 45.3 0l160-160zm96 128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 402.7 86.6 297.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l256-256z"]
+  icon: [448, 512, [], "f560", "M342.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 178.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l80 80c12.5 12.5 32.8 12.5 45.3 0l160-160zm96 128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 402.7 54.6 297.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l256-256z"]
 };
 var faArrowDownAZ = {
   prefix: 'fas',
   iconName: 'arrow-down-a-z',
-  icon: [512, 512, ["sort-alpha-asc", "sort-alpha-down"], "f15d", "M143.6 469.6C137.5 476.2 129 480 120 480s-17.5-3.8-23.6-10.4l-88-96c-11.9-13-11.1-33.3 2-45.2s33.3-11.1 45.2 2L88 365.7V64c0-17.7 14.3-32 32-32s32 14.3 32 32V365.7l32.4-35.4c11.9-13 32.2-13.9 45.2-2s13.9 32.2 2 45.2l-88 96zM280 320c0-17.7 14.3-32 32-32H440c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9L389.3 416H440c17.7 0 32 14.3 32 32s-14.3 32-32 32H312c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9L362.7 352H312c-17.7 0-32-14.3-32-32zM376 32c12.1 0 23.2 6.8 28.6 17.7l64 128 16 32c7.9 15.8 1.5 35-14.3 42.9s-35 1.5-42.9-14.3L420.2 224H331.8l-7.2 14.3c-7.9 15.8-27.1 22.2-42.9 14.3s-22.2-27.1-14.3-42.9l16-32 64-128C352.8 38.8 363.9 32 376 32zM355.8 176h40.4L376 135.6 355.8 176z"]
+  icon: [576, 512, ["sort-alpha-asc", "sort-alpha-down"], "f15d", "M183.6 469.6C177.5 476.2 169 480 160 480s-17.5-3.8-23.6-10.4l-88-96c-11.9-13-11.1-33.3 2-45.2s33.3-11.1 45.2 2L128 365.7V64c0-17.7 14.3-32 32-32s32 14.3 32 32V365.7l32.4-35.4c11.9-13 32.2-13.9 45.2-2s13.9 32.2 2 45.2l-88 96zM320 320c0-17.7 14.3-32 32-32H480c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9L429.3 416H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H352c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9L402.7 352H352c-17.7 0-32-14.3-32-32zM416 32c12.1 0 23.2 6.8 28.6 17.7l64 128 16 32c7.9 15.8 1.5 35-14.3 42.9s-35 1.5-42.9-14.3L460.2 224H371.8l-7.2 14.3c-7.9 15.8-27.1 22.2-42.9 14.3s-22.2-27.1-14.3-42.9l16-32 64-128C392.8 38.8 403.9 32 416 32zM395.8 176h40.4L416 135.6 395.8 176z"]
 };
 var faSortAlphaAsc = faArrowDownAZ;
 var faSortAlphaDown = faArrowDownAZ;
@@ -16001,12 +17182,12 @@ var faMoneyBillWheat = {
 var faCookie = {
   prefix: 'fas',
   iconName: 'cookie',
-  icon: [512, 512, [127850], "f563", "M231.2 17c-22.1-3.1-44.6 .9-64.4 11.4l-74 39.5C73.1 78.4 57.2 94.9 47.4 115L10.7 190.6c-9.8 20.1-13 42.9-9.1 64.9l14.5 82.8c3.9 22.1 14.6 42.3 30.7 57.9l60.3 58.4c16.1 15.6 36.6 25.6 58.7 28.7l83 11.7c22.1 3.1 44.6-.9 64.4-11.4l74-39.5c19.7-10.5 35.6-27 45.4-47.2l36.7-75.5c9.8-20.1 13-42.9 9.1-64.9l-14.6-82.8c-3.9-22.1-14.6-42.3-30.7-57.9L372.9 57.5c-16.1-15.6-36.6-25.6-58.7-28.7L231.2 17zM192 144a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM128 336a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm224-64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
+  icon: [512, 512, [127850], "f563", "M247.2 17c-22.1-3.1-44.6 .9-64.4 11.4l-74 39.5C89.1 78.4 73.2 94.9 63.4 115L26.7 190.6c-9.8 20.1-13 42.9-9.1 64.9l14.5 82.8c3.9 22.1 14.6 42.3 30.7 57.9l60.3 58.4c16.1 15.6 36.6 25.6 58.7 28.7l83 11.7c22.1 3.1 44.6-.9 64.4-11.4l74-39.5c19.7-10.5 35.6-27 45.4-47.2l36.7-75.5c9.8-20.1 13-42.9 9.1-64.9l-14.6-82.8c-3.9-22.1-14.6-42.3-30.7-57.9L388.9 57.5c-16.1-15.6-36.6-25.6-58.7-28.7L247.2 17zM208 144a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM144 336a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm224-64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
 };
 var faArrowRotateLeft = {
   prefix: 'fas',
   iconName: 'arrow-rotate-left',
-  icon: [512, 512, [8634, "arrow-left-rotate", "arrow-rotate-back", "arrow-rotate-backward", "undo"], "f0e2", "M109.7 160H160c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V64C0 46.3 14.3 32 32 32s32 14.3 32 32v51.2L81.6 97.6c87.5-87.5 229.3-87.5 316.8 0s87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3s-163.8-62.5-226.3 0L109.7 160z"]
+  icon: [512, 512, [8634, "arrow-left-rotate", "arrow-rotate-back", "arrow-rotate-backward", "undo"], "f0e2", "M125.7 160H176c17.7 0 32 14.3 32 32s-14.3 32-32 32H48c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32s32 14.3 32 32v51.2L97.6 97.6c87.5-87.5 229.3-87.5 316.8 0s87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3s-163.8-62.5-226.3 0L125.7 160z"]
 };
 var faArrowLeftRotate = faArrowRotateLeft;
 var faArrowRotateBack = faArrowRotateLeft;
@@ -16021,13 +17202,13 @@ var faHdd = faHardDrive;
 var faFaceGrinSquintTears = {
   prefix: 'fas',
   iconName: 'face-grin-squint-tears',
-  icon: [512, 512, [129315, "grin-squint-tears"], "f586", "M426.8 14.2C446-5 477.5-4.6 497.1 14.9s20 51 .7 70.3c-6.8 6.8-21.4 12.4-37.4 16.7c-16.3 4.4-34.1 7.5-46.3 9.3c-1.6 .2-3.1 .5-4.6 .6c-4.9 .8-9.1-2.8-9.5-7.4c-.1-.7 0-1.4 .1-2.1c1.6-11.2 4.6-29.6 9-47c.3-1.3 .7-2.6 1-3.9c4.3-15.9 9.8-30.5 16.7-37.4zm-44.7 19c-1.5 4.8-2.9 9.6-4.1 14.3c-4.8 18.9-8 38.5-9.7 50.3c-4 26.8 18.9 49.7 45.7 45.8c11.9-1.6 31.5-4.8 50.4-9.7c4.7-1.2 9.5-2.5 14.3-4.1C534.2 227.5 520.2 353.8 437 437c-83.2 83.2-209.5 97.2-307.2 41.8c1.5-4.8 2.8-9.6 4-14.3c4.8-18.9 8-38.5 9.7-50.3c4-26.8-18.9-49.7-45.7-45.8c-11.9 1.6-31.5 4.8-50.4 9.7c-4.7 1.2-9.5 2.5-14.3 4.1C-22.2 284.5-8.2 158.2 75 75C158.2-8.3 284.5-22.2 382.2 33.2zM51.5 410.1c18.5-5 38.8-8.3 50.9-10c.4-.1 .7-.1 1-.1c5.1-.2 9.2 4.3 8.4 9.6c-1.7 12.1-5 32.4-10 50.9C97.6 476.4 92 491 85.2 497.8C66 517 34.5 516.6 14.9 497.1s-20-51-.7-70.3c6.8-6.8 21.4-12.4 37.4-16.7zM416.9 209c-4.7-11.9-20.8-11-26.8 .3c-19 35.5-45 70.8-77.5 103.3S244.8 371.1 209.3 390c-11.3 6-12.2 22.1-.3 26.8c57.6 22.9 125.8 11 172.3-35.5s58.4-114.8 35.5-172.3zM87.1 285.1c2 2 4.6 3.2 7.3 3.4l56.1 5.1 5.1 56.1c.3 2.8 1.5 5.4 3.4 7.3c6.3 6.3 17.2 3.6 19.8-4.9l29.7-97.4c3.5-11.6-7.3-22.5-19-19L92 265.3c-8.6 2.6-11.3 13.4-4.9 19.8zM265.3 92l-29.7 97.4c-3.5 11.6 7.3 22.5 19 19l97.4-29.7c8.6-2.6 11.3-13.4 4.9-19.8c-2-2-4.6-3.2-7.3-3.4l-56.1-5.1-5.1-56.1c-.2-2.8-1.5-5.4-3.4-7.3c-6.3-6.3-17.2-3.6-19.8 4.9z"]
+  icon: [512, 512, [129315, "grin-squint-tears"], "f586", "M426.8 14.2C446-5 477.5-4.6 497.1 14.9s20 51 .7 70.3c-6.8 6.8-21.4 12.4-37.4 16.7c-16.3 4.4-34.1 7.5-46.3 9.3c-1.6 .2-3.1 .5-4.6 .6c-5.6 .9-10.3-3.9-9.5-9.5c1.6-11.2 4.6-29.6 9-47c.3-1.3 .7-2.6 1-3.9c4.3-15.9 9.8-30.5 16.7-37.4zm-44.7 19c-1.5 4.8-2.9 9.6-4.1 14.3c-4.8 18.9-8 38.5-9.7 50.3c-4 26.8 18.9 49.7 45.7 45.8c11.9-1.6 31.5-4.8 50.4-9.7c4.7-1.2 9.5-2.5 14.3-4.1C534.2 227.5 520.2 353.8 437 437c-83.2 83.2-209.5 97.2-307.2 41.8c1.5-4.8 2.8-9.6 4-14.3c4.8-18.9 8-38.5 9.7-50.3c4-26.8-18.9-49.7-45.7-45.8c-11.9 1.6-31.5 4.8-50.4 9.7c-4.7 1.2-9.5 2.5-14.3 4.1C-22.2 284.5-8.2 158.2 75 75C158.2-8.3 284.5-22.2 382.2 33.2zM51.5 410.1c18.5-5 38.8-8.3 50.9-10c5.6-.9 10.3 3.9 9.5 9.5c-1.7 12.1-5 32.4-10 50.9C97.6 476.4 92 491 85.2 497.8C66 517 34.5 516.6 14.9 497.1s-20-51-.7-70.3c6.8-6.8 21.4-12.4 37.4-16.7zM416.4 202.3c-4.8-11.9-20.9-10.9-26.9 .4c-19.4 36.7-46.3 73.2-79.8 106.7s-70 60.3-106.7 79.8c-11.3 6-12.3 22.1-.4 26.9c59.4 24.1 129.9 12.2 177.9-35.8s59.9-118.5 35.8-177.9zM87.1 285.1c2 2 4.6 3.2 7.3 3.4l56.1 5.1 5.1 56.1c.3 2.8 1.5 5.4 3.4 7.3c6.3 6.3 17.2 3.6 19.8-4.9l29.7-97.4c3.5-11.6-7.3-22.5-19-19L92 265.3c-8.6 2.6-11.3 13.4-4.9 19.8zM265.3 92l-29.7 97.4c-3.5 11.6 7.3 22.5 19 19l97.4-29.7c8.6-2.6 11.3-13.4 4.9-19.8c-2-2-4.6-3.2-7.3-3.4l-56.1-5.1-5.1-56.1c-.3-2.8-1.5-5.4-3.4-7.3c-6.3-6.3-17.2-3.6-19.8 4.9z"]
 };
 var faGrinSquintTears = faFaceGrinSquintTears;
 var faDumbbell = {
   prefix: 'fas',
   iconName: 'dumbbell',
-  icon: [640, 512, [], "f44b", "M112 96c0-17.7 14.3-32 32-32h16c17.7 0 32 14.3 32 32V224v64V416c0 17.7-14.3 32-32 32H144c-17.7 0-32-14.3-32-32V384H64c-17.7 0-32-14.3-32-32V288c-17.7 0-32-14.3-32-32s14.3-32 32-32V160c0-17.7 14.3-32 32-32h48V96zm416 0v32h48c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32v64c0 17.7-14.3 32-32 32H528v32c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32V288 224 96c0-17.7 14.3-32 32-32h16c17.7 0 32 14.3 32 32zM416 224v64H224V224H416z"]
+  icon: [640, 512, [], "f44b", "M96 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V224v64V448c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384H64c-17.7 0-32-14.3-32-32V288c-17.7 0-32-14.3-32-32s14.3-32 32-32V160c0-17.7 14.3-32 32-32H96V64zm448 0v64h32c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32v64c0 17.7-14.3 32-32 32H544v64c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32V288 224 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32zM416 224v64H224V224H416z"]
 };
 var faRectangleList = {
   prefix: 'fas',
@@ -16059,7 +17240,7 @@ var faCalendarPlus = {
 var faPlaneArrival = {
   prefix: 'fas',
   iconName: 'plane-arrival',
-  icon: [640, 512, [128748], "f5af", "M.3 166.9L0 68C0 57.7 9.5 50.1 19.5 52.3l35.6 7.9c10.6 2.3 19.2 9.9 23 20L96 128l127.3 37.6L181.8 20.4C178.9 10.2 186.6 0 197.2 0h40.1c11.6 0 22.2 6.2 27.9 16.3l109 193.8 107.2 31.7c15.9 4.7 30.8 12.5 43.7 22.8l34.4 27.6c24 19.2 18.1 57.3-10.7 68.2c-41.2 15.6-86.2 18.1-128.8 7L121.7 289.8c-11.1-2.9-21.2-8.7-29.3-16.9L9.5 189.4c-5.9-6-9.3-14-9.3-22.5zM32 448H608c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32zm96-80a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm128-16a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
+  icon: [640, 512, [128748], "f5af", "M.3 166.9L0 68C0 57.7 9.5 50.1 19.5 52.3l35.6 7.9c10.6 2.3 19.2 9.9 23 20L96 128l127.3 37.6L181.8 20.4C178.9 10.2 186.6 0 197.2 0h40.1c11.6 0 22.2 6.2 27.9 16.3l109 193.8 107.2 31.7c15.9 4.7 30.8 12.5 43.7 22.8l34.4 27.6c24 19.2 18.1 57.3-10.7 68.2c-41.2 15.6-86.2 18.1-128.8 7L121.7 289.8c-11.1-2.9-21.2-8.7-29.3-16.9L9.5 189.4c-5.9-6-9.3-14.1-9.3-22.5zM32 448H608c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32zm96-80a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm128-16a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
 };
 var faCircleLeft = {
   prefix: 'fas',
@@ -16111,12 +17292,12 @@ var faDna = {
 var faVirusSlash = {
   prefix: 'fas',
   iconName: 'virus-slash',
-  icon: [640, 512, [], "e075", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-154.3-121c-2-30.1 20.8-60.1 56-60.1H544c17.7 0 32-14.3 32-32s-14.3-32-32-32H532.5c-49.9 0-74.9-60.3-39.6-95.6l8.2-8.2c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-8.2 8.2C412.3 118.4 352 93.4 352 43.5V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V43.5c0 49.9-60.3 74.9-95.6 39.6L184.2 75c-12.5-12.5-32.8-12.5-45.3 0c-1.6 1.6-3.1 3.4-4.3 5.3L38.8 5.1zm225.8 177c6.9-3.9 14.9-6.1 23.4-6.1c26.5 0 48 21.5 48 48c0 4.4-.6 8.7-1.7 12.7l-69.7-54.6zM107.5 224H96c-17.7 0-32 14.3-32 32s14.3 32 32 32h11.5c49.9 0 74.9 60.3 39.6 95.6l-8.2 8.2c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l8.2-8.2c35.3-35.3 95.6-10.3 95.6 39.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V468.5c0-31.2 23.6-52.7 50-55.7L144.7 210c-9.5 8.5-22.2 14-37.2 14z"]
+  icon: [640, 512, [], "e075", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-154.3-121c-2-30.1 20.8-60.1 56-60.1H544c17.7 0 32-14.3 32-32s-14.3-32-32-32H532.5c-49.9 0-74.9-60.3-39.6-95.6l8.2-8.2c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-8.2 8.2C412.3 118.4 352 93.4 352 43.5V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V43.5c0 49.9-60.3 74.9-95.6 39.6L184.2 75c-12.5-12.5-32.8-12.5-45.3 0c-1.6 1.6-3.1 3.4-4.3 5.3L38.8 5.1zm225.8 177c6.9-3.9 14.9-6.1 23.4-6.1c26.5 0 48 21.5 48 48c0 4.4-.6 8.7-1.7 12.7l-69.7-54.6zM402 412.7L144.7 210c-9.5 8.5-22.2 14-37.2 14H96c-17.7 0-32 14.3-32 32s14.3 32 32 32h11.5c49.9 0 74.9 60.3 39.6 95.6l-8.2 8.2c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l8.2-8.2c35.3-35.3 95.6-10.3 95.6 39.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V468.5c0-31.2 23.6-52.7 50-55.7z"]
 };
 var faMinus = {
   prefix: 'fas',
   iconName: 'minus',
-  icon: [448, 512, [8211, 8722, 10134, "subtract"], "f068", "M416 256c0 17.7-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"]
+  icon: [448, 512, [8211, 8722, 10134, "subtract"], "f068", "M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"]
 };
 var faSubtract = faMinus;
 var faChess = {
@@ -16161,7 +17342,7 @@ var faHandsAmericanSignLanguageInterpreting = faHandsAslInterpreting;
 var faGear = {
   prefix: 'fas',
   iconName: 'gear',
-  icon: [512, 512, [9881, "cog"], "f013", "M481.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-30.9 28.1c-7.7 7.1-11.4 17.5-10.9 27.9c.1 2.9 .2 5.8 .2 8.8s-.1 5.9-.2 8.8c-.5 10.5 3.1 20.9 10.9 27.9l30.9 28.1c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-39.7-12.6c-10-3.2-20.8-1.1-29.7 4.6c-4.9 3.1-9.9 6.1-15.1 8.7c-9.3 4.8-16.5 13.2-18.8 23.4l-8.9 40.7c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-8.9-40.7c-2.2-10.2-9.5-18.6-18.8-23.4c-5.2-2.7-10.2-5.6-15.1-8.7c-8.8-5.7-19.7-7.8-29.7-4.6L69.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l30.9-28.1c7.7-7.1 11.4-17.5 10.9-27.9c-.1-2.9-.2-5.8-.2-8.8s.1-5.9 .2-8.8c.5-10.5-3.1-20.9-10.9-27.9L8.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l39.7 12.6c10 3.2 20.8 1.1 29.7-4.6c4.9-3.1 9.9-6.1 15.1-8.7c9.3-4.8 16.5-13.2 18.8-23.4l8.9-40.7c2-9.1 9-16.3 18.2-17.8C213.3 1.2 227.5 0 242 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l8.9 40.7c2.2 10.2 9.4 18.6 18.8 23.4c5.2 2.7 10.2 5.6 15.1 8.7c8.8 5.7 19.7 7.7 29.7 4.6l39.7-12.6c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM242 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"]
+  icon: [512, 512, [9881, "cog"], "f013", "M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"]
 };
 var faCog = faGear;
 var faDropletSlash = {
@@ -16183,12 +17364,12 @@ var faMosquito = {
 var faStarOfDavid = {
   prefix: 'fas',
   iconName: 'star-of-david',
-  icon: [512, 512, [10017], "f69a", "M388.2 309.5L367.1 344h42.3l-21.1-34.5zM355.4 256l-54-88H178.6l-54 88 54 88H301.4l54-88zm65.7 0l53.4 87c3.6 5.9 5.5 12.7 5.5 19.6c0 20.7-16.8 37.4-37.4 37.4H332.7l-56.2 91.5C268.8 504.3 254.9 512 240 512s-28.8-7.7-36.6-20.5L147.3 400H37.4C16.8 400 0 383.2 0 362.6c0-6.9 1.9-13.7 5.5-19.6l53.4-87L5.5 169C1.9 163.1 0 156.3 0 149.4C0 128.8 16.8 112 37.4 112H147.3l56.2-91.5C211.2 7.7 225.1 0 240 0s28.8 7.7 36.6 20.5L332.7 112H442.6c20.7 0 37.4 16.8 37.4 37.4c0 6.9-1.9 13.7-5.5 19.6l-53.4 87zm-54-88l21.1 34.5L409.4 168H367.1zM267 112L240 68l-27 44h54zM112.9 168H70.6l21.1 34.5L112.9 168zM91.8 309.5L70.6 344h42.3L91.8 309.5zM213 400l27 44 27-44H213z"]
+  icon: [512, 512, [10017], "f69a", "M404.2 309.5L383.1 344h42.3l-21.1-34.5zM371.4 256l-54-88H194.6l-54 88 54 88H317.4l54-88zm65.7 0l53.4 87c3.6 5.9 5.5 12.7 5.5 19.6c0 20.7-16.8 37.4-37.4 37.4H348.7l-56.2 91.5C284.8 504.3 270.9 512 256 512s-28.8-7.7-36.6-20.5L163.3 400H53.4C32.8 400 16 383.2 16 362.6c0-6.9 1.9-13.7 5.5-19.6l53.4-87L21.5 169c-3.6-5.9-5.5-12.7-5.5-19.6C16 128.8 32.8 112 53.4 112H163.3l56.2-91.5C227.2 7.7 241.1 0 256 0s28.8 7.7 36.6 20.5L348.7 112H458.6c20.7 0 37.4 16.8 37.4 37.4c0 6.9-1.9 13.7-5.5 19.6l-53.4 87zm-54-88l21.1 34.5L425.4 168H383.1zM283 112L256 68l-27 44h54zM128.9 168H86.6l21.1 34.5L128.9 168zM107.8 309.5L86.6 344h42.3l-21.1-34.5zM229 400l27 44 27-44H229z"]
 };
 var faPersonMilitaryRifle = {
   prefix: 'fas',
   iconName: 'person-military-rifle',
-  icon: [448, 512, [], "e54b", "M128 39c0-13 10-23.8 22.9-24.9L302.7 1.4C312 .7 320 8 320 17.4V48c0 8.8-7.2 16-16 16H153c-13.8 0-25-11.2-25-25zm17.6 57H302.4c1 5.2 1.6 10.5 1.6 16c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-5.5 .6-10.8 1.6-16zm228 364.3L320 369.7V480c0 1.3-.1 2.5-.2 3.8L145.5 234.9c16.6-7.1 34.6-10.9 53.3-10.9h50.4c15.9 0 31.3 2.8 45.8 7.9L389.9 67.7c-7.7-4.4-10.3-14.2-5.9-21.9s14.2-10.3 21.9-5.9l13.9 8 13.9 8c7.7 4.4 10.3 14.2 5.9 21.9L384 173.9l1.6 .9c15.3 8.8 20.6 28.4 11.7 43.7L360.6 282c2 2.8 3.9 5.8 5.7 8.8l76.1 128.8c11.2 19 4.9 43.5-14.1 54.8s-43.5 4.9-54.8-14.1zM288 512H160c-17.7 0-32-14.3-32-32V369.7L74.4 460.3c-11.2 19-35.8 25.3-54.8 14.1S-5.7 438.7 5.6 419.7L81.7 290.8c9.4-15.8 21.7-29.3 36-40L299.1 510c-3.5 1.3-7.2 2-11.1 2zM264 320a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"]
+  icon: [512, 512, [], "e54b", "M160 39c0-13 10-23.8 22.9-24.9L334.7 1.4C344 .7 352 8 352 17.4V48c0 8.8-7.2 16-16 16H185c-13.8 0-25-11.2-25-25zm17.6 57H334.4c1 5.2 1.6 10.5 1.6 16c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-5.5 .6-10.8 1.6-16zm228 364.3L352 369.7V480c0 1.3-.1 2.5-.2 3.8L177.5 234.9c16.6-7.1 34.6-10.9 53.3-10.9h50.4c15.9 0 31.3 2.8 45.8 7.9L421.9 67.7c-7.7-4.4-10.3-14.2-5.9-21.9s14.2-10.3 21.9-5.9l13.9 8 13.9 8c7.7 4.4 10.3 14.2 5.9 21.9L416 173.9l1.6 .9c15.3 8.8 20.6 28.4 11.7 43.7L392.6 282c2 2.8 3.9 5.8 5.7 8.8l76.1 128.8c11.2 19 4.9 43.5-14.1 54.8s-43.5 4.9-54.8-14.1zM320 512H192c-17.7 0-32-14.3-32-32V369.7l-53.6 90.6c-11.2 19-35.8 25.3-54.8 14.1s-25.3-35.8-14.1-54.8l76.1-128.8c9.4-15.8 21.7-29.3 36-40L331.1 510c-3.5 1.3-7.2 2-11.1 2zM296 320a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"]
 };
 var faCartShopping = {
   prefix: 'fas',
@@ -16214,7 +17395,7 @@ var faPlaceOfWorship = {
 var faGripVertical = {
   prefix: 'fas',
   iconName: 'grip-vertical',
-  icon: [320, 512, [], "f58e", "M40 352c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40l-48 0zm192 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40l-48 0zM40 320l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40zM232 192c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40l-48 0zM40 160l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40L40 32C17.9 32 0 49.9 0 72l0 48c0 22.1 17.9 40 40 40zM232 32c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40l-48 0z"]
+  icon: [320, 512, [], "f58e", "M40 352l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40zm192 0l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40zM40 320c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0zM232 192l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40zM40 160c-22.1 0-40-17.9-40-40L0 72C0 49.9 17.9 32 40 32l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0zM232 32l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40z"]
 };
 var faArrowTurnUp = {
   prefix: 'fas',
@@ -16263,7 +17444,7 @@ var faBaseballBatBall = {
 var faS = {
   prefix: 'fas',
   iconName: 's',
-  icon: [320, 512, [115], "53", "M99.1 105.4C79 114 68.2 127.2 65.2 144.8c-2.4 14.1-.7 23.2 2 29.4c2.8 6.3 7.9 12.4 16.7 18.6c19.2 13.4 48.3 22.1 84.9 32.5c1 .3 1.9 .6 2.9 .8c32.7 9.3 72 20.6 100.9 40.7c15.7 10.9 29.9 25.5 38.6 45.1c8.8 19.8 10.8 42 6.6 66.3c-7.3 42.5-35.3 71.7-71.8 87.3c-35.4 15.2-79.1 17.9-123.7 10.9l-.2 0 0 0c-24-3.9-62.7-17.1-87.6-25.6c-4.8-1.7-9.2-3.1-12.8-4.3C5.1 440.8-3.9 422.7 1.6 405.9s23.7-25.8 40.5-20.3c4.9 1.6 10.2 3.4 15.9 5.4c25.4 8.6 56.4 19.2 74.4 22.1c36.8 5.7 67.5 2.5 88.5-6.5c20.1-8.6 30.8-21.8 33.9-39.4c2.4-14.1 .7-23.2-2-29.4c-2.8-6.3-7.9-12.4-16.7-18.6c-19.2-13.4-48.3-22.1-84.9-32.5c-1-.3-1.9-.6-2.9-.8c-32.7-9.3-72-20.6-100.9-40.7c-15.7-10.9-29.9-25.5-38.6-45.1c-8.8-19.8-10.8-42-6.6-66.3l31.5 5.5L2.1 133.9C9.4 91.4 37.4 62.2 73.9 46.6c35.4-15.2 79.1-17.9 123.7-10.9c13 2 52.4 9.6 66.6 13.4c17.1 4.5 27.2 22.1 22.7 39.2s-22.1 27.2-39.1 22.7c-11.2-3-48.2-10.2-60.1-12l4.9-31.5-4.9 31.5c-36.9-5.8-67.5-2.5-88.6 6.5z"]
+  icon: [320, 512, [115], "53", "M99.1 105.4C79 114 68.2 127.2 65.2 144.8c-2.4 14.1-.7 23.2 2 29.4c2.8 6.3 7.9 12.4 16.7 18.6c19.2 13.4 48.3 22.1 84.9 32.5c1 .3 1.9 .6 2.9 .8c32.7 9.3 72 20.6 100.9 40.7c15.7 10.9 29.9 25.5 38.6 45.1c8.8 19.8 10.8 42 6.6 66.3c-7.3 42.5-35.3 71.7-71.8 87.3c-35.4 15.2-79.1 17.9-123.7 10.9l-.2 0 0 0c-24-3.9-62.7-17.1-87.6-25.6c-4.8-1.7-9.2-3.1-12.8-4.3C5.1 440.8-3.9 422.7 1.6 405.9s23.7-25.8 40.5-20.3c4.9 1.6 10.2 3.4 15.9 5.4c25.4 8.6 56.4 19.2 74.4 22.1c36.8 5.7 67.5 2.5 88.5-6.5c20.1-8.6 30.8-21.8 33.9-39.4c2.4-14.1 .7-23.2-2-29.4c-2.8-6.3-7.9-12.4-16.7-18.6c-19.2-13.4-48.3-22.1-84.9-32.5c-1-.3-1.9-.6-2.9-.8c-32.7-9.3-72-20.6-100.9-40.7c-15.7-10.9-29.9-25.5-38.6-45.1c-8.8-19.8-10.8-42-6.6-66.3l31.5 5.5L2.1 133.9C9.4 91.4 37.4 62.2 73.9 46.6c35.4-15.2 79.1-17.9 123.7-10.9c13 2 52.4 9.6 66.6 13.4c17.1 4.5 27.2 22.1 22.7 39.2s-22.1 27.2-39.2 22.7c-11.2-3-48.1-10.2-60.1-12l4.9-31.5-4.9 31.5c-36.9-5.8-67.5-2.5-88.6 6.5z"]
 };
 var faTimeline = {
   prefix: 'fas',
@@ -16289,7 +17470,7 @@ var faClinicMedical = faHouseChimneyMedical;
 var faTemperatureThreeQuarters = {
   prefix: 'fas',
   iconName: 'temperature-three-quarters',
-  icon: [320, 512, ["temperature-3", "thermometer-3", "thermometer-three-quarters"], "f2c8", "M144 64c-26.5 0-48 21.5-48 48V276.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112V276.5c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6V112zM192 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V144c0-8.8 7.2-16 16-16s16 7.2 16 16V322.7c18.6 6.6 32 24.4 32 45.3z"]
+  icon: [320, 512, ["temperature-3", "thermometer-3", "thermometer-three-quarters"], "f2c8", "M160 64c-26.5 0-48 21.5-48 48V276.5c0 17.3-7.1 31.9-15.3 42.5C86.2 332.6 80 349.5 80 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM48 112C48 50.2 98.1 0 160 0s112 50.1 112 112V276.5c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S16 447.5 16 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6V112zM208 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V144c0-8.8 7.2-16 16-16s16 7.2 16 16V322.7c18.6 6.6 32 24.4 32 45.3z"]
 };
 var faTemperature3 = faTemperatureThreeQuarters;
 var faThermometer3 = faTemperatureThreeQuarters;
@@ -16297,7 +17478,7 @@ var faThermometerThreeQuarters = faTemperatureThreeQuarters;
 var faMobileScreen = {
   prefix: 'fas',
   iconName: 'mobile-screen',
-  icon: [384, 512, ["mobile-android-alt"], "f3cf", "M0 64C0 28.7 28.7 0 64 0H288c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zM128 448c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H144c-8.8 0-16 7.2-16 16zM288 64H64V384H288V64z"]
+  icon: [384, 512, ["mobile-android-alt"], "f3cf", "M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM144 448c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H160c-8.8 0-16 7.2-16 16zM304 64H80V384H304V64z"]
 };
 var faMobileAndroidAlt = faMobileScreen;
 var faPlaneUp = {
@@ -16308,7 +17489,7 @@ var faPlaneUp = {
 var faPiggyBank = {
   prefix: 'fas',
   iconName: 'piggy-bank',
-  icon: [576, 512, [], "f4d3", "M400 96l0 .7c-5.3-.4-10.6-.7-16-.7H256c-16.5 0-32.5 2.1-47.8 6c-.1-2-.2-4-.2-6c0-53 43-96 96-96s96 43 96 96zm-16 32c3.5 0 7 .1 10.4 .3c4.2 .3 8.4 .7 12.6 1.3C424.6 109.1 450.8 96 480 96h32l-18.8 75.1c15.8 14.8 28.7 32.8 37.5 52.9H544c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32H512c-9.1 12.1-19.9 22.9-32 32v64c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H256v32c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32V416c-34.9-26.2-58.7-66.3-63.2-112H68c-37.6 0-68-30.4-68-68s30.4-68 68-68h4c13.3 0 24 10.7 24 24s-10.7 24-24 24H68c-11 0-20 9-20 20s9 20 20 20H99.2c12.1-59.8 57.7-107.5 116.3-122.8c12.9-3.4 26.5-5.2 40.5-5.2H384zm64 136a24 24 0 1 0 -48 0 24 24 0 1 0 48 0z"]
+  icon: [576, 512, [], "f4d3", "M400 96l0 .7c-5.3-.4-10.6-.7-16-.7H256c-16.5 0-32.5 2.1-47.8 6c-.1-2-.2-4-.2-6c0-53 43-96 96-96s96 43 96 96zm-16 32c3.5 0 7 .1 10.4 .3c4.2 .3 8.4 .7 12.6 1.3C424.6 109.1 450.8 96 480 96h11.5c10.4 0 18 9.8 15.5 19.9l-13.8 55.2c15.8 14.8 28.7 32.8 37.5 52.9H544c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32H512c-9.1 12.1-19.9 22.9-32 32v64c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H256v32c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32V416c-34.9-26.2-58.7-66.3-63.2-112H68c-37.6 0-68-30.4-68-68s30.4-68 68-68h4c13.3 0 24 10.7 24 24s-10.7 24-24 24H68c-11 0-20 9-20 20s9 20 20 20H99.2c12.1-59.8 57.7-107.5 116.3-122.8c12.9-3.4 26.5-5.2 40.5-5.2H384zm64 136a24 24 0 1 0 -48 0 24 24 0 1 0 48 0z"]
 };
 var faBatteryHalf = {
   prefix: 'fas',
@@ -16329,12 +17510,12 @@ var faCoins = {
 var faKhanda = {
   prefix: 'fas',
   iconName: 'khanda',
-  icon: [576, 512, [9772], "f66d", "M246.8 3.7c5.9-4.9 14.6-4.9 20.5 0l48 40c5.9 4.9 7.5 13.2 3.8 19.9l0 0 0 0 0 0 0 0-.1 .1-.3 .6c-.3 .5-.7 1.3-1.2 2.3c-1 2-2.6 5-4.4 8.6c-.5 .9-.9 1.9-1.4 2.9C345.9 97.4 369 134 369 176s-23.1 78.6-57.3 97.8c.5 1 1 2 1.4 2.9c1.8 3.7 3.3 6.6 4.4 8.6c.5 1 .9 1.8 1.2 2.3l.3 .6 .1 .1 0 0 0 0c3.6 6.7 2 15-3.8 19.9L273 343.5v19.8l35.6-24.5 41.1-28.2c42.8-29.4 68.4-78 68.4-130c0-31.1-9.2-61.6-26.5-87.5l-2.8-4.2c-4-6-3.5-14 1.3-19.5s12.7-7 19.2-3.7L402.1 80c7.2-14.3 7.2-14.3 7.2-14.3l0 0 0 0 .1 0 .3 .2 1 .5c.8 .4 2 1.1 3.5 1.9c2.9 1.7 7 4.1 11.8 7.3c9.6 6.4 22.5 16.1 35.4 29c25.7 25.7 52.7 65.6 52.7 119.3c0 53.1-26.4 100.5-51.2 133.6c-12.6 16.7-25.1 30.3-34.5 39.7c-4.7 4.7-8.7 8.4-11.5 10.9c-1.4 1.3-2.5 2.2-3.3 2.9l-.9 .8-.3 .2-.1 .1 0 0 0 0s0 0-10.2-12.3l10.2 12.3c-5.1 4.3-12.4 4.9-18.2 1.6l-75.6-43-32.7 22.5 45.5 31.3c1.8-.4 3.7-.7 5.7-.7c13.3 0 24 10.7 24 24s-10.7 24-24 24c-12.2 0-22.3-9.1-23.8-21L273 423.4v28.9c9.6 5.5 16 15.9 16 27.7c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-11.8 6.4-22.2 16-27.7V424.1l-40.3 27.7C198.8 463.3 188.9 472 177 472c-13.3 0-24-10.7-24-24s10.7-24 24-24c2.2 0 4.4 .3 6.5 .9l45.8-31.5-32.7-22.5-75.6 43c-5.8 3.3-13 2.7-18.2-1.6L113 400c-10.2 12.3-10.2 12.3-10.3 12.3l0 0 0 0-.1-.1-.3-.2-.9-.8c-.8-.7-1.9-1.7-3.3-2.9c-2.8-2.5-6.7-6.2-11.5-10.9c-9.4-9.4-21.9-23-34.5-39.7C27.4 324.5 1 277.1 1 224c0-53.7 26.9-93.6 52.7-119.3c12.9-12.9 25.8-22.6 35.4-29C94 72.5 98 70 100.9 68.4c1.5-.8 2.6-1.5 3.5-1.9l1-.5 .3-.2 .1 0 0 0 0 0s0 0 7.2 14.3l-7.2-14.3c6.5-3.2 14.3-1.7 19.2 3.7s5.3 13.4 1.3 19.5l-2.8 4.2C106.2 119 97 149.5 97 180.6c0 51.9 25.6 100.6 68.4 130l41.1 28.2L241 362.6V343.5l-42.2-35.2c-5.9-4.9-7.5-13.2-3.8-19.9l0 0 0 0 0 0 .1-.1 .3-.6c.3-.5 .7-1.3 1.2-2.3c1-2 2.6-5 4.4-8.6c.5-.9 .9-1.9 1.4-2.9C168.1 254.6 145 218 145 176s23.1-78.6 57.3-97.8c-.5-1-1-2-1.4-2.9c-1.8-3.7-3.3-6.6-4.4-8.6c-.5-1-.9-1.8-1.2-2.3l-.3-.6-.1-.1 0 0 0 0 0 0c-3.6-6.7-2-15 3.8-19.9l48-40zM221.2 122.9c-17 11.5-28.2 31-28.2 53.1s11.2 41.6 28.2 53.1C228 210.2 233 190.9 233 176s-5-34.2-11.8-53.1zm71.5 106.2c17-11.5 28.2-31 28.2-53.1s-11.2-41.6-28.2-53.1C286 141.8 281 161.1 281 176s5 34.2 11.8 53.1z"]
+  icon: [512, 512, [9772], "f66d", "M245.8 3.7c5.9-4.9 14.6-4.9 20.5 0l48 40c5.9 4.9 7.5 13.2 3.8 19.9l0 0 0 0 0 0 0 0-.1 .1-.3 .6c-.3 .5-.7 1.3-1.2 2.3c-1 2-2.6 5-4.4 8.6c-.5 .9-.9 1.9-1.4 2.9C344.9 97.4 368 134 368 176s-23.1 78.6-57.3 97.8c.5 1 1 2 1.4 2.9c1.8 3.7 3.3 6.6 4.4 8.6c.5 1 .9 1.8 1.2 2.3l.3 .6 .1 .1 0 0 0 0c3.6 6.7 2 15-3.8 19.9L272 343.5v19.8l35.6-24.5 41.1-28.2c42.8-29.4 68.4-78 68.4-130c0-31.1-9.2-61.6-26.5-87.5l-2.8-4.2c-4-6-3.5-14 1.3-19.5s12.7-7 19.2-3.7L401.1 80c7.2-14.3 7.2-14.3 7.2-14.3l0 0 0 0 .1 0 .3 .2 1 .5c.8 .4 2 1.1 3.5 1.9c2.9 1.7 7 4.1 11.8 7.3c9.6 6.4 22.5 16.1 35.4 29c25.7 25.7 52.7 65.6 52.7 119.3c0 53.1-26.4 100.5-51.2 133.6c-12.6 16.7-25.1 30.3-34.5 39.7c-4.7 4.7-8.7 8.4-11.5 10.9c-1.4 1.3-2.5 2.2-3.3 2.9l-.9 .8-.3 .2-.1 .1 0 0 0 0s0 0-10.2-12.3l10.2 12.3c-5.1 4.3-12.4 4.9-18.2 1.6l-75.6-43-32.7 22.5 45.5 31.3c1.8-.4 3.7-.7 5.7-.7c13.3 0 24 10.7 24 24s-10.7 24-24 24c-12.2 0-22.3-9.1-23.8-21L272 423.4v28.9c9.6 5.5 16 15.9 16 27.7c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-11.8 6.4-22.2 16-27.7V424.1l-40.3 27.7C197.8 463.3 187.9 472 176 472c-13.3 0-24-10.7-24-24s10.7-24 24-24c2.2 0 4.4 .3 6.5 .9l45.8-31.5-32.7-22.5-75.6 43c-5.8 3.3-13 2.7-18.2-1.6L112 400c-10.2 12.3-10.2 12.3-10.3 12.3l0 0 0 0-.1-.1-.3-.2-.9-.8c-.8-.7-1.9-1.7-3.3-2.9c-2.8-2.5-6.7-6.2-11.5-10.9c-9.4-9.4-21.9-23-34.5-39.7C26.4 324.5 0 277.1 0 224c0-53.7 26.9-93.6 52.7-119.3c12.9-12.9 25.8-22.6 35.4-29C93 72.5 97 70 99.9 68.4c1.5-.8 2.6-1.5 3.5-1.9l1-.5 .3-.2 .1 0 0 0 0 0s0 0 7.2 14.3l-7.2-14.3c6.5-3.2 14.3-1.7 19.2 3.7s5.3 13.4 1.3 19.5l-2.8 4.2C105.2 119 96 149.5 96 180.6c0 51.9 25.6 100.6 68.4 130l41.1 28.2L240 362.6V343.5l-42.2-35.2c-5.9-4.9-7.5-13.2-3.8-19.9l0 0 0 0 0 0 .1-.1 .3-.6c.3-.5 .7-1.3 1.2-2.3c1-2 2.6-5 4.4-8.6c.5-.9 .9-1.9 1.4-2.9C167.1 254.6 144 218 144 176s23.1-78.6 57.3-97.8c-.5-1-1-2-1.4-2.9c-1.8-3.7-3.3-6.6-4.4-8.6c-.5-1-.9-1.8-1.2-2.3l-.3-.6-.1-.1 0 0 0 0 0 0c-3.6-6.7-2-15 3.8-19.9l48-40zM220.2 122.9c-17 11.5-28.2 31-28.2 53.1s11.2 41.6 28.2 53.1C227 210.2 232 190.9 232 176s-5-34.2-11.8-53.1zm71.5 106.2c17-11.5 28.2-31 28.2-53.1s-11.2-41.6-28.2-53.1C285 141.8 280 161.1 280 176s5 34.2 11.8 53.1z"]
 };
 var faSliders = {
   prefix: 'fas',
   iconName: 'sliders',
-  icon: [512, 512, ["sliders-h"], "f1de", "M0 416c0-17.7 14.3-32 32-32l54.7 0c12.3-28.3 40.5-48 73.3-48s61 19.7 73.3 48L480 384c17.7 0 32 14.3 32 32s-14.3 32-32 32l-246.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 448c-17.7 0-32-14.3-32-32zm192 0a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM384 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm-32-80c32.8 0 61 19.7 73.3 48l54.7 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-54.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l246.7 0c12.3-28.3 40.5-48 73.3-48zM192 64a32 32 0 1 0 0 64 32 32 0 1 0 0-64zm73.3 0L480 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l-214.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 128C14.3 128 0 113.7 0 96S14.3 64 32 64l86.7 0C131 35.7 159.2 16 192 16s61 19.7 73.3 48z"]
+  icon: [512, 512, ["sliders-h"], "f1de", "M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"]
 };
 var faSlidersH = faSliders;
 var faFolderTree = {
@@ -16350,7 +17531,7 @@ var faNetworkWired = {
 var faMapPin = {
   prefix: 'fas',
   iconName: 'map-pin',
-  icon: [320, 512, [128205], "f276", "M32 144a144 144 0 1 1 288 0A144 144 0 1 1 32 144zM176 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM144 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"]
+  icon: [320, 512, [128205], "f276", "M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"]
 };
 var faHamsa = {
   prefix: 'fas',
@@ -16360,7 +17541,7 @@ var faHamsa = {
 var faCentSign = {
   prefix: 'fas',
   iconName: 'cent-sign',
-  icon: [320, 512, [], "e3f5", "M192 0c17.7 0 32 14.3 32 32V66.7c30.9 5.2 59.2 17.7 83.2 35.8c14.1 10.6 17 30.7 6.4 44.8s-30.7 17-44.8 6.4C247.4 137.5 220.9 128 192 128c-70.7 0-128 57.3-128 128s57.3 128 128 128c28.9 0 55.4-9.5 76.8-25.6c14.1-10.6 34.2-7.8 44.8 6.4s7.8 34.2-6.4 44.8c-24 18-52.4 30.6-83.2 35.8V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V445.3C69.2 430.1 0 351.1 0 256S69.2 81.9 160 66.7V32c0-17.7 14.3-32 32-32z"]
+  icon: [384, 512, [], "e3f5", "M224 0c17.7 0 32 14.3 32 32V66.7c30.9 5.2 59.2 17.7 83.2 35.8c14.1 10.6 17 30.7 6.4 44.8s-30.7 17-44.8 6.4C279.4 137.5 252.9 128 224 128c-70.7 0-128 57.3-128 128s57.3 128 128 128c28.9 0 55.4-9.5 76.8-25.6c14.1-10.6 34.2-7.8 44.8 6.4s7.8 34.2-6.4 44.8c-24 18-52.4 30.6-83.2 35.8V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V445.3C101.2 430.1 32 351.1 32 256s69.2-174.1 160-189.3V32c0-17.7 14.3-32 32-32z"]
 };
 var faFlask = {
   prefix: 'fas',
@@ -16370,7 +17551,7 @@ var faFlask = {
 var faPersonPregnant = {
   prefix: 'fas',
   iconName: 'person-pregnant',
-  icon: [320, 512, [], "e31e", "M160 0a48 48 0 1 1 0 96 48 48 0 1 1 0-96zM88 383c-13.8-3.6-24-16.1-24-31V296.9l-4.6 7.6c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c15-24.9 40.3-41.5 68.7-45.6c4.1-.6 8.2-1 12.5-1h1.1 12.5H160c1.4 0 2.8 .1 4.1 .3c35.7 2.9 65.4 29.3 72.1 65l6.1 32.5c44.3 8.6 77.7 47.5 77.7 94.3v32c0 17.7-14.3 32-32 32H272 232v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384h-8-8v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V383z"]
+  icon: [384, 512, [], "e31e", "M192 0a48 48 0 1 1 0 96 48 48 0 1 1 0-96zM120 383c-13.8-3.6-24-16.1-24-31V296.9l-4.6 7.6c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c15-24.9 40.3-41.5 68.7-45.6c4.1-.6 8.2-1 12.5-1h1.1 12.5H192c1.4 0 2.8 .1 4.1 .3c35.7 2.9 65.4 29.3 72.1 65l6.1 32.5c44.3 8.6 77.7 47.5 77.7 94.3v32c0 17.7-14.3 32-32 32H304 264v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384h-8-8v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V383z"]
 };
 var faWandSparkles = {
   prefix: 'fas',
@@ -16380,7 +17561,7 @@ var faWandSparkles = {
 var faEllipsisVertical = {
   prefix: 'fas',
   iconName: 'ellipsis-vertical',
-  icon: [128, 512, ["ellipsis-v"], "f142", "M56 472a56 56 0 1 1 0-112 56 56 0 1 1 0 112zm0-160a56 56 0 1 1 0-112 56 56 0 1 1 0 112zM0 96a56 56 0 1 1 112 0A56 56 0 1 1 0 96z"]
+  icon: [128, 512, ["ellipsis-v"], "f142", "M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"]
 };
 var faEllipsisV = faEllipsisVertical;
 var faTicket = {
@@ -16402,17 +17583,17 @@ var faLongArrowAltRight = faRightLong;
 var faFlagUsa = {
   prefix: 'fas',
   iconName: 'flag-usa',
-  icon: [448, 512, [], "f74d", "M32 0C49.7 0 64 14.3 64 32V48l69-17.2c38.1-9.5 78.3-5.1 113.5 12.5c46.3 23.2 100.8 23.2 147.1 0l9.6-4.8C423.8 28.1 448 43.1 448 66.1v36.1l-44.7 16.2c-42.8 15.6-90 13.9-131.6-4.6l-16.1-7.2c-20.3-9-41.8-14.7-63.6-16.9v32.2c17.4 2.1 34.4 6.7 50.6 13.9l16.1 7.2c49.2 21.9 105 23.8 155.6 5.4L448 136.3v62l-44.7 16.2c-42.8 15.6-90 13.9-131.6-4.6l-16.1-7.2c-40.2-17.9-85-22.5-128.1-13.3L64 203.1v32.7l70.2-15.1c36.4-7.8 74.3-3.9 108.4 11.3l16.1 7.2c49.2 21.9 105 23.8 155.6 5.4L448 232.3v62l-44.7 16.2c-42.8 15.6-90 13.9-131.6-4.6l-16.1-7.2c-40.2-17.9-85-22.5-128.1-13.3L64 299.1v32.7l70.2-15.1c36.4-7.8 74.3-3.9 108.4 11.3l16.1 7.2c49.2 21.9 105 23.8 155.6 5.4L448 328.3v33.5c0 13.3-8.3 25.3-20.8 30l-34.7 13c-46.2 17.3-97.6 14.6-141.7-7.4c-37.9-19-81.4-23.7-122.5-13.4L64 400v80c0 17.7-14.3 32-32 32s-32-14.3-32-32V416 345.5 312.8 249.5 216.8 153.5 120.8 64 32C0 14.3 14.3 0 32 0zm80 96A16 16 0 1 0 80 96a16 16 0 1 0 32 0zm32 0a16 16 0 1 0 0-32 16 16 0 1 0 0 32zm-32 48a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm32 0a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"]
+  icon: [448, 512, [], "f74d", "M32 0C49.7 0 64 14.3 64 32V48l69-17.2c38.1-9.5 78.3-5.1 113.5 12.5c46.3 23.2 100.8 23.2 147.1 0l9.6-4.8C423.8 28.1 448 43.1 448 66.1v36.1l-44.7 16.2c-42.8 15.6-90 13.9-131.6-4.6l-16.1-7.2c-20.3-9-41.8-14.7-63.6-16.9v32.2c17.4 2.1 34.4 6.7 50.6 13.9l16.1 7.2c49.2 21.9 105 23.8 155.6 5.4L448 136.3v62l-44.7 16.2c-42.8 15.6-90 13.9-131.6-4.6l-16.1-7.2c-40.2-17.9-85-22.5-128.1-13.3L64 203.1v32.7l70.2-15.1c36.4-7.8 74.3-3.9 108.4 11.3l16.1 7.2c49.2 21.9 105 23.8 155.6 5.4L448 232.3v62l-44.7 16.2c-42.8 15.6-90 13.9-131.6-4.6l-16.1-7.2c-40.2-17.9-85-22.5-128.1-13.3L64 299.1v32.7l70.2-15.1c36.4-7.8 74.3-3.9 108.4 11.3l16.1 7.2c49.2 21.9 105 23.8 155.6 5.4L448 328.3v33.5c0 13.3-8.3 25.3-20.8 30l-34.7 13c-46.2 17.3-97.6 14.6-141.7-7.4c-37.9-19-81.3-23.7-122.5-13.4L64 400v80c0 17.7-14.3 32-32 32s-32-14.3-32-32V416 345.5 312.8 249.5 216.8 153.5 120.8 64 32C0 14.3 14.3 0 32 0zm80 96A16 16 0 1 0 80 96a16 16 0 1 0 32 0zm32 0a16 16 0 1 0 0-32 16 16 0 1 0 0 32zm-32 48a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm32 0a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"]
 };
 var faLaptopFile = {
   prefix: 'fas',
   iconName: 'laptop-file',
-  icon: [640, 512, [], "e51d", "M192 0H48C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H162.7c6.6-18.6 24.4-32 45.3-32V272c0-44.2 35.8-80 80-80h32V128H224c-17.7 0-32-14.3-32-32V0zm96 224c-26.5 0-48 21.5-48 48v16 96 32H208c-8.8 0-16 7.2-16 16v16c0 35.3 28.7 64 64 64H576c35.3 0 64-28.7 64-64V432c0-8.8-7.2-16-16-16H592V288c0-35.3-28.7-64-64-64H320 304 288zm32 64H528V416H304V288h16zM224 0V96h96L224 0z"]
+  icon: [640, 512, [], "e51d", "M128 0C92.7 0 64 28.7 64 64V288H19.2C8.6 288 0 296.6 0 307.2C0 349.6 34.4 384 76.8 384H320V288H128V64H448V96h64V64c0-35.3-28.7-64-64-64H128zM512 128H400c-26.5 0-48 21.5-48 48V464c0 26.5 21.5 48 48 48H592c26.5 0 48-21.5 48-48V256H544c-17.7 0-32-14.3-32-32V128zm32 0v96h96l-96-96z"]
 };
 var faTty = {
   prefix: 'fas',
   iconName: 'tty',
-  icon: [512, 512, ["teletype"], "f1e4", "M29.3 241.3L6.1 200.6c-9.2-16.2-8.4-36.5 4.5-50C52.4 106.8 135.7 48 247 48s194.6 58.8 236.4 102.6c12.9 13.5 13.7 33.8 4.5 50l-23.1 40.7c-7.5 13.2-23.3 19.3-37.8 14.6l-81.1-26.6c-13.1-4.3-22-16.6-22-30.4V144c-49.6-18.1-104-18.1-153.6 0v54.8c0 13.8-8.9 26.1-22 30.4L67.1 255.8c-14.5 4.7-30.3-1.4-37.8-14.6zM23 336c0-8.8 7.2-16 16-16H71c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H39c-8.8 0-16-7.2-16-16V336zm0 96c0-8.8 7.2-16 16-16H71c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H39c-8.8 0-16-7.2-16-16V432zM135 320h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H135c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H231c-8.8 0-16-7.2-16-16V336zm112-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H327c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H423c-8.8 0-16-7.2-16-16V336zm16 80h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H423c-8.8 0-16-7.2-16-16V432c0-8.8 7.2-16 16-16zM119 432c0-8.8 7.2-16 16-16H359c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H135c-8.8 0-16-7.2-16-16V432z"]
+  icon: [512, 512, ["teletype"], "f1e4", "M38.3 241.3L15.1 200.6c-9.2-16.2-8.4-36.5 4.5-50C61.4 106.8 144.7 48 256 48s194.6 58.8 236.4 102.6c12.9 13.5 13.7 33.8 4.5 50l-23.1 40.7c-7.5 13.2-23.3 19.3-37.8 14.6l-81.1-26.6c-13.1-4.3-22-16.6-22-30.4V144c-49.6-18.1-104-18.1-153.6 0v54.8c0 13.8-8.9 26.1-22 30.4L76.1 255.8c-14.5 4.7-30.3-1.4-37.8-14.6zM32 336c0-8.8 7.2-16 16-16H80c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V336zm0 96c0-8.8 7.2-16 16-16H80c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V432zM144 320h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H240c-8.8 0-16-7.2-16-16V336zm112-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H336c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H432c-8.8 0-16-7.2-16-16V336zm16 80h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H432c-8.8 0-16-7.2-16-16V432c0-8.8 7.2-16 16-16zM128 432c0-8.8 7.2-16 16-16H368c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16V432z"]
 };
 var faTeletype = faTty;
 var faDiagramNext = {
@@ -16423,7 +17604,7 @@ var faDiagramNext = {
 var faPersonRifle = {
   prefix: 'fas',
   iconName: 'person-rifle',
-  icon: [576, 512, [], "e54e", "M249.2 192c25.4 0 49.8 7.1 70.8 19.9V512H128V337.7L74.4 428.3c-11.2 19-35.8 25.3-54.8 14.1S-5.7 406.7 5.6 387.7L81.7 258.8c24.5-41.4 69-66.8 117.1-66.8h50.4zM144 80a80 80 0 1 1 160 0A80 80 0 1 1 144 80zM432 0c8.8 0 16 7.2 16 16V132.3c9.6 5.5 16 15.9 16 27.7V269.3l16-5.3V208c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16v84.5c0 6.9-4.4 13-10.9 15.2L464 325.3V352h48c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H468l23 92.1c2.5 10.1-5.1 19.9-15.5 19.9H416c-8.8 0-16-7.2-16-16V400H384c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32V160c0-11.8 6.4-22.2 16-27.7V32c-8.8 0-16-7.2-16-16s7.2-16 16-16h16 16z"]
+  icon: [576, 512, [], "e54e", "M265.2 192c25.4 0 49.8 7.1 70.8 19.9V512H144V337.7L90.4 428.3c-11.2 19-35.8 25.3-54.8 14.1s-25.3-35.8-14.1-54.8L97.7 258.8c24.5-41.4 69-66.8 117.1-66.8h50.4zM160 80a80 80 0 1 1 160 0A80 80 0 1 1 160 80zM448 0c8.8 0 16 7.2 16 16V132.3c9.6 5.5 16 15.9 16 27.7V269.3l16-5.3V208c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16v84.5c0 6.9-4.4 13-10.9 15.2L480 325.3V352h48c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H484l23 92.1c2.5 10.1-5.1 19.9-15.5 19.9H432c-8.8 0-16-7.2-16-16V400H400c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32V160c0-11.8 6.4-22.2 16-27.7V32c-8.8 0-16-7.2-16-16s7.2-16 16-16h16 16z"]
 };
 var faHouseMedicalCircleExclamation = {
   prefix: 'fas',
@@ -16444,7 +17625,7 @@ var faHiking = faPersonHiking;
 var faVenusDouble = {
   prefix: 'fas',
   iconName: 'venus-double',
-  icon: [640, 512, [9890], "f226", "M176 288a112 112 0 1 0 0-224 112 112 0 1 0 0 224zM352 176c0 86.3-62.1 158.1-144 173.1V384h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H208v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V448H112c-17.7 0-32-14.3-32-32s14.3-32 32-32h32V349.1C62.1 334.1 0 262.3 0 176C0 78.8 78.8 0 176 0s176 78.8 176 176zM328 318c14.6-15.6 26.8-33.4 36-53c18.8 14.4 42.4 23 68 23c61.9 0 112-50.1 112-112s-50.1-112-112-112c-25.6 0-49.1 8.6-68 23c-9.3-19.5-21.5-37.4-36-53C357.1 12.6 393.1 0 432 0c97.2 0 176 78.8 176 176c0 86.3-62.1 158.1-144 173.1V384h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H464v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V448H368c-17.7 0-32-14.3-32-32s14.3-32 32-32h32V349.1c-26.6-4.9-51.1-15.7-72-31.1z"]
+  icon: [640, 512, [9890], "f226", "M192 288a112 112 0 1 0 0-224 112 112 0 1 0 0 224zM368 176c0 86.3-62.1 158.1-144 173.1V384h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H224v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V448H128c-17.7 0-32-14.3-32-32s14.3-32 32-32h32V349.1C78.1 334.1 16 262.3 16 176C16 78.8 94.8 0 192 0s176 78.8 176 176zM344 318c14.6-15.6 26.8-33.4 36-53c18.8 14.4 42.4 23 68 23c61.9 0 112-50.1 112-112s-50.1-112-112-112c-25.6 0-49.1 8.6-68 23c-9.3-19.5-21.5-37.4-36-53C373.1 12.6 409.1 0 448 0c97.2 0 176 78.8 176 176c0 86.3-62.1 158.1-144 173.1V384h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H480v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V448H384c-17.7 0-32-14.3-32-32s14.3-32 32-32h32V349.1c-26.6-4.9-51.1-15.7-72-31.1z"]
 };
 var faImages = {
   prefix: 'fas',
@@ -16529,7 +17710,7 @@ var faForward = {
 var faMobile = {
   prefix: 'fas',
   iconName: 'mobile',
-  icon: [384, 512, [128241, "mobile-android", "mobile-phone"], "f3ce", "M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"]
+  icon: [384, 512, [128241, "mobile-android", "mobile-phone"], "f3ce", "M80 0C44.7 0 16 28.7 16 64V448c0 35.3 28.7 64 64 64H304c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H80zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H160c-8.8 0-16-7.2-16-16s7.2-16 16-16z"]
 };
 var faMobileAndroid = faMobile;
 var faMobilePhone = faMobile;
@@ -16559,13 +17740,13 @@ var faDriversLicense = faIdCard;
 var faOutdent = {
   prefix: 'fas',
   iconName: 'outdent',
-  icon: [512, 512, ["dedent"], "f03b", "M6 64C6 46.3 20.3 32 38 32H422c17.7 0 32 14.3 32 32s-14.3 32-32 32H38C20.3 96 6 81.7 6 64zM198 192c0-17.7 14.3-32 32-32H422c17.7 0 32 14.3 32 32s-14.3 32-32 32H230c-17.7 0-32-14.3-32-32zm32 96H422c17.7 0 32 14.3 32 32s-14.3 32-32 32H230c-17.7 0-32-14.3-32-32s14.3-32 32-32zM6 448c0-17.7 14.3-32 32-32H422c17.7 0 32 14.3 32 32s-14.3 32-32 32H38c-17.7 0-32-14.3-32-32zm.2-179.4c-8.2-6.4-8.2-18.9 0-25.3l101.9-79.3c10.5-8.2 25.8-.7 25.8 12.6V335.3c0 13.3-15.3 20.8-25.8 12.6L6.2 268.6z"]
+  icon: [448, 512, ["dedent"], "f03b", "M0 64C0 46.3 14.3 32 32 32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64zM192 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32zm32 96H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32s14.3-32 32-32zM0 448c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM.2 268.6c-8.2-6.4-8.2-18.9 0-25.3l101.9-79.3c10.5-8.2 25.8-.7 25.8 12.6V335.3c0 13.3-15.3 20.8-25.8 12.6L.2 268.6z"]
 };
 var faDedent = faOutdent;
 var faHeartCircleExclamation = {
   prefix: 'fas',
   iconName: 'heart-circle-exclamation',
-  icon: [576, 512, [], "e4fe", "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5zM432 512c79.5 0 144-64.5 144-144s-64.5-144-144-144s-144 64.5-144 144s64.5 144 144 144zm0-48c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24zm0-192c8.8 0 16 7.2 16 16v80c0 8.8-7.2 16-16 16s-16-7.2-16-16V288c0-8.8 7.2-16 16-16z"]
+  icon: [576, 512, [], "e4fe", "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5zM432 512a144 144 0 1 0 0-288 144 144 0 1 0 0 288zm0-96a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm0-144c8.8 0 16 7.2 16 16v80c0 8.8-7.2 16-16 16s-16-7.2-16-16V288c0-8.8 7.2-16 16-16z"]
 };
 var faHouse = {
   prefix: 'fas',
@@ -16598,7 +17779,7 @@ var faFileMedical = {
 var faDiceOne = {
   prefix: 'fas',
   iconName: 'dice-one',
-  icon: [448, 512, [9856], "f525", "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 288c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"]
+  icon: [448, 512, [9856], "f525", "M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
 };
 var faKiwiBird = {
   prefix: 'fas',
@@ -16614,7 +17795,7 @@ var faExchange = faArrowRightArrowLeft;
 var faRotateRight = {
   prefix: 'fas',
   iconName: 'rotate-right',
-  icon: [512, 512, ["redo-alt", "rotate-forward"], "f2f9", "M447.5 224H456c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L397.4 96.6c-87.6-86.5-228.7-86.2-315.8 1c-87.5 87.5-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3c62.2-62.2 162.7-62.5 225.3-1L311 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H447.5z"]
+  icon: [512, 512, ["redo-alt", "rotate-forward"], "f2f9", "M463.5 224H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1c-87.5 87.5-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5z"]
 };
 var faRedoAlt = faRotateRight;
 var faRotateForward = faRotateRight;
@@ -16670,7 +17851,7 @@ var faStop = {
 var faCodeMerge = {
   prefix: 'fas',
   iconName: 'code-merge',
-  icon: [448, 512, [], "f387", "M80 104c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24zm32.4 49.2c28-12.4 47.6-40.5 47.6-73.2c0-44.2-35.8-80-80-80S0 35.8 0 80c0 32.8 19.7 61 48 73.3V358.7C19.7 371 0 399.2 0 432c0 44.2 35.8 80 80 80s80-35.8 80-80c0-32.8-19.7-61-48-73.3V272c26.7 20.1 60 32 96 32h86.7c12.3 28.3 40.5 48 73.3 48c44.2 0 80-35.8 80-80s-35.8-80-80-80c-32.8 0-61 19.7-73.3 48H208c-49.9 0-91-38.1-95.6-86.8zM80 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24zM392 272c0 13.3-10.7 24-24 24s-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24z"]
+  icon: [448, 512, [], "f387", "M80 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm32.4 97.2c28-12.4 47.6-40.5 47.6-73.2c0-44.2-35.8-80-80-80S0 35.8 0 80c0 32.8 19.7 61 48 73.3V358.7C19.7 371 0 399.2 0 432c0 44.2 35.8 80 80 80s80-35.8 80-80c0-32.8-19.7-61-48-73.3V272c26.7 20.1 60 32 96 32h86.7c12.3 28.3 40.5 48 73.3 48c44.2 0 80-35.8 80-80s-35.8-80-80-80c-32.8 0-61 19.7-73.3 48H208c-49.9 0-91-38.1-95.6-86.8zM80 408a24 24 0 1 1 0 48 24 24 0 1 1 0-48zM344 272a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"]
 };
 var faUpload = {
   prefix: 'fas',
@@ -16685,7 +17866,7 @@ var faHurricane = {
 var faMound = {
   prefix: 'fas',
   iconName: 'mound',
-  icon: [576, 512, [], "e52d", "M113.1 179.2C142.8 127.7 197.6 96 257 96s114.2 31.7 143.9 83.2L509.4 368c12.3 21.3-3.1 48-27.7 48H32.3c-24.6 0-40-26.6-27.7-48L113.1 179.2z"]
+  icon: [576, 512, [], "e52d", "M144.1 179.2C173.8 127.7 228.6 96 288 96s114.2 31.7 143.9 83.2L540.4 368c12.3 21.3-3.1 48-27.7 48H63.3c-24.6 0-40-26.6-27.7-48L144.1 179.2z"]
 };
 var faToiletPortable = {
   prefix: 'fas',
@@ -16711,12 +17892,12 @@ var faCaravan = {
 var faShieldCat = {
   prefix: 'fas',
   iconName: 'shield-cat',
-  icon: [512, 512, [], "e572", "M253.4 2.9C249.2 1 244.7 0 240 0s-9.2 1-13.4 2.9L38.3 82.8C16.3 92.1-.1 113.8 0 140c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C438.7 420.7 479.5 239.2 480 140c.1-26.2-16.3-47.9-38.3-57.2L253.4 2.9zM144 154.4c0-5.8 4.7-10.4 10.4-10.4h.2c3.4 0 6.5 1.6 8.5 4.3l40 53.3c3 4 7.8 6.4 12.8 6.4h48c5 0 9.8-2.4 12.8-6.4l40-53.3c2-2.7 5.2-4.3 8.5-4.3h.2c5.8 0 10.4 4.7 10.4 10.4V272c0 53-43 96-96 96s-96-43-96-96V154.4zM200 288a16 16 0 1 0 0-32 16 16 0 1 0 0 32zm96-16a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"]
+  icon: [512, 512, [], "e572", "M269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L269.4 2.9zM160 154.4c0-5.8 4.7-10.4 10.4-10.4h.2c3.4 0 6.5 1.6 8.5 4.3l40 53.3c3 4 7.8 6.4 12.8 6.4h48c5 0 9.8-2.4 12.8-6.4l40-53.3c2-2.7 5.2-4.3 8.5-4.3h.2c5.8 0 10.4 4.7 10.4 10.4V272c0 53-43 96-96 96s-96-43-96-96V154.4zM216 288a16 16 0 1 0 0-32 16 16 0 1 0 0 32zm96-16a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"]
 };
 var faBolt = {
   prefix: 'fas',
   iconName: 'bolt',
-  icon: [384, 512, [9889, "zap"], "f0e7", "M317.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224C.9 240.7-2.6 254.8 2 267.3S18.7 288 32 288H143.5L66.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H240.5L317.4 44.6z"]
+  icon: [448, 512, [9889, "zap"], "f0e7", "M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"]
 };
 var faZap = faBolt;
 var faGlassWater = {
@@ -16752,7 +17933,7 @@ var faPlaneCircleXmark = {
 var faYenSign = {
   prefix: 'fas',
   iconName: 'yen-sign',
-  icon: [320, 512, [165, "cny", "jpy", "rmb", "yen"], "f157", "M58.6 46.2C48.8 31.5 29 27.6 14.2 37.4S-4.4 67 5.4 81.7L100.2 224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32h80v32H48c-17.7 0-32 14.3-32 32s14.3 32 32 32h80v64c0 17.7 14.3 32 32 32s32-14.3 32-32V384h80c17.7 0 32-14.3 32-32s-14.3-32-32-32H192V288h80c17.7 0 32-14.3 32-32s-14.3-32-32-32H219.8L314.6 81.7c9.8-14.7 5.8-34.6-8.9-44.4s-34.6-5.8-44.4 8.9L160 198.3 58.6 46.2z"]
+  icon: [320, 512, [165, "cny", "jpy", "rmb", "yen"], "f157", "M58.6 46.2C48.8 31.5 29 27.6 14.3 37.4S-4.4 67 5.4 81.7L100.2 224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32h80v32H48c-17.7 0-32 14.3-32 32s14.3 32 32 32h80v64c0 17.7 14.3 32 32 32s32-14.3 32-32V384h80c17.7 0 32-14.3 32-32s-14.3-32-32-32H192V288h80c17.7 0 32-14.3 32-32s-14.3-32-32-32H219.8L314.6 81.7c9.8-14.7 5.8-34.6-8.9-44.4s-34.6-5.8-44.4 8.9L160 198.3 58.6 46.2z"]
 };
 var faCny = faYenSign;
 var faJpy = faYenSign;
@@ -16785,7 +17966,7 @@ var faLaughWink = faFaceLaughWink;
 var faHorseHead = {
   prefix: 'fas',
   iconName: 'horse-head',
-  icon: [512, 512, [], "f7ab", "M0 464V316.9C0 208.5 68.3 111.8 170.5 75.6L340.2 15.5C361.6 7.9 384 23.8 384 46.4c0 11-5.5 21.2-14.6 27.3L336 96c48.1 0 91.2 29.8 108.1 74.9l48.6 129.5c11.8 31.4 4.1 66.8-19.6 90.5c-16 16-37.8 25.1-60.5 25.1h-3.4c-26.1 0-50.9-11.6-67.6-31.7l-32.3-38.7c-11.7 4.1-24.2 6.4-37.3 6.4l-.1 0 0 0c-6.3 0-12.5-.5-18.6-1.5c-3.6-.6-7.2-1.4-10.7-2.3l0 0c-28.9-7.8-53.1-26.8-67.8-52.2c-4.4-7.6-14.2-10.3-21.9-5.8s-10.3 14.2-5.8 21.9c24 41.5 68.3 70 119.3 71.9l47.2 70.8c4 6.1 6.2 13.2 6.2 20.4c0 20.3-16.5 36.8-36.8 36.8H48c-26.5 0-48-21.5-48-48zM328 224a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"]
+  icon: [640, 512, [], "f7ab", "M64 464V316.9c0-108.4 68.3-205.1 170.5-241.3L404.2 15.5C425.6 7.9 448 23.8 448 46.4c0 11-5.5 21.2-14.6 27.3L400 96c48.1 0 91.2 29.8 108.1 74.9l48.6 129.5c11.8 31.4 4.1 66.8-19.6 90.5c-16 16-37.8 25.1-60.5 25.1h-3.4c-26.1 0-50.9-11.6-67.6-31.7l-32.3-38.7c-11.7 4.1-24.2 6.4-37.3 6.4l-.1 0 0 0c-6.3 0-12.5-.5-18.6-1.5c-3.6-.6-7.2-1.4-10.7-2.3l0 0c-28.9-7.8-53.1-26.8-67.8-52.2c-4.4-7.6-14.2-10.3-21.9-5.8s-10.3 14.2-5.8 21.9c24 41.5 68.3 70 119.3 71.9l47.2 70.8c4 6.1 6.2 13.2 6.2 20.4c0 20.3-16.5 36.8-36.8 36.8H112c-26.5 0-48-21.5-48-48zM392 224a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"]
 };
 var faBoreHole = {
   prefix: 'fas',
@@ -16795,7 +17976,7 @@ var faBoreHole = {
 var faIndustry = {
   prefix: 'fas',
   iconName: 'industry',
-  icon: [512, 512, [], "f275", "M32 32C14.3 32 0 46.3 0 64V304v48 80c0 26.5 21.5 48 48 48H464c26.5 0 48-21.5 48-48V304 152.2c0-18.2-19.4-29.7-35.4-21.1L320 215.4V152.2c0-18.2-19.4-29.7-35.4-21.1L128 215.4V64c0-17.7-14.3-32-32-32H32z"]
+  icon: [576, 512, [], "f275", "M64 32C46.3 32 32 46.3 32 64V304v48 80c0 26.5 21.5 48 48 48H496c26.5 0 48-21.5 48-48V304 152.2c0-18.2-19.4-29.7-35.4-21.1L352 215.4V152.2c0-18.2-19.4-29.7-35.4-21.1L160 215.4V64c0-17.7-14.3-32-32-32H64z"]
 };
 var faCircleDown = {
   prefix: 'fas',
@@ -16828,17 +18009,17 @@ var faLessThan = {
 var faAngleDown = {
   prefix: 'fas',
   iconName: 'angle-down',
-  icon: [384, 512, [8964], "f107", "M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"]
+  icon: [448, 512, [8964], "f107", "M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"]
 };
 var faCarTunnel = {
   prefix: 'fas',
   iconName: 'car-tunnel',
-  icon: [512, 512, [], "e4de", "M256 0C114.6 0 0 114.6 0 256V448c0 35.3 28.7 64 64 64h64H384h64c35.3 0 64-28.7 64-64V256C512 114.6 397.4 0 256 0zM384 512c-17.7 0-32-14.3-32-32V448H160v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V376c0-20.8 11.3-38.9 28.1-48.6l21-64.7c7.5-23.1 29-38.7 53.3-38.7H313.6c24.3 0 45.8 15.6 53.3 38.7l21 64.7c16.8 9.7 28.2 27.8 28.2 48.6V480c0 17.7-14.3 32-32 32zM190.8 277.5L177 320H335l-13.8-42.5c-1.1-3.3-4.1-5.5-7.6-5.5H198.4c-3.5 0-6.5 2.2-7.6 5.5zM168 408a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm200-24a24 24 0 1 0 -48 0 24 24 0 1 0 48 0z"]
+  icon: [512, 512, [], "e4de", "M256 0C114.6 0 0 114.6 0 256V448c0 35.3 28.7 64 64 64h42.8c-6.6-5.9-10.8-14.4-10.8-24V376c0-20.8 11.3-38.9 28.1-48.6l21-64.7c7.5-23.1 29-38.7 53.3-38.7H313.6c24.3 0 45.8 15.6 53.3 38.7l21 64.7c16.8 9.7 28.2 27.8 28.2 48.6V488c0 9.6-4.2 18.1-10.8 24H448c35.3 0 64-28.7 64-64V256C512 114.6 397.4 0 256 0zM362.8 512c-6.6-5.9-10.8-14.4-10.8-24V448H160v40c0 9.6-4.2 18.1-10.8 24H362.8zM190.8 277.5L177 320H335l-13.8-42.5c-1.1-3.3-4.1-5.5-7.6-5.5H198.4c-3.5 0-6.5 2.2-7.6 5.5zM168 408a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm200-24a24 24 0 1 0 -48 0 24 24 0 1 0 48 0z"]
 };
 var faHeadSideCough = {
   prefix: 'fas',
   iconName: 'head-side-cough',
-  icon: [640, 512, [], "e061", "M0 224.2C0 100.6 100.2 0 224 0h32c95.2 0 174.2 69.3 189.4 160.1c2.2 13 6.7 25.7 15 36.1l42 52.6c6.2 7.8 9.6 17.4 9.6 27.4c0 24.2-19.6 43.8-43.8 43.8H448v0 32L339.2 365.6c-11 1.4-19.2 10.7-19.2 21.8c0 11.6 9 21.2 20.6 21.9L448 416v16c0 26.5-21.5 48-48 48H320v8c0 13.3-10.7 24-24 24H256v0H96c-17.7 0-32-14.3-32-32V407.3c0-16.7-6.9-32.5-17.1-45.8C16.6 322.4 0 274.1 0 224.2zm352-.2a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM464 384a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zm152-24a24 24 0 1 1 0 48 24 24 0 1 1 0-48zM592 480a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM552 312a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm40-24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM552 408a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"]
+  icon: [640, 512, [], "e061", "M0 224.2C0 100.6 100.2 0 224 0h24c95.2 0 181.2 69.3 197.3 160.2c2.3 13 6.8 25.7 15.1 36l42 52.6c6.2 7.8 9.6 17.4 9.6 27.4c0 24.2-19.6 43.8-43.8 43.8H448v0 32L339.2 365.6c-11 1.4-19.2 10.7-19.2 21.8c0 11.6 9 21.2 20.6 21.9L448 416v16c0 26.5-21.5 48-48 48H320v8c0 13.3-10.7 24-24 24H256v0H96c-17.7 0-32-14.3-32-32V407.3c0-16.7-6.9-32.5-17.1-45.8C16.6 322.4 0 274.1 0 224.2zm352-.2a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM464 384a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zm152-24a24 24 0 1 1 0 48 24 24 0 1 1 0-48zM592 480a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM552 312a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm40-24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM552 408a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"]
 };
 var faGripLines = {
   prefix: 'fas',
@@ -16869,13 +18050,13 @@ var faAnchorCircleXmark = {
 var faEllipsis = {
   prefix: 'fas',
   iconName: 'ellipsis',
-  icon: [448, 512, ["ellipsis-h"], "f141", "M0 256a56 56 0 1 1 112 0A56 56 0 1 1 0 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"]
+  icon: [448, 512, ["ellipsis-h"], "f141", "M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"]
 };
 var faEllipsisH = faEllipsis;
 var faChessPawn = {
   prefix: 'fas',
   iconName: 'chess-pawn',
-  icon: [320, 512, [9823], "f443", "M199.4 224c29.2-18.4 48.6-50.9 48.6-88c0-57.4-46.6-104-104-104S40 78.6 40 136c0 37.1 19.4 69.6 48.5 88H80c-17.7 0-32 14.3-32 32c0 16.5 12.5 30 28.5 31.8L64 400H224L211.5 287.8c16-1.8 28.5-15.3 28.5-31.8c0-17.7-14.3-32-32-32h-8.6zM6.6 473.4c-4.2 4.2-6.6 10-6.6 16C0 501.9 10.1 512 22.6 512H265.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L240 432H48L6.6 473.4z"]
+  icon: [320, 512, [9823], "f443", "M215.5 224c29.2-18.4 48.5-50.9 48.5-88c0-57.4-46.6-104-104-104S56 78.6 56 136c0 37.1 19.4 69.6 48.5 88H96c-17.7 0-32 14.3-32 32c0 16.5 12.5 30 28.5 31.8L80 400H240L227.5 287.8c16-1.8 28.5-15.3 28.5-31.8c0-17.7-14.3-32-32-32h-8.5zM22.6 473.4c-4.2 4.2-6.6 10-6.6 16C16 501.9 26.1 512 38.6 512H281.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L256 432H64L22.6 473.4z"]
 };
 var faKitMedical = {
   prefix: 'fas',
@@ -16939,7 +18120,7 @@ var faArrowsLeftRightToLine = {
 var faDiceD20 = {
   prefix: 'fas',
   iconName: 'dice-d20',
-  icon: [512, 512, [], "f6cf", "M64.7 125.8l53.2 31.9c7.8 4.7 17.8 2 22.2-5.9L217.6 12.1c3-5.4-.9-12.1-7.1-12.1c-1.6 0-3.2 .5-4.6 1.4L63.9 98.8c-9.6 6.6-9.2 20.9 .8 26.9zM32 171.7V295.3c0 8 10.4 11 14.7 4.4l60-92c5-7.6 2.6-17.8-5.2-22.5L56.2 158C45.6 151.6 32 159.3 32 171.7zM326.4 12.1l77.6 139.6c4.4 7.9 14.5 10.6 22.2 5.9l53.2-31.9c10-6 10.4-20.3 .8-26.9L338.1 1.4c-1.4-.9-3-1.4-4.6-1.4c-6.2 0-10.1 6.7-7.1 12.1zM512 171.7c0-12.4-13.6-20.1-24.2-13.7l-45.3 27.2c-7.8 4.7-10.1 14.9-5.2 22.5l60 92c4.3 6.7 14.7 3.6 14.7-4.4V171.7zm-49.3 246L302.1 436.6c-8.1 .9-14.1 7.8-14.1 15.9v52.8c0 3.7 3 6.8 6.8 6.8c.8 0 1.6-.1 2.4-.4l172.7-64c6.1-2.2 10.1-8 10.1-14.5c0-9.3-8.1-16.5-17.3-15.4zM249.2 512c3.7 0 6.8-3 6.8-6.8V452.6c0-8.1-6.1-14.9-14.1-15.9l-160.6-19c-9.2-1.1-17.3 6.1-17.3 15.4c0 6.5 4 12.3 10.1 14.5l172.7 64c.8 .3 1.6 .4 2.4 .4zM57.7 382.9l170.9 20.2c7.8 .9 13.4-7.5 9.5-14.3l-85.7-150c-5.9-10.4-20.7-10.8-27.3-.8L46.2 358.2c-6.5 9.9-.3 23.3 11.5 24.7zm439.6-24.8L418.9 238.1c-6.5-10-21.4-9.6-27.3 .8L306.2 388.5c-3.9 6.8 1.6 15.2 9.5 14.3l170.1-20c11.8-1.4 18-14.7 11.5-24.6zm-216.9 11l78.4-137.2c6.1-10.7-1.6-23.9-13.9-23.9H199.1c-12.3 0-20 13.3-13.9 23.9l78.4 137.2c3.7 6.4 13 6.4 16.7 0zM190.4 176H353.6c12.2 0 19.9-13.1 14-23.8l-80-144c-2.8-5.1-8.2-8.2-14-8.2h-3.2c-5.8 0-11.2 3.2-14 8.2l-80 144c-5.9 10.7 1.8 23.8 14 23.8z"]
+  icon: [512, 512, [], "f6cf", "M48.7 125.8l53.2 31.9c7.8 4.7 17.8 2 22.2-5.9L201.6 12.1c3-5.4-.9-12.1-7.1-12.1c-1.6 0-3.2 .5-4.6 1.4L47.9 98.8c-9.6 6.6-9.2 20.9 .8 26.9zM16 171.7V295.3c0 8 10.4 11 14.7 4.4l60-92c5-7.6 2.6-17.8-5.2-22.5L40.2 158C29.6 151.6 16 159.3 16 171.7zM310.4 12.1l77.6 139.6c4.4 7.9 14.5 10.6 22.2 5.9l53.2-31.9c10-6 10.4-20.3 .8-26.9L322.1 1.4c-1.4-.9-3-1.4-4.6-1.4c-6.2 0-10.1 6.7-7.1 12.1zM496 171.7c0-12.4-13.6-20.1-24.2-13.7l-45.3 27.2c-7.8 4.7-10.1 14.9-5.2 22.5l60 92c4.3 6.7 14.7 3.6 14.7-4.4V171.7zm-49.3 246L286.1 436.6c-8.1 .9-14.1 7.8-14.1 15.9v52.8c0 3.7 3 6.8 6.8 6.8c.8 0 1.6-.1 2.4-.4l172.7-64c6.1-2.2 10.1-8 10.1-14.5c0-9.3-8.1-16.5-17.3-15.4zM233.2 512c3.7 0 6.8-3 6.8-6.8V452.6c0-8.1-6.1-14.9-14.1-15.9l-160.6-19c-9.2-1.1-17.3 6.1-17.3 15.4c0 6.5 4 12.3 10.1 14.5l172.7 64c.8 .3 1.6 .4 2.4 .4zM41.7 382.9l170.9 20.2c7.8 .9 13.4-7.5 9.5-14.3l-85.7-150c-5.9-10.4-20.7-10.8-27.3-.8L30.2 358.2c-6.5 9.9-.3 23.3 11.5 24.7zm439.6-24.8L402.9 238.1c-6.5-10-21.4-9.6-27.3 .8L290.2 388.5c-3.9 6.8 1.6 15.2 9.5 14.3l170.1-20c11.8-1.4 18-14.7 11.5-24.6zm-216.9 11l78.4-137.2c6.1-10.7-1.6-23.9-13.9-23.9H183.1c-12.3 0-20 13.3-13.9 23.9l78.4 137.2c3.7 6.4 13 6.4 16.7 0zM174.4 176H337.6c12.2 0 19.9-13.1 14-23.8l-80-144c-2.8-5.1-8.2-8.2-14-8.2h-3.2c-5.8 0-11.2 3.2-14 8.2l-80 144c-5.9 10.7 1.8 23.8 14 23.8z"]
 };
 var faTruckDroplet = {
   prefix: 'fas',
@@ -16954,7 +18135,7 @@ var faFileCircleXmark = {
 var faTemperatureArrowUp = {
   prefix: 'fas',
   iconName: 'temperature-arrow-up',
-  icon: [512, 512, ["temperature-up"], "e040", "M96 112c0-26.5 21.5-48 48-48s48 21.5 48 48V276.5c0 17.3 7.1 31.9 15.3 42.5C217.8 332.6 224 349.5 224 368c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-18.5 6.2-35.4 16.7-48.9C88.9 308.4 96 293.8 96 276.5V112zM144 0C82.1 0 32 50.1 32 112V276.4c0 .1-.1 .3-.2 .6c-.2 .6-.8 1.6-1.7 2.8C11.2 304.2 0 334.8 0 368c0 79.5 64.5 144 144 144s144-64.5 144-144c0-33.2-11.3-63.8-30.1-88.1c-.9-1.2-1.5-2.2-1.7-2.8c-.1-.3-.2-.5-.2-.6V112C256 50.1 205.9 0 144 0zm0 416c26.5 0 48-21.5 48-48c0-20.9-13.4-38.7-32-45.3V112c0-8.8-7.2-16-16-16s-16 7.2-16 16V322.7c-18.6 6.6-32 24.4-32 45.3c0 26.5 21.5 48 48 48zM448 160h32c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-64-64c-12.5-12.5-32.8-12.5-45.3 0l-64 64c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8h32V448c0 17.7 14.3 32 32 32s32-14.3 32-32V160z"]
+  icon: [576, 512, ["temperature-up"], "e040", "M128 112c0-26.5 21.5-48 48-48s48 21.5 48 48V276.5c0 17.3 7.1 31.9 15.3 42.5C249.8 332.6 256 349.5 256 368c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-18.5 6.2-35.4 16.7-48.9c8.2-10.6 15.3-25.2 15.3-42.5V112zM176 0C114.1 0 64 50.1 64 112V276.4c0 .1-.1 .3-.2 .6c-.2 .6-.8 1.6-1.7 2.8C43.2 304.2 32 334.8 32 368c0 79.5 64.5 144 144 144s144-64.5 144-144c0-33.2-11.2-63.8-30.1-88.1c-.9-1.2-1.5-2.2-1.7-2.8c-.1-.3-.2-.5-.2-.6V112C288 50.1 237.9 0 176 0zm0 416c26.5 0 48-21.5 48-48c0-20.9-13.4-38.7-32-45.3V112c0-8.8-7.2-16-16-16s-16 7.2-16 16V322.7c-18.6 6.6-32 24.4-32 45.3c0 26.5 21.5 48 48 48zM480 160h32c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-64-64c-12.5-12.5-32.8-12.5-45.3 0l-64 64c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8h32V448c0 17.7 14.3 32 32 32s32-14.3 32-32V160z"]
 };
 var faTemperatureUp = faTemperatureArrowUp;
 var faMedal = {
@@ -16981,7 +18162,7 @@ var faPodcast = {
 var faTemperatureFull = {
   prefix: 'fas',
   iconName: 'temperature-full',
-  icon: [320, 512, ["temperature-4", "thermometer-4", "thermometer-full"], "f2c7", "M144 64c-26.5 0-48 21.5-48 48V276.5c0 17.3-7.1 31.9-15.3 42.5C70.2 332.6 64 349.5 64 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM32 112C32 50.2 82.1 0 144 0s112 50.1 112 112V276.5c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S0 447.5 0 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6V112zM192 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V112c0-8.8 7.2-16 16-16s16 7.2 16 16V322.7c18.6 6.6 32 24.4 32 45.3z"]
+  icon: [320, 512, ["temperature-4", "thermometer-4", "thermometer-full"], "f2c7", "M160 64c-26.5 0-48 21.5-48 48V276.5c0 17.3-7.1 31.9-15.3 42.5C86.2 332.6 80 349.5 80 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5V112c0-26.5-21.5-48-48-48zM48 112C48 50.2 98.1 0 160 0s112 50.1 112 112V276.5c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S16 447.5 16 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6V112zM208 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3V112c0-8.8 7.2-16 16-16s16 7.2 16 16V322.7c18.6 6.6 32 24.4 32 45.3z"]
 };
 var faTemperature4 = faTemperatureFull;
 var faThermometer4 = faTemperatureFull;
@@ -17004,12 +18185,12 @@ var faPlugCircleXmark = {
 var faStarOfLife = {
   prefix: 'fas',
   iconName: 'star-of-life',
-  icon: [512, 512, [], "f621", "M186 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L330 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L282 339.1V480c0 17.7-14.3 32-32 32H218c-17.7 0-32-14.3-32-32V339.1L64 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7C-4.5 354.8 .7 335.3 16 326.4L138 256 16 185.6C.7 176.7-4.5 157.2 4.3 141.9l16-27.7C29.1 98.8 48.7 93.6 64 102.4l122 70.4V32z"]
+  icon: [512, 512, [], "f621", "M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z"]
 };
 var faPhoneSlash = {
   prefix: 'fas',
   iconName: 'phone-slash',
-  icon: [640, 512, [], "f3dd", "M228.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C76.1 30.2 64 46 64 64c0 107.4 37.8 206 100.8 283.1L9.2 469.1c-10.4 8.2-12.3 23.3-4.1 33.7s23.3 12.3 33.7 4.1l592-464c10.4-8.2 12.3-23.3 4.1-33.7s-23.3-12.3-33.7-4.1L253 278c-17.8-21.5-32.9-45.2-45-70.7L257.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96zm96.8 319l-91.3 72C310.7 476 407.1 512 512 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L368.7 368c-15-7.1-29.3-15.2-43-24.3z"]
+  icon: [640, 512, [], "f3dd", "M601.2 5.1c10.4-8.2 25.5-6.3 33.7 4.1s6.3 25.5-4.1 33.7l-592 464c-10.4 8.2-25.5 6.3-33.7-4.1s-6.3-25.5 4.1-33.7l155.6-122C101.8 270 64 171.4 64 64c0-18 12.1-33.8 29.5-38.6l88-24c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L208 207.3c12 25.5 27.2 49.2 45 70.7L601.2 5.1zM234.3 415.6l91.3-72c13.7 9.1 28 17.3 43 24.3L409 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C545.8 499.9 530 512 512 512c-104.9 0-201.3-36-277.7-96.4z"]
 };
 var faPaintRoller = {
   prefix: 'fas',
@@ -17019,7 +18200,7 @@ var faPaintRoller = {
 var faHandshakeAngle = {
   prefix: 'fas',
   iconName: 'handshake-angle',
-  icon: [640, 512, ["hands-helping"], "f4c4", "M534 248v3.3l69.7-69.7c21.9-21.9 21.9-57.3 0-79.2L525.6 24.4c-21.9-21.9-57.3-21.9-79.2 0L406.3 64.5c-2.7-.3-5.5-.5-8.3-.5H286c-37.1 0-67.6 28-71.6 64H214V248c0 22.1 17.9 40 40 40s40-17.9 40-40V176c0 0 0-.1 0-.1V160l16 0 136 0c0 0 0 0 .1 0H454c44.2 0 80 35.8 80 80v8zM326 192v56c0 39.8-32.2 72-72 72s-72-32.2-72-72V129.4c-35.9 6.2-65.8 32.3-76 68.2L89.5 255.2 16.3 328.4c-21.9 21.9-21.9 57.3 0 79.2l78.1 78.1c21.9 21.9 57.3 21.9 79.2 0l37.7-37.7c.9 0 1.8 .1 2.7 .1H374c26.5 0 48-21.5 48-48c0-5.6-1-11-2.7-16H422c26.5 0 48-21.5 48-48c0-12.8-5-24.4-13.2-33c25.7-5 45.1-27.6 45.2-54.8v-.4c-.1-30.8-25.1-55.8-56-55.8c0 0 0 0 0 0l-120 0z"]
+  icon: [640, 512, ["hands-helping"], "f4c4", "M544 248v3.3l69.7-69.7c21.9-21.9 21.9-57.3 0-79.2L535.6 24.4c-21.9-21.9-57.3-21.9-79.2 0L416.3 64.5c-2.7-.3-5.5-.5-8.3-.5H296c-37.1 0-67.6 28-71.6 64H224V248c0 22.1 17.9 40 40 40s40-17.9 40-40V176c0 0 0-.1 0-.1V160l16 0 136 0c0 0 0 0 .1 0H464c44.2 0 80 35.8 80 80v8zM336 192v56c0 39.8-32.2 72-72 72s-72-32.2-72-72V129.4c-35.9 6.2-65.8 32.3-76 68.2L99.5 255.2 26.3 328.4c-21.9 21.9-21.9 57.3 0 79.2l78.1 78.1c21.9 21.9 57.3 21.9 79.2 0l37.7-37.7c.9 0 1.8 .1 2.7 .1H384c26.5 0 48-21.5 48-48c0-5.6-1-11-2.7-16H432c26.5 0 48-21.5 48-48c0-12.8-5-24.4-13.2-33c25.7-5 45.1-27.6 45.2-54.8v-.4c-.1-30.8-25.1-55.8-56-55.8c0 0 0 0 0 0l-120 0z"]
 };
 var faHandsHelping = faHandshakeAngle;
 var faLocationDot = {
@@ -17058,7 +18239,7 @@ var faTint = faDroplet;
 var faEraser = {
   prefix: 'fas',
   iconName: 'eraser',
-  icon: [512, 512, [], "f12d", "M258.7 57.4L25.4 290.7c-25 25-25 65.5 0 90.5l80 80c12 12 28.3 18.7 45.3 18.7H256h9.4H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H355.9L486.6 285.3c25-25 25-65.5 0-90.5L349.3 57.4c-25-25-65.5-25-90.5 0zM265.4 416H256l-105.4 0-80-80L195.3 211.3 332.7 348.7 265.4 416z"]
+  icon: [576, 512, [], "f12d", "M290.7 57.4L57.4 290.7c-25 25-25 65.5 0 90.5l80 80c12 12 28.3 18.7 45.3 18.7H288h9.4H512c17.7 0 32-14.3 32-32s-14.3-32-32-32H387.9L518.6 285.3c25-25 25-65.5 0-90.5L381.3 57.4c-25-25-65.5-25-90.5 0zM297.4 416H288l-105.4 0-80-80L227.3 211.3 364.7 348.7 297.4 416z"]
 };
 var faEarthAmericas = {
   prefix: 'fas',
@@ -17071,7 +18252,7 @@ var faGlobeAmericas = faEarthAmericas;
 var faPersonBurst = {
   prefix: 'fas',
   iconName: 'person-burst',
-  icon: [640, 512, [], "e53b", "M480 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-8 384V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V256.9l28.6 47.5c9.1 15.1 28.8 20 43.9 10.9s20-28.8 10.9-43.9l-58.3-97c-17.4-28.9-48.6-46.6-82.3-46.6H465.1c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9L408 256.9V480c0 17.7 14.3 32 32 32s32-14.3 32-32zM190.9 18.1C188.4 12 182.6 8 176 8s-12.4 4-14.9 10.1l-29.4 74L55.6 68.9c-6.3-1.9-13.1 .2-17.2 5.3s-4.6 12.2-1.4 17.9l39.5 69.1L10.9 206.4c-5.4 3.7-8 10.3-6.5 16.7s6.7 11.2 13.1 12.2l78.7 12.2L90.6 327c-.5 6.5 3.1 12.7 9 15.5s12.9 1.8 17.8-2.6L176 286.1l58.6 53.9c4.8 4.4 11.9 5.5 17.8 2.6s9.5-9 9-15.5l-5.6-79.4 50.5-7.8 24.4-40.5-55.2-38L315 92.2c3.3-5.7 2.7-12.8-1.4-17.9s-10.9-7.2-17.2-5.3L220.3 92.1l-29.4-74z"]
+  icon: [640, 512, [], "e53b", "M480 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-8 384V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V256.9l28.6 47.5c9.1 15.1 28.8 20 43.9 10.9s20-28.8 10.9-43.9l-58.3-97c-17.4-28.9-48.6-46.6-82.3-46.6H465.1c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9L408 256.9V480c0 17.7 14.3 32 32 32s32-14.3 32-32zM190.9 18.1C188.4 12 182.6 8 176 8s-12.4 4-14.9 10.1l-29.4 74L55.6 68.9c-6.3-1.9-13.1 .2-17.2 5.3s-4.6 12.2-1.4 17.9l39.5 69.1L10.9 206.4c-5.4 3.7-8 10.3-6.5 16.7s6.7 11.2 13.1 12.2l78.7 12.2L90.6 327c-.5 6.5 3.1 12.7 9 15.5s12.9 1.8 17.8-2.6L176 286.1l58.6 53.9c4.8 4.4 11.9 5.5 17.8 2.6s9.5-9 9-15.5l-5.6-79.4 50.5-7.8 24.3-40.5-55.2-38L315 92.2c3.3-5.7 2.7-12.8-1.4-17.9s-10.9-7.2-17.2-5.3L220.3 92.1l-29.4-74z"]
 };
 var faDove = {
   prefix: 'fas',
@@ -17126,7 +18307,7 @@ var faWineBottle = {
 var faChessRook = {
   prefix: 'fas',
   iconName: 'chess-rook',
-  icon: [448, 512, [9820], "f447", "M16 192V48c0-8.8 7.2-16 16-16H96c8.8 0 16 7.2 16 16V88c0 4.4 3.6 8 8 8h32c4.4 0 8-3.6 8-8V48c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16V88c0 4.4 3.6 8 8 8h32c4.4 0 8-3.6 8-8V48c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16V192c0 10.1-4.7 19.6-12.8 25.6L336 256l16 144H64L80 256 28.8 217.6C20.7 211.6 16 202.1 16 192zm176 96h32c8.8 0 16-7.2 16-16V224c0-17.7-14.3-32-32-32s-32 14.3-32 32v48c0 8.8 7.2 16 16 16zM6.6 473.4L48 432H368l41.4 41.4c4.2 4.2 6.6 10 6.6 16c0 12.5-10.1 22.6-22.6 22.6H22.6C10.1 512 0 501.9 0 489.4c0-6 2.4-11.8 6.6-16z"]
+  icon: [448, 512, [9820], "f447", "M32 192V48c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16V88c0 4.4 3.6 8 8 8h32c4.4 0 8-3.6 8-8V48c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16V88c0 4.4 3.6 8 8 8h32c4.4 0 8-3.6 8-8V48c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16V192c0 10.1-4.7 19.6-12.8 25.6L352 256l16 144H80L96 256 44.8 217.6C36.7 211.6 32 202.1 32 192zm176 96h32c8.8 0 16-7.2 16-16V224c0-17.7-14.3-32-32-32s-32 14.3-32 32v48c0 8.8 7.2 16 16 16zM22.6 473.4L64 432H384l41.4 41.4c4.2 4.2 6.6 10 6.6 16c0 12.5-10.1 22.6-22.6 22.6H38.6C26.1 512 16 501.9 16 489.4c0-6 2.4-11.8 6.6-16z"]
 };
 var faBarsStaggered = {
   prefix: 'fas',
@@ -17138,7 +18319,7 @@ var faStream = faBarsStaggered;
 var faDharmachakra = {
   prefix: 'fas',
   iconName: 'dharmachakra',
-  icon: [512, 512, [9784], "f655", "M337.8 205.7l48.6-42.5c13.8 19.3 23.4 41.9 27.4 66.2l-64.4 4.3c-2.4-10.1-6.4-19.5-11.6-28zm140.1 19.5c-5.3-38.8-20.6-74.5-43.2-104.3l.8-.7C449 108.4 449.7 87.6 437 75s-33.4-12-45.2 1.5l-.7 .8c-29.8-22.6-65.5-37.9-104.3-43.2l.1-1.1c1.2-17.9-13-33-30.9-33s-32.1 15.2-30.9 33l.1 1.1c-38.8 5.3-74.5 20.6-104.3 43.2l-.7-.8C108.4 63 87.6 62.3 75 75s-12 33.4 1.5 45.2l.8 .7c-22.6 29.8-37.9 65.5-43.2 104.3l-1.1-.1c-17.9-1.2-33 13-33 30.9s15.2 32.1 33 30.9l1.1-.1c5.3 38.8 20.6 74.5 43.2 104.3l-.8 .7C63 403.6 62.3 424.4 75 437s33.4 12 45.2-1.5l.7-.8c29.8 22.6 65.5 37.9 104.3 43.2l-.1 1.1c-1.2 17.9 13 33 30.9 33s32.1-15.2 30.9-33l-.1-1.1c38.8-5.3 74.5-20.6 104.3-43.2l.7 .8c11.8 13.5 32.5 14.2 45.2 1.5s12-33.4-1.5-45.2l-.8-.7c22.6-29.8 37.9-65.5 43.2-104.3l1.1 .1c17.9 1.2 33-13 33-30.9s-15.2-32.1-33-30.9l-1.1 .1zM163.2 125.6c19.3-13.8 41.9-23.4 66.2-27.5l4.3 64.4c-10 2.4-19.5 6.4-28 11.6l-42.5-48.6zm-65 103.8c4.1-24.4 13.7-46.9 27.5-66.2l48.6 42.5c-5.3 8.5-9.2 18-11.6 28l-64.4-4.3zm27.5 119.4c-13.8-19.3-23.4-41.9-27.5-66.2l64.4-4.3c2.4 10 6.4 19.5 11.6 28l-48.6 42.5zm103.8 65c-24.4-4.1-46.9-13.7-66.2-27.4l42.5-48.6c8.5 5.3 18 9.2 28 11.6l-4.3 64.4zm119.4-27.4c-19.3 13.8-41.9 23.4-66.2 27.4l-4.3-64.4c10-2.4 19.5-6.4 28-11.6l42.5 48.6zm65-103.8c-4.1 24.4-13.7 46.9-27.4 66.2l-48.6-42.5c5.3-8.5 9.2-18 11.6-28l64.4 4.3zm-65-156.9l-42.5 48.6c-8.6-5.3-18-9.2-28-11.6l4.3-64.4c24.4 4.1 46.9 13.7 66.2 27.5zM256 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
+  icon: [512, 512, [9784], "f655", "M337.8 205.7l48.6-42.5c13.8 19.3 23.4 41.9 27.4 66.2l-64.4 4.3c-2.4-10.1-6.4-19.5-11.6-28zm140.1 19.5c-5.3-38.8-20.6-74.5-43.2-104.3l.8-.7C449 108.4 449.7 87.6 437 75s-33.4-12-45.2 1.5l-.7 .8c-29.8-22.6-65.5-37.9-104.3-43.2l.1-1.1c1.2-17.9-13-33-30.9-33s-32.1 15.2-30.9 33l.1 1.1c-38.8 5.3-74.5 20.6-104.3 43.2l-.7-.8C108.4 63 87.6 62.3 75 75s-12 33.4 1.5 45.2l.8 .7c-22.6 29.8-37.9 65.5-43.2 104.3l-1.1-.1c-17.9-1.2-33 13-33 30.9s15.2 32.1 33 30.9l1.1-.1c5.3 38.8 20.6 74.5 43.2 104.3l-.8 .7C63 403.6 62.3 424.4 75 437s33.4 12 45.2-1.5l.7-.8c29.8 22.6 65.5 37.9 104.3 43.2l-.1 1.1c-1.2 17.9 13 33 30.9 33s32.1-15.2 30.9-33l-.1-1.1c38.8-5.3 74.5-20.6 104.3-43.2l.7 .8c11.8 13.5 32.5 14.2 45.2 1.5s12-33.4-1.5-45.2l-.8-.7c22.6-29.8 37.9-65.5 43.2-104.3l1.1 .1c17.9 1.2 33-13 33-30.9s-15.2-32.1-33-30.9l-1.1 .1zM163.2 125.6c19.3-13.8 41.9-23.4 66.2-27.5l4.3 64.4c-10 2.4-19.5 6.4-28 11.6l-42.5-48.6zm-65 103.8c4.1-24.4 13.7-46.9 27.5-66.2l48.6 42.5c-5.3 8.5-9.2 18-11.6 28l-64.4-4.3zm27.5 119.4c-13.8-19.3-23.4-41.9-27.5-66.2l64.4-4.3c2.4 10 6.4 19.5 11.6 28l-48.6 42.5zm103.8 65c-24.4-4.1-46.9-13.7-66.2-27.4l42.5-48.6c8.5 5.3 18 9.2 28 11.6l-4.3 64.4zm119.4-27.4c-19.3 13.8-41.9 23.4-66.2 27.4l-4.3-64.4c10-2.4 19.5-6.4 28-11.6l42.5 48.6zm65-103.8c-4.1 24.4-13.7 46.9-27.4 66.2l-48.6-42.5c5.3-8.5 9.2-18 11.6-28l64.4 4.3zm-65-156.9l-42.5 48.6c-8.5-5.3-18-9.2-28-11.6l4.3-64.4c24.4 4.1 46.9 13.7 66.2 27.5zM256 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
 };
 var faHotdog = {
   prefix: 'fas',
@@ -17148,7 +18329,7 @@ var faHotdog = {
 var faPersonWalkingWithCane = {
   prefix: 'fas',
   iconName: 'person-walking-with-cane',
-  icon: [448, 512, ["blind"], "f29d", "M144 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-8.4 32c-36.4 0-69.6 20.5-85.9 53.1L3.4 273.7c-7.9 15.8-1.5 35 14.3 42.9s35 1.5 42.9-14.3L96 231.6v43.2c0 17 6.7 33.3 18.7 45.3L192 397.3V480c0 17.7 14.3 32 32 32s32-14.3 32-32V390.6c0-12.7-5.1-24.9-14.1-33.9L192 306.7V213.3l70.4 93.9c10.6 14.1 30.7 17 44.8 6.4s17-30.7 6.4-44.8L236.8 166.4C218.7 142.2 190.2 128 160 128H135.6zM96.3 346.8L65 472.2c-4.3 17.1 6.1 34.5 23.3 38.8s34.5-6.1 38.8-23.3l22-88.2L96.3 346.8zM418.8 505.1c5 7.3 15 9.1 22.3 4s9.1-15 4-22.3L326.9 316.1c-2.8 3.8-6.1 7.3-10.1 10.3c-5 3.8-10.5 6.4-16.2 7.9L418.8 505.1z"]
+  icon: [512, 512, ["blind"], "f29d", "M176 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-8.4 32c-36.4 0-69.6 20.5-85.9 53.1L35.4 273.7c-7.9 15.8-1.5 35 14.3 42.9s35 1.5 42.9-14.3L128 231.6v43.2c0 17 6.7 33.3 18.7 45.3L224 397.3V480c0 17.7 14.3 32 32 32s32-14.3 32-32V390.6c0-12.7-5.1-24.9-14.1-33.9L224 306.7V213.3l70.4 93.9c10.6 14.1 30.7 17 44.8 6.4s17-30.7 6.4-44.8L268.8 166.4C250.7 142.2 222.2 128 192 128H167.6zM128.3 346.8L97 472.2c-4.3 17.1 6.1 34.5 23.3 38.8s34.5-6.1 38.8-23.3l22-88.2-52.8-52.8zM450.8 505.1c5 7.3 15 9.1 22.3 4s9.1-15 4-22.3L358.9 316.1c-2.8 3.8-6.1 7.3-10.1 10.3c-5 3.8-10.5 6.4-16.2 7.9L450.8 505.1z"]
 };
 var faBlind = faPersonWalkingWithCane;
 var faDrum = {
@@ -17159,12 +18340,12 @@ var faDrum = {
 var faIceCream = {
   prefix: 'fas',
   iconName: 'ice-cream',
-  icon: [384, 512, [127848], "f810", "M335.1 160c.6-5.3 .9-10.6 .9-16C336 64.5 271.5 0 192 0S48 64.5 48 144c0 5.4 .3 10.7 .9 16H48c-26.5 0-48 21.5-48 48s21.5 48 48 48h53.5 181H336c26.5 0 48-21.5 48-48s-21.5-48-48-48h-.9zM64 288L168.8 497.7c4.4 8.8 13.3 14.3 23.2 14.3s18.8-5.5 23.2-14.3L320 288H64z"]
+  icon: [448, 512, [127848], "f810", "M367.1 160c.6-5.3 .9-10.6 .9-16C368 64.5 303.5 0 224 0S80 64.5 80 144c0 5.4 .3 10.7 .9 16H80c-26.5 0-48 21.5-48 48s21.5 48 48 48h53.5 181H368c26.5 0 48-21.5 48-48s-21.5-48-48-48h-.9zM96 288L200.8 497.7c4.4 8.8 13.3 14.3 23.2 14.3s18.8-5.5 23.2-14.3L352 288H96z"]
 };
 var faHeartCircleBolt = {
   prefix: 'fas',
   iconName: 'heart-circle-bolt',
-  icon: [576, 512, [], "e4fc", "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5zM432 512c79.5 0 144-64.5 144-144s-64.5-144-144-144s-144 64.5-144 144s64.5 144 144 144zm47.9-225c4.3 3.7 5.4 9.9 2.6 14.9L452.4 356H488c5.2 0 9.8 3.3 11.4 8.2s-.1 10.3-4.2 13.4l-96 72c-4.5 3.4-10.8 3.2-15.1-.6s-5.4-9.9-2.6-14.9L411.6 380H376c-5.2 0-9.8-3.3-11.4-8.2s.1-10.3 4.2-13.4l96-72c4.5-3.4 10.8-3.2 15.1 .6z"]
+  icon: [576, 512, [], "e4fc", "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5zM432 512a144 144 0 1 0 0-288 144 144 0 1 0 0 288zm47.9-225c4.3 3.7 5.4 9.9 2.6 14.9L452.4 356H488c5.2 0 9.8 3.3 11.4 8.2s-.1 10.3-4.2 13.4l-96 72c-4.5 3.4-10.8 3.2-15.1-.6s-5.4-9.9-2.6-14.9L411.6 380H376c-5.2 0-9.8-3.3-11.4-8.2s.1-10.3 4.2-13.4l96-72c4.5-3.4 10.8-3.2 15.1 .6z"]
 };
 var faFax = {
   prefix: 'fas',
@@ -17197,7 +18378,7 @@ var faBoxesAlt = faBoxesStacked;
 var faLink = {
   prefix: 'fas',
   iconName: 'link',
-  icon: [640, 512, [128279, "chain"], "f0c1", "M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z"]
+  icon: [640, 512, [128279, "chain"], "f0c1", "M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"]
 };
 var faChain = faLink;
 var faEarListen = {
@@ -17235,7 +18416,7 @@ var faSearch = faMagnifyingGlass;
 var faTableTennisPaddleBall = {
   prefix: 'fas',
   iconName: 'table-tennis-paddle-ball',
-  icon: [512, 512, [127955, "ping-pong-paddle-ball", "table-tennis"], "f45d", "M416 288c-50.1 0-93.6 28.8-114.6 70.8L68.9 126.3l.6-.6 60.1-60.1c87.5-87.5 229.3-87.5 316.8 0c67.1 67.1 82.7 166.3 46.8 248.3C471.8 297.6 445 288 416 288zM49.3 151.9L290.1 392.7c-1.4 7.5-2.1 15.3-2.1 23.3c0 23.2 6.2 44.9 16.9 63.7c-3 .2-6.1 .3-9.2 .3H293c-33.9 0-66.5-13.5-90.5-37.5l-9.8-9.8c-13.1-13.1-34.6-12.4-46.8 1.7L88.2 501c-5.8 6.7-14.2 10.7-23 11s-17.5-3.1-23.8-9.4l-32-32C3.1 464.3-.3 455.7 0 446.9s4.3-17.2 11-23l66.6-57.7c14-12.2 14.8-33.7 1.7-46.8l-9.8-9.8C45.5 285.5 32 252.9 32 219v-2.7c0-22.8 6.1-44.9 17.3-64.3zM416 320a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"]
+  icon: [640, 512, [127955, "ping-pong-paddle-ball", "table-tennis"], "f45d", "M480 288c-50.1 0-93.6 28.8-114.6 70.8L132.9 126.3l.6-.6 60.1-60.1c87.5-87.5 229.3-87.5 316.8 0c67.1 67.1 82.7 166.3 46.8 248.3C535.8 297.6 509 288 480 288zM113.3 151.9L354.1 392.7c-1.4 7.5-2.1 15.3-2.1 23.3c0 23.2 6.2 44.9 16.9 63.7c-3 .2-6.1 .3-9.2 .3H357c-33.9 0-66.5-13.5-90.5-37.5l-9.8-9.8c-13.1-13.1-34.6-12.4-46.8 1.7L152.2 501c-5.8 6.7-14.2 10.7-23 11s-17.5-3.1-23.8-9.4l-32-32c-6.3-6.3-9.7-14.9-9.4-23.8s4.3-17.2 11-23l66.6-57.7c14-12.2 14.8-33.7 1.7-46.8l-9.8-9.8c-24-24-37.5-56.6-37.5-90.5v-2.7c0-22.8 6.1-44.9 17.3-64.3zM480 320a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"]
 };
 var faPingPongPaddleBall = faTableTennisPaddleBall;
 var faTableTennis = faTableTennisPaddleBall;
@@ -17269,13 +18450,13 @@ var faWalkieTalkie = {
 var faFilePen = {
   prefix: 'fas',
   iconName: 'file-pen',
-  icon: [576, 512, [128221, "file-edit"], "f31c", "M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V285.7l-86.8 86.8c-10.3 10.3-17.5 23.1-21 37.2l-18.7 74.9c-2.3 9.2-1.8 18.8 1.3 27.5H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM549.8 235.7l14.4 14.4c15.6 15.6 15.6 40.9 0 56.6l-29.4 29.4-71-71 29.4-29.4c15.6-15.6 40.9-15.6 56.6 0zM311.9 417L441.1 287.8l71 71L382.9 487.9c-4.1 4.1-9.2 7-14.9 8.4l-60.1 15c-5.5 1.4-11.2-.2-15.2-4.2s-5.6-9.7-4.2-15.2l15-60.1c1.4-5.6 4.3-10.8 8.4-14.9z"]
+  icon: [576, 512, [128221, "file-edit"], "f31c", "M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V299.6l-94.7 94.7c-8.2 8.2-14 18.5-16.8 29.7l-15 60.1c-2.3 9.4-1.8 19 1.4 27.8H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM549.8 235.7l14.4 14.4c15.6 15.6 15.6 40.9 0 56.6l-29.4 29.4-71-71 29.4-29.4c15.6-15.6 40.9-15.6 56.6 0zM311.9 417L441.1 287.8l71 71L382.9 487.9c-4.1 4.1-9.2 7-14.9 8.4l-60.1 15c-5.5 1.4-11.2-.2-15.2-4.2s-5.6-9.7-4.2-15.2l15-60.1c1.4-5.6 4.3-10.8 8.4-14.9z"]
 };
 var faFileEdit = faFilePen;
 var faReceipt = {
   prefix: 'fas',
   iconName: 'receipt',
-  icon: [384, 512, [129534], "f543", "M14 2.2C22.5-1.7 32.5-.3 39.6 5.8L80 40.4 120.4 5.8c9-7.7 22.3-7.7 31.2 0L192 40.4 232.4 5.8c9-7.7 22.2-7.7 31.2 0L304 40.4 344.4 5.8c7.1-6.1 17.1-7.5 25.6-3.6s14 12.4 14 21.8V488c0 9.4-5.5 17.9-14 21.8s-18.5 2.5-25.6-3.6L304 471.6l-40.4 34.6c-9 7.7-22.2 7.7-31.2 0L192 471.6l-40.4 34.6c-9 7.7-22.3 7.7-31.2 0L80 471.6 39.6 506.2c-7.1 6.1-17.1 7.5-25.6 3.6S0 497.4 0 488V24C0 14.6 5.5 6.1 14 2.2zM96 144c-8.8 0-16 7.2-16 16s7.2 16 16 16H288c8.8 0 16-7.2 16-16s-7.2-16-16-16H96zM80 352c0 8.8 7.2 16 16 16H288c8.8 0 16-7.2 16-16s-7.2-16-16-16H96c-8.8 0-16 7.2-16 16zM96 240c-8.8 0-16 7.2-16 16s7.2 16 16 16H288c8.8 0 16-7.2 16-16s-7.2-16-16-16H96z"]
+  icon: [384, 512, [129534], "f543", "M14 2.2C22.5-1.7 32.5-.3 39.6 5.8L80 40.4 120.4 5.8c9-7.7 22.3-7.7 31.2 0L192 40.4 232.4 5.8c9-7.7 22.3-7.7 31.2 0L304 40.4 344.4 5.8c7.1-6.1 17.1-7.5 25.6-3.6s14 12.4 14 21.8V488c0 9.4-5.5 17.9-14 21.8s-18.5 2.5-25.6-3.6L304 471.6l-40.4 34.6c-9 7.7-22.3 7.7-31.2 0L192 471.6l-40.4 34.6c-9 7.7-22.3 7.7-31.2 0L80 471.6 39.6 506.2c-7.1 6.1-17.1 7.5-25.6 3.6S0 497.4 0 488V24C0 14.6 5.5 6.1 14 2.2zM96 144c-8.8 0-16 7.2-16 16s7.2 16 16 16H288c8.8 0 16-7.2 16-16s-7.2-16-16-16H96zM80 352c0 8.8 7.2 16 16 16H288c8.8 0 16-7.2 16-16s-7.2-16-16-16H96c-8.8 0-16 7.2-16 16zM96 240c-8.8 0-16 7.2-16 16s7.2 16 16 16H288c8.8 0 16-7.2 16-16s-7.2-16-16-16H96z"]
 };
 var faSquarePen = {
   prefix: 'fas',
@@ -17297,7 +18478,7 @@ var faPersonCircleExclamation = {
 var faChevronDown = {
   prefix: 'fas',
   iconName: 'chevron-down',
-  icon: [448, 512, [], "f078", "M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"]
+  icon: [512, 512, [], "f078", "M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"]
 };
 var faBatteryFull = {
   prefix: 'fas',
@@ -17314,7 +18495,7 @@ var faSkullCrossbones = {
 var faCodeCompare = {
   prefix: 'fas',
   iconName: 'code-compare',
-  icon: [512, 512, [], "e13a", "M320 488c0 9.5-5.6 18.1-14.2 21.9s-18.8 2.3-25.8-4.1l-80-72c-5.1-4.6-7.9-11-7.9-17.8s2.9-13.3 7.9-17.8l80-72c7-6.3 17.2-7.9 25.8-4.1s14.2 12.4 14.2 21.9v40h16c35.3 0 64-28.7 64-64V153.3C371.7 141 352 112.8 352 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V320c0 70.7-57.3 128-128 128H320v40zM456 80c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24zM192 24c0-9.5 5.6-18.1 14.2-21.9s18.8-2.3 25.8 4.1l80 72c5.1 4.6 7.9 11 7.9 17.8s-2.9 13.3-7.9 17.8l-80 72c-7 6.3-17.2 7.9-25.8 4.1s-14.2-12.4-14.2-21.9V128H176c-35.3 0-64 28.7-64 64V358.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V192c0-70.7 57.3-128 128-128h16V24zM56 432c0 13.3 10.7 24 24 24s24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24z"]
+  icon: [512, 512, [], "e13a", "M320 488c0 9.5-5.6 18.1-14.2 21.9s-18.8 2.3-25.8-4.1l-80-72c-5.1-4.6-7.9-11-7.9-17.8s2.9-13.3 7.9-17.8l80-72c7-6.3 17.2-7.9 25.8-4.1s14.2 12.4 14.2 21.9v40h16c35.3 0 64-28.7 64-64V153.3C371.7 141 352 112.8 352 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V320c0 70.7-57.3 128-128 128H320v40zM456 80a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM192 24c0-9.5 5.6-18.1 14.2-21.9s18.8-2.3 25.8 4.1l80 72c5.1 4.6 7.9 11 7.9 17.8s-2.9 13.3-7.9 17.8l-80 72c-7 6.3-17.2 7.9-25.8 4.1s-14.2-12.4-14.2-21.9V128H176c-35.3 0-64 28.7-64 64V358.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V192c0-70.7 57.3-128 128-128h16V24zM56 432a24 24 0 1 0 48 0 24 24 0 1 0 -48 0z"]
 };
 var faListUl = {
   prefix: 'fas',
@@ -17411,7 +18592,7 @@ var faWind = {
 var faCarBurst = {
   prefix: 'fas',
   iconName: 'car-burst',
-  icon: [640, 512, ["car-crash"], "f5e1", "M172 8c-6.6 0-12.4 4-14.9 10.1l-29.4 74L51.6 68.9c-6.3-1.9-13.1 .2-17.2 5.3s-4.6 12.2-1.4 17.9l39.5 69.1L6.9 206.4c-5.4 3.7-8 10.3-6.5 16.7s6.7 11.2 13.1 12.2l78.7 12.2L86.6 327c-.5 6.5 3.1 12.7 9 15.5s12.9 1.8 17.8-2.6l35.3-32.5 9.5-35.4 10.4-38.6c8-29.9 30.5-52.1 57.9-60.9l41-59.2c11.3-16.3 26.4-28.9 43.5-37.2c-.4-.6-.8-1.2-1.3-1.8c-4.1-5.1-10.9-7.2-17.2-5.3L216.3 92.1l-29.4-74C184.4 12 178.6 8 172 8zM363.7 161.5l135.6 36.3c6.5 1.8 11.3 7.4 11.8 14.2l4.6 56.5-201.5-54 32.2-46.6c3.8-5.6 10.8-8.1 17.3-6.4zm-69.9-30l-47.9 69.3c-21.6 3-40.3 18.6-46.3 41l-10.4 38.6-16.6 61.8-8.3 30.9c-4.6 17.1 5.6 34.6 22.6 39.2l15.5 4.1c17.1 4.6 34.6-5.6 39.2-22.6l8.3-30.9 247.3 66.3-8.3 30.9c-4.6 17.1 5.6 34.6 22.6 39.2l15.5 4.1c17.1 4.6 34.6-5.6 39.2-22.6l8.3-30.9L591 388l10.4-38.6c6-22.4-2.5-45.2-19.6-58.7l-6.8-84c-2.7-33.7-26.4-62-59-70.8L380.2 99.7c-32.7-8.8-67.3 4-86.5 31.8zm-17 131a24 24 0 1 1 -12.4 46.4 24 24 0 1 1 12.4-46.4zm217.9 83.2A24 24 0 1 1 541 358.1a24 24 0 1 1 -46.4-12.4z"]
+  icon: [640, 512, ["car-crash"], "f5e1", "M176 8c-6.6 0-12.4 4-14.9 10.1l-29.4 74L55.6 68.9c-6.3-1.9-13.1 .2-17.2 5.3s-4.6 12.2-1.4 17.9l39.5 69.1L10.9 206.4c-5.4 3.7-8 10.3-6.5 16.7s6.7 11.2 13.1 12.2l78.7 12.2L90.6 327c-.5 6.5 3.1 12.7 9 15.5s12.9 1.8 17.8-2.6l35.3-32.5 9.5-35.4 10.4-38.6c8-29.9 30.5-52.1 57.9-60.9l41-59.2c11.3-16.3 26.4-28.9 43.5-37.2c-.4-.6-.8-1.2-1.3-1.8c-4.1-5.1-10.9-7.2-17.2-5.3L220.3 92.1l-29.4-74C188.4 12 182.6 8 176 8zM367.7 161.5l135.6 36.3c6.5 1.8 11.3 7.4 11.8 14.2l4.6 56.5-201.5-54 32.2-46.6c3.8-5.6 10.8-8.1 17.3-6.4zm-69.9-30l-47.9 69.3c-21.6 3-40.3 18.6-46.3 41l-10.4 38.6-16.6 61.8-8.3 30.9c-4.6 17.1 5.6 34.6 22.6 39.2l15.5 4.1c17.1 4.6 34.6-5.6 39.2-22.6l8.3-30.9 247.3 66.3-8.3 30.9c-4.6 17.1 5.6 34.6 22.6 39.2l15.5 4.1c17.1 4.6 34.6-5.6 39.2-22.6l8.3-30.9L595 388l10.4-38.6c6-22.4-2.5-45.2-19.6-58.7l-6.8-84c-2.7-33.7-26.4-62-59-70.8L384.2 99.7c-32.7-8.8-67.3 4-86.5 31.8zm-17 131a24 24 0 1 1 -12.4 46.4 24 24 0 1 1 12.4-46.4zm217.9 83.2A24 24 0 1 1 545 358.1a24 24 0 1 1 -46.4-12.4z"]
 };
 var faCarCrash = faCarBurst;
 var faY = {
@@ -17422,7 +18603,7 @@ var faY = {
 var faPersonSnowboarding = {
   prefix: 'fas',
   iconName: 'person-snowboarding',
-  icon: [512, 512, [127938, "snowboarding"], "f7ce", "M209.7 3.4c15.8-7.9 35-1.5 42.9 14.3l25 50 42.4 8.5c19.5 3.9 37.8 12.3 53.5 24.5l126.1 98.1c14 10.9 16.5 31 5.6 44.9s-31 16.5-44.9 5.6l-72.1-56.1-71.5 31.8 33.1 27.6c23.2 19.3 33.5 50 26.7 79.4l-17.4 75.2c-2.2 9.4-8.2 16.8-16.1 21l86.5 33.1c4.6 1.8 9.4 2.6 14.3 2.6H472c13.3 0 24 10.7 24 24s-10.7 24-24 24H443.8c-10.8 0-21.4-2-31.5-5.8L60.1 371.3c-11.5-4.4-22-11.2-30.8-20L7 329c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.4 22.4c4 4 8.7 7.1 14 9.1l22.4 8.6c-.8-1.6-1.5-3.2-2.1-4.9c-5.6-16.8 3.5-34.9 20.2-40.5L192 264.9l0-53.2c0-24.2 13.7-46.4 35.4-57.2l45.2-22.6-7.5-1.5c-19.4-3.9-35.9-16.5-44.7-34.1l-25-50c-7.9-15.8-1.5-35 14.3-42.9zM139 350.1l159 60.9c-2.1-5.6-2.6-11.9-1.1-18.2l17.4-75.2c1.4-5.9-.7-12-5.4-15.9l-52.8-44 0 18.8c0 20.7-13.2 39-32.8 45.5L139 350.1zM432 0a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"]
+  icon: [512, 512, [127938, "snowboarding"], "f7ce", "M209.7 3.4c15.8-7.9 35-1.5 42.9 14.3l25 50 42.4 8.5c19.5 3.9 37.8 12.3 53.5 24.5l126.1 98.1c14 10.9 16.5 31 5.6 44.9s-31 16.5-44.9 5.6l-72.1-56.1-71.5 31.8 33.1 27.6c23.2 19.3 33.5 50 26.7 79.4l-17.4 75.2c-2.2 9.4-8.2 16.8-16.1 21l86.5 33.1c4.6 1.8 9.4 2.6 14.3 2.6H472c13.3 0 24 10.7 24 24s-10.7 24-24 24H443.8c-10.8 0-21.4-2-31.5-5.8L60.1 371.3c-11.5-4.4-22-11.2-30.8-20L7 329c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.4 22.4c4 4 8.7 7.1 14 9.1l22.4 8.6c-.8-1.6-1.5-3.2-2.1-4.9c-5.6-16.8 3.5-34.9 20.2-40.5L192 264.9l0-53.2c0-24.2 13.7-46.4 35.4-57.2l45.2-22.6-7.5-1.5c-19.4-3.9-35.9-16.5-44.7-34.1l-25-50c-7.9-15.8-1.5-35 14.3-42.9zM139 350.1l159 60.9c-2.1-5.6-2.6-11.9-1.1-18.2l17.4-75.2c1.4-5.9-.7-12-5.3-15.9l-52.8-44 0 18.8c0 20.7-13.2 39-32.8 45.5L139 350.1zM432 0a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"]
 };
 var faSnowboarding = faPersonSnowboarding;
 var faTruckFast = {
@@ -17444,7 +18625,7 @@ var faUserGraduate = {
 var faCircleHalfStroke = {
   prefix: 'fas',
   iconName: 'circle-half-stroke',
-  icon: [512, 512, [9680, "adjust"], "f042", "M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zm64 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"]
+  icon: [512, 512, [9680, "adjust"], "f042", "M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"]
 };
 var faAdjust = faCircleHalfStroke;
 var faClapperboard = {
@@ -17478,7 +18659,7 @@ var faProjectDiagram = faDiagramProject;
 var faCopy = {
   prefix: 'fas',
   iconName: 'copy',
-  icon: [512, 512, [], "f0c5", "M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z"]
+  icon: [448, 512, [], "f0c5", "M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"]
 };
 var faVolumeXmark = {
   prefix: 'fas',
@@ -17495,7 +18676,7 @@ var faHandSparkles = {
 var faGrip = {
   prefix: 'fas',
   iconName: 'grip',
-  icon: [448, 512, ["grip-horizontal"], "f58d", "M128 136c0-22.1-17.9-40-40-40L40 96C17.9 96 0 113.9 0 136l0 48c0 22.1 17.9 40 40 40H88c22.1 0 40-17.9 40-40V136zm0 192c0-22.1-17.9-40-40-40H40c-22.1 0-40 17.9-40 40v48c0 22.1 17.9 40 40 40H88c22.1 0 40-17.9 40-40V328zm32-192v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V136c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM288 328c0-22.1-17.9-40-40-40H200c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V328zm32-192v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V136c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM448 328c0-22.1-17.9-40-40-40H360c-22.1 0-40 17.9-40 40v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V328z"]
+  icon: [448, 512, ["grip-horizontal"], "f58d", "M128 136c0-22.1-17.9-40-40-40L40 96C17.9 96 0 113.9 0 136l0 48c0 22.1 17.9 40 40 40H88c22.1 0 40-17.9 40-40l0-48zm0 192c0-22.1-17.9-40-40-40H40c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40H88c22.1 0 40-17.9 40-40V328zm32-192v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V136c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM288 328c0-22.1-17.9-40-40-40H200c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V328zm32-192v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V136c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM448 328c0-22.1-17.9-40-40-40H360c-22.1 0-40 17.9-40 40v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V328z"]
 };
 var faGripHorizontal = faGrip;
 var faShareFromSquare = {
@@ -17507,7 +18688,7 @@ var faShareSquare = faShareFromSquare;
 var faChildCombatant = {
   prefix: 'fas',
   iconName: 'child-combatant',
-  icon: [512, 512, ["child-rifle"], "e4e0", "M144 128A64 64 0 1 0 144 0a64 64 0 1 0 0 128zm-8 352V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V300.5L228.9 321c9.4 15 29.2 19.4 44.1 10s19.4-29.2 10-44.1l-51.7-82.1c-17.6-27.9-48.3-44.9-81.2-44.9H137.8c-33 0-63.7 16.9-81.2 44.9L4.9 287c-9.4 15-4.9 34.7 10 44.1s34.7 4.9 44.1-10L72 300.5V480c0 17.7 14.3 32 32 32s32-14.3 32-32zM416 0H400 384c-8.8 0-16 7.2-16 16s7.2 16 16 16V132.3c-9.6 5.5-16 15.9-16 27.7v32c-17.7 0-32 14.3-32 32V368c0 17.7 14.3 32 32 32h16v96c0 8.8 7.2 16 16 16h59.5c10.4 0 18-9.8 15.5-19.9L452 400h44c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H448V325.3l53.1-17.7c6.5-2.2 10.9-8.3 10.9-15.2V208c0-8.8-7.2-16-16-16H480c-8.8 0-16 7.2-16 16v56l-16 5.3V160c0-11.8-6.4-22.2-16-27.7V16c0-8.8-7.2-16-16-16z"]
+  icon: [576, 512, ["child-rifle"], "e4e0", "M176 128A64 64 0 1 0 176 0a64 64 0 1 0 0 128zm-8 352V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V300.5L260.9 321c9.4 15 29.2 19.4 44.1 10s19.4-29.2 10-44.1l-51.7-82.1c-17.6-27.9-48.3-44.9-81.2-44.9H169.8c-33 0-63.7 16.9-81.2 44.9L36.9 287c-9.4 15-4.9 34.7 10 44.1s34.7 4.9 44.1-10L104 300.5V480c0 17.7 14.3 32 32 32s32-14.3 32-32zM448 0H432 416c-8.8 0-16 7.2-16 16s7.2 16 16 16V132.3c-9.6 5.5-16 15.9-16 27.7v32c-17.7 0-32 14.3-32 32V368c0 17.7 14.3 32 32 32h16v96c0 8.8 7.2 16 16 16h59.5c10.4 0 18-9.8 15.5-19.9L484 400h44c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H480V325.3l53.1-17.7c6.5-2.2 10.9-8.3 10.9-15.2V208c0-8.8-7.2-16-16-16H512c-8.8 0-16 7.2-16 16v56l-16 5.3V160c0-11.8-6.4-22.2-16-27.7V16c0-8.8-7.2-16-16-16z"]
 };
 var faChildRifle = faChildCombatant;
 var faGun = {
@@ -17524,7 +18705,7 @@ var faPhoneSquare = faSquarePhone;
 var faPlus = {
   prefix: 'fas',
   iconName: 'plus',
-  icon: [448, 512, [10133, 61543, "add"], "2b", "M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"]
+  icon: [448, 512, [10133, 61543, "add"], "2b", "M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"]
 };
 var faAdd = faPlus;
 var faExpand = {
@@ -17540,7 +18721,7 @@ var faComputer = {
 var faXmark = {
   prefix: 'fas',
   iconName: 'xmark',
-  icon: [320, 512, [128473, 10005, 10006, 10060, 215, "close", "multiply", "remove", "times"], "f00d", "M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"]
+  icon: [384, 512, [128473, 10005, 10006, 10060, 215, "close", "multiply", "remove", "times"], "f00d", "M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"]
 };
 var faClose = faXmark;
 var faMultiply = faXmark;
@@ -17571,7 +18752,7 @@ var faBuildingShield = {
 var faBaby = {
   prefix: 'fas',
   iconName: 'baby',
-  icon: [384, 512, [], "f77c", "M120 88a72 72 0 1 1 144 0A72 72 0 1 1 120 88zM7.7 144.5c13-17.9 38-21.8 55.9-8.8L99.8 162c26.8 19.5 59.1 30 92.2 30s65.4-10.5 92.2-30l36.2-26.4c17.9-13 42.9-9 55.9 8.8s9 42.9-8.8 55.9l-36.2 26.4c-13.6 9.9-28.1 18.2-43.3 25V288H96V251.7c-15.2-6.7-29.7-15.1-43.3-25L16.5 200.3c-17.9-13-21.8-38-8.8-55.9zM97.5 329.3l60.6 53-26 37.2 24.3 24.3c15.6 15.6 15.6 40.9 0 56.6s-40.9 15.6-56.6 0l-48-48C38 438.6 36.1 417 47.2 401.1l50.2-71.8zm128.5 53l60.6-53 50.2 71.8c11.1 15.9 9.2 37.5-4.5 51.2l-48 48c-15.6 15.6-40.9 15.6-56.6 0s-15.6-40.9 0-56.6L252 419.4l-26-37.2z"]
+  icon: [448, 512, [], "f77c", "M152 88a72 72 0 1 1 144 0A72 72 0 1 1 152 88zM39.7 144.5c13-17.9 38-21.8 55.9-8.8L131.8 162c26.8 19.5 59.1 30 92.2 30s65.4-10.5 92.2-30l36.2-26.4c17.9-13 42.9-9 55.9 8.8s9 42.9-8.8 55.9l-36.2 26.4c-13.6 9.9-28.1 18.2-43.3 25V288H128V251.7c-15.2-6.7-29.7-15.1-43.3-25L48.5 200.3c-17.9-13-21.8-38-8.8-55.9zm89.8 184.8l60.6 53-26 37.2 24.3 24.3c15.6 15.6 15.6 40.9 0 56.6s-40.9 15.6-56.6 0l-48-48C70 438.6 68.1 417 79.2 401.1l50.2-71.8zm128.5 53l60.6-53 50.2 71.8c11.1 15.9 9.2 37.5-4.5 51.2l-48 48c-15.6 15.6-40.9 15.6-56.6 0s-15.6-40.9 0-56.6L284 419.4l-26-37.2z"]
 };
 var faUsersLine = {
   prefix: 'fas',
@@ -17618,7 +18799,7 @@ var faCopyright = {
 var faEquals = {
   prefix: 'fas',
   iconName: 'equals',
-  icon: [448, 512, [62764], "3d", "M32 128c-17.7 0-32 14.3-32 32s14.3 32 32 32H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zm0 192c-17.7 0-32 14.3-32 32s14.3 32 32 32H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z"]
+  icon: [448, 512, [62764], "3d", "M48 128c-17.7 0-32 14.3-32 32s14.3 32 32 32H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H48zm0 192c-17.7 0-32 14.3-32 32s14.3 32 32 32H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H48z"]
 };
 var faBlender = {
   prefix: 'fas',
@@ -17663,7 +18844,7 @@ var faFolderMinus = {
 var faStore = {
   prefix: 'fas',
   iconName: 'store',
-  icon: [576, 512, [], "f54e", "M531.6 103.8L474.3 13.1C469.2 5 460.1 0 450.4 0H93.6C83.9 0 74.8 5 69.7 13.1L12.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.2 0 49.3-11.4 65.2-29c16 17.6 39.1 29 65.2 29c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4zM483.7 254.9l-.1 0c-5.3 .7-10.7 1.1-16.2 1.1c-12.4 0-24.3-1.9-35.4-5.3V384H112V250.6c-11.2 3.5-23.2 5.4-35.6 5.4c-5.5 0-11-.4-16.3-1.1l-.1 0c-4.1-.6-8.1-1.3-12-2.3V384v64c0 35.3 28.7 64 64 64H432c35.3 0 64-28.7 64-64V384 252.6c-4 1-8 1.8-12.3 2.3z"]
+  icon: [576, 512, [], "f54e", "M547.6 103.8L490.3 13.1C485.2 5 476.1 0 466.4 0H109.6C99.9 0 90.8 5 85.7 13.1L28.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.2 0 49.3-11.4 65.2-29c16 17.6 39.1 29 65.2 29c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4zM499.7 254.9l-.1 0c-5.3 .7-10.7 1.1-16.2 1.1c-12.4 0-24.3-1.9-35.4-5.3V384H128V250.6c-11.2 3.5-23.2 5.4-35.6 5.4c-5.5 0-11-.4-16.3-1.1l-.1 0c-4.1-.6-8.1-1.3-12-2.3V384v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V384 252.6c-4 1-8 1.8-12.3 2.3z"]
 };
 var faArrowTrendUp = {
   prefix: 'fas',
@@ -17673,7 +18854,7 @@ var faArrowTrendUp = {
 var faPlugCircleMinus = {
   prefix: 'fas',
   iconName: 'plug-circle-minus',
-  icon: [576, 512, [], "e55e", "M96 0C78.3 0 64 14.3 64 32v96h64V32c0-17.7-14.3-32-32-32zM288 0c-17.7 0-32 14.3-32 32v96h64V32c0-17.7-14.3-32-32-32zM32 160c-17.7 0-32 14.3-32 32s14.3 32 32 32v32c0 77.4 55 142 128 156.8V480c0 17.7 14.3 32 32 32s32-14.3 32-32V412.8c12.3-2.5 24.1-6.4 35.1-11.5c-2.1-10.8-3.1-21.9-3.1-33.3c0-80.3 53.8-148 127.3-169.2c.5-2.2 .7-4.5 .7-6.8c0-17.7-14.3-32-32-32H32zM576 368a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zm-64 0c0 8.8-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16s7.2-16 16-16H496c8.8 0 16 7.2 16 16z"]
+  icon: [576, 512, [], "e55e", "M96 0C78.3 0 64 14.3 64 32v96h64V32c0-17.7-14.3-32-32-32zM288 0c-17.7 0-32 14.3-32 32v96h64V32c0-17.7-14.3-32-32-32zM32 160c-17.7 0-32 14.3-32 32s14.3 32 32 32v32c0 77.4 55 142 128 156.8V480c0 17.7 14.3 32 32 32s32-14.3 32-32V412.8c12.3-2.5 24.1-6.4 35.1-11.5c-2.1-10.8-3.1-21.9-3.1-33.3c0-80.3 53.8-148 127.3-169.2c.5-2.2 .7-4.5 .7-6.8c0-17.7-14.3-32-32-32H32zM576 368a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zm-64 0c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16H496c8.8 0 16 7.2 16 16z"]
 };
 var faSignHanging = {
   prefix: 'fas',
@@ -17689,7 +18870,7 @@ var faBezierCurve = {
 var faBellSlash = {
   prefix: 'fas',
   iconName: 'bell-slash',
-  icon: [640, 512, [128277, 61943], "f1f6", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-87.5-68.6c.5-1.7 .7-3.5 .7-5.4c0-27.6-11-54.1-30.5-73.7L512 320c-20.5-20.5-32-48.3-32-77.3V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V51.2c-42.6 8.6-79 34.2-102 69.3L38.8 5.1zM160 242.7c0 29-11.5 56.8-32 77.3l-1.5 1.5C107 341 96 367.5 96 395.2c0 11.5 9.3 20.8 20.8 20.8H406.2L160 222.1v20.7zM384 448H320 256c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"]
+  icon: [640, 512, [128277, 61943], "f1f6", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-90.2-70.7c.2-.4 .4-.9 .6-1.3c5.2-11.5 3.1-25-5.3-34.4l-7.4-8.3C497.3 319.2 480 273.9 480 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V51.2c-42.6 8.6-79 34.2-102 69.3L38.8 5.1zM406.2 416L160 222.1v4.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S115.4 416 128 416H406.2zm-40.9 77.3c12-12 18.7-28.3 18.7-45.3H320 256c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"]
 };
 var faTablet = {
   prefix: 'fas',
@@ -17705,12 +18886,12 @@ var faSchoolFlag = {
 var faFill = {
   prefix: 'fas',
   iconName: 'fill',
-  icon: [512, 512, [], "f575", "M84.6 9.4C72.1-3.1 51.9-3.1 39.4 9.4s-12.5 32.8 0 45.3L120.7 136 28.6 228.1c-37.5 37.5-37.5 98.3 0 135.8L146.1 481.4c37.5 37.5 98.3 37.5 135.8 0L472.3 290.9c28.1-28.1 28.1-73.7 0-101.8L320.9 37.7c-28.1-28.1-73.7-28.1-101.8 0L166 90.7 84.6 9.4zM166 181.3l49.4 49.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L211.3 136l53.1-53.1c3.1-3.1 8.2-3.1 11.3 0L427.1 234.3c3.1 3.1 3.1 8.2 0 11.3L384.7 288H65.5c1.4-5.4 4.2-10.4 8.4-14.6L166 181.3z"]
+  icon: [512, 512, [], "f575", "M86.6 9.4C74.1-3.1 53.9-3.1 41.4 9.4s-12.5 32.8 0 45.3L122.7 136 30.6 228.1c-37.5 37.5-37.5 98.3 0 135.8L148.1 481.4c37.5 37.5 98.3 37.5 135.8 0L474.3 290.9c28.1-28.1 28.1-73.7 0-101.8L322.9 37.7c-28.1-28.1-73.7-28.1-101.8 0L168 90.7 86.6 9.4zM168 181.3l49.4 49.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L213.3 136l53.1-53.1c3.1-3.1 8.2-3.1 11.3 0L429.1 234.3c3.1 3.1 3.1 8.2 0 11.3L386.7 288H67.5c1.4-5.4 4.2-10.4 8.4-14.6L168 181.3z"]
 };
 var faAngleUp = {
   prefix: 'fas',
   iconName: 'angle-up',
-  icon: [384, 512, [8963], "f106", "M169.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L192 205.3 54.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"]
+  icon: [448, 512, [8963], "f106", "M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"]
 };
 var faDrumstickBite = {
   prefix: 'fas',
@@ -17720,7 +18901,7 @@ var faDrumstickBite = {
 var faHollyBerry = {
   prefix: 'fas',
   iconName: 'holly-berry',
-  icon: [512, 512, [], "f7aa", "M247 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-80 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM267.8 383.8c1 .1 2.1 .2 3.2 .2c39.8 0 72 32.2 72 72v22.7c0 16.4 16 27.9 31.6 22.8l12.8-4.3c18-6 37.3-6.5 55.6-1.5l19.4 5.3c17.9 4.9 34.4-11.6 29.5-29.5L486.6 452c-5-18.3-4.4-37.6 1.5-55.6l4.3-12.8c5.2-15.5-6.4-31.6-22.8-31.6c-34.6 0-62.7-28.1-62.7-62.7v-32c0-16.4-16-27.9-31.6-22.8l-12.8 4.3c-18 6-37.3 6.5-55.6 1.5l-29.6-8.1c-2.9-.8-5.9-1-8.7-.7c4.2 9.7 5.8 20.8 3.7 32.3L266 298.7c-1.5 8.4-1.4 17 .5 25.3l5.3 23.9c2.8 12.7 1.1 25.2-4 35.9zM118.6 234.5c-15.5-5.2-31.6 6.4-31.6 22.8v32C87 323.9 58.9 352 24.3 352C7.9 352-3.6 368 1.5 383.6l4.3 12.8c6 18 6.5 37.3 1.5 55.6L2.1 471.5c-4.9 17.9 11.6 34.4 29.5 29.5L51 495.6c18.3-5 37.6-4.5 55.6 1.5l12.8 4.3c15.5 5.2 31.6-6.4 31.6-22.8v-32c0-34.6 28.1-62.7 62.7-62.7c16.4 0 27.9-16 22.8-31.6l-4.3-12.8c-6-18-6.5-37.3-1.5-55.6l5.3-19.4c4.9-17.9-11.6-34.4-29.5-29.5L187 240.4c-18.3 5-37.6 4.4-55.6-1.5l-12.8-4.3zM375 144a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"]
+  icon: [512, 512, [], "f7aa", "M256 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-80 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM276.8 383.8c1 .1 2.1 .2 3.2 .2c39.8 0 72 32.2 72 72v22.7c0 16.4 16 27.9 31.6 22.8l12.8-4.3c18-6 37.3-6.5 55.6-1.5l19.4 5.3c17.9 4.9 34.4-11.6 29.5-29.5L495.6 452c-5-18.3-4.4-37.6 1.5-55.6l4.3-12.8c5.2-15.5-6.4-31.6-22.8-31.6c-34.6 0-62.7-28.1-62.7-62.7v-32c0-16.4-16-27.9-31.6-22.8l-12.8 4.3c-18 6-37.3 6.5-55.6 1.5l-29.6-8.1c-2.9-.8-5.9-1-8.7-.7c4.2 9.7 5.8 20.8 3.7 32.3L275 298.7c-1.5 8.4-1.4 17 .5 25.3l5.3 23.9c2.8 12.7 1.1 25.2-4 35.9zM127.6 234.5c-15.5-5.2-31.6 6.4-31.6 22.8v32C96 323.9 67.9 352 33.3 352c-16.4 0-27.9 16-22.8 31.6l4.3 12.8c6 18 6.5 37.3 1.5 55.6l-5.3 19.4C6.2 489.4 22.6 505.8 40.5 501L60 495.6c18.3-5 37.6-4.5 55.6 1.5l12.8 4.3c15.5 5.2 31.6-6.4 31.6-22.8v-32c0-34.6 28.1-62.7 62.7-62.7c16.4 0 27.9-16 22.8-31.6l-4.3-12.8c-6-18-6.5-37.3-1.5-55.6l5.3-19.4c4.9-17.9-11.6-34.4-29.5-29.5L196 240.4c-18.3 5-37.6 4.4-55.6-1.5l-12.8-4.3zM384 144a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"]
 };
 var faChevronLeft = {
   prefix: 'fas',
@@ -17730,7 +18911,7 @@ var faChevronLeft = {
 var faBacteria = {
   prefix: 'fas',
   iconName: 'bacteria',
-  icon: [640, 512, [], "e059", "M304.9 .7c-9.6-2.7-19.5 2.8-22.3 12.4l-3.1 11c-7.4-.3-14.9 .4-22.4 2.1c-9 2.1-17.8 4.4-26.2 7l-4.4-10.3c-3.9-9.1-14.5-13.4-23.6-9.5s-13.4 14.5-9.5 23.6l3.6 8.5c-16.5 7.1-31.5 15.1-45.2 23.9L147 62c-5.5-8.3-16.7-10.5-25-5s-10.5 16.7-5 25l5.8 8.7c-13.5 11.2-25.3 23.1-35.5 35.3l-10.1-8.1c-7.8-6.2-19.1-5-25.3 2.8s-5 19.1 2.8 25.3L66 155c-1.6 2.4-3.1 4.8-4.5 7.3c-7.1 11.8-12.8 23.2-17.4 34l-7.4-3c-9.2-3.7-19.7 .8-23.4 10s.8 19.7 10 23.4l8.7 3.5c-.2 .8-.4 1.6-.7 2.3c-2.6 9.4-4.2 17.4-5.3 23.5c-.5 3.1-.9 5.7-1.2 7.7c-.1 1-.2 2-.3 2.7l-.1 1.1 0 .5 0 .2 0 .1c0 0 0 .1 29.4 2.8l0 0-29.4-2.7c-.3 3.8-.4 7.5-.3 11.2l-11 3.1C3.5 285.4-2 295.4 .7 304.9s12.7 15.1 22.3 12.4l10.3-2.9c8 15.5 20.7 28.3 36.4 36.4L66.7 361c-2.7 9.6 2.8 19.5 12.4 22.3s19.5-2.8 22.3-12.4l3.1-11c17.8 .8 34.7-4.1 48.8-13.2l8 8c7 7 18.4 7 25.5 0s7-18.4 0-25.5l-8-8c6.8-10.6 11.3-22.9 12.7-36.2l.1-.6c.2-1.3 .7-3.8 1.7-7.4l.2-.6 9.4 4c9.1 3.9 19.7-.3 23.6-9.5s-.3-19.7-9.5-23.6l-8.5-3.6c7.5-11.1 18.7-23.7 36.5-34.5l1.6 5.6c2.7 9.6 12.7 15.1 22.3 12.4s15.1-12.7 12.4-22.3l-3-10.6c5.2-1.7 10.7-3.2 16.6-4.6c9.7-2.2 18.5-6 26.4-11.1l8 8c7 7 18.4 7 25.5 0s7-18.4 0-25.5l-8-8c9.1-14.3 14-31.2 13.2-48.8l11-3.1c9.6-2.7 15.1-12.7 12.4-22.3S370.6 64 361 66.7l-10.3 2.9c-8.1-15.9-21-28.5-36.4-36.4l2.9-10.3c2.7-9.6-2.8-19.5-12.4-22.3zM106.2 275.8l-37.1-3.4 0 0 37.1 3.4zM128 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64-48a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zM322.7 489c-2.7 9.6 2.8 19.5 12.4 22.3s19.5-2.8 22.2-12.4l3.1-11c7.4 .3 14.9-.4 22.4-2.1c9-2.1 17.8-4.4 26.2-7l4.4 10.3c3.9 9.1 14.5 13.4 23.6 9.5s13.4-14.5 9.5-23.6l-3.6-8.5c16.5-7.1 31.5-15.1 45.2-23.9L493 450c5.5 8.3 16.7 10.5 25 5s10.5-16.7 5-25l-5.8-8.7c13.5-11.2 25.3-23.1 35.5-35.3l10.1 8.1c7.8 6.2 19.1 5 25.3-2.8s5-19.1-2.8-25.3L574 357c1.6-2.4 3.1-4.8 4.5-7.3c7.1-11.8 12.8-23.2 17.4-34l7.4 3c9.2 3.7 19.7-.8 23.4-10s-.8-19.7-10-23.4l-8.7-3.5c.2-.8 .4-1.6 .7-2.3c2.6-9.4 4.2-17.4 5.3-23.5c.5-3.1 .9-5.7 1.2-7.7c.1-1 .2-2 .3-2.7l.1-1.1 0-.5 0-.2 0-.1c0 0 0-.1-29.4-2.8l0 0 29.4 2.7c.3-3.8 .4-7.5 .3-11.2l11-3.1c9.6-2.7 15.1-12.7 12.4-22.3s-12.7-15.1-22.3-12.4l-10.3 2.9c-8-15.5-20.7-28.3-36.4-36.4l2.9-10.3c2.7-9.6-2.8-19.5-12.4-22.3s-19.5 2.8-22.2 12.4l-3.1 11c-17.8-.8-34.7 4.1-48.8 13.2l-8-8c-7-7-18.4-7-25.5 0s-7 18.4 0 25.5l8 8c-6.8 10.6-11.3 22.9-12.7 36.2l-.1 .6c-.2 1.3-.7 3.8-1.7 7.4l-.2 .6-9.4-4c-9.1-3.9-19.7 .3-23.6 9.5s.3 19.7 9.5 23.6l8.5 3.6c-7.5 11.1-18.7 23.7-36.5 34.5l-1.6-5.6c-2.7-9.6-12.7-15.1-22.3-12.4s-15.1 12.7-12.4 22.3l3 10.6c-5.2 1.7-10.7 3.2-16.6 4.6c-9.7 2.2-18.5 6-26.4 11.1l-8-8c-7-7-18.4-7-25.5 0s-7 18.4 0 25.5l8 8c-9.1 14.2-14 31.2-13.2 48.8l-11 3.1c-9.6 2.7-15.1 12.7-12.4 22.2s12.7 15.1 22.3 12.4l10.3-2.9c8.1 15.9 21 28.5 36.4 36.4l-3 10.3zM570.9 239.5l0 0-37.1-3.4 37.1 3.4zM448 384a32 32 0 1 1 -64 0 32 32 0 1 1 64 0z"]
+  icon: [640, 512, [], "e059", "M304.9 .7c-9.6-2.7-19.5 2.8-22.3 12.4l-4.3 15.2c-8.3-.6-16.8 0-25.2 1.9c-7.3 1.7-14.3 3.5-21.1 5.5l-5.5-12.7c-3.9-9.1-14.5-13.4-23.6-9.5s-13.4 14.5-9.5 23.6l4.4 10.4c-16.6 6.7-31.7 14.4-45.4 22.8L147 62c-5.5-8.3-16.7-10.5-25-5s-10.5 16.7-5 25l6 9c-13.7 11-25.5 22.8-35.8 34.9l-10-8c-7.8-6.2-19.1-5-25.3 2.8s-5 19.1 2.8 25.3L65.9 155c-1.8 2.8-3.5 5.7-5.1 8.5c-6.6 11.4-11.8 22.6-16 33l-8-3.2c-9.2-3.7-19.7 .8-23.4 10s.8 19.7 10 23.4l10.4 4.2c-.2 .8-.4 1.5-.5 2.3c-2.2 9.3-3.4 17.3-4.1 23.4c-.4 3.1-.6 5.7-.8 7.8c-.1 1.1-.1 2-.2 2.8l-.1 1.1 0 .5 0 .2 0 .1c0 0 0 .1 29.1 1l-.1 0L28 269.3c-.1 3.1 0 6.1 .2 9.1l-15.2 4.3C3.5 285.4-2 295.4 .7 304.9s12.7 15.1 22.3 12.4l15.6-4.5c7.6 13.6 18.9 25 32.6 32.6L66.7 361c-2.7 9.6 2.8 19.5 12.4 22.3s19.5-2.8 22.3-12.4l4.3-15.2c1.2 .1 2.4 .2 3.6 .2c15.6 .5 30.3-3.3 43-10.2l9 9c7 7 18.4 7 25.5 0s7-18.4 0-25.5l-7.2-7.2c9.3-12.6 15.2-27.8 16.3-44.5l7.1 3c9.1 3.9 19.7-.3 23.6-9.5s-.3-19.7-9.5-23.6l-8.6-3.7c6.4-9.9 17.3-22.4 36.9-33.3l1.3 4.4c2.7 9.6 12.7 15.1 22.3 12.4s15.1-12.7 12.4-22.3l-2.3-8.1c3.8-1.1 7.7-2.1 11.9-3.1c11.6-2.7 22.1-7.7 31.1-14.4l7.2 7.2c7 7 18.4 7 25.5 0s7-18.4 0-25.5l-9-9c7.6-13.9 11.3-30.1 10.1-46.6l15.2-4.3c9.6-2.7 15.1-12.7 12.4-22.3S370.6 64 361 66.7l-15.6 4.5c-7.7-13.9-19.1-25.1-32.6-32.6l4.5-15.6c2.7-9.6-2.8-19.5-12.4-22.3zM112 272l-48-1.5 0 0c11.7 .4 27.3 .9 48 1.6zm16-80a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64-48a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zM322.7 489c-2.7 9.6 2.8 19.5 12.4 22.3s19.5-2.8 22.2-12.4l4.3-15.2c8.3 .6 16.8 0 25.2-1.9c7.3-1.7 14.3-3.5 21.1-5.5l5.5 12.7c3.9 9.1 14.5 13.4 23.6 9.5s13.4-14.5 9.5-23.6l-4.4-10.4c16.6-6.7 31.7-14.4 45.4-22.8L493 450c5.5 8.3 16.7 10.5 25 5s10.5-16.7 5-25l-6-9c13.7-11 25.5-22.8 35.8-34.9l10 8c7.8 6.2 19.1 5 25.3-2.8s5-19.1-2.8-25.3L574.1 357c1.8-2.8 3.5-5.7 5.1-8.5c6.6-11.4 11.8-22.6 16-33l8 3.2c9.2 3.7 19.7-.8 23.4-10s-.8-19.7-10-23.4l-10.4-4.2c.2-.8 .4-1.5 .5-2.3c2.2-9.3 3.4-17.3 4.1-23.4c.4-3.1 .6-5.7 .8-7.8c.1-1.1 .1-2 .2-2.8l.1-1.1 0-.5 0-.2 0-.1c0 0 0-.1-29.1-1l.1 0 29.1 .9c.1-3.1 0-6.1-.2-9.1l15.2-4.3c9.6-2.7 15.1-12.7 12.4-22.3s-12.7-15.1-22.3-12.4l-15.6 4.5c-7.6-13.6-18.9-25-32.6-32.6l4.5-15.6c2.7-9.6-2.8-19.5-12.4-22.3s-19.5 2.8-22.3 12.4l-4.3 15.2c-1.2-.1-2.4-.2-3.6-.2c-15.6-.5-30.3 3.3-43 10.2l-9-9c-7-7-18.4-7-25.5 0s-7 18.4 0 25.5l7.2 7.2c-9.3 12.6-15.2 27.8-16.3 44.5l-7.1-3c-9.1-3.9-19.7 .3-23.6 9.5s.3 19.7 9.5 23.6l8.6 3.7c-6.4 9.9-17.3 22.4-36.9 33.3l-1.3-4.4c-2.7-9.6-12.7-15.1-22.3-12.4s-15.1 12.7-12.4 22.3l2.3 8.1c-3.8 1.1-7.7 2.1-11.9 3.1c-11.6 2.7-22.1 7.7-31.1 14.4l-7.2-7.2c-7-7-18.4-7-25.5 0s-7 18.4 0 25.5l9 9c-7.6 13.9-11.3 30.1-10.1 46.6l-15.2 4.3c-9.6 2.7-15.1 12.7-12.4 22.2s12.7 15.1 22.3 12.4l15.6-4.5c7.7 13.9 19.1 25.1 32.6 32.6L322.7 489zM576 241.5l0 0c-11.7-.4-27.3-.9-48-1.6l48 1.5zM448 384a32 32 0 1 1 -64 0 32 32 0 1 1 64 0z"]
 };
 var faHandLizard = {
   prefix: 'fas',
@@ -17745,7 +18926,7 @@ var faNotdef = {
 var faDisease = {
   prefix: 'fas',
   iconName: 'disease',
-  icon: [512, 512, [], "f7fa", "M236.4 61.4L227 75.5c-21.3 32-59.4 48.5-97.3 42.1l-59.6-9.9C33.4 101.6 0 129.9 .1 167.1c0 15.9 6.4 31.2 17.6 42.5l29.2 29.2c11 11 17.2 25.9 17.2 41.5c0 15.8-6.4 30.9-17.7 42L33.3 335.1C22.2 345.9 16 360.7 16 376.2c0 36.8 34.1 64.2 70.1 56.2l62.3-13.8c7.7-1.7 15.7-2.6 23.6-2.6h10c27.2 0 53.7 9.3 75 26.3L287.8 467c10.5 8.4 23.6 13 37 13c32.7 0 59.3-26.5 59.3-59.3l0-25.2c0-34.9 21.4-66.2 53.9-78.8l36.9-14.3c22.4-8.7 37.2-30.3 37.2-54.3c0-28.1-20.1-52.3-47.8-57.3l-28-5.1c-36.5-6.7-65.4-34.5-73.6-70.7l-7.1-31.5C348.9 53.4 322.1 32 291.3 32c-22 0-42.6 11-54.8 29.4zM160 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm128 16a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zm0 80a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
+  icon: [512, 512, [], "f7fa", "M236.4 61.4L227 75.5c-21.3 32-59.4 48.5-97.3 42.1l-59.6-9.9C33.4 101.6 0 129.9 .1 167.1c0 15.9 6.4 31.2 17.6 42.5l29.2 29.2c11 11 17.2 25.9 17.2 41.5c0 15.8-6.4 30.9-17.7 42L33.3 335.1C22.2 345.9 16 360.7 16 376.2c0 36.8 34.1 64.2 70.1 56.2l62.3-13.8c7.7-1.7 15.7-2.6 23.6-2.6h10c27.2 0 53.7 9.3 75 26.3L287.8 467c10.5 8.4 23.6 13 37 13c32.7 0 59.3-26.5 59.3-59.3l0-25.2c0-34.9 21.4-66.2 53.9-78.8l36.9-14.3c22.4-8.7 37.2-30.3 37.2-54.3c0-28.1-20.1-52.3-47.8-57.3l-28-5.1c-36.5-6.7-65.4-34.5-73.6-70.7l-7.1-31.5C348.9 53.4 322.1 32 291.3 32c-22 0-42.6 11-54.9 29.4zM160 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm128 16a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zm0 80a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
 };
 var faBriefcaseMedical = {
   prefix: 'fas',
@@ -17755,7 +18936,7 @@ var faBriefcaseMedical = {
 var faGenderless = {
   prefix: 'fas',
   iconName: 'genderless',
-  icon: [384, 512, [], "f22d", "M176 144a112 112 0 1 1 0 224 112 112 0 1 1 0-224zm0 288a176 176 0 1 0 0-352 176 176 0 1 0 0 352z"]
+  icon: [384, 512, [], "f22d", "M192 144a112 112 0 1 1 0 224 112 112 0 1 1 0-224zm0 288a176 176 0 1 0 0-352 176 176 0 1 0 0 352z"]
 };
 var faChevronRight = {
   prefix: 'fas',
@@ -17776,12 +18957,12 @@ var faCarAlt = faCarRear;
 var faPumpSoap = {
   prefix: 'fas',
   iconName: 'pump-soap',
-  icon: [384, 512, [], "e06b", "M96 32v96H224V96h60.1c4.2 0 8.3 1.7 11.3 4.7l33.9 33.9c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L340.7 55.4c-15-15-35.4-23.4-56.6-23.4H224c0-17.7-14.3-32-32-32H128C110.3 0 96 14.3 96 32zM85.4 160c-33.3 0-61 25.5-63.8 58.7L3 442.7C-.1 480 29.3 512 66.8 512H253.2c37.4 0 66.9-32 63.8-69.3l-18.7-224c-2.8-33.2-30.5-58.7-63.8-58.7H85.4zM224 360c0 35.3-28.7 56-64 56s-64-20.7-64-56c0-32.5 37-80.9 50.9-97.9c3.2-3.9 8.1-6.1 13.1-6.1s9.9 2.2 13.1 6.1C187 279.1 224 327.5 224 360z"]
+  icon: [448, 512, [], "e06b", "M128 32v96H256V96h60.1c4.2 0 8.3 1.7 11.3 4.7l33.9 33.9c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L372.7 55.4c-15-15-35.4-23.4-56.6-23.4H256c0-17.7-14.3-32-32-32H160c-17.7 0-32 14.3-32 32zM117.4 160c-33.3 0-61 25.5-63.8 58.7L35 442.7C31.9 480 61.3 512 98.8 512H285.2c37.4 0 66.9-32 63.8-69.3l-18.7-224c-2.8-33.2-30.5-58.7-63.8-58.7H117.4zM256 360c0 35.3-28.7 56-64 56s-64-20.7-64-56c0-32.5 37-80.9 50.9-97.9c3.2-3.9 8.1-6.1 13.1-6.1s9.9 2.2 13.1 6.1C219 279.1 256 327.5 256 360z"]
 };
 var faVideoSlash = {
   prefix: 'fas',
   iconName: 'video-slash',
-  icon: [640, 512, [], "f4e2", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-86.4-67.7 13.8 9.2c9.8 6.5 22.4 7.2 32.9 1.6s16.9-16.4 16.9-28.2V128c0-11.8-6.5-22.6-16.9-28.2s-23-5-32.9 1.6l-96 64L448 174.9V192 320v5.8l-32-25.1V128c0-35.3-28.7-64-64-64H113.9L38.8 5.1zM32 128V384c0 35.3 28.7 64 64 64H352c23.4 0 43.9-12.6 55-31.3L32.3 121.5c-.2 2.1-.3 4.3-.3 6.5z"]
+  icon: [640, 512, [], "f4e2", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7l-86.4-67.7 13.8 9.2c9.8 6.5 22.4 7.2 32.9 1.6s16.9-16.4 16.9-28.2V128c0-11.8-6.5-22.6-16.9-28.2s-23-5-32.9 1.6l-96 64L448 174.9V192 320v5.8l-32-25.1V128c0-35.3-28.7-64-64-64H113.9L38.8 5.1zM407 416.7L32.3 121.5c-.2 2.1-.3 4.3-.3 6.5V384c0 35.3 28.7 64 64 64H352c23.4 0 43.9-12.6 55-31.3z"]
 };
 var faBatteryQuarter = {
   prefix: 'fas',
@@ -17818,7 +18999,7 @@ var faVrCardboard = {
 var faHandMiddleFinger = {
   prefix: 'fas',
   iconName: 'hand-middle-finger',
-  icon: [448, 512, [128405], "f806", "M216 0c-22.1 0-40 17.9-40 40V204.2c-8.5-7.6-19.7-12.2-32-12.2c-26.5 0-48 21.5-48 48v7 73c0 8.8-7.2 16-16 16s-16-7.2-16-16V264.3c-2 1.4-3.9 3-5.8 4.5L39 284.8C24.4 297 16 315 16 334V372c0 38 16.9 74 46.1 98.3l5.4 4.5c28.8 24 65 37.1 102.4 37.1H288c70.7 0 128-57.3 128-128V320 288c0-26.5-21.5-48-48-48c-12.4 0-23.6 4.7-32.1 12.3C334 227.5 313.3 208 288 208c-12.3 0-23.5 4.6-32 12.2V40c0-22.1-17.9-40-40-40z"]
+  icon: [448, 512, [128405], "f806", "M232 0c-22.1 0-40 17.9-40 40V204.2c-8.5-7.6-19.7-12.2-32-12.2c-26.5 0-48 21.5-48 48v7 73c0 8.8-7.2 16-16 16s-16-7.2-16-16V264.3c-2 1.4-3.9 3-5.8 4.5L55 284.8C40.4 297 32 315 32 334V372c0 38 16.9 74 46.1 98.3l5.4 4.5c28.8 24 65 37.1 102.4 37.1H304c70.7 0 128-57.3 128-128V320 288c0-26.5-21.5-48-48-48c-12.4 0-23.6 4.7-32.1 12.3C350 227.5 329.3 208 304 208c-12.3 0-23.5 4.6-32 12.2V40c0-22.1-17.9-40-40-40z"]
 };
 var faPercent = {
   prefix: 'fas',
@@ -17861,7 +19042,7 @@ var faTrophy = {
 var faPersonPraying = {
   prefix: 'fas',
   iconName: 'person-praying',
-  icon: [384, 512, [128720, "pray"], "f683", "M320 64A64 64 0 1 0 192 64a64 64 0 1 0 128 0zM200.7 264l22.9 31.5c6.5 8.9 16.3 14.7 27.2 16.1s21.9-1.7 30.4-8.7l88-72c17.1-14 19.6-39.2 5.6-56.3s-39.2-19.6-56.3-5.6l-55.2 45.2-26.2-36C221.6 156.7 196.6 144 170 144c-30.9 0-59.2 17.1-73.6 44.4L47.8 280.9c-20.2 38.5-9.4 85.9 25.6 111.8L126.6 432H40c-22.1 0-40 17.9-40 40s17.9 40 40 40H248c17.3 0 32.6-11.1 38-27.5s-.3-34.4-14.2-44.7L155.7 354l45-90z"]
+  icon: [448, 512, [128720, "pray"], "f683", "M352 64A64 64 0 1 0 224 64a64 64 0 1 0 128 0zM232.7 264l22.9 31.5c6.5 8.9 16.3 14.7 27.2 16.1s21.9-1.7 30.4-8.7l88-72c17.1-14 19.6-39.2 5.6-56.3s-39.2-19.6-56.3-5.6l-55.2 45.2-26.2-36C253.6 156.7 228.6 144 202 144c-30.9 0-59.2 17.1-73.6 44.4L79.8 280.9c-20.2 38.5-9.4 85.9 25.6 111.8L158.6 432H72c-22.1 0-40 17.9-40 40s17.9 40 40 40H280c17.3 0 32.6-11.1 38-27.5s-.3-34.4-14.2-44.7L187.7 354l45-90z"]
 };
 var faPray = faPersonPraying;
 var faHammer = {
@@ -17872,18 +19053,18 @@ var faHammer = {
 var faHandPeace = {
   prefix: 'fas',
   iconName: 'hand-peace',
-  icon: [448, 512, [9996], "f25b", "M192 0c17.7 0 32 14.3 32 32V240H160V32c0-17.7 14.3-32 32-32zm96 160c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V192c0-17.7 14.3-32 32-32zm64 64c0-17.7 14.3-32 32-32s32 14.3 32 32v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V224zM61.3 51.2L143.9 240H74.1L2.7 76.8C-4.4 60.6 3 41.8 19.2 34.7s35.1 .3 42.1 16.5zm27 221.3l-.2-.5h69.9H184c22.1 0 40 17.9 40 40s-17.9 40-40 40H128c-8.8 0-16 7.2-16 16s7.2 16 16 16h56c39.8 0 72-32.2 72-72l0-.6c9.4 5.4 20.3 8.6 32 8.6c13.2 0 25.4-4 35.6-10.8c8.7 24.9 32.5 42.8 60.4 42.8c11.7 0 22.6-3.1 32-8.6V352c0 88.4-71.6 160-160 160H194.3c-42.4 0-83.1-16.9-113.1-46.9L69.5 453.5C45.5 429.5 32 396.9 32 363V336c0-32.7 24.6-59.7 56.3-63.5z"]
+  icon: [512, 512, [9996], "f25b", "M224 0c17.7 0 32 14.3 32 32V240H192V32c0-17.7 14.3-32 32-32zm96 160c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V192c0-17.7 14.3-32 32-32zm64 64c0-17.7 14.3-32 32-32s32 14.3 32 32v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V224zM93.3 51.2L175.9 240H106.1L34.7 76.8C27.6 60.6 35 41.8 51.2 34.7s35.1 .3 42.1 16.5zm27 221.3l-.2-.5h69.9H216c22.1 0 40 17.9 40 40s-17.9 40-40 40H160c-8.8 0-16 7.2-16 16s7.2 16 16 16h56c39.8 0 72-32.2 72-72l0-.6c9.4 5.4 20.3 8.6 32 8.6c13.2 0 25.4-4 35.6-10.8c8.7 24.9 32.5 42.8 60.4 42.8c11.7 0 22.6-3.1 32-8.6V352c0 88.4-71.6 160-160 160H226.3c-42.4 0-83.1-16.9-113.1-46.9l-11.6-11.6C77.5 429.5 64 396.9 64 363V336c0-32.7 24.6-59.7 56.3-63.5z"]
 };
 var faRotate = {
   prefix: 'fas',
   iconName: 'rotate',
-  icon: [512, 512, [128260, "sync-alt"], "f2f1", "M126.9 142.9c62.2-62.2 162.7-62.5 225.3-1L311 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H447.5c0 0 0 0 0 0H456c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L397.4 96.6c-87.6-86.5-228.7-86.2-315.8 1C57.2 122 39.6 150.7 28.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5c7.7-21.8 20.2-42.3 37.8-59.8zM0 312v7.6 .7V440c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l41.6-41.6c87.6 86.5 228.7 86.2 315.8-1c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.2 62.2-162.7 62.5-225.3 1L169 329c6.9-6.9 8.9-17.2 5.2-26.2s-12.5-14.8-22.2-14.8H32.4h-.7H24c-13.3 0-24 10.7-24 24z"]
+  icon: [512, 512, [128260, "sync-alt"], "f2f1", "M142.9 142.9c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5c0 0 0 0 0 0H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5c7.7-21.8 20.2-42.3 37.8-59.8zM16 312v7.6 .7V440c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l41.6-41.6c87.6 86.5 228.7 86.2 315.8-1c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.2 62.2-162.7 62.5-225.3 1L185 329c6.9-6.9 8.9-17.2 5.2-26.2s-12.5-14.8-22.2-14.8H48.4h-.7H40c-13.3 0-24 10.7-24 24z"]
 };
 var faSyncAlt = faRotate;
 var faSpinner = {
   prefix: 'fas',
   iconName: 'spinner',
-  icon: [512, 512, [], "f110", "M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"]
+  icon: [512, 512, [], "f110", "M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z"]
 };
 var faRobot = {
   prefix: 'fas',
@@ -17898,7 +19079,7 @@ var faPeace = {
 var faGears = {
   prefix: 'fas',
   iconName: 'gears',
-  icon: [640, 512, ["cogs"], "f085", "M305.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L301 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L196 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C170.9 8.4 164.2 8 157.4 8h-.7c-6.8 0-13.5 .4-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L112 56.1c-13.3 5-25.5 12.1-36.2 20.9L47.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C29.6 161.9 29 168.9 29 176s.6 14.1 1.7 20.9L8.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM109 176a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM501.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L580.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L312.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM461 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"]
+  icon: [640, 512, ["cogs"], "f085", "M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.9 8.4 167.2 8 160.4 8h-.7c-6.8 0-13.5 .4-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM112 176a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"]
 };
 var faCogs = faGears;
 var faWarehouse = {
@@ -17914,7 +19095,7 @@ var faArrowUpRightDots = {
 var faSplotch = {
   prefix: 'fas',
   iconName: 'splotch',
-  icon: [512, 512, [], "f5bc", "M208.5 62.3l28.1-36.9C248.8 9.4 267.8 0 288 0c28.5 0 53.6 18.7 61.8 46l17.8 59.4c10.3 34.4 36.1 62 69.8 74.6l39.8 14.9c20.9 7.9 34.8 27.9 34.8 50.2c0 16.9-7.9 32.8-21.5 42.9l-67.3 50.5c-24.3 18.2-37.2 47.9-33.8 78.1l2.5 22.7c4.3 38.7-26 72.6-65 72.6c-14.8 0-29.3-5.1-40.9-14.3l-55.3-44.3c-4.5-3.6-9.3-6.7-14.5-9.2c-15.8-7.9-33.7-10.4-51-7.3L82.4 451.9C47.8 458.2 16 431.6 16 396.5c0-13.2 4.7-26 13.1-36.2l11.2-13.4c14.6-17.4 22.6-39.4 22.6-62.1c0-18.8-5.5-37.2-15.8-53L8.8 173.5C3.1 164.7 0 154.4 0 143.9c0-33.4 30.1-58.8 63-53.2l51.3 8.7c35.9 6.1 72.2-8.2 94.2-37.1z"]
+  icon: [512, 512, [], "f5bc", "M208.5 62.3l28.1-36.9C248.8 9.4 267.8 0 288 0c28.5 0 53.6 18.7 61.8 46l17.8 59.4c10.3 34.4 36.1 62 69.8 74.6l39.8 14.9c20.9 7.9 34.8 27.9 34.8 50.2c0 16.9-7.9 32.8-21.5 42.9l-67.3 50.5c-24.3 18.2-37.2 47.9-33.8 78.1l2.5 22.7c4.3 38.7-26 72.6-65 72.6c-14.8 0-29.3-5.1-40.8-14.3l-55.4-44.3c-4.5-3.6-9.3-6.7-14.5-9.2c-15.8-7.9-33.7-10.4-51-7.3L82.4 451.9C47.8 458.2 16 431.6 16 396.5c0-13.2 4.7-26 13.1-36.2l11.2-13.4c14.6-17.4 22.6-39.4 22.6-62.1c0-18.8-5.5-37.2-15.8-53L8.8 173.5C3.1 164.7 0 154.4 0 143.9c0-33.4 30.1-58.8 63-53.2l51.3 8.7c35.9 6.1 72.2-8.2 94.2-37.1z"]
 };
 var faFaceGrinHearts = {
   prefix: 'fas',
@@ -17925,7 +19106,7 @@ var faGrinHearts = faFaceGrinHearts;
 var faDiceFour = {
   prefix: 'fas',
   iconName: 'dice-four',
-  icon: [448, 512, [9859], "f524", "M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm160 64c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM128 384c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32zM352 160c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM320 384c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32z"]
+  icon: [448, 512, [9859], "f524", "M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zm160 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM128 384a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM352 160a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM320 384a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"]
 };
 var faSimCard = {
   prefix: 'fas',
@@ -17941,7 +19122,7 @@ var faTransgenderAlt = faTransgender;
 var faMercury = {
   prefix: 'fas',
   iconName: 'mercury',
-  icon: [384, 512, [9791], "f223", "M56.1 7C69.8-4 90-1.8 101 12c17.6 22 44.7 36 75 36s57.3-14 75-36c11.1-13.8 31.2-16 45-5s16 31.2 5 45c-7.8 9.7-16.6 18.4-26.4 26.1C321.3 109.7 352 163.3 352 224c0 89.1-66.2 162.7-152 174.4V424h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H200v16c0 13.3-10.7 24-24 24s-24-10.7-24-24V472H120c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V398.4C66.2 386.7 0 313.1 0 224C0 163.3 30.7 109.7 77.5 78.1C67.7 70.5 58.9 61.7 51.1 52c-11.1-13.8-8.8-33.9 5-45zM64 224a112 112 0 1 0 224 0A112 112 0 1 0 64 224z"]
+  icon: [384, 512, [9791], "f223", "M72.1 7C85.8-4 106-1.8 117 12c17.6 22 44.7 36 75 36s57.3-14 75-36c11.1-13.8 31.2-16 45-5s16 31.2 5 45c-7.8 9.7-16.6 18.4-26.4 26.1C337.3 109.7 368 163.3 368 224c0 89.1-66.2 162.7-152 174.4V424h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v16c0 13.3-10.7 24-24 24s-24-10.7-24-24V472H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V398.4C82.2 386.7 16 313.1 16 224c0-60.7 30.7-114.3 77.5-145.9C83.7 70.5 74.9 61.7 67.1 52c-11.1-13.8-8.8-33.9 5-45zM80 224a112 112 0 1 0 224 0A112 112 0 1 0 80 224z"]
 };
 var faArrowTurnDown = {
   prefix: 'fas',
@@ -17973,7 +19154,7 @@ var faBuilding = {
 var faAnglesLeft = {
   prefix: 'fas',
   iconName: 'angles-left',
-  icon: [448, 512, [171, "angle-double-left"], "f100", "M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L269.3 256 406.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z"]
+  icon: [512, 512, [171, "angle-double-left"], "f100", "M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L301.3 256 438.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z"]
 };
 var faAngleDoubleLeft = faAnglesLeft;
 var faQrcode = {
@@ -17990,7 +19171,7 @@ var faHistory = faClockRotateLeft;
 var faFaceGrinBeamSweat = {
   prefix: 'fas',
   iconName: 'face-grin-beam-sweat',
-  icon: [512, 512, [128517, "grin-beam-sweat"], "f583", "M476.8 126.3c-4.1 1.1-8.4 1.7-12.8 1.7c-26.5 0-48-21-48-47c0-5 1.8-11.3 4.6-18.1c.3-.7 .6-1.4 .9-2.1c9-20.2 26.5-44.9 36-57.5c3.2-4.4 9.6-4.4 12.8 0C483.4 20.6 512 61 512 81c0 21.7-14.9 39.8-35.2 45.3zM256 0c51.4 0 99.3 15.2 139.4 41.2c-1.5 3.1-3 6.2-4.3 9.3c-3.4 8-7.1 19-7.1 30.5c0 44.3 36.6 79 80 79c9.6 0 18.8-1.7 27.4-4.8c13.3 30.9 20.6 65 20.6 100.8c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0zM383.8 317.8C345.3 329.4 301.9 336 256 336s-89.3-6.6-127.8-18.2c-12.3-3.7-24.3 7-19.2 18.7c24.5 56.9 81.1 96.7 147 96.7s122.5-39.8 147-96.7c5.1-11.8-6.9-22.4-19.2-18.7zm-166.2-89l0 0 0 0c2.1 2.8 5.7 3.9 8.9 2.8s5.5-4.1 5.5-7.6c0-17.9-6.7-35.6-16.6-48.8c-9.8-13-23.9-23.2-39.4-23.2s-29.6 10.2-39.4 23.2C126.7 188.4 120 206.1 120 224c0 3.4 2.2 6.5 5.5 7.6s6.9 0 8.9-2.8l0 0 0 0 0 0 .2-.2c.2-.2 .4-.5 .7-.9c.6-.8 1.6-2 2.8-3.4c2.5-2.8 6-6.6 10.2-10.3c8.8-7.8 18.8-14 27.7-14s18.9 6.2 27.7 14c4.2 3.7 7.7 7.5 10.2 10.3c1.2 1.4 2.2 2.6 2.8 3.4c.3 .4 .6 .7 .7 .9l.2 .2 0 0 0 0zm160 0l0 0 0 0 0 0c2.1 2.8 5.7 3.9 8.9 2.8s5.5-4.1 5.5-7.6c0-17.9-6.7-35.6-16.6-48.8c-9.8-13-23.9-23.2-39.4-23.2s-29.6 10.2-39.4 23.2C286.7 188.4 280 206.1 280 224c0 3.4 2.2 6.5 5.5 7.6s6.9 0 8.9-2.8l0 0 0 0 0 0 .2-.2c.2-.2 .4-.5 .7-.9c.6-.8 1.6-2 2.8-3.4c2.5-2.8 6-6.6 10.2-10.3c8.8-7.8 18.8-14 27.7-14s18.9 6.2 27.7 14c4.2 3.7 7.7 7.5 10.2 10.3c1.2 1.4 2.2 2.6 2.8 3.4c.3 .4 .6 .7 .7 .9l.2 .2 0 0z"]
+  icon: [512, 512, [128517, "grin-beam-sweat"], "f583", "M476.8 126.3c-4.1 1.1-8.4 1.7-12.8 1.7c-26.5 0-48-21-48-47c0-5 1.8-11.3 4.6-18.1c.3-.7 .6-1.4 .9-2.1c9-20.2 26.5-44.9 36-57.5c3.2-4.4 9.6-4.4 12.8 0C483.4 20.6 512 61 512 81c0 21.7-14.9 39.8-35.2 45.3zM256 0c51.4 0 99.3 15.2 139.4 41.2c-1.5 3.1-3 6.2-4.3 9.3c-3.4 8-7.1 19-7.1 30.5c0 44.3 36.6 79 80 79c9.6 0 18.8-1.7 27.4-4.8c13.3 30.9 20.6 65 20.6 100.8c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0zM388.1 312.8c-39.7 12.2-84.5 19-131.8 19s-92.1-6.8-131.8-19c-12.3-3.8-24.3 6.9-19.3 18.7c25 59.1 83.2 100.5 151.1 100.5s126.2-41.4 151.1-100.5c5-11.8-7-22.5-19.3-18.7zm-170.5-84l0 0 0 0c2.1 2.8 5.7 3.9 8.9 2.8s5.5-4.1 5.5-7.6c0-17.9-6.7-35.6-16.6-48.8c-9.8-13-23.9-23.2-39.4-23.2s-29.6 10.2-39.4 23.2C126.7 188.4 120 206.1 120 224c0 3.4 2.2 6.5 5.5 7.6s6.9 0 8.9-2.8l0 0 0 0 0 0 .2-.2c.2-.2 .4-.5 .7-.9c.6-.8 1.6-2 2.8-3.4c2.5-2.8 6-6.6 10.2-10.3c8.8-7.8 18.8-14 27.7-14s18.9 6.2 27.7 14c4.2 3.7 7.7 7.5 10.2 10.3c1.2 1.4 2.2 2.6 2.8 3.4c.3 .4 .6 .7 .7 .9l.2 .2 0 0 0 0zm160 0l0 0 0 0 0 0c2.1 2.8 5.7 3.9 8.9 2.8s5.5-4.1 5.5-7.6c0-17.9-6.7-35.6-16.6-48.8c-9.8-13-23.9-23.2-39.4-23.2s-29.6 10.2-39.4 23.2C286.7 188.4 280 206.1 280 224c0 3.4 2.2 6.5 5.5 7.6s6.9 0 8.9-2.8l0 0 0 0 0 0 .2-.2c.2-.2 .4-.5 .7-.9c.6-.8 1.6-2 2.8-3.4c2.5-2.8 6-6.6 10.2-10.3c8.8-7.8 18.8-14 27.7-14s18.9 6.2 27.7 14c4.2 3.7 7.7 7.5 10.2 10.3c1.2 1.4 2.2 2.6 2.8 3.4c.3 .4 .6 .7 .7 .9l.2 .2 0 0z"]
 };
 var faGrinBeamSweat = faFaceGrinBeamSweat;
 var faFileExport = {
@@ -18002,7 +19183,7 @@ var faArrowRightFromFile = faFileExport;
 var faShield = {
   prefix: 'fas',
   iconName: 'shield',
-  icon: [512, 512, [128737, "shield-blank"], "f132", "M240 0c4.6 0 9.2 1 13.4 2.9L441.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C41.3 420.7 .5 239.2 0 140c-.1-26.2 16.3-47.9 38.3-57.2L226.7 2.9C230.8 1 235.4 0 240 0z"]
+  icon: [512, 512, [128737, "shield-blank"], "f132", "M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0z"]
 };
 var faShieldBlank = faShield;
 var faArrowUpShortWide = {
@@ -18019,7 +19200,7 @@ var faHouseMedical = {
 var faGolfBallTee = {
   prefix: 'fas',
   iconName: 'golf-ball-tee',
-  icon: [384, 512, ["golf-ball"], "f450", "M384 192c0 66.8-34.1 125.6-85.8 160H85.8C34.1 317.6 0 258.8 0 192C0 86 86 0 192 0S384 86 384 192zM242.1 256.6c0 18.5-15 33.5-33.5 33.5c-4.9 0-9.6-1.1-13.8-3c5.3 11.6 16.9 19.7 30.5 19.7c18.5 0 33.5-15 33.5-33.5c0-13.6-8.1-25.3-19.7-30.5c1.9 4.2 3 8.9 3 13.8zm-52.3-49.3c-4.9 0-9.6-1.1-13.8-3c5.3 11.6 16.9 19.7 30.5 19.7c18.5 0 33.5-15 33.5-33.5c0-13.6-8.1-25.3-19.7-30.5c1.9 4.2 3 8.9 3 13.8c0 18.5-15 33.5-33.5 33.5zm113.5-17.5c0 18.5-15 33.5-33.5 33.5c-4.9 0-9.6-1.1-13.8-3c5.3 11.6 16.9 19.7 30.5 19.7c18.5 0 33.5-15 33.5-33.5c0-13.6-8.1-25.3-19.7-30.5c1.9 4.2 3 8.9 3 13.8zM96 416c0-17.7 14.3-32 32-32h64 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H240c-8.8 0-16 7.2-16 16v16c0 17.7-14.3 32-32 32s-32-14.3-32-32V464c0-8.8-7.2-16-16-16H128c-17.7 0-32-14.3-32-32z"]
+  icon: [384, 512, ["golf-ball"], "f450", "M384 192c0 66.8-34.1 125.6-85.8 160H85.8C34.1 317.6 0 258.8 0 192C0 86 86 0 192 0S384 86 384 192zM242.1 256.6c0 18.5-15 33.5-33.5 33.5c-4.9 0-9.1 5.1-5.4 8.4c5.9 5.2 13.7 8.4 22.1 8.4c18.5 0 33.5-15 33.5-33.5c0-8.5-3.2-16.2-8.4-22.1c-3.3-3.7-8.4 .5-8.4 5.4zm-52.3-49.3c-4.9 0-9.1 5.1-5.4 8.4c5.9 5.2 13.7 8.4 22.1 8.4c18.5 0 33.5-15 33.5-33.5c0-8.5-3.2-16.2-8.4-22.1c-3.3-3.7-8.4 .5-8.4 5.4c0 18.5-15 33.5-33.5 33.5zm113.5-17.5c0 18.5-15 33.5-33.5 33.5c-4.9 0-9.1 5.1-5.4 8.4c5.9 5.2 13.7 8.4 22.1 8.4c18.5 0 33.5-15 33.5-33.5c0-8.5-3.2-16.2-8.4-22.1c-3.3-3.7-8.4 .5-8.4 5.4zM96 416c0-17.7 14.3-32 32-32h64 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H240c-8.8 0-16 7.2-16 16v16c0 17.7-14.3 32-32 32s-32-14.3-32-32V464c0-8.8-7.2-16-16-16H128c-17.7 0-32-14.3-32-32z"]
 };
 var faGolfBall = faGolfBallTee;
 var faCircleChevronLeft = {
@@ -18036,17 +19217,17 @@ var faHouseChimneyWindow = {
 var faPenNib = {
   prefix: 'fas',
   iconName: 'pen-nib',
-  icon: [512, 512, [10001], "f5ad", "M366.4 18.3L310.7 74.1 435.9 199.3l55.7-55.7c21.9-21.9 21.9-57.3 0-79.2L445.6 18.3c-21.9-21.9-57.3-21.9-79.2 0zM286 94.6l-9.2 2.8L132.7 140.6c-19.9 6-35.7 21.2-42.3 41L1.8 445.8c-3.8 11.3-1 23.9 7.3 32.4L162.7 324.7c-3-6.3-4.7-13.3-4.7-20.7c0-26.5 21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48c-7.4 0-14.4-1.7-20.7-4.7L31.7 500.9c8.6 8.3 21.1 11.2 32.4 7.3l264.3-88.6c19.7-6.6 35-22.4 41-42.3l43.2-144.1 2.8-9.2L286 94.6z"]
+  icon: [512, 512, [10001], "f5ad", "M368.4 18.3L312.7 74.1 437.9 199.3l55.7-55.7c21.9-21.9 21.9-57.3 0-79.2L447.6 18.3c-21.9-21.9-57.3-21.9-79.2 0zM288 94.6l-9.2 2.8L134.7 140.6c-19.9 6-35.7 21.2-42.3 41L3.8 445.8c-3.8 11.3-1 23.9 7.3 32.4L164.7 324.7c-3-6.3-4.7-13.3-4.7-20.7c0-26.5 21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48c-7.4 0-14.4-1.7-20.7-4.7L33.7 500.9c8.6 8.3 21.1 11.2 32.4 7.3l264.3-88.6c19.7-6.6 35-22.4 41-42.3l43.2-144.1 2.8-9.2L288 94.6z"]
 };
 var faTentArrowTurnLeft = {
   prefix: 'fas',
   iconName: 'tent-arrow-turn-left',
-  icon: [576, 512, [], "e580", "M120.1 41.8c9.9-8.9 10.7-24 1.8-33.9S97.8-2.7 87.9 6.2l-80 72C2.9 82.7 0 89.2 0 96s2.9 13.3 7.9 17.8l80 72c9.9 8.9 25 8.1 33.9-1.8s8.1-25-1.8-33.9L86.5 120 456 120c39.8 0 72 32.2 72 72v40c0 13.3 10.7 24 24 24s24-10.7 24-24V192c0-66.3-53.7-120-120-120L86.5 72l33.5-30.2zM307.4 166.5c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S86.7 512 96 512H288V352l96 160h96c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"]
+  icon: [576, 512, [], "e580", "M120.1 41.8c9.9-8.9 10.7-24 1.8-33.9S97.8-2.7 87.9 6.2l-80 72C2.9 82.7 0 89.2 0 96s2.9 13.3 7.9 17.8l80 72c9.9 8.9 25 8.1 33.9-1.8s8.1-25-1.8-33.9L86.5 120 456 120c39.8 0 72 32.2 72 72v40c0 13.3 10.7 24 24 24s24-10.7 24-24V192c0-66.3-53.7-120-120-120L86.5 72l33.5-30.2zM307.4 166.5c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S86.7 512 96 512H240h16c17.7 0 32-14.3 32-32V361.9c0-5.5 4.4-9.9 9.9-9.9c3.7 0 7.2 2.1 8.8 5.5l68.4 136.8c5.4 10.8 16.5 17.7 28.6 17.7H464h16c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"]
 };
 var faTents = {
   prefix: 'fas',
   iconName: 'tents',
-  icon: [640, 512, [], "e582", "M396.6 6.5L235.8 129.1c9.6 1.8 18.9 5.8 27 12l168 128c13.2 10.1 22 24.9 24.5 41.4l6.2 41.5H608c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128c-11.5-8.7-27.3-8.7-38.8 0zm-153.2 160c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S22.7 512 32 512H224V352l96 160h96c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"]
+  icon: [640, 512, [], "e582", "M396.6 6.5L235.8 129.1c9.6 1.8 18.9 5.8 27 12l168 128c13.2 10.1 22 24.9 24.5 41.4l6.2 41.5H608c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128c-11.5-8.7-27.3-8.7-38.8 0zm-153.2 160c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S22.7 512 32 512H176h16c17.7 0 32-14.3 32-32V361.9c0-5.5 4.4-9.9 9.9-9.9c3.7 0 7.2 2.1 8.8 5.5l68.4 136.8c5.4 10.8 16.5 17.7 28.6 17.7H400h16c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"]
 };
 var faWandMagic = {
   prefix: 'fas',
@@ -18072,7 +19253,7 @@ var faMoon = {
 var faWineGlassEmpty = {
   prefix: 'fas',
   iconName: 'wine-glass-empty',
-  icon: [320, 512, ["wine-glass-alt"], "f5ce", "M47 0C30.4 0 16.5 12.8 15.1 29.3L1.1 197.8c-6 72 42.5 135.2 109.9 150.6V448H63c-17.7 0-32 14.3-32 32s14.3 32 32 32h80 80c17.7 0 32-14.3 32-32s-14.3-32-32-32H175V348.4c67.4-15.4 115.9-78.6 109.9-150.6l-14-168.4C269.5 12.8 255.6 0 239 0H47zM64.9 203.1L76.4 64H209.6l11.6 139.1C225 248.8 188.9 288 143 288s-82-39.2-78.1-84.9z"]
+  icon: [320, 512, ["wine-glass-alt"], "f5ce", "M64 0C47.4 0 33.5 12.8 32.1 29.3l-14 168.4c-6 72 42.5 135.2 109.9 150.6V448H80c-17.7 0-32 14.3-32 32s14.3 32 32 32h80 80c17.7 0 32-14.3 32-32s-14.3-32-32-32H192V348.4c67.4-15.4 115.9-78.6 109.9-150.6l-14-168.4C286.5 12.8 272.6 0 256 0H64zM81.9 203.1L93.4 64H226.6l11.6 139.1C242 248.8 205.9 288 160 288s-82-39.2-78.1-84.9z"]
 };
 var faWineGlassAlt = faWineGlassEmpty;
 var faCheese = {
@@ -18093,7 +19274,7 @@ var faMusic = {
 var faCodeCommit = {
   prefix: 'fas',
   iconName: 'code-commit',
-  icon: [640, 512, [], "f386", "M320 336c44.2 0 80-35.8 80-80s-35.8-80-80-80s-80 35.8-80 80s35.8 80 80 80zm156.8-48C462 361 397.4 416 320 416s-142-55-156.8-128H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H163.2C178 151 242.6 96 320 96s142 55 156.8 128H608c17.7 0 32 14.3 32 32s-14.3 32-32 32H476.8z"]
+  icon: [640, 512, [], "f386", "M320 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm156.8-48C462 361 397.4 416 320 416s-142-55-156.8-128H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H163.2C178 151 242.6 96 320 96s142 55 156.8 128H608c17.7 0 32 14.3 32 32s-14.3 32-32 32H476.8z"]
 };
 var faTemperatureLow = {
   prefix: 'fas',
@@ -18114,7 +19295,7 @@ var faBroom = {
 var faShieldHeart = {
   prefix: 'fas',
   iconName: 'shield-heart',
-  icon: [512, 512, [], "e574", "M253.4 2.9C249.2 1 244.7 0 240 0s-9.2 1-13.4 2.9L38.3 82.8C16.3 92.1-.1 113.8 0 140c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C438.7 420.7 479.5 239.2 480 140c.1-26.2-16.3-47.9-38.3-57.2L253.4 2.9zM128 221.3c0-33.8 27.4-61.3 61.3-61.3c16.2 0 31.8 6.5 43.3 17.9l7.4 7.4 7.4-7.4c11.5-11.5 27.1-17.9 43.3-17.9c33.8 0 61.3 27.4 61.3 61.3c0 16.2-6.5 31.8-17.9 43.3l-82.7 82.7c-6.2 6.2-16.4 6.2-22.6 0l-82.7-82.7c-11.5-11.5-17.9-27.1-17.9-43.3z"]
+  icon: [512, 512, [], "e574", "M269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L269.4 2.9zM144 221.3c0-33.8 27.4-61.3 61.3-61.3c16.2 0 31.8 6.5 43.3 17.9l7.4 7.4 7.4-7.4c11.5-11.5 27.1-17.9 43.3-17.9c33.8 0 61.3 27.4 61.3 61.3c0 16.2-6.5 31.8-17.9 43.3l-82.7 82.7c-6.2 6.2-16.4 6.2-22.6 0l-82.7-82.7c-11.5-11.5-17.9-27.1-17.9-43.3z"]
 };
 var faGopuram = {
   prefix: 'fas',
@@ -18193,7 +19374,7 @@ var faFan = {
 var faPersonWalkingLuggage = {
   prefix: 'fas',
   iconName: 'person-walking-luggage',
-  icon: [512, 512, [], "e554", "M400 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM315.7 200.5c1-.4 1.9-.8 2.9-1.2l-16.9 63.5c-5.6 21.1-.1 43.6 14.7 59.7l70.7 77.1 22 88.1c4.3 17.1 21.7 27.6 38.8 23.3s27.6-21.7 23.3-38.8l-23-92.1c-1.9-7.8-5.8-14.9-11.2-20.8l-49.5-54 19.3-65.5 9.6 23c4.4 10.6 12.5 19.3 22.8 24.5l26.7 13.3c15.8 7.9 35 1.5 42.9-14.3s1.5-35-14.3-42.9L473 232.7l-15.3-36.8C440.5 154.8 400.3 128 355.7 128c-22.8 0-45.3 4.8-66.1 14l-8 3.5c-32.9 14.6-58.1 42.4-69.4 76.5l-2.6 7.8c-5.6 16.8 3.5 34.9 20.2 40.5s34.9-3.5 40.5-20.2l2.6-7.8c5.7-17.1 18.3-30.9 34.7-38.2l8-3.5zm-30 135.1l-25 62.4-59.4 59.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L308.3 441c4.6-4.6 8.2-10.1 10.6-16.1l14.5-36.2-40.7-44.4c-2.5-2.7-4.8-5.6-7-8.6zM224 274.1c-7.7-4.4-17.4-1.8-21.9 5.9l-32 55.4L115.7 304c-15.3-8.8-34.9-3.6-43.7 11.7L8 426.6c-8.8 15.3-3.6 34.9 11.7 43.7l55.4 32c15.3 8.8 34.9 3.6 43.7-11.7l64-110.9c1.5-2.6 2.6-5.2 3.3-8L229.9 296c4.4-7.7 1.8-17.4-5.9-21.9z"]
+  icon: [576, 512, [], "e554", "M432 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM347.7 200.5c1-.4 1.9-.8 2.9-1.2l-16.9 63.5c-5.6 21.1-.1 43.6 14.7 59.7l70.7 77.1 22 88.1c4.3 17.1 21.7 27.6 38.8 23.3s27.6-21.7 23.3-38.8l-23-92.1c-1.9-7.8-5.8-14.9-11.2-20.8l-49.5-54 19.3-65.5 9.6 23c4.4 10.6 12.5 19.3 22.8 24.5l26.7 13.3c15.8 7.9 35 1.5 42.9-14.3s1.5-35-14.3-42.9L505 232.7l-15.3-36.8C472.5 154.8 432.3 128 387.7 128c-22.8 0-45.3 4.8-66.1 14l-8 3.5c-32.9 14.6-58.1 42.4-69.4 76.5l-2.6 7.8c-5.6 16.8 3.5 34.9 20.2 40.5s34.9-3.5 40.5-20.2l2.6-7.8c5.7-17.1 18.3-30.9 34.7-38.2l8-3.5zm-30 135.1l-25 62.4-59.4 59.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L340.3 441c4.6-4.6 8.2-10.1 10.6-16.1l14.5-36.2-40.7-44.4c-2.5-2.7-4.8-5.6-7-8.6zM256 274.1c-7.7-4.4-17.4-1.8-21.9 5.9l-32 55.4L147.7 304c-15.3-8.8-34.9-3.6-43.7 11.7L40 426.6c-8.8 15.3-3.6 34.9 11.7 43.7l55.4 32c15.3 8.8 34.9 3.6 43.7-11.7l64-110.9c1.5-2.6 2.6-5.2 3.3-8L261.9 296c4.4-7.7 1.8-17.4-5.9-21.9z"]
 };
 var faUpDown = {
   prefix: 'fas',
@@ -18204,7 +19385,7 @@ var faArrowsAltV = faUpDown;
 var faCloudMoonRain = {
   prefix: 'fas',
   iconName: 'cloud-moon-rain',
-  icon: [640, 512, [], "f73c", "M453 0C392.5 0 342.2 43.8 333 101.3c33.3 16.5 56.7 50.2 58.5 89.5c21.8 10.3 39.5 27.9 50 49.6c3.8 .4 7.7 .5 11.6 .5c32.9 0 62.8-13 84.6-34c4.8-4.6 6-11.7 3-17.6s-9.5-9.2-16-8.1c-4.6 .8-9.4 1.2-14.3 1.2c-46.1 0-83.2-37-83.2-82.3c0-30.6 17-57.5 42.3-71.6c5.8-3.2 8.8-9.9 7.4-16.3S469.9 .9 463.3 .4C459.9 .1 456.4 0 453 0zM346.4 361.3c41.6 0 75.3-33.7 75.3-75.3c0-37-26.7-67.8-62-74.1c1.2-5.2 1.8-10.7 1.8-16.2c0-41.6-33.7-75.3-75.3-75.3c-16 0-30.9 5-43.1 13.5c-15.8-26.2-44.5-43.7-77.4-43.7c-49.9 0-90.3 40.4-90.3 90.3l0 1.2C32.7 189.1 .1 226.2 .1 271c0 49.9 40.4 90.3 90.3 90.3H346.4zm-265.9 34c-10.4-6.9-24.4-4.1-31.3 6.3L19.1 446.8c-6.9 10.4-4.1 24.4 6.3 31.3s24.4 4.1 31.3-6.3l30.1-45.2c6.9-10.4 4.1-24.4-6.3-31.3zm90.3 0c-10.4-6.9-24.4-4.1-31.3 6.3l-30.1 45.2c-6.9 10.4-4.1 24.4 6.3 31.3s24.4 4.1 31.3-6.3l30.1-45.2c6.9-10.4 4.1-24.4-6.3-31.3zm90.3 0c-10.4-6.9-24.4-4.1-31.3 6.3l-30.1 45.2c-6.9 10.4-4.1 24.4 6.3 31.3s24.4 4.1 31.3-6.3l30.1-45.2c6.9-10.4 4.1-24.4-6.3-31.3zm90.3 0c-10.4-6.9-24.4-4.1-31.3 6.3l-30.1 45.2c-6.9 10.4-4.1 24.4 6.3 31.3s24.4 4.1 31.3-6.3l30.1-45.2c6.9-10.4 4.1-24.4-6.3-31.3z"]
+  icon: [576, 512, [], "f73c", "M481.2 0C417 0 363.5 46.5 353.7 107.6c35.4 17.6 60.2 53.3 62.1 95.1c23.2 11 42 29.7 53.1 52.7c4 .4 8.1 .6 12.3 .6c34.9 0 66.7-13.8 89.9-36.1c5.1-4.9 6.4-12.5 3.2-18.7s-10.1-9.7-17-8.6c-4.9 .8-10 1.3-15.2 1.3c-49 0-88.4-39.3-88.4-87.4c0-32.6 18-61.1 44.9-76.1c6.1-3.4 9.3-10.5 7.8-17.4s-7.3-12-14.3-12.6c-3.6-.3-7.3-.5-10.9-.5zM367.9 383.9c44.2 0 80-35.8 80-80c0-39.3-28.4-72.1-65.8-78.7c1.2-5.6 1.9-11.3 1.9-17.2c0-44.2-35.8-80-80-80c-17 0-32.8 5.3-45.8 14.4C241.3 114.6 210.8 96 176 96c-53 0-96 43-96 96l0 1.3c-45.4 7.6-80 47.1-80 94.6c0 53 43 96 96 96H367.9zM85.4 420.1c-11-7.4-25.9-4.4-33.3 6.7l-32 48c-7.4 11-4.4 25.9 6.7 33.3s25.9 4.4 33.3-6.7l32-48c7.4-11 4.4-25.9-6.7-33.3zm96 0c-11-7.4-25.9-4.4-33.3 6.7l-32 48c-7.4 11-4.4 25.9 6.7 33.3s25.9 4.4 33.3-6.7l32-48c7.4-11 4.4-25.9-6.7-33.3zm96 0c-11-7.4-25.9-4.4-33.3 6.7l-32 48c-7.4 11-4.4 25.9 6.7 33.3s25.9 4.4 33.3-6.7l32-48c7.4-11 4.4-25.9-6.7-33.3zm96 0c-11-7.4-25.9-4.4-33.3 6.7l-32 48c-7.4 11-4.4 25.9 6.7 33.3s25.9 4.4 33.3-6.7l32-48c7.4-11 4.4-25.9-6.7-33.3z"]
 };
 var faCalendar = {
   prefix: 'fas',
@@ -18219,7 +19400,7 @@ var faTrailer = {
 var faBahai = {
   prefix: 'fas',
   iconName: 'bahai',
-  icon: [576, 512, ["haykal"], "f666", "M245.2 0c13.6 0 25.6 9.2 29.1 22.4l22.5 84.4 71.5-50.2c11.2-7.8 26.2-7.2 36.7 1.6s13.7 23.5 7.9 35.8l-37 79.1 87 7.5c13.6 1.2 24.7 11.3 27.1 24.8s-4.6 26.8-17 32.5l-79.2 36.8 61.8 61.7c9.7 9.6 11.6 24.6 4.8 36.4s-20.7 17.6-33.9 14L342.1 364l7.7 87c1.2 13.6-6.9 26.3-19.7 31s-27.2 .1-35-11.1l-50-71.6-50 71.6c-7.8 11.2-22.2 15.7-35 11.1s-20.9-17.4-19.7-31l7.7-87L63.9 386.7c-13.2 3.5-27.1-2.2-33.9-14s-4.8-26.7 4.8-36.4l61.8-61.7L17.4 237.9c-12.4-5.8-19.3-19.1-17-32.5s13.5-23.6 27.1-24.8l87-7.5L77.5 94C71.8 81.6 75 66.9 85.5 58.1s25.5-9.4 36.7-1.6l71.5 50.2 22.5-84.4C219.6 9.2 231.5 0 245.2 0zm0 147l-4.5 16.9c-2.5 9.5-9.6 17.2-18.8 20.5s-19.6 2-27.6-3.7l-14.3-10 7.4 15.8c4.2 8.9 3.7 19.3-1.2 27.8s-13.7 14.1-23.5 14.9l-17.4 1.5 15.9 7.4c8.9 4.1 15.3 12.4 17 22.1s-1.4 19.6-8.4 26.6l-12.4 12.4 16.9-4.5c9.5-2.6 19.7-.3 27.2 6s11.5 15.9 10.6 25.7l-1.5 17.4 10-14.3c5.6-8.1 14.9-12.9 24.7-12.9s19.1 4.8 24.7 12.9l10 14.3-1.5-17.4c-.9-9.8 3.1-19.4 10.6-25.7s17.7-8.6 27.2-6l16.9 4.5-12.4-12.4c-7-6.9-10.1-16.9-8.4-26.6s8-17.9 17-22.1l15.9-7.4-17.4-1.5c-9.8-.8-18.6-6.4-23.5-14.9s-5.4-18.9-1.2-27.8l7.4-15.8-14.3 10c-8.1 5.7-18.4 7-27.6 3.7s-16.3-11-18.8-20.5L245.2 147z"]
+  icon: [576, 512, ["haykal"], "f666", "M288 0c14.5 0 27.2 9.7 30.9 23.8l23.9 89.6 75.9-53.3c11.9-8.3 27.8-7.6 39 1.7s14.6 24.9 8.4 38.1l-39.3 84 92.4 8c14.4 1.2 26.2 12 28.8 26.3s-4.9 28.5-18 34.6l-84.1 39.1 65.7 65.5c10.3 10.2 12.4 26.1 5.1 38.7s-22 18.7-36 14.9L391 386.8l8.2 92.4c1.3 14.4-7.3 27.9-20.9 32.9s-28.9 .1-37.2-11.7l-53.1-76-53.1 76c-8.3 11.9-23.6 16.7-37.2 11.7s-22.2-18.5-20.9-32.9l8.2-92.4L95.4 410.9c-14 3.8-28.8-2.3-36-14.9s-5.2-28.4 5.1-38.7l65.7-65.5L46 252.7c-13.1-6.1-20.5-20.3-18-34.6s14.3-25.1 28.8-26.3l92.4-8-39.3-84c-6.1-13.1-2.7-28.8 8.4-38.1s27.1-10 39-1.7l75.9 53.3 23.9-89.6C260.8 9.7 273.5 0 288 0zm0 156.2l-4.8 18c-2.7 10.1-10.2 18.2-20 21.8s-20.8 2.1-29.3-3.9l-15.2-10.7 7.9 16.8c4.4 9.5 4 20.5-1.3 29.6s-14.5 15-25 15.9l-18.5 1.6 16.8 7.8c9.5 4.4 16.2 13.2 18 23.5s-1.5 20.8-8.9 28.2l-13.2 13.1 17.9-4.8c10.1-2.7 20.9-.3 28.9 6.4s12.2 16.9 11.3 27.3l-1.6 18.5 10.6-15.2c6-8.6 15.8-13.7 26.2-13.7s20.2 5.1 26.2 13.7l10.6 15.2-1.6-18.5c-.9-10.4 3.3-20.6 11.3-27.3s18.8-9.1 28.9-6.4l17.9 4.8-13.2-13.1c-7.4-7.4-10.7-17.9-8.9-28.2s8.5-19.1 18-23.5l16.8-7.8-18.5-1.6c-10.4-.9-19.7-6.8-25-15.9s-5.7-20.1-1.3-29.6l7.9-16.8-15.2 10.7c-8.6 6-19.5 7.5-29.3 3.9s-17.3-11.7-20-21.8l-4.8-18z"]
 };
 var faHaykal = faBahai;
 var faSdCard = {
@@ -18240,7 +19421,7 @@ var faShoePrints = {
 var faCirclePlus = {
   prefix: 'fas',
   iconName: 'circle-plus',
-  icon: [512, 512, ["plus-circle"], "f055", "M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"]
+  icon: [512, 512, ["plus-circle"], "f055", "M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"]
 };
 var faPlusCircle = faCirclePlus;
 var faFaceGrinTongueWink = {
@@ -18252,7 +19433,7 @@ var faGrinTongueWink = faFaceGrinTongueWink;
 var faHandHolding = {
   prefix: 'fas',
   iconName: 'hand-holding',
-  icon: [576, 512, [], "f4bd", "M559.7 392.2c17.8-13.1 21.6-38.1 8.5-55.9s-38.1-21.6-55.9-8.5L392.6 416H272c-8.8 0-16-7.2-16-16s7.2-16 16-16h16 64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288 272 193.7c-29.1 0-57.3 9.9-80 28L68.8 384H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H192 352.5c29 0 57.3-9.3 80.7-26.5l126.6-93.3zm-366.1-8.3a.5 .5 0 1 1 -.9 .1 .5 .5 0 1 1 .9-.1z"]
+  icon: [576, 512, [], "f4bd", "M559.7 392.2c17.8-13.1 21.6-38.1 8.5-55.9s-38.1-21.6-55.9-8.5L392.6 416H272c-8.8 0-16-7.2-16-16s7.2-16 16-16h16 64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288 272 193.7c-29.1 0-57.3 9.9-80 28L68.8 384H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H192 352.5c29 0 57.3-9.3 80.7-26.5l126.6-93.3zm-366.1-8.3a.5 .5 0 1 1 -.9 .2 .5 .5 0 1 1 .9-.2z"]
 };
 var faPlugCircleExclamation = {
   prefix: 'fas',
@@ -18262,7 +19443,7 @@ var faPlugCircleExclamation = {
 var faLinkSlash = {
   prefix: 'fas',
   iconName: 'link-slash',
-  icon: [640, 512, ["chain-broken", "chain-slash", "unlink"], "f127", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L489.3 358.2l90.5-90.5c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114l-96 96-31.9-25C430.9 239.6 420.1 175.1 377 132c-52.2-52.3-134.5-56.2-191.3-11.7L38.8 5.1zM239 162c30.1-14.9 67.7-9.9 92.8 15.3c20 20 27.5 48.3 21.7 74.5L239 162zM406.6 416.4L220.9 270c-2.1 39.8 12.2 80.1 42.2 110c38.9 38.9 94.4 51 143.6 36.3zm-290-228.5L60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5l61.8-61.8-50.6-39.9z"]
+  icon: [640, 512, ["chain-broken", "chain-slash", "unlink"], "f127", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L489.3 358.2l90.5-90.5c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114l-96 96-31.9-25C430.9 239.6 420.1 175.1 377 132c-52.2-52.3-134.5-56.2-191.3-11.7L38.8 5.1zM239 162c30.1-14.9 67.7-9.9 92.8 15.3c20 20 27.5 48.3 21.7 74.5L239 162zM116.6 187.9L60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5l61.8-61.8-50.6-39.9zM220.9 270c-2.1 39.8 12.2 80.1 42.2 110c38.9 38.9 94.4 51 143.6 36.3L220.9 270z"]
 };
 var faChainBroken = faLinkSlash;
 var faChainSlash = faLinkSlash;
@@ -18270,7 +19451,7 @@ var faUnlink = faLinkSlash;
 var faClone = {
   prefix: 'fas',
   iconName: 'clone',
-  icon: [512, 512, [], "f24d", "M0 448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H224c-53 0-96-43-96-96V160H64c-35.3 0-64 28.7-64 64V448zm224-96H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64z"]
+  icon: [512, 512, [], "f24d", "M288 448H64V224h64V160H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64zm-64-96H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64z"]
 };
 var faPersonWalkingArrowLoopLeft = {
   prefix: 'fas',
@@ -18280,7 +19461,7 @@ var faPersonWalkingArrowLoopLeft = {
 var faArrowUpZA = {
   prefix: 'fas',
   iconName: 'arrow-up-z-a',
-  icon: [512, 512, ["sort-alpha-up-alt"], "f882", "M143.6 42.4C137.5 35.8 129 32 120 32s-17.5 3.8-23.6 10.4l-88 96c-11.9 13-11.1 33.3 2 45.2s33.3 11.1 45.2-2L88 146.3V448c0 17.7 14.3 32 32 32s32-14.3 32-32V146.3l32.4 35.4c11.9 13 32.2 13.9 45.2 2s13.9-32.2 2-45.2l-88-96zM280 64c0 17.7 14.3 32 32 32h50.7l-73.4 73.4c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H440c17.7 0 32-14.3 32-32s-14.3-32-32-32H389.3l73.4-73.4c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8H312c-17.7 0-32 14.3-32 32zm96 192c-12.1 0-23.2 6.8-28.6 17.7l-64 128-16 32c-7.9 15.8-1.5 35 14.3 42.9s35 1.5 42.9-14.3l7.2-14.3h88.4l7.2 14.3c7.9 15.8 27.1 22.2 42.9 14.3s22.2-27.1 14.3-42.9l-16-32-64-128C399.2 262.8 388.1 256 376 256zM355.8 400L376 359.6 396.2 400H355.8z"]
+  icon: [576, 512, ["sort-alpha-up-alt"], "f882", "M183.6 42.4C177.5 35.8 169 32 160 32s-17.5 3.8-23.6 10.4l-88 96c-11.9 13-11.1 33.3 2 45.2s33.3 11.1 45.2-2L128 146.3V448c0 17.7 14.3 32 32 32s32-14.3 32-32V146.3l32.4 35.4c11.9 13 32.2 13.9 45.2 2s13.9-32.2 2-45.2l-88-96zM320 64c0 17.7 14.3 32 32 32h50.7l-73.4 73.4c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H429.3l73.4-73.4c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8H352c-17.7 0-32 14.3-32 32zm96 192c-12.1 0-23.2 6.8-28.6 17.7l-64 128-16 32c-7.9 15.8-1.5 35 14.3 42.9s35 1.5 42.9-14.3l7.2-14.3h88.4l7.2 14.3c7.9 15.8 27.1 22.2 42.9 14.3s22.2-27.1 14.3-42.9l-16-32-64-128C439.2 262.8 428.1 256 416 256zM395.8 400L416 359.6 436.2 400H395.8z"]
 };
 var faSortAlphaUpAlt = faArrowUpZA;
 var faFireFlameCurved = {
@@ -18324,7 +19505,7 @@ var faAngry = faFaceAngry;
 var faCookieBite = {
   prefix: 'fas',
   iconName: 'cookie-bite',
-  icon: [512, 512, [], "f564", "M241.5 27.6c-.8-5.4-4.9-9.8-10.3-10.6c-22.1-3.1-44.6 .9-64.4 11.4l-74 39.5C73.1 78.4 57.2 94.9 47.4 115L10.7 190.6c-9.8 20.1-13 42.9-9.1 64.9l14.5 82.8c3.9 22.1 14.6 42.3 30.7 57.9l60.3 58.4c16.1 15.6 36.6 25.6 58.7 28.7l83 11.7c22.1 3.1 44.6-.9 64.4-11.4l74-39.5c19.7-10.5 35.6-27 45.4-47.2l36.7-75.5c9.8-20.1 13-42.9 9.1-64.9c-.9-5.3-5.3-9.3-10.6-10.1c-51.5-8.2-92.8-47.1-104.5-97.4c-1.8-7.6-8-13.4-15.7-14.6c-54.6-8.7-97.7-52-106.2-106.8zM192 144a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM128 336a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm224-64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
+  icon: [512, 512, [], "f564", "M257.5 27.6c-.8-5.4-4.9-9.8-10.3-10.6v0c-22.1-3.1-44.6 .9-64.4 11.4l-74 39.5C89.1 78.4 73.2 94.9 63.4 115L26.7 190.6c-9.8 20.1-13 42.9-9.1 64.9l14.5 82.8c3.9 22.1 14.6 42.3 30.7 57.9l60.3 58.4c16.1 15.6 36.6 25.6 58.7 28.7l83 11.7c22.1 3.1 44.6-.9 64.4-11.4l74-39.5c19.7-10.5 35.6-27 45.4-47.2l36.7-75.5c9.8-20.1 13-42.9 9.1-64.9v0c-.9-5.3-5.3-9.3-10.6-10.1c-51.5-8.2-92.8-47.1-104.5-97.4c-1.8-7.6-8-13.4-15.7-14.6c-54.6-8.7-97.7-52-106.2-106.8zM208 144a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM144 336a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm224-64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
 };
 var faArrowTrendDown = {
   prefix: 'fas',
@@ -18358,7 +19539,7 @@ var faTachometerFast = faGaugeSimpleHigh;
 var faShower = {
   prefix: 'fas',
   iconName: 'shower',
-  icon: [512, 512, [128703], "f2cc", "M64 131.9C64 112.1 80.1 96 99.9 96c9.5 0 18.6 3.8 25.4 10.5l16.2 16.2c-21 38.9-17.4 87.5 10.9 123L151 247c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0L345 121c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-1.3 1.3c-35.5-28.3-84.1-31.9-123-10.9L170.5 61.3C151.8 42.5 126.4 32 99.9 32C44.7 32 0 76.7 0 131.9V448c0 17.7 14.3 32 32 32s32-14.3 32-32V131.9zM256 352a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm64 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm64 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm64 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm32-32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"]
+  icon: [512, 512, [128703], "f2cc", "M64 131.9C64 112.1 80.1 96 99.9 96c9.5 0 18.6 3.8 25.4 10.5l16.2 16.2c-21 38.9-17.4 87.5 10.9 123L151 247c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0L345 121c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-1.3 1.3c-35.5-28.3-84.2-31.9-123-10.9L170.5 61.3C151.8 42.5 126.4 32 99.9 32C44.7 32 0 76.7 0 131.9V448c0 17.7 14.3 32 32 32s32-14.3 32-32V131.9zM256 352a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm64 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm64 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm64 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm32-32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"]
 };
 var faDesktop = {
   prefix: 'fas',
@@ -18380,7 +19561,7 @@ var faThList = faTableList;
 var faCommentSms = {
   prefix: 'fas',
   iconName: 'comment-sms',
-  icon: [512, 512, ["sms"], "f7cd", "M256 448c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9c-5.5 9.2-11.1 16.6-15.2 21.6c-2.1 2.5-3.7 4.4-4.9 5.7c-.6 .6-1 1.1-1.3 1.4l-.3 .3 0 0 0 0 0 0 0 0c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c28.7 0 57.6-8.9 81.6-19.3c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9zM202.9 176.8c6.5-2.2 13.7 .1 17.9 5.6L256 229.3l35.2-46.9c4.1-5.5 11.3-7.8 17.9-5.6s10.9 8.3 10.9 15.2v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V240l-19.2 25.6c-3 4-7.8 6.4-12.8 6.4s-9.8-2.4-12.8-6.4L224 240v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-6.9 4.4-13 10.9-15.2zm173.1 38c0 .2 0 .4 0 .4c.1 .1 .6 .8 2.2 1.7c3.9 2.3 9.6 4.1 18.3 6.8l.6 .2c7.4 2.2 17.3 5.2 25.2 10.2c9.1 5.7 17.4 15.2 17.6 29.9c.2 15-7.6 26-17.8 32.3c-9.5 5.9-20.9 7.9-30.7 7.6c-12.2-.4-23.7-4.4-32.6-7.4l0 0 0 0c-1.4-.5-2.7-.9-4-1.4c-8.4-2.8-12.9-11.9-10.1-20.2s11.9-12.9 20.2-10.1c1.7 .6 3.3 1.1 4.9 1.6l0 0 0 0c9.1 3.1 15.6 5.3 22.6 5.5c5.3 .2 10-1 12.8-2.8c1.2-.8 1.8-1.5 2.1-2c.2-.4 .6-1.2 .6-2.7l0-.2c0-.7 0-1.4-2.7-3.1c-3.8-2.4-9.6-4.3-18-6.9l-1.2-.4c-7.2-2.2-16.7-5-24.3-9.6c-9-5.4-17.7-14.7-17.7-29.4c-.1-15.2 8.6-25.7 18.5-31.6c9.4-5.5 20.5-7.5 29.7-7.4c10 .2 19.7 2.3 27.9 4.4c8.5 2.3 13.6 11 11.3 19.6s-11 13.6-19.6 11.3c-7.3-1.9-14.1-3.3-20.1-3.4c-4.9-.1-9.8 1.1-12.9 2.9c-1.4 .8-2.1 1.6-2.4 2c-.2 .3-.4 .8-.4 1.9zm-272 0c0 .2 0 .4 0 .4c.1 .1 .6 .8 2.2 1.7c3.9 2.3 9.6 4.1 18.3 6.8l.6 .2c7.4 2.2 17.3 5.2 25.2 10.2c9.1 5.7 17.4 15.2 17.6 29.9c.2 15-7.6 26-17.8 32.3c-9.5 5.9-20.9 7.9-30.7 7.6c-12.3-.4-24.2-4.5-33.2-7.6l0 0 0 0c-1.3-.4-2.5-.8-3.6-1.2c-8.4-2.8-12.9-11.9-10.1-20.2s11.9-12.9 20.2-10.1c1.4 .5 2.8 .9 4.1 1.4l0 0 0 0c9.5 3.2 16.5 5.6 23.7 5.8c5.3 .2 10-1 12.8-2.8c1.2-.8 1.8-1.5 2.1-2c.2-.4 .6-1.2 .6-2.7l0-.2c0-.7 0-1.4-2.7-3.1c-3.8-2.4-9.6-4.3-18-6.9l-1.2-.4 0 0c-7.2-2.2-16.7-5-24.3-9.6C80.8 239 72.1 229.7 72 215c-.1-15.2 8.6-25.7 18.5-31.6c9.4-5.5 20.5-7.5 29.7-7.4c9.5 .1 22.2 2.1 31.1 4.4c8.5 2.3 13.6 11 11.3 19.6s-11 13.6-19.6 11.3c-6.6-1.8-16.8-3.3-23.3-3.4c-4.9-.1-9.8 1.1-12.9 2.9c-1.4 .8-2.1 1.6-2.4 2c-.2 .3-.4 .8-.4 1.9z"]
+  icon: [512, 512, ["sms"], "f7cd", "M256 448c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9c-5.5 9.2-11.1 16.6-15.2 21.6c-2.1 2.5-3.7 4.4-4.9 5.7c-.6 .6-1 1.1-1.3 1.4l-.3 .3 0 0 0 0 0 0 0 0c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c28.7 0 57.6-8.9 81.6-19.3c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9zM96 212.8c0-20.3 16.5-36.8 36.8-36.8H152c8.8 0 16 7.2 16 16s-7.2 16-16 16H132.8c-2.7 0-4.8 2.2-4.8 4.8c0 1.6 .8 3.1 2.2 4l29.4 19.6c10.3 6.8 16.4 18.3 16.4 30.7c0 20.3-16.5 36.8-36.8 36.8H112c-8.8 0-16-7.2-16-16s7.2-16 16-16h27.2c2.7 0 4.8-2.2 4.8-4.8c0-1.6-.8-3.1-2.2-4l-29.4-19.6C102.2 236.7 96 225.2 96 212.8zM372.8 176H392c8.8 0 16 7.2 16 16s-7.2 16-16 16H372.8c-2.7 0-4.8 2.2-4.8 4.8c0 1.6 .8 3.1 2.2 4l29.4 19.6c10.2 6.8 16.4 18.3 16.4 30.7c0 20.3-16.5 36.8-36.8 36.8H352c-8.8 0-16-7.2-16-16s7.2-16 16-16h27.2c2.7 0 4.8-2.2 4.8-4.8c0-1.6-.8-3.1-2.2-4l-29.4-19.6c-10.2-6.8-16.4-18.3-16.4-30.7c0-20.3 16.5-36.8 36.8-36.8zm-152 6.4L256 229.3l35.2-46.9c4.1-5.5 11.3-7.8 17.9-5.6s10.9 8.3 10.9 15.2v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V240l-19.2 25.6c-3 4-7.8 6.4-12.8 6.4s-9.8-2.4-12.8-6.4L224 240v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-6.9 4.4-13 10.9-15.2s13.7 .1 17.9 5.6z"]
 };
 var faSms = faCommentSms;
 var faBook = {
@@ -18396,7 +19577,7 @@ var faUserPlus = {
 var faCheck = {
   prefix: 'fas',
   iconName: 'check',
-  icon: [512, 512, [10003, 10004], "f00c", "M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"]
+  icon: [448, 512, [10003, 10004], "f00c", "M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"]
 };
 var faBatteryThreeQuarters = {
   prefix: 'fas',
@@ -18412,7 +19593,7 @@ var faHouseCircleCheck = {
 var faAngleLeft = {
   prefix: 'fas',
   iconName: 'angle-left',
-  icon: [256, 512, [8249], "f104", "M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"]
+  icon: [320, 512, [8249], "f104", "M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"]
 };
 var faDiagramSuccessor = {
   prefix: 'fas',
@@ -18432,7 +19613,7 @@ var faArrowsSplitUpAndLeft = {
 var faHandFist = {
   prefix: 'fas',
   iconName: 'hand-fist',
-  icon: [384, 512, [9994, "fist-raised"], "f6de", "M160 0c17.7 0 32 14.3 32 32V144H128V32c0-17.7 14.3-32 32-32zM32 64c0-17.7 14.3-32 32-32s32 14.3 32 32v80H32V64zm192 0c0-17.7 14.3-32 32-32s32 14.3 32 32v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V64zm96 64c0-17.7 14.3-32 32-32s32 14.3 32 32v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V128zm-96 88l0-.6c9.4 5.4 20.3 8.6 32 8.6c13.2 0 25.4-4 35.6-10.8c8.7 24.9 32.5 42.8 60.4 42.8c11.7 0 22.6-3.1 32-8.6V256c0 52.3-25.1 98.8-64 128v96c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V401.6c-17.3-7.9-33.2-18.8-46.9-32.5L37.5 357.5C13.5 333.5 0 300.9 0 267V240c0-35.3 28.7-64 64-64h88c22.1 0 40 17.9 40 40s-17.9 40-40 40H96c-8.8 0-16 7.2-16 16s7.2 16 16 16h56c39.8 0 72-32.2 72-72z"]
+  icon: [448, 512, [9994, "fist-raised"], "f6de", "M192 0c17.7 0 32 14.3 32 32V144H160V32c0-17.7 14.3-32 32-32zM64 64c0-17.7 14.3-32 32-32s32 14.3 32 32v80H64V64zm192 0c0-17.7 14.3-32 32-32s32 14.3 32 32v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V64zm96 64c0-17.7 14.3-32 32-32s32 14.3 32 32v64c0 17.7-14.3 32-32 32s-32-14.3-32-32V128zm-96 88l0-.6c9.4 5.4 20.3 8.6 32 8.6c13.2 0 25.4-4 35.6-10.8c8.7 24.9 32.5 42.8 60.4 42.8c11.7 0 22.6-3.1 32-8.6V256c0 52.3-25.1 98.8-64 128v96c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32V401.6c-17.3-7.9-33.2-18.8-46.9-32.5L69.5 357.5C45.5 333.5 32 300.9 32 267V240c0-35.3 28.7-64 64-64h88c22.1 0 40 17.9 40 40s-17.9 40-40 40H128c-8.8 0-16 7.2-16 16s7.2 16 16 16h56c39.8 0 72-32.2 72-72z"]
 };
 var faFistRaised = faHandFist;
 var faCloudMoon = {
@@ -18448,7 +19629,7 @@ var faBriefcase = {
 var faPersonFalling = {
   prefix: 'fas',
   iconName: 'person-falling',
-  icon: [448, 512, [], "e546", "M256 0c17.7 0 32 14.3 32 32l0 9.8c0 54.6-27.9 104.6-72.5 133.6l.2 .3L272.5 256l87.5 0c15.1 0 29.3 7.1 38.4 19.2l43.2 57.6c10.6 14.1 7.7 34.2-6.4 44.8s-34.2 7.7-44.8-6.4L352 320l-96 0h-1.4l92.3 142.6c9.6 14.8 5.4 34.6-9.5 44.3s-34.6 5.4-44.3-9.5L132.5 249.2c-2.9 9.2-4.5 19-4.5 29l0 73.8c0 17.7-14.3 32-32 32s-32-14.3-32-32V278.2c0-65.1 39.6-123.7 100.1-147.9C200.3 115.8 224 80.8 224 41.8l0-9.8c0-17.7 14.3-32 32-32zM80 32a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"]
+  icon: [512, 512, [], "e546", "M288 0c17.7 0 32 14.3 32 32l0 9.8c0 54.6-27.9 104.6-72.5 133.6l.2 .3L304.5 256l87.5 0c15.1 0 29.3 7.1 38.4 19.2l43.2 57.6c10.6 14.1 7.7 34.2-6.4 44.8s-34.2 7.7-44.8-6.4L384 320l-96 0h-1.4l92.3 142.6c9.6 14.8 5.4 34.6-9.5 44.3s-34.6 5.4-44.3-9.5L164.5 249.2c-2.9 9.2-4.5 19-4.5 29l0 73.8c0 17.7-14.3 32-32 32s-32-14.3-32-32V278.2c0-65.1 39.6-123.7 100.1-147.9C232.3 115.8 256 80.8 256 41.8l0-9.8c0-17.7 14.3-32 32-32zM112 32a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"]
 };
 var faImagePortrait = {
   prefix: 'fas',
@@ -18469,7 +19650,7 @@ var faRug = {
 var faEarthEurope = {
   prefix: 'fas',
   iconName: 'earth-europe',
-  icon: [512, 512, ["globe-europe"], "f7a2", "M266.3 48.3L232.5 73.6c-5.4 4-8.5 10.4-8.5 17.1v9.1c0 6.8 5.5 12.3 12.3 12.3c2.4 0 4.8-.7 6.8-2.1l41.8-27.9c2-1.3 4.4-2.1 6.8-2.1h1c6.2 0 11.3 5.1 11.3 11.3c0 3-1.2 5.9-3.3 8l-19.9 19.9c-5.8 5.8-12.9 10.2-20.7 12.8l-26.5 8.8c-5.8 1.9-9.6 7.3-9.6 13.4c0 3.7-1.5 7.3-4.1 10l-17.9 17.9c-6.4 6.4-9.9 15-9.9 24v4.3c0 16.4 13.6 29.7 29.9 29.7c11 0 21.2-6.2 26.1-16l4-8.1c2.4-4.8 7.4-7.9 12.8-7.9c4.5 0 8.7 2.1 11.4 5.7l16.3 21.7c2.1 2.9 5.5 4.5 9.1 4.5c8.4 0 13.9-8.9 10.1-16.4l-1.1-2.3c-3.5-7 0-15.5 7.5-18l21.2-7.1c7.6-2.5 12.7-9.6 12.7-17.6c0-10.3 8.3-18.6 18.6-18.6H400c8.8 0 16 7.2 16 16s-7.2 16-16 16H379.3c-7.2 0-14.2 2.9-19.3 8l-4.7 4.7c-2.1 2.1-3.3 5-3.3 8c0 6.2 5.1 11.3 11.3 11.3h11.3c6 0 11.8 2.4 16 6.6l6.5 6.5c1.8 1.8 2.8 4.3 2.8 6.8s-1 5-2.8 6.8l-7.5 7.5C386 262 384 266.9 384 272s2 10 5.7 13.7L408 304c10.2 10.2 24.1 16 38.6 16H454c6.5-20.2 10-41.7 10-64c0-111.4-87.6-202.4-197.7-207.7zm172 307.9c-3.7-2.6-8.2-4.1-13-4.1c-6 0-11.8-2.4-16-6.6L396 332c-7.7-7.7-18-12-28.9-12c-9.7 0-19.2-3.5-26.6-9.8L314 287.4c-11.6-9.9-26.4-15.4-41.6-15.4H251.4c-12.6 0-25 3.7-35.5 10.7L188.5 301c-17.8 11.9-28.5 31.9-28.5 53.3v3.2c0 17 6.7 33.3 18.7 45.3l16 16c8.5 8.5 20 13.3 32 13.3H248c13.3 0 24 10.7 24 24c0 2.5 .4 5 1.1 7.3c71.3-5.8 132.5-47.6 165.2-107.2zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM187.3 100.7c-6.2-6.2-16.4-6.2-22.6 0l-32 32c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l32-32c6.2-6.2 6.2-16.4 0-22.6z"]
+  icon: [512, 512, ["globe-europe"], "f7a2", "M266.3 48.3L232.5 73.6c-5.4 4-8.5 10.4-8.5 17.1v9.1c0 6.8 5.5 12.3 12.3 12.3c2.4 0 4.8-.7 6.8-2.1l41.8-27.9c2-1.3 4.4-2.1 6.8-2.1h1c6.2 0 11.3 5.1 11.3 11.3c0 3-1.2 5.9-3.3 8l-19.9 19.9c-5.8 5.8-12.9 10.2-20.7 12.8l-26.5 8.8c-5.8 1.9-9.6 7.3-9.6 13.4c0 3.7-1.5 7.3-4.1 10l-17.9 17.9c-6.4 6.4-9.9 15-9.9 24v4.3c0 16.4 13.6 29.7 29.9 29.7c11 0 21.2-6.2 26.1-16l4-8.1c2.4-4.8 7.4-7.9 12.8-7.9c4.5 0 8.7 2.1 11.4 5.7l16.3 21.7c2.1 2.9 5.5 4.5 9.1 4.5c8.4 0 13.9-8.9 10.1-16.4l-1.1-2.3c-3.5-7 0-15.5 7.5-18l21.2-7.1c7.6-2.5 12.7-9.6 12.7-17.6c0-10.3 8.3-18.6 18.6-18.6H400c8.8 0 16 7.2 16 16s-7.2 16-16 16H379.3c-7.2 0-14.2 2.9-19.3 8l-4.7 4.7c-2.1 2.1-3.3 5-3.3 8c0 6.2 5.1 11.3 11.3 11.3h11.3c6 0 11.8 2.4 16 6.6l6.5 6.5c1.8 1.8 2.8 4.3 2.8 6.8s-1 5-2.8 6.8l-7.5 7.5C386 262 384 266.9 384 272s2 10 5.7 13.7L408 304c10.2 10.2 24.1 16 38.6 16H454c6.5-20.2 10-41.7 10-64c0-111.4-87.6-202.4-197.7-207.7zm172 307.9c-3.7-2.6-8.2-4.1-13-4.1c-6 0-11.8-2.4-16-6.6L396 332c-7.7-7.7-18-12-28.9-12c-9.7 0-19.2-3.5-26.6-9.8L314 287.4c-11.6-9.9-26.4-15.4-41.7-15.4H251.4c-12.6 0-25 3.7-35.5 10.7L188.5 301c-17.8 11.9-28.5 31.9-28.5 53.3v3.2c0 17 6.7 33.3 18.7 45.3l16 16c8.5 8.5 20 13.3 32 13.3H248c13.3 0 24 10.7 24 24c0 2.5 .4 5 1.1 7.3c71.3-5.8 132.5-47.6 165.2-107.2zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM187.3 100.7c-6.2-6.2-16.4-6.2-22.6 0l-32 32c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l32-32c6.2-6.2 6.2-16.4 0-22.6z"]
 };
 var faGlobeEurope = faEarthEurope;
 var faCartFlatbedSuitcase = {
@@ -18499,7 +19680,7 @@ var faBookOpen = {
 var faBookJournalWhills = {
   prefix: 'fas',
   iconName: 'book-journal-whills',
-  icon: [448, 512, ["journal-whills"], "f66a", "M0 96C0 43 43 0 96 0H384h32c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32H384 96c-53 0-96-43-96-96V96zM64 416c0 17.7 14.3 32 32 32H352V384H96c-17.7 0-32 14.3-32 32zm90.4-234.4l-21.2-21.2c-3 10.1-5.1 20.6-5.1 31.6c0 .2 0 .5 .1 .8s.1 .5 .1 .8L165.2 226c2.5 2.1 3.4 5.8 2.3 8.9c-1.3 3-4.1 5.1-7.5 5.1c-1.9-.1-3.8-.8-5.2-2l-23.6-20.6C142.8 267 186.9 304 240 304s97.3-37 108.9-86.6L325.3 238c-1.4 1.2-3.3 2-5.3 2c-2.2-.1-4.4-1.1-6-2.8c-1.3-1.5-1.9-3.4-2-5.2c.1-2.2 1.1-4.4 2.7-6l37.1-32.5c0-.3 0-.5 .1-.8s.1-.5 .1-.8c0-11-2.1-21.5-5.1-31.6l-21.2 21.2c-3.1 3.1-8.1 3.1-11.3 0s-3.1-8.1 0-11.2l26.4-26.5c-8.2-17-20.5-31.7-35.9-42.6c-2.7-1.9-6.2 1.4-5 4.5c8.5 22.4 3.6 48-13 65.6c-3.3 3.4-3.6 8.9-.9 12.7c9.8 14 12.7 31.9 7.5 48.5c-5.9 19.4-22 34.1-41.9 38.3l-1.4-34.3 12.6 8.6c.6 .4 1.5 .6 2.3 .6c1.5 0 2.7-.8 3.5-2s.6-2.8-.1-4L260 225.4l18-3.6c1.8-.4 3.1-2.1 3.1-4s-1.4-3.5-3.1-3.9l-18-3.7 8.5-14.3c.8-1.2 .9-2.9 .1-4.1s-2-2-3.5-2l-.1 0c-.7 .1-1.5 .3-2.1 .7l-14.1 9.6L244 87.9c-.1-2.2-1.9-3.9-4-3.9s-3.9 1.6-4 3.9l-4.6 110.8-12-8.1c-1.5-1.1-3.6-.9-5 .4s-1.6 3.4-.8 5l8.6 14.3-18 3.7c-1.8 .4-3.1 2-3.1 3.9s1.4 3.6 3.1 4l18 3.8-8.6 14.2c-.2 .6-.5 1.4-.5 2c0 1.1 .5 2.1 1.2 3c.8 .6 1.8 1 2.8 1c.7 0 1.6-.2 2.2-.6l10.4-7.1-1.4 32.8c-19.9-4.1-36-18.9-41.9-38.3c-5.1-16.6-2.2-34.4 7.6-48.5c2.7-3.9 2.3-9.3-.9-12.7c-16.6-17.5-21.6-43.1-13.1-65.5c1.2-3.1-2.3-6.4-5-4.5c-15.3 10.9-27.6 25.6-35.8 42.6l26.4 26.5c3.1 3.1 3.1 8.1 0 11.2s-8.1 3.1-11.2 0z"]
+  icon: [448, 512, ["journal-whills"], "f66a", "M0 96C0 43 43 0 96 0H384h32c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32H384 96c-53 0-96-43-96-96V96zM64 416c0 17.7 14.3 32 32 32H352V384H96c-17.7 0-32 14.3-32 32zm90.4-234.4l-21.2-21.2c-3 10.1-5.1 20.6-5.1 31.6c0 .2 0 .5 .1 .8s.1 .5 .1 .8L165.2 226c2.5 2.1 3.4 5.8 2.3 8.9c-1.3 3-4.1 5.1-7.5 5.1c-1.9-.1-3.8-.8-5.2-2l-23.6-20.6C142.8 267 186.9 304 240 304s97.3-37 108.9-86.6L325.3 238c-1.4 1.2-3.3 2-5.3 2c-2.2-.1-4.4-1.1-6-2.8c-1.2-1.5-1.9-3.4-2-5.2c.1-2.2 1.1-4.4 2.8-6l37.1-32.5c0-.3 0-.5 .1-.8s.1-.5 .1-.8c0-11-2.1-21.5-5.1-31.6l-21.2 21.2c-3.1 3.1-8.1 3.1-11.3 0s-3.1-8.1 0-11.2l26.4-26.5c-8.2-17-20.5-31.7-35.9-42.6c-2.7-1.9-6.2 1.4-5 4.5c8.5 22.4 3.6 48-13 65.6c-3.2 3.4-3.6 8.9-.9 12.7c9.8 14 12.7 31.9 7.5 48.5c-5.9 19.4-22 34.1-41.9 38.3l-1.4-34.3 12.6 8.6c.6 .4 1.5 .6 2.3 .6c1.5 0 2.7-.8 3.5-2s.6-2.8-.1-4L260 225.4l18-3.6c1.8-.4 3.1-2.1 3.1-4s-1.4-3.5-3.1-3.9l-18-3.7 8.5-14.3c.8-1.2 .9-2.9 .1-4.1s-2-2-3.5-2l-.1 0c-.7 .1-1.5 .3-2.1 .7l-14.1 9.6L244 87.9c-.1-2.2-1.9-3.9-4-3.9s-3.9 1.6-4 3.9l-4.6 110.8-12-8.1c-1.5-1.1-3.6-.9-5 .4s-1.6 3.4-.8 5l8.6 14.3-18 3.7c-1.8 .4-3.1 2-3.1 3.9s1.4 3.6 3.1 4l18 3.8-8.6 14.2c-.2 .6-.5 1.4-.5 2c0 1.1 .5 2.1 1.2 3c.8 .6 1.8 1 2.8 1c.7 0 1.6-.2 2.2-.6l10.4-7.1-1.4 32.8c-19.9-4.1-36-18.9-41.9-38.3c-5.1-16.6-2.2-34.4 7.6-48.5c2.7-3.9 2.3-9.3-.9-12.7c-16.6-17.5-21.6-43.1-13.1-65.5c1.2-3.1-2.3-6.4-5-4.5c-15.3 10.9-27.6 25.6-35.8 42.6l26.4 26.5c3.1 3.1 3.1 8.1 0 11.2s-8.1 3.1-11.2 0z"]
 };
 var faJournalWhills = faBookJournalWhills;
 var faHandcuffs = {
@@ -18522,14 +19703,13 @@ var faDatabase = {
 var faShare = {
   prefix: 'fas',
   iconName: 'share',
-  icon: [512, 512, ["arrow-turn-right", "mail-forward"], "f064", "M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"]
+  icon: [512, 512, ["mail-forward"], "f064", "M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"]
 };
-var faArrowTurnRight = faShare;
 var faMailForward = faShare;
 var faBottleDroplet = {
   prefix: 'fas',
   iconName: 'bottle-droplet',
-  icon: [256, 512, [], "e4c4", "M64 0C50.7 0 40 10.7 40 24s10.7 24 24 24c4.4 0 8 3.6 8 8v64.9c0 12.2-7.2 23.1-17.2 30.1C21.7 174.1 0 212.5 0 256V448c0 35.3 28.7 64 64 64H192c35.3 0 64-28.7 64-64V256c0-43.5-21.7-81.9-54.8-105c-10-7-17.2-17.9-17.2-30.1V56c0-4.4 3.6-8 8-8c13.3 0 24-10.7 24-24s-10.7-24-24-24l-8 0 0 0 0 0H72l0 0 0 0L64 0zm64 382c-26.5 0-48-20.1-48-45c0-16.8 22.1-48.1 36.3-66.4c6-7.8 17.5-7.8 23.5 0C153.9 288.9 176 320.2 176 337c0 24.9-21.5 45-48 45z"]
+  icon: [320, 512, [], "e4c4", "M96 0C82.7 0 72 10.7 72 24s10.7 24 24 24c4.4 0 8 3.6 8 8v64.9c0 12.2-7.2 23.1-17.2 30.1C53.7 174.1 32 212.5 32 256V448c0 35.3 28.7 64 64 64H224c35.3 0 64-28.7 64-64V256c0-43.5-21.7-81.9-54.8-105c-10-7-17.2-17.9-17.2-30.1V56c0-4.4 3.6-8 8-8c13.3 0 24-10.7 24-24s-10.7-24-24-24l-8 0 0 0 0 0H104l0 0 0 0L96 0zm64 382c-26.5 0-48-20.1-48-45c0-16.8 22.1-48.1 36.3-66.4c6-7.8 17.5-7.8 23.5 0C185.9 288.9 208 320.2 208 337c0 24.9-21.5 45-48 45z"]
 };
 var faMaskFace = {
   prefix: 'fas',
@@ -18581,7 +19761,7 @@ var faLifeRing = {
 var faHands = {
   prefix: 'fas',
   iconName: 'hands',
-  icon: [512, 512, ["sign-language", "signing"], "f2a7", "M512 160l-.1 72.6c-.1 52.2-24 101-64 133.1c.1-1.9 .1-3.8 .1-5.7v-8c0-71.8-37-138.6-97.9-176.7l-60.2-37.6c-8.6-5.4-17.9-8.4-27.3-9.4L216.7 48.8c-6.6-11.5-2.7-26.2 8.8-32.8s26.2-2.7 32.8 8.8l78 135.1c3.3 5.7 10.7 7.7 16.4 4.4s7.7-10.7 4.4-16.4l-62-107.4c-6.6-11.5-2.7-26.2 8.8-32.8S330 5 336.6 16.5l68 117.8 0 0 0 0 43.3 75L448 160c0-17.7 14.4-32 32-32s32 14.4 32 32zM211.9 88.5L236.5 131c-13.9 4.5-26.4 13.7-34.7 27c-.9 1.4-1.7 2.9-2.5 4.4l-28.9-50c-6.6-11.5-2.7-26.2 8.8-32.8s26.2-2.7 32.8 8.8zm-46.4 63.7l26.8 46.4c.6 6 2.1 11.8 4.3 17.4H192 178.7l0 0H147l-23-39.8c-6.6-11.5-2.7-26.2 8.8-32.8s26.2-2.7 32.8 8.8zM228.9 175c9.4-15 29.1-19.5 44.1-10.2l60.2 37.6C384.7 234.7 416 291.2 416 352v8c0 83.9-68.1 152-152 152H88c-13.3 0-24-10.7-24-24s10.7-24 24-24h92c6.6 0 12-5.4 12-12s-5.4-12-12-12H56c-13.3 0-24-10.7-24-24s10.7-24 24-24H180c6.6 0 12-5.4 12-12s-5.4-12-12-12H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H180c6.6 0 12-5.4 12-12s-5.4-12-12-12H56c-13.3 0-24-10.7-24-24s10.7-24 24-24H192l0 0 0 0h93.2L239 219.1c-15-9.4-19.5-29.1-10.2-44.1z"]
+  icon: [576, 512, ["sign-language", "signing"], "f2a7", "M544 160l-.1 72.6c-.1 52.2-24 101-64 133.1c.1-1.9 .1-3.8 .1-5.7v-8c0-71.8-37-138.6-97.9-176.7l-60.2-37.6c-8.6-5.4-17.9-8.4-27.3-9.4L248.7 48.8c-6.6-11.5-2.7-26.2 8.8-32.8s26.2-2.7 32.8 8.8l78 135.1c3.3 5.7 10.7 7.7 16.4 4.4s7.7-10.7 4.4-16.4l-62-107.4c-6.6-11.5-2.7-26.2 8.8-32.8S362 5 368.6 16.5l68 117.8 0 0 0 0 43.3 75L480 160c0-17.7 14.4-32 32-32s32 14.4 32 32zM243.9 88.5L268.5 131c-13.9 4.5-26.4 13.7-34.7 27c-.9 1.4-1.7 2.9-2.5 4.4l-28.9-50c-6.6-11.5-2.7-26.2 8.8-32.8s26.2-2.7 32.8 8.8zm-46.4 63.7l26.8 46.4c.6 6 2.1 11.8 4.3 17.4H224 210.7l0 0H179l-23-39.8c-6.6-11.5-2.7-26.2 8.8-32.8s26.2-2.7 32.8 8.8zM260.9 175c9.4-15 29.1-19.5 44.1-10.2l60.2 37.6C416.7 234.7 448 291.2 448 352v8c0 83.9-68.1 152-152 152H120c-13.3 0-24-10.7-24-24s10.7-24 24-24h92c6.6 0 12-5.4 12-12s-5.4-12-12-12H88c-13.3 0-24-10.7-24-24s10.7-24 24-24H212c6.6 0 12-5.4 12-12s-5.4-12-12-12H56c-13.3 0-24-10.7-24-24s10.7-24 24-24H212c6.6 0 12-5.4 12-12s-5.4-12-12-12H88c-13.3 0-24-10.7-24-24s10.7-24 24-24H224l0 0 0 0h93.2L271 219.1c-15-9.4-19.5-29.1-10.2-44.1z"]
 };
 var faSignLanguage = faHands;
 var faSigning = faHands;
@@ -18600,7 +19780,7 @@ var faSwimmingPool = faWaterLadder;
 var faArrowsUpDown = {
   prefix: 'fas',
   iconName: 'arrows-up-down',
-  icon: [256, 512, ["arrows-v"], "f07d", "M150.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L96 109.3V402.7L54.6 361.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 402.7V109.3l41.4 41.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-96-96z"]
+  icon: [320, 512, ["arrows-v"], "f07d", "M182.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L128 109.3V402.7L86.6 361.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 402.7V109.3l41.4 41.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-96-96z"]
 };
 var faArrowsV = faArrowsUpDown;
 var faFaceGrimace = {
@@ -18635,12 +19815,12 @@ var faEnvelopeSquare = faSquareEnvelope;
 var faDice = {
   prefix: 'fas',
   iconName: 'dice',
-  icon: [640, 512, [127922], "f522", "M252.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-184 184c-15.6 15.6-15.6 40.9 0 56.6l184 184c15.6 15.6 40.9 15.6 56.6 0l184-184c15.6-15.6 15.6-40.9 0-56.6l-184-184zM248 224c0 13.3-10.7 24-24 24s-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24zM96 248c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24zm128 80c13.3 0 24 10.7 24 24s-10.7 24-24 24s-24-10.7-24-24s10.7-24 24-24zm128-80c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24zM224 72c13.3 0 24 10.7 24 24s-10.7 24-24 24s-24-10.7-24-24s10.7-24 24-24zm96 392c0 26.5 21.5 48 48 48H592c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48H472.5c13.4 26.9 8.8 60.5-13.6 82.9L320 413.8V464zm160-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"]
+  icon: [640, 512, [127922], "f522", "M274.9 34.3c-28.1-28.1-73.7-28.1-101.8 0L34.3 173.1c-28.1 28.1-28.1 73.7 0 101.8L173.1 413.7c28.1 28.1 73.7 28.1 101.8 0L413.7 274.9c28.1-28.1 28.1-73.7 0-101.8L274.9 34.3zM200 224a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM96 200a24 24 0 1 1 0 48 24 24 0 1 1 0-48zM224 376a24 24 0 1 1 0-48 24 24 0 1 1 0 48zM352 200a24 24 0 1 1 0 48 24 24 0 1 1 0-48zM224 120a24 24 0 1 1 0-48 24 24 0 1 1 0 48zm96 328c0 35.3 28.7 64 64 64H576c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H461.7c11.6 36 3.1 77-25.4 105.5L320 413.8V448zM480 328a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"]
 };
 var faBowlingBall = {
   prefix: 'fas',
   iconName: 'bowling-ball',
-  icon: [512, 512, [], "f436", "M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM240 144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32zm32 64c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32zm-128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"]
+  icon: [512, 512, [], "f436", "M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM240 80a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM208 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm-64-64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
 };
 var faBrain = {
   prefix: 'fas',
@@ -18661,7 +19841,7 @@ var faCalendarMinus = {
 var faCircleXmark = {
   prefix: 'fas',
   iconName: 'circle-xmark',
-  icon: [512, 512, [61532, "times-circle", "xmark-circle"], "f057", "M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"]
+  icon: [512, 512, [61532, "times-circle", "xmark-circle"], "f057", "M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"]
 };
 var faTimesCircle = faCircleXmark;
 var faXmarkCircle = faCircleXmark;
@@ -18728,7 +19908,7 @@ var faCoffee = faMugSaucer;
 var faBrush = {
   prefix: 'fas',
   iconName: 'brush',
-  icon: [384, 512, [], "f55d", "M192 64L160 0H128L96 64 64 0H48C21.5 0 0 21.5 0 48V256H384V48c0-26.5-21.5-48-48-48H224L192 64zM0 288v32c0 35.3 28.7 64 64 64h64v64c0 35.3 28.7 64 64 64s64-28.7 64-64V384h64c35.3 0 64-28.7 64-64V288H0zM192 432a16 16 0 1 1 0 32 16 16 0 1 1 0-32z"]
+  icon: [384, 512, [], "f55d", "M162.4 6c-1.5-3.6-5-6-8.9-6h-19c-3.9 0-7.5 2.4-8.9 6L104.9 57.7c-3.2 8-14.6 8-17.8 0L66.4 6c-1.5-3.6-5-6-8.9-6H48C21.5 0 0 21.5 0 48V224v22.4V256H9.6 374.4 384v-9.6V224 48c0-26.5-21.5-48-48-48H230.5c-3.9 0-7.5 2.4-8.9 6L200.9 57.7c-3.2 8-14.6 8-17.8 0L162.4 6zM0 288v32c0 35.3 28.7 64 64 64h64v64c0 35.3 28.7 64 64 64s64-28.7 64-64V384h64c35.3 0 64-28.7 64-64V288H0zM192 432a16 16 0 1 1 0 32 16 16 0 1 1 0-32z"]
 };
 var faMask = {
   prefix: 'fas',
@@ -18755,7 +19935,7 @@ var faUserAlt = faUserLarge;
 var faTrainTram = {
   prefix: 'fas',
   iconName: 'train-tram',
-  icon: [448, 512, [128650], "e5b4", "M86.8 48c-12.2 0-23.6 5.5-31.2 15L42.7 79C34.5 89.3 19.4 91 9 82.7S-3 59.4 5.3 49L18 33C34.7 12.2 60 0 86.8 0H361.2c26.7 0 52 12.2 68.7 33l12.8 16c8.3 10.4 6.6 25.5-3.7 33.7s-25.5 6.6-33.7-3.7L392.5 63c-7.6-9.5-19.1-15-31.2-15H248V96h40c53 0 96 43 96 96V352c0 30.6-14.3 57.8-36.6 75.4l65.5 65.5c7.1 7.1 2.1 19.1-7.9 19.1H365.3c-8.5 0-16.6-3.4-22.6-9.4L288 448H160l-54.6 54.6c-6 6-14.1 9.4-22.6 9.4H43c-10 0-15-12.1-7.9-19.1l65.5-65.5C78.3 409.8 64 382.6 64 352V192c0-53 43-96 96-96h40V48H86.8zM160 160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32H288c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32H160zm32 192a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"]
+  icon: [448, 512, [128650], "e5b4", "M86.8 48c-12.2 0-23.6 5.5-31.2 15L42.7 79C34.5 89.3 19.4 91 9 82.7S-3 59.4 5.3 49L18 33C34.7 12.2 60 0 86.8 0H361.2c26.7 0 52 12.2 68.7 33l12.8 16c8.3 10.4 6.6 25.5-3.8 33.7s-25.5 6.6-33.7-3.7L392.5 63c-7.6-9.5-19.1-15-31.2-15H248V96h40c53 0 96 43 96 96V352c0 30.6-14.3 57.8-36.6 75.4l65.5 65.5c7.1 7.1 2.1 19.1-7.9 19.1H365.3c-8.5 0-16.6-3.4-22.6-9.4L288 448H160l-54.6 54.6c-6 6-14.1 9.4-22.6 9.4H43c-10 0-15-12.1-7.9-19.1l65.5-65.5C78.3 409.8 64 382.6 64 352V192c0-53 43-96 96-96h40V48H86.8zM160 160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32H288c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32H160zm32 192a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"]
 };
 var faUserNurse = {
   prefix: 'fas',
@@ -18770,12 +19950,12 @@ var faSyringe = {
 var faCloudSun = {
   prefix: 'fas',
   iconName: 'cloud-sun',
-  icon: [640, 512, [9925], "f6c4", "M294.2 1.2c5.1 2.1 8.7 6.7 9.6 12.1l14.1 84.7 84.7 14.1c5.4 .9 10 4.5 12.1 9.6s1.5 10.9-1.6 15.4l-38.5 55c-2.2-.1-4.4-.2-6.7-.2c-23.3 0-45.1 6.2-64 17.1l0-1.1c0-53-43-96-96-96s-96 43-96 96s43 96 96 96c8.1 0 15.9-1 23.4-2.9c-36.6 18.1-63.3 53.1-69.8 94.9l-24.4 17c-4.5 3.2-10.3 3.8-15.4 1.6s-8.7-6.7-9.6-12.1L98.1 317.9 13.4 303.8c-5.4-.9-10-4.5-12.1-9.6s-1.5-10.9 1.6-15.4L52.5 208 2.9 137.2c-3.2-4.5-3.8-10.3-1.6-15.4s6.7-8.7 12.1-9.6L98.1 98.1l14.1-84.7c.9-5.4 4.5-10 9.6-12.1s10.9-1.5 15.4 1.6L208 52.5 278.8 2.9c4.5-3.2 10.3-3.8 15.4-1.6zM144 208a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM639.9 431.9c0 44.2-35.8 80-80 80H288c-53 0-96-43-96-96c0-47.6 34.6-87 80-94.6l0-1.3c0-53 43-96 96-96c34.9 0 65.4 18.6 82.2 46.4c13-9.1 28.8-14.4 45.8-14.4c44.2 0 80 35.8 80 80c0 5.9-.6 11.7-1.9 17.2c37.4 6.7 65.8 39.4 65.8 78.7z"]
+  icon: [640, 512, [9925], "f6c4", "M294.2 1.2c5.1 2.1 8.7 6.7 9.6 12.1l14.1 84.7 84.7 14.1c5.4 .9 10 4.5 12.1 9.6s1.5 10.9-1.6 15.4l-38.5 55c-2.2-.1-4.4-.2-6.7-.2c-23.3 0-45.1 6.2-64 17.1l0-1.1c0-53-43-96-96-96s-96 43-96 96s43 96 96 96c8.1 0 15.9-1 23.4-2.9c-36.6 18.1-63.3 53.1-69.8 94.9l-24.4 17c-4.5 3.1-10.3 3.8-15.4 1.6s-8.7-6.7-9.6-12.1L98.1 317.9 13.4 303.8c-5.4-.9-10-4.5-12.1-9.6s-1.5-10.9 1.6-15.4L52.5 208 2.9 137.2c-3.2-4.5-3.8-10.3-1.6-15.4s6.7-8.7 12.1-9.6L98.1 98.1l14.1-84.7c.9-5.4 4.5-10 9.6-12.1s10.9-1.5 15.4 1.6L208 52.5 278.8 2.9c4.5-3.2 10.3-3.8 15.4-1.6zM144 208a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM639.9 431.9c0 44.2-35.8 80-80 80H288c-53 0-96-43-96-96c0-47.6 34.6-87 80-94.6l0-1.3c0-53 43-96 96-96c34.9 0 65.4 18.6 82.2 46.4c13-9.1 28.8-14.4 45.8-14.4c44.2 0 80 35.8 80 80c0 5.9-.6 11.7-1.9 17.2c37.4 6.7 65.8 39.4 65.8 78.7z"]
 };
 var faStopwatch20 = {
   prefix: 'fas',
   iconName: 'stopwatch-20',
-  icon: [448, 512, [], "e06f", "M160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h16V98.4C76.3 113.8 0 200 0 304C0 418.9 93.1 512 208 512s208-93.1 208-208c0-41.8-12.3-80.7-33.5-113.2l24.1-24.1c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L339.7 143c-28.1-23-62.2-38.8-99.7-44.6V64h16c17.7 0 32-14.3 32-32s-14.3-32-32-32H160zM272 204c28.7 0 52 23.3 52 52v96c0 28.7-23.3 52-52 52s-52-23.3-52-52V256c0-28.7 23.3-52 52-52zm-12 52v96c0 6.6 5.4 12 12 12s12-5.4 12-12V256c0-6.6-5.4-12-12-12s-12 5.4-12 12zM143.5 244c-5.4 0-10.2 3.5-11.9 8.6l-.6 1.7c-3.5 10.5-14.8 16.1-25.3 12.6s-16.1-14.8-12.6-25.3l.6-1.7c7.2-21.5 27.2-35.9 49.8-35.9c29 0 52.5 23.5 52.5 52.5v2.2c0 13.4-4.9 26.4-13.8 36.4l-39 43.9c-6.2 7-10 15.7-10.9 24.9H176c11 0 20 9 20 20s-9 20-20 20H112c-11 0-20-9-20-20V368.3c0-20.6 7.5-40.4 21.2-55.8l39-43.9c2.4-2.7 3.7-6.2 3.7-9.8v-2.2c0-6.9-5.6-12.5-12.5-12.5z"]
+  icon: [448, 512, [], "e06f", "M176 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h16V98.4C92.3 113.8 16 200 16 304c0 114.9 93.1 208 208 208s208-93.1 208-208c0-41.8-12.3-80.7-33.5-113.2l24.1-24.1c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L355.7 143c-28.1-23-62.2-38.8-99.7-44.6V64h16c17.7 0 32-14.3 32-32s-14.3-32-32-32H176zM288 204c28.7 0 52 23.3 52 52v96c0 28.7-23.3 52-52 52s-52-23.3-52-52V256c0-28.7 23.3-52 52-52zm-12 52v96c0 6.6 5.4 12 12 12s12-5.4 12-12V256c0-6.6-5.4-12-12-12s-12 5.4-12 12zM159.5 244c-5.4 0-10.2 3.5-11.9 8.6l-.6 1.7c-3.5 10.5-14.8 16.1-25.3 12.6s-16.1-14.8-12.6-25.3l.6-1.7c7.2-21.5 27.2-35.9 49.8-35.9c29 0 52.5 23.5 52.5 52.5v2.2c0 13.4-4.9 26.4-13.8 36.4l-39 43.9c-6.2 7-10 15.7-10.9 24.9H192c11 0 20 9 20 20s-9 20-20 20H128c-11 0-20-9-20-20V368.3c0-20.6 7.5-40.4 21.2-55.8l39-43.9c2.4-2.7 3.7-6.2 3.7-9.8v-2.2c0-6.9-5.6-12.5-12.5-12.5z"]
 };
 var faSquareFull = {
   prefix: 'fas',
@@ -18801,12 +19981,12 @@ var faStickyNote = faNoteSticky;
 var faBugSlash = {
   prefix: 'fas',
   iconName: 'bug-slash',
-  icon: [640, 512, [], "e490", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L477.4 348.9c1.7-9.4 2.6-19 2.6-28.9h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H479.7c-1.1-14.1-5-27.5-11.1-39.5c.7-.6 1.4-1.2 2.1-1.9l64-64c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-64 64c-.7 .7-1.3 1.4-1.9 2.1C409.2 164.1 393.1 160 376 160H264c-8.3 0-16.3 1-24 2.8L38.8 5.1zM320 0c-53 0-96 43-96 96v3.6c0 15.7 12.7 28.4 28.4 28.4H387.6c15.7 0 28.4-12.7 28.4-28.4V96c0-53-43-96-96-96zM160.3 256H96c-17.7 0-32 14.3-32 32s14.3 32 32 32h64c0 24.6 5.5 47.8 15.4 68.6c-2.2 1.3-4.2 2.9-6 4.8l-64 64c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l63.1-63.1c24.5 21.8 55.8 36.2 90.3 39.6V335.5L166.7 227.3c-3.4 9-5.6 18.7-6.4 28.7zM336 479.2c36.6-3.6 69.7-19.6 94.8-43.8L336 360.7V479.2z"]
+  icon: [640, 512, [], "e490", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L477.4 348.9c1.7-9.4 2.6-19 2.6-28.9h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H479.7c-1.1-14.1-5-27.5-11.1-39.5c.7-.6 1.4-1.2 2.1-1.9l64-64c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-64 64c-.7 .7-1.3 1.4-1.9 2.1C409.2 164.1 393.1 160 376 160H264c-8.3 0-16.3 1-24 2.8L38.8 5.1zm392 430.3L336 360.7V479.2c36.6-3.6 69.7-19.6 94.8-43.8zM166.7 227.3c-3.4 9-5.6 18.7-6.4 28.7H96c-17.7 0-32 14.3-32 32s14.3 32 32 32h64c0 24.6 5.5 47.8 15.4 68.6c-2.2 1.3-4.2 2.9-6 4.8l-64 64c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l63.1-63.1c24.5 21.8 55.8 36.2 90.3 39.6V335.5L166.7 227.3zM320 0c-53 0-96 43-96 96v3.6c0 15.7 12.7 28.4 28.4 28.4H387.6c15.7 0 28.4-12.7 28.4-28.4V96c0-53-43-96-96-96z"]
 };
 var faArrowUpFromWaterPump = {
   prefix: 'fas',
   iconName: 'arrow-up-from-water-pump',
-  icon: [576, 512, [], "e4b6", "M112 0C85.5 0 64 21.5 64 48V256H48c-26.5 0-48 21.5-48 48v96c0 8 2 15.6 5.4 22.2c3.8-1.7 7.8-3.1 12-4.1c13.1-3.1 26.7-9.8 37.3-18.6c22.2-18.7 54.3-20.1 78.1-3.4c18 12.4 40.1 20.3 59.2 20.3c21.1 0 42-8.5 59.2-20.3c22.1-15.5 51.6-15.5 73.7 0c18.4 12.7 39.6 20.3 59.2 20.3c19 0 41.2-7.9 59.2-20.3c23.8-16.7 55.8-15.3 78.1 3.4c10.6 8.8 24.2 15.6 37.3 18.6c4.2 1 8.2 2.4 12 4.1C574 415.6 576 408 576 400V304c0-26.5-21.5-48-48-48H480l0-146.7 25.4 25.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-80-80c-12.5-12.5-32.8-12.5-45.3 0l-80 80c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 109.3 416 256H288V48c0-26.5-21.5-48-48-48H112zM306.5 421.9c-11.1-7.9-25.9-7.9-37 0C247 437.4 219.5 448 192 448c-26.9 0-55.3-10.8-77.4-26.1l0 0c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25C126.5 501.7 159 512 192 512c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.6 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.4-27.3-10.1-39.2-1.7l0 0C439.4 437.2 410.9 448 384 448c-27.5 0-55-10.6-77.5-26.1z"]
+  icon: [576, 512, [], "e4b6", "M112 0C85.5 0 64 21.5 64 48V256H48c-26.5 0-48 21.5-48 48v96c0 8 2 15.6 5.4 22.2c3.8-1.7 7.8-3.1 12-4.1c13.1-3.1 26.7-9.8 37.3-18.6c22.2-18.7 54.3-20.1 78.1-3.4c18 12.4 40.1 20.3 59.2 20.3c21.1 0 42-8.5 59.2-20.3c22.1-15.5 51.6-15.5 73.7 0c18.4 12.7 39.6 20.3 59.2 20.3c19 0 41.2-7.9 59.2-20.3c23.8-16.7 55.8-15.3 78.1 3.4c10.6 8.8 24.2 15.6 37.3 18.6c4.2 1 8.2 2.4 12 4.1C574 415.6 576 408 576 400V304c0-26.5-21.5-48-48-48H480l0-146.7 25.4 25.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-80-80c-12.5-12.5-32.8-12.5-45.3 0l-80 80c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 109.3 416 256H288V48c0-26.5-21.5-48-48-48H112zM306.5 421.9c-11.1-7.9-25.9-7.9-37 0C247 437.4 219.5 448 192 448c-26.9 0-55.3-10.8-77.4-26.1l0 0c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25C126.5 501.7 159 512 192 512c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.5 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.4-27.3-10.1-39.2-1.7l0 0C439.4 437.2 410.9 448 384 448c-27.5 0-55-10.6-77.5-26.1z"]
 };
 var faBone = {
   prefix: 'fas',
@@ -18832,17 +20012,17 @@ var faPlane = {
 var faTentArrowsDown = {
   prefix: 'fas',
   iconName: 'tent-arrows-down',
-  icon: [576, 512, [], "e581", "M201.8 111.9c-8.9-9.9-24-10.7-33.9-1.8l-39.9 36L128 24c0-13.3-10.7-24-24-24S80 10.7 80 24l0 122.1-39.9-36c-9.9-8.9-25-8.1-33.9 1.8s-8.1 25 1.8 33.9l80 72c9.1 8.2 23 8.2 32.1 0l80-72c9.9-8.9 10.7-24 1.8-33.9zm352 0c-8.9-9.9-24-10.7-33.9-1.8l-39.9 36V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V146.1l-39.9-36c-9.9-8.9-25-8.1-33.9 1.8s-8.1 25 1.8 33.9l80 72c9.1 8.2 23 8.2 32.1 0l80-72c9.9-8.9 10.7-24 1.8-33.9zM299.4 166.5c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S78.7 512 88 512H280V352l96 160h96c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"]
+  icon: [576, 512, [], "e581", "M209.8 111.9c-8.9-9.9-24-10.7-33.9-1.8l-39.9 36L136 24c0-13.3-10.7-24-24-24S88 10.7 88 24l0 122.1-39.9-36c-9.9-8.9-25-8.1-33.9 1.8s-8.1 25 1.8 33.9l80 72c9.1 8.2 23 8.2 32.1 0l80-72c9.9-8.9 10.7-24 1.8-33.9zm352 0c-8.9-9.9-24-10.7-33.9-1.8l-39.9 36V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V146.1l-39.9-36c-9.9-8.9-25-8.1-33.9 1.8s-8.1 25 1.8 33.9l80 72c9.1 8.2 23 8.2 32.1 0l80-72c9.9-8.9 10.7-24 1.8-33.9zM307.4 166.5c-11.5-8.7-27.3-8.7-38.8 0l-168 128c-6.6 5-11 12.5-12.3 20.7l-24 160c-1.4 9.2 1.3 18.6 7.4 25.6S86.7 512 96 512H240h16c17.7 0 32-14.3 32-32V361.9c0-5.5 4.4-9.9 9.9-9.9c3.7 0 7.2 2.1 8.8 5.5l68.4 136.8c5.4 10.8 16.5 17.7 28.6 17.7H464h16c9.3 0 18.2-4.1 24.2-11.1s8.8-16.4 7.4-25.6l-24-160c-1.2-8.2-5.6-15.7-12.3-20.7l-168-128z"]
 };
 var faExclamation = {
   prefix: 'fas',
   iconName: 'exclamation',
-  icon: [128, 512, [10069, 10071, 61738], "21", "M72 64c0-17.7-14.3-32-32-32S8 46.3 8 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM40 480a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"]
+  icon: [64, 512, [10069, 10071, 61738], "21", "M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM32 480a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"]
 };
 var faArrowsSpin = {
   prefix: 'fas',
   iconName: 'arrows-spin',
-  icon: [448, 512, [], "e4bb", "M224 96c38.4 0 73.7 13.5 101.3 36.1l-32.6 32.6c-4.6 4.6-5.9 11.5-3.5 17.4s8.3 9.9 14.8 9.9H416c8.8 0 16-7.2 16-16V64c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-34 34C331.4 52.6 280.1 32 224 32c-10.9 0-21.5 .8-32 2.3V99.2c10.3-2.1 21-3.2 32-3.2zM100.1 154.7l32.6 32.6c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8V64c0-8.8-7.2-16-16-16H32c-6.5 0-12.3 3.9-14.8 9.9s-1.1 12.9 3.5 17.4l34 34C20.6 148.6 0 199.9 0 256c0 10.9 .8 21.5 2.3 32H67.2c-2.1-10.3-3.2-21-3.2-32c0-38.4 13.5-73.7 36.1-101.3zM445.7 224H380.8c2.1 10.3 3.2 21 3.2 32c0 38.4-13.5 73.7-36.1 101.3l-32.6-32.6c-4.6-4.6-11.5-5.9-17.4-3.5s-9.9 8.3-9.9 14.8V448c0 8.8 7.2 16 16 16H416c6.5 0 12.3-3.9 14.8-9.9s1.1-12.9-3.5-17.4l-34-34C427.4 363.4 448 312.1 448 256c0-10.9-.8-21.5-2.3-32zM224 416c-38.4 0-73.7-13.5-101.3-36.1l32.6-32.6c4.6-4.6 5.9-11.5 3.5-17.4s-8.3-9.9-14.8-9.9H32c-8.8 0-16 7.2-16 16l0 112c0 6.5 3.9 12.3 9.9 14.8s12.9 1.1 17.4-3.5l34-34C116.6 459.4 167.9 480 224 480c10.9 0 21.5-.8 32-2.3V412.8c-10.3 2.1-21 3.2-32 3.2z"]
+  icon: [512, 512, [], "e4bb", "M256 96c38.4 0 73.7 13.5 101.3 36.1l-32.6 32.6c-4.6 4.6-5.9 11.5-3.5 17.4s8.3 9.9 14.8 9.9H448c8.8 0 16-7.2 16-16V64c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-34 34C363.4 52.6 312.1 32 256 32c-10.9 0-21.5 .8-32 2.3V99.2c10.3-2.1 21-3.2 32-3.2zM132.1 154.7l32.6 32.6c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8V64c0-8.8-7.2-16-16-16H64c-6.5 0-12.3 3.9-14.8 9.9s-1.1 12.9 3.5 17.4l34 34C52.6 148.6 32 199.9 32 256c0 10.9 .8 21.5 2.3 32H99.2c-2.1-10.3-3.2-21-3.2-32c0-38.4 13.5-73.7 36.1-101.3zM477.7 224H412.8c2.1 10.3 3.2 21 3.2 32c0 38.4-13.5 73.7-36.1 101.3l-32.6-32.6c-4.6-4.6-11.5-5.9-17.4-3.5s-9.9 8.3-9.9 14.8V448c0 8.8 7.2 16 16 16H448c6.5 0 12.3-3.9 14.8-9.9s1.1-12.9-3.5-17.4l-34-34C459.4 363.4 480 312.1 480 256c0-10.9-.8-21.5-2.3-32zM256 416c-38.4 0-73.7-13.5-101.3-36.1l32.6-32.6c4.6-4.6 5.9-11.5 3.5-17.4s-8.3-9.9-14.8-9.9H64c-8.8 0-16 7.2-16 16l0 112c0 6.5 3.9 12.3 9.9 14.8s12.9 1.1 17.4-3.5l34-34C148.6 459.4 199.9 480 256 480c10.9 0 21.5-.8 32-2.3V412.8c-10.3 2.1-21 3.2-32 3.2z"]
 };
 var faPrint = {
   prefix: 'fas',
@@ -18859,7 +20039,7 @@ var faTurkishLira = faTurkishLiraSign;
 var faDollarSign = {
   prefix: 'fas',
   iconName: 'dollar-sign',
-  icon: [320, 512, [128178, 61781, "dollar", "usd"], "24", "M146 0c17.7 0 32 14.3 32 32V67.7c1.6 .2 3.1 .4 4.7 .7c.4 .1 .7 .1 1.1 .2l48 8.8c17.4 3.2 28.9 19.9 25.7 37.2s-19.9 28.9-37.2 25.7l-47.5-8.7c-31.3-4.6-58.9-1.5-78.3 6.2s-27.2 18.3-29 28.1c-2 10.7-.5 16.7 1.2 20.4c1.8 3.9 5.5 8.3 12.8 13.2c16.3 10.7 41.3 17.7 73.7 26.3l2.9 .8c28.6 7.6 63.6 16.8 89.6 33.8c14.2 9.3 27.6 21.9 35.9 39.5c8.5 17.9 10.3 37.9 6.4 59.2c-6.9 38-33.1 63.4-65.6 76.7c-13.7 5.6-28.6 9.2-44.4 11V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V445.1c-.4-.1-.9-.1-1.3-.2l-.2 0 0 0c-24.4-3.8-64.5-14.3-91.5-26.3C4.9 411.4-2.4 392.5 4.8 376.3s26.1-23.4 42.2-16.2c20.9 9.3 55.3 18.5 75.2 21.6c31.9 4.7 58.2 2 76-5.3c16.9-6.9 24.6-16.9 26.8-28.9c1.9-10.6 .4-16.7-1.3-20.4c-1.9-4-5.6-8.4-13-13.3c-16.4-10.7-41.5-17.7-74-26.3l-2.8-.7 0 0C105.4 279.3 70.4 270 44.4 253c-14.2-9.3-27.5-22-35.8-39.6C.3 195.4-1.4 175.4 2.5 154.1C9.7 116 38.3 91.2 70.8 78.3c13.3-5.3 27.9-8.9 43.2-11V32c0-17.7 14.3-32 32-32z"]
+  icon: [320, 512, [128178, 61781, "dollar", "usd"], "24", "M160 0c17.7 0 32 14.3 32 32V67.7c1.6 .2 3.1 .4 4.7 .7c.4 .1 .7 .1 1.1 .2l48 8.8c17.4 3.2 28.9 19.9 25.7 37.2s-19.9 28.9-37.2 25.7l-47.5-8.7c-31.3-4.6-58.9-1.5-78.3 6.2s-27.2 18.3-29 28.1c-2 10.7-.5 16.7 1.2 20.4c1.8 3.9 5.5 8.3 12.8 13.2c16.3 10.7 41.3 17.7 73.7 26.3l2.9 .8c28.6 7.6 63.6 16.8 89.6 33.8c14.2 9.3 27.6 21.9 35.9 39.5c8.5 17.9 10.3 37.9 6.4 59.2c-6.9 38-33.1 63.4-65.6 76.7c-13.7 5.6-28.6 9.2-44.4 11V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V445.1c-.4-.1-.9-.1-1.3-.2l-.2 0 0 0c-24.4-3.8-64.5-14.3-91.5-26.3c-16.1-7.2-23.4-26.1-16.2-42.2s26.1-23.4 42.2-16.2c20.9 9.3 55.3 18.5 75.2 21.6c31.9 4.7 58.2 2 76-5.3c16.9-6.9 24.6-16.9 26.8-28.9c1.9-10.6 .4-16.7-1.3-20.4c-1.9-4-5.6-8.4-13-13.3c-16.4-10.7-41.5-17.7-74-26.3l-2.8-.7 0 0C119.4 279.3 84.4 270 58.4 253c-14.2-9.3-27.5-22-35.8-39.6c-8.4-17.9-10.1-37.9-6.1-59.2C23.7 116 52.3 91.2 84.8 78.3c13.3-5.3 27.9-8.9 43.2-11V32c0-17.7 14.3-32 32-32z"]
 };
 var faDollar = faDollarSign;
 var faUsd = faDollarSign;
@@ -18877,18 +20057,18 @@ var faSearchDollar = faMagnifyingGlassDollar;
 var faUsersGear = {
   prefix: 'fas',
   iconName: 'users-gear',
-  icon: [640, 512, ["users-cog"], "f509", "M144 160A80 80 0 1 0 144 0a80 80 0 1 0 0 160zm368 0A80 80 0 1 0 512 0a80 80 0 1 0 0 160zM0 298.7C0 310.4 9.6 320 21.3 320H234.7c.2 0 .4 0 .7 0c-26.6-23.5-43.3-57.8-43.3-96c0-7.6 .7-15 1.9-22.3c-13.6-6.3-28.7-9.7-44.6-9.7H106.7C47.8 192 0 239.8 0 298.7zM320 320c24 0 45.9-8.8 62.7-23.3c2.5-3.7 5.2-7.3 8-10.7c2.7-3.3 5.7-6.1 9-8.3C410 262.3 416 243.9 416 224c0-53-43-96-96-96s-96 43-96 96s43 96 96 96zm65.4 60.2c-10.3-5.9-18.1-16.2-20.8-28.2H261.3C187.7 352 128 411.7 128 485.3c0 14.7 11.9 26.7 26.7 26.7H455.2c-2.1-5.2-3.2-10.9-3.2-16.4v-3c-1.3-.7-2.7-1.5-4-2.3l-2.6 1.5c-16.8 9.7-40.5 8-54.7-9.7c-4.5-5.6-8.6-11.5-12.4-17.6l-.1-.2-.1-.2-2.4-4.1-.1-.2-.1-.2c-3.4-6.2-6.4-12.6-9-19.3c-8.2-21.2 2.2-42.6 19-52.3l2.7-1.5c0-.8 0-1.5 0-2.3s0-1.5 0-2.3l-2.7-1.5zM533.3 192H490.7c-15.9 0-31 3.5-44.6 9.7c1.3 7.2 1.9 14.7 1.9 22.3c0 17.4-3.5 33.9-9.7 49c2.5 .9 4.9 2 7.1 3.3l2.6 1.5c1.3-.8 2.6-1.6 4-2.3v-3c0-19.4 13.3-39.1 35.8-42.6c7.9-1.2 16-1.9 24.2-1.9s16.3 .6 24.2 1.9c22.5 3.5 35.8 23.2 35.8 42.6v3c1.3 .7 2.7 1.5 4 2.3l2.6-1.5c16.8-9.7 40.5-8 54.7 9.7c2.3 2.8 4.5 5.8 6.6 8.7c-2.1-57.1-49-102.7-106.6-102.7zm91.3 163.9c6.3-3.6 9.5-11.1 6.8-18c-2.1-5.5-4.6-10.8-7.4-15.9l-2.3-4c-3.1-5.1-6.5-9.9-10.2-14.5c-4.6-5.7-12.7-6.7-19-3L574.4 311c-8.9-7.6-19.1-13.6-30.4-17.6v-21c0-7.3-4.9-13.8-12.1-14.9c-6.5-1-13.1-1.5-19.9-1.5s-13.4 .5-19.9 1.5c-7.2 1.1-12.1 7.6-12.1 14.9v21c-11.2 4-21.5 10-30.4 17.6l-18.2-10.5c-6.3-3.6-14.4-2.6-19 3c-3.7 4.6-7.1 9.5-10.2 14.6l-2.3 3.9c-2.8 5.1-5.3 10.4-7.4 15.9c-2.6 6.8 .5 14.3 6.8 17.9l18.2 10.5c-1 5.7-1.6 11.6-1.6 17.6s.6 11.9 1.6 17.5l-18.2 10.5c-6.3 3.6-9.5 11.1-6.8 17.9c2.1 5.5 4.6 10.7 7.4 15.8l2.4 4.1c3 5.1 6.4 9.9 10.1 14.5c4.6 5.7 12.7 6.7 19 3L449.6 457c8.9 7.6 19.2 13.6 30.4 17.6v21c0 7.3 4.9 13.8 12.1 14.9c6.5 1 13.1 1.5 19.9 1.5s13.4-.5 19.9-1.5c7.2-1.1 12.1-7.6 12.1-14.9v-21c11.2-4 21.5-10 30.4-17.6l18.2 10.5c6.3 3.6 14.4 2.6 19-3c3.7-4.6 7.1-9.4 10.1-14.5l2.4-4.2c2.8-5.1 5.3-10.3 7.4-15.8c2.6-6.8-.5-14.3-6.8-17.9l-18.2-10.5c1-5.7 1.6-11.6 1.6-17.5s-.6-11.9-1.6-17.6l18.2-10.5zM472 384a40 40 0 1 1 80 0 40 40 0 1 1 -80 0z"]
+  icon: [640, 512, ["users-cog"], "f509", "M144 160A80 80 0 1 0 144 0a80 80 0 1 0 0 160zm368 0A80 80 0 1 0 512 0a80 80 0 1 0 0 160zM0 298.7C0 310.4 9.6 320 21.3 320H234.7c.2 0 .4 0 .7 0c-26.6-23.5-43.3-57.8-43.3-96c0-7.6 .7-15 1.9-22.3c-13.6-6.3-28.7-9.7-44.6-9.7H106.7C47.8 192 0 239.8 0 298.7zM320 320c24 0 45.9-8.8 62.7-23.3c2.5-3.7 5.2-7.3 8-10.7c2.7-3.3 5.7-6.1 9-8.3C410 262.3 416 243.9 416 224c0-53-43-96-96-96s-96 43-96 96s43 96 96 96zm65.4 60.2c-10.3-5.9-18.1-16.2-20.8-28.2H261.3C187.7 352 128 411.7 128 485.3c0 14.7 11.9 26.7 26.7 26.7H455.2c-2.1-5.2-3.2-10.9-3.2-16.4v-3c-1.3-.7-2.7-1.5-4-2.3l-2.6 1.5c-16.8 9.7-40.5 8-54.7-9.7c-4.5-5.6-8.6-11.5-12.4-17.6l-.1-.2-.1-.2-2.4-4.1-.1-.2-.1-.2c-3.4-6.2-6.4-12.6-9-19.3c-8.2-21.2 2.2-42.6 19-52.3l2.7-1.5c0-.8 0-1.5 0-2.3s0-1.5 0-2.3l-2.7-1.5zM533.3 192H490.7c-15.9 0-31 3.5-44.6 9.7c1.3 7.2 1.9 14.7 1.9 22.3c0 17.4-3.5 33.9-9.7 49c2.5 .9 4.9 2 7.1 3.3l2.6 1.5c1.3-.8 2.6-1.6 4-2.3v-3c0-19.4 13.3-39.1 35.8-42.6c7.9-1.2 16-1.9 24.2-1.9s16.3 .6 24.2 1.9c22.5 3.5 35.8 23.2 35.8 42.6v3c1.3 .7 2.7 1.5 4 2.3l2.6-1.5c16.8-9.7 40.5-8 54.7 9.7c2.3 2.8 4.5 5.8 6.6 8.7c-2.1-57.1-49-102.7-106.6-102.7zm91.3 163.9c6.3-3.6 9.5-11.1 6.8-18c-2.1-5.5-4.6-10.8-7.4-15.9l-2.3-4c-3.1-5.1-6.5-9.9-10.2-14.5c-4.6-5.7-12.7-6.7-19-3l-2.9 1.7c-9.2 5.3-20.4 4-29.6-1.3s-16.1-14.5-16.1-25.1v-3.4c0-7.3-4.9-13.8-12.1-14.9c-6.5-1-13.1-1.5-19.9-1.5s-13.4 .5-19.9 1.5c-7.2 1.1-12.1 7.6-12.1 14.9v3.4c0 10.6-6.9 19.8-16.1 25.1s-20.4 6.6-29.6 1.3l-2.9-1.7c-6.3-3.6-14.4-2.6-19 3c-3.7 4.6-7.1 9.5-10.2 14.6l-2.3 3.9c-2.8 5.1-5.3 10.4-7.4 15.9c-2.6 6.8 .5 14.3 6.8 17.9l2.9 1.7c9.2 5.3 13.7 15.8 13.7 26.4s-4.5 21.1-13.7 26.4l-3 1.7c-6.3 3.6-9.5 11.1-6.8 17.9c2.1 5.5 4.6 10.7 7.4 15.8l2.4 4.1c3 5.1 6.4 9.9 10.1 14.5c4.6 5.7 12.7 6.7 19 3l2.9-1.7c9.2-5.3 20.4-4 29.6 1.3s16.1 14.5 16.1 25.1v3.4c0 7.3 4.9 13.8 12.1 14.9c6.5 1 13.1 1.5 19.9 1.5s13.4-.5 19.9-1.5c7.2-1.1 12.1-7.6 12.1-14.9v-3.4c0-10.6 6.9-19.8 16.1-25.1s20.4-6.6 29.6-1.3l2.9 1.7c6.3 3.6 14.4 2.6 19-3c3.7-4.6 7.1-9.4 10.1-14.5l2.4-4.2c2.8-5.1 5.3-10.3 7.4-15.8c2.6-6.8-.5-14.3-6.8-17.9l-3-1.7c-9.2-5.3-13.7-15.8-13.7-26.4s4.5-21.1 13.7-26.4l3-1.7zM472 384a40 40 0 1 1 80 0 40 40 0 1 1 -80 0z"]
 };
 var faUsersCog = faUsersGear;
 var faPersonMilitaryPointing = {
   prefix: 'fas',
   iconName: 'person-military-pointing',
-  icon: [512, 512, [], "e54a", "M214.9 14.1C202 15.2 192 26 192 39c0 13.8 11.2 25 25 25H368c8.8 0 16-7.2 16-16V17.4C384 8 376 .7 366.7 1.4L214.9 14.1zM208 112c0 44.2 35.8 80 80 80s80-35.8 80-80c0-5.5-.6-10.8-1.6-16H209.6c-1 5.2-1.6 10.5-1.6 16zM40 224c-22.1 0-40 17.9-40 40s17.9 40 40 40H192v89.4L354.8 230.5c-13.3-4.3-27.3-6.5-41.6-6.5H208 40zm345.7 20.9L214.6 416H384V369.7l53.6 90.6c11.2 19 35.8 25.3 54.8 14.1s25.3-35.8 14.1-54.8L430.3 290.8c-11.2-18.9-26.6-34.5-44.6-45.9zM192 448v32c0 17.7 14.3 32 32 32H352c17.7 0 32-14.3 32-32V448H192z"]
+  icon: [576, 512, [], "e54a", "M246.9 14.1C234 15.2 224 26 224 39c0 13.8 11.2 25 25 25H400c8.8 0 16-7.2 16-16V17.4C416 8 408 .7 398.7 1.4L246.9 14.1zM240 112c0 44.2 35.8 80 80 80s80-35.8 80-80c0-5.5-.6-10.8-1.6-16H241.6c-1 5.2-1.6 10.5-1.6 16zM72 224c-22.1 0-40 17.9-40 40s17.9 40 40 40H224v89.4L386.8 230.5c-13.3-4.3-27.3-6.5-41.6-6.5H240 72zm345.7 20.9L246.6 416H416V369.7l53.6 90.6c11.2 19 35.8 25.3 54.8 14.1s25.3-35.8 14.1-54.8L462.3 290.8c-11.2-18.9-26.6-34.5-44.6-45.9zM224 448v32c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V448H224z"]
 };
 var faBuildingColumns = {
   prefix: 'fas',
   iconName: 'building-columns',
-  icon: [512, 512, ["bank", "institution", "museum", "university"], "f19c", "M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8.1-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
+  icon: [512, 512, ["bank", "institution", "museum", "university"], "f19c", "M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
 };
 var faBank = faBuildingColumns;
 var faInstitution = faBuildingColumns;
@@ -18897,7 +20077,7 @@ var faUniversity = faBuildingColumns;
 var faUmbrella = {
   prefix: 'fas',
   iconName: 'umbrella',
-  icon: [576, 512, [], "f0e9", "M286 0c17.7 0 32 14.3 32 32V49.7C449.8 63.4 555.7 161 571.9 285.9c2 15.6-17.3 24.4-27.8 12.7C530.1 283 502.8 272 478 272c-38.7 0-71 27.5-78.4 64.1c-1.7 8.7-8.7 15.9-17.6 15.9s-15.8-7.2-17.6-15.9C357 299.5 324.7 272 286 272s-71 27.5-78.4 64.1c-1.7 8.7-8.7 15.9-17.6 15.9s-15.8-7.2-17.6-15.9C165 299.5 132.7 272 94 272c-24.8 0-52.1 11-66.1 26.7C17.4 310.4-1.9 301.5 .1 285.9C16.3 161 122.2 63.4 254 49.7V32c0-17.7 14.3-32 32-32zm0 304c12.3 0 23.5 4.6 32 12.2V430.6c0 45-36.5 81.4-81.4 81.4c-30.8 0-59-17.4-72.8-45l-2.3-4.7c-7.9-15.8-1.5-35 14.3-42.9s35-1.5 42.9 14.3l2.3 4.7c3 5.9 9 9.6 15.6 9.6c9.6 0 17.4-7.8 17.4-17.4V316.2c8.5-7.6 19.7-12.2 32-12.2z"]
+  icon: [576, 512, [], "f0e9", "M288 0c17.7 0 32 14.3 32 32V49.7C451.8 63.4 557.7 161 573.9 285.9c2 15.6-17.3 24.4-27.8 12.7C532.1 283 504.8 272 480 272c-38.7 0-71 27.5-78.4 64.1c-1.7 8.7-8.7 15.9-17.6 15.9s-15.8-7.2-17.6-15.9C359 299.5 326.7 272 288 272s-71 27.5-78.4 64.1c-1.7 8.7-8.7 15.9-17.6 15.9s-15.8-7.2-17.6-15.9C167 299.5 134.7 272 96 272c-24.8 0-52.1 11-66.1 26.7C19.4 310.4 .1 301.5 2.1 285.9C18.3 161 124.2 63.4 256 49.7V32c0-17.7 14.3-32 32-32zm0 304c12.3 0 23.5 4.6 32 12.2V430.6c0 45-36.5 81.4-81.4 81.4c-30.8 0-59-17.4-72.8-45l-2.3-4.7c-7.9-15.8-1.5-35 14.3-42.9s35-1.5 42.9 14.3l2.3 4.7c3 5.9 9 9.6 15.6 9.6c9.6 0 17.4-7.8 17.4-17.4V316.2c8.5-7.6 19.7-12.2 32-12.2z"]
 };
 var faTrowel = {
   prefix: 'fas',
@@ -18928,7 +20108,7 @@ var faKipSign = {
 var faHandPointLeft = {
   prefix: 'fas',
   iconName: 'hand-point-left',
-  icon: [512, 512, [], "f0a5", "M32 96C14.3 96 0 110.3 0 128s14.3 32 32 32l208 0V96L32 96zM192 288c-17.7 0-32 14.3-32 32s14.3 32 32 32h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm-64-64c0 17.7 14.3 32 32 32h48c17.7 0 32-14.3 32-32s-14.3-32-32-32H160c-17.7 0-32 14.3-32 32zm96 160c-17.7 0-32 14.3-32 32s14.3 32 32 32h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H224zm88-96l-.6 0c5.4 9.4 8.6 20.3 8.6 32c0 13.2-4 25.4-10.8 35.6c24.9 8.7 42.8 32.5 42.8 60.4c0 11.7-3.1 22.6-8.6 32H352c88.4 0 160-71.6 160-160V226.3c0-42.4-16.9-83.1-46.9-113.1l-11.6-11.6C429.5 77.5 396.9 64 363 64l-27 0c-35.3 0-64 28.7-64 64v88c0 22.1 17.9 40 40 40s40-17.9 40-40V160c0-8.8 7.2-16 16-16s16 7.2 16 16v56c0 39.8-32.2 72-72 72z"]
+  icon: [512, 512, [], "f0a5", "M32 96C14.3 96 0 110.3 0 128s14.3 32 32 32l208 0 0-64L32 96zM192 288c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0zm-64-64c0 17.7 14.3 32 32 32l48 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-48 0c-17.7 0-32 14.3-32 32zm96 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0zm88-96l-.6 0c5.4 9.4 8.6 20.3 8.6 32c0 13.2-4 25.4-10.8 35.6c24.9 8.7 42.8 32.5 42.8 60.4c0 11.7-3.1 22.6-8.6 32l8.6 0c88.4 0 160-71.6 160-160l0-61.7c0-42.4-16.9-83.1-46.9-113.1l-11.6-11.6C429.5 77.5 396.9 64 363 64l-27 0c-35.3 0-64 28.7-64 64l0 88c0 22.1 17.9 40 40 40s40-17.9 40-40l0-56c0-8.8 7.2-16 16-16s16 7.2 16 16l0 56c0 39.8-32.2 72-72 72z"]
 };
 var faHandshakeSimple = {
   prefix: 'fas',
@@ -20815,7 +21995,6 @@ var icons = {
   faWarning: faWarning,
   faDatabase: faDatabase,
   faShare: faShare,
-  faArrowTurnRight: faArrowTurnRight,
   faMailForward: faMailForward,
   faBottleDroplet: faBottleDroplet,
   faMaskFace: faMaskFace,
@@ -20945,117 +22124,21 @@ var icons = {
 
 
 
-;// CONCATENATED MODULE: ./src/images/triangle.svg
-const triangle_namespaceObject = __webpack_require__.p + "images/b5db52da946bb33cffca.svg";
-;// CONCATENATED MODULE: ./src/javascript/components/selectStyles.js
-function selectStyles_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function selectStyles_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? selectStyles_ownKeys(Object(source), !0).forEach(function (key) { selectStyles_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : selectStyles_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function selectStyles_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var green = '#cbfb45';
-var black = '#0c0c0c';
-var lightBlack = '#1a1a1a';
-var selectStyles = {
-  control: function control(styles, _ref) {
-    var isFocused = _ref.isFocused;
-    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, selectStyles_defineProperty({
-      cursor: 'pointer',
-      backgroundColor: 'transparent',
-      border: 'none',
-      outline: 'none',
-      width: 'fit-content',
-      fontSize: window.innerWidth >= 645 ? '1.35rem' : window.innerWidth >= 355 ? '1.15rem' : '0.95rem',
-      fontWeight: '400'
-    }, "outline", "1px solid ".concat(isFocused ? green : 'transparent')));
-  },
-  option: function option(styles, _ref2) {
-    var isFocused = _ref2.isFocused,
-        isSelected = _ref2.isSelected;
-    var backgroundColor = black;
-
-    if (isFocused) {
-      backgroundColor = lightBlack;
-    }
-
-    if (isSelected) {
-      backgroundColor = lightBlack;
-    }
-
-    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
-      backgroundColor: backgroundColor,
-      color: "".concat(isSelected ? green : 'white'),
-      fontSize: '1.25rem',
-      ':active': selectStyles_objectSpread(selectStyles_objectSpread({}, styles[':active']), {}, {
-        backgroundColor: lightBlack,
-        color: green
-      })
-    });
-  },
-  indicatorSeparator: function indicatorSeparator(styles) {
-    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
-      display: 'none'
-    });
-  },
-  menu: function menu(styles) {
-    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
-      backgroundColor: 'transparent',
-      border: '1.5px solid #595959',
-      boxShadow: '0px 5px 95px rgba(0, 0, 0, 0.4)',
-      borderRadius: '5px'
-    });
-  },
-  menuList: function menuList(styles) {
-    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
-      margin: '0px',
-      padding: '0px'
-    });
-  },
-  placeholder: function placeholder(styles) {
-    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
-      color: 'white'
-    });
-  },
-  input: function input(styles) {
-    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
-      color: 'white'
-    });
-  },
-  singleValue: function singleValue(styles) {
-    return selectStyles_objectSpread(selectStyles_objectSpread({}, styles), {}, {
-      color: 'white'
-    });
-  }
-};
-;// CONCATENATED MODULE: ./src/lib/data/hotkeys.json
-const hotkeys_namespaceObject = JSON.parse('[{"link":"switch-between-programs","selected":"Переключение","text":"запущенных приложений","windows":"Alt+Tab","macos":"Cmd+Tab","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Переключение между программами","page_win":"S_AltTab","page_mac":"S_CmdTab","page_xl_span":"Переключение","page_xl":"между окнами открытых программ","page_l_start":"Удерживайте кнопку","page_l_center":"и нажимайте на","page_l_end":"до тех пор пока не выберете нужную программу","page_l_win_first":"ALT","page_l_win_second":"TAB","page_l_mac_first":"CMD","page_l_mac_second":"TAB"},{"link":"hide-open-program","selected":"Сворачивание","text":"всех открытых окон","windows":"Ctrl+W","macos":"Cmd+H","popular":false,"useful":false,"simple":true,"complex":false,"target":"system","page_title":"Сворачивание всех открытых окон","page_win":"S_CtrlW","page_mac":"S_CmdH","page_xl_span":"Cворачивание","page_xl":"всех открытых окон","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы свернуть все открытые окна","page_l_win_first":"CTRL","page_l_win_second":"W","page_l_mac_first":"CMD","page_l_mac_second":"H"},{"link":"open-clipboard","selected":"Открытие","text":"буфера обмена","windows":"Win+V","macos":"Cmd+Ctrl+Shift+V","popular":false,"useful":true,"simple":false,"complex":true,"target":"system","page_title":"Открытие буфера обмена","page_win":"S_WinV","page_mac":"S_CmdCtrlShiftV","page_xl_span":"Открытие","page_xl":"буфера обмена","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть (включить) буфер обмена","page_l_win_first":"CTRL","page_l_win_second":"V","page_l_mac_first":"CMD+CTRL+SHIFT","page_l_mac_second":"V"},{"link":"redo-last-action","selected":"Повтор","text":"последнего выполненного действия","windows":"Ctrl+Y","macos":"Cmd+Y","popular":false,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Повтор последнего выполненного действия","page_win":"S_CtrlY","page_mac":"S_CmdY","page_xl_span":"Повтор","page_xl":"последнего выполненного действия","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы повторить последнее выполненное действие","page_l_win_first":"CTRL","page_l_win_second":"Y","page_l_mac_first":"CMD","page_l_mac_second":"Y"},{"link":"undo-last-action","selected":"Отмена","text":"последнего выполненного действия","windows":"Ctrl+Z","macos":"Cmd+Z","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Отмена последнего выполненного действия","page_win":"S_CtrlZ","page_mac":"S_CmdZ","page_xl_span":"Отмена","page_xl":"последнего выполненного действия","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы отменить последнее выполненное действие","page_l_win_first":"CTRL","page_l_win_second":"Z","page_l_mac_first":"CMD","page_l_mac_second":"Z"},{"link":"redo-undo-last-action","selected":"Отмена","text":"последнего отмененного действия","windows":"Ctrl+SHift+Z","macos":"Cmd+Shift+Z","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Отмена последнего отмененного действия","page_win":"S_CtrlShiftZ","page_mac":"S_CmdShiftZ","page_xl_span":"Отмена","page_xl":"последнего отмененного действия","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы отменить последнее выполненное действие","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"Z","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"Z"},{"link":"cut-selected-text","selected":"Вырезать","text":"выделенный текст в буфер обмена","windows":"Ctrl+X","macos":"Cmd+X","popular":false,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Вырезать выделенный текст в буфер обмена","page_win":"S_CtrlX","page_mac":"S_CmdX","page_xl_span":"Вырезать","page_xl":"выделенный текст в буфер обмена","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы вырезать выделенный текст в буфер обмена","page_l_win_first":"CTRL","page_l_win_second":"X","page_l_mac_first":"CMD","page_l_mac_second":"X"},{"link":"copy-selected-text","selected":"Скопировать","text":"выделенный текст в буфер обмена","windows":"Ctrl+C","macos":"Cmd+C","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Скопировать выделенный текст в буфер обмена","page_win":"S_CtrlC","page_mac":"S_CmdC","page_xl_span":"Скопировать","page_xl":"выделенный текст в буфер обмена","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы скопировать выделенный текст в буфер обмена","page_l_win_first":"CTRL","page_l_win_second":"C","page_l_mac_first":"CMD","page_l_mac_second":"C"},{"link":"paste-selected-text","selected":"Вставить","text":"выделенный текст в буфер обмена","windows":"Ctrl+V","macos":"Cmd+V","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Вставить выделенный текст в буфер обмена","page_win":"S_CtrlV","page_mac":"S_CmdV","page_xl_span":"Вставить","page_xl":"выделенный текст в буфер обмена","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы вставить выделенный текст в буфер обмена","page_l_win_first":"CTRL","page_l_win_second":"V","page_l_mac_first":"CMD","page_l_mac_second":"V"},{"link":"open-file-explorer","selected":"Открытие","text":"проводника файлов","windows":"Win+E","macos":"Cmd+Shift+F","popular":false,"useful":false,"simple":false,"complex":true,"target":"system","page_title":"Открытие системного проводника файлов","page_win":"S_WinE","page_mac":"S_CmdShiftF","page_xl_span":"Открытие","page_xl":"системного проводника файлов","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть системного проводника файлов","page_l_win_first":"WIN","page_l_win_second":"E","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"F"},{"link":"select-all","selected":"Выделение","text":"всего на странице или в поле ввода","windows":"Ctrl+A","macos":"Cmd+A","popular":false,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Выделение всего контента на странице или в поле ввода","page_win":"S_CtrlA","page_mac":"S_CmdA","page_xl_span":"Выделение","page_xl":"всего контента","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы выделить весь контент на странице или в поле ввода","page_l_win_first":"CTRL","page_l_win_second":"A","page_l_mac_first":"CMD","page_l_mac_second":"A"},{"link":"save","selected":"Сохранение","text":"документа или файла","windows":"Ctrl+S","macos":"Cmd+S","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Сохранение документа или файла","page_win":"S_CtrlS","page_mac":"S_CmdS","page_xl_span":"Сохранение","page_xl":"документа или файла","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы сохранить изменения в документе или файле","page_l_win_first":"CTRL","page_l_win_second":"S","page_l_mac_first":"CMD","page_l_mac_second":"S"},{"link":"print","selected":"Печать","text":"документа или страницы","windows":"Ctrl+P","macos":"Cmd+P","popular":false,"useful":false,"simple":false,"complex":true,"target":"system","page_title":"Печать документа или страницы","page_win":"S_CtrlP","page_mac":"S_CmdP","page_xl_span":"Печать","page_xl":"документа или страницы","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы перейти к настройке печати","page_l_win_first":"CTRL","page_l_win_second":"P","page_l_mac_first":"CMD","page_l_mac_second":"P"},{"link":"new-window","selected":"Создание","text":"нового окна или файла","windows":"Ctrl+N","macos":"Cmd+N","popular":false,"useful":false,"simple":true,"complex":false,"target":"system","page_title":"Создание нового окна или файла","page_win":"S_CtrlN","page_mac":"S_CmdN","page_xl_span":"Создание","page_xl":"нового окна или файла","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы создать новое окно или файл","page_l_win_first":"CTRL","page_l_win_second":"N","page_l_mac_first":"CMD","page_l_mac_second":"N"},{"link":"open-settings","selected":"Открытие","text":"системные настройки","windows":"Win+I","macos":"Cmd+,","popular":false,"useful":false,"simple":true,"complex":false,"target":"system","page_title":"Открытие системные настройки","page_win":"S_WinI","page_mac":"S_CmdComma","page_xl_span":"Открытие","page_xl":"системные настройки","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть системные настройки","page_l_win_first":"WIN","page_l_win_second":"I","page_l_mac_first":"CMD","page_l_mac_second":","},{"link":"minimize-window","selected":"Открепить","text":"активное окно","windows":"Win+↓","macos":"Cmd+M","popular":false,"useful":false,"simple":true,"complex":false,"target":"system","page_title":"Открепить активное окно приложения","page_win":"S_WinDown","page_mac":"S_CmdM","page_xl_span":"Открепить","page_xl":"активное окно приложения","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открепить активное окно приложения","page_l_win_first":"WIN","page_l_win_second":"↓","page_l_mac_first":"CMD","page_l_mac_second":"M"},{"link":"maximize-window","selected":"Закрепить","text":"активное окно приложения","windows":"Win+↑","macos":"Cmd+Ctrl+F","popular":false,"useful":false,"simple":true,"complex":false,"target":"system","page_title":"Закрепить активное окно приложения","page_win":"S_WinUp","page_mac":"S_CmdCtrlF","page_xl_span":"Закрепить","page_xl":"активное окно приложения","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы закрепить активное окно приложения","page_l_win_first":"WIN","page_l_win_second":"↑","page_l_mac_first":"CMD+CTRL","page_l_mac_second":"M"},{"link":"close-window","selected":"Закрыть","text":"активное окно приложения","windows":"Ctrl+W","macos":"Cmd+W","popular":false,"useful":false,"simple":true,"complex":false,"target":"system","page_title":"Закрыть активное окно приложения","page_win":"S_CtrlW","page_mac":"S_CmdW","page_xl_span":"Закрыть","page_xl":"активное окно приложения","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы закрыть активное окно приложения","page_l_win_first":"CTRL","page_l_win_second":"W","page_l_mac_first":"CMD","page_l_mac_second":"W"},{"link":"close-program","selected":"Закрыть","text":"активную программу","windows":"Alt+F4","macos":"Cmd+Q","popular":true,"useful":true,"simple":true,"complex":false,"target":"system","page_title":"Закрыть активную программу","page_win":"S_AltF4","page_mac":"S_CmdQ","page_xl_span":"Закрыть","page_xl":"активную программу","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы закрыть активную программу","page_l_win_first":"ALT","page_l_win_second":"F4","page_l_mac_first":"CMD","page_l_mac_second":"Q"},{"link":"vscode-comment","selected":"Комментирование","text":"кода для отключения","windows":"Ctrl+/","macos":"Cmd+/","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code","page_title":"Комментирование кода","page_win":"S_CtrlSlash","page_mac":"S_CmdSlash","page_xl_span":"Комментирование","page_xl":"кода","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы закомментировать код для его отключения","page_l_win_first":"CTRL","page_l_win_second":"/","page_l_mac_first":"CMD","page_l_mac_second":"/"},{"link":"vscode-find-selected","selected":"Поиск","text":"выделенного фрагмента","windows":"Ctrl+F","macos":"Cmd+F","popular":true,"useful":true,"simple":true,"complex":false,"target":"vs-code","page_title":"Поиск выделенного фрагмента","page_win":"S_CtrlF","page_mac":"S_CmdF","page_xl_span":"Поиск","page_xl":"выделенного фрагмента","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы выполнить поиск по выделенному фрагменту","page_l_win_first":"CTRL","page_l_win_second":"F","page_l_mac_first":"CMD","page_l_mac_second":"F"},{"link":"vscode-find-replace-selected","selected":"Замена","text":"выделенного фрагмента","windows":"Ctrl+H","macos":"Cmd+H","popular":false,"useful":true,"simple":true,"complex":false,"target":"vs-code","page_title":"Замена выделенного фрагмента","page_win":"S_CtrlH","page_mac":"S_CmdH","page_xl_span":"Замена","page_xl":"выделенного фрагмента","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы выполнить замену выделенного фрагмента","page_l_win_first":"CTRL","page_l_win_second":"H","page_l_mac_first":"CMD","page_l_mac_second":"H"},{"link":"vscode-find-all-project","selected":"Поиск","text":"выделенного фрагмента по всему проекту","windows":"Ctrl+Shift+F","macos":"Cmd+Shift+F","popular":false,"useful":true,"simple":false,"complex":true,"target":"vs-code","page_title":"Поиск выделенного фрагмента по всему проекту","page_win":"S_CtrlShiftF","page_mac":"S_CmdShiftF","page_xl_span":"Поиск","page_xl":"выделенного фрагмента по всему проекту","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы выполнить поиск по выделенному фрагменту по всем файлам проекта","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"F","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"F"},{"link":"vscode-find-replace-all-project","selected":"Замена","text":"выделенного фрагмента по всему проекту","windows":"Ctrl+Shift+H","macos":"Cmd+Shift+H","popular":false,"useful":true,"simple":false,"complex":true,"target":"vs-code","page_title":"Замена выделенного фрагмента по всему проекту","page_win":"S_CtrlShiftH","page_mac":"S_CmdShiftH","page_xl_span":"Замена","page_xl":"выделенного фрагмента по всему проекту","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы выполнить замену выделенного фрагмента по всем файлам проекта","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"H","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"H"},{"link":"vscode-toggle-sidebar","selected":"Скрытие/Раскрытие","text":"боковой панели","windows":"Ctrl+B","macos":"Cmd+B","popular":false,"useful":false,"simple":true,"complex":false,"target":"vs-code","page_title":"Скрытие/Раскрытие боковой панели","page_win":"S_CtrlB","page_mac":"S_CmdB","page_xl_span":"Скрытие/Раскрытие","page_xl":"боковой панели","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы скрыть или раскрыть боковую панель","page_l_win_first":"CTRL","page_l_win_second":"B","page_l_mac_first":"CMD","page_l_mac_second":"B"},{"link":"vscode-select-next-occurrence","selected":"Выделение","text":"схожих фрагментов кода","windows":"Ctrl+D","macos":"Cmd+D","popular":false,"useful":true,"simple":true,"complex":false,"target":"vs-code","page_title":"Выделение схожих фрагментов кода","page_win":"S_CtrlD","page_mac":"S_CmdD","page_xl_span":"Выделение","page_xl":"схожих фрагментов кода","page_l_start":"Удерживайте кнопку","page_l_center":"и нажимайте на","page_l_end":"до тех пор пока не выберете все нужные схожие фрагменты кода","page_l_win_first":"CTRL","page_l_win_second":"D","page_l_mac_first":"CMD","page_l_mac_second":"D"},{"link":"vscode-command-palette","selected":"Открытие","text":"палитры команд","windows":"Ctrl+Shift+P / F2","macos":"Cmd+Shift+P","popular":true,"useful":true,"simple":false,"complex":true,"target":"vs-code","page_title":"Открытие палитры команд","page_win":"S_CtrlShiftP","page_mac":"S_CmdShiftP","page_xl_span":"Открытие","page_xl":"палитры команд","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть палитру команд","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"P","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"P"},{"link":"browser-open-new-window","selected":"Открыть","text":"новое окно","windows":"Ctrl+N","macos":"Cmd+N","popular":false,"useful":false,"simple":true,"complex":false,"target":"browser","page_title":"Открытие нового окна","page_win":"S_CtrlN","page_mac":"S_CmdN","page_xl_span":"Открытие","page_xl":"нового окна","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть новое окно","page_l_win_first":"CTRL","page_l_win_second":"N","page_l_mac_first":"CMD","page_l_mac_second":"N"},{"link":"browser-open-new-incognito-window","selected":"Открыть","text":"новое окно икогнито","windows":"Ctrl+Shift+N","macos":"Cmd+Shift+N","popular":false,"useful":false,"simple":false,"complex":true,"target":"browser","page_title":"Открытие нового окна в режиме инкогнито","page_win":"S_CtrlShiftN","page_mac":"S_CmdShiftN","page_xl_span":"Открытие","page_xl":"нового окна в режиме инкогнито","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть новое окно в режиме инкогнито","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"N","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"N"},{"link":"browser-open-new-tab","selected":"Открыть","text":"новую вкладку","windows":"Ctrl+T","macos":"Cmd+T","popular":false,"useful":false,"simple":true,"complex":false,"target":"browser","page_title":"Открытие новой вкладки","page_win":"S_CtrlT","page_mac":"S_CmdT","page_xl_span":"Открытие","page_xl":"новой вкладки","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть новую вкладку","page_l_win_first":"CTRL","page_l_win_second":"T","page_l_mac_first":"CMD","page_l_mac_second":"T"},{"link":"browser-undo-closed-tab","selected":"Восстановить","text":"закрытую вкладку","windows":"Ctrl+Shift+T","macos":"Cmd+Shift+T","popular":false,"useful":true,"simple":false,"complex":true,"target":"browser","page_title":"Восстановить закрытую вкладку","page_win":"S_CtrlShiftT","page_mac":"S_CmdShiftT","page_xl_span":"Восстановить","page_xl":"закрытую вкладку","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы восстановить закрытую вкладку","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"T","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"T"},{"link":"browser-next-tab","selected":"Переключение","text":"между вкладками","windows":"Ctrl+Tab","macos":"Cmd+Option+ →","popular":false,"useful":false,"simple":false,"complex":true,"target":"browser","page_title":"Переключение между вкладками","page_win":"S_CtrlTab","page_mac":"S_CmdOptionRight","page_xl_span":"Переключение","page_xl":"между вкладками","page_l_start":"Удерживайте кнопку","page_l_center":"и нажимайте на","page_l_end":"до тех пор пока не перейдете к нужной вкладке","page_l_win_first":"CTRL","page_l_win_second":"TAB","page_l_mac_first":"CMD+OPTION","page_l_mac_second":"→"},{"link":"browser-history-back-forward","selected":"Перемещение","text":"назад/вперед по истории браузера","windows":"Alt+ ← / Alt+ →","macos":"Cmd+ ← / Cmd+ →","popular":false,"useful":false,"simple":false,"complex":true,"target":"browser","page_title":"Перемещение назад и вперед по истории браузера","page_win":"S_AltLeftRight","page_mac":"S_CmdLeftRight","page_xl_span":"Перемещение","page_xl":"назад и вперед по истории браузера","page_l_start":"Удерживайте кнопку","page_l_center":"и нажимайте на","page_l_end":"до тех пор не перейдете к нужной вкладки по истории","page_l_win_first":"ALT","page_l_win_second":"← →","page_l_mac_first":"CMD","page_l_mac_second":"← →"},{"link":"browser-refresh-page","selected":"Обновить","text":"страницу","windows":"F5 / Ctrl+R","macos":"Cmd+R","popular":true,"useful":true,"simple":true,"complex":false,"target":"browser","page_title":"Обновление веб-страницы","page_win":"S_CtrlR","page_mac":"S_CmdR","page_xl_span":"Обновление","page_xl":"веб-страницы","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы обновить веб-страницу","page_l_win_first":"CTRL","page_l_win_second":"R","page_l_mac_first":"CMD","page_l_mac_second":"R"},{"link":"browser-open-history","selected":"Открыть","text":"историю","windows":"Ctrl+H","macos":"Cmd+Y","popular":true,"useful":true,"simple":true,"complex":false,"target":"browser","page_title":"Открытие истории браузера","page_win":"S_CtrlH","page_mac":"S_CmdY","page_xl_span":"Открытие","page_xl":"истории браузера","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть историю браузера","page_l_win_first":"CTRL","page_l_win_second":"H","page_l_mac_first":"CMD","page_l_mac_second":"Y"},{"link":"figma-group-layers","selected":"Сгрупировать","text":"выделенные элементы в группу","windows":"Ctrl+G","macos":"Cmd+G","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma","page_title":"Сгрупировать выделенные элементы в группу","page_win":"S_CtrlG","page_mac":"S_CmdG","page_xl_span":"Сгрупировать","page_xl":"выделенные элементы в группу","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы сформировать группу из выделенных элементов","page_l_win_first":"CTRL","page_l_win_second":"G","page_l_mac_first":"CMD","page_l_mac_second":"G"},{"link":"figma-ungroup-layers","selected":"Разгруппировать","text":"выделенные элементы из группы","windows":"Ctrl+Shift+G","macos":"Cmd+Shift+G","popular":true,"useful":true,"simple":false,"complex":true,"target":"figma","page_title":"Разгруппировать выделенные элементы из группы","page_win":"S_CtrlShiftG","page_mac":"S_CmdShiftG","page_xl_span":"Разгруппировать","page_xl":"выделенные элементы из группы","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы расформировать группу из выделенных элементов","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"G","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"G"},{"link":"figma-frame-layers","selected":"Сгрупировать","text":"выделенные элементы во фрейм","windows":"Ctrl+Alt+G","macos":"Cmd+Option+G","popular":false,"useful":true,"simple":false,"complex":true,"target":"figma","page_title":"Сгрупировать выделенные элементы во фрейм","page_win":"S_CtrlAltG","page_mac":"S_CmdOptionG","page_xl_span":"Сгрупировать","page_xl":"выделенные элементы во фрейм","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы сформировать фрейм из выделенных элементов","page_l_win_first":"CTRL+ALT","page_l_win_second":"G","page_l_mac_first":"CMD+OPTION","page_l_mac_second":"G"},{"link":"figma-duplicate-selection","selected":"Дублировать","text":"выделенные элементы","windows":"Ctrl+D","macos":"Cmd+D","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma","page_title":"Дублировать выделенные элементы","page_win":"S_CtrlD","page_mac":"S_CmdD","page_xl_span":"Дублировать","page_xl":"выделенные элементы","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы дублировать выделенные элементы","page_l_win_first":"CTRL","page_l_win_second":"D","page_l_mac_first":"CMD","page_l_mac_second":"D"},{"link":"figma-hide-ui","selected":"Скрыть","text":"пользовательский интерфейс","windows":"Ctrl+\\\\","macos":"Cmd+\\\\","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma","page_title":"Скрыть пользовательский интерфейс","page_win":"S_CtrlTrait","page_mac":"S_CmdTrait","page_xl_span":"Скрыть","page_xl":"пользовательский интерфейс","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы скрыть пользовательский интерфейс","page_l_win_first":"CTRL","page_l_win_second":"\\\\","page_l_mac_first":"CMD","page_l_mac_second":"\\\\"},{"link":"figma-hide-layers","selected":"Скрыть","text":"интерфейс панели слоев","windows":"Ctrl+Shift+/","macos":"Cmd+Shift+/","popular":false,"useful":false,"simple":false,"complex":true,"target":"figma","page_title":"Скрыть интерфейс панели слоев","page_win":"S_CtrlShiftTrait","page_mac":"S_CmdShiftTrait","page_xl_span":"Скрыть","page_xl":"интерфейс панели слоев","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы скрыть интерфейс панели слоев","page_l_win_first":"CTRL+SHIFT","page_l_win_second":"\\\\","page_l_mac_first":"CMD+SHIFT","page_l_mac_second":"\\\\"},{"link":"figma-pick-color","selected":"Получить","text":"цвет элемента по нажатию","windows":"I","macos":"I","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma","page_title":"Получить цвет элемента по нажатию","page_win":"S_I","page_mac":"S_I","page_xl_span":"Получить","page_xl":"цвет элемента по нажатию","page_l_start":"","page_l_center":"Нажмите на","page_l_end":"чтобы скрыть цвет элемента по нажатию","page_l_win_first":"","page_l_win_second":"I","page_l_mac_first":"","page_l_mac_second":"I"},{"link":"figma-command-palette","selected":"Открыть","text":"панель быстрых действий","windows":"Ctrl+/","macos":"Cmd+/","popular":true,"useful":true,"simple":true,"complex":false,"target":"figma","page_title":"Открыть панель быстрых действий","page_win":"S_CtrlSlash","page_mac":"S_CmdSlash","page_xl_span":"Открыть","page_xl":"панель быстрых действий","page_l_start":"Удерживайте кнопку","page_l_center":"и нажмите на","page_l_end":"чтобы открыть панель быстрых действий","page_l_win_first":"CTRL","page_l_win_second":"/","page_l_mac_first":"CMD","page_l_mac_second":"/"}]');
 ;// CONCATENATED MODULE: ./src/javascript/components/Shortcuts.jsx
-function Shortcuts_typeof(obj) { "@babel/helpers - typeof"; return Shortcuts_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, Shortcuts_typeof(obj); }
-
+function Shortcuts_typeof(o) { "@babel/helpers - typeof"; return Shortcuts_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Shortcuts_typeof(o); }
 function Shortcuts_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function Shortcuts_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
+function Shortcuts_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, Shortcuts_toPropertyKey(descriptor.key), descriptor); } }
 function Shortcuts_createClass(Constructor, protoProps, staticProps) { if (protoProps) Shortcuts_defineProperties(Constructor.prototype, protoProps); if (staticProps) Shortcuts_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function Shortcuts_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) Shortcuts_setPrototypeOf(subClass, superClass); }
-
-function Shortcuts_setPrototypeOf(o, p) { Shortcuts_setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return Shortcuts_setPrototypeOf(o, p); }
-
-function Shortcuts_createSuper(Derived) { var hasNativeReflectConstruct = Shortcuts_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Shortcuts_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Shortcuts_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Shortcuts_possibleConstructorReturn(this, result); }; }
-
+function Shortcuts_callSuper(t, o, e) { return o = Shortcuts_getPrototypeOf(o), Shortcuts_possibleConstructorReturn(t, Shortcuts_isNativeReflectConstruct() ? Reflect.construct(o, e || [], Shortcuts_getPrototypeOf(t).constructor) : o.apply(t, e)); }
 function Shortcuts_possibleConstructorReturn(self, call) { if (call && (Shortcuts_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return Shortcuts_assertThisInitialized(self); }
-
-function Shortcuts_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function Shortcuts_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
+function Shortcuts_isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (Shortcuts_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
 function Shortcuts_getPrototypeOf(o) { Shortcuts_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return Shortcuts_getPrototypeOf(o); }
-
-function Shortcuts_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
+function Shortcuts_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function Shortcuts_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) Shortcuts_setPrototypeOf(subClass, superClass); }
+function Shortcuts_setPrototypeOf(o, p) { Shortcuts_setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return Shortcuts_setPrototypeOf(o, p); }
+function Shortcuts_defineProperty(obj, key, value) { key = Shortcuts_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function Shortcuts_toPropertyKey(t) { var i = Shortcuts_toPrimitive(t, "string"); return "symbol" == Shortcuts_typeof(i) ? i : String(i); }
+function Shortcuts_toPrimitive(t, r) { if ("object" != Shortcuts_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != Shortcuts_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
 
 
@@ -21067,46 +22150,36 @@ function Shortcuts_defineProperty(obj, key, value) { if (key in obj) { Object.de
 
 var Shortcuts = /*#__PURE__*/function (_Component) {
   Shortcuts_inherits(Shortcuts, _Component);
-
-  var _super = Shortcuts_createSuper(Shortcuts);
-
   function Shortcuts(props) {
     var _this;
-
     Shortcuts_classCallCheck(this, Shortcuts);
-
-    _this = _super.call(this, props);
-
+    _this = Shortcuts_callSuper(this, Shortcuts, [props]);
     Shortcuts_defineProperty(Shortcuts_assertThisInitialized(_this), "state", {
-      system: js_cookie.get('os') === 'macos' ? 'macos' : 'windows',
+      system: api.get('os') === 'macos' ? 'macos' : 'windows',
       selectedProgramOption: null,
       selectedMainOption: null,
       systemSelected: false,
       searchQuery: ''
     });
-
+    //* [windows button] switch system on click and add active class
     Shortcuts_defineProperty(Shortcuts_assertThisInitialized(_this), "handleWindowsClick", function () {
       _this.setState({
         system: 'windows',
         systemSelected: true
       });
-
       _this.macButtonRef.current.classList.remove('active');
-
       _this.winButtonRef.current.classList.add('active');
     });
-
+    //* [macos button] switch system on click and add active class
     Shortcuts_defineProperty(Shortcuts_assertThisInitialized(_this), "handleMacosClick", function () {
       _this.setState({
         system: 'macos',
         systemSelected: true
       });
-
       _this.winButtonRef.current.classList.remove('active');
-
       _this.macButtonRef.current.classList.add('active');
     });
-
+    //* [reset button] reset search filters on click
     Shortcuts_defineProperty(Shortcuts_assertThisInitialized(_this), "handleReset", function () {
       _this.setState({
         selectedProgramOption: null,
@@ -21115,33 +22188,30 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
         searchQuery: ''
       });
     });
-
     _this.winButtonRef = /*#__PURE__*/react.createRef();
     _this.macButtonRef = /*#__PURE__*/react.createRef();
     return _this;
   }
-
   Shortcuts_createClass(Shortcuts, [{
     key: "render",
     value: function render() {
       var _this2 = this;
-
       var _this$state = this.state,
-          system = _this$state.system,
-          selectedProgramOption = _this$state.selectedProgramOption,
-          selectedMainOption = _this$state.selectedMainOption,
-          searchQuery = _this$state.searchQuery; // destructure search query state
-      //* set custom icon resetButton
+        system = _this$state.system,
+        selectedProgramOption = _this$state.selectedProgramOption,
+        selectedMainOption = _this$state.selectedMainOption,
+        searchQuery = _this$state.searchQuery; // destructure search query state
 
+      //* set custom icon resetButton
       var DropdownIndicator = function DropdownIndicator(props) {
         return /*#__PURE__*/react.createElement(components.DropdownIndicator, props, /*#__PURE__*/react.createElement("img", {
           src: triangle_namespaceObject,
           alt: "Dropdown Indicator",
           className: "A_SelectIcon"
         }));
-      }; //? [Все программы] select program options
+      };
 
-
+      //? [Все программы] select program options
       var programOptions = [{
         value: 'system',
         label: 'Система'
@@ -21154,8 +22224,9 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
       }, {
         value: 'figma',
         label: 'Figma'
-      }]; //? [Сортировка] select main options
+      }];
 
+      //? [Сортировка] select main options
       var mainOptions = [{
         value: 'popular',
         label: 'Популярные'
@@ -21168,44 +22239,43 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
       }, {
         value: 'complex',
         label: 'Самые сложные'
-      }]; //* [Все программы] apply select program option and reRender {hotkeys}
+      }];
 
+      //* [Все программы] apply select program option and reRender {hotkeys}
       var handleProgramChange = function handleProgramChange(selectedProgramOption) {
         _this2.setState({
           selectedProgramOption: selectedProgramOption
         });
-      }; //* [Все программы] apply select main option and reRender {hotkeys}
+      };
 
-
+      //* [Все программы] apply select main option and reRender {hotkeys}
       var handleMainChange = function handleMainChange(selectedMainOption) {
         _this2.setState({
           selectedMainOption: selectedMainOption
         });
       };
+      var filteredHotkeys = hotkeys_namespaceObject;
 
-      var filteredHotkeys = hotkeys_namespaceObject; //* search filter {hotkeys}
-
+      //* search filter {hotkeys}
       if (searchQuery) {
         filteredHotkeys = filteredHotkeys.filter(function (hotkey) {
           var selected = hotkey.selected,
-              text = hotkey.text,
-              windows = hotkey.windows,
-              macos = hotkey.macos;
+            text = hotkey.text,
+            windows = hotkey.windows,
+            macos = hotkey.macos;
           var combinedText = "".concat(selected, " ").concat(text, " ").concat(windows, " ").concat(macos).replace(/\+/g, ' ');
           return combinedText.toLowerCase().includes(searchQuery.toLowerCase());
         });
-      } //* on load filter {hotkeys}
+      }
 
-
+      //* on load filter {hotkeys}
       filteredHotkeys = filteredHotkeys.filter(function (hotkey) {
         if (selectedProgramOption && hotkey.target !== selectedProgramOption.value) {
           return false;
         }
-
         if (selectedMainOption && !hotkey[selectedMainOption.value]) {
           return false;
         }
-
         return true;
       });
       return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
@@ -21289,7 +22359,7 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
         className: "S_Filters"
       }, /*#__PURE__*/react.createElement("div", {
         className: "C_SelectBar"
-      }, /*#__PURE__*/react.createElement(react_select_esm, {
+      }, /*#__PURE__*/react.createElement(StateManagedSelect$1, {
         options: programOptions,
         value: selectedProgramOption,
         onChange: handleProgramChange,
@@ -21299,7 +22369,7 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
         },
         isSearchable: false,
         placeholder: "\u0412\u0441\u0435 \u0448\u043E\u0440\u0442\u043A\u0430\u0442\u044B"
-      }), /*#__PURE__*/react.createElement(react_select_esm, {
+      }), /*#__PURE__*/react.createElement(StateManagedSelect$1, {
         options: mainOptions,
         value: selectedMainOption,
         onChange: handleMainChange,
@@ -21334,30 +22404,25 @@ var Shortcuts = /*#__PURE__*/function (_Component) {
           className: "A_CardName"
         }, /*#__PURE__*/react.createElement("span", {
           className: "Q_TextSelection"
-        }, hotkey.selected, " "), hotkey.text), /*#__PURE__*/react.createElement("h2", {
+        }, hotkey.selected), hotkey.text), /*#__PURE__*/react.createElement("h2", {
           className: "A_CardKey"
         }, hotkey[system])));
       }))));
     }
   }]);
-
   return Shortcuts;
 }(react.Component);
-
 
 ;// CONCATENATED MODULE: ./src/shortcuts.jsx
 
 
 
 var pythonGenerated = document.getElementById('PYTHON_GENERATED');
-
 if (pythonGenerated) {
   pythonGenerated.parentNode.removeChild(pythonGenerated);
 }
-
 document.addEventListener('DOMContentLoaded', function () {
   var container = document.getElementById('reactShortcuts');
-
   if (container) {
     var root = (0,client/* createRoot */.s)(container);
     root.render( /*#__PURE__*/react.createElement(Shortcuts, null));

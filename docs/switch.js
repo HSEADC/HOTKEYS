@@ -2,8 +2,8 @@
 /******/ 	"use strict";
 var __webpack_exports__ = {};
 
-;// CONCATENATED MODULE: ./node_modules/js-cookie/dist/js.cookie.mjs
-/*! js-cookie v3.0.1 | MIT */
+;// CONCATENATED MODULE: ./node_modules/.pnpm/js-cookie@3.0.5/node_modules/js-cookie/dist/js.cookie.mjs
+/*! js-cookie v3.0.5 | MIT */
 /* eslint-disable no-var */
 function js_cookie_assign (target) {
   for (var i = 1; i < arguments.length; i++) {
@@ -36,7 +36,7 @@ var defaultConverter = {
 /* eslint-disable no-var */
 
 function init (converter, defaultAttributes) {
-  function set (key, value, attributes) {
+  function set (name, value, attributes) {
     if (typeof document === 'undefined') {
       return
     }
@@ -50,7 +50,7 @@ function init (converter, defaultAttributes) {
       attributes.expires = attributes.expires.toUTCString();
     }
 
-    key = encodeURIComponent(key)
+    name = encodeURIComponent(name)
       .replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent)
       .replace(/[()]/g, escape);
 
@@ -77,11 +77,11 @@ function init (converter, defaultAttributes) {
     }
 
     return (document.cookie =
-      key + '=' + converter.write(value, key) + stringifiedAttributes)
+      name + '=' + converter.write(value, name) + stringifiedAttributes)
   }
 
-  function get (key) {
-    if (typeof document === 'undefined' || (arguments.length && !key)) {
+  function get (name) {
+    if (typeof document === 'undefined' || (arguments.length && !name)) {
       return
     }
 
@@ -94,25 +94,25 @@ function init (converter, defaultAttributes) {
       var value = parts.slice(1).join('=');
 
       try {
-        var foundKey = decodeURIComponent(parts[0]);
-        jar[foundKey] = converter.read(value, foundKey);
+        var found = decodeURIComponent(parts[0]);
+        jar[found] = converter.read(value, found);
 
-        if (key === foundKey) {
+        if (name === found) {
           break
         }
       } catch (e) {}
     }
 
-    return key ? jar[key] : jar
+    return name ? jar[name] : jar
   }
 
   return Object.create(
     {
-      set: set,
-      get: get,
-      remove: function (key, attributes) {
+      set,
+      get,
+      remove: function (name, attributes) {
         set(
-          key,
+          name,
           '',
           js_cookie_assign({}, attributes, {
             expires: -1
@@ -136,7 +136,7 @@ function init (converter, defaultAttributes) {
 var api = init(defaultConverter, { path: '/' });
 /* eslint-enable no-var */
 
-/* harmony default export */ const js_cookie = (api);
+
 
 ;// CONCATENATED MODULE: ./src/javascript/system-switch.js
 
@@ -147,27 +147,22 @@ document.addEventListener('DOMContentLoaded', function () {
   var winBtn = document.querySelector('#win');
   var macShortcut = document.querySelectorAll('.Q_ShortcutWindows');
   var winShortcut = document.querySelectorAll('.Q_ShortcutMacos');
-  var system = js_cookie.get('os');
-
+  var system = api.get('os');
   var toggleDisplay = function toggleDisplay(showElement, hideElement) {
     showElement.style.display = 'block';
     hideElement.style.display = 'none';
   };
-
   var toggleActiveClass = function toggleActiveClass(activateBtn, deactivateBtn) {
     activateBtn.classList.add('_Active');
     deactivateBtn.classList.remove('_Active');
   };
-
   function toggleMac() {
     if (macEl && winEl) {
       toggleDisplay(macEl, winEl);
     }
-
     if (window.location.pathname !== '/shortcuts.html') {
       toggleActiveClass(macBtn, winBtn);
     }
-
     if (winShortcut.length > 0 && macShortcut.length > 0) {
       winShortcut.forEach(function (el) {
         return el.style.display = 'block';
@@ -177,16 +172,13 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   }
-
   function toggleWin() {
     if (macEl && winEl) {
       toggleDisplay(winEl, macEl);
     }
-
     if (window.location.pathname !== '/shortcuts.html') {
       toggleActiveClass(winBtn, macBtn);
     }
-
     if (winShortcut.length > 0 && macShortcut.length > 0) {
       winShortcut.forEach(function (el) {
         return el.style.display = 'none';
@@ -196,17 +188,15 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   }
-
   if (system == 'macos') {
     toggleMac();
   } else {
     toggleWin();
   }
-
-  macBtn === null || macBtn === void 0 ? void 0 : macBtn.addEventListener('click', function () {
+  macBtn === null || macBtn === void 0 || macBtn.addEventListener('click', function () {
     toggleMac();
   });
-  winBtn === null || winBtn === void 0 ? void 0 : winBtn.addEventListener('click', function () {
+  winBtn === null || winBtn === void 0 || winBtn.addEventListener('click', function () {
     toggleWin();
   });
 });
