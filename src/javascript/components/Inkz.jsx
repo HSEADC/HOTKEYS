@@ -28,7 +28,6 @@ export default function Inkz() {
         <div className="grid grid-cols-5 gap-5 mt-5">
           {masters.map((item, index) => (
             <div key={index} className="w-full p-4 border rounded border-neutral-700">
-              {item.tattoo_image && <img src={item.tattoo_image} alt="Tattoo Image" className="object-cover w-full h-auto mb-2" />}
               <h2 className="text-xl font-semibold leading-none">{item.name}</h2>
               <p className="mt-3 text-neutral-700">Nickname: {item.nickname}</p>
             </div>
@@ -38,11 +37,11 @@ export default function Inkz() {
 
       <div>
         <h2 className="text-3xl text-neutral-700">Tattoos</h2>
-        <div className="grid grid-cols-5 gap-5 mt-5">
+        <div className="grid grid-cols-7 gap-5 mt-5">
           {tattoos.map((item, index) => (
-            <div key={index} className="w-full p-4 border rounded border-neutral-700">
-              <h2 className="text-xl font-semibold leading-none">{item.title}</h2>
-              <p className="mt-3 text-neutral-700">Specialization: {item.specialization}</p>
+            <div key={index} className="w-full p-4 border rounded-md border-neutral-700">
+              {item.tattoo_image && <img className="object-cover mb-3 rounded-md saturate-[25%] aspect-square" src={`http://localhost:2000/${item.tattoo_image.url}`} alt="Tattoo Image" />}
+              <h2 className="text-xl font-semibold">{item.title}</h2>
             </div>
           ))}
         </div>
