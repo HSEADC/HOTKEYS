@@ -1,25 +1,25 @@
 import React, {useState, useEffect} from 'react'
 
-export default function Inkz() {
+export default function InkzData() {
   const [masters, setMasters] = useState([])
   const [tattoos, setTattoos] = useState([])
   const url = 'http://localhost:2000'
 
   useEffect(() => {
+    const fetchData = async (apiEndpoint, setter) => {
+      try {
+        const response = await fetch(apiEndpoint)
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`)
+        const data = await response.json()
+        setter(data.tattoos || data)
+      } catch (error) {
+        console.error(`Error fetching data:`, error)
+      }
+    }
+
     fetchData(`${url}/api/v1/masters.json`, setMasters)
     fetchData(`${url}/api/v1/tattoos.json`, setTattoos)
   }, [])
-
-  async function fetchData(apiEndpoint, setter) {
-    try {
-      const response = await fetch(apiEndpoint)
-      if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`)
-      const data = await response.json()
-      setter(data)
-    } catch (error) {
-      console.error(`Error fetching data for ${apiEndpoint}:`, error)
-    }
-  }
 
   return (
     <main className="w-2/3 mx-auto mt-20 space-y-20 font-sans">
@@ -40,7 +40,7 @@ export default function Inkz() {
         <div className="grid grid-cols-7 gap-5 mt-5">
           {tattoos.map((item, index) => (
             <div key={index} className="w-full p-4 border rounded-md border-neutral-700">
-              {item.tattoo_image && <img className="object-cover mb-3 rounded-md saturate-[25%] aspect-square" src={`http://localhost:2000/${item.tattoo_image.url}`} alt="Tattoo Image" />}
+              {item.tattoo_image && <img className="object-cover mb-3 rounded-md saturate-[25%] aspect-square" src={item.tattoo_image} alt="Tattoo Image" />}
               <h2 className="text-xl font-semibold">{item.title}</h2>
             </div>
           ))}
