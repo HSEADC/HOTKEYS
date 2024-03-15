@@ -1,14 +1,23 @@
 import React from 'react'
 import {createRoot} from 'react-dom/client'
-import Inkz from './javascript/components/Inkz.jsx'
+
+import InkzData from './javascript/components/inkz/InkzData.jsx'
 
 function rendeInkzPage() {
   const container = document.getElementById('reactInkz')
 
   if (container) {
     const root = createRoot(container)
-    root.render(<Inkz />)
+    root.render(<InkzPage />)
   }
+}
+
+function InkzPage() {
+  return (
+    <div>
+      <InkzData />
+    </div>
+  )
 }
 
 document.addEventListener('DOMContentLoaded', rendeInkzPage)
