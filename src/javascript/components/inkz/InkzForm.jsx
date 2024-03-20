@@ -28,23 +28,27 @@ export default function InkzForm() {
     event.preventDefault()
 
     try {
+      const formData = new FormData()
+      formData.append('tattoo[title]', tattooTitle)
+      formData.append('tattoo[master_id]', '1')
+      formData.append('tattoo[tattoo_image]', event.target.elements['tattoo[tattoo_image]'].files[0])
+
       const response = await fetch(createUrl, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
           Authorization: jti,
         },
-        body: JSON.stringify({tattoo: {title: tattooTitle, master_id: '1'}}),
+        body: formData,
       })
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`)
       } else {
-        alert('Tattoo created successfully!')
+        console.log('Tattoo created successfully!')
         setTattooTitle('')
       }
     } catch (error) {
-      alert('Error creating tattoo! Look in console')
+      console.log('Error creating tattoo! Look in console')
       console.error('Error creating tattoo:', error)
     }
   }
@@ -54,6 +58,10 @@ export default function InkzForm() {
       <div className="flex justify-between gap-5">
         <label htmlFor="tattoo_title">Title</label>
         <input className="w-[60%] text-black placeholder:text-black" type="text" name="tattoo[title]" id="tattoo_title" value={tattooTitle} onChange={(event) => setTattooTitle(event.target.value)} />
+      </div>
+
+      <div>
+        <input className="form-control" type="file" name="tattoo[tattoo_image]" id="tattoo_tattoo_image" />
       </div>
 
       <div>
