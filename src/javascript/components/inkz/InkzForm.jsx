@@ -1,14 +1,13 @@
 import React, {useState, useEffect} from 'react'
 
 export default function InkzForm() {
-  const [createUrl, setCreateUrl] = useState('')
   const [tattooTitle, setTattooTitle] = useState('')
   const [jti, setJti] = useState('')
 
-  const url = 'http://localhost:2000'
+  const TATTOOS_API_URL = 'http://localhost:2000/api/v1/tattoos'
 
   useEffect(() => {
-    fetchData(`${url}/api/v1/tattoos.json`)
+    fetchData(TATTOOS_API_URL)
   }, [])
 
   async function fetchData(apiEndpoint) {
@@ -18,7 +17,6 @@ export default function InkzForm() {
       const data = await response.json()
 
       setJti(data.jti)
-      setCreateUrl(data.create_url)
     } catch (error) {
       console.error(`Error fetching data for ${apiEndpoint}:`, error)
     }
@@ -33,7 +31,7 @@ export default function InkzForm() {
       formData.append('tattoo[master_id]', '1')
       formData.append('tattoo[tattoo_image]', event.target.elements['tattoo[tattoo_image]'].files[0])
 
-      const response = await fetch(createUrl, {
+      const response = await fetch(TATTOOS_API_URL, {
         method: 'POST',
         headers: {
           Authorization: jti,
