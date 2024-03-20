@@ -22,7 +22,7 @@ export default function InkzData() {
   }, [])
 
   return (
-    <main className="w-2/3 mx-auto mt-20 space-y-20 font-sans">
+    <main className="w-2/3 mx-auto space-y-20 font-sans">
       <div>
         <h2 className="text-3xl text-neutral-700">Masters</h2>
         <div className="grid grid-cols-5 gap-5 mt-5">
