@@ -11,8 +11,10 @@ export default function InkzComponent() {
   // InkzForm State
   const [tattooTitle, setTattooTitle] = useState('')
 
-  const SIGN_IN_URL = 'http://localhost:2000/api/v1/sign_in'
-  const TATTOOS_API_URL = 'http://localhost:2000/api/v1/tattoos'
+  const URL = 'http://localhost:2000'
+  const SIGN_IN_URL = `${URL}/api/v1/sign_in`
+  const SIGN_OUT_URL = `${URL}/api/v1/sign_out`
+  const TATTOOS_API_URL = `${URL}/api/v1/tattoos`
 
   useEffect(() => {
     const storedToken = Cookies.get('jti')
@@ -53,11 +55,28 @@ export default function InkzComponent() {
     }
   }
 
-  function handleLogout() {
-    Cookies.remove('jti')
-    Cookies.remove('email')
-    setUserEmail('')
-    setUserToken('')
+  async function handleLogout() {
+    try {
+      const response = await fetch(SIGN_OUT_URL, {
+        method: 'POST',
+        headers: {
+          Authorization: userToken,
+        },
+      })
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`)
+      }
+
+      Cookies.remove('jti')
+      Cookies.remove('email')
+      setUserEmail('')
+      setUserToken('')
+
+      console.log('Logout successful')
+    } catch (error) {
+      console.error('Error logging out:', error)
+    }
   }
 
   async function handleSubmit(event) {
@@ -96,7 +115,7 @@ export default function InkzComponent() {
         <div className="px-4 py-2 mx-auto border-2 w-fit border-neutral-700">{userToken}</div>
 
         <button className="px-4 py-2 text-black bg-white" onClick={handleLogout}>
-          Delete Cookies
+          Sign out
         </button>
       </header>
 
@@ -113,7 +132,7 @@ export default function InkzComponent() {
           </div>
 
           <div className="actions">
-            <input className="w-full py-2 text-black bg-white" type="submit" name="commit" value="Log in" data-disable-with="Log in" />
+            <input className="w-full py-2 text-black bg-white" type="submit" name="commit" value="Sign in" data-disable-with="Sign in" />
           </div>
         </form>
       )}
