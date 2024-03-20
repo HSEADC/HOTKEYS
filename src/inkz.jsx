@@ -1,7 +1,7 @@
 import React from 'react'
 import {createRoot} from 'react-dom/client'
 
-import InkzAuth from './javascript/components/inkz/InkzAuth.jsx'
+import InkzPanel from './javascript/components/inkz/InkzPanel.jsx'
 import InkzData from './javascript/components/inkz/InkzData.jsx'
 
 function rendeInkzPage() {
@@ -16,7 +16,7 @@ function rendeInkzPage() {
 function InkzPage() {
   return (
     <div className="space-y-20">
-      <InkzAuth />
+      <InkzPanel />
       <InkzData />
     </div>
   )
