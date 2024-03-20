@@ -16,7 +16,7 @@ export default function InkzComponent() {
 
   useEffect(() => {
     const storedToken = Cookies.get('jti')
-    const storedUserEmail = Cookies.get('user')
+    const storedUserEmail = Cookies.get('email')
     if (storedToken && storedUserEmail) {
       setUserToken(storedToken)
       setUserEmail(storedUserEmail)
@@ -46,7 +46,7 @@ export default function InkzComponent() {
         setUserToken(token)
 
         Cookies.set('jti', token)
-        Cookies.set('user', email)
+        Cookies.set('email', email)
       }
     } catch (error) {
       console.error('Error:', error)
@@ -55,7 +55,7 @@ export default function InkzComponent() {
 
   function handleLogout() {
     Cookies.remove('jti')
-    Cookies.remove('user')
+    Cookies.remove('email')
     setUserEmail('')
     setUserToken('')
   }
@@ -100,21 +100,23 @@ export default function InkzComponent() {
         </button>
       </header>
 
-      <form className="mx-auto space-y-5 w-fit mt-14" onSubmit={handleLogin} acceptCharset="UTF-8">
-        <div className="flex justify-between gap-5">
-          <label htmlFor="user_email">электронная почта</label>
-          <input className="text-black placeholder:text-black" value={emailValue} onChange={(event) => setEmailValue(event.target.value)} autoFocus autoComplete="email" type="email" name="sign_in[email]" id="user_email" />
-        </div>
+      {!userToken && (
+        <form className="mx-auto space-y-5 w-fit mt-14" onSubmit={handleLogin} acceptCharset="UTF-8">
+          <div className="flex justify-between gap-5">
+            <label htmlFor="user_email">электронная почта</label>
+            <input className="text-black placeholder:text-black" value={emailValue} onChange={(event) => setEmailValue(event.target.value)} autoFocus autoComplete="email" type="email" name="sign_in[email]" id="user_email" />
+          </div>
 
-        <div className="flex justify-between gap-5">
-          <label htmlFor="user_password">пароль</label>
-          <input className="text-black placeholder:text-black" value={passwordValue} onChange={(event) => setPasswordValue(event.target.value)} autoComplete="current-password" type="password" name="sign_in[password]" id="user_password" />
-        </div>
+          <div className="flex justify-between gap-5">
+            <label htmlFor="user_password">пароль</label>
+            <input className="text-black placeholder:text-black" value={passwordValue} onChange={(event) => setPasswordValue(event.target.value)} autoComplete="current-password" type="password" name="sign_in[password]" id="user_password" />
+          </div>
 
-        <div className="actions">
-          <input className="w-full py-2 text-black bg-white" type="submit" name="commit" value="Log in" data-disable-with="Log in" />
-        </div>
-      </form>
+          <div className="actions">
+            <input className="w-full py-2 text-black bg-white" type="submit" name="commit" value="Log in" data-disable-with="Log in" />
+          </div>
+        </form>
+      )}
 
       {userToken && (
         <form className="mx-auto space-y-5 w-fit mt-14" onSubmit={handleSubmit} acceptCharset="UTF-8">
