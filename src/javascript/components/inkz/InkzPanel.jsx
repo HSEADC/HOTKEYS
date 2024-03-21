@@ -2,16 +2,19 @@ import React, {useState, useEffect} from 'react'
 import Cookies from 'js-cookie'
 
 export default function InkzComponent() {
-  // InkzAuth State
   const [emailValue, setEmailValue] = useState('')
   const [passwordValue, setPasswordValue] = useState('')
   const [userEmail, setUserEmail] = useState('')
   const [userToken, setUserToken] = useState('')
 
-  // InkzForm State
+  const [newEmailValue, setNewEmailValue] = useState('')
+  const [newPasswordValue, setNewPasswordValue] = useState('')
+  const [passwordConfirmationValue, setPasswordConfirmationValue] = useState('')
+
   const [tattooTitle, setTattooTitle] = useState('')
 
   const URL = 'http://localhost:2000'
+  const SIGN_UP_URL = `${URL}/api/v1/sign_up`
   const SIGN_IN_URL = `${URL}/api/v1/sign_in`
   const SIGN_OUT_URL = `${URL}/api/v1/sign_out`
   const TATTOOS_API_URL = `${URL}/api/v1/tattoos`
@@ -24,6 +27,37 @@ export default function InkzComponent() {
       setUserEmail(storedUserEmail)
     }
   }, [])
+
+  async function handleSignUp(event) {
+    event.preventDefault()
+
+    const formData = new FormData()
+    formData.append('user[email]', newEmailValue)
+    formData.append('user[password]', newPasswordValue)
+    formData.append('user[password_confirmation]', passwordConfirmationValue)
+
+    try {
+      const response = await fetch(SIGN_UP_URL, {
+        method: 'POST',
+        body: formData,
+      })
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`)
+      } else {
+        const responseData = await response.json()
+
+        const {email, jti: token} = responseData.data.user
+        setUserEmail(email)
+        setUserToken(token)
+
+        Cookies.set('jti', token)
+        Cookies.set('email', email)
+      }
+    } catch (error) {
+      console.error('Error:', error)
+    }
+  }
 
   async function handleLogin(event) {
     event.preventDefault()
@@ -55,7 +89,9 @@ export default function InkzComponent() {
     }
   }
 
-  async function handleLogout() {
+  async function handleLogout(event) {
+    event.preventDefault()
+
     try {
       const response = await fetch(SIGN_OUT_URL, {
         method: 'POST',
@@ -114,27 +150,43 @@ export default function InkzComponent() {
         <div className="px-4 py-2 mx-auto border-2 w-fit border-neutral-700">Email: {userEmail}</div>
         <div className="px-4 py-2 mx-auto border-2 w-fit border-neutral-700">{userToken}</div>
 
-        <button className="px-4 py-2 text-black bg-white" onClick={handleLogout}>
-          Sign out
-        </button>
+        {userToken && (
+          <button className="px-4 py-2 text-black bg-white" onClick={handleLogout}>
+            Sign out
+          </button>
+        )}
       </header>
 
       {!userToken && (
-        <form className="mx-auto space-y-5 w-fit mt-14" onSubmit={handleLogin} acceptCharset="UTF-8">
-          <div className="flex justify-between gap-5">
-            <label htmlFor="user_email">электронная почта</label>
-            <input className="text-black placeholder:text-black" value={emailValue} onChange={(event) => setEmailValue(event.target.value)} autoFocus autoComplete="email" type="email" name="sign_in[email]" id="user_email" />
-          </div>
+        <div className="flex justify-center gap-14 mt-14">
+          <form className="space-y-5" onSubmit={handleSignUp} acceptCharset="UTF-8">
+            <div className="flex justify-between gap-5">
+              <label htmlFor="user_email">электронная почта</label>
+              <input className="text-black placeholder:text-black" value={newEmailValue} onChange={(event) => setNewEmailValue(event.target.value)} autoFocus autoComplete="email" type="email" name="sign_up[email]" id="new_user_email" />
+            </div>
 
-          <div className="flex justify-between gap-5">
-            <label htmlFor="user_password">пароль</label>
-            <input className="text-black placeholder:text-black" value={passwordValue} onChange={(event) => setPasswordValue(event.target.value)} autoComplete="current-password" type="password" name="sign_in[password]" id="user_password" />
-          </div>
+            <div className="flex justify-between gap-5">
+              <input autoComplete="new-password" type="password" value={newPasswordValue} onChange={(event) => setNewPasswordValue(event.target.value)} name="sign_up[password]" id="new_user_password" aria-autocomplete="list" placeholder="пароль" className="h-[2rem]" />
+              <input autoComplete="new-password" type="password" value={passwordConfirmationValue} onChange={(event) => setPasswordConfirmationValue(event.target.value)} name="sign_up[password_confirmation]" id="user_password_confirmation" placeholder="подверждение пароля" />
+            </div>
 
-          <div className="actions">
+            <input className="w-full py-2 text-white bg-neutral-700" type="submit" name="commit" value="Sign up" data-disable-with="Sign up" />
+          </form>
+
+          <form className="space-y-5" onSubmit={handleLogin} acceptCharset="UTF-8">
+            <div className="flex justify-between gap-5">
+              <label htmlFor="user_email">электронная почта</label>
+              <input className="text-black placeholder:text-black" value={emailValue} onChange={(event) => setEmailValue(event.target.value)} autoFocus autoComplete="email" type="email" name="sign_in[email]" id="user_email" />
+            </div>
+
+            <div className="flex justify-between gap-5">
+              <label htmlFor="user_password">пароль</label>
+              <input className="text-black placeholder:text-black" value={passwordValue} onChange={(event) => setPasswordValue(event.target.value)} autoComplete="current-password" type="password" name="sign_in[password]" id="user_password" />
+            </div>
+
             <input className="w-full py-2 text-black bg-white" type="submit" name="commit" value="Sign in" data-disable-with="Sign in" />
-          </div>
-        </form>
+          </form>
+        </div>
       )}
 
       {userToken && (
