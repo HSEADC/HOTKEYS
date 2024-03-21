@@ -59,7 +59,7 @@ export default function InkzComponent() {
     }
   }
 
-  async function handleLogin(event) {
+  async function handleSignIn(event) {
     event.preventDefault()
 
     const formData = new FormData()
@@ -89,7 +89,7 @@ export default function InkzComponent() {
     }
   }
 
-  async function handleLogout(event) {
+  async function handleSignOut(event) {
     event.preventDefault()
 
     try {
@@ -108,10 +108,8 @@ export default function InkzComponent() {
       Cookies.remove('email')
       setUserEmail('')
       setUserToken('')
-
-      console.log('Logout successful')
     } catch (error) {
-      console.error('Error logging out:', error)
+      console.error('Error:', error)
     }
   }
 
@@ -135,11 +133,9 @@ export default function InkzComponent() {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`)
       } else {
-        console.log('Tattoo created successfully!')
         setTattooTitle('')
       }
     } catch (error) {
-      console.log('Error creating tattoo! Look in console')
       console.error('Error creating tattoo:', error)
     }
   }
@@ -151,7 +147,7 @@ export default function InkzComponent() {
         <div className="px-4 py-2 mx-auto border-2 w-fit border-neutral-700">{userToken}</div>
 
         {userToken && (
-          <button className="px-4 py-2 text-black bg-white" onClick={handleLogout}>
+          <button className="px-4 py-2 text-black bg-white" onClick={handleSignOut}>
             Sign out
           </button>
         )}
@@ -173,7 +169,7 @@ export default function InkzComponent() {
             <input className="w-full py-2 text-white bg-neutral-700" type="submit" name="commit" value="Sign up" data-disable-with="Sign up" />
           </form>
 
-          <form className="space-y-5" onSubmit={handleLogin} acceptCharset="UTF-8">
+          <form className="space-y-5" onSubmit={handleSignIn} acceptCharset="UTF-8">
             <div className="flex justify-between gap-5">
               <label htmlFor="user_email">электронная почта</label>
               <input className="text-black placeholder:text-black" value={emailValue} onChange={(event) => setEmailValue(event.target.value)} autoFocus autoComplete="email" type="email" name="sign_in[email]" id="user_email" />
