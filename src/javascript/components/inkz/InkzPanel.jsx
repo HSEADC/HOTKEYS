@@ -4,7 +4,6 @@ import Cookies from 'js-cookie'
 export default function InkzComponent() {
   const [emailValue, setEmailValue] = useState('')
   const [passwordValue, setPasswordValue] = useState('')
-  const [userEmail, setUserEmail] = useState('')
   const [userToken, setUserToken] = useState('')
 
   const [newEmailValue, setNewEmailValue] = useState('')
@@ -20,11 +19,9 @@ export default function InkzComponent() {
   const TATTOOS_API_URL = `${URL}/api/v1/tattoos`
 
   useEffect(() => {
-    const storedToken = Cookies.get('jti')
-    const storedUserEmail = Cookies.get('email')
-    if (storedToken && storedUserEmail) {
+    const storedToken = Cookies.get('jwt')
+    if (storedToken) {
       setUserToken(storedToken)
-      setUserEmail(storedUserEmail)
     }
   }, [])
 
@@ -46,13 +43,10 @@ export default function InkzComponent() {
         throw new Error(`HTTP error! Status: ${response.status}`)
       } else {
         const responseData = await response.json()
+        const {jwt: token} = responseData
 
-        const {email, jti: token} = responseData.data.user
-        setUserEmail(email)
+        Cookies.set('jwt', token)
         setUserToken(token)
-
-        Cookies.set('jti', token)
-        Cookies.set('email', email)
       }
     } catch (error) {
       console.error('Error:', error)
@@ -76,13 +70,10 @@ export default function InkzComponent() {
         throw new Error(`HTTP error! Status: ${response.status}`)
       } else {
         const responseData = await response.json()
+        const {jwt: token} = responseData
 
-        const {email, jti: token} = responseData.data.user
-        setUserEmail(email)
+        Cookies.set('jwt', token)
         setUserToken(token)
-
-        Cookies.set('jti', token)
-        Cookies.set('email', email)
       }
     } catch (error) {
       console.error('Error:', error)
@@ -104,9 +95,7 @@ export default function InkzComponent() {
         throw new Error(`HTTP error! Status: ${response.status}`)
       }
 
-      Cookies.remove('jti')
-      Cookies.remove('email')
-      setUserEmail('')
+      Cookies.remove('jwt')
       setUserToken('')
     } catch (error) {
       console.error('Error:', error)
@@ -132,19 +121,20 @@ export default function InkzComponent() {
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`)
-      } else {
-        setTattooTitle('')
       }
+
+      setTattooTitle('')
     } catch (error) {
       console.error('Error creating tattoo:', error)
     }
   }
 
+  let limitJwtSymbols = 'max-w-[25ch] overflow-hidden whitespace-nowrap overflow-ellipsis'
+
   return (
     <>
       <header className="flex gap-5 mx-auto mt-10 w-fit">
-        <div className="px-4 py-2 mx-auto border-2 w-fit border-neutral-700">Email: {userEmail}</div>
-        <div className="px-4 py-2 mx-auto border-2 w-fit border-neutral-700">{userToken}</div>
+        <div className={`px-4 py-2 mx-auto border-2 w-fit border-neutral-700 ${limitJwtSymbols}`}>JWT: {userToken}</div>
 
         {userToken && (
           <button className="px-4 py-2 text-black bg-white" onClick={handleSignOut}>
